@@ -1,0 +1,56 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/cofh-world.pw.toml"
+hash = "197949c14af1c110c380e62e1cbd735fcb46927a95e6b9d6bc8435646632870d"
+metafile = true
+
+[[files]]
+file = "mods/configanytime.pw.toml"
+hash = "defd8d7b171bb90e9ae3cc60f8c5e863346f74f7c43d90fd2a1519cc9b0e7f5f"
+metafile = true
+
+[[files]]
+file = "mods/groovyscript.pw.toml"
+hash = "110c7b1eea1f287168259e7bb6b7822a5f7aee979d22b771e9b2d3aa285e4c59"
+metafile = true
+
+[[files]]
+file = "mods/had-enough-items.pw.toml"
+hash = "76b1cf748f14d16b7c25c6b8771842e4c9d2c096e55eb48c514d20b9ab4da52e"
+metafile = true
+
+[[files]]
+file = "mods/hwyla.pw.toml"
+hash = "fe09970601c91bd2e77edba59691620a6a60949fef34c99a152553f1f59032b8"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
+hash = "fdc7c16deef289a8b6089d5eab3c6957f64650d2792d5e2398b8e4cf239cfbd4"
+metafile = true
+
+[[files]]
+file = "mods/mantle.pw.toml"
+hash = "3b5ef81c27805786f2b7e53d12bbb5a7a9ec8eacf8c005dd3f657f731480796a"
+metafile = true
+
+[[files]]
+file = "mods/mixin-booter.pw.toml"
+hash = "5c00ea1552543b1506869d7e70c7e10d9e913ef97e93427ca2cbe4c8f035fb24"
+metafile = true
+
+[[files]]
+file = "mods/tool-progression.pw.toml"
+hash = "c0a0e6deb635382526cb93cc51f431a5d87bf32808f2dc8aaac419fd2284cbac"
+metafile = true
+
+[[files]]
+file = "mods/universal-tweaks.pw.toml"
+hash = "1ee7c2dc356390a3329c35834613f10b21f1bf096b772f74633fedb3c3eb5f82"
+metafile = true
+
+[[files]]
+file = "mods/world-stripper.pw.toml"
+hash = "864632ca97f6804218569e7609bd433d7e942c4edbb9fda31ab14c3d0d9f30cb"
+metafile = true

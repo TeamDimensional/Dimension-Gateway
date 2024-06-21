@@ -1,0 +1,13 @@
+*.jar
+journeymap
+logs
+crash-reports
+cache
+options.txt
+icon.png
+saves
+config/jei/worldSettings.cfg
+options.txt
+usercache.json
+usernamecache.json
+memory_repo

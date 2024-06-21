@@ -1,0 +1,229 @@
+{
+	"priority": 1000000000000,
+	"populate": {
+		"dirt": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": "dirt",
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"gravel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "gravel",
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 8,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"diorite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "diorite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"granite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "granite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"andesite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "andesite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"coal": {
+			"distribution": "uniform",
+			"cluster-count": 17,
+			"min-height": 22,
+			"max-height": 128,
+			"generator": {
+				"block": ["minecraft:coal_ore"],
+				"cluster-size": 19,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"iron": {
+			"distribution": "cave",
+			"cluster-count": 17,
+			"generator": {
+				"block": ["minecraft:iron_ore"],
+				"cluster-size": 14,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"lapis": {
+			"distribution": "gaussian",
+			"generator": {
+				"block": "lapis_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 10
+			},
+			"cluster-count": 2,
+			"center-height": 16,
+			"spread": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"tier3": {
+			"distribution": "gaussian",
+			"cluster-count": 5,
+			"center-height": 14,
+			"spread": 12,
+			"generator": {
+				"block": [
+					{"name": "minecraft:redstone_ore", "weight": 75},
+					{"name": "minecraft:gold_ore", "weight": 25}
+				],
+				"cluster-size": 11,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"diamond": {
+			"distribution": "underfluid",
+			"cluster-count": 14,
+			"fluid": "lava",
+			"material": ["minecraft:stone", "minecraft:air"],
+			"generator": {
+				"block": [
+					{"name": "minecraft:emerald_ore", "weight": 16},
+					{"name": "minecraft:diamond_ore", "weight": 24},
+					{"name": "minecraft:stone", "properties": {"variant": "granite"}, "weight": 60}
+				],
+				"cluster-size": 10,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"quartz": {
+			"distribution": "cave",
+			"generator": {
+				"block": "quartz_ore",
+				"material": "minecraft:netherrack",
+				"cluster-size": 14
+			},
+			"cluster-count": 24,
+			"ground-level": 128,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "NETHER"
+					}
+				]
+			},
+			"dimension": "all"
+		}
+	}
+}

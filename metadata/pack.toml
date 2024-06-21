@@ -1,0 +1,13 @@
+name = "Dimension Gateway"
+author = "Wizzerinus"
+version = "0.0.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "03d186e62157ab08c0616a3e0956e4226f2b7d5660f65a31c1fd9c0e53f66cc5"
+
+[versions]
+forge = "14.23.5.2860"
+minecraft = "1.12.2"
