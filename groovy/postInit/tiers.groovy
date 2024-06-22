@@ -3,16 +3,22 @@ import net.minecraftforge.event.entity.player.ItemTooltipEvent
 import classes.GatewayHelpers
 
 event_manager.listen { ItemTooltipEvent event ->
-    for (def entry in GatewayHelpers.tiers)
-        if (event.getItemStack() in entry.key) {
-            if (entry.value == -1)
-                event.getToolTip() << "${textformat('YELLOW').toString()}Future content${textformat('RESET')}".toString()
-            else
-                event.getToolTip() << "${textformat('RED')}Tier: ${entry.value}${textformat('RESET')}".toString()
-            
-            break
-        }
-    for (def entry in GatewayHelpers.tooltips)
-        if (event.getItemStack() in entry.key)
-            event.getToolTip() << entry.value
+    def stack = event.getItemStack()
+    def tier = GatewayHelpers.getTier(stack)
+    if (tier == -1) {
+        event.getToolTip() << "${textformat('YELLOW').toString()}Future content${textformat('RESET')}".toString()
+    } else if (tier != 0) {
+        def color = GatewayHelpers.hasTier(event.getEntityPlayer(), tier) ? 'GREEN' : 'RED'
+        event.getToolTip() << "${textformat(color)}Tier: ${tier}${textformat('RESET')}".toString()
+    }
+
+    def tooltip = GatewayHelpers.getTooltip(stack)
+    if (tooltip != null) {
+        event.getToolTip() << tooltip
+    }
+
+    def unlock = GatewayHelpers.getUnlock(stack)
+    if (unlock != 0) {
+        event.getToolTip() << "${textformat('AQUA')}Unlocks tier ${unlock}${textformat('RESET')}".toString()
+    }
 }

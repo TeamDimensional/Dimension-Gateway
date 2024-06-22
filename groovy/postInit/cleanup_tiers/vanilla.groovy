@@ -1,6 +1,8 @@
 import classes.GatewayHelpers
 
 
+def toolTypes = ["shovel", "pickaxe", "axe", "sword", "hoe"]
+
 def lapisItems = [
     item("minecraft:lapis_ore"), item("minecraft:dye", 4), item("minecraft:lapis_block")
 ]
@@ -47,11 +49,8 @@ def endItems = [
     item("minecraft:skull", 5), item("minecraft:chorus_plant"), item("minecraft:chorus_flower"), item("minecraft:end_crystal"),
     item("minecraft:ender_pearl"), item("minecraft:ender_eye"), item("minecraft:chorus_fruit"), item("minecraft:chorus_fruit_popped"),
     item("minecraft:end_rod"), item("minecraft:dragon_breath"), item("minecraft:lingering_potion"), item("minecraft:shulker_shell"),
-    item("minecraft:tipped_arrow")
+    item("minecraft:tipped_arrow"), item("minecraft:ender_chest")
 ] + shulkerBoxes
-def futureItems = [
-    item("minecraft:ender_chest"), item("minecraft:beacon"), item("minecraft:nether_star")
-]
 
 def potionItems = [
     item("minecraft:brewing_stand"), item("minecraft:potion"), item("minecraft:splash_potion")
@@ -64,6 +63,14 @@ def hideFromJei = [
     item("minecraft:written_book")
 ]
 
+for (def type in toolTypes) {
+    for (def material in ["wooden", "stone", "iron", "golden", "diamond"]) {
+        GatewayHelpers.banTool(item("minecraft:${material}_${type}"))
+    }
+    diamondItems.add(item("minecraft:diamond_${type}"))
+    goldItems.add(item("minecraft:golden_${type}"))
+}
+
 
 for (def it in lapisItems) GatewayHelpers.setTier(it, 2)
 for (def it in quartzItems) GatewayHelpers.setTier(it, 2)
@@ -73,6 +80,13 @@ for (def it in emeraldItems) GatewayHelpers.setTier(it, 4)
 for (def it in diamondItems) GatewayHelpers.setTier(it, 4)
 for (def it in obsidianItems) GatewayHelpers.setTier(it, 5)
 for (def it in endItems) GatewayHelpers.setTier(it, 6)
-for (def it in futureItems) GatewayHelpers.setTier(it, -1)
 for (def it in potionItems) GatewayHelpers.setTier(it, 4)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
+GatewayHelpers.setTier(item("minecraft:beacon"), 15)
+GatewayHelpers.setUnobtainable(item("minecraft:bedrock"))
+
+/*
+Needed recipes:
+Ender Pearl (unobtainable -> Tier 6)
+Beacon (Tier 1 -> Tier 15)
+*/

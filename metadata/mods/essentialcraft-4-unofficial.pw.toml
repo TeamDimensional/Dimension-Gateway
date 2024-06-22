@@ -1,0 +1,13 @@
+filename = 'EssentialCraftUnofficial-4.9.112.6.jar'
+name = 'EssentialCraft 4 Unofficial'
+side = 'both'
+
+[download]
+hash = '2ff6d0d599c8bedcd694de9906c1e9d834ad9011'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5416404
+project-id = 254817

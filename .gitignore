@@ -1,4 +1,6 @@
 *.jar
+*.jar.disabled
+
 journeymap
 logs
 crash-reports
@@ -11,3 +13,11 @@ options.txt
 usercache.json
 usernamecache.json
 memory_repo
+resourcepacks
+*.log
+patchouli_data.json
+config/codechicken/supporters.*
+config/dcMainMenu
+
+BotaniaVars.dat
+tconstruct_oredictcache.dat

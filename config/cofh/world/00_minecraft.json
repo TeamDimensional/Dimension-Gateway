@@ -194,8 +194,9 @@
 			"generator": {
 				"block": [
 					{"name": "minecraft:emerald_ore", "weight": 16},
+					{"name": "mysticalworld:amethyst_ore", "weight": 24},
 					{"name": "minecraft:diamond_ore", "weight": 24},
-					{"name": "minecraft:stone", "properties": {"variant": "granite"}, "weight": 60}
+					{"name": "minecraft:stone", "properties": {"variant": "granite"}, "weight": 36}
 				],
 				"cluster-size": 10,
 				"material": [
