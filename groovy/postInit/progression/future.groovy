@@ -10,6 +10,7 @@ def removeCrafting = [
     item("tconstruct:casting", 1),
     item("immersiveengineering:connector", 2), item("immersiveengineering:connector", 3),
     item("immersiveengineering:connector", 4), item("immersiveengineering:connector", 5),
+    item("roots:grove_stone"), item("roots:fey_crafter"),
     // Gate to tier 4
     item("tconstruct:materials", 15), item("roots:gramary"), item("roots:herb_pouch"),
     item("tconstruct:slimesling"), item("tconstruct:slimesling", 1), item("tconstruct:slimesling", 2),
@@ -31,7 +32,7 @@ def removeCrafting = [
 ]
 
 def removePyre = [
-    item("roots:baffle_cap_mushroom"), item("roots:cloud_berry"), item("roots:infernal_bulb"),
+    item("roots:baffle_cap_mushroom"), item("roots:cloud_berry"), item("roots:infernal_bulb"), item("roots:dewgonia"),
 ]
 
 def makeUncraftable = removeCrafting + removePyre + [item("roots:ritual_summon_creatures")]
