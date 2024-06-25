@@ -57,7 +57,7 @@ def windTier = [
     item("essentialcraft:compressed", 5), item("essentialcraft:crystallamp", 5), item("essentialcraft:oremithriline"),
     item("essentialcraft:air_potion"), item("essentialcraft:endergenerator"),
     item("essentialcraft:reactorsupport"), item("essentialcraft:reactor"),
-] + windTools
+] + windTools + spaceExplorationTier
 for (int i in [32, 46, 47, 48, 49, 50, 51, 55]) windTier.add(item("essentialcraft:genitem", i))
 for (def i in armorParts2) windTier.add(item("essentialcraft:wind_${i}"))
 for (int i in 0..15) {
@@ -82,7 +82,7 @@ def industrialTier = [
 for (int i in 0..5) industrialTier.add(item("essentialcraft:rightclicker", i))
 for (int i in 0..15) industrialTier.add(item("essentialcraft:essence", i))
 for (def i in armorParts) industrialTier.add(item("essentialcraft:${i}_magic"))
-for (int i in [0, 17, 18, 19, 20, 77, 78, 80, 81]) industrialTier.add(item("essentialcraft:genitem", i))
+for (int i in [17, 18, 19, 20, 77, 78, 80, 81]) industrialTier.add(item("essentialcraft:genitem", i))
 for (int i in 0..15) {
     industrialTier.add(item("essentialcraft:fancyblock.mru", i))
     industrialTier.add(item("essentialcraft:fancyblock.mimic", i))
@@ -188,6 +188,7 @@ for (def it in 0..15) TooltipEvents.setTooltip(item("essentialcraft:essence", it
 TooltipEvents.setTooltip(item("essentialcraft:magicalalloy"), "Made in the Magmatic Furnace or Magmatic Smeltery.")
 TooltipEvents.setTooltip(item("essentialcraft:elementalsword"), "Made in Ember Forge.")
 TooltipEvents.setUnlock(item("essentialcraft:windtablet"), 13)
+TooltipEvents.setUnlock(item("essentialcraft:genitem"), 11)
 
 for (def tool in allTools) GatewayHelpers.banTool(tool)
 

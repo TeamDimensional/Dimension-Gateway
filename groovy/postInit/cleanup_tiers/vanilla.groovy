@@ -72,6 +72,7 @@ for (def type in toolTypes) {
     goldItems.add(item("minecraft:golden_${type}"))
 }
 
+def waterPotion = item("minecraft:potion").withNbt(["Potion": "minecraft:water"])
 
 for (def it in lapisItems) TooltipEvents.setTier(it, 2)
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)
@@ -85,6 +86,7 @@ for (def it in potionItems) TooltipEvents.setTier(it, 4)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 TooltipEvents.setTier(item("minecraft:beacon"), 15)
 TooltipEvents.setTier(item("minecraft:bedrock"), 0)
+TooltipEvents.addTierPredicate(s -> s in waterPotion, 1)
 
 furnace.removeByOutput(item("minecraft:iron_nugget"))
 furnace.removeByOutput(item("minecraft:gold_nugget"))
