@@ -50,7 +50,7 @@ mods.roots.flower_generation.recipeBuilder()
 inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid("water"))
         .input(item("gateway:wilted_daisy"))
-        .input(ore("petalWhite"), ore("petalWhite"), ore("petalWhite"), ore("petalWhite"))
+        .input(ore("petalWhite") * 4)
         .output(item("botania:specialflower").withNbt(["type": "puredaisy"]))
         .register()
 
