@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "gateway:blocks/wilted_daisy"
+  }
+}
