@@ -86,6 +86,9 @@ for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 TooltipEvents.setTier(item("minecraft:beacon"), 15)
 TooltipEvents.setTier(item("minecraft:bedrock"), 0)
 
+furnace.removeByOutput(item("minecraft:iron_nugget"))
+furnace.removeByOutput(item("minecraft:gold_nugget"))
+
 /*
 Needed recipes:
 Ender Pearl (unobtainable -> Tier 6)
