@@ -1,4 +1,5 @@
 import classes.GatewayHelpers
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 // we're also removing silver and copper because they're unnecessary with our ore gen
 def goldItems = [item("ironchest:iron_gold_chest_upgrade"), item("ironchest:iron_chest", 1)]
@@ -44,10 +45,10 @@ for (def color in GatewayHelpers.colors) {
     removedRecipes.add("ironchest:shulker/${color}/iron/copper_iron_shulker_box")
 }
 
-for (def it in goldItems) GatewayHelpers.setTier(it, 3)
-for (def it in diamondItems) GatewayHelpers.setTier(it, 4)
-for (def it in obsidianItems) GatewayHelpers.setTier(it, 5)
-for (def it in shulkerItems) GatewayHelpers.setTier(it, 6)
+for (def it in goldItems) TooltipEvents.setTier(it, 3)
+for (def it in diamondItems) TooltipEvents.setTier(it, 4)
+for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
+for (def it in shulkerItems) TooltipEvents.setTier(it, 6)
 
 for (def it in removedItems) {
     mods.jei.ingredient.hide(it)

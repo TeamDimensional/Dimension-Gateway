@@ -1,7 +1,8 @@
+import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
 def moonTempleLoot = [
-    item("theaurorian:crystallinepickaxe"), item("theaurorian:crystallinesword"),
+    item("theaurorian:crystallinepickaxe"), item("theaurorian:crystallinesword"), item("theaurorian:crystallineshield"),
     item("theaurorian:absorptionorb"), item("theaurorian:moontemplecellkeyfragment"), item("theaurorian:scrapcrystalline"),
     item("theaurorian:trophymoonqueen"),
 ]
@@ -56,8 +57,8 @@ def generalItems = [
     item("theaurorian:mushroomstem"), item("theaurorian:aurorianperidotite"), item("theaurorian:aurorianperidotitesmooth"),
     item("theaurorian:aurorianperidotitesmoothstairs"), item("theaurorian:silentwoodbow"),
     item("theaurorian:auroriantallgrass"), item("theaurorian:auroriantallgrasslight"),
-    // this item can be crafted with cerulean but also can be found
-    item("theaurorian:aurorianfurnacechimney"),
+    item("theaurorian:aurorianfurnacechimney"), item("theaurorian:auroriancoalore"), item("theaurorian:tamoonwater"),
+    item("theaurorian:aurorianstonesickle"), item("theaurorian:silentwoodsickle"), item("theaurorian:teasilkberry"),
 ]
 for (def it in ["boots", "chestplate", "helmet", "leggings"]) generalItems.add(item("theaurorian:spectral${it}"))
 for (def it in ["lavender", "petunia", "seedy"]) generalItems.add(item("theaurorian:tea${it}"))
@@ -96,7 +97,7 @@ def moonItems = [
     item("theaurorian:aurorianslimeboots"), item("theaurorian:moontemplekey"), item("theaurorian:moongem"),
     item("theaurorian:moonlightforge"), item("theaurorian:moontorch"),
     // requires queen defeat
-    item("theaurorian:moonshield"), item("theaurorian:queenschipper"),
+    item("theaurorian:moonshield"), item("theaurorian:queenschipper"), item("theaurorian:moontemplecellkey"),
 ] + moonTempleLoot
 
 def removedTools = []
@@ -117,22 +118,22 @@ def hideFromJei = [
 ] + removedTools
 for (def it in ["keeper", "moonqueen", "spider"]) hideFromJei.add(item("theaurorian:bossspawner${it}"))
 
-for (def it in generalItems) GatewayHelpers.setTier(it, 2)
-for (def it in ceruleanItems + moonstoneItems + geodeItems) GatewayHelpers.setTier(it, 2)
-for (def it in runestoneDungeonItems + aurorianiteItems) GatewayHelpers.setTier(it, 2)
-for (def it in darkstoneLoot + umbraItems) GatewayHelpers.setTier(it, 2)
-for (def it in moonItems + crystallineItems) GatewayHelpers.setTier(it, 3)
-for (def it in steelItems) GatewayHelpers.setTier(it, 3)  // tentative
-for (def it in unknownItems) GatewayHelpers.setTier(it, -1)
-for (def it in unobtainable) GatewayHelpers.setUnobtainable(it)
+for (def it in generalItems) TooltipEvents.setTier(it, 2)
+for (def it in ceruleanItems + moonstoneItems + geodeItems) TooltipEvents.setTier(it, 2)
+for (def it in runestoneDungeonItems + aurorianiteItems) TooltipEvents.setTier(it, 2)
+for (def it in darkstoneLoot + umbraItems) TooltipEvents.setTier(it, 2)
+for (def it in moonItems + crystallineItems) TooltipEvents.setTier(it, 3)
+for (def it in steelItems) TooltipEvents.setTier(it, 3)  // tentative
+for (def it in unknownItems) TooltipEvents.setTier(it, -1)
+for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in removedTools) {
     GatewayHelpers.banTool(it)
     crafting.removeByOutput(it)
 }
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
-for (def it in runestoneLoot) GatewayHelpers.addTooltip(it, "Found in the Runestone Temple in Aurorian.")
-for (def it in darkstoneLoot) GatewayHelpers.addTooltip(it, "Found in the Darkstone Temple in Aurorian.")
-for (def it in moonTempleLoot) GatewayHelpers.addTooltip(it, "Found in the Moon Temple in Aurorian.")
+for (def it in runestoneLoot) TooltipEvents.setTooltip(it, "Found in the Runestone Temple in Aurorian.")
+for (def it in darkstoneLoot) TooltipEvents.setTooltip(it, "Found in the Darkstone Temple in Aurorian.")
+for (def it in moonTempleLoot) TooltipEvents.setTooltip(it, "Found in the Moon Temple in Aurorian.")
 
 /*
 recipes needed:
@@ -141,4 +142,4 @@ recipes needed:
 - new recipe for the aurorian portal frame
 */
 
-GatewayHelpers.setUnlocksTier(item("theaurorian:aurorianportalframebricks"), 2)
+TooltipEvents.setUnlock(item("theaurorian:aurorianportalframebricks"), 2)

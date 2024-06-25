@@ -1,4 +1,5 @@
 import classes.GatewayHelpers
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 def wildwoodItems = [item("roots:runed_wildwood"), item("roots:wildroot_rune"), item("roots:bark_wildwood")]
 for (itemType in ["door", "leaves", "log", "planks", "trapdoor", "fence", "fence_gate", "ladder", "slab", "stairs",
@@ -15,7 +16,7 @@ def rootsPlants = [
 def spells = [
     item("roots:gramary"), item("roots:imbuer"), item("roots:imposer"), item("roots:spell_icon"),
     item("roots:spell_modifier"), item("roots:fey_pouch"), item("roots:herb_pouch"),
-    item("roots:component_pouch"), item("roots:apothecary_pouch"), item("roots:spell_dust"),
+    item("roots:component_pouch"), item("roots:apothecary_pouch"), item("roots:spell_dust"), item("roots:staff"),
 ]
 
 def feyCrafting = [
@@ -69,13 +70,13 @@ def hideFromJei = [
     item("roots:spirit_bag"), item("roots:reliquary"),
 ] + removeFromFey + removeFromShearing + removeFromCrafting
 
-for (def it in feyCrafting) GatewayHelpers.setTier(it, 3)
-for (def it in goldItems) GatewayHelpers.setTier(it, 3)
-for (def it in spells) GatewayHelpers.setTier(it, 4)
-for (def it in gemstoneItems) GatewayHelpers.setTier(it, 4)
-for (def it in obsidianItems) GatewayHelpers.setTier(it, 5)
-for (def it in industrialTier) GatewayHelpers.setTier(it, 11)
-for (def it in creativeItems) GatewayHelpers.setTier(it, 17)
+for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
+for (def it in goldItems) TooltipEvents.setTier(it, 3)
+for (def it in spells) TooltipEvents.setTier(it, 4)
+for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
+for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
+for (def it in industrialTier) TooltipEvents.setTier(it, 11)
+for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 for (def it in removeFromCrafting) crafting.removeByOutput(it)
 for (def it in removeFromFey) mods.roots.fey_crafter.removeByOutput(it)

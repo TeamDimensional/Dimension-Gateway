@@ -1,4 +1,5 @@
 import classes.GatewayHelpers
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 def requiresSmeltery = [
     item("tconstruct:casting", 1), item("tconstruct:firewood"), item("tconstruct:firewood", 1),
@@ -9,7 +10,10 @@ def requiresSmeltery = [
     item("tconstruct:firewood_slab"), item("tconstruct:firewood_slab", 1), item("tconstruct:edible", 33),
     item("tconstruct:slime_channel", 3), item("tconstruct:slime_boots", 3),
     item("tconstruct:slime", 3), item("tconstruct:slime_congealed", 3), item("tconstruct:edible", 3),
+    item("tconstruct:clear_glass"), item("tconstruct:fancy_frame", 6), item("tconstruct:seared"), item("tconstruct:seared", 1),
 ]
+for (int i in 0..15) requiresSmeltery.add(item("tconstruct:clear_stained_glass", i))
+for (int i in 0..4) requiresSmeltery.add(item("tconstruct:cast_custom", i))
 
 def requiresFey = [item("tconstruct:materials", 18), item("tconstruct:materials", 19)]
 
@@ -40,7 +44,7 @@ def cobaltArditeItems = [
 def removeThese = [
     item("tconstruct:wooden_hopper"), item("tconstruct:throwball", 1),
     item("tconstruct:wood_rail"), item("tconstruct:wood_rail_trapdoor"),
-    item("tconstruct:piggybackpack"),
+    item("tconstruct:piggybackpack"), item("tconstruct:soil"),
 ]
 
 def hideFromJei = [item("tconstruct:clay_cast")] + removeThese
@@ -61,15 +65,15 @@ chores needed:
 - redo all materials...........
 */
 
-for (def it in requiresSmeltery) GatewayHelpers.setTier(it, 3)
-for (def it in requiresFey) GatewayHelpers.setTier(it, 3)
-for (def it in requiresGemstones) GatewayHelpers.setTier(it, 4)
-for (def it in requiresEvilcraft) GatewayHelpers.setTier(it, 4)
-for (def it in requiresAoE) GatewayHelpers.setTier(it, 4)
-for (def it in requiresObsidian) GatewayHelpers.setTier(it, 5)
-for (def it in cobaltArditeItems) GatewayHelpers.setTier(it, 7)
-for (def it in creativeItems) GatewayHelpers.setTier(it, 17)
+for (def it in requiresSmeltery) TooltipEvents.setTier(it, 3)
+for (def it in requiresFey) TooltipEvents.setTier(it, 3)
+for (def it in requiresGemstones) TooltipEvents.setTier(it, 4)
+for (def it in requiresEvilcraft) TooltipEvents.setTier(it, 4)
+for (def it in requiresAoE) TooltipEvents.setTier(it, 4)
+for (def it in requiresObsidian) TooltipEvents.setTier(it, 5)
+for (def it in cobaltArditeItems) TooltipEvents.setTier(it, 7)
+for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 
-GatewayHelpers.setUnlocksTier(item("tconstruct:smeltery_controller"), 3)
+TooltipEvents.setUnlock(item("tconstruct:smeltery_controller"), 3)

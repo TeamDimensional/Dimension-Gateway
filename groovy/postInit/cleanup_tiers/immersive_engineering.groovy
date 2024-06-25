@@ -1,4 +1,5 @@
 import classes.GatewayHelpers
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 def buildList(index) {
     def output = [
@@ -157,21 +158,21 @@ def hideFromJei = [
     item("immersiveengineering:coresample")
 ] + removedItems
 
-for (def it in copperItems) GatewayHelpers.setTier(it, 2)
-for (def it in silverItems) GatewayHelpers.setTier(it, 3)
-for (def it in leadItems) GatewayHelpers.setTier(it, 3)
-for (def it in nickelItems) GatewayHelpers.setTier(it, 3)
-for (def it in uraniumItems) GatewayHelpers.setTier(it, 3)
-for (def it in constantanItems) GatewayHelpers.setTier(it, 3)
-for (def it in electrumItems) GatewayHelpers.setTier(it, 3)
-for (def it in steelItems) GatewayHelpers.setTier(it, 3)
-for (def it in goldItems) GatewayHelpers.setTier(it, 3)
-for (def it in redstoneItems) GatewayHelpers.setTier(it, 3)
-for (def it in mainMod) GatewayHelpers.setTier(it, 3)
-for (def it in arcTier) GatewayHelpers.setTier(it, 4)
-for (def it in highVoltageTier) GatewayHelpers.setTier(it, 6)
-for (def it in revolverItems) GatewayHelpers.setTier(it, 4)
-for (def it in creativeItems) GatewayHelpers.setTier(it, 17)
+for (def it in copperItems) TooltipEvents.setTier(it, 2)
+for (def it in silverItems) TooltipEvents.setTier(it, 3)
+for (def it in leadItems) TooltipEvents.setTier(it, 3)
+for (def it in nickelItems) TooltipEvents.setTier(it, 3)
+for (def it in uraniumItems) TooltipEvents.setTier(it, 3)
+for (def it in constantanItems) TooltipEvents.setTier(it, 3)
+for (def it in electrumItems) TooltipEvents.setTier(it, 3)
+for (def it in steelItems) TooltipEvents.setTier(it, 3)
+for (def it in goldItems) TooltipEvents.setTier(it, 3)
+for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
+for (def it in mainMod) TooltipEvents.setTier(it, 3)
+for (def it in arcTier) TooltipEvents.setTier(it, 4)
+for (def it in highVoltageTier) TooltipEvents.setTier(it, 6)
+for (def it in revolverItems) TooltipEvents.setTier(it, 4)
+for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def tool in steelTools) GatewayHelpers.banTool(tool)

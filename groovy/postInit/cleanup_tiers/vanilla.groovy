@@ -1,5 +1,5 @@
 import classes.GatewayHelpers
-
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 def toolTypes = ["shovel", "pickaxe", "axe", "sword", "hoe"]
 
@@ -62,6 +62,7 @@ def hideFromJei = [
     item("minecraft:structure_block"), item("minecraft:filled_map"), item("minecraft:command_block_minecart"),
     item("minecraft:written_book")
 ]
+for (int i in 0..5) hideFromJei.add(item("minecraft:monster_egg", i))
 
 for (def type in toolTypes) {
     for (def material in ["wooden", "stone", "iron", "golden", "diamond"]) {
@@ -72,18 +73,18 @@ for (def type in toolTypes) {
 }
 
 
-for (def it in lapisItems) GatewayHelpers.setTier(it, 2)
-for (def it in quartzItems) GatewayHelpers.setTier(it, 2)
-for (def it in redstoneItems) GatewayHelpers.setTier(it, 3)
-for (def it in goldItems) GatewayHelpers.setTier(it, 3)
-for (def it in emeraldItems) GatewayHelpers.setTier(it, 4)
-for (def it in diamondItems) GatewayHelpers.setTier(it, 4)
-for (def it in obsidianItems) GatewayHelpers.setTier(it, 5)
-for (def it in endItems) GatewayHelpers.setTier(it, 6)
-for (def it in potionItems) GatewayHelpers.setTier(it, 4)
+for (def it in lapisItems) TooltipEvents.setTier(it, 2)
+for (def it in quartzItems) TooltipEvents.setTier(it, 2)
+for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
+for (def it in goldItems) TooltipEvents.setTier(it, 3)
+for (def it in emeraldItems) TooltipEvents.setTier(it, 4)
+for (def it in diamondItems) TooltipEvents.setTier(it, 4)
+for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
+for (def it in endItems) TooltipEvents.setTier(it, 6)
+for (def it in potionItems) TooltipEvents.setTier(it, 4)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
-GatewayHelpers.setTier(item("minecraft:beacon"), 15)
-GatewayHelpers.setUnobtainable(item("minecraft:bedrock"))
+TooltipEvents.setTier(item("minecraft:beacon"), 15)
+TooltipEvents.setTier(item("minecraft:bedrock"), 0)
 
 /*
 Needed recipes:

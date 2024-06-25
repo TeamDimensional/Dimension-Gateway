@@ -1,3 +1,4 @@
+import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
 def getQuartzList(name) {
@@ -81,6 +82,7 @@ for (int i in 0..7) {
     tier2Items.add(item("botania:biomestoneb${i}slab"))
 }
 for (def it in equipmentItems) tier2Items.add(item("botania:terrasteel${it}"))
+for (int i in 1..8) tier2Items.add(item("botania:altar", i))
 
 def industrialTier = [item("botania:quartz", 3), item("botania:quartz", 4)] + getQuartzList("lavender") + getQuartzList("blaze")
 
@@ -129,7 +131,6 @@ for (int i in 0..19) tier3Items.add(item("botania:laputashard", i))
 for (def it in equipmentItems + mainTools) tier3Items.add(item("botania:elementium${it}"))
 for (int i in 0..3) tier3Items.add(item("botania:sparkupgrade", i))
 for (int i in 0..3) tier3Items.add(item("botania:lightrelay", i))
-for (int i in 1..8) tier3Items.add(item("botania:altar", i))
 for (int i in 0..5) tier3Items.add(item("botania:dreamwood", i))
 for (def i in ["container", "dispenser", "comparator", "fertilizer", "relay", "interceptor"])
     tier3Items.add(item("botania:redstring${i}"))
@@ -148,27 +149,27 @@ def hideFromJei = [
     item("botania:platform", 2), item("botania:enchanter"), item("botania:bifrost"), item("botania:cacophoniumblock")
 ] + removeThese
 
-for (def it in lapisItems) GatewayHelpers.setTier(it, 2)
-for (def it in redstoneItems) GatewayHelpers.setTier(it, 3)
-for (def it in firstMagicItems) GatewayHelpers.setTier(it, 5)
-for (def it in enderItems) GatewayHelpers.setTier(it, 6)
-for (def it in tier1Items) GatewayHelpers.setTier(it, 9)
-for (def it in industrialTier) GatewayHelpers.setTier(it, 11)
-for (def it in tier2Items) GatewayHelpers.setTier(it, 12)
-for (def it in tier3Items) GatewayHelpers.setTier(it, 14)
-for (def it in creativeItems) GatewayHelpers.setTier(it, 17)
+for (def it in lapisItems) TooltipEvents.setTier(it, 2)
+for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
+for (def it in firstMagicItems) TooltipEvents.setTier(it, 5)
+for (def it in enderItems) TooltipEvents.setTier(it, 6)
+for (def it in tier1Items) TooltipEvents.setTier(it, 9)
+for (def it in industrialTier) TooltipEvents.setTier(it, 11)
+for (def it in tier2Items) TooltipEvents.setTier(it, 12)
+for (def it in tier3Items) TooltipEvents.setTier(it, 14)
+for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 
-GatewayHelpers.setUnlocksTier(item("botania:altar"), 9)
-GatewayHelpers.setUnlocksTier(item("botania:alfheimportal"), 14)
+TooltipEvents.setUnlock(item("botania:altar"), 9)
+TooltipEvents.setUnlock(item("botania:alfheimportal"), 14)
 
-for (def it in gaiaDrops) GatewayHelpers.addTooltip(it, "Dropped by the Guardian of Gaia.")
-for (def it in gaiaDropsT2) GatewayHelpers.addTooltip(it, "Dropped by the 2nd tier Guardian of Gaia.")
-for (def it in diceItems) GatewayHelpers.addTooltip(it, "Reward from the Dice of Fate.")
-GatewayHelpers.addTooltip(item("botania:gaiahead"), "Dropped by the Guardian of Gaia when killed with an Elementium Axe.")
-GatewayHelpers.addTooltip(item("botania:manaresource", 4), "Made with Terrestrial Agglomeration Plate.")
-GatewayHelpers.addTooltip(item("botania:manaresource", 15), "Obtained by right-clicking with an Empty Bottle in the End.")
+for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "Dropped by the Guardian of Gaia.")
+for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "Dropped by the 2nd tier Guardian of Gaia.")
+for (def it in diceItems) TooltipEvents.setTooltip(it, "Reward from the Dice of Fate.")
+TooltipEvents.setTooltip(item("botania:gaiahead"), "Dropped by the Guardian of Gaia when killed with an Elementium Axe.")
+TooltipEvents.setTooltip(item("botania:manaresource", 4), "Made with Terrestrial Agglomeration Plate.")
+TooltipEvents.setTooltip(item("botania:manaresource", 15), "Obtained by right-clicking with an Empty Bottle in the End.")
 
 def tier1Flowers = [
     // generating
@@ -199,12 +200,22 @@ def setFlowerTier(name, tier) {
     def predicate = stack -> {
         return stack in flower || stack in flower2 || stack in flower3 || stack in flower4
     }
-    GatewayHelpers.setPredicateTier(predicate, tier)
+    TooltipEvents.addTierPredicate(predicate, tier)
+}
+
+def setFloatingFlowerTier(name, tier) {
+    def flower2 = item("botania:floatingspecialflower").withNbt(["type": name])
+    def flower4 = item("botania:floatingspecialflower").withNbt(["type": name + "Chibi"])
+    def predicate = stack -> {
+        return stack in flower2 || stack in flower4
+    }
+    TooltipEvents.addTierPredicate(predicate, tier)
 }
 
 for (def it in tier1Flowers) setFlowerTier(it, 9)
 for (def it in tier2Flowers) setFlowerTier(it, 12)
 for (def it in tier3Flowers) setFlowerTier(it, 14)
+setFloatingFlowerTier("puredaisy", 9)
 
 /*
 recipes needed:
@@ -230,7 +241,6 @@ recipes needed:
 - kekimurus (tier 14 -> tier 9)
 - narslimmus (tier 9 -> tier 12)
 - entropinnyum (tier 12 -> tier 14)
-- pure daisy recipe in tier 1
 - munchdew (tier 12 -> tier 9)
 - rosa arcana (tier 9 -> tier 12)
 - rafflowsia (tier 14 -> tier 12)

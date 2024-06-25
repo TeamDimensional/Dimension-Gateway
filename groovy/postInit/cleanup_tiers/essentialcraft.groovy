@@ -1,4 +1,5 @@
 import classes.GatewayHelpers
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 def armorParts = ["helm", "chest", "legs", "boots"]
 def armorParts2 = ["helmet", "chestplate", "leggings", "boots"]
@@ -27,7 +28,9 @@ def magicalTier = [
     item("essentialcraft:mrumover1"), item("essentialcraft:bound_gem"), item("essentialcraft:magicmonocle"),
     item("essentialcraft:itemfilter"), item("essentialcraft:itemfilter", 2), item("essentialcraft:monsterclinger"),
     item("essentialcraft:soulstone"), item("essentialcraft:mrumover_t2"), item("essentialcraft:craftingframe"),
-    item("essentialcraft:magicalalloy"),
+    item("essentialcraft:magicalalloy"), item("essentialcraft:echoldingchamber"),
+    item("essentialcraft:gun.pistol"), item("essentialcraft:gun.rifle"), item("essentialcraft:gun.sniper"),
+    item("essentialcraft:gun.gatling"),
 ] + elementalTools
 for (int i in 0..3) magicalTier.add(item("essentialcraft:weaponmaker", i))
 for (int i in 0..4) magicalTier.add(item("essentialcraft:storage", i))
@@ -40,6 +43,12 @@ for (int i in 0..15) {
     magicalTier.add(item("essentialcraft:fancyblock.magicplating", i))
     magicalTier.add(item("essentialcraft:fancyblock.paleplating", i))
 }
+
+def spaceExplorationTier = [
+    item("essentialcraft:bottledwind"), item("essentialcraft:imprisonedwind"), item("essentialcraft:windkeeper"),
+    item("essentialcraft:helm_wind"), item("essentialcraft:chest_wind"), item("essentialcraft:legs_wind"),
+    item("essentialcraft:boots_wind"),
+]
 
 def windTier = [
     item("essentialcraft:solarprism"), item("essentialcraft:sunrayabsorber"), item("essentialcraft:colddistillator"),
@@ -61,7 +70,7 @@ def industrialTier = [
     item("essentialcraft:monsterharvester"), item("essentialcraft:magmaticsmeltery"),
     item("essentialcraft:crystalformer"), item("essentialcraft:crystalcontroller"), item("essentialcraft:crystalextractor"),
     item("essentialcraft:mrucoilhardener"), item("essentialcraft:mrucoil"), item("essentialcraft:mimic"),
-    item("essentialcraft:magicalslag"), item("essentialcraft:windtablet"), item("essentialcraft:frozenmace"),
+    item("essentialcraft:magicalslag"), item("essentialcraft:frozenmace"),
     item("essentialcraft:magicaldigger"), item("essentialcraft:spawnercollector"),
     item("essentialcraft:staffoflife"), item("essentialcraft:biomewand"), item("essentialcraft:emeraldheart"),
     item("essentialcraft:magicalshield"), item("essentialcraft:spikyshield"), item("essentialcraft:chaosfork"),
@@ -116,6 +125,7 @@ for (int i in [70, 71, 72, 73]) inqDrops.add(item("essentialcraft:genitem", i))
 def demonTier = [
     item("essentialcraft:mithrilinecrystal", 9), item("essentialcraft:demonicplating"), item("essentialcraft:demonicpentacle"),
     item("essentialcraft:holopad"), item("essentialcraft:soulscriber"), item("essentialcraft:computerboard"),
+    item("essentialcraft:soul"),
 ] + inqDrops
 for (int i in [52, 53, 54, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
                68, 69, 74, 75]) demonTier.add(item("essentialcraft:genitem", i))
@@ -162,19 +172,22 @@ def hideFromJei = [
 for (int i in [2, 76]) hideFromJei.add(item("essentialcraft:genitem", i))
 for (int i in 0..13) hideFromJei.add(item("essentialcraft:entityegg", i))
 
-for (def it in magicalTier) GatewayHelpers.setTier(it, 5)
-for (def it in windTier) GatewayHelpers.setTier(it, 8)
-for (def it in industrialTier) GatewayHelpers.setTier(it, 11)
-for (def it in hoannaTier) GatewayHelpers.setTier(it, 13)
-for (def it in demonTier) GatewayHelpers.setTier(it, 15)
-for (def it in creativeItems) GatewayHelpers.setTier(it, 17)
-for (def it in unknownItems) GatewayHelpers.setTier(it, -1)
+for (def it in magicalTier) TooltipEvents.setTier(it, 5)
+for (def it in windTier) TooltipEvents.setTier(it, 8)
+for (def it in industrialTier) TooltipEvents.setTier(it, 11)
+for (def it in hoannaTier) TooltipEvents.setTier(it, 13)
+for (def it in demonTier) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 17)
+for (def it in unknownItems) TooltipEvents.setTier(it, -1)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)
-for (def it in inqDrops) GatewayHelpers.addTooltip(it, "Dropped by the Holographic Projection.")
-for (def it in hoannaLoot) GatewayHelpers.addTooltip(it, "Found in dungeons in Hoanna.")
-for (def it in hoannaBuildingLoot) GatewayHelpers.addTooltip(it, "Found in city ruins in Hoanna.")
-GatewayHelpers.addTooltip(item("essentialcraft:elementalsword"), "Made in Ember Forge.")
+for (def it in inqDrops) TooltipEvents.setTooltip(it, "Dropped by the Holographic Projection.")
+for (def it in hoannaLoot) TooltipEvents.setTooltip(it, "Found in dungeons in Hoanna.")
+for (def it in hoannaBuildingLoot) TooltipEvents.setTooltip(it, "Found in city ruins in Hoanna.")
+for (def it in 0..15) TooltipEvents.setTooltip(item("essentialcraft:essence", it), "Produced by the Crystal Extractor.")
+TooltipEvents.setTooltip(item("essentialcraft:magicalalloy"), "Made in the Magmatic Furnace or Magmatic Smeltery.")
+TooltipEvents.setTooltip(item("essentialcraft:elementalsword"), "Made in Ember Forge.")
+TooltipEvents.setUnlock(item("essentialcraft:windtablet"), 13)
 
 for (def tool in allTools) GatewayHelpers.banTool(tool)
 
@@ -213,4 +226,5 @@ JEI handler for Magmatic Smeltery and Magmatic Furnace
 JEI handler for Crystal Extractor
 JEI handler for crystal growth
 Soul Scriber (tier 2 -> tier 15)
+Wind Tablet (tier 11 -> end of tier 12)
 */

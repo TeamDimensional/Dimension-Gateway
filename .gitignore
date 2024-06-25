@@ -1,4 +1,5 @@
 *.jar
+!gatewaycore*.jar
 *.jar.disabled
 
 journeymap

@@ -1,24 +1,20 @@
-import net.minecraftforge.event.entity.player.ItemTooltipEvent
+import com.dimensional.gatewaycore.events.TooltipEvents
 
-import classes.GatewayHelpers
-
-event_manager.listen { ItemTooltipEvent event ->
-    def stack = event.getItemStack()
-    def tier = GatewayHelpers.getTier(stack)
-    if (tier == -1) {
-        event.getToolTip() << "${textformat('YELLOW').toString()}Future content${textformat('RESET')}".toString()
-    } else if (tier != 0) {
-        def color = GatewayHelpers.hasTier(event.getEntityPlayer(), tier) ? 'GREEN' : 'RED'
-        event.getToolTip() << "${textformat(color)}Tier: ${tier}${textformat('RESET')}".toString()
-    }
-
-    def tooltip = GatewayHelpers.getTooltip(stack)
-    if (tooltip != null) {
-        event.getToolTip() << tooltip
-    }
-
-    def unlock = GatewayHelpers.getUnlock(stack)
-    if (unlock != 0) {
-        event.getToolTip() << "${textformat('AQUA')}Unlocks tier ${unlock}${textformat('RESET')}".toString()
-    }
-}
+TooltipEvents.setTierName(1, "Beginnings")
+TooltipEvents.setTierName(2, "Temple Run")
+TooltipEvents.setTierName(3, "Metallurgy")
+TooltipEvents.setTierName(4, "The Evil Arc")
+TooltipEvents.setTierName(5, "Basics of Magic")
+TooltipEvents.setTierName(6, "Sky Exploration")
+TooltipEvents.setTierName(7, "Cosmic Engineering")
+TooltipEvents.setTierName(8, "Automation")
+TooltipEvents.setTierName(9, "Botanical Basics")
+TooltipEvents.setTierName(10, "Empowering")
+TooltipEvents.setTierName(11, "Industrial Revolution")
+TooltipEvents.setTierName(12, "Magic Advancements")
+TooltipEvents.setTierName(13, "Particle Manipulation")
+TooltipEvents.setTierName(14, "Elven Absolution")
+TooltipEvents.setTierName(15, "Demonic Embrace")
+TooltipEvents.setTierName(16, "Dragon Variation")
+TooltipEvents.setTierName(17, "Beyond Creativity")
+TooltipEvents.setTierName(18, "The End")
