@@ -20,6 +20,7 @@ patchouli_data.json
 config/codechicken/supporters.*
 config/dcMainMenu
 screenshots
+splash.properties
 
 BotaniaVars.dat
 tconstruct_oredictcache.dat
