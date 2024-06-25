@@ -16,7 +16,7 @@ def removeCrafting = [
     item("tconstruct:slimesling", 4), item("tconstruct:slimesling", 3),
     item("storagedrawers:keybutton"), item("storagedrawers:keybutton", 1),
     item("storagedrawers:keybutton", 2), item("storagedrawers:keybutton", 3),
-    item("storagedrawers:upgrade_storage", 1),
+    item("storagedrawers:upgrade_storage", 1), item("tconstruct:toolforge"),
     // Gate to tier 5
     item("essentialcraft:genitem", 1), item("essentialcraft:genitem", 25), item("essentialcraft:genitem", 26),
     // Gate to tier 8
