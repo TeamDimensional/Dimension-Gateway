@@ -1,1 +1,39 @@
-[]
+[
+    {
+        "mob": ["minecraft:creeper", "minecraft:enderman", "minecraft:witch", "essentialcraft:entitywindmage"],
+        "dimension": 0,
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:zombie_pigman", "minecraft:enderman"],
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:creeper"],
+        "mincount": {
+            "amount": 55,
+            "perplayer": true,
+            "mob": ["minecraft:creeper"]
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+      "dimension": -1,
+      "mob": "minecraft:creeper",
+      "block": "minecraft:nether_brick",
+      "result": "deny"
+    },
+    {
+        "mob": ["minecraft:ghast"],
+        "mincount": {
+            "amount": 5,
+            "perchunk": true,
+            "mob": ["minecraft:ghast"]
+        },
+        "dimension": -1,
+        "result": "deny"
+    }
+]
+  
