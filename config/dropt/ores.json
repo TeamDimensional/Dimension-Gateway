@@ -1,0 +1,54 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:gold_ore:0", "minecraft:iron_ore:0", "minecraft:coal_ore:0", "minecraft:lapis_ore:0",
+                        "minecraft:diamond_ore:0", "minecraft:redstone_ore:0", "minecraft:emerald_ore:0", "minecraft:quartz_ore:0",
+                        "essentialcraft:oredrops:6", "essentialcraft:oredrops:7", "essentialcraft:oredrops:8", "essentialcraft:oredrops:9",
+                        "essentialcraft:oremithriline:0", "immersiveengineering:ore:0", "immersiveengineering:ore:1",
+                        "immersiveengineering:ore:2", "immersiveengineering:ore:3", "immersiveengineering:ore:4", "immersiveengineering:ore:5",
+                        "mysticalworld:copper_ore:0", "mysticalworld:silver_ore:0", "mysticalworld:amethyst_ore:0",
+                        "theaurorian:auroriancoalore:0", "theaurorian:ceruleanore:0", "theaurorian:geodeore:0", "theaurorian:moonstoneore:0",
+                        "tconstruct:ore:0", "tconstruct:ore:1"
+                    ]
+                },
+                "harvester": {"type": "EXPLOSION"}
+            },
+            "drops": [{}]
+        },
+        {
+            "match": {"blocks": {"blocks": ["essentialcraft:oredrops:6"]}},
+            "replaceStrategy": "ADD",
+            "drops": [
+                {"selector": {"weight": {"value": 60}}},
+                {"selector": {"weight": {"value": 40, "fortuneModifier": 30}}, "item": {"items": ["essentialcraft:gem_elemental:0"]}}
+            ]
+        },
+        {
+            "match": {"blocks": {"blocks": ["essentialcraft:oredrops:7"]}},
+            "replaceStrategy": "ADD",
+            "drops": [
+                {"selector": {"weight": {"value": 60}}},
+                {"selector": {"weight": {"value": 40, "fortuneModifier": 30}}, "item": {"items": ["essentialcraft:gem_elemental:1"]}}
+            ]
+        },
+        {
+            "match": {"blocks": {"blocks": ["essentialcraft:oredrops:8"]}},
+            "replaceStrategy": "ADD",
+            "drops": [
+                {"selector": {"weight": {"value": 60}}},
+                {"selector": {"weight": {"value": 40, "fortuneModifier": 30}}, "item": {"items": ["essentialcraft:gem_elemental:2"]}}
+            ]
+        },
+        {
+            "match": {"blocks": {"blocks": ["essentialcraft:oredrops:9"]}},
+            "replaceStrategy": "ADD",
+            "drops": [
+                {"selector": {"weight": {"value": 60}}},
+                {"selector": {"weight": {"value": 40, "fortuneModifier": 30}}, "item": {"items": ["essentialcraft:gem_elemental:3"]}}
+            ]
+        }
+    ]
+}

@@ -20,7 +20,7 @@ def buildList(metal) {
 
 def copperItems = buildList("copper")
 def silverItems = buildList("silver")
-def amethystItems = buildToolList("amethyst") + [item("mysticalworld:epic_squid")]
+def amethystItems = buildToolList("amethyst")
 def tools = buildToolList("copper") + amethystItems + buildToolList("silver")
 for (type in ["gem", "block", "ore", "knife"])
     amethystItems.add(item("mysticalworld:amethyst_${type}"))
@@ -41,5 +41,6 @@ for (def it in amethystItems) TooltipEvents.setTier(it, 4)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)
 for (def it in tools) GatewayHelpers.banTool(it)
+TooltipEvents.setTier(item("mysticalworld:epic_squid"), 4)
 SpiritDrops.clear()
 crafting.remove("mysticalworld:ender_pearl")
