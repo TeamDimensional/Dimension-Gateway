@@ -116,6 +116,8 @@ def arcTier = [
     // jei
     item("immersiveengineering:stone_device", 2),
     item("immersiveengineering:metal_multiblock", 13),
+    item("immersiveengineering:graphite_electrode"),
+    item("immersiveengineering:fluorescent_tube"),
 ]
 
 def highVoltageTier = [
@@ -123,8 +125,6 @@ def highVoltageTier = [
     item("immersiveengineering:metal_decoration0", 7),
     item("immersiveengineering:metal_device1", 7),
     item("immersiveengineering:metal_device1", 13),
-    item("immersiveengineering:graphite_electrode"),
-    item("immersiveengineering:fluorescent_tube"),
     item("immersiveengineering:metal_device1", 8),
 ]
 
@@ -201,5 +201,5 @@ Engineer's Wire Cutters (tier 1 -> tier 3)
 Revolver Barrel (tier 3 -> tier 4)
 Revolver Drum (tier 3 -> tier 4)
 Revolver Hammer (tier 3 -> tier 4)
-Graphite Electrode (tier 3 -> tier 6)
+Graphite Electrode (tier 3 -> tier 4)
 */
