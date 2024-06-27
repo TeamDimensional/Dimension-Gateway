@@ -10,11 +10,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: build
-        run: python compile.py
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12' 
+      - name: build
+        run: python compile.py
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
