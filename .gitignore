@@ -22,6 +22,7 @@ config/dcMainMenu
 config/spark/tmp
 screenshots
 splash.properties
+local/client
 
 BotaniaVars.dat
 tconstruct_oredictcache.dat
