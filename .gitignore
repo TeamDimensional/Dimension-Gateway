@@ -23,8 +23,10 @@ config/spark/tmp
 screenshots
 splash.properties
 local/client
+local/ftbutilities
 
 BotaniaVars.dat
 tconstruct_oredictcache.dat
 transformerCache
 build
+backups
