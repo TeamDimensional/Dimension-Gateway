@@ -1,0 +1,113 @@
+{
+	"priority": 0,
+	"populate": {
+		"a_dirt": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "dirt",
+				"material": "theaurorian:aurorianstone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [424]
+			}
+		},
+
+        "peridotite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "theaurorian:aurorianperidotite",
+				"material": "theaurorian:aurorianstone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 5,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [424]
+			}
+        },
+        
+		"geode": {
+			"distribution": "uniform",
+			"cluster-count": 8,
+			"min-height": 5,
+			"max-height": 128,
+			"generator": {
+				"block": "theaurorian:geodeore",
+				"cluster-size": 7,
+				"material": [
+					"theaurorian:aurorianstone"
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [424]
+			}
+		},
+
+		"moonstone": {
+			"distribution": "gaussian",
+			"cluster-count": 5,
+			"center-height": 10,
+			"spread": 12,
+			"generator": {
+				"block": [
+					{"name": "theaurorian:ceruleanore", "weight": 60},
+					{"name": "theaurorian:moonstoneore", "weight": 40}
+				],
+				"cluster-size": 11,
+				"material": [
+					"theaurorian:aurorianstone"
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [424]
+			}
+		},
+
+		"a_coal": {
+			"distribution": "uniform",
+			"cluster-count": 8,
+			"min-height": 22,
+			"max-height": 128,
+			"generator": {
+				"block": ["theaurorian:auroriancoalore"],
+				"cluster-size": 16,
+				"material": [
+					"theaurorian:aurorianstone"
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [424]
+			}
+		},
+
+		"cerulean": {
+			"distribution": "cave",
+			"cluster-count": 7,
+			"generator": {
+				"block": "theaurorian:ceruleanore",
+				"cluster-size": 14,
+				"material": [
+					"theaurorian:aurorianstone"
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [424]
+			}
+		}
+    }
+}

@@ -8,7 +8,7 @@ forestItems = [
     item("naturesaura:gold_brick"), item("naturesaura:gold_fiber"), item("naturesaura:gold_leaf"),
     item("naturesaura:ancient_stick"), item("naturesaura:bottle_two_the_rebottling"), item("naturesaura:eye"), 
     item("naturesaura:token_joy"), item("naturesaura:token_fear"), item("naturesaura:token_anger"), item("naturesaura:token_sorrow"),
-    item("naturesaura:golden_leaves"), item("naturesaura:infused_slab_double"), item("naturesaura:infused_brick_slab_double"),
+    item("naturesaura:golden_leaves"),
 ]
 unobtainableItems = [item("naturesaura:decayed_leaves")]
 altarItems = [
@@ -20,6 +20,7 @@ altarItems = [
     item("naturesaura:infused_iron"), item("naturesaura:aura_cache"), item("naturesaura:farming_stencil"), item("naturesaura:birth_spirit"), 
     item("naturesaura:cave_finder"), item("naturesaura:hopper_upgrade"), item("naturesaura:aura_detector"),
     item("naturesaura:nature_altar"), item("naturesaura:range_visualizer"),
+    item("naturesaura:infused_slab_double"), item("naturesaura:infused_brick_slab_double"),
 ]
 
 // the botanist's tools are not disabled due to their custom abilities
@@ -56,7 +57,7 @@ def setBottleTier(name, tier) {
     def predicate = stack -> {
         return stack in bottle
     }
-    TooltipEvents.addTierPredicate(predicate, tier)
+    TooltipEvents.addTierPredicate("aura:" + name, predicate, tier)
 }
 
 for (def it in forestItems) TooltipEvents.setTier(it, 2)

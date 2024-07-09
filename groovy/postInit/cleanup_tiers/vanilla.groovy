@@ -21,10 +21,12 @@ def goldItems = [
 def redstoneItems = [
     item("minecraft:redstone_ore"), item("minecraft:redstone"), item("minecraft:repeater"),
     item("minecraft:redstone_torch"), item("minecraft:comparator"), item("minecraft:redstone_lamp"),
-    item("minecraft:redstone_block"), item("minecraft:piston"), item("minecraft:observer"),
+    item("minecraft:redstone_block"),  item("minecraft:observer"),
     item("minecraft:noteblock"), item("minecraft:dropper"), item("minecraft:dispenser"),
-    item("minecraft:clock"), item("minecraft:compass"), item("minecraft:sticky_piston")
+    item("minecraft:clock"), item("minecraft:compass"),
 ]
+// Pistons are moved into Tier 2 even though they require redstone to support certain crafting methods
+def pistons = [item("minecraft:piston"), item("minecraft:sticky_piston")]
 def emeraldItems = [
     item("minecraft:emerald_ore"), item("minecraft:emerald"), item("minecraft:emerald_block")
 ]
@@ -76,6 +78,7 @@ def waterPotion = item("minecraft:potion").withNbt(["Potion": "minecraft:water"]
 
 for (def it in lapisItems) TooltipEvents.setTier(it, 2)
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)
+for (def it in pistons) TooltipEvents.setTier(it, 2)
 for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
 for (def it in goldItems) TooltipEvents.setTier(it, 3)
 for (def it in emeraldItems) TooltipEvents.setTier(it, 4)
@@ -86,7 +89,7 @@ for (def it in potionItems) TooltipEvents.setTier(it, 4)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 TooltipEvents.setTier(item("minecraft:beacon"), 15)
 TooltipEvents.setTier(item("minecraft:bedrock"), 0)
-TooltipEvents.addTierPredicate(s -> s in waterPotion, 1)
+TooltipEvents.addTierPredicate("waterbottle", s -> s in waterPotion, 1)
 
 furnace.removeByOutput(item("minecraft:iron_nugget"))
 furnace.removeByOutput(item("minecraft:gold_nugget"))

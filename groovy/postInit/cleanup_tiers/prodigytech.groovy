@@ -2,7 +2,7 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
 baseItems = [
-    item("prodigytech:explosion_furnace"), item("prodigytech:magmatic_aeroheater"), item("prodigytech:solid_fuel_aeroheater"),
+    item("prodigytech:explosion_furnace"), item("prodigytech:magmatic_aeroheater"),
     item("prodigytech:incinerator"), item("prodigytech:blower_furnace"),
     item("prodigytech:capacitor_charger"), item("prodigytech:ash_bricks"), item("prodigytech:ash"), 
     item("prodigytech:air_funnel"), item("prodigytech:linear_extractor"), item("prodigytech:ferramic_block"),
@@ -19,6 +19,7 @@ gearItems = [
     item("prodigytech:meat_patty"), item("prodigytech:carbon_plate_block"), item("prodigytech:ferramic_handbow"),
     item("prodigytech:purified_food"), item("prodigytech:heat_sawmill"), item("prodigytech:carbon_plate"),
     item("prodigytech:fuel_pellet_1"), item("prodigytech:fuel_pellet_4"), item("prodigytech:fuel_pellet_16"), item("prodigytech:fuel_pellet_64"),
+    item("prodigytech:solid_fuel_aeroheater"),
 ]
 
 redstoneItems = [
@@ -64,6 +65,7 @@ for (def it in zorrasteelItems) TooltipEvents.setTier(it, 11)
 /*
 Recipes needed:
 - Explosion Furnace (tier 1 -> tier 2)
+- Solid Fuel Aeroheater (tier 2 -> tier 3)
 - Energion Aeroheater (tier 3 -> tier 11)
 - Automatic Crystal Cutter (tier 3 -> tier 11)
 - Circuit Plate (tier 1 -> tier 3)

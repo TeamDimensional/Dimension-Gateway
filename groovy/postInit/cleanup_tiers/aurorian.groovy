@@ -126,10 +126,7 @@ for (def it in moonItems + crystallineItems) TooltipEvents.setTier(it, 3)
 for (def it in steelItems) TooltipEvents.setTier(it, 3)  // tentative
 for (def it in unknownItems) TooltipEvents.setTier(it, -1)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
-for (def it in removedTools) {
-    GatewayHelpers.banTool(it)
-    crafting.removeByOutput(it)
-}
+for (def it in removedTools) GatewayHelpers.banTool(it)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 for (def it in runestoneLoot) TooltipEvents.setTooltip(it, "Found in the Runestone Temple in Aurorian.")
 for (def it in darkstoneLoot) TooltipEvents.setTooltip(it, "Found in the Darkstone Temple in Aurorian.")

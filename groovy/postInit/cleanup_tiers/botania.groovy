@@ -200,7 +200,7 @@ def setFlowerTier(name, tier) {
     def predicate = stack -> {
         return stack in flower || stack in flower2 || stack in flower3 || stack in flower4
     }
-    TooltipEvents.addTierPredicate(predicate, tier)
+    TooltipEvents.addTierPredicate("flower:" + name, predicate, tier)
 }
 
 def setFloatingFlowerTier(name, tier) {
@@ -209,7 +209,7 @@ def setFloatingFlowerTier(name, tier) {
     def predicate = stack -> {
         return stack in flower2 || stack in flower4
     }
-    TooltipEvents.addTierPredicate(predicate, tier)
+    TooltipEvents.addTierPredicate("fflower:" + name, predicate, tier)
 }
 
 for (def it in tier1Flowers) setFlowerTier(it, 9)

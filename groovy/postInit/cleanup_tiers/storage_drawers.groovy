@@ -1,7 +1,7 @@
 import classes.GatewayHelpers
 import com.dimensional.gatewaycore.events.TooltipEvents
 
-def redstoneItems = [item("storagedrawers:compdrawers")]
+def redstoneItems = []
 for (int i in 0..2) redstoneItems.add(item("storagedrawers:upgrade_redstone", i))
 def controllerItems = [item("storagedrawers:controller"), item("storagedrawers:controllerslave")]
 for (int i in 0..3) controllerItems.add(item("storagedrawers:keybutton", i))
@@ -15,6 +15,7 @@ for (def it in controllerItems) TooltipEvents.setTier(it, 4)
 for (def it in basicUpgrades) TooltipEvents.setTier(it, 4)
 for (def it in advancedUpgrades) TooltipEvents.setTier(it, 5)
 for (def it in creativeUpgrades) TooltipEvents.setTier(it, 17)
+TooltipEvents.setTier(item("storagedrawers:compdrawers"), 2)
 
 /*
 recipes needed:
