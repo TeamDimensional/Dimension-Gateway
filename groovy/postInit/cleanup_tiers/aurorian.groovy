@@ -3,13 +3,12 @@ import classes.GatewayHelpers
 
 def moonTempleLoot = [
     item("theaurorian:crystallinepickaxe"), item("theaurorian:crystallinesword"), item("theaurorian:crystallineshield"),
-    item("theaurorian:absorptionorb"), item("theaurorian:moontemplecellkeyfragment"), item("theaurorian:scrapcrystalline"),
-    item("theaurorian:trophymoonqueen"),
+    item("theaurorian:moontemplecellkeyfragment"), item("theaurorian:scrapcrystalline"), item("theaurorian:trophymoonqueen"),
 ]
 def darkstoneLoot = [
     item("theaurorian:umbrapickaxe"), item("theaurorian:umbrasword"), item("theaurorian:umbrashield"),
     item("theaurorian:darkamulet"), item("theaurorian:scrapumbra"), item("theaurorian:spikedchestplate"),
-    item("theaurorian:trophyspider"),
+    item("theaurorian:trophyspider"), item("theaurorian:absorptionorb"),
 ]
 def runestoneLoot = [
     item("theaurorian:aurorianiteaxe"), item("theaurorian:aurorianitepickaxe"), item("theaurorian:aurorianitesword"),
