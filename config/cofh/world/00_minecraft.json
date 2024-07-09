@@ -136,40 +136,9 @@
 			}
 		},
 
-		"copper": {
-			"distribution": "uniform",
-			"cluster-count": 7,
-			"min-height": 36,
-			"max-height": 72,
-			"generator": {
-				"block": [
-					{"name": "immersiveengineering:ore", "properties": {"type": "copper"}}
-				],
-				"cluster-size": 11,
-				"material": [
-					"minecraft:stone"
-				]
-			}
-		},
-
-		"aluminum": {
-			"distribution": "cave",
-			"cluster-count": 7,
-			"generator": {
-				"block": [
-					{"name": "minecraft:iron_ore", "weight": 45},
-					{"name": "immersiveengineering:ore", "properties": {"type": "aluminum"}, "weight": 55}
-				],
-				"cluster-size": 14,
-				"material": [
-					"minecraft:stone"
-				]
-			}
-		},
-
 		"iron": {
 			"distribution": "cave",
-			"cluster-count": 10,
+			"cluster-count": 7,
 			"generator": {
 				"block": "minecraft:iron_ore",
 				"cluster-size": 14,
@@ -196,23 +165,6 @@
 				"value": [
 					-1,
 					1
-				]
-			}
-		},
-
-		"galena": {
-			"distribution": "gaussian",
-			"cluster-count": 4,
-			"center-height": 18,
-			"spread": 16,
-			"generator": {
-				"block": [
-					{"name": "immersiveengineering:ore", "properties": {"type": "silver"}, "weight": 50},
-					{"name": "immersiveengineering:ore", "properties": {"type": "lead"}, "weight": 50}
-				],
-				"cluster-size": 13,
-				"material": [
-					"minecraft:stone"
 				]
 			}
 		},
@@ -261,34 +213,6 @@
 				"cluster-size": 14
 			},
 			"cluster-count": 12,
-			"ground-level": 128,
-			"retrogen": false,
-			"biome": {
-				"restriction": "whitelist",
-				"value": [
-					{
-						"type": "dictionary",
-						"entry": "NETHER"
-					}
-				]
-			},
-			"dimension": "all"
-		},
-
-		"elemental": {
-			"distribution": "cave",
-			"generator": {
-				"block": [
-					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "water"}},
-					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "air"}},
-					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "earth"}},
-					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "fire"}}
-				],
-				"material": "minecraft:netherrack",
-				"cluster-size": 13
-			},
-			"ceiling": true,
-			"cluster-count": 14,
 			"ground-level": 128,
 			"retrogen": false,
 			"biome": {

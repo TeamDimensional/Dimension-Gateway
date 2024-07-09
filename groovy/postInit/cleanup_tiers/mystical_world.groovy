@@ -36,7 +36,7 @@ def hideFromJei = [
 
 for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
 for (def it in amethystItems) TooltipEvents.setTier(it, 4)
-for (def it in hideFromJei) mods.jei.ingredient.hide(it)
+for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)
 for (def it in tools) GatewayHelpers.banTool(it)
 TooltipEvents.setTier(item("mysticalworld:epic_squid"), 4)

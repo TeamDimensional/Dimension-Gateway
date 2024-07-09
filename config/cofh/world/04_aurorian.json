@@ -1,5 +1,4 @@
 {
-	"priority": 0,
 	"populate": {
 		"a_dirt": {
 			"distribution": "uniform",

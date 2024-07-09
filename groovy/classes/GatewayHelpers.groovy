@@ -15,4 +15,9 @@ class GatewayHelpers {
     }
 
     static void run() {}
+
+    static void hide(ItemStack itemStack) {
+        TooltipEvents.setTier(itemStack, 0)
+        mods.jei.ingredient.hide(itemStack)
+    }
 }

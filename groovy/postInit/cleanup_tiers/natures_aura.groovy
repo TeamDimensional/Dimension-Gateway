@@ -67,7 +67,7 @@ for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in automationItems) TooltipEvents.setTier(it, 8)
 for (def it in unobtainableItems) TooltipEvents.setTier(it, 0)
 for (def it in removedItems) crafting.removeByOutput(it)
-for (def it in hiddenItems) mods.jei.ingredient.hide(it)
+for (def it in hiddenItems) GatewayHelpers.hide(it)
 
 setBottleTier("overworld", 2)
 setBottleTier("nether", 2)

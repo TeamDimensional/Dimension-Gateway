@@ -189,7 +189,7 @@ for (def it in arcTier) TooltipEvents.setTier(it, 4)
 for (def it in highVoltageTier) TooltipEvents.setTier(it, 6)
 for (def it in revolverItems) TooltipEvents.setTier(it, 4)
 for (def it in creativeItems) TooltipEvents.setTier(it, 17)
-for (def it in hideFromJei) mods.jei.ingredient.hide(it)
+for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def tool in steelTools) GatewayHelpers.banTool(tool)
 

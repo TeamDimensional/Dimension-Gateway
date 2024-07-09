@@ -159,7 +159,7 @@ for (def it in tier2Items) TooltipEvents.setTier(it, 12)
 for (def it in tier3Items) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in removeThese) crafting.removeByOutput(it)
-for (def it in hideFromJei) mods.jei.ingredient.hide(it)
+for (def it in hideFromJei) GatewayHelpers.hide(it)
 
 TooltipEvents.setUnlock(item("botania:altar"), 9)
 TooltipEvents.setUnlock(item("botania:alfheimportal"), 14)

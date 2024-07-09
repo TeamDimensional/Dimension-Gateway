@@ -51,7 +51,7 @@ for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
 for (def it in shulkerItems) TooltipEvents.setTier(it, 6)
 
 for (def it in removedItems) {
-    mods.jei.ingredient.hide(it)
+    GatewayHelpers.hide(it)
     crafting.removeByOutput(it)
 }
 for (def it in removedRecipes) crafting.remove(it)

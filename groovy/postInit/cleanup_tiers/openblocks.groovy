@@ -57,7 +57,7 @@ for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in opItems) TooltipEvents.setTier(it, 16)
 for (def it in removedItems) crafting.removeByOutput(it)
-for (def it in hideFromJei) mods.jei.ingredient.hide(it)
+for (def it in hideFromJei) GatewayHelpers.hide(it)
 
 // Golden Egg uses metadata
 // TODO: this script causes a JVM runtime failure and tons of ASM spam, investigate why

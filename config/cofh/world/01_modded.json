@@ -1,0 +1,114 @@
+{
+    "populate": {
+        
+
+		"copper": {
+			"distribution": "uniform",
+			"cluster-count": 7,
+			"min-height": 36,
+			"max-height": 72,
+			"generator": {
+				"block": [
+					{"name": "thermalfoundation:ore", "properties": {"type": "copper"}}
+				],
+				"cluster-size": 11,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"aluminum": {
+			"distribution": "cave",
+			"cluster-count": 6,
+			"generator": {
+				"block": [
+					{"name": "minecraft:iron_ore", "weight": 45},
+					{"name": "thermalfoundation:ore", "properties": {"type": "aluminum"}, "weight": 55}
+				],
+				"cluster-size": 14,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"galena": {
+			"distribution": "gaussian",
+			"cluster-count": 4,
+			"center-height": 18,
+			"spread": 16,
+			"generator": {
+				"block": [
+					{"name": "thermalfoundation:ore", "properties": {"type": "silver"}, "weight": 50},
+					{"name": "thermalfoundation:ore", "properties": {"type": "lead"}, "weight": 50}
+				],
+				"cluster-size": 13,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		},
+
+		"elemental": {
+			"distribution": "cave",
+			"generator": {
+				"block": [
+					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "water"}},
+					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "air"}},
+					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "earth"}},
+					{"name": "essentialcraft:oredrops", "weight": 25, "properties": {"dimension": "nether", "type": "fire"}}
+				],
+				"material": "minecraft:netherrack",
+				"cluster-size": 13
+			},
+			"ceiling": true,
+			"cluster-count": 14,
+			"ground-level": 128,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "NETHER"
+					}
+				]
+			},
+			"dimension": "all"
+		},
+
+		"tin": {
+			"distribution": "uniform",
+			"min-height": 24,
+			"max-height": 54,
+			"generator": {
+				"block": [
+					{"name": "thermalfoundation:ore", "properties": {"type": "tin"}}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 13
+			},
+			"cluster-count": 6,
+			"retrogen": false
+		},
+
+		"nickel": {
+			"distribution": "gaussian",
+			"cluster-count": 3,
+			"center-height": 12,
+			"spread": 8,
+			"generator": {
+				"block": [
+					{"name": "thermalfoundation:ore", "properties": {"type": "nickel"}, "weight": 40},
+					{"name": "minecraft:iron_ore", "weight": 60}
+				],
+				"cluster-size": 10,
+				"material": [
+					"minecraft:stone"
+				]
+			}
+		}
+
+    }
+}
