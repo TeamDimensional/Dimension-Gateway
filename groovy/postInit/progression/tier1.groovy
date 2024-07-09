@@ -14,6 +14,15 @@ crafting.shapedBuilder()
         .key("B", item("minecraft:netherbrick")).key("C", item("minecraft:clay_ball")).key("S", ore("sandstone"))
         .register()
 
+// Kiln
+crafting.remove("immersiveengineering:stone_decoration/alloybrick")
+crafting.shapedBuilder()
+        .name("tier1/kiln_brick")
+        .output(item("immersiveengineering:stone_decoration", 10) * 2)
+        .matrix("BS", "SB")
+        .key("B", item("minecraft:netherbrick")).key("S", ore("sandstone"))
+        .register()
+
 // Pyre
 crafting.remove("roots:pyre")
 crafting.shapedBuilder()
@@ -26,19 +35,11 @@ crafting.shapedBuilder()
 // Elemental Crystals
 crafting.remove("essentialcraft:gem_elemental")
 mods.roots.pyre.recipeBuilder()
+    .name("tier1/elemental_block")
     .input(item("essentialcraft:compressed"), item("essentialcraft:compressed", 1), item("essentialcraft:compressed", 2),
            item("essentialcraft:compressed", 3), ore("gunpowder"))
     .output(item("essentialcraft:compressed", 4) * 4)
     .burnTime(300)
-    .register()
-
-// Seared Brick
-furnace.removeByOutput(item("tconstruct:materials"))
-mods.roots.pyre.recipeBuilder()
-    .input(item("minecraft:brick"), item("minecraft:brick"), item("minecraft:netherbrick"),
-           item("minecraft:netherbrick"), ore("fuelCoke"))
-    .output(item("tconstruct:materials") * 8)
-    .burnTime(200)
     .register()
 
 // Pure Daisy

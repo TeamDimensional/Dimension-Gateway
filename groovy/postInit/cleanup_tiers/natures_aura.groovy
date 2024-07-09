@@ -77,17 +77,13 @@ setBottleTier("end", 6)
 /*
 Recipes needed:
 Natural Altar (tier 3 -> tier 4)
-Gold Powder (cannot be made in the crafting table)
 Hopper Enhancement (tier 6 -> tier 4)
 Aura Field Creator (tier 6 -> tier 8)
 Offering Table (tier 4 -> tier 6)
-Environmental Eye (tier 3 -> tier 2)
 Brilliant Fiber (tier 3 -> tier 2)
 Gold Leaf/Gold Leaves JEI, Bottles JEI
-Bottle and Cork (tier 1 -> tier 2)
 Spirit of Calling (tier 4 -> tier 6)
 Powder of the Bountiful Core (tier 4 -> tier 6)
 Spirit of Birthing JEI
-Token of Anger (tier 6 -> tier 2)
 Staff of Shadows (tier 6 -> tier 4)
 */

@@ -115,7 +115,7 @@ def hideFromJei = [
     item("theaurorian:lavendercrop"), item("theaurorian:silkberrycrop"), item("theaurorian:crystallinesprite"),
     item("theaurorian:aurorianfurnacelit"), item("theaurorian:aurorianportal"), item("theaurorian:webbing"),
     item("theaurorian:tamoltencerulean"),item("theaurorian:tamoltenmoonstone"), item("theaurorian:tamoltenauroriansteel"),
-] + removedTools
+]
 for (def it in ["keeper", "moonqueen", "spider"]) hideFromJei.add(item("theaurorian:bossspawner${it}"))
 
 for (def it in generalItems) TooltipEvents.setTier(it, 2)
@@ -131,12 +131,5 @@ for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 for (def it in runestoneLoot) TooltipEvents.setTooltip(it, "Found in the Runestone Temple in Aurorian.")
 for (def it in darkstoneLoot) TooltipEvents.setTooltip(it, "Found in the Darkstone Temple in Aurorian.")
 for (def it in moonTempleLoot) TooltipEvents.setTooltip(it, "Found in the Moon Temple in Aurorian.")
-
-/*
-recipes needed:
-- make silentwood planks, fix silentwood stick recipe, similar to nature's aura
-- remove recipe for aurorian stone
-- new recipe for the aurorian portal frame
-*/
 
 TooltipEvents.setUnlock(item("theaurorian:aurorianportalframebricks"), 2)

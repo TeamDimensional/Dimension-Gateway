@@ -64,7 +64,6 @@ for (def it in zorrasteelItems) TooltipEvents.setTier(it, 11)
 
 /*
 Recipes needed:
-- Explosion Furnace (tier 1 -> tier 2)
 - Solid Fuel Aeroheater (tier 2 -> tier 3)
 - Energion Aeroheater (tier 3 -> tier 11)
 - Automatic Crystal Cutter (tier 3 -> tier 11)
@@ -74,5 +73,5 @@ Recipes needed:
 - Heat Capacitor T1 (tier 3 -> tier 2)
 - Heat Capacitor T3 (tier 4 -> tier 11)
 - Energion (tier 4 -> tier 11)
-- Crystal Cutter (tier 1 -> tier 11)
+- Crystal Cutter (tier 3 -> tier 11)
 */

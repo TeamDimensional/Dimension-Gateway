@@ -1,6 +1,17 @@
 import classes.GatewayHelpers
 import com.dimensional.gatewaycore.events.TooltipEvents
 
+def searedItems = [
+    item("tconstruct:materials"), item("tconstruct:faucet"), item("tconstruct:channel"), item("tconstruct:smeltery_io"),
+    item("tconstruct:casting"), item("tconstruct:tinker_tank_controller"), item("tconstruct:seared_glass"),
+    item("tconstruct:seared_furnace_controller"), item("tconstruct:casting:1")
+]
+for (int i in 2..11) searedItems.add(item("tconstruct:seared", i))
+for (int i in 2..11) searedItems.add(item("tconstruct:seared_slab", i))
+for (int i in 0..2) searedItems.add(item("tconstruct:seared_tank", i))
+for (def i in ["paver", "brick", "brick_cracked", "brick_fancy", "brick_square", "brick_triangle", "brick_small", "road", "tile", "creeper"])
+    searedItems.add(item("tconstruct:seared_stairs_${i}"))
+
 def requiresSmeltery = [
     item("tconstruct:casting", 1), item("tconstruct:firewood"), item("tconstruct:firewood", 1),
     item("tconstruct:nuggets", 3), item("tconstruct:nuggets", 4), item("tconstruct:nuggets", 5),
@@ -11,6 +22,7 @@ def requiresSmeltery = [
     item("tconstruct:slime_channel", 3), item("tconstruct:slime_boots", 3),
     item("tconstruct:slime", 3), item("tconstruct:slime_congealed", 3), item("tconstruct:edible", 3),
     item("tconstruct:clear_glass"), item("tconstruct:fancy_frame", 6), item("tconstruct:seared"), item("tconstruct:seared", 1),
+    item("tconstruct:seared_slab"), item("tconstruct:seared_slab", 1), item("tconstruct:seared_stairs_stone"), item("tconstruct:seared_stairs_cobble"),
 ]
 for (int i in 0..15) requiresSmeltery.add(item("tconstruct:clear_stained_glass", i))
 for (int i in 0..4) requiresSmeltery.add(item("tconstruct:cast_custom", i))
@@ -65,6 +77,7 @@ chores needed:
 - redo all materials...........
 */
 
+for (def it in searedItems) TooltipEvents.setTier(it, 2)
 for (def it in requiresSmeltery) TooltipEvents.setTier(it, 3)
 for (def it in requiresFey) TooltipEvents.setTier(it, 3)
 for (def it in requiresGemstones) TooltipEvents.setTier(it, 4)

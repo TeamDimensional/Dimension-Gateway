@@ -58,7 +58,7 @@
 		"moonstone": {
 			"distribution": "gaussian",
 			"cluster-count": 5,
-			"center-height": 10,
+			"center-height": 14,
 			"spread": 12,
 			"generator": {
 				"block": [

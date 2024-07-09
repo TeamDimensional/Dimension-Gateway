@@ -21,7 +21,7 @@ redstoneItems = [
 ]
 
 gemstoneItems = [
-    item("openblocks:village_highlighter"), item("openblocks:block_breaker"), item("openblocks:luggage"), item("openblocks:dev_null"),
+    item("openblocks:village_highlighter"), item("openblocks:block_breaker"), item("openblocks:luggage"),
 ]
 
 obsidianItems = [
@@ -31,7 +31,7 @@ obsidianItems = [
 enderItems = [
     item("openblocks:builder_guide"), item("openblocks:vacuum_hopper"), item("openblocks:imaginary"), item("openblocks:sky"),
     item("openblocks:sky", 1), item("openblocks:generic", 9), item("openblocks:cartographer"), item("openblocks:imaginary", 1),
-    item("openblocks:pencil_glasses"), item("openblocks:crayon_glasses"), item("openblocks:golden_eye"),
+    item("openblocks:pencil_glasses"), item("openblocks:crayon_glasses"),
 ]
 for (int i in 0..15) enderItems.add(item("openblocks:elevator", i))
 for (int i in 0..15) enderItems.add(item("openblocks:elevator_rotating", i))
@@ -41,7 +41,7 @@ opItems = [
 ]
 
 removedItems = [
-    item("openblocks:golden_egg"), item("openblocks:generic", 4), item("openblocks:tasty_clay"),
+    item("openblocks:golden_egg"), item("openblocks:generic", 4), item("openblocks:tasty_clay"), item("openblocks:dev_null"),
 ]
 
 hideFromJei = [item("openblocks:serious_glasses")] + removedItems
@@ -59,13 +59,18 @@ for (def it in opItems) TooltipEvents.setTier(it, 16)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)
 
+// Golden Egg uses metadata
+// TODO: this script causes a JVM runtime failure and tons of ASM spam, investigate why
+/*
+def eggPredicate = stack -> {
+    String name = stack.getItem().getUnlocalizedName(stack)
+    return name != null && name.equals("item.openblocks.golden_eye".toString())
+}
+TooltipEvents.addTierPredicate("golden_eye", eggPredicate, 6)
+*/
+
 /*
 Recipes needed:
-- Sponge coloring -> oredict
-- XP shower (tier 5 -> tier 1)
-- Line, Beam (tier 1 -> tier 3)
-- Dev Null (tier 1 -> tier 4)
 - Healer (tier 16)
-- Remove unused enchantments
 - Fix mod config
 */

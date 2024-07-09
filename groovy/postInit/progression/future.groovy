@@ -2,16 +2,13 @@ import classes.GatewayHelpers
 import com.dimensional.gatewaycore.events.TooltipEvents
 
 def removeCrafting = [
-    // Gate to tier 2
-    item("tconstruct:smeltery_controller"),
     // Gate to tier 3
     item("immersiveengineering:stone_decoration", 1), item("immersiveengineering:material", 11), item("immersiveengineering:material", 12),
     item("immersiveengineering:material", 10), item("immersiveengineering:tool", 1), item("tconstruct:materials", 18),
-    item("tconstruct:casting", 1),
     item("immersiveengineering:connector", 2), item("immersiveengineering:connector", 3),
     item("immersiveengineering:connector", 4), item("immersiveengineering:connector", 5),
     item("roots:grove_stone"), item("roots:fey_crafter"), item("prodigytech:solid_fuel_aeroheater"),
-    item("immersiveengineering:material", 8), item("immersiveengineering:material", 13),
+    item("immersiveengineering:material", 8), item("immersiveengineering:material", 13), item("prodigytech:circuit_plate"),
     // Gate to tier 4
     item("tconstruct:materials", 15), item("roots:gramary"), item("roots:herb_pouch"),
     item("tconstruct:slimesling"), item("tconstruct:slimesling", 1), item("tconstruct:slimesling", 2),
