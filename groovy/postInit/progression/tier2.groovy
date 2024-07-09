@@ -36,7 +36,7 @@ mods.naturesaura.ritual.recipeBuilder()
     .input(item("naturesaura:aura_bottle").withNbt(["stored_type": "naturesaura:nether"]),
            item("naturesaura:gold_leaf"), item("minecraft:blaze_powder"), item("minecraft:magma"),
            item("minecraft:gunpowder"), item("theaurorian:soullessflesh"))
-    .output(item("naturesaura:token_anger"))
+    .output(item("naturesaura:token_anger") * 2)
     .time(200)
     .sapling(item("minecraft:sapling"))
     .register()
@@ -77,3 +77,8 @@ mods.roots.pyre.recipeBuilder()
     .output(item("tconstruct:materials") * 4)
     .burnTime(160)
     .register()
+
+// Gold Leaf info
+mods.jei.description.add(item("naturesaura:golden_leaves"),
+                         ["Spreads to the nearby Leaves blocks when grown.", "Only fully grown Leaves can drop Gold Leaf!"])
+mods.jei.description.add(item("naturesaura:gold_leaf"), ["Only fully grown Leaves can drop Gold Leaf!"])
