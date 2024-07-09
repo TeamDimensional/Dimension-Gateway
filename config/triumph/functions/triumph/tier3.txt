@@ -1,0 +1,2 @@
+gamestage silentadd @p tier3
+summon minecraft:fireworks_rocket ~ ~ ~

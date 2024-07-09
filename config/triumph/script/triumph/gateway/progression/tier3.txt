@@ -1,0 +1,20 @@
+
+//Set icon item
+setIcon(<tconstruct:smeltery_controller>)
+
+//Set title String
+setTitle("Metallurgy")
+
+//Set description String
+setDescription("Create a Smeltery Controller")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:gateway/progression/tier2")
+
+//Set the position
+setPos(107,17)
+
+criteria = addCriteria("hasSmeltery", "minecraft:inventory_changed")
+criteria.setItem("tconstruct:smeltery_controller")
+
+addRewardFunction("triumph:tier3")
