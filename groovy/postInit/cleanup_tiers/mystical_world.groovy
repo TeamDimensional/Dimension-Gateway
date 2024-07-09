@@ -32,10 +32,8 @@ for (type in ["block", "slab", "stairs", "wall", "button", "pressure_plate", "fe
 def removeItems = [item("mysticalworld:pearleporter")]
 def hideFromJei = [
     item("mysticalworld:unripe_pearl"), item("mysticalworld:quartz_ore"), item("mysticalworld:granite_quartz_ore")
-] + removeItems
+] + removeItems + copperItems + silverItems
 
-for (def it in copperItems) TooltipEvents.setTier(it, 2)
-for (def it in silverItems) TooltipEvents.setTier(it, 3)
 for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
 for (def it in amethystItems) TooltipEvents.setTier(it, 4)
 for (def it in hideFromJei) mods.jei.ingredient.hide(it)

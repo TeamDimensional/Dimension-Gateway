@@ -65,6 +65,21 @@ for (int i in [0, 1, 2, 3, 10, 11, 15, 17]) {
 }
 for (def part in ["feet", "legs", "chest", "head"]) steelItems.add(item("immersiveengineering:steel_armor_${part}"))
 
+// Plates/Wires/Dusts are gated to tier 3, even if the metal itself is available earlier (Iron/Copper/Aluminum)
+def gatedPlateItems = [
+    item("immersiveengineering:metal_decoration0"), item("immersiveengineering:material", 20), item("immersiveengineering:material", 22),
+    item("immersiveengineering:metal_device0", 4), item("immersiveengineering:metal_device0", 6), item("immersiveengineering:metal_device1", 6),
+    item("immersiveengineering:jerrycan"), item("immersiveengineering:toolbox"),
+]
+// uranium excluded from 4 below
+for (int i in 9..19) if (i != 14) gatedPlateItems.add(item("immersiveengineering:metal", i)) // dusts
+for (int i in 30..40) if (i != 35) gatedPlateItems.add(item("immersiveengineering:metal", i)) // plates
+for (int i in 0..10) if (i != 5) gatedPlateItems.add(item("immersiveengineering:sheetmetal", i))
+for (int i in 0..10) if (i != 5) gatedPlateItems.add(item("immersiveengineering:sheetmetal_slab", i))
+for (int i in 0..7) if (i != 3) gatedPlateItems.add(item("immersiveengineering:wirecoil", i)) // hemp excluded
+for (def i in ["feet", "legs", "chest", "head"]) gatedPlateItems.add(item("immersiveengineering:faraday_suit_${i}"))
+// lantern excluded because it can be found in villages
+
 def mainMod = [
     // blast furnace
     item("immersiveengineering:stone_decoration", 1), item("immersiveengineering:stone_decoration_slab", 1),
@@ -169,6 +184,7 @@ for (def it in steelItems) TooltipEvents.setTier(it, 3)
 for (def it in goldItems) TooltipEvents.setTier(it, 3)
 for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
 for (def it in mainMod) TooltipEvents.setTier(it, 3)
+for (def it in gatedPlateItems) TooltipEvents.setTier(it, 3)
 for (def it in arcTier) TooltipEvents.setTier(it, 4)
 for (def it in highVoltageTier) TooltipEvents.setTier(it, 6)
 for (def it in revolverItems) TooltipEvents.setTier(it, 4)

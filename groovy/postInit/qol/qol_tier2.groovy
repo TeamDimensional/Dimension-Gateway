@@ -1,6 +1,7 @@
 // Make silentwood great again
 ore("plankWood").add(item("theaurorian:silentwoodplanks"))
 ore("logWood").add(item("theaurorian:silentwoodlog"))
+ore("stickWood").add(item("theaurorian:silentwoodstick"))
 
 crafting.remove("theaurorian:blocks/tileentity/silentwoodcraftingtable")
 crafting.shapedBuilder()
