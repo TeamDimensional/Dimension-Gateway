@@ -69,7 +69,7 @@ def run(dev: bool = False, suffix: str = ""):
 
 
 if __name__ == "__main__":
-    version1 = run(dev=False)
+    version1 = run(dev=False, suffix="-normal")
     version2 = run(dev=True, suffix="-dev")
-    shutil.move("dimension-gateway-" + version1 + ".zip", "build")
+    shutil.move("dimension-gateway-" + version1 + "-normal.zip", "build")
     shutil.move("dimension-gateway-" + version2 + "-dev.zip", "build")

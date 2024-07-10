@@ -20,6 +20,15 @@ jobs:
         with:
           name: curseforge-build
           path: |
-            build/dimension-gateway*.zip
+            build/dimension-gateway*-normal.zip
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: curseforge-build-dev
+          path: |
+            build/dimension-gateway*-dev.zip
       - name: Upload
         uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/dimension-gateway*.zip
