@@ -15,9 +15,11 @@ jobs:
           python-version: '3.12' 
       - name: build
         run: python compile.py
-      - name: Archive production artifacts
+      - name: Archive artifacts
         uses: actions/upload-artifact@v4
         with:
           name: curseforge-build
           path: |
             build/dimension-gateway*.zip
+      - name: Upload
+        uses: softprops/action-gh-release@v2
