@@ -13,8 +13,7 @@ def quartzItems = [
 ]
 def goldItems = [
     item("minecraft:gold_ore"), item("minecraft:gold_nugget"), item("minecraft:gold_ingot"), item("minecraft:gold_block"),
-    item("minecraft:light_weighted_pressure_plate"),
-    item("minecraft:golden_apple"), item("minecraft:speckled_melon"), item("minecraft:golden_carrot"),
+    item("minecraft:light_weighted_pressure_plate"), item("minecraft:speckled_melon"), item("minecraft:golden_carrot"),
     item("minecraft:golden_helmet"), item("minecraft:golden_chestplate"),
     item("minecraft:golden_leggings"), item("minecraft:golden_boots")
 ]
