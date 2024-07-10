@@ -22,6 +22,28 @@
 				]
 			}
 		},
+	
+		"clay": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": "clay",
+				"material": "minecraft:stone",
+				"cluster-size": 18
+			},
+			"cluster-count": 3,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
 
 		"gravel": {
 			"distribution": "uniform",
