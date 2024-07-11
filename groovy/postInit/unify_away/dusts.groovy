@@ -16,21 +16,26 @@ CrusherHelper.builder()
 mods.prodigytech.rotary_grinder.removeByInput(ore("logWood"))
 mods.prodigytech.rotary_grinder.removeByInput(ore("plankWood"))
 
+def fixedSawmillRecipes = []
+
 mods.prodigytech.heat_sawmill.streamRecipes()
     .filter(r -> r.getSecondaryOutput() in item("prodigytech:sawdust") && r.getInput() != null && !r.getInput().isEmpty())
     .forEach(recipe -> {
-        mods.prodigytech.heat_sawmill.recipeBuilder()
-            .input(recipe.getInput())
-            .output(recipe.getOutput(), item("thermalfoundation:material", 800))
-            .register()
-    })
-    // Don't do removeAll because the new recipe overrides the old one
+        def newRecipe = 
+            mods.prodigytech.heat_sawmill.recipeBuilder()
+                .input(recipe.getInput())
+                .output(recipe.getOutput(), item("thermalfoundation:material", 800))
+        fixedSawmillRecipes.add(newRecipe)
+    }).removeAll()
 
 mods.prodigytech.heat_sawmill.removeByInput(ore("plankWood"))
 mods.prodigytech.heat_sawmill.recipeBuilder()
     .input(ore("plankWood"))
     .output(item("minecraft:stick") * 4, item("thermalfoundation:material", 800))
     .register()
+for (def it in fixedSawmillRecipes) {
+    it.register()
+}
 
 ore("dustWood").remove(item("prodigytech:sawdust"))
 GatewayHelpers.hide(item("prodigytech:sawdust"))
@@ -83,7 +88,6 @@ crafting.remove("prodigytech:storage/iron_dust_tiny")
 mods.prodigytech.rotary_grinder.removeByInput(ore("nuggetIron"))
 GatewayHelpers.hide(item("prodigytech:iron_dust"))
 GatewayHelpers.hide(item("prodigytech:iron_dust_tiny"))
-// TODO: check tinker's and furnace
 
 // Gold Dust - keeping the Tiny Dust for Solderer purposes
 crafting.remove("prodigytech:storage/gold_dust_tiny_combine")
@@ -95,4 +99,3 @@ crafting.shapedBuilder()
         .register()
 ore("dustGold").remove(item("prodigytech:gold_dust"))
 GatewayHelpers.hide(item("prodigytech:gold_dust"))
-// TODO: check tinker's and furnace
