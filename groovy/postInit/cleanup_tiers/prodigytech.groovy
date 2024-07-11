@@ -13,8 +13,7 @@ baseItems = [
 gearItems = [
     item("prodigytech:ferramic_gear"), item("prodigytech:sawdust"), item("prodigytech:enriched_fuel"),
     item("prodigytech:rotary_grinder"), item("prodigytech:particle_board"), item("prodigytech:particle_board_planks"),
-    item("prodigytech:meat_ground"), item("prodigytech:coal_dust"),
-    item("prodigytech:quartz_dust"), item("prodigytech:ferramic_dust"), item("prodigytech:ferramic_dust_tiny"),
+    item("prodigytech:meat_ground"), item("prodigytech:quartz_dust"), item("prodigytech:ferramic_dust"), item("prodigytech:ferramic_dust_tiny"),
     item("prodigytech:funnelling_extractor"), item("prodigytech:dispersing_extractor"), item("prodigytech:food_purifier"),
     item("prodigytech:meat_patty"), item("prodigytech:carbon_plate_block"), item("prodigytech:ferramic_handbow"),
     item("prodigytech:purified_food"), item("prodigytech:heat_sawmill"), item("prodigytech:carbon_plate"),
@@ -27,7 +26,7 @@ redstoneItems = [
     item("prodigytech:ore_refinery"), item("prodigytech:fuel_processor"), item("prodigytech:food_enricher"),
     item("prodigytech:inferno_fuel"), item("prodigytech:inferno_crystal"), item("prodigytech:circuit_plate"),
     item("prodigytech:circuit_crude"), item("prodigytech:circuit_refined"),
-    item("prodigytech:sugar_cube"), item("prodigytech:gold_dust"), item("prodigytech:gold_dust_tiny"),
+    item("prodigytech:sugar_cube"), item("prodigytech:gold_dust_tiny"),
     item("prodigytech:pattern_circuit_crude"), item("prodigytech:pattern_circuit_refined"),
 ]
 
