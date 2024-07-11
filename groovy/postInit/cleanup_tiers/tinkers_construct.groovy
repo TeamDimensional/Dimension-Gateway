@@ -2,7 +2,7 @@ import classes.GatewayHelpers
 import com.dimensional.gatewaycore.events.TooltipEvents
 
 def searedItems = [
-    item("tconstruct:materials"), item("tconstruct:faucet"), item("tconstruct:channel"), item("tconstruct:smeltery_io"),
+    item("tconstruct:faucet"), item("tconstruct:channel"), item("tconstruct:smeltery_io"),
     item("tconstruct:casting"), item("tconstruct:tinker_tank_controller"), item("tconstruct:seared_glass"),
     item("tconstruct:seared_furnace_controller"), item("tconstruct:casting:1"), item("tconstruct:toolforge"),
 ]
