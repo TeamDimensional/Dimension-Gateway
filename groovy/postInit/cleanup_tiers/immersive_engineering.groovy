@@ -67,8 +67,8 @@ for (int i in [0, 1, 2]) metallurgyTier.add(item("immersiveengineering:bullet", 
 for (int i in 0..13) metallurgyTier.add(item("immersiveengineering:toolupgrade", i))
 for (def i in ["chest", "head", "legs", "feet"]) metallurgyTier.add(item("immersiveengineering:faraday_suit_${i}"))
 
-def hideFromJei = [item("immersiveengineering:coresample")] + uraniumItems
-def removeRecipes = [] + slabs
+def removeRecipes = [] + slabs + uraniumItems
+def hideFromJei = [item("immersiveengineering:coresample")] + removeRecipes
 def creativeItems = [item("immersiveengineering:metal_device0", 3)]
 
 for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)

@@ -24,8 +24,8 @@ def tier3Items = [
 for (int i in [0, 1, 2, 4]) tier3Items.add(item("thermalfoundation:storage_alloy", i))
 for (int i in [0, 1, 24, 25, 32, 33, 64, 65, 66, 67, 68, 69, 96, 97, 98, 99, 100, 130, 131, 133, 160, 161, 162, 164,
                194, 195, 197, 224, 225, 226, 228, 256, 257, 258, 259, 260, 261, 288, 289, 290, 291, 292,
-               320, 321, 322, 323, 324, 325, 352, 353, 354, 355, 356, 512,
-               768, 769, 771, 772, 800, 866, 1024]) tier3Items.add(item("thermalfoundation:material", i))
+               320, 321, 322, 323, 324, 325, 352, 353, 354, 355, 356, 768, 769, 771, 772, 800, 866, 1024])
+    tier3Items.add(item("thermalfoundation:material", i))
 
 def tier4Items = []
 for (int i in [16, 17, 26, 27]) tier4Items.add(item("thermalfoundation:material", i))
@@ -48,7 +48,7 @@ for (int i in [0, 1, 33]) techTierItems.add(item("thermalfoundation:upgrade", i)
 for (int i in [0, 1, 64, 65, 66, 67, 68, 69, 70, 96, 97, 98, 99, 100, 101, 102, 103]) techTierItems.add(item("thermalfoundation:coin", i))
 for (int i in 0..15) techTierItems.add(item("thermalfoundation:dye", i))
 for (int i in [70, 101, 102, 103, 134, 165, 166, 167, 198, 229, 230, 231, 262, 293, 294, 295,
-               326, 357, 358, 359, 513, 514, 515, 801, 816, 817, 818, 819, 832, 833, 865])
+               326, 357, 358, 359, 513, 514, 515, 801, 816, 817, 818, 819, 832, 833, 865, 512])
     techTierItems.add(item("thermalfoundation:material", i))
 
 def betweenlandsItems = []
