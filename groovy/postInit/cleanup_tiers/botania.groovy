@@ -84,7 +84,7 @@ for (int i in 0..7) {
 for (def it in equipmentItems) tier2Items.add(item("botania:terrasteel${it}"))
 for (int i in 1..8) tier2Items.add(item("botania:altar", i))
 
-def industrialTier = [item("botania:quartz", 3), item("botania:quartz", 4)] + getQuartzList("lavender") + getQuartzList("blaze")
+def industrialTier = [item("botania:quartz", 3), item("botania:quartz", 4)] + getQuartzList("lavender") + getQuartzList("red")
 
 def gaiaDrops = [
     item("botania:recordgaia1"), item("botania:recordgaia2"), item("botania:manaresource", 5)

@@ -48,3 +48,11 @@ crafting.shapedBuilder()
         .key("L", item("minecraft:leather")).key("S", ore("stickWood")).key("M", ore("ingotMoonstone"))
         .mirrored()
         .register()
+
+// Fix Plant Fiber -> String since it's already oredicted as that
+crafting.remove("theaurorian:items/stringfromplantfiber")
+crafting.shapelessBuilder()
+        .name("tier2/qol/fiber")
+        .output(item("minecraft:string") * 3)
+        .input(item("theaurorian:plantfiber"), item("theaurorian:plantfiber"), item("theaurorian:plantfiber"))
+        .register()

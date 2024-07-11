@@ -10,7 +10,7 @@ for (def it in armorPieces) invarArmor.add(item("thermalfoundation:armor.${it}_i
 def tier2Items = [
     item("thermalfoundation:ore"), item("thermalfoundation:ore", 1),
     item("thermalfoundation:storage"), item("thermalfoundation:storage", 1),
-    item("thermalfoundation:storage_alloy", 3), item("thermalfoundation:storage_resource"), item("thermalfoundation:storage_resource", 1),
+    item("thermalfoundation:storage_alloy", 3), item("thermalfoundation:storage_resource", 1),
     item("thermalfoundation:wrench"),
 ] + bronzeArmor
 for (int i in [0, 1, 2, 3, 5]) tier2Items.add(item("thermalfoundation:ore_fluid", i))

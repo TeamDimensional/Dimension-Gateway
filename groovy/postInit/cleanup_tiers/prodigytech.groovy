@@ -26,7 +26,7 @@ redstoneItems = [
     item("prodigytech:ore_refinery"), item("prodigytech:fuel_processor"), item("prodigytech:food_enricher"),
     item("prodigytech:inferno_fuel"), item("prodigytech:inferno_crystal"), item("prodigytech:circuit_plate"),
     item("prodigytech:circuit_crude"), item("prodigytech:circuit_refined"),
-    item("prodigytech:sugar_cube"), item("prodigytech:gold_dust_tiny"),
+    item("prodigytech:sugar_cube"), item("prodigytech:gold_dust_tiny"), item("prodigytech:pattern_circuit_perfected"),
     item("prodigytech:pattern_circuit_crude"), item("prodigytech:pattern_circuit_refined"),
 ]
 
@@ -41,7 +41,7 @@ enderItems = [
 energionItems = [
     item("prodigytech:energion_aeroheater"), item("prodigytech:automatic_crystal_cutter"), item("prodigytech:primordialis_reactor"),
     item("prodigytech:atomic_reshaper"), item("prodigytech:crystal_cutter"), item("prodigytech:primordium"),
-    item("prodigytech:aeternus_crystal"), item("prodigytech:circuit_perfected"), item("prodigytech:pattern_circuit_perfected"),
+    item("prodigytech:aeternus_crystal"), item("prodigytech:circuit_perfected"),
     item("prodigytech:energion_crystal_seed"), item("prodigytech:energion_dust"),
 ]
 

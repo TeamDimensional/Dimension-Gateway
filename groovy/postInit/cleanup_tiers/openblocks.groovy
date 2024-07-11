@@ -61,13 +61,10 @@ for (def it in hideFromJei) GatewayHelpers.hide(it)
 
 // Golden Egg uses metadata
 // TODO: this script causes a JVM runtime failure and tons of ASM spam, investigate why
-/*
 def eggPredicate = stack -> {
-    String name = stack.getItem().getUnlocalizedName(stack)
-    return name != null && name.equals("item.openblocks.golden_eye".toString())
+    return false
 }
 TooltipEvents.addTierPredicate("golden_eye", eggPredicate, 6)
-*/
 
 /*
 Recipes needed:

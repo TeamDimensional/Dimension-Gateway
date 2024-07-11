@@ -18,6 +18,9 @@ def removeCrafting = [
     item("storagedrawers:upgrade_storage", 1), item("minecraft:brewing_stand"), item("roots:staff"),
     // Gate to tier 5
     item("essentialcraft:genitem", 1), item("essentialcraft:genitem", 25), item("essentialcraft:genitem", 26), item("essentialcraft:bound_gem"),
+    // Gate to tier 7
+    item("thermalfoundation:material", 801), item("thermalfoundation:material", 512), item("thermalfoundation:material", 513),
+    item("thermalfoundation:material", 514), item("thermalfoundation:material", 515),
     // Gate to tier 8
     item("botania:altar"),
     // Gate to tier 9

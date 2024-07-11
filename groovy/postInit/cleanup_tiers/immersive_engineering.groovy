@@ -52,11 +52,12 @@ def arcTier = [
 for (int i in [18, 19]) arcTier.add(item("immersiveengineering:material", i))
 
 def hvTier = [
-    item("immersiveengineering:metal_device1", 7), item("immersiveengineering:metal_device1", 13),
-    item("immersiveengineering:wirecoil", 2),
+    item("immersiveengineering:metal_device1", 7), item("immersiveengineering:wirecoil", 2),
 ]
 for (int i in [2, 6, 7]) hvTier.add(item("immersiveengineering:metal_decoration0", i))
 for (int i in [4, 5, 8]) hvTier.add(item("immersiveengineering:connector", i))
+
+def tier7Items = [item("immersiveengineering:metal_device1", 13)]
 
 metallurgyTier += [
     item("immersiveengineering:metal_device1", 10), item("immersiveengineering:metal_device1", 11),
@@ -74,7 +75,13 @@ def creativeItems = [item("immersiveengineering:metal_device0", 3)]
 for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
 for (def it in arcTier) TooltipEvents.setTier(it, 4)
 for (def it in hvTier) TooltipEvents.setTier(it, 6)
+for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def tool in steelTools) GatewayHelpers.banTool(tool)
+
+crafting.remove("immersiveengineering:stone_decoration/blastbrick_reinforced_slab_back")
+crafting.remove("immersiveengineering:stone_decoration/alloybrick_slab_back")
+crafting.remove("immersiveengineering:stone_decoration/cokebrick_slab_back")
+crafting.remove("immersiveengineering:stone_decoration/blastbrick_slab_back")
