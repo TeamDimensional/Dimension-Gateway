@@ -41,7 +41,6 @@ for (def name in ["copper", "aluminum", "lead", "silver", "nickel", "constantan"
 }
 for (int i in 0..7) {
     furnace.removeByOutput(item("immersiveengineering:metal", i))
-    mods.immersiveengineering.arc_furnace.removeByOutput(item("immersiveengineering:metal", i))
     GatewayHelpers.hide(item("immersiveengineering:metal", i))
 }
 mods.immersiveengineering.alloy_kiln.removeByOutput(item("immersiveengineering:metal", 6))
