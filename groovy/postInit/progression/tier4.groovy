@@ -49,3 +49,16 @@ crafting.shapedBuilder()
         .matrix("G", "T", "G")
         .key("G", ore("plateGold")).key("T", item("storagedrawers:upgrade_storage", 1))
         .register()
+
+// Natural Altar
+mods.naturesaura.ritual.removeByOutput(item("naturesaura:nature_altar"))
+/*
+mods.naturesaura.ritual.recipeBuilder()
+    .name("tier4/nat_altar")
+    .input(item("minecraft:stone"), item("minecraft:stone"), item("roots:runic_dust"), item("naturesaura:gold_leaf"),
+           item("naturesaura:token_joy"), DIAMATINE, DIAMATINE)
+    .output(item("naturesaura:eye"))
+    .time(250)
+    .sapling(item("minecraft:sapling", 2))
+    .register()
+*/

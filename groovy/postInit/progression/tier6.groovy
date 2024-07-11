@@ -46,3 +46,14 @@ crafting.shapedBuilder()
         .key("W", item("immersiveengineering:material", 22)).key("S", ore("ingotSkysteel")).key("R", item("immersiveengineering:material", 2))
         .register()
 */
+
+// Powder of Bountiful Core
+bountyPowder = item('naturesaura:effect_powder').withNbt(['effect': 'naturesaura:ore_spawn'])
+mods.naturesaura.ritual.removeByOutput(bountyPowder)
+mods.naturesaura.ritual.recipeBuilder()
+    .name("tier6/bounty_powder")
+    .input(item("naturesaura:gold_powder"), item("naturesaura:gold_powder"), item("naturesaura:sky_ingot"), item("minecraft:redstone_ore"))
+    .output(bountyPowder * 4)
+    .time(250)
+    .sapling(item("minecraft:sapling", 1))
+    .register()

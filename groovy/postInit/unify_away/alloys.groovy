@@ -24,6 +24,8 @@ def steel = item("thermalfoundation:material", 160)
 // Constantan
 def constantan = item("thermalfoundation:material", 164)
 crafting.remove("thermalfoundation:material_3")
+mods.immersiveengineering.arc_furnace.removeByOutput(item("immersiveengineering:metal", 6))
+mods.immersiveengineering.arc_furnace.removeByOutput(item("immersiveengineering:metal", 7))
 AlloyHelper.builder()
     .name("alloy/constantan")
     .output(constantan * 2)
