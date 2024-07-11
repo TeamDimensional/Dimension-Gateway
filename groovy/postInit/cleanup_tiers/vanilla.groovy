@@ -50,7 +50,7 @@ def endItems = [
     item("minecraft:skull", 5), item("minecraft:chorus_plant"), item("minecraft:chorus_flower"), item("minecraft:end_crystal"),
     item("minecraft:ender_pearl"), item("minecraft:ender_eye"), item("minecraft:chorus_fruit"), item("minecraft:chorus_fruit_popped"),
     item("minecraft:end_rod"), item("minecraft:dragon_breath"), item("minecraft:lingering_potion"), item("minecraft:shulker_shell"),
-    item("minecraft:tipped_arrow"), item("minecraft:ender_chest")
+    item("minecraft:tipped_arrow"), item("minecraft:ender_chest"), item("minecraft:elytra"),
 ] + shulkerBoxes
 
 def potionItems = [

@@ -1,221 +1,80 @@
 import classes.GatewayHelpers
 import com.dimensional.gatewaycore.events.TooltipEvents
 
-def buildList(index) {
-    def output = [
-        item("immersiveengineering:storage", index), item("immersiveengineering:storage_slab", index),
-        item("immersiveengineering:sheetmetal", index), item("immersiveengineering:sheetmetal_slab", index),
-    ]
-    for (int i in [index, index + 9, index + 20, index + 30]) output.add(item("immersiveengineering:metal", i))
-    return output
-}
-
-def buildListOre(index) {
-    def output = buildList(index)
-    output.add(item("immersiveengineering:ore", index))
-    return output
-}
-
-
-def copperItems = buildListOre(0)
-copperItems += [
-    item("immersiveengineering:metal_decoration0"), item("immersiveengineering:material", 20),
-    item("immersiveengineering:wirecoil"), item("immersiveengineering:wirecoil", 6),
-    item("immersiveengineering:bullet", 1),
+def uraniumItems = [
+    item("immersiveengineering:sheetmetal", 5), item("immersiveengineering:sheetmetal_slab", 5),
 ]
 
-def leadItems = buildListOre(2)
-leadItems += [
-    item("immersiveengineering:stone_decoration", 7), item("immersiveengineering:stone_decoration_slab", 7),
-    item("immersiveengineering:stone_decoration_stairs_concrete_leaded")
-]
-
-def silverItems = buildListOre(3)
-def nickelItems = buildListOre(4)
-def uraniumItems = buildListOre(5)
-def constantanItems = buildList(6)
-def electrumItems = buildList(7)
-
-electrumItems += [
-    item("immersiveengineering:metal_decoration0", 1), item("immersiveengineering:material", 21),
-    item("immersiveengineering:wirecoil", 1), item("immersiveengineering:wirecoil", 7),
-]
+def slabs = []
+for (int i in [0, 1, 2, 10]) slabs.add(item("immersiveengineering:stone_decoration_slab", i))
 
 def steelTools = []
 for (def part in ["pickaxe", "shovel", "axe", "hoe", "sword"]) {
     steelTools.add(item("immersiveengineering:${part}_steel"))
 }
+def steelArmor = []
+for (def part in ["feet", "legs", "chest", "head"]) steelArmor.add(item("immersiveengineering:steel_armor_${part}"))
 
-def steelItems = buildList(8) + steelTools
-
-steelItems += [
-    item("immersiveengineering:material", 2), item("immersiveengineering:material", 23),
-    item("immersiveengineering:wirecoil", 4), item("immersiveengineering:wirecoil", 2),
-    item("immersiveengineering:metal_ladder", 1), item("immersiveengineering:tool", 1),
-    item("immersiveengineering:shield"), item("immersiveengineering:maintenance_kit"),
-    item("immersiveengineering:metal_decoration0", 2),
-]
-for (int i in 0..2) steelItems.add(item("immersiveengineering:steel_scaffolding_stairs${i}"))
-for (int i in 1..3) steelItems.add(item("immersiveengineering:metal_decoration1_slab", i))
-for (int i in 0..7) steelItems.add(item("immersiveengineering:mold", i))
-for (int i in [0, 1, 2, 3, 10, 11, 15, 17]) {
-    int idKey = i / 10 + 1
-    int meta = i % 10
-    steelItems.add(item("immersiveengineering:metal_decoration${idKey}", meta))
-}
-for (def part in ["feet", "legs", "chest", "head"]) steelItems.add(item("immersiveengineering:steel_armor_${part}"))
-
-// Plates/Wires/Dusts are gated to tier 3, even if the metal itself is available earlier (Iron/Copper/Aluminum)
-def gatedPlateItems = [
-    item("immersiveengineering:metal_decoration0"), item("immersiveengineering:material", 20), item("immersiveengineering:material", 22),
-    item("immersiveengineering:metal_device0", 4), item("immersiveengineering:metal_device0", 6), item("immersiveengineering:metal_device1", 6),
-    item("immersiveengineering:jerrycan"), item("immersiveengineering:toolbox"),
-]
-// uranium excluded from 4 below
-for (int i in 9..19) if (i != 14) gatedPlateItems.add(item("immersiveengineering:metal", i)) // dusts
-for (int i in 30..40) if (i != 35) gatedPlateItems.add(item("immersiveengineering:metal", i)) // plates
-for (int i in 0..10) if (i != 5) gatedPlateItems.add(item("immersiveengineering:sheetmetal", i))
-for (int i in 0..10) if (i != 5) gatedPlateItems.add(item("immersiveengineering:sheetmetal_slab", i))
-for (int i in 0..7) if (i != 3) gatedPlateItems.add(item("immersiveengineering:wirecoil", i)) // hemp excluded
-for (def i in ["feet", "legs", "chest", "head"]) gatedPlateItems.add(item("immersiveengineering:faraday_suit_${i}"))
-// lantern excluded because it can be found in villages
-
-def mainMod = [
-    // blast furnace
-    item("immersiveengineering:stone_decoration", 1), item("immersiveengineering:stone_decoration_slab", 1),
-    // kinetic gens
-    item("immersiveengineering:metal_device1", 2),
-    item("immersiveengineering:wooden_device1", 0), item("immersiveengineering:material", 10),
-    item("immersiveengineering:wooden_device1", 1), item("immersiveengineering:material", 11),
-    item("immersiveengineering:metal_device1", 3),
-    item("immersiveengineering:material", 12),
-    // engineering blocks
-    item("immersiveengineering:metal_decoration0", 3),
-    item("immersiveengineering:metal_decoration0", 4),
-    item("immersiveengineering:metal_decoration0", 5),
-    // capacitors
-    item("immersiveengineering:metal_device0"),
-    item("immersiveengineering:metal_device0", 1),
-    item("immersiveengineering:metal_device0", 2),
-    // things that use mechanical components
-    item("immersiveengineering:material", 8),
-    item("immersiveengineering:material", 9),
-    item("immersiveengineering:metal_device0", 5),
-    // misc
-    item("immersiveengineering:metal_device1", 1),
-    item("immersiveengineering:metal_device1", 4),
-    item("immersiveengineering:metal_device1", 5),
-    item("immersiveengineering:metal_device1", 9),
-    item("immersiveengineering:tool", 2),
+def metallurgyTier = [
+    item("immersiveengineering:storage", 8), item("immersiveengineering:stone_decoration", 1), item("immersiveengineering:stone_decoration", 7),
+    item("immersiveengineering:stone_decoration", 8), item("immersiveengineering:stone_decoration_slab", 7),
+    item("immersiveengineering:stone_decoration_stairs_concrete_leaded"), item("immersiveengineering:metal_ladder", 1),
+    item("immersiveengineering:conveyor"), item("immersiveengineering:tool", 1), item("immersiveengineering:tool", 2),
+    item("immersiveengineering:toolbox"), item("immersiveengineering:drill"),
+    item("immersiveengineering:drillhead"), item("immersiveengineering:drillhead", 1), item("immersiveengineering:jerrycan"),
+    item("immersiveengineering:powerpack"), item("immersiveengineering:shield"), item("immersiveengineering:maintenance_kit"),
     item("immersiveengineering:skyhook"),
-    item("immersiveengineering:powerpack"),
-    // machines, shown in JEI
-    item("immersiveengineering:stone_device", 1),
-    item("immersiveengineering:metal_multiblock", 1),
-    item("immersiveengineering:metal_multiblock"),
-    item("immersiveengineering:metal_multiblock", 1),
-    item("immersiveengineering:metal_multiblock", 5),
-    item("immersiveengineering:metal_multiblock", 6),
-    item("immersiveengineering:metal_multiblock", 7),
-    item("immersiveengineering:metal_multiblock", 8),
-    item("immersiveengineering:metal_multiblock", 9),
-    item("immersiveengineering:metal_multiblock", 15),
-]
-for (int i in 0..13) mainMod.add(item("immersiveengineering:connector", i))
-for (int i in [7, 13, 17, 18, 19, 24, 25, 26, 27]) mainMod.add(item("immersiveengineering:material", i))
+] + steelTools + steelArmor
+for (int i in [2, 3, 5, 6, 7]) metallurgyTier.add(item("immersiveengineering:wooden_device0", i))
+for (int i in [0, 1]) metallurgyTier.add(item("immersiveengineering:wooden_device1", i))
+for (int i in [0, 1, 2, 3, 4, 6, 7, 8, 9, 10]) {
+    metallurgyTier.add(item("immersiveengineering:sheetmetal", i))
+    metallurgyTier.add(item("immersiveengineering:sheetmetal_slab", i))
+}
+for (int i in [0, 1, 3, 4, 5]) metallurgyTier.add(item("immersiveengineering:metal_decoration0", i))
+for (int i in [0, 1, 2, 3]) {
+    metallurgyTier.add(item("immersiveengineering:metal_decoration1", i))
+    metallurgyTier.add(item("immersiveengineering:metal_decoration1_slab", i))
+}
+for (int i in [0, 1, 5, 6]) metallurgyTier.add(item("immersiveengineering:metal_decoration2", i))
+for (int i in [0, 1, 2]) metallurgyTier.add(item("immersiveengineering:steel_scaffolding_stairs${i}"))
+for (int i in [0, 1, 2, 3, 6, 7, 9, 10, 11, 12, 13]) metallurgyTier.add(item("immersiveengineering:connector", i))
+for (int i in [0, 1, 2, 4, 5, 6]) metallurgyTier.add(item("immersiveengineering:metal_device0", i))
+for (int i in [1, 2, 3, 4, 5, 6, 8, 9]) metallurgyTier.add(item("immersiveengineering:metal_device1", i))
+for (int i in [2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25, 26, 27]) metallurgyTier.add(item("immersiveengineering:material", i))
+for (int i in [0, 1, 3, 4, 5, 6, 7]) metallurgyTier.add(item("immersiveengineering:wirecoil", i))
+for (int i in 0..7) metallurgyTier.add(item("immersiveengineering:mold", i))
 
 def arcTier = [
-    // reinforced blast furnace
-    item("immersiveengineering:stone_decoration", 2), item("immersiveengineering:stone_decoration_slab", 2),
-    item("immersiveengineering:metal_device1"),
-    // jei
-    item("immersiveengineering:stone_device", 2),
-    item("immersiveengineering:metal_multiblock", 13),
-    item("immersiveengineering:graphite_electrode"),
-    item("immersiveengineering:fluorescent_tube"),
+    item("immersiveengineering:stone_decoration", 2), item("immersiveengineering:metal_device1"),
+    item("immersiveengineering:graphite_electrode"), item("immersiveengineering:fluorescent_tube"),
 ]
+for (int i in [18, 19]) arcTier.add(item("immersiveengineering:material", i))
 
-def highVoltageTier = [
-    item("immersiveengineering:metal_decoration0", 6),
-    item("immersiveengineering:metal_decoration0", 7),
-    item("immersiveengineering:metal_device1", 7),
-    item("immersiveengineering:metal_device1", 13),
-    item("immersiveengineering:metal_device1", 8),
+def hvTier = [
+    item("immersiveengineering:metal_device1", 7), item("immersiveengineering:metal_device1", 13),
+    item("immersiveengineering:wirecoil", 2),
 ]
+for (int i in [2, 6, 7]) hvTier.add(item("immersiveengineering:metal_decoration0", i))
+for (int i in [4, 5, 8]) hvTier.add(item("immersiveengineering:connector", i))
 
-def redstoneItems = [
-    item("immersiveengineering:wooden_device0", 3), item("immersiveengineering:wooden_device0", 6),
-    item("immersiveengineering:wooden_device0", 7), item("immersiveengineering:conveyor"),
-    item("immersiveengineering:wirecoil", 5),
-]
-def goldItems = [
-    item("immersiveengineering:sheetmetal", 10), item("immersiveengineering:sheetmetal_slab", 10),
-]
-
-def revolverItems = [
-    item("immersiveengineering:metal_device1", 10),
-    item("immersiveengineering:metal_device1", 11),
+metallurgyTier += [
+    item("immersiveengineering:metal_device1", 10), item("immersiveengineering:metal_device1", 11),
     item("immersiveengineering:revolver"), item("immersiveengineering:speedloader"),
-    item("immersiveengineering:bullet"), item("immersiveengineering:bullet", 2),
     item("immersiveengineering:chemthrower"), item("immersiveengineering:railgun"),
 ]
-for (int i in 3..13) revolverItems.add(item("immersiveengineering:toolupgrade", i))
-for (int i in [14, 15, 16]) revolverItems.add(item("immersiveengineering:material", i))
+for (int i in [0, 1, 2]) metallurgyTier.add(item("immersiveengineering:bullet", i))
+for (int i in 0..13) metallurgyTier.add(item("immersiveengineering:toolupgrade", i))
+for (def i in ["chest", "head", "legs", "feet"]) metallurgyTier.add(item("immersiveengineering:faraday_suit_${i}"))
 
+def hideFromJei = [item("immersiveengineering:coresample")] + uraniumItems
+def removeRecipes = [] + slabs
 def creativeItems = [item("immersiveengineering:metal_device0", 3)]
-def removedItems = [
-    item("immersiveengineering:drill"), item("immersiveengineering:drillhead"), item("immersiveengineering:drillhead:1"),
-    item("immersiveengineering:toolupgrade"),
-    item("immersiveengineering:toolupgrade", 1),
-    item("immersiveengineering:toolupgrade", 2),
-]
-def hideFromJei = [
-    item("immersiveengineering:coresample")
-] + removedItems
 
-for (def it in copperItems) TooltipEvents.setTier(it, 2)
-for (def it in silverItems) TooltipEvents.setTier(it, 3)
-for (def it in leadItems) TooltipEvents.setTier(it, 3)
-for (def it in nickelItems) TooltipEvents.setTier(it, 3)
-for (def it in uraniumItems) TooltipEvents.setTier(it, -1)
-for (def it in constantanItems) TooltipEvents.setTier(it, 3)
-for (def it in electrumItems) TooltipEvents.setTier(it, 3)
-for (def it in steelItems) TooltipEvents.setTier(it, 3)
-for (def it in goldItems) TooltipEvents.setTier(it, 3)
-for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
-for (def it in mainMod) TooltipEvents.setTier(it, 3)
-for (def it in gatedPlateItems) TooltipEvents.setTier(it, 3)
+for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
 for (def it in arcTier) TooltipEvents.setTier(it, 4)
-for (def it in highVoltageTier) TooltipEvents.setTier(it, 6)
-for (def it in revolverItems) TooltipEvents.setTier(it, 4)
+for (def it in hvTier) TooltipEvents.setTier(it, 6)
 for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-for (def it in removedItems) crafting.removeByOutput(it)
+for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def tool in steelTools) GatewayHelpers.banTool(tool)
-
-/*
-Needed recipes:
-Coke Brick and Kiln Brick - should require Nether
-Blast Brick (tier 1 -> tier 3)
-Reinforced Blast Brick (tier 3 -> tier 4)
-Windmill (tier 1 -> tier 3)
-Generator block (tier 3 -> tier 6)
-Radiator block (tier 3 -> tier 6)
-All connectors (tiers 1 and 2 -> tier 3)
-Creative capacitor
-Blast Furnace Preheater (tier 3 -> tier 4)
-Core Sample Drill (tier 3 -> tier 6)
-Tesla Coil (tier 3 -> tier 6)
-Garden Cloche (tier 3 -> tier 6)
-Chutes that are called "Conveyor" in code (tier 1, 2 -> tier 3)
-Iron Mechanical Component (tier 2 -> tier 3)
-Waterwheel Segment (tier 1 -> tier 3)
-Windmill Blade (tier 1 -> tier 3)
-Windmill Sail (tier 1 -> tier 3)
-Wooden Grip (tier 2 -> tier 3)
-Engineer's Wire Cutters (tier 1 -> tier 3)
-Revolver Barrel (tier 3 -> tier 4)
-Revolver Drum (tier 3 -> tier 4)
-Revolver Hammer (tier 3 -> tier 4)
-Graphite Electrode (tier 3 -> tier 4)
-*/

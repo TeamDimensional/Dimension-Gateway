@@ -4,7 +4,7 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 def searedItems = [
     item("tconstruct:materials"), item("tconstruct:faucet"), item("tconstruct:channel"), item("tconstruct:smeltery_io"),
     item("tconstruct:casting"), item("tconstruct:tinker_tank_controller"), item("tconstruct:seared_glass"),
-    item("tconstruct:seared_furnace_controller"), item("tconstruct:casting:1")
+    item("tconstruct:seared_furnace_controller"), item("tconstruct:casting:1"), item("tconstruct:toolforge"),
 ]
 for (int i in 2..11) searedItems.add(item("tconstruct:seared", i))
 for (int i in 2..11) searedItems.add(item("tconstruct:seared_slab", i))
@@ -13,6 +13,7 @@ for (def i in ["paver", "brick", "brick_cracked", "brick_fancy", "brick_square",
     searedItems.add(item("tconstruct:seared_stairs_${i}"))
 
 def requiresSmeltery = [
+    item("tconstruct:smeltery_controller"),
     item("tconstruct:casting", 1), item("tconstruct:firewood"), item("tconstruct:firewood", 1),
     item("tconstruct:nuggets", 3), item("tconstruct:nuggets", 4), item("tconstruct:nuggets", 5),
     item("tconstruct:ingots", 3), item("tconstruct:ingots", 4), item("tconstruct:ingots", 5),
@@ -25,7 +26,7 @@ def requiresSmeltery = [
     item("tconstruct:seared_slab"), item("tconstruct:seared_slab", 1), item("tconstruct:seared_stairs_stone"), item("tconstruct:seared_stairs_cobble"),
 ]
 for (int i in 0..15) requiresSmeltery.add(item("tconstruct:clear_stained_glass", i))
-for (int i in 0..4) requiresSmeltery.add(item("tconstruct:cast_custom", i))
+for (int i in 0..3) requiresSmeltery.add(item("tconstruct:cast_custom", i))
 
 def requiresFey = [item("tconstruct:materials", 18), item("tconstruct:materials", 19)]
 
@@ -42,7 +43,7 @@ def requiresObsidian = [
 ]
 
 def requiresAoE = [
-    item("tconstruct:materials", 12), item("tconstruct:materials", 13), item("tconstruct:toolforge"),
+    item("tconstruct:materials", 12), item("tconstruct:materials", 13),
 ]
 
 def cobaltArditeItems = [
@@ -59,7 +60,7 @@ def removeThese = [
     item("tconstruct:piggybackpack"), item("tconstruct:soil"),
 ]
 
-def hideFromJei = [item("tconstruct:clay_cast")] + removeThese
+def hideFromJei = [item("tconstruct:clay_cast"), item("tconstruct:cast_custom", 4)] + removeThese
 
 def creativeItems = [item("tconstruct:materials", 50)]
 
@@ -77,7 +78,7 @@ chores needed:
 - redo all materials...........
 */
 
-for (def it in searedItems) TooltipEvents.setTier(it, 2)
+for (def it in searedItems) TooltipEvents.setTier(it, 3)
 for (def it in requiresSmeltery) TooltipEvents.setTier(it, 3)
 for (def it in requiresFey) TooltipEvents.setTier(it, 3)
 for (def it in requiresGemstones) TooltipEvents.setTier(it, 4)
@@ -89,4 +90,4 @@ for (def it in creativeItems) TooltipEvents.setTier(it, 17)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
-TooltipEvents.setUnlock(item("tconstruct:smeltery_controller"), 3)
+TooltipEvents.setUnlock(item("tconstruct:materials"), 3)

@@ -8,14 +8,14 @@ def removeCrafting = [
     item("immersiveengineering:connector", 2), item("immersiveengineering:connector", 3),
     item("immersiveengineering:connector", 4), item("immersiveengineering:connector", 5),
     item("roots:grove_stone"), item("roots:fey_crafter"), item("prodigytech:solid_fuel_aeroheater"),
-    item("immersiveengineering:material", 8), item("immersiveengineering:material", 13), item("prodigytech:circuit_plate"),
+    item("immersiveengineering:material", 13), item("prodigytech:circuit_plate"),
     // Gate to tier 4
     item("tconstruct:materials", 15), item("roots:gramary"), item("roots:herb_pouch"),
     item("tconstruct:slimesling"), item("tconstruct:slimesling", 1), item("tconstruct:slimesling", 2),
     item("tconstruct:slimesling", 4), item("tconstruct:slimesling", 3),
     item("storagedrawers:keybutton"), item("storagedrawers:keybutton", 1),
     item("storagedrawers:keybutton", 2), item("storagedrawers:keybutton", 3), item("roots:imbuer"), item("roots:imposer"),
-    item("storagedrawers:upgrade_storage", 1), item("tconstruct:toolforge"), item("minecraft:brewing_stand"), item("roots:staff"),
+    item("storagedrawers:upgrade_storage", 1), item("minecraft:brewing_stand"), item("roots:staff"),
     // Gate to tier 5
     item("essentialcraft:genitem", 1), item("essentialcraft:genitem", 25), item("essentialcraft:genitem", 26), item("essentialcraft:bound_gem"),
     // Gate to tier 8

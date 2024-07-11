@@ -11,10 +11,10 @@ def tier2Items = [
     item("thermalfoundation:ore"), item("thermalfoundation:ore", 1),
     item("thermalfoundation:storage"), item("thermalfoundation:storage", 1),
     item("thermalfoundation:storage_alloy", 3), item("thermalfoundation:storage_resource"), item("thermalfoundation:storage_resource", 1),
-    item("thermalfoundation:wrench"), item("thermalfoundation:material", 163), item("thermalfoundation:material", 227),
-    item("thermalfoundation:material", 893), item("thermalfoundation:material", 894),
+    item("thermalfoundation:wrench"),
 ] + bronzeArmor
 for (int i in [0, 1, 2, 3, 5]) tier2Items.add(item("thermalfoundation:ore_fluid", i))
+for (int i in [128, 129, 163, 192, 193, 227, 893, 894]) tier2Items.add(item("thermalfoundation:material", i))
 
 def tier3Items = [
     item("thermalfoundation:ore", 2), item("thermalfoundation:ore", 3), item("thermalfoundation:ore", 5),
@@ -22,8 +22,8 @@ def tier3Items = [
     item("thermalfoundation:tome_lexicon"), item("thermalfoundation:fertilizer"), item("thermalfoundation:bait"),
 ] + invarArmor
 for (int i in [0, 1, 2, 4]) tier3Items.add(item("thermalfoundation:storage_alloy", i))
-for (int i in [0, 1, 24, 25, 32, 33, 64, 65, 66, 67, 68, 69, 96, 97, 98, 99, 100, 130, 131, 133, 160, 161, 162, 163, 164,
-               194, 195, 197, 224, 225, 226, 227, 228, 256, 257, 258, 259, 260, 261, 288, 289, 290, 291, 292,
+for (int i in [0, 1, 24, 25, 32, 33, 64, 65, 66, 67, 68, 69, 96, 97, 98, 99, 100, 130, 131, 133, 160, 161, 162, 164,
+               194, 195, 197, 224, 225, 226, 228, 256, 257, 258, 259, 260, 261, 288, 289, 290, 291, 292,
                320, 321, 322, 323, 324, 325, 352, 353, 354, 355, 356, 512,
                768, 769, 771, 772, 800, 866, 1024]) tier3Items.add(item("thermalfoundation:material", i))
 

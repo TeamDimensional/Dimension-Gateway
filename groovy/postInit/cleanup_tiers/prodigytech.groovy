@@ -7,13 +7,13 @@ baseItems = [
     item("prodigytech:capacitor_charger"), item("prodigytech:ash_bricks"), item("prodigytech:ash"), 
     item("prodigytech:air_funnel"), item("prodigytech:linear_extractor"), item("prodigytech:ferramic_block"),
     item("prodigytech:charred_cobblestone"), item("prodigytech:charred_stone"), item("prodigytech:charred_stonebricks"),
-    item("prodigytech:ferramic_ingot"),
+    item("prodigytech:ferramic_ingot"), item("prodigytech:ferramic_nugget"),
 ]
 
 gearItems = [
     item("prodigytech:ferramic_gear"), item("prodigytech:sawdust"), item("prodigytech:enriched_fuel"),
     item("prodigytech:rotary_grinder"), item("prodigytech:particle_board"), item("prodigytech:particle_board_planks"),
-    item("prodigytech:flour"), item("prodigytech:meat_ground"), item("prodigytech:coal_dust"),
+    item("prodigytech:meat_ground"), item("prodigytech:coal_dust"),
     item("prodigytech:quartz_dust"), item("prodigytech:ferramic_dust"), item("prodigytech:ferramic_dust_tiny"),
     item("prodigytech:funnelling_extractor"), item("prodigytech:dispersing_extractor"), item("prodigytech:food_purifier"),
     item("prodigytech:meat_patty"), item("prodigytech:carbon_plate_block"), item("prodigytech:ferramic_handbow"),
