@@ -34,6 +34,12 @@
         },
         "dimension": -1,
         "result": "deny"
+    },
+    {
+        "mob": ["theaurorian:runestonedungeonkeeper", "theaurorian:spider"],
+        "onjoin": true,
+        "healthadd": 60,
+        "damageadd": 2
     }
 ]
   
