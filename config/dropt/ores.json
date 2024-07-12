@@ -53,6 +53,15 @@
                 {"selector": {"weight": {"value": 60}}},
                 {"selector": {"weight": {"value": 40, "fortuneModifier": 30}}, "item": {"items": ["essentialcraft:gem_elemental:3"]}}
             ]
+        },
+        {
+            "match": {"blocks": {"blocks": ["minecraft:quartz_ore:0"]}},
+            "replaceStrategy": "ADD",
+            "drops": [
+                {"selector": {"weight": {"value": 56}}},
+                {"selector": {"weight": {"value": 38}}, "item": {"items": ["minecraft:quartz:0"]}},
+                {"selector": {"weight": {"value": 6}}, "item": {"items": ["minecraft:quartz:0"], "quantity": {"fixed": 2}}}
+            ]
         }
     ]
 }

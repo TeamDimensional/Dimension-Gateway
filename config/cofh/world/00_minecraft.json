@@ -234,7 +234,7 @@
 				"material": "minecraft:netherrack",
 				"cluster-size": 14
 			},
-			"cluster-count": 12,
+			"cluster-count": 8,
 			"ground-level": 128,
 			"retrogen": false,
 			"biome": {
