@@ -10,12 +10,18 @@ def buildToolList(metal) {
     return typedTools
 }
 
-def buildList(metal) {
-    def typedTools = buildToolList(metal)
+def buildArmorList(metal) {
     def output = []
+    for (type in ["helmet", "chestplate", "leggings", "boots"])
+        output.add(item("mysticalworld:${metal}_${type}"))
+    return output
+}
+
+def buildList(metal) {
+    def output = [] + buildToolList(metal)
     for (type in ["ingot", "nugget", "dust", "dust_tiny", "helmet", "chestplate", "leggings", "boots", "knife", "block", "ore"])
         output.add(item("mysticalworld:${metal}_${type}"))
-    return output + typedTools
+    return output
 }
 
 def copperItems = buildList("copper")
@@ -29,7 +35,7 @@ def feyCrafting = [item("mysticalworld:pearl")]
 for (type in ["block", "slab", "stairs", "wall", "button", "pressure_plate", "fence", "fence_gate"])
     feyCrafting.add(item("mysticalworld:pearl_${type}"))
 
-def removeItems = [item("mysticalworld:pearleporter")]
+def removeItems = [item("mysticalworld:pearleporter")] + buildArmorList("copper") + buildArmorList("silver")
 def hideFromJei = [
     item("mysticalworld:unripe_pearl"), item("mysticalworld:quartz_ore"), item("mysticalworld:granite_quartz_ore")
 ] + removeItems + copperItems + silverItems
