@@ -1,0 +1,13 @@
+filename = 'rftools-1.12-7.73.jar'
+name = 'RFTools'
+side = 'both'
+
+[download]
+hash = '16a4e8c1907bdaac546ab3fd56904d202da427f3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2861573
+project-id = 224641

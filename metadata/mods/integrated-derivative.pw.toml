@@ -1,0 +1,13 @@
+filename = 'integratedderivative-1.0.1.jar'
+name = 'Integrated Derivative'
+side = 'both'
+
+[download]
+hash = '5a0a4730674b1ed52641d5eccb6c760fb5504cdb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5551582
+project-id = 1067548

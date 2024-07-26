@@ -30,5 +30,13 @@ tconstruct_oredictcache.dat
 transformerCache
 build
 backups
+betweenlands_gallery
+caches/**/*.bin
 
 hei_bookmarks.ini
+thaumicjei_itemstack_aspects.json
+woot/loot.json
+scripts/nc_script_addons
+config/enderio/recipes
+config/advRocketry/*.xml
+config/AppliedEnergistics2/items.csv

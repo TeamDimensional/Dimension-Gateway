@@ -1,0 +1,13 @@
+filename = 'multiblockednbt-1.0.0.jar'
+name = 'Multiblocked NBT'
+side = 'both'
+
+[download]
+hash = '5ca66fc641608800376c0f90213bb023f92d1574'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5553808
+project-id = 1068740
