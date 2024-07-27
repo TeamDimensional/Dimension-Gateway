@@ -108,7 +108,25 @@
 					"minecraft:stone"
 				]
 			}
-		}
+		},
+
+        "rutile": {
+			"distribution": "uniform",
+			"generator": {
+                "block": {"name": "libvulpes:ore0", "properties": {"varient": "8"}},
+				"material": "stone",
+				"cluster-size": 7
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [-1, 1]
+			}
+        }
 
     }
 }

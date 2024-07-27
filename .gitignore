@@ -37,6 +37,8 @@ hei_bookmarks.ini
 thaumicjei_itemstack_aspects.json
 woot/loot.json
 scripts/nc_script_addons
-config/enderio/recipes
+config/enderio/recipes/examples
+config/enderio/recipes/*.pdf
 config/advRocketry/*.xml
 config/AppliedEnergistics2/items.csv
+config/enderio/recipes/user/recipes.xsd
