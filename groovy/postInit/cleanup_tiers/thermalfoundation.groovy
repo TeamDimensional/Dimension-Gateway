@@ -92,7 +92,7 @@ for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in spaceItems) TooltipEvents.setTier(it, 8)
 for (def it in industrialTierItems) TooltipEvents.setTier(it, 8)
 for (def it in rocketScienceItems) TooltipEvents.setTier(it, 12)
-for (def it in creativeItems) TooltipEvents.setTier(it, 17)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 

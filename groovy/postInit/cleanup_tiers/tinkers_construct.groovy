@@ -86,7 +86,7 @@ for (def it in requiresEvilcraft) TooltipEvents.setTier(it, 4)
 for (def it in requiresAoE) TooltipEvents.setTier(it, 4)
 for (def it in requiresObsidian) TooltipEvents.setTier(it, 5)
 for (def it in cobaltArditeItems) TooltipEvents.setTier(it, 7)
-for (def it in creativeItems) TooltipEvents.setTier(it, 17)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 

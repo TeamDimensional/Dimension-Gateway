@@ -14,7 +14,7 @@ for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
 for (def it in controllerItems) TooltipEvents.setTier(it, 4)
 for (def it in basicUpgrades) TooltipEvents.setTier(it, 4)
 for (def it in advancedUpgrades) TooltipEvents.setTier(it, 5)
-for (def it in creativeUpgrades) TooltipEvents.setTier(it, 17)
+for (def it in creativeUpgrades) TooltipEvents.setTier(it, 15)
 TooltipEvents.setTier(item("storagedrawers:compdrawers"), 2)
 
 /*
