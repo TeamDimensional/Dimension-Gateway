@@ -180,7 +180,7 @@ mods.prodigytech.ore_refinery.recipeBuilder()
 def diamondDusts = [
     item("actuallyadditions:item_dust", 2), item("prodigytech:diamond_dust")
 ]
-for (def it in quartzDusts) {
+for (def it in diamondDusts) {
     ore("dustDiamond").remove(it)
     GatewayHelpers.hide(it)
 }
@@ -258,3 +258,5 @@ for (def it in obsidianDusts) {
     ore("dustObsidian").remove(it)
     GatewayHelpers.hide(it)
 }
+
+// TODO: remove charcoal block from AA

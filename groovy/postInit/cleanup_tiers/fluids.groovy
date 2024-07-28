@@ -8,7 +8,7 @@ def metallurgyTier = [
     fluid("purpleslime"),
 ]
 
-def tier4 = [fluid("emerald")]
+def tier4 = [fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil")]
 
 def tier5 = [fluid("obsidian")]
 
@@ -25,6 +25,8 @@ def automationTier = [
     fluid("cryotheum"),
 ]
 
+def tier10 = [fluid("empoweredoil")]
+
 def rocketScienceTier = [
     fluid("iridium"), fluid("mana"),
 ]
@@ -35,6 +37,7 @@ for (def it in tier5) TooltipEvents.setTier(it, 5)
 for (def it in tier6) TooltipEvents.setTier(it, 6)
 for (def it in techTier) TooltipEvents.setTier(it, 7)
 for (def it in automationTier) TooltipEvents.setTier(it, 8)
+for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in rocketScienceTier) TooltipEvents.setTier(it, 12)
 
 mods.jei.ingredient.hide(fluid("uranium"))
