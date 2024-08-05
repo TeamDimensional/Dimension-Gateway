@@ -86,7 +86,7 @@ for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
 for (def it in endItems) TooltipEvents.setTier(it, 6)
 for (def it in potionItems) TooltipEvents.setTier(it, 4)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-TooltipEvents.setTier(item("minecraft:beacon"), 14)
+TooltipEvents.setTier(item("minecraft:beacon"), 9)
 TooltipEvents.setTier(item("minecraft:bedrock"), 0)
 TooltipEvents.addTierPredicate("waterbottle", s -> s in waterPotion, 1)
 

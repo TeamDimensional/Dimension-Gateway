@@ -27,7 +27,7 @@ def tier8 = [
     fluid("cryotheum"), fluid("rocketfuel"),
 ]
 
-def tier10 = [fluid("empoweredoil")]
+def tier10 = [fluid("empoweredoil"), fluid("lifeessence")]
 
 def tier12 = [
     fluid("iridium"), fluid("mana"), fluid("enrichedlava"),
