@@ -75,6 +75,7 @@ for (int i in [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 30, 31, 32])
     removeHellfire.add(mitem("component", i))
 
 def removeArray = [mitem("sigil_claw")]
+// TODO: fix this recipe removal not working (GS bug)
 def removeTable = [mitem("cutting_fluid").withEmptyNbt(), mitem("cutting_fluid", 1).withEmptyNbt()]
 
 def removeRecipes = [mitem("base_fluid_filter")]
