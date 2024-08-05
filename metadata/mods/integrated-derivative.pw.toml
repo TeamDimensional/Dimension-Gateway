@@ -1,13 +1,13 @@
-filename = 'integratedderivative-1.0.1.jar'
+filename = 'integratedderivative-1.0.2.jar'
 name = 'Integrated Derivative'
 side = 'both'
 
 [download]
-hash = '5a0a4730674b1ed52641d5eccb6c760fb5504cdb'
+hash = 'b694ba546ad1591f43216c984799556a2c26514b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5551582
+file-id = 5594143
 project-id = 1067548
