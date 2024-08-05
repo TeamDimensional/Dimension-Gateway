@@ -209,7 +209,7 @@ for (def it in coalDusts) {
 mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 23) * 8)
 
 def sulfurDusts = [
-    item("nuclearcraft:gem_dust", 6), item("bloodmagic:component", 23), item("soot:sulfur")
+    item("nuclearcraft:gem_dust", 6), item("bloodmagic:component", 23)
 ]
 for (def it in sulfurDusts) {
     ore("dustSulfur").remove(it)
