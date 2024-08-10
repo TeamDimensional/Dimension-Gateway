@@ -20,8 +20,6 @@ def requiresSmeltery = [
     item("tconstruct:metal", 3), item("tconstruct:metal", 4), item("tconstruct:metal", 5),
     item("tconstruct:cast"), item("tconstruct:firewood_stairs"), item("tconstruct:lavawood_stairs"),
     item("tconstruct:firewood_slab"), item("tconstruct:firewood_slab", 1), item("tconstruct:edible", 33),
-    item("tconstruct:slime_channel", 3), item("tconstruct:slime_boots", 3),
-    item("tconstruct:slime", 3), item("tconstruct:slime_congealed", 3), item("tconstruct:edible", 3),
     item("tconstruct:clear_glass"), item("tconstruct:fancy_frame", 6), item("tconstruct:seared"), item("tconstruct:seared", 1),
     item("tconstruct:seared_slab"), item("tconstruct:seared_slab", 1), item("tconstruct:seared_stairs_stone"), item("tconstruct:seared_stairs_cobble"),
 ]
