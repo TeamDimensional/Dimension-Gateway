@@ -42,3 +42,5 @@ config/enderio/recipes/*.pdf
 config/advRocketry/*.xml
 config/AppliedEnergistics2/items.csv
 config/enderio/recipes/user/recipes.xsd
+config/teamreborn/configData.nbt
+config/teamreborn/reborncore/selected_energy.json

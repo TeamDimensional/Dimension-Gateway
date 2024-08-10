@@ -13,7 +13,6 @@ RFTools
 Sonar Core
 Thaumcraft
 Aether
-Betweenlands (ew?)
 Thermal Expansion
 Libvulpes
 Woot

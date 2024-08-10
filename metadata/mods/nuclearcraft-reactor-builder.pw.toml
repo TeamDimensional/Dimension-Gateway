@@ -1,0 +1,13 @@
+filename = 'NC-ReactorBuilder-1.12.2-1.0.4b.jar'
+name = 'NuclearCraft Reactor Builder'
+side = 'both'
+
+[download]
+hash = 'cf3e272b074048a6097e22ab683dc40a75b98a56'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4483283
+project-id = 423743
