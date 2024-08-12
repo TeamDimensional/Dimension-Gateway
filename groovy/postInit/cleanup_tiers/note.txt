@@ -1,5 +1,4 @@
 Remaining mods:
-Embers
 Ender IO
 Ender Utilities
 Evilcraft
