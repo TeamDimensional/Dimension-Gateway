@@ -106,12 +106,10 @@ for (def i in [0, 22, 38, 51, 52, 66, 67, 69, 77, 81]) removeRecipes.add(mitem("
 for (def b in 0..15) for (def a in [1, 2]) removeRecipes.add(mitem("block_decoration${a}", b))
 for (def b in 0..4) removeRecipes.add(mitem("block_decoration3", b))
 ore("blockConstructionAlloy").remove(mitem("block_alloy", 9))
-ore("itemConstructionAlloy").remove(mitem("item_alloy_ingot", 9))
+ore("ingotConstructionAlloy").remove(mitem("item_alloy_ingot", 9))
 ore("nuggetConstructionAlloy").remove(mitem("item_alloy_nugget", 9))
 ore("nuggetEnderPearl").remove(mitem("item_material", 28))
 
-def removeCastingBasin = [mitem("block_alloy", 9)]
-def removeCastingTable = [mitem("item_alloy_ingot", 9), mitem("item_alloy_nugget", 9)]
 def removeSagMill = [mitem("item_material", 28), mitem("block_holier_fog")]
 def removeSagMillInputs = [item("minecraft:ender_pearl"), item("appliedenergistics2:material", 46), mitem("item_material", 76)]
 def removeAlloy = [mitem("item_material", 39), mitem("item_material", 72), mitem("item_material", 76), mitem("block_death_pouch")]
@@ -140,8 +138,6 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 TooltipEvents.setTier(fluid("construction_alloy"), 0)
 mods.jei.ingredient.hide(fluid("construction_alloy"))
 
-for (def it in removeCastingBasin) mods.tconstruct.casting_basin.removeByOutput(it)
-for (def it in removeCastingTable) mods.tconstruct.casting_table.removeByOutput(it)
 for (def it in removeSagMillInputs) mods.enderio.sag_mill.removeByInput(it)
 for (def it in removeAlloy) mods.enderio.alloy_smelter.remove(it)
 mods.enderio.tank.removeFill(fluid("nutrient_distillation"), mitem("item_material", 8))

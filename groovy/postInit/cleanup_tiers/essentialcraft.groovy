@@ -66,7 +66,7 @@ for (int i in 0..15) {
 for (int i in 0..3) windTier.add(item("essentialcraft:mrumatrixprojection", i))
 
 def industrialTier = [
-    item("essentialcraft:ecbalancer"),item("essentialcraft:moonwell"), item("essentialcraft:magicalquarry"),
+    item("essentialcraft:ecbalancer"), item("essentialcraft:moonwell"),
     item("essentialcraft:monsterharvester"), item("essentialcraft:magmaticsmeltery"),
     item("essentialcraft:crystalformer"), item("essentialcraft:crystalcontroller"), item("essentialcraft:crystalextractor"),
     item("essentialcraft:mrucoilhardener"), item("essentialcraft:mrucoil"), item("essentialcraft:mimic"),
@@ -77,12 +77,11 @@ def industrialTier = [
     item("essentialcraft:magicwaterbottle"), item("essentialcraft:magicalporkchop"), item("essentialcraft:playerlist"),
     item("essentialcraft:magmaticstaff"), item("essentialcraft:magicallantern"), item("essentialcraft:magnetizingstaff"),
     item("essentialcraft:chunkloader"), item("essentialcraft:dimtransciever"), item("essentialcraft:magicalwings"),
-    item("essentialcraft:holymace"),
+    item("essentialcraft:holymace"), item("essentialcraft:genitem"), item("essentialcraft:genitem", 20),
 ]
 for (int i in 0..5) industrialTier.add(item("essentialcraft:rightclicker", i))
 for (int i in 0..15) industrialTier.add(item("essentialcraft:essence", i))
 for (def i in armorParts) industrialTier.add(item("essentialcraft:${i}_magic"))
-for (int i in [17, 18, 19, 20, 77, 78, 80, 81]) industrialTier.add(item("essentialcraft:genitem", i))
 for (int i in 0..15) {
     industrialTier.add(item("essentialcraft:fancyblock.mru", i))
     industrialTier.add(item("essentialcraft:fancyblock.mimic", i))
@@ -156,7 +155,9 @@ def removeItems = [
     item("essentialcraft:miminvstorage"), item("essentialcraft:newmim"), item("essentialcraft:mimscreen"),
     item("essentialcraft:mimcrafter"), item("essentialcraft:mimejector"), item("essentialcraft:miminjector"),
     item("essentialcraft:mimejectorp"), item("essentialcraft:miminjectorp"), item("essentialcraft:inventorygem"),
+    item("essentialcraft:magicalquarry"),
 ]
+for (int i in [17, 18, 19, 77, 78, 80, 81]) removeItems.add(item("essentialcraft:genitem", i))
 
 def hideFromJei = [
     item("baubles:ring"), item("essentialcraft:drops"), item("essentialcraft:drops", 1),
@@ -174,7 +175,7 @@ for (int i in 0..13) hideFromJei.add(item("essentialcraft:entityegg", i))
 
 for (def it in magicalTier) TooltipEvents.setTier(it, 5)
 for (def it in windTier) TooltipEvents.setTier(it, 8)
-for (def it in industrialTier) TooltipEvents.setTier(it, 11)
+for (def it in industrialTier) TooltipEvents.setTier(it, 8)
 for (def it in hoannaTier) TooltipEvents.setTier(it, 13)
 for (def it in demonTier) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
@@ -188,7 +189,6 @@ for (def it in 0..15) TooltipEvents.setTooltip(item("essentialcraft:essence", it
 TooltipEvents.setTooltip(item("essentialcraft:magicalalloy"), "Made in the Magmatic Furnace or Magmatic Smeltery.")
 TooltipEvents.setTooltip(item("essentialcraft:elementalsword"), "Made in Ember Forge.")
 TooltipEvents.setUnlock(item("essentialcraft:windtablet"), 13)
-TooltipEvents.setUnlock(item("essentialcraft:genitem"), 11)
 
 for (def tool in allTools) GatewayHelpers.banTool(tool)
 
