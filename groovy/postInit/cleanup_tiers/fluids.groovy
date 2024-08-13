@@ -24,11 +24,18 @@ def tier7 = [
     fluid("resin"), fluid("tree_oil"), fluid("seed_oil"), fluid("biocrude"), fluid("refined_biofuel"),
     fluid("potion_splash"), fluid("potion_lingering"), fluid("platinum"), fluid("signalum"), fluid("lumium"), fluid("enderium"),
     fluid("cobalt"), fluid("ardite"), fluid("manyullyn"), fluid("pyrotheum"), fluid("aerotheum"), fluid("petrotheum"),
-    fluid("liquid_crystal"),
+    fluid("liquid_crystal"), fluid("nutrient_distillation"), fluid("hootch"), fluid("rocket_fuel"), fluid("fire_water"),
+    fluid("liquid_sunshine"), fluid("cloud_seed"), fluid("cloud_seed_concentrated"), fluid("electrical_steel"), fluid("energetic_alloy"),
+    fluid("vibrant_alloy"), fluid("redstone_alloy"), fluid("conductive_iron"), fluid("pulsating_iron"), fluid("dark_steel"), fluid("soularium"),
+    fluid("end_steel"),
 ]
 
 def tier8 = [
     fluid("cryotheum"), fluid("rocketfuel"),
+]
+
+def tier9 = [
+    fluid("ender_distillation"), fluid("vapor_of_levity"), 
 ]
 
 def tier10 = [fluid("empoweredoil"), fluid("lifeessence")]
@@ -44,6 +51,7 @@ for (def it in tier5) TooltipEvents.setTier(it, 5)
 for (def it in tier6) TooltipEvents.setTier(it, 6)
 for (def it in tier7) TooltipEvents.setTier(it, 7)
 for (def it in tier8) TooltipEvents.setTier(it, 8)
+for (def it in tier9) TooltipEvents.setTier(it, 9)
 for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
 
