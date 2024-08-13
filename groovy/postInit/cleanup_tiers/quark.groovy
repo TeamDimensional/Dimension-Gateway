@@ -1,21 +1,16 @@
 import com.dimensional.gatewaycore.events.TooltipEvents
 
-def quartzItems = [
-    item("quark:quartz_wall"),
-]
+def mitem(name, k=0) {
+    return item("quark:${name}", k)
+}
 
-def tier3Items = [
-    item("quark:gold_button"), item("quark:redstone_inductor"), item("quark:lit_lamp"),
-]
-
-def obsidianItems = [
-    item("quark:obsidian_pressure_plate"),
-]
-
+def quartzItems = [mitem("quartz_wall")]
+def tier3Items = [mitem("gold_button"), mitem("redstone_inductor"), mitem("lit_lamp")]
+def obsidianItems = [mitem("obsidian_pressure_plate")]
 def enderItems = [
-    item("quark:duskbound_block"), item("quark:duskbound_lantern"), item("quark:duskbound_block_stairs"), item("quark:duskbound_block_slab"),
-    item("quark:purpur_block_wall"), item("quark:end_bricks_wall"), item("quark:duskbound_block_wall"), item("quark:redstone_randomizer"),
-    item("quark:gravisand"), item("quark:rain_detector"), item("quark:enderdragon_scale"),
+    mitem("duskbound_block"), mitem("duskbound_lantern"), mitem("duskbound_block_stairs"), mitem("duskbound_block_slab"),
+    mitem("purpur_block_wall"), mitem("end_bricks_wall"), mitem("duskbound_block_wall"), mitem("redstone_randomizer"),
+    mitem("gravisand"), mitem("rain_detector"), mitem("enderdragon_scale"),
 ]
 
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)

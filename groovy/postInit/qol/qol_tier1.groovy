@@ -23,15 +23,6 @@ crafting.shapedBuilder()
         .key("F", ore("gemFireElemental")).key("E", ore("gemEarthElemental")).key("S", ore("sandstone"))
         .register()
 
-// xp shower
-crafting.remove("openblocks:xp_shower_0")
-crafting.shapedBuilder()
-        .name("tier1/qol/xp_shower")
-        .output(item("openblocks:xp_shower"))
-        .matrix("III", "  F")
-        .key("F", item("minecraft:flint")).key("I", ore("ingotIron"))
-        .register()
-
 // don't show 16 sponge recipes
 crafting.removeByOutput(item("openblocks:sponge"))
 crafting.shapelessBuilder()

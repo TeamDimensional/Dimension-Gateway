@@ -1,121 +1,102 @@
 import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
+def mitem(name, k=0) {
+    return item("theaurorian:${name}", k)
+}
+
 def moonTempleLoot = [
-    item("theaurorian:crystallinepickaxe"), item("theaurorian:crystallinesword"), item("theaurorian:crystallineshield"),
-    item("theaurorian:moontemplecellkeyfragment"), item("theaurorian:scrapcrystalline"), item("theaurorian:trophymoonqueen"),
+    mitem("crystallinepickaxe"), mitem("crystallinesword"), mitem("crystallineshield"), mitem("moontemplecellkeyfragment"),
+    mitem("scrapcrystalline"), mitem("trophymoonqueen"),
 ]
 def darkstoneLoot = [
-    item("theaurorian:umbrapickaxe"), item("theaurorian:umbrasword"), item("theaurorian:umbrashield"),
-    item("theaurorian:darkamulet"), item("theaurorian:scrapumbra"), item("theaurorian:spikedchestplate"),
-    item("theaurorian:trophyspider"), item("theaurorian:absorptionorb"),
+    mitem("umbrapickaxe"), mitem("umbrasword"), mitem("umbrashield"), mitem("darkamulet"), mitem("scrapumbra"), mitem("spikedchestplate"),
+    mitem("trophyspider"), mitem("absorptionorb"),
 ]
 def runestoneLoot = [
-    item("theaurorian:aurorianiteaxe"), item("theaurorian:aurorianitepickaxe"), item("theaurorian:aurorianitesword"),
-    item("theaurorian:keeperamulet"), item("theaurorian:bepsi"), item("theaurorian:keepersbow"),
-    item("theaurorian:runestonekey"), item("theaurorian:runestonelootkey"), item("theaurorian:scrapaurorianite"),
-    item("theaurorian:strangemeat"), item("theaurorian:trophykeeper"),
+    mitem("aurorianiteaxe"), mitem("aurorianitepickaxe"), mitem("aurorianitesword"), mitem("keeperamulet"), mitem("bepsi"), mitem("keepersbow"),
+    mitem("runestonekey"), mitem("runestonelootkey"), mitem("scrapaurorianite"), mitem("strangemeat"), mitem("trophykeeper"),
 ]
 
 def unobtainable = [
-    item("theaurorian:darkstonebricks"), item("theaurorian:darkstonefancy"), item("theaurorian:darkstonegate"),
-    item("theaurorian:darkstonegatekeyhole"), item("theaurorian:darkstonelamp"), item("theaurorian:darkstonelayers"),
-    item("theaurorian:darkstonestairs"), item("theaurorian:moontemplebricks"), item("theaurorian:moontemplebars"),
-    item("theaurorian:moontemplegate"), item("theaurorian:moontemplecellgate"), item("theaurorian:moontemplegatekeyhole"),
-    item("theaurorian:moontemplecellgatekeyhole"), item("theaurorian:moontemplelamp"), item("theaurorian:moontemplebrickssmooth"),
-    item("theaurorian:moontemplestairs"), item("theaurorian:runestone"), item("theaurorian:runestonebars"),
-    item("theaurorian:runestonegate"), item("theaurorian:runestonegatekeyhole"), item("theaurorian:runestonelootgatekeyhole"),
-    item("theaurorian:runestonelootgate"), item("theaurorian:runestonelamp"), item("theaurorian:runestonesmooth"),
-    item("theaurorian:runestonestairs"),
+    mitem("darkstonebricks"), mitem("darkstonefancy"), mitem("darkstonegate"), mitem("darkstonegatekeyhole"), mitem("darkstonelamp"),
+    mitem("darkstonelayers"), mitem("darkstonestairs"), mitem("moontemplebricks"), mitem("moontemplebars"),
+    mitem("moontemplegate"), mitem("moontemplecellgate"), mitem("moontemplegatekeyhole"), mitem("moontemplecellgatekeyhole"),
+    mitem("moontemplelamp"), mitem("moontemplebrickssmooth"), mitem("moontemplestairs"), mitem("runestone"), mitem("runestonebars"),
+    mitem("runestonegate"), mitem("runestonegatekeyhole"), mitem("runestonelootgatekeyhole"), mitem("runestonelootgate"), mitem("runestonelamp"),
+    mitem("runestonesmooth"), mitem("runestonestairs"),
 ]
 
-def crystallineItems = [item("theaurorian:crystallineingot")]
-def aurorianiteItems = [item("theaurorian:aurorianiteingot")]
-def umbraItems = [item("theaurorian:umbraingot")]
+def crystallineItems = [mitem("crystallineingot")]
+def aurorianiteItems = [mitem("aurorianiteingot")]
+def umbraItems = [mitem("umbraingot")]
 
 def steelItems = []
 for (def it in ["boots", "chestplate", "helmet", "leggings", "axe", "hoe", "nugget", "pickaxe", "shovel",
                 "sword", "", "block"]) {
-    steelItems.add(item("theaurorian:auroriansteel${it}"))
+    steelItems.add(mitem("auroriansteel${it}"))
 }
 
 def generalItems = [
-    item("theaurorian:aurorianbacon"), item("theaurorian:auroriancoal"), item("theaurorian:auroriancoalnugget"),
-    item("theaurorian:aurorianpork"), item("theaurorian:aurorianporkcooked"),
-    item("theaurorian:lavender"), item("theaurorian:lavenderbread"), item("theaurorian:plantfiber"),
-    item("theaurorian:lavenderseeds"), item("theaurorian:silentwoodstick"),
-    item("theaurorian:silkberry"), item("theaurorian:soullessflesh"), item("theaurorian:spectralsilk"),
-    item("theaurorian:silkberryjam"), item("theaurorian:silkberryjamsandwich"), item("theaurorian:silkshroomstew"),
-    item("theaurorian:weepingwillowsap"), item("theaurorian:auroriancobblestone"), item("theaurorian:auroriancobblestonestairs"),
-    item("theaurorian:auroriandirt"), item("theaurorian:aurorianfarmtile"), item("theaurorian:aurorianfurnace"),
-    item("theaurorian:auroriangrass"), item("theaurorian:auroriangrasslight"),
-    item("theaurorian:aurorianstone"), item("theaurorian:aurorianstonebrick"), item("theaurorian:aurorianstonestairs"),
-    item("theaurorian:aurorianglass"), item("theaurorian:moonglass"), item("theaurorian:aurorianglasspane"),
-    item("theaurorian:moonglasspane"), item("theaurorian:auroriancoalblock"), item("theaurorian:moonsand"),
-    item("theaurorian:mushroom"), item("theaurorian:mushroomcrystal"), item("theaurorian:mushroomsmall"),
-    item("theaurorian:mushroomstem"), item("theaurorian:aurorianperidotite"), item("theaurorian:aurorianperidotitesmooth"),
-    item("theaurorian:aurorianperidotitesmoothstairs"), item("theaurorian:silentwoodbow"),
-    item("theaurorian:auroriantallgrass"), item("theaurorian:auroriantallgrasslight"),
-    item("theaurorian:aurorianfurnacechimney"), item("theaurorian:auroriancoalore"), item("theaurorian:tamoonwater"),
-    item("theaurorian:aurorianstonesickle"), item("theaurorian:silentwoodsickle"), item("theaurorian:teasilkberry"),
+    mitem("aurorianbacon"), mitem("auroriancoal"), mitem("auroriancoalnugget"), mitem("aurorianpork"), mitem("aurorianporkcooked"),
+    mitem("lavender"), mitem("lavenderbread"), mitem("plantfiber"), mitem("lavenderseeds"), mitem("silentwoodstick"),
+    mitem("silkberry"), mitem("soullessflesh"), mitem("spectralsilk"), mitem("silkberryjam"), mitem("silkberryjamsandwich"), mitem("silkshroomstew"),
+    mitem("weepingwillowsap"), mitem("auroriancobblestone"), mitem("auroriancobblestonestairs"), mitem("auroriandirt"),
+    mitem("aurorianfarmtile"), mitem("aurorianfurnace"), mitem("auroriangrass"), mitem("auroriangrasslight"),
+    mitem("aurorianstone"), mitem("aurorianstonebrick"), mitem("aurorianstonestairs"), mitem("aurorianglass"), mitem("moonglass"),
+    mitem("aurorianglasspane"), mitem("moonglasspane"), mitem("auroriancoalblock"), mitem("moonsand"),
+    mitem("mushroom"), mitem("mushroomcrystal"), mitem("mushroomsmall"), mitem("mushroomstem"), mitem("aurorianperidotite"),
+    mitem("aurorianperidotitesmooth"), mitem("aurorianperidotitesmoothstairs"), mitem("silentwoodbow"), mitem("auroriantallgrass"),
+    mitem("auroriantallgrasslight"), mitem("aurorianfurnacechimney"), mitem("auroriancoalore"), mitem("tamoonwater"),
+    mitem("aurorianstonesickle"), mitem("silentwoodsickle"), mitem("teasilkberry"),
 ]
-for (def it in ["boots", "chestplate", "helmet", "leggings"]) generalItems.add(item("theaurorian:spectral${it}"))
-for (def it in ["lavender", "petunia", "seedy"]) generalItems.add(item("theaurorian:tea${it}"))
+for (def it in ["boots", "chestplate", "helmet", "leggings"]) generalItems.add(mitem("spectral${it}"))
+for (def it in ["lavender", "petunia", "seedy"]) generalItems.add(mitem("tea${it}"))
 for (def it in ["chest", "ladder", "leaves", "log", "planks", "stairs", "torch", "craftingtable", "sapling"])
-    generalItems.add(item("theaurorian:silentwood${it}"))
+    generalItems.add(mitem("silentwood${it}"))
 for (def it in ["leaves", "log", "planks", "planksstairs", "sapling"])
-    generalItems.add(item("theaurorian:weepingwillow${it}"))
+    generalItems.add(mitem("weepingwillow${it}"))
 for (def it in ["", "cracked", "rooftiles", "roofstairs"])
-    generalItems.add(item("theaurorian:umbrastone${it}"))
+    generalItems.add(mitem("umbrastone${it}"))
 
-def ceruleanItems = [
-    item("theaurorian:cup"), item("theaurorian:locator"), item("theaurorian:lockpicks"),
-    item("theaurorian:scrapper"),
-]
+def ceruleanItems = [mitem("cup"), mitem("locator"), mitem("lockpicks"), mitem("scrapper")]
 for (def it in ["boots", "chestplate", "helmet", "leggings", "arrow", "bucket", "nugget", "shield", "ingot", "block", "ore"]) {
-    ceruleanItems.add(item("theaurorian:cerulean${it}"))
+    ceruleanItems.add(mitem("cerulean${it}"))
 }
 
 def moonstoneItems = []
 for (def it in ["ingot", "axe", "hoe", "nugget", "pickaxe", "shield", "shovel", "sickle", "sword", "block", "ore"]) {
-    moonstoneItems.add(item("theaurorian:moonstone${it}"))
+    moonstoneItems.add(mitem("moonstone${it}"))
 }
 
-def runestoneDungeonItems = [
-    item("theaurorian:aurorianslimeball"), item("theaurorian:darkstonekey"),
-] + runestoneLoot
+def runestoneDungeonItems = [mitem("aurorianslimeball"), mitem("darkstonekey")] + runestoneLoot
 for (def it in ["boots", "chestplate", "helmet", "leggings"]) {
-    steelItems.add(item("theaurorian:knight${it}"))
+    steelItems.add(mitem("knight${it}"))
 }
 
-def geodeItems = [
-    item("theaurorian:crystalarrow"), item("theaurorian:stickyspiker"), item("theaurorian:crystal"), item("theaurorian:geodeore")
-]
+def geodeItems = [mitem("crystalarrow"), mitem("stickyspiker"), mitem("crystal"), mitem("geodeore")]
 def moonItems = [
     // requires only harvest level
-    item("theaurorian:aurorianslimeboots"), item("theaurorian:moontemplekey"), item("theaurorian:moongem"),
-    item("theaurorian:moonlightforge"), item("theaurorian:moontorch"),
+    mitem("aurorianslimeboots"), mitem("moontemplekey"), mitem("moongem"), mitem("moonlightforge"), mitem("moontorch"),
     // requires queen defeat
-    item("theaurorian:moonshield"), item("theaurorian:queenschipper"), item("theaurorian:moontemplecellkey"),
+    mitem("moonshield"), mitem("queenschipper"), mitem("moontemplecellkey"),
 ] + moonTempleLoot
 
 def removedTools = []
 for (def tool in ["axe", "hoe", "shovel", "pickaxe", "sword"]) {
-    removedTools.add(item("theaurorian:aurorianstone${tool}"))
-    removedTools.add(item("theaurorian:silentwood${tool}"))
-    removedTools.add(item("theaurorian:moonstone${tool}"))
+    removedTools.add(mitem("aurorianstone${tool}"))
+    removedTools.add(mitem("silentwood${tool}"))
+    removedTools.add(mitem("moonstone${tool}"))
 }
 
-def unknownItems = [item("theaurorian:livingdiviningrod")]
+def unknownItems = [mitem("livingdiviningrod")]
 
 def hideFromJei = [
-    item("theaurorian:debugger"), item("theaurorian:mysticalbarrier"), item("theaurorian:urn"),
-    item("theaurorian:lavenderplant"), item("theaurorian:petuniaplant"), item("theaurorian:silkberryplant"),
-    item("theaurorian:lavendercrop"), item("theaurorian:silkberrycrop"), item("theaurorian:crystallinesprite"),
-    item("theaurorian:aurorianfurnacelit"), item("theaurorian:aurorianportal"), item("theaurorian:webbing"),
-    item("theaurorian:tamoltencerulean"),item("theaurorian:tamoltenmoonstone"), item("theaurorian:tamoltenauroriansteel"),
-]
-for (def it in ["keeper", "moonqueen", "spider"]) hideFromJei.add(item("theaurorian:bossspawner${it}"))
+    mitem("debugger"), mitem("mysticalbarrier"), mitem("urn"), mitem("lavenderplant"), mitem("petuniaplant"), mitem("silkberryplant"),
+    mitem("lavendercrop"), mitem("silkberrycrop"), mitem("crystallinesprite"), mitem("aurorianfurnacelit"), mitem("aurorianportal"),
+    mitem("webbing"), mitem("tamoltencerulean"),mitem("tamoltenmoonstone"), mitem("tamoltenauroriansteel"),
+] + removedTools
+for (def it in ["keeper", "moonqueen", "spider"]) hideFromJei.add(mitem("bossspawner${it}"))
 
 for (def it in generalItems) TooltipEvents.setTier(it, 2)
 for (def it in ceruleanItems + moonstoneItems + geodeItems) TooltipEvents.setTier(it, 2)
@@ -131,4 +112,4 @@ for (def it in runestoneLoot) TooltipEvents.setTooltip(it, "Found in the Runesto
 for (def it in darkstoneLoot) TooltipEvents.setTooltip(it, "Found in the Darkstone Temple in Aurorian.")
 for (def it in moonTempleLoot) TooltipEvents.setTooltip(it, "Found in the Moon Temple in Aurorian.")
 
-TooltipEvents.setUnlock(item("theaurorian:aurorianportalframebricks"), 2)
+TooltipEvents.setUnlock(mitem("aurorianportalframebricks"), 2)
