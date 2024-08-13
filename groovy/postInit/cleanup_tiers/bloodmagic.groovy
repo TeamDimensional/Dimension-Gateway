@@ -6,7 +6,7 @@ def mitem(name, k=0) {
 }
 
 def bloodItems = [
-    mitem("altar"), mitem("incense_altar"), mitem("alchemy_table"), mitem("decorative_brick"), mitem("decorative_brick", 1),
+    mitem("incense_altar"), mitem("alchemy_table"), mitem("decorative_brick"), mitem("decorative_brick", 1),
     mitem("blood_orb"), mitem("activation_crystal"), mitem("activation_crystal", 1), mitem("sacrificial_dagger"), mitem("pack_sacrifice"),
     mitem("pack_self_sacrifice"), mitem("dagger_of_sacrifice"), mitem("ritual_diviner"), mitem("ritual_diviner", 1),
     mitem("ritual_dismantler"), mitem("ritual_reader"), mitem("lava_crystal"),
@@ -100,3 +100,5 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeArray) mods.bloodmagic.alchemy_array.removeByOutput(it)
 // for (def it in removeTable) mods.bloodmagic.alchemy_table.removeByOutput(it)
 for (def it in removeHellfire) mods.bloodmagic.tartaric_forge.removeByOutput(it)
+
+TooltipEvents.setUnlock(mitem("altar"), 10)

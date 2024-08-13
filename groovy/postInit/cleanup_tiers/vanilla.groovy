@@ -48,7 +48,7 @@ def endItems = [
     item("minecraft:end_stone"), item("minecraft:purpur_block"), item("minecraft:purpur_pillar"), item("minecraft:purpur_stairs"),
     item("minecraft:purpur_slab"), item("minecraft:end_bricks"), item("minecraft:end_portal_frame"), item("minecraft:dragon_egg"),
     item("minecraft:skull", 5), item("minecraft:chorus_plant"), item("minecraft:chorus_flower"), item("minecraft:end_crystal"),
-    item("minecraft:ender_pearl"), item("minecraft:ender_eye"), item("minecraft:chorus_fruit"), item("minecraft:chorus_fruit_popped"),
+    item("minecraft:ender_pearl"), item("minecraft:chorus_fruit"), item("minecraft:chorus_fruit_popped"),
     item("minecraft:end_rod"), item("minecraft:dragon_breath"), item("minecraft:lingering_potion"), item("minecraft:shulker_shell"),
     item("minecraft:tipped_arrow"), item("minecraft:ender_chest"), item("minecraft:elytra"),
 ] + shulkerBoxes
@@ -93,6 +93,7 @@ TooltipEvents.addTierPredicate("waterbottle", s -> s in waterPotion, 1)
 furnace.removeByOutput(item("minecraft:iron_nugget"))
 furnace.removeByOutput(item("minecraft:gold_nugget"))
 
+TooltipEvents.setUnlock(item("minecraft:ender_eye"), 6)
 /*
 Needed recipes:
 Ender Pearl (unobtainable -> Tier 6)

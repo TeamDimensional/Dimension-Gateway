@@ -9,7 +9,7 @@ def basicItems = [
     mitem("reinforcedchest"), mitem("stoneseparator"), mitem("hungerprocessor"), mitem("dockingstation"),
     mitem("basicgreenhouse"), mitem("starchextractor"), mitem("redstoneextractor"), mitem("rainsensor"),
     mitem("gaslanternoff"), mitem("scarecrow"), mitem("pearlog"), mitem("pearplanks"), mitem("pearstairs"), mitem("pearfence"),
-    mitem("pearleaves"), mitem("pearsapling"), mitem("infocalculator"), mitem("calculator"), mitem("craftingcalculator"),
+    mitem("pearleaves"), mitem("pearsapling"), mitem("infocalculator"), mitem("craftingcalculator"),
     mitem("scientificcalculator"), mitem("hungermodule"), mitem("terrainmodule"), mitem("advancedterrainmodule"),
     mitem("energymodule"), mitem("smallstone"), mitem("calculatorscreen"), mitem("calculatorassembly"), mitem("advancedassembly"),
     mitem("wrench"), mitem("sickle"), mitem("enrichedgold"), mitem("enrichedgoldingot"), mitem("reinforcedironingot"),
@@ -83,4 +83,5 @@ for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
+TooltipEvents.setUnlock(mitem("calculator"), 5)
 TooltipEvents.setTooltip(mitem("jumpmodule"), "Warning! Don't use this without a good Feather Falling armor or equivalent.", textformat("RED"))
