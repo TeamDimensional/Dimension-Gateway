@@ -10,7 +10,9 @@ def tier3 = [
     fluid("purpleslime"),
 ]
 
-def tier4 = [fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil")]
+def tier4 = [
+    fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("evilcraftblood"),
+]
 
 def tier5 = [fluid("obsidian")]
 

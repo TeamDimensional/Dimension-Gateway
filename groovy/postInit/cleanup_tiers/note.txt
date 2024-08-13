@@ -1,11 +1,8 @@
 Remaining mods:
-Ender IO
-Ender Utilities
-Evilcraft
 Extra Utilities
 Industrial Foregoing
 Integrated Dynamics
-AE2EL
+Neeve AE2
 Nuclearcraft Overhauled
 QMD
 RFTools
