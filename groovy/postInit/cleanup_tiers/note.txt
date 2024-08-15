@@ -1,6 +1,5 @@
 Remaining mods:
 Integrated Dynamics
-Neeve AE2
 Nuclearcraft Overhauled
 QMD
 RFTools
