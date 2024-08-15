@@ -1,0 +1,13 @@
+filename = 'soundsystemreloader-1.0.0.jar'
+name = 'Sound System Reloader'
+side = 'both'
+
+[download]
+hash = '053e9f5d6fcc8a1bcae36d3599ebc7e1b2cc50b3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2725829
+project-id = 324565

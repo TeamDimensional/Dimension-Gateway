@@ -1,0 +1,13 @@
+filename = 'tweakedpetroleum-2.0.1.jar'
+name = 'Tweaked Petroleum'
+side = 'both'
+
+[download]
+hash = '7ddfdfb5c2ad183a09d3bcb9be772772bb19dee2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5409500
+project-id = 653506

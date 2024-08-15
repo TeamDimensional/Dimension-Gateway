@@ -1,0 +1,13 @@
+filename = 'supersoundmuffler-revived_1.12.2_1.0.2.10.jar'
+name = 'Super Sound Muffler: Revived'
+side = 'both'
+
+[download]
+hash = 'dbd647ab54a365b6f1a67d569fca20ee33fb958a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2886150
+project-id = 363856

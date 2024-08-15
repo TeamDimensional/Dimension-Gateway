@@ -1,0 +1,13 @@
+filename = 'JustEnoughPetroleum-0.1.jar'
+name = 'Just Enough Petroleum'
+side = 'both'
+
+[download]
+hash = '5c53e70b61328eaee4631529b0a46efc911e4c06'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2549332
+project-id = 291727

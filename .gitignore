@@ -44,3 +44,6 @@ config/AppliedEnergistics2/items.csv
 config/enderio/recipes/user/recipes.xsd
 config/teamreborn/configData.nbt
 config/teamreborn/reborncore/selected_energy.json
+config/BiomeTweaker/output/biome/*.json
+config/BiomeTweaker/output/dimension/*.json
+config/BiomeTweaker/output/entity/*.json

@@ -1,0 +1,13 @@
+filename = 'MmmMmmMmmMmm-1.12-1.14.jar'
+name = 'MmmMmmMmmMmm (Target Dummy)'
+side = 'both'
+
+[download]
+hash = '77ae10c019948bf1aec61b266e870609d8481058'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2503041
+project-id = 225738
