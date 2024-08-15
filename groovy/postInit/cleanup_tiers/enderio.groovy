@@ -68,7 +68,7 @@ def advancedItems = [
     mitem("block_enhanced_wired_charger"), mitem("block_enhanced_wireless_charger"), mitem("block_wireless_charger_extension"),
     mitem("block_transceiver"), mitem("block_simple_crafter"), mitem("block_crafter"), mitem("item_soul_vial"),
 ]
-for (def i in [16, 17, 18, 19, 34, 35, 36, 37, 42, 44, 56, 64, 68, 71, 78, 79, 80])
+for (def i in [16, 17, 18, 19, 34, 35, 36, 37, 42, 44, 54, 55, 56, 64, 68, 71, 78, 79, 80])
     advancedItems.add(mitem("item_material", i))
 advancedItems.add(mitem("block_alloy", 8))
 advancedItems.add(mitem("item_alloy_ingot", 8))

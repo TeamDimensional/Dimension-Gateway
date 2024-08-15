@@ -17,7 +17,7 @@ def items = [
     mitem("invigorating_pendant"), mitem("promise"), mitem("promise", 1), mitem("promise_acceptor"), mitem("promise_acceptor", 1),
     mitem("bowl_of_promises"), mitem("bowl_of_promises", 1), mitem("blood_waxed_coal"), mitem("blood_potash"), mitem("blood_orb", 1),
     mitem("sceptre_of_thunder"), mitem("origins_of_darkness"), mitem("darkened_apple"), mitem("biome_extract"), mitem("spikey_claws"),
-    mitem("broom_part"),
+    mitem("broom_part"), mitem("exalted_crafter", 3),
 ]
 for (int i in 0..4) items.add(mitem("bowl_of_promises", i))
 
@@ -25,18 +25,18 @@ def thaumItems = [mitem("veined_scribing_tools")]
 
 def enderItems = [
     mitem("blood_pearl_of_teleportation"), mitem("exalted_crafter"), mitem("ender_tear"), mitem("environmental_accumulation_core"),
+    mitem("exalted_crafter", 2),
 ]
 
 def advancedItems = [
     mitem("lightning_bomb"), mitem("spirit_furnace"), mitem("spiked_plate"), mitem("spirit_reanimator"), mitem("gem_stone_torch"),
     mitem("eternal_water_block"), mitem("lightning_grenade"), mitem("inverted_potentia"), mitem("inverted_potentia", 1),
     mitem("mace_of_distortion"), mitem("vengeance_ring"), mitem("vengeance_focus"), mitem("vengeance_pickaxe"),
-    mitem("burning_gem_stone"), mitem("dark_spike"), mitem("exalted_crafter", 2), mitem("exalted_crafter", 3),
     mitem("necromancer_staff"), mitem("corrupted_tear"), mitem("entangled_chalice"), mitem("promise", 2), mitem("promise", 3),
     mitem("promise", 4), mitem("promise_acceptor", 2), mitem("bowl_of_promises", 5), mitem("bucket_eternal_water"),
     mitem("effortless_ring"), mitem("rejuvenated_flesh"), mitem("primed_pendant"), mitem("mace_of_destruction"),
     mitem("garmonbozia"), mitem("vengeance_essence"), mitem("vengeance_essence", 1), mitem("piercing_vengeance_focus"),
-    mitem("spectral_glasses"), mitem("box_of_eternal_closure"),
+    mitem("spectral_glasses"), mitem("box_of_eternal_closure"), mitem("burning_gem_stone"), mitem("dark_spike"),
 ]
 for (def i in 0..3) advancedItems.add(mitem("weather_container", i))
 

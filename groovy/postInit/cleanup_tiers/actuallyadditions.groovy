@@ -25,7 +25,7 @@ def tier4Items = [
     mitem("block_leaf_generator"), mitem("block_lamp_powerer"), mitem("block_energizer"), mitem("block_enervator"),
     mitem("block_canola_press"), mitem("block_oil_generator"), mitem("block_fermenting_barrel"), mitem("block_feeder"),
     mitem("block_giant_chest"), mitem("block_giant_chest_medium"), mitem("block_grinder"), mitem("block_grinder_double"),
-    mitem("block_furnace_double"), mitem("block_inputter"), mitem("block_inputter_advanced"), mitem("block_misc", 9),
+    mitem("block_furnace_double"), mitem("block_inputter"), mitem("block_inputter_advanced"), mitem("block_misc", 9), mitem("block_misc", 7),
     mitem("block_heat_collector"), mitem("block_placer"), mitem("block_dropper"), mitem("block_fluid_placer"),
     mitem("block_fluid_collector"), mitem("block_coffee_machine"),
     mitem("item_engineer_goggles"), mitem("item_laser_upgrade_range"), mitem("item_laser_upgrade_invisibility"), mitem("item_bag"),
@@ -50,6 +50,7 @@ for (def a in armor)
 
 def tier5Items = [
     mitem("block_laser_relay"), mitem("block_laser_relay_fluids"), mitem("block_laser_relay_item"), mitem("block_laser_relay_item_whitelist"),
+    mitem("item_laser_wrench"),
 ]
 
 def tier6Items = [

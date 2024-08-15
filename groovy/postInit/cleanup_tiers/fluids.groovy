@@ -14,7 +14,7 @@ def tier4 = [
     fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("evilcraftblood"),
 ]
 
-def tier5 = [fluid("obsidian")]
+def tier5 = [fluid("obsidian"), fluid("brass")]
 
 def tier6 = [
     fluid("ender"), fluid("aetherworks.aetherium_gas"), fluid("aetherworks.impure_aetherium_gas"), fluid("oil_soul"), fluid("oil_dwarf"),
@@ -29,11 +29,11 @@ def tier7 = [
     fluid("liquid_crystal"), fluid("nutrient_distillation"), fluid("hootch"), fluid("rocket_fuel"), fluid("fire_water"),
     fluid("liquid_sunshine"), fluid("cloud_seed"), fluid("cloud_seed_concentrated"), fluid("electrical_steel"), fluid("energetic_alloy"),
     fluid("vibrant_alloy"), fluid("redstone_alloy"), fluid("conductive_iron"), fluid("pulsating_iron"), fluid("dark_steel"), fluid("soularium"),
-    fluid("end_steel"),
+    fluid("end_steel"), fluid("redstone"), fluid("glowstone"),
 ]
 
 def tier8 = [
-    fluid("cryotheum"), fluid("rocketfuel"),
+    fluid("cryotheum"), fluid("rocketfuel"), fluid("zinc"),
 ]
 
 def tier9 = [

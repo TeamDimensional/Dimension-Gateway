@@ -41,7 +41,7 @@ removedItems = [
     mitem("oak_generator"), mitem("auto_crafter"), mitem("rf_converter"),
     mitem("dimension_rail_overworld"), mitem("dimension_rail_nether"), mitem("dimension_rail_end"),
 ]
-hiddenItems = [mitem("multiblock_maker")] + removedItems
+hiddenItems = [mitem("multiblock_maker"), mitem("ancient_slab_double")] + removedItems
 
 automationItems = [
     // This has to be gated because of harvest level issues

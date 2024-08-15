@@ -90,7 +90,7 @@ def hoannaBuildingLoot = [
 def hoannaTier = [
     mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("magicalfurnace"), mitem("emberforge"), mitem("voidfence"),
     mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("furnacemagic", 12), mitem("mithrilinecrystal", 6), mitem("chest", 1),
-    mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder"), mitem("voidstone"), mitem("voidglass"),
+    mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
 for (def i in armorParts) hoannaTier.add(mitem("${i}_void"))
 for (int i in 0..15) {

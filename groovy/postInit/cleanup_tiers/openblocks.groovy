@@ -23,7 +23,7 @@ obsidianItems = [mitem("tank"), mitem("auto_enchantment_table"), mitem("paint_mi
 enderItems = [
     mitem("builder_guide"), mitem("vacuum_hopper"), mitem("imaginary"), mitem("sky"),
     mitem("sky", 1), mitem("generic", 9), mitem("cartographer"), mitem("imaginary", 1),
-    mitem("pencil_glasses"), mitem("crayon_glasses"),
+    mitem("pencil_glasses"), mitem("crayon_glasses"), mitem("golden_eye", 32767),
 ]
 for (int i in 0..15) enderItems.add(mitem("elevator", i))
 for (int i in 0..15) enderItems.add(mitem("elevator_rotating", i))

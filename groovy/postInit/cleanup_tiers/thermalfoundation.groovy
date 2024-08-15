@@ -24,10 +24,11 @@ def tier3Items = [
 for (int i in [0, 1, 2, 4]) tier3Items.add(mitem("storage_alloy", i))
 for (int i in [0, 1, 24, 25, 32, 33, 64, 65, 66, 67, 68, 69, 96, 97, 98, 99, 100, 130, 131, 133, 160, 161, 162, 164,
                194, 195, 197, 224, 225, 226, 228, 256, 257, 258, 259, 260, 261, 288, 289, 290, 291, 292,
-               320, 321, 322, 323, 324, 325, 352, 353, 354, 355, 356, 768, 769, 771, 772, 800, 866, 1024])
+               320, 321, 322, 323, 324, 325, 352, 353, 354, 355, 356, 768, 769, 771, 772, 800, 864, 866, 1024])
     tier3Items.add(mitem("material", i))
+for (int i in 0..15) tier3Items.add(mitem("rockwool", i))
 
-def tier4Items = []
+def tier4Items = [mitem("diagram_redprint")]
 for (int i in [16, 17, 26, 27]) tier4Items.add(mitem("material", i))
 
 def tier5Items = [mitem("material", 770)]
@@ -65,7 +66,7 @@ def creativeItems = [mitem("upgrade", 256)]
 def removedItems = []
 for (int i in [22, 23, 640, 656, 657]) removedItems.add(mitem("material", i))
 
-def hideFromJei = [mitem("geode"), mitem("ore", 6), mitem("ore", 7), mitem("ore", 8)] + removedItems
+def hideFromJei = [mitem("geode"), mitem("ore", 6), mitem("ore", 7), mitem("ore", 8), mitem("material", 892)] + removedItems
 
 for (def it in tier2Items) TooltipEvents.setTier(it, 2)
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)

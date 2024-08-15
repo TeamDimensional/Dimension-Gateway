@@ -4,6 +4,5 @@ Nuclearcraft Overhauled
 QMD
 RFTools
 Thaumcraft
-Aether
 Thermal Expansion
 Woot

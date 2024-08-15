@@ -6,7 +6,7 @@ def mitem(name, k=0) {
 }
 
 def tier3Items = [
-    mitem("thermitetorch"), mitem("circlelight"), mitem("thermite"), mitem("smallairlockdoor"),
+    mitem("thermitetorch"), mitem("circlelight"), mitem("thermite"), mitem("smallairlockdoor"), item("libvulpes:productrod", 4),
 ]
 
 def tier7Items = [
@@ -50,7 +50,7 @@ def tier12Items = [
     mitem("planks"), item("libvulpes:ore0", 10),
     // Titanium Iridium
     mitem("productdust", 1), mitem("productingot", 1), mitem("productnugget", 1), mitem("productplate", 1), mitem("productrod", 1),
-    mitem("productsheet", 1), mitem("productgear", 1), mitem("metal0", 1),
+    mitem("productsheet", 1), mitem("productgear", 1), mitem("metal0", 1), item("libvulpes:productrod", 10),
     mitem("dataunit"), mitem("satellitepowersource"), mitem("satellitepowersource", 1), mitem("orescanner"),
     mitem("carbonscrubbercartridge"), mitem("satellite"), item("libvulpes:advstructuremachine"), item("libvulpes:elitemotor"),
 ]

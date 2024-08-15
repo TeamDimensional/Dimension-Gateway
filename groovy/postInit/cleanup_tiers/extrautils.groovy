@@ -25,7 +25,7 @@ def tier6Items = [
 
 def items = [
     mitem("snowglobe"), mitem("snowglobe", 1), mitem("unstableingots"), mitem("unstableingots", 1), mitem("unstableingots", 2),
-    mitem("supermobspawner"), mitem("cursedearth"), mitem("endershard"), mitem("resonator"), mitem("suncrystal"), mitem("screen"),
+    mitem("supermobspawner"), mitem("cursedearth"), mitem("endershard"), mitem("resonator"), mitem("suncrystal", 32767), mitem("screen"),
     mitem("goldenlasso"), mitem("goldenlasso", 1), mitem("chickenring"), mitem("chickenring", 1), mitem("playerchest"),
     mitem("contract"), mitem("chunkloader"), mitem("bagofholding"), mitem("crafter"), mitem("scanner"), mitem("miner"), mitem("user"),
     mitem("machine"), mitem("teleporter"), mitem("teleporter", 1), mitem("spike_iron"), mitem("spike_gold"),

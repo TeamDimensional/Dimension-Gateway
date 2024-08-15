@@ -48,7 +48,7 @@ def tier11Items = [
     mitem("wireless_crafting_terminal"), mitem("wireless_pattern_terminal"), mitem("wireless_fluid_terminal"),
     mitem("material", 59), item("nae2:part", 2), item("nae2:upgrade"), item("nae2:exposer"),
 ]
-for (def i in 1..7) tier11Items.add(item("nae2:material", i))
+for (def i in 1..8) tier11Items.add(item("nae2:material", i))
 for (def i in [256, 1024, 4096, 16384]) {
     tier11Items.add(item("nae2:storage_cell_${i}k"))
     tier11Items.add(item("nae2:storage_cell_fluid_${i}k"))
