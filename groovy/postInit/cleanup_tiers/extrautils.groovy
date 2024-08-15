@@ -70,7 +70,7 @@ for (def it in antimatterItems) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removedMachines) {
-    def a = mitem("machine").withNbt(["Type": 'extrautils2:' + it])
+    def a = mitem("machine").withNbt(["Type": "extrautils2:${it}".toString()])
     crafting.removeByOutput(a)
     mods.jei.ingredient.hide(a)
 }

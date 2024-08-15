@@ -40,7 +40,10 @@ def tier9 = [
     fluid("ender_distillation"), fluid("vapor_of_levity"), fluid("xu_evil_metal"), fluid("xu_enchanted_metal"),
 ]
 
-def tier10 = [fluid("empoweredoil"), fluid("lifeessence")]
+def tier10 = [
+    fluid("empoweredoil"), fluid("lifeessence"), fluid("essence"), fluid("meat"), fluid("latex"), fluid("sewage"),
+    fluid("sludge"), fluid("biofuel"), fluid("if.pink_slime"), fluid("if.ore_fluid_raw"), fluid("if.ore_fluid_fermented")
+]
 
 def tier12 = [
     fluid("iridium"), fluid("mana"), fluid("enrichedlava"),
