@@ -8,6 +8,8 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 class GatewayHelpers {
     static def colors = ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray",
                          "silver", "cyan", "purple", "blue", "brown", "green", "red", "black"]
+    static def colorsSonar = ["normal", "black", "blue", "brown", "cyan", "green", "lightblue", "lightgrey", "lime",
+                              "magenta", "orange", "pink", "plain", "purple", "red", "yellow"]
 
     static void banTool(ItemStack itemStack) {
         itemStack.getItem().setMaxDamage(1)

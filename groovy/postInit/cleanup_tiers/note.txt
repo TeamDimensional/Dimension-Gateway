@@ -3,9 +3,7 @@ Integrated Dynamics
 Nuclearcraft Overhauled
 QMD
 RFTools
-Sonar Core
 Thaumcraft
 Aether
 Thermal Expansion
-Libvulpes
 Woot

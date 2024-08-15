@@ -23,12 +23,10 @@ crafting.remove("advancedrocketry:unpacknuggetsilicon")
 // Copper
 ore("dustCopper").remove(item("libvulpes:productdust", 4))
 ore("plateCopper").remove(item("libvulpes:productplate", 4))
-ore("stickCopper").remove(item("libvulpes:productrod", 4))
 ore("nuggetCopper").remove(item("libvulpes:productnugget", 4))
 ore("ingotCopper").remove(item("libvulpes:productingot", 4))
 ore("blockCopper").remove(item("libvulpes:metal0", 4))
 
-crafting.remove("advancedrocketry:stickcopper")
 crafting.remove("advancedrocketry:unpackingotcopper")
 crafting.remove("advancedrocketry:unpacknuggetcopper")
 crafting.remove("advancedrocketry:unpackblockcopper")
@@ -93,10 +91,11 @@ for (def i in [3, 4, 5, 6, 9, 10]) hidden.add(item("libvulpes:productingot", i))
 for (def i in [3, 4, 5, 6, 9, 10]) hidden.add(item("libvulpes:productnugget", i))
 for (def i in [3, 4, 5, 6, 9, 10]) hidden.add(item("libvulpes:metal0", i))
 for (def i in [1, 2, 3, 4, 5, 6, 9, 10]) hidden.add(item("libvulpes:productplate", i))
-for (def i in [1, 4, 6, 10]) hidden.add(item("libvulpes:productrod", i))
+for (def i in [1, 4, 6, 7, 9]) hidden.add(item("libvulpes:productsheet", i))
+for (def i in [1, 6]) hidden.add(item("libvulpes:productrod", i))
 
 for (def it in hidden) GatewayHelpers.hide(it)
 
 // Remove titanium components recipes
 crafting.remove("advancedrocketry:sticktitanium")
-crafting.remove("advancedrocketry:stickgear")
+crafting.remove("advancedrocketry:geartitanium")
