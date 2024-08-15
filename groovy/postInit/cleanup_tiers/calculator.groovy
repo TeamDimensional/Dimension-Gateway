@@ -16,25 +16,8 @@ def basicItems = [
     mitem("redstoneingot"), mitem("weakeneddiamond"), mitem("largeamethyst"), mitem("smallamethyst"), mitem("shardamethyst"),
     mitem("broccoliseeds"), mitem("broccoli"), mitem("pear"), mitem("rottenpear"), mitem("cookedbroccoli"), mitem("lantern"),
     mitem("coaldust"), mitem("enrichedcoal"), mitem("purifiedcoal"), mitem("firecoal"), mitem("babygrenade"), mitem("grenade"),
-    item("sonarcore:stableglass"), item("sonarcore:clearstableglass"),
 ]
 for (int i in [0, 2, 3, 4, 9]) basicItems.add(mitem("material", i))
-
-// Sonar Core building blocks O_O
-for (def type in ["", "stairs", "fence", "gate"]) {
-    for (def kind in ["", "brick"]) {
-        for (def material in ["dirt", "stone"]) {
-            def blockId = kind + type
-            if (blockId == "") blockId = "block"
-            basicItems.add(item("sonarcore:reinforced${material}${blockId}"))
-        }
-    }
-}
-for (def color in GatewayHelpers.colorsSonar) {
-    for (def type in ["", "rimmed", "blackrimmed"]) {
-        basicItems.add(item("sonarcore:stablestone${type}_${color}"))
-    }
-}
 
 def atomicItems = [
     mitem("atomiccalculator"), mitem("dynamiccalculator"), mitem("algorithmseparator"), mitem("healthprocessor"),
@@ -102,3 +85,4 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 
 TooltipEvents.setUnlock(mitem("calculator"), 5)
 TooltipEvents.setTooltip(mitem("jumpmodule"), "Warning! Don't use this without a good Feather Falling armor or equivalent.", textformat("RED"))
+TooltipEvents.setModTier("sonarcore", 5)
