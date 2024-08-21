@@ -1,6 +1,5 @@
 Remaining mods:
 Nuclearcraft Overhauled
 QMD
-RFTools
 Thaumcraft
 Thermal Expansion
