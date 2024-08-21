@@ -207,9 +207,10 @@ for (def it in coalDusts) {
 
 // Sulfur Dust
 mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 23) * 8)
+// mods.abyssalcraft.transmutation.removeByOutput(item("abyssalcraft:sulfur"))
 
 def sulfurDusts = [
-    item("nuclearcraft:gem_dust", 6), item("bloodmagic:component", 23)
+    item("nuclearcraft:gem_dust", 6), item("bloodmagic:component", 23), item("abyssalcraft:sulfur")
 ]
 for (def it in sulfurDusts) {
     ore("dustSulfur").remove(it)
@@ -218,9 +219,10 @@ for (def it in sulfurDusts) {
 
 // Saltpeter Dust
 mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 24) * 4)
+furnace.removeByOutput(item("abyssalcraft:nitre"))
 
 def saltpeterDusts = [
-    item("qmd:chemical_dust", 2), item("bloodmagic:component", 24)
+    item("qmd:chemical_dust", 2), item("bloodmagic:component", 24), item("abyssalcraft:nitre")
 ]
 for (def it in saltpeterDusts) {
     ore("dustSaltpeter").remove(it)
@@ -260,3 +262,4 @@ for (def it in obsidianDusts) {
 }
 
 // TODO: remove charcoal block from AA
+ore("coal").remove(item("abyssalcraft:charcoal"))

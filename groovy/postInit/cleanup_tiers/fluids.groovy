@@ -42,7 +42,12 @@ def tier9 = [
 
 def tier10 = [
     fluid("empoweredoil"), fluid("lifeessence"), fluid("essence"), fluid("meat"), fluid("latex"), fluid("sewage"),
-    fluid("sludge"), fluid("biofuel"), fluid("if.pink_slime"), fluid("if.ore_fluid_raw"), fluid("if.ore_fluid_fermented")
+    fluid("sludge"), fluid("biofuel"), fluid("if.pink_slime"), fluid("if.ore_fluid_raw"), fluid("if.ore_fluid_fermented"),
+    fluid("liquidcoralium"),
+]
+
+def tier11 = [
+    fluid("liquidantimatter"),
 ]
 
 def tier12 = [
@@ -58,6 +63,7 @@ for (def it in tier7) TooltipEvents.setTier(it, 7)
 for (def it in tier8) TooltipEvents.setTier(it, 8)
 for (def it in tier9) TooltipEvents.setTier(it, 9)
 for (def it in tier10) TooltipEvents.setTier(it, 10)
+for (def it in tier11) TooltipEvents.setTier(it, 11)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
 
 mods.jei.ingredient.hide(fluid("uranium"))

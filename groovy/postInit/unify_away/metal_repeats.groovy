@@ -47,6 +47,7 @@ def duplicateRecipes = [
     "thaumcraft:leadnuggetstoingot",
 ]
 
+ore("blockCoalCoke").add(item("immersiveengineering:stone_decoration", 3))
 for (def it in duplicateRecipes) crafting.remove(it)
 crafting.shapelessBuilder()
         .name("unify/coal_coke_from_block")
@@ -59,7 +60,6 @@ crafting.shapelessBuilder()
         .input(ore("blockLapis"))
         .register()
 
-ore("blockCoalCoke").add(item("immersiveengineering:stone_decoration", 3))
 ore("nuggetDiamond").remove(item("translocators:diamond_nugget"))
 ore("nuggetIron").remove(item("thaumcraft:nugget"))
 ore("nuggetCopper").remove(item("thaumcraft:nugget", 1))
