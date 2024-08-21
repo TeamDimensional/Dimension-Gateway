@@ -1,8 +1,6 @@
 Remaining mods:
-Integrated Dynamics
 Nuclearcraft Overhauled
 QMD
 RFTools
 Thaumcraft
 Thermal Expansion
-Woot
