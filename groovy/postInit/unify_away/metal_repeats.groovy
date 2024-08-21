@@ -22,13 +22,21 @@ def duplicateRecipes = [
     "chisel:uncraft_blocksilver",
     "chisel:uncraft_blocksteel",
     "chisel:uncraft_blocktin",
+    "chisel:uncraft_blocklead",
+    "chisel:charcoal",
     // ActAdd
+    "actuallyadditions:recipes121",
     "actuallyadditions:recipes122",
     // Nuclearcraft
     "nuclearcraft:material",
     "nuclearcraft:material_1",
+    "nuclearcraft:material_2",
     "nuclearcraft:material_3",
+    "nuclearcraft:material_4",
+    "nuclearcraft:storage",
     "nuclearcraft:storage_1",
+    "nuclearcraft:storage_2",
+    "nuclearcraft:storage_4",
     "nuclearcraft:ingot_1",
     // Immersive Engineering
     "immersiveengineering:stone_decoration/cokeblock_uncraft",
@@ -60,6 +68,7 @@ crafting.shapelessBuilder()
         .input(ore("blockLapis"))
         .register()
 
+ore("blockCharcoal").remove(item("actuallyadditions:block_misc", 5))
 ore("nuggetDiamond").remove(item("translocators:diamond_nugget"))
 ore("nuggetIron").remove(item("thaumcraft:nugget"))
 ore("nuggetCopper").remove(item("thaumcraft:nugget", 1))
@@ -74,6 +83,7 @@ ore("ingotSilver").remove(item("projectred-core:resource_item", 102))
 GatewayHelpers.hide(item("translocators:diamond_nugget"))
 GatewayHelpers.hide(item("abyssalcraft:copperingot"))
 GatewayHelpers.hide(item("abyssalcraft:tiningot"))
+GatewayHelpers.hide(item("actuallyadditions:block_misc", 5))
 for (int i in 0..4) GatewayHelpers.hide(item("thaumcraft:nugget", i))
 for (int i in 0..5) GatewayHelpers.hide(item("thaumcraft:chunk", i))
 for (int i in 100..102) GatewayHelpers.hide(item("projectred-core:resource_item", i))

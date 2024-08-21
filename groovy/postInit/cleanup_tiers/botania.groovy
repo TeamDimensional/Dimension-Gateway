@@ -24,14 +24,14 @@ def tier1Items = [
     mitem("dirtrod"), mitem("tinyplanet"), mitem("manaring"), mitem("auraring"), mitem("travelbelt"), mitem("knockbackbelt"), mitem("slingshot"),
     mitem("icependant"), mitem("lavapendant"), mitem("magnetring"), mitem("waterring"), mitem("miningring"), mitem("enderdagger"),
     mitem("waterrod"), mitem("tornadorod"), mitem("firerod"), mitem("quartz"), mitem("quartz", 1), mitem("quartz", 2),
-    mitem("manabottle"), mitem("enderhand"), mitem("diviningrod"), mitem("manainkwell"), mitem("vial"), mitem("brewvial"), mitem("spellcloth"),
+    mitem("manabottle"), mitem("enderhand"), mitem("diviningrod"), mitem("manainkwell", 32767), mitem("vial"), mitem("brewvial"), mitem("spellcloth"),
     mitem("craftinghalo"), mitem("monocle"), mitem("cobblerod"), mitem("smeltrod"), mitem("livingwoodbow"), mitem("swapring"), mitem("phantomink"),
     mitem("poolminecart"), mitem("temperancestone"), mitem("incensestick"), mitem("obediencestick"), mitem("autocraftinghalo"), mitem("sextant"),
     mitem("speedupbelt"), mitem("dodgering"), mitem("invisibilitycloak"), mitem("cloudpendant"), mitem("thirdeye"), mitem("goddesscharm"),
     mitem("managlasspane"), mitem("spreader"), mitem("spreader", 1), mitem("pylon"), mitem("pistonrelay"), mitem("distributor"), mitem("manavoid"),
     mitem("manadetector"), mitem("turntable"), mitem("tinyplanetblock"), mitem("foresteye"), mitem("storage"), mitem("storage", 3),
     mitem("forestdrum"), mitem("forestdrum", 2), mitem("platform"), mitem("tinypotato"), mitem("brewery"), mitem("managlass"), mitem("pump"),
-    mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"), mitem("manainkwell"),
+    mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"),
 ] + getQuartzList("dark") + getQuartzList("mana") + getQuartzList("blaze")
 for (int i in [0, 1, 2, 3, 6, 11, 16, 17, 22, 23]) tier1Items.add(mitem("manaresource", i))
 for (int i in [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 15, 16, 17, 22]) tier1Items.add(mitem("lens", i))

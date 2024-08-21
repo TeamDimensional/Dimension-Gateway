@@ -20,7 +20,7 @@ def ourItems = [
 for (int i in [0, 2, 4, 5, 7, 8, 10, 11, 12, 18, 19, 20, 22, 25, 26, 27, 28, 29]) ourItems.add(mitem("item_resource", i))
 
 def potionGems = []
-for (int i in 1..133) potionGems.add(mitem("item_potion_gem", i))
+for (int i in 1..140) potionGems.add(mitem("item_potion_gem", i))
 
 // Removing Aetherium Forge because no one knows how it works, including me after extensively reading the code.
 // Removing some Aetherium tools because they're terrible for when they're obtained LMAO.
