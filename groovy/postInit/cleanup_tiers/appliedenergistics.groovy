@@ -35,7 +35,7 @@ def tier8Items = [
     mitem("wireless_access_point"), mitem("quantum_ring"), mitem("quantum_link"), mitem("spatial_pylon"),
     mitem("spatial_io_port"), mitem("fluid_interface"), mitem("io_port"), mitem("condenser"),
     mitem("crafting_accelerator"), mitem("entropy_manipulator"), mitem("wireless_terminal"), mitem("matter_cannon"),
-    item("nae2:part"),
+    item("nae2:part"), item("aenetvistool:net_visualizer"),
 ]
 for (def i in 0..35) tier8Items.add(mitem("paint_ball", i))
 for (def i in [6, 9, 28, 29, 30, 31, 32, 33, 34, 38, 41, 42, 47, 48, 54, 55, 56, 57, 58, 60])

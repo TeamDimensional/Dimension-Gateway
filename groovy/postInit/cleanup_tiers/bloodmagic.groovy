@@ -6,7 +6,7 @@ def mitem(name, k=0) {
 }
 
 def bloodItems = [
-    mitem("incense_altar"), mitem("alchemy_table"), mitem("decorative_brick"), mitem("decorative_brick", 1),
+    mitem("altar"), mitem("incense_altar"), mitem("alchemy_table"), mitem("decorative_brick"), mitem("decorative_brick", 1),
     mitem("blood_orb"), mitem("activation_crystal"), mitem("activation_crystal", 1), mitem("sacrificial_dagger"), mitem("pack_sacrifice"),
     mitem("pack_self_sacrifice"), mitem("dagger_of_sacrifice"), mitem("ritual_diviner"), mitem("ritual_diviner", 1),
     mitem("ritual_dismantler"), mitem("ritual_reader"), mitem("lava_crystal"),
@@ -36,8 +36,7 @@ def sentientItems = [
     mitem("demon_pillar_cap_3"),
     mitem("demon_stairs_1"), mitem("demon_stairs_1", 1), mitem("demon_stairs_2"), mitem("demon_stairs_2", 1),
     mitem("demon_stairs_3"), mitem("teleposer"), mitem("sigil_haste"), mitem("sigil_teleposition"), mitem("sigil_transposition"),
-    mitem("blood_shard", 1),
-    mitem("soul_snare"), mitem("sentient_sword"), mitem("sentient_bow"), mitem("sentient_axe"),
+    mitem("blood_shard", 1), mitem("sentient_sword"), mitem("sentient_bow"), mitem("sentient_axe"),
     mitem("sentient_pickaxe"), mitem("sentient_shovel"), mitem("demon_will_gauge"),
 ]
 def coloredThings = [
@@ -101,4 +100,4 @@ for (def it in removeArray) mods.bloodmagic.alchemy_array.removeByOutput(it)
 // for (def it in removeTable) mods.bloodmagic.alchemy_table.removeByOutput(it)
 for (def it in removeHellfire) mods.bloodmagic.tartaric_forge.removeByOutput(it)
 
-TooltipEvents.setUnlock(mitem("altar"), 10)
+TooltipEvents.setUnlock(mitem("soul_snare"), 12)
