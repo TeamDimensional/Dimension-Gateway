@@ -2,4 +2,3 @@ Remaining mods:
 Nuclearcraft Overhauled
 QMD
 Thaumcraft
-Thermal Expansion

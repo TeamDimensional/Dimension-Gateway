@@ -20,6 +20,7 @@ def advancedItems = [
     titem("part_importer_world_item_item"), titem("part_exporter_world_item_item"),
     titem("part_importer_world_fluid_item"), titem("part_exporter_world_fluid_item"),
     titem("part_importer_world_block_item"), titem("part_exporter_world_block_item"),
+    titem("part_interface_energy_item"), titem("part_importer_energy_item"), titem("part_exporter_energy_item"),
 ]
 
 def removeRecipes = [
