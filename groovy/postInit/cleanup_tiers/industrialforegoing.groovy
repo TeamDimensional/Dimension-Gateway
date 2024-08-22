@@ -51,6 +51,7 @@ def hideFromJei = [
     mitem("black_hole_controller"), mitem("protein_generator"),
 ] + removeCrafting
 
+for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in devices) TooltipEvents.setTier(it, 7)
 for (def it in advDevices) TooltipEvents.setTier(it, 8)
 for (def it in items) TooltipEvents.setTier(it, 10)

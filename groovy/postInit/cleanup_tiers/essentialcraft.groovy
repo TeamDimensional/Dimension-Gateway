@@ -63,7 +63,7 @@ def industrialTier = [
     mitem("magicaldigger"), mitem("spawnercollector"), mitem("staffoflife"), mitem("biomewand"), mitem("emeraldheart"),
     mitem("magicalshield"), mitem("spikyshield"), mitem("chaosfork"), mitem("magicwaterbottle"), mitem("magicalporkchop"), mitem("playerlist"),
     mitem("magmaticstaff"), mitem("magicallantern"), mitem("magnetizingstaff"), mitem("chunkloader"), mitem("dimtransciever"), mitem("magicalwings"),
-    mitem("holymace"), mitem("genitem"), mitem("genitem", 20),
+    mitem("holymace"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"),
 ]
 for (int i in 0..5) industrialTier.add(mitem("rightclicker", i))
 for (int i in 0..15) industrialTier.add(mitem("essence", i))
@@ -71,6 +71,7 @@ for (def i in armorParts) industrialTier.add(mitem("${i}_magic"))
 for (int i in 0..15) {
     industrialTier.add(mitem("fancyblock.mru", i))
     industrialTier.add(mitem("fancyblock.mimic", i))
+    industrialTier.add(mitem("fancyblock.coldstone", i))
 }
 for (int i in 0..3) industrialTier.add(mitem("elementalfuel", i))
 for (int i in 0..9) industrialTier.add(mitem("charm", i))

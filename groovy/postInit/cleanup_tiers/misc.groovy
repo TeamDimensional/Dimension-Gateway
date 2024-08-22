@@ -2,16 +2,18 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
 def tier3Items = [
-    item("xnet:xnet_manual"),
+    item("xnet:xnet_manual"), item("supersoundmuffler:sound_muffler"), item("supersoundmuffler:sound_muffler_bauble"),
 ]
+for (def i in [1, 3, 4, 5, 6, 7]) tier3Items.add(item("engineersworkshop:upgrade", i))
 
 def tier4Items = [
-    item("omniwand:wand"), item("xnet:facade"), item("xnet:controller"), item("xnet:router"),
+    item("omniwand:wand"), item("xnet:facade"), item("xnet:controller"), item("xnet:router"), item("engineersworkshop:upgrade", 8),
 ]
 
 def tier7Items = [
     item("xnet:connector_upgrade"), item("xnet:redstone_proxy"), item("xnet:redstone_proxy_upd"), item("xnet:netcable", 4),
     item("xnet:connector", 4), item("xnet:wireless_router"), item("xnet:antenna"), item("xnet:antenna_base"), item("xnet:antenna_dish"),
+    item("simplevoidworld:portal"),
 ]
 
 for (def i in 0..3) {
@@ -21,7 +23,7 @@ for (def i in 0..3) {
 }
 
 def removeRecipes = [
-    item("hammercore:manual"),
+    item("hammercore:manual"), item("engineersworkshop:upgrade", 9),
 ]
 
 def hideFromJei = [] + removeRecipes
