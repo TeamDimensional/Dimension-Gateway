@@ -210,15 +210,14 @@
 
 		"diamond": {
 			"distribution": "underfluid",
-			"cluster-count": 14,
+			"cluster-count": 20,
 			"fluid": "lava",
 			"material": ["minecraft:stone", "minecraft:air"],
 			"generator": {
 				"block": [
-					{"name": "minecraft:emerald_ore", "weight": 16},
-					{"name": "mysticalworld:amethyst_ore", "weight": 24},
-					{"name": "minecraft:diamond_ore", "weight": 24},
-					{"name": "minecraft:stone", "properties": {"variant": "granite"}, "weight": 36}
+					{"name": "minecraft:emerald_ore", "weight": 25},
+					{"name": "minecraft:diamond_ore", "weight": 35},
+					{"name": "minecraft:stone", "properties": {"variant": "granite"}, "weight": 40}
 				],
 				"cluster-size": 10,
 				"material": [
