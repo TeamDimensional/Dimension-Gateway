@@ -15,7 +15,9 @@ def tier4 = [
     fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("evilcraftblood"), fluid("diamond"),
 ]
 
-def tier5 = [fluid("obsidian"), fluid("brass")]
+def tier5 = [
+    fluid("obsidian"), fluid("brass"), fluid("crystal_water"), fluid("flux_goo"), fluid("liquid_death"), fluid("purifying_fluid"),
+]
 
 def tier6 = [
     fluid("ender"), fluid("aetherworks.aetherium_gas"), fluid("aetherworks.impure_aetherium_gas"), fluid("oil_soul"), fluid("oil_dwarf"),
