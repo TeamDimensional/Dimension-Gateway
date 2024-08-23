@@ -41,6 +41,7 @@ for (type in ["block", "slab", "stairs", "wall", "button", "pressure_plate", "fe
 def removeItems = [mitem("pearleporter")] + buildArmorList("copper") + buildArmorList("silver")
 def hideFromJei = [
     mitem("unripe_pearl"), mitem("quartz_ore"), mitem("granite_quartz_ore"), mitem("amethyst_ore"), mitem("amethyst_gem"), mitem("amethyst_block"),
+    mitem("iron_dust"), mitem("iron_dust_tiny"), mitem("gold_dust"), mitem("gold_dust_tiny"),
 ] + removeItems + copperItems + silverItems
 
 for (def it in feyCrafting) TooltipEvents.setTier(it, 3)

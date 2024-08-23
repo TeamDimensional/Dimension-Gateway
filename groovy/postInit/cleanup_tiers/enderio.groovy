@@ -135,8 +135,6 @@ for (def it in advancedItems) TooltipEvents.setTier(it, 9)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-TooltipEvents.setTier(fluid("construction_alloy"), 0)
-mods.jei.ingredient.hide(fluid("construction_alloy"))
 
 for (def it in removeSagMillInputs) mods.enderio.sag_mill.removeByInput(it)
 for (def it in removeAlloy) mods.enderio.alloy_smelter.remove(it)

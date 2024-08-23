@@ -58,6 +58,4 @@ for (def it in items) TooltipEvents.setTier(it, 10)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeCrafting) crafting.removeByOutput(it)
 
-TooltipEvents.setTier(fluid("if.protein"), 0)
-mods.jei.ingredient.hide(fluid("if.protein"))
 TooltipEvents.setUnlock(item("teslacorelib:machine_case"), 10)

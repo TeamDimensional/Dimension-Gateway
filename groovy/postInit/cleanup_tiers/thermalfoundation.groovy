@@ -82,6 +82,3 @@ for (def it in rocketScienceItems) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-
-TooltipEvents.setTier(fluid("crude_oil"), 0)
-mods.jei.ingredient.hide(fluid("crude_oil"))

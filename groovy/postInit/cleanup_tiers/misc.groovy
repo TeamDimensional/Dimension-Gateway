@@ -1,6 +1,8 @@
 import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
+TooltipEvents.setModTier("compactmachines3", 7)
+
 def tier3Items = [
     item("xnet:xnet_manual"), item("supersoundmuffler:sound_muffler"), item("supersoundmuffler:sound_muffler_bauble"),
 ]
