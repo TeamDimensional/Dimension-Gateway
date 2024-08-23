@@ -1,4 +1,5 @@
 import com.dimensional.gatewaycore.events.TooltipEvents
+import classes.GatewayHelpers
 
 def tier2 = [fluid("tamoonwater")]
 
@@ -18,7 +19,7 @@ def tier5 = [fluid("obsidian"), fluid("brass")]
 
 def tier6 = [
     fluid("ender"), fluid("aetherworks.aetherium_gas"), fluid("aetherworks.impure_aetherium_gas"), fluid("oil_soul"), fluid("oil_dwarf"),
-    fluid("gas_dwarf"), fluid("dawnstone"), fluid("alchemical_redstone"), fluid("steam"),
+    fluid("gas_dwarf"), fluid("dawnstone"), fluid("alchemical_redstone"), fluid("steam"), fluid("mercury"),
 ]
 
 def tier7 = [
@@ -30,11 +31,11 @@ def tier7 = [
     fluid("liquid_sunshine"), fluid("cloud_seed"), fluid("cloud_seed_concentrated"), fluid("electrical_steel"), fluid("energetic_alloy"),
     fluid("vibrant_alloy"), fluid("redstone_alloy"), fluid("conductive_iron"), fluid("pulsating_iron"), fluid("dark_steel"), fluid("soularium"),
     fluid("end_steel"), fluid("redstone"), fluid("glowstone"), fluid("quartz"), fluid("lapis"), fluid("nether_brick"), fluid("slime"),
-    fluid("prismarine"), fluid("end_stone"), fluid("purpur"),
+    fluid("prismarine"), fluid("end_stone"), fluid("purpur"), fluid("uranium"),
 ]
 
 def tier8 = [
-    fluid("cryotheum"), fluid("rocketfuel"), fluid("zinc"), fluid("oxygen"), fluid("hydrogen"), fluid("deuterium"),
+    fluid("cryotheum"), fluid("rocketfuel"), fluid("oxygen"), fluid("hydrogen"), fluid("deuterium"),
     fluid("helium_3"), fluid("helium"), fluid("ferroboron"), fluid("tough"), fluid("hard_carbon"), fluid("beryllium"),
     fluid("zirconium"), fluid("manganese_dioxide"), fluid("sulfur"), fluid("liquid_helium"), fluid("liquid_nitrogen"),
     fluid("heavy_water"), fluid("methanol"), fluid("nitrogen"), fluid("ice"), fluid("slurry_ice"),
@@ -46,9 +47,10 @@ def tier8 = [
     fluid("sugar"), fluid("gelatin"), fluid("hydrated_gelatin"), fluid("marshmallow"),
     fluid("lif"), fluid("bef2"), fluid("naoh"), fluid("koh"), fluid("sodium"), fluid("potassium"),
     fluid("emergency_coolant"), fluid("arsenic"), fluid("bas"), fluid("alugentum"), fluid("alumina"),
-    fluid("uranium"), fluid("thorium"), fluid("boron"), fluid("lithium"), fluid("magnesium"), fluid("manganese"),
+    fluid("thorium"), fluid("boron"), fluid("lithium"), fluid("magnesium"), fluid("manganese"),
     fluid("fluorite"), fluid("villiaumite"), fluid("carobbiite"), 
 ]
+for (def c in GatewayHelpers.qmdChemiFluids) tier8.add(fluid(c))
 
 def tier9 = [
     fluid("ender_distillation"), fluid("vapor_of_levity"), fluid("xu_evil_metal"), fluid("xu_enchanted_metal"),
@@ -64,6 +66,7 @@ def tier11 = [
     fluid("liquidantimatter"), fluid("boron_10"), fluid("boron_11"), fluid("lithium_6"), fluid("lithium_7"), fluid("corium"),
     fluid("high_pressure_steam"), fluid("exhaust_steam"), fluid("low_quality_steam"), fluid("emergency_coolant_heated"),
     fluid("strontium_90"), fluid("molybdenum"), fluid("ruthenium_106"), fluid("caesium_137"), fluid("promethium_147"), fluid("europium_155"),
+    fluid("neodymium"), fluid("bismuth"), fluid("polonium"), fluid("radium"),
 ]
 
 def tier12 = [
@@ -71,7 +74,15 @@ def tier12 = [
 ]
 
 def tier13 = [
-    fluid("tritium"), fluid("plasma"), fluid("preheated_water"),
+    fluid("tritium"), fluid("plasma"), fluid("preheated_water"), fluid("sodium_tungstate_solution"), fluid("lead_tungstate_solution"),
+    fluid("iodine"), fluid("yag"), fluid("nd_yag"), fluid("tungsten"), fluid("niobium"), fluid("chromium"), fluid("hafnium"),
+    fluid("zinc"), fluid("osmium"), fluid("calcium"), fluid("strontium"), fluid("yttrium"), fluid("samarium"), fluid("terbium"),
+    fluid("erbium"), fluid("ytterbium"), fluid("hot_mercury"),
+]
+
+def tier14 = [
+    fluid("hot_mercury"), fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
+    fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
 ]
 
 def removeFluids = [
@@ -132,6 +143,7 @@ for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in tier11) TooltipEvents.setTier(it, 11)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
 for (def it in tier13) TooltipEvents.setTier(it, 13)
+for (def it in tier14) TooltipEvents.setTier(it, 14)
 
 for (def it in removeFluids) {
     mods.jei.ingredient.hide(it)

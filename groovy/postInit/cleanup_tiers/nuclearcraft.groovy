@@ -65,7 +65,8 @@ def tier6Items = [
 ]
 
 def tier7Items = [
-    mitem("graham_cracker"), mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"),
+    mitem("graham_cracker"), mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"), mitem("ore", 4), mitem("ingot_block", 4),
+    mitem("ingot", 4), mitem("dust", 4),
 ]
 
 def tier11Items = [
@@ -78,7 +79,7 @@ def tier11Items = [
     mitem("turbine_rotor_bearing"), mitem("turbine_dynamo_coil", 32767), mitem("turbine_coil_connector"), mitem("turbine_inlet"),
     mitem("turbine_inlet"), mitem("turbine_outlet"), mitem("fission_conductor"), mitem("part", 12), mitem("part", 14),
     mitem("fission_dust", 32767), mitem("boron", 0), mitem("boron", 1), mitem("lithium", 0), mitem("lithium", 1),
-    mitem("record_end_of_the_world"), mitem("centrifuge"),
+    mitem("record_end_of_the_world"), mitem("centrifuge"), mitem("separator"),
 ]
 for (def m in ["steel", "extreme", "sic_sic_cmc"]) tier11Items.add(mitem("turbine_rotor_blade_${m}"))
 
@@ -154,4 +155,4 @@ for (def it in tier11Items) TooltipEvents.setTier(it, 11)
 for (def it in tier12Items) TooltipEvents.setTier(it, 12)
 for (def it in tier13Items) TooltipEvents.setTier(it, 13)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-for (def it in hideFromJei) GatewayHelpers.hide(it)
+// for (def it in hideFromJei) GatewayHelpers.hide(it)
