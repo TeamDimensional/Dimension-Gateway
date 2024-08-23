@@ -1,0 +1,13 @@
+filename = 'StellarCore-1.1.11.jar'
+name = 'StellarCore'
+side = 'both'
+
+[download]
+hash = 'cee59ccc38967058f5f8d27abe7ee6a73689c07d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5620234
+project-id = 1064321
