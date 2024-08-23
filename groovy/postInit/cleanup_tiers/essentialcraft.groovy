@@ -68,6 +68,7 @@ def industrialTier = [
 for (int i in 0..5) industrialTier.add(mitem("rightclicker", i))
 for (int i in 0..15) industrialTier.add(mitem("essence", i))
 for (def i in armorParts) industrialTier.add(mitem("${i}_magic"))
+for (int i in 0..31) industrialTier.add(mitem("baublescore", i))
 for (int i in 0..15) {
     industrialTier.add(mitem("fancyblock.mru", i))
     industrialTier.add(mitem("fancyblock.mimic", i))

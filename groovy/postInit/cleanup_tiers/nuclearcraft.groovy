@@ -79,7 +79,7 @@ def tier11Items = [
     mitem("turbine_rotor_bearing"), mitem("turbine_dynamo_coil", 32767), mitem("turbine_coil_connector"), mitem("turbine_inlet"),
     mitem("turbine_inlet"), mitem("turbine_outlet"), mitem("fission_conductor"), mitem("part", 12), mitem("part", 14),
     mitem("fission_dust", 32767), mitem("boron", 0), mitem("boron", 1), mitem("lithium", 0), mitem("lithium", 1),
-    mitem("record_end_of_the_world"), mitem("centrifuge"), mitem("separator"),
+    mitem("record_end_of_the_world"), mitem("centrifuge"), mitem("separator"), item("reactorbuilder:reactorbuilder"),
 ]
 for (def m in ["steel", "extreme", "sic_sic_cmc"]) tier11Items.add(mitem("turbine_rotor_blade_${m}"))
 
@@ -154,5 +154,6 @@ for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in tier11Items) TooltipEvents.setTier(it, 11)
 for (def it in tier12Items) TooltipEvents.setTier(it, 12)
 for (def it in tier13Items) TooltipEvents.setTier(it, 13)
+TooltipEvents.setTier(item("reactorbuilder:creativereactorbuilder"), 15)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 // for (def it in hideFromJei) GatewayHelpers.hide(it)

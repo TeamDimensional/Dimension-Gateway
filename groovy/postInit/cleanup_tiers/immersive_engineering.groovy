@@ -4,6 +4,9 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 def mitem(name, k=0) {
     return item("immersiveengineering:${name}", k)
 }
+def pitem(name, k=0) {
+    return item("immersivepetroleum:${name}", k)
+}
 
 def uraniumItems = [mitem("sheetmetal", 5), mitem("sheetmetal_slab", 5)]
 
@@ -22,9 +25,12 @@ def metallurgyTier = [
     mitem("stone_decoration_stairs_concrete_leaded"), mitem("metal_ladder", 1), mitem("conveyor"), mitem("tool", 1), mitem("tool", 2),
     mitem("toolbox"), mitem("drill"), mitem("drillhead"), mitem("drillhead", 1), mitem("jerrycan"),
     mitem("powerpack"), mitem("shield"), mitem("maintenance_kit"), mitem("skyhook"), mitem("metal_multiblock", 15),
+    mitem("stone_device", 1), pitem("metal_multiblock", 1), pitem("metal_multiblock", 3), pitem("metal_device"),
+    pitem("stone_decoration"), pitem("material"), mitem("metal_decoration2", 4), pitem("schematic"), pitem("speedboat"), pitem("oil_can"),
 ] + steelTools + steelArmor
 for (int i in [2, 3, 5, 6, 7]) metallurgyTier.add(mitem("wooden_device0", i))
 for (int i in [0, 1]) metallurgyTier.add(mitem("wooden_device1", i))
+for (int i in 0..4) metallurgyTier.add(pitem("upgrades", i))
 for (int i in [0, 1, 2, 3, 4, 6, 7, 8, 9, 10]) {
     metallurgyTier.add(mitem("sheetmetal", i))
     metallurgyTier.add(mitem("sheetmetal_slab", i))
@@ -46,7 +52,7 @@ for (int i in 0..9) metallurgyTier.add(mitem("metal_multiblock", i))
 
 def arcTier = [
     mitem("stone_decoration", 2), mitem("metal_device1"), mitem("graphite_electrode"), mitem("fluorescent_tube"),
-    mitem("metal_multiblock", 13),
+    mitem("metal_multiblock", 13), mitem("stone_device", 2),
 ]
 for (int i in [18, 19]) arcTier.add(mitem("material", i))
 
@@ -66,7 +72,7 @@ for (int i in [0, 1, 2]) metallurgyTier.add(mitem("bullet", i))
 for (int i in 0..13) metallurgyTier.add(mitem("toolupgrade", i))
 for (def i in ["chest", "head", "legs", "feet"]) metallurgyTier.add(mitem("faraday_suit_${i}"))
 
-def removeRecipes = [] + slabs + uraniumItems
+def removeRecipes = [pitem("metal_device", 1)] + slabs + uraniumItems
 def hideFromJei = [mitem("coresample")] + removeRecipes
 def creativeItems = [mitem("metal_device0", 3)]
 

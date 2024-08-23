@@ -48,7 +48,7 @@ for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manawea
 def tier2Items = [
     mitem("terraformrod"), mitem("manamirror"), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
     mitem("terraaxe"), mitem("quartz", 6), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
-    mitem("alchemycatalyst"), mitem("storage", 1), mitem("terraplate"),
+    mitem("alchemycatalyst"), mitem("storage", 1), mitem("terraplate"), mitem("cellblock"),
 ] + getQuartzList("sunny")
 for (int i in [4, 18]) tier2Items.add(mitem("manaresource", i))
 for (int i in [8, 11]) tier2Items.add(mitem("lens", i))
@@ -90,7 +90,7 @@ def tier3Items = [
     mitem("elfglasspane"), mitem("bifrostpermpane"), mitem("opencrate", 1), mitem("spreader", 2), mitem("spreader", 3), mitem("pool", 3), mitem("pylon", 2),
     mitem("storage", 2), mitem("storage", 4), mitem("forestdrum", 1), mitem("platform", 1), mitem("conjurationcatalyst"), mitem("spawnerclaw"),
     mitem("starfield"), mitem("elfglass"), mitem("prism"), mitem("ghostrail"), mitem("sparkchanger"), mitem("cocoon"), mitem("lightlauncher"),
-    mitem("manabomb"), mitem("bifrostperm"), mitem("shimmerrock"), mitem("shimmerwoodplanks"), mitem("enchantedsoil"), 
+    mitem("manabomb"), mitem("bifrostperm"), mitem("shimmerrock"), mitem("shimmerwoodplanks"), mitem("enchantedsoil"), mitem("alfheimportal"),
 ] + diceItems + gaiaDrops + gaiaDropsT2 + getQuartzList("elf")
 for (int i in [5, 7, 8, 9, 12, 13, 14, 19]) tier3Items.add(mitem("manaresource", i))
 for (int i in [14, 18, 19, 20, 21, 23]) tier3Items.add(mitem("lens", i))
@@ -107,7 +107,7 @@ for (def i in ["index", "funnel", "interceptor", "crystalcube", "retainer"])
 
 def creativeItems = [mitem("pool", 1)]
 def removeThese = [mitem("spawnermover"), mitem("glasspick"), mitem("rfgenerator"), mitem("animatedtorch")]
-def hideFromJei = [mitem("platform", 2), mitem("enchanter"), mitem("bifrost"), mitem("cacophoniumblock")] + removeThese
+def hideFromJei = [mitem("platform", 2), mitem("enchanter"), mitem("bifrost"), mitem("cacophoniumblock"), mitem("root")] + removeThese
 
 for (def it in lapisItems) TooltipEvents.setTier(it, 2)
 for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
@@ -122,7 +122,6 @@ for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
 TooltipEvents.setUnlock(mitem("altar"), 9)
-TooltipEvents.setUnlock(mitem("alfheimportal"), 14)
 
 for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "Dropped by the Guardian of Gaia.")
 for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "Dropped by the 2nd tier Guardian of Gaia.")

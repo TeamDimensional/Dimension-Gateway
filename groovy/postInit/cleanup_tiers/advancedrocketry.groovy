@@ -65,7 +65,7 @@ def removeRecipes = [
     mitem("rollingmachine"), mitem("lathe"), mitem("cuttingmachine"), mitem("electrolyser"), mitem("centrifuge"),
     mitem("beacon"), mitem("railgun"), mitem("bipropellantrocketmotor"), mitem("advbipropellantrocketmotor"),
     mitem("bipropellantfueltank"), mitem("oxidizerfueltank"), mitem("terraformingterminal"), mitem("ic", 3), mitem("ic", 4), mitem("ic", 5),
-    mitem("misc"), mitem("sawblade"), mitem("sawbladeiron"), item("libvulpes:coalgenerator"), item("libvulpes:productfan", 6),
+    mitem("misc", 1), mitem("sawblade"), mitem("sawbladeiron"), item("libvulpes:coalgenerator"), item("libvulpes:productfan", 6),
     item("libvulpes:coil0", 10), item("libvulpes:battery"), item("libvulpes:battery", 1),
 ]
 

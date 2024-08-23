@@ -5,6 +5,7 @@ TooltipEvents.setModTier("compactmachines3", 7)
 
 def tier3Items = [
     item("xnet:xnet_manual"), item("supersoundmuffler:sound_muffler"), item("supersoundmuffler:sound_muffler_bauble"),
+    item("naturescompass:naturescompass"),
 ]
 for (def i in [1, 3, 4, 5, 6, 7]) tier3Items.add(item("engineersworkshop:upgrade", i))
 
@@ -25,7 +26,7 @@ for (def i in 0..3) {
 }
 
 def removeRecipes = [
-    item("hammercore:manual"), item("engineersworkshop:upgrade", 9),
+    item("hammercore:manual"), item("engineersworkshop:upgrade", 9), item("microblockcbe:stone_rod"),
 ]
 
 def hideFromJei = [] + removeRecipes
@@ -37,3 +38,4 @@ for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
+ore("rodStone").remove(item("microblockcbe:stone_rod"))
