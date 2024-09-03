@@ -25,7 +25,6 @@ def abyssalItems = [
     mitem("cstonebrickslab2"), mitem("coraliumcobblestoneslab2"),
     mitem("corblock"), mitem("abycorore"),
     mitem("dghead"), mitem("phead"), mitem("whead"), mitem("ohead"), 
-    mitem("transmutator"), 
     mitem("abyiroore"), mitem("abygolore"), mitem("abydiaore"), mitem("abypcorore"), mitem("abylcorore"), mitem("solidlava"),
     mitem("fusedabyssalsand"), mitem("abyssalsand"), mitem("abyssalsandglass"), mitem("luminousthistle"), mitem("wastelandsthorn"),
     mitem("rendingpedestal"), mitem("oc"), mitem("gatewaykey"),
@@ -35,7 +34,7 @@ def abyssalItems = [
     mitem("overworld_energy_collector"), mitem("abyssal_wasteland_energy_collector"),
     mitem("overworld_energy_relay"), mitem("abyssal_wasteland_energy_relay"),
     mitem("overworld_energy_container"), mitem("abyssal_wasteland_energy_container"),
-    mitem("coralium"), mitem("cpearl"), mitem("cingot"), mitem("transmutationgem"), mitem("corflesh"), mitem("corbone"),
+    mitem("coralium"), mitem("cpearl"), mitem("cingot"), mitem("transmutationgem", 32767), mitem("corflesh"), mitem("corbone"),
     mitem("corhelmet"), mitem("corplate"), mitem("corlegs"), mitem("corboots"),
     mitem("depthshelmet"), mitem("depthsplate"), mitem("depthslegs"), mitem("depthsboots"),
     mitem("corhelmetp"), mitem("corplatep"), mitem("corlegsp"), mitem("corbootsp"),
@@ -43,7 +42,7 @@ def abyssalItems = [
     mitem("cudgel"), mitem("soulreaper"), mitem("necronomicon"), mitem("necronomicon_cor"), mitem("shoggothflesh_overworld"),
     mitem("shoggothflesh_abyssal"), mitem("nugget_coralium"), mitem("drainstaff"), mitem("drainstaff_aw"),
     mitem("essence_abyssalwasteland"), mitem("interdimensionalcage"), mitem("scroll_lesser"), mitem("scroll_moderate"),
-    mitem("coralium_antidote"),
+    mitem("coralium_antidote"), mitem("monolithstone"),
 ] + statues
 for (def i in 2..9) abyssalItems.add(mitem("ccluster${i}"))
 
@@ -53,8 +52,10 @@ def materials = [
     "alumina", "magnesia", "zinc", "calcium", "beryllium", "beryl",
 ]
 
+def crystalClusters = []
+for (def m in materials) crystalClusters.add(mitem("${m}_crystal_cluster"))
 def omotholItems = [
-    mitem("ethaxium"), mitem("omotholstone"), mitem("monolithstone"), mitem("ethaxiumblock"), mitem("ethaxiumbrick"), mitem("chiseled_ethaxium_brick"),
+    mitem("ethaxium"), mitem("omotholstone"), mitem("ethaxiumblock"), mitem("ethaxiumbrick"), mitem("chiseled_ethaxium_brick"),
     mitem("cracked_ethaxium_brick"), mitem("ethaxiumpillar"), mitem("ethaxiumbrickstairs"), mitem("ethaxiumbrickslab1"), mitem("ethaxiumfence"),
     mitem("darkethaxiumbrick"), mitem("chiseled_dark_ethaxium_brick"), mitem("cracked_dark_ethaxium_brick"), mitem("darkethaxiumpillar"),
     mitem("darkethaxiumbrickstairs"), mitem("darkethaxiumbrickslab1"), mitem("darkethaxiumbrickfence"), mitem("shoggothblock"),
@@ -71,11 +72,10 @@ def omotholItems = [
     mitem("shoggothflesh_shadow"), mitem("nugget_abyssalnite"), mitem("nugget_dreadium"), mitem("nugget_ethaxium"),
     mitem("drainstaff_omt"), mitem("essence_omothol"), mitem("gatekeeperessence"), mitem("scroll_greater"), mitem("scroll_unique_anti"),
     mitem("scroll_unique_oblivion"), mitem("configurator"), mitem("face_book"), mitem("ethaxiumbrickslab2"), mitem("darkethaxiumbrickslab2"),
-]
-for (def m in materials) omotholItems.add(mitem("${m}_crystal_cluster"))
+    mitem("transmutator"), 
+] + crystalClusters
 for (def m in materials) omotholItems.add(mitem("${m}_crystal"))
 for (def m in materials) omotholItems.add(mitem("${m}_crystal_shard"))
-for (def m in materials) omotholItems.add(mitem("${m}_crystal_fragment"))
 for (def i in 0..3) omotholItems.add(mitem("configurator_shard_${i}"))
 
 def charmBuffs = ["", "_range", "_duration", "_power"]
@@ -103,6 +103,7 @@ def removeRecipes = [
     mitem("coin"), mitem("necronomicon_dre"), mitem("skin_abyssalwasteland"), mitem("skin_dreadlands"), mitem("skin_omothol"),
     mitem("stonetablet"), mitem("dread_antidote"), mitem("cchunk"),
 ]
+for (def m in materials) removeRecipes.add(mitem("${m}_crystal_fragment"))
 for (def it in ["small", "medium", "large", "huge"]) removeRecipes.add(mitem("crystalbag_${it}"))
 
 def removeFurnace = [
@@ -114,7 +115,7 @@ def removeRitual = [
     mitem("psdl"), mitem("dreadaltartop"), mitem("dreadaltarbottom"), mitem("dreadlands_energy_pedestal"), mitem("dreadlands_sacrificial_altar"),
     mitem("energycontainer"), mitem("dreadlands_energy_collector"), mitem("dreadlands_energy_relay"), mitem("dreadlands_energy_container"),
     mitem("gatewaykeydl"), mitem("dhelmet"), mitem("dplate"), mitem("dlegs"), mitem("dboots"), mitem("jzaharcoin"),
-    mitem("drainstaff_dl"), mitem("scroll_basic"),
+    mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"),
 ]
 
 def unobtainable = [
@@ -135,7 +136,8 @@ def hideFromJei = [
 for (def it in ["altar", "pedestal"]) {
     for (def mat in ["stone", "darkstone", "abyssal_stone", "coralium_stone"]) abyssalItems.add(mitem("ritual_${it}_${mat}"))
     for (def mat in ["dreadstone", "abyssalnite_stone"]) hideFromJei.add(mitem("ritual_${it}_${mat}"))
-    for (def mat in ["ethaxium", "dark_ethaxium"]) omotholItems.add(mitem("ritual_${it}_${mat}"))
+    omotholItems.add(mitem("ritual_${it}_ethaxium"))
+    tier13Items.add(mitem("ritual_${it}_dark_ethaxium"))
 }
 
 for (def it in abyssalItems) TooltipEvents.setTier(it, 10)
@@ -145,4 +147,9 @@ for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeFurnace) furnace.removeByOutput(it)
+for (def it in removeRitual) mods.abyssaltweaker.ritual.removeByOutput(it)
+for (def it in statues) TooltipEvents.setTooltip(it, "Can be looted in Omothol in tier 11.")
+for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Can be looted in Omothol before Crystallizer is available.")
+TooltipEvents.setTooltip(item("abyssalcraft:odb"), "Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.")
 TooltipEvents.setUnlock(mitem("gatewaykeyjzh"), 11)
+for (int i in 0..27) crafting.remove("abyssalcraft:crystalshard_${i}_alt")
