@@ -1,3 +1,15 @@
 tile.gateway.wilted_daisy.name=Wilted Daisy
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
+
+tile.multiblocked.item.any.name=Any Item Hatch
+
+demon_factory.name=Industrial Demon Factory
+tile.gateway.demon_factory.name=Industrial Demon Factory
+multiblocked.recipe_map.demon_factory=Industrial Demon Factory
+gateway.demon_factory.description=Use intricate technology to extract Ackronite from Demons without trading with them
+
+natural_infuser.name=Natural Infuser
+tile.gateway.natural_infuser.name=Natural Infuser
+multiblocked.recipe_map.natural_infuser=Natural Infuser
+gateway.natural_infuser.description=Burn leaves to infuse natural matter with their heat

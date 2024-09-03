@@ -1,0 +1,168 @@
+{
+  "version": 2,
+  "location": "gateway:demon_factory",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "minecraft:bedrock",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "lightEmissive": 8,
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 15,
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "demon_factory",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "ABABA",
+        "  CCA",
+        "    A"
+      ],
+      [
+        "BBABB",
+        "    C",
+        "     "
+      ],
+      [
+        "AADAA",
+        "@   C",
+        "E    "
+      ],
+      [
+        "BBABB",
+        "    C",
+        "     "
+      ],
+      [
+        "ABABA",
+        "  CCA",
+        "    A"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "output": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "A": {
+        "states": [
+          {
+            "id": "essentialcraft:demonicplating",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gateway:demon_factory",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "essentialcraft:voidstone",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "minecraft:skull",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "multiblocked:entity",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "output"
+      ]
+    }
+  }
+}

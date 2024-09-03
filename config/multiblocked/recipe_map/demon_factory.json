@@ -1,0 +1,43 @@
+{
+  "name": "demon_factory",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "48486cb4-25ef-41cc-8afe-60284e23555d",
+      "duration": 600,
+      "inputs": {
+        "entity": [
+          {
+            "chance": 0.75,
+            "content": {
+              "type": "essentialcraft:entitydemon"
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 3,
+              "matches": [
+                "{id:\"essentialcraft:genitem\",Count:1b,Damage:52s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.75,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"essentialcraft:genitem\",Count:1b,Damage:52s}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

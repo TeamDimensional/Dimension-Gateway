@@ -1,0 +1,44 @@
+{
+  "name": "natural_infuser",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "f7a6c262-ed79-4155-875a-e990dc3b5de5",
+      "duration": 250,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"naturesaura:ancient_sapling\",Count:1b,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{id:\"evilcraftblood\",Count:1000l,Damage:0s}",
+            "TODO": "this doesn't work"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"evilcraft:undead_sapling\",Count:1b,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
