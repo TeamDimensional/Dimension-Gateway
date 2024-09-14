@@ -5,7 +5,7 @@
   "recipes": [
     {
       "uid": "f7a6c262-ed79-4155-875a-e990dc3b5de5",
-      "duration": 250,
+      "duration": 240,
       "inputs": {
         "item": [
           {
@@ -13,7 +13,7 @@
             "content": {
               "amount": 1,
               "matches": [
-                "{id:\"naturesaura:ancient_sapling\",Count:1b,Damage:0s}"
+                "{id:\"naturesaura:ancient_sapling\",Count:1,Damage:0s}"
               ]
             }
           }
@@ -21,8 +21,7 @@
         "fluid": [
           {
             "chance": 1.0,
-            "content": "{id:\"evilcraftblood\",Count:1000l,Damage:0s}",
-            "TODO": "this doesn't work"
+            "content": "{FluidName:\"evilcraftblood\",Amount:1000}"
           }
         ]
       },
@@ -33,9 +32,61 @@
             "content": {
               "amount": 1,
               "matches": [
-                "{id:\"evilcraft:undead_sapling\",Count:1b,Damage:0s}"
+                "{id:\"evilcraft:undead_sapling\",Count:1,Damage:0s}"
               ]
             }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 25
+          }
+        ]
+      }
+    },
+    {
+      "uid": "89488d78-032c-4152-9c1a-62dd5b298645",
+      "duration": 480,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"minecraft:sapling\",Count:1,Damage:2s}"
+              ]
+            }
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"aetherworks.aetherium_gas\",Amount:1600}"
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"aether_legacy:skyroot_sapling\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 50
           }
         ]
       }
