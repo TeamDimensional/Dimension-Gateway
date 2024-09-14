@@ -1,0 +1,6 @@
+content.createFluid("aluminum_nitride")
+    .setColor(0x75816b)
+    .register()
+content.createFluid("uranium_albn_mixture")
+    .setColor(0x216230)
+    .register()

@@ -17,5 +17,9 @@ def hideFromJei = [
 
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 TooltipEvents.setTier(citem("natural_infuser"), 4)
+TooltipEvents.setTier(citem("resonant_caster"), 8)
+TooltipEvents.setTier(citem("resonating_gem"), 8)
+TooltipEvents.setTier(citem("impure_resonating_gem"), 8)
+
 TooltipEvents.setTier(mitem("entity"), 14)
 TooltipEvents.setTier(citem("demon_factory"), 14)

@@ -1,0 +1,58 @@
+{
+  "name": "resonant_caster",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "9e922efe-61ab-46cb-8efc-4a7ed68d5a80",
+      "duration": 600,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gateway:impure_resonating_gem\",Count:4,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "fluid_nbt": [
+          {
+            "chance": 1.0,
+            "content": {
+              "modifiers": [],
+              "requirements": [
+                {
+                  "type": "deepresonance:rcl_quality",
+                  "data": {
+                    "mins": [
+                      0,
+                      0.5,
+                      0.2,
+                      0.2
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"gateway:resonating_gem\",Count:4,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

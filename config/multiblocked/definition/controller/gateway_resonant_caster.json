@@ -1,0 +1,144 @@
+{
+  "version": 2,
+  "location": "gateway:resonant_caster",
+  "traits": {
+    "fluid_nbt": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 5,
+      "y": 5
+    }
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "minecraft:bedrock",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "lightEmissive": 8,
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 15,
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "resonant_caster",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "ABA",
+        "A@A",
+        "   "
+      ],
+      [
+        "CCC",
+        "C C",
+        "CDC"
+      ],
+      [
+        "CCC",
+        "CCC",
+        "CCC"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "item_io": {
+        "capability": "item",
+        "type": "capability"
+      },
+      "A": {
+        "states": [
+          {
+            "id": "thermalfoundation:storage_alloy",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gateway:resonant_caster",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "deepresonance:tank",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "actuallyadditions:block_misc",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "item_io"
+      ]
+    }
+  }
+}

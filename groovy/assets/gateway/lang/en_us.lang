@@ -1,4 +1,8 @@
 tile.gateway.wilted_daisy.name=Wilted Daisy
+item.gateway.resonating_gem.name=Resonating Gem
+item.gateway.impure_resonating_gem.name=Impure Resonating Gem
+fluid.gateway.aluminum_nitride.name=Aluminum Nitride Solution
+fluid.gateway.uranium_albn_mixture.name=Uranium-Aluminum Nitride Mixture
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
 
@@ -7,9 +11,14 @@ tile.multiblocked.item.any.name=Any Item Hatch
 demon_factory.name=Industrial Demon Factory
 tile.gateway.demon_factory.name=Industrial Demon Factory
 multiblocked.recipe_map.demon_factory=Industrial Demon Factory
-gateway.demon_factory.description=Use intricate technology to extract Ackronite from Demons without trading with them
+gateway.demon_factory.description=Uses intricate technology to extract Ackronite from Demons without trading with them
 
 natural_infuser.name=Natural Infuser
 tile.gateway.natural_infuser.name=Natural Infuser
 multiblocked.recipe_map.natural_infuser=Natural Infuser
-gateway.natural_infuser.description=Burn leaves to infuse natural matter with their heat
+gateway.natural_infuser.description=Burns leaves to infuse natural matter with their heat
+
+resonant_caster.name=Resonant Caster
+tile.gateway.resonant_caster.name=Resonant Caster
+multiblocked.recipe_map.resonant_caster=Resonant Caster
+gateway.resonant_caster.description=Coats items with high-quality RCL
