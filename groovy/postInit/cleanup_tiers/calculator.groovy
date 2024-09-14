@@ -8,13 +8,12 @@ def mitem(name, k=0) {
 def basicItems = [
     mitem("reinforcedchest"), mitem("stoneseparator"), mitem("hungerprocessor"), mitem("dockingstation"),
     mitem("basicgreenhouse"), mitem("starchextractor"), mitem("redstoneextractor"), mitem("rainsensor"),
-    mitem("gaslanternoff"), mitem("scarecrow"), mitem("pearlog"), mitem("pearplanks"), mitem("pearstairs"), mitem("pearfence"),
-    mitem("pearleaves"), mitem("pearsapling"), mitem("infocalculator"), mitem("craftingcalculator"),
+    mitem("gaslanternoff"), mitem("scarecrow"), mitem("infocalculator"), mitem("craftingcalculator"),
     mitem("scientificcalculator"), mitem("hungermodule"), mitem("terrainmodule"), mitem("advancedterrainmodule"),
     mitem("energymodule"), mitem("smallstone"), mitem("calculatorscreen"), mitem("calculatorassembly"), mitem("advancedassembly"),
     mitem("wrench"), mitem("sickle"), mitem("enrichedgold"), mitem("enrichedgoldingot"), mitem("reinforcedironingot"),
     mitem("redstoneingot"), mitem("weakeneddiamond"), mitem("largeamethyst"), mitem("smallamethyst"), mitem("shardamethyst"),
-    mitem("broccoliseeds"), mitem("broccoli"), mitem("pear"), mitem("rottenpear"), mitem("cookedbroccoli"), mitem("lantern"),
+    mitem("broccoliseeds"), mitem("broccoli"), mitem("cookedbroccoli"), mitem("lantern"),
     mitem("coaldust"), mitem("enrichedcoal"), mitem("purifiedcoal"), mitem("firecoal"), mitem("babygrenade"), mitem("grenade"),
 ]
 for (int i in [0, 2, 3, 4, 9]) basicItems.add(mitem("material", i))
@@ -30,7 +29,8 @@ def atomicItems = [
     mitem("soil"), mitem("speedupgrade"), mitem("energyupgrade"), mitem("voidupgrade"), mitem("transferupgrade"),
     mitem("atomicmodule"), mitem("atomicassembly"), mitem("atomicbinder"), mitem("flawlessdiamond"), mitem("firediamond"),
     mitem("electricdiamond"), mitem("largetanzanite"), mitem("smalltanzanite"), mitem("shardtanzanite"), mitem("prunaeseeds"),
-    mitem("storagemodule"),
+    mitem("storagemodule"), mitem("pearlog"), mitem("pearplanks"), mitem("pearstairs"), mitem("pearfence"),
+    mitem("pearleaves"), mitem("pearsapling"), mitem("pear"), mitem("rottenpear"),
 ]
 for (int i in [1, 5, 6, 7]) atomicItems.add(mitem("material", i))
 for (int i in 0..13) {
