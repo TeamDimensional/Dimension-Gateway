@@ -1,0 +1,16 @@
+filename = 'tweakedlib-2.0.1.jar'
+name = 'Tweaked Lib'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '0d3472277a8b3e1197743ae23055ee5b710a58ac'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5814153
+project-id = 687632
