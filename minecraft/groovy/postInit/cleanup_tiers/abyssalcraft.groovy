@@ -23,7 +23,7 @@ def abyssalItems = [
     mitem("chiseled_coralium_stone_brick"), mitem("cracked_coralium_stone_brick"), mitem("cstonebrickfence"), mitem("cstonebrickslab1"),
     mitem("cstonebrickstairs"), mitem("coraliumcobblestonestairs"), mitem("coraliumcobblestoneslab1"), mitem("coraliumcobblestonewall"),
     mitem("cstonebrickslab2"), mitem("coraliumcobblestoneslab2"),
-    mitem("corblock"), mitem("abycorore"),
+    mitem("corblock"),
     mitem("dghead"), mitem("phead"), mitem("whead"), mitem("ohead"), 
     mitem("abyiroore"), mitem("abygolore"), mitem("abydiaore"), mitem("abypcorore"), mitem("abylcorore"), mitem("solidlava"),
     mitem("fusedabyssalsand"), mitem("abyssalsand"), mitem("abyssalsandglass"), mitem("luminousthistle"), mitem("wastelandsthorn"),
@@ -130,7 +130,7 @@ def hideFromJei = [
     mitem("shoggothflesh_dreaded"), mitem("essence_dreadlands"), mitem("generic_meat"), mitem("lost_page"),
     mitem("dreadbrickslab2"), mitem("abydreadbrickslab2"), mitem("dreadguardspawner"), mitem("chagarothspawner"),
     mitem("jzaharspawner"), mitem("gatekeeperminionspawner"), mitem("fire"), mitem("dreadstonecobblestoneslab2"), mitem("abyssalnitecobblestoneslab2"),
-    mitem("dreadstonecobblestone"), mitem("abyssalnitecobblestone"), 
+    mitem("dreadstonecobblestone"), mitem("abyssalnitecobblestone"), mitem("abycorore"),
 ] + removeRecipes + removeFurnace + removeRitual
 
 for (def it in ["altar", "pedestal"]) {

@@ -1,7 +1,22 @@
 
 [general]
-	#The material blacklist of this module.
-	materialBlacklist = ["Abyssalnite", "AirElemental", "Amber", "CertusQuartz", "ChargedCertusQuartz", "Coralium", "Dark", "Dilithium", "DimensionalShard", "EarthElemental", "Elemental", "FireElemental", "LiquifiedCoralium", "Mithril", "QuartzBlack", "WaterElemental"]
-	#The materials to force generate passive forms for this module.
-	passiveMaterialWhitelist = []
-
+#The material blacklist of this module.
+materialBlacklist = [
+	"Abyssalnite",
+	"AirElemental",
+	"Amber",
+	"CertusQuartz",
+	"ChargedCertusQuartz",
+	"Coralium",
+	"Dark",
+	"Dilithium",
+	"DimensionalShard",
+	"EarthElemental",
+	"Elemental",
+	"FireElemental",
+	"Mithril",
+	"QuartzBlack",
+	"WaterElemental",
+]
+#The materials to force generate passive forms for this module.
+passiveMaterialWhitelist = []

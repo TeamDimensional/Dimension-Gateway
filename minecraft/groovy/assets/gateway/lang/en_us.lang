@@ -25,6 +25,7 @@ gateway.resonant_caster.description=Coats items with high-quality RCL
 
 fluid.jaopca.solution=%s Ore Solution
 item.jaopca.ore_cluster=Native %s Cluster
+item.jaopca.ore_crystal=%s Ore Crystal
 item.jaopca.shard=%s Ore Shard
-item.jaopca.clump=%s Clump
+item.jaopca.clump=%s Shard Pile
 item.jaopca.dirty_dust=Dirty %s Dust

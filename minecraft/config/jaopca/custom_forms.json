@@ -9,7 +9,22 @@
             "Dark",
             "Mithril",
             "QuartzBlack",
-            "Saltpeter"
+            "Saltpeter",
+            "Coralium"
+        ]
+    },
+    {
+        "name": "ore_crystal",
+        "type": "item",
+        "defaultMaterialBlacklist": [
+            "Abyssalnite",
+            "CertusQuartz",
+            "ChargedCertusQuartz",
+            "Dark",
+            "Mithril",
+            "QuartzBlack",
+            "Saltpeter",
+            "Coralium"
         ]
     },
     {
@@ -22,7 +37,8 @@
             "Dark",
             "Mithril",
             "QuartzBlack",
-            "Saltpeter"
+            "Saltpeter",
+            "Coralium"
         ]
     },
     {
@@ -35,7 +51,8 @@
             "Dark",
             "Mithril",
             "QuartzBlack",
-            "Saltpeter"
+            "Saltpeter",
+            "Coralium"
         ]
     },
     {
@@ -48,7 +65,8 @@
             "Dark",
             "Mithril",
             "QuartzBlack",
-            "Saltpeter"
+            "Saltpeter",
+            "Coralium"
         ]
     },
     {
@@ -70,7 +88,8 @@
             "Elemental",
             "FireElemental",
             "Mithriline",
-            "WaterElemental"
+            "WaterElemental",
+            "Coralium"
         ]
     }
 ]
