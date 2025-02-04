@@ -37,9 +37,14 @@ class Manifest:
 
 
 def make_manifest(pack: dict, files: list[dict], dev: bool):
-    mc = Minecraft(version=pack["version"], modLoaders=[ModLoader(pack["versions"]["forge"])])
+    mc = Minecraft(
+        version=pack["version"], modLoaders=[ModLoader(pack["versions"]["forge"])]
+    )
     filesConverted = [
-        File(f["update"]["curseforge"]["project-id"], f["update"]["curseforge"]["file-id"])
+        File(
+            f["update"]["curseforge"]["project-id"],
+            f["update"]["curseforge"]["file-id"],
+        )
         for f in files
         if dev or not f.get("dev_only")
     ]
@@ -61,10 +66,12 @@ def run(dev: bool = False, suffix: str = ""):
         json.dump(dataclasses.asdict(manifest), f)
     shutil.copytree("config", "build/overrides/config")
     shutil.copytree("groovy", "build/overrides/groovy")
-    for f in os.listdir("mods"):
+    for f in os.listdir("minecraft/mods"):
         if f.startswith("gatewaycore"):
-            shutil.copy("mods/" + f, "build/overrides/mods/" + f)
-    shutil.make_archive("dimension-gateway-" + data["version"] + suffix, "zip", "build", ".")
+            shutil.copy("minecraft/mods/" + f, "build/overrides/mods/" + f)
+    shutil.make_archive(
+        "dimension-gateway-" + data["version"] + suffix, "zip", "build", "."
+    )
     return data["version"]
 
 
