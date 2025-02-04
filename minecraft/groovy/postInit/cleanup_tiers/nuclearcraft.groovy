@@ -80,17 +80,21 @@ def tier11Items = [
     mitem("turbine_inlet"), mitem("turbine_outlet"), mitem("fission_conductor"), mitem("part", 12), mitem("part", 14),
     mitem("fission_dust", 32767), mitem("boron", 0), mitem("boron", 1), mitem("lithium", 0), mitem("lithium", 1),
     mitem("record_end_of_the_world"), mitem("centrifuge"), mitem("separator"), item("reactorbuilder:reactorbuilder"),
+    mitem("ingot2", 1), mitem("dust2", 1), mitem("ingot_block2", 1),
+    mitem("ingot2", 5), mitem("dust2", 5), mitem("ingot_block2", 5),
+    mitem("alloy", 16), mitem("material_block"),
 ]
 for (def m in ["steel", "extreme", "sic_sic_cmc"]) tier11Items.add(mitem("turbine_rotor_blade_${m}"))
 
 def tier12Items = [
     mitem("fission_heater_port", 32767), mitem("fission_heater_port2", 32767), mitem("salt_fission_controller"), mitem("fission_vessel_port"),
     mitem("salt_fission_vessel"), mitem("salt_fission_heater", 32767), mitem("salt_fission_heater2", 32767),
+    mitem("ingot2", 6), mitem("dust2", 6), mitem("ingot_block2", 6),
     // mitem("assembler"), mitem("part", 15),
 ]
 
 def tier13Items = [
-    mitem("decay_generator"), mitem("tritium_lamp"),
+    mitem("decay_generator"), mitem("tritium_lamp"), mitem("alloy", 17), mitem("machine_sieve_tray", 2),
 ]
 
 def removeRecipes = [

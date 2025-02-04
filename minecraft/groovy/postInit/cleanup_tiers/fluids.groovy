@@ -51,6 +51,11 @@ def tier8 = [
     fluid("emergency_coolant"), fluid("arsenic"), fluid("bas"), fluid("alugentum"), fluid("alumina"),
     fluid("thorium"), fluid("boron"), fluid("lithium"), fluid("magnesium"), fluid("manganese"),
     fluid("fluorite"), fluid("villiaumite"), fluid("carobbiite"), fluid("aluminum_nitride"), fluid("uranium_albn_mixture"),
+    fluid("benzene"), fluid("phenol"), fluid("fluorobenzene"), fluid("le_water"), fluid("he_water"), fluid("hydrogen_peroxide"),
+    fluid("ethyne"), fluid("tetrafluoroethene"), fluid("hydrogen_sulfide"), fluid("ammonium_sulfate_solution"),
+    fluid("ammonium_bisulfate_solution"), fluid("ammonium_persulfate_solution"),
+    fluid("hydroquinone_solution"), fluid("sodium_hydroquinone_solution"), fluid("potassium_hydroquinone_solution"),
+    fluid("polytetrafluoroethene"), fluid("polyethersulfone"),
 ]
 for (def c in GatewayHelpers.qmdChemiFluids) tier8.add(fluid(c))
 

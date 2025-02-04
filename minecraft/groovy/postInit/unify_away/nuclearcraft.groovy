@@ -13,6 +13,12 @@ def removedAlloys = [
     ["Steel", 5],
 ]
 
+def removedMaterialBlocks = [
+    ["Cobalt", 2],
+    ["Nickel", 3],
+    ["Platinum", 4],
+]
+
 def removedQMDMetals = [
     ["Titanium", 3],
     ["Cobalt", 4],
@@ -36,9 +42,14 @@ def typesQMD = [
     ["dust", "qmd:dust"],
 ]
 
+def typesMaterialBlock = [
+    ["block", "nuclearcraft:material_block"],
+]
+
 def removalNodes = [
     [removedMetals, types],
     [removedAlloys, typesAlloy],
+    [removedMaterialBlocks, typesMaterialBlock],
     [removedQMDMetals, typesQMD],
 ]
 
@@ -56,6 +67,11 @@ for (def pair in removalNodes) {
         }
     }
 }
+
+// Also remove the wrong block recipes
+crafting.remove("nuclearcraft:material_block")
+crafting.remove("nuclearcraft:storage_5")
+crafting.remove("nuclearcraft:storage_6")
 
 // Also remove the wrong Aluminium
 ore("ingotAluminium").remove(item("nuclearcraft:ingot", 12))
