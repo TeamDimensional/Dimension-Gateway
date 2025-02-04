@@ -1,0 +1,76 @@
+[
+    {
+        "name": "ore_cluster",
+        "type": "item",
+        "defaultMaterialBlacklist": [
+            "Abyssalnite",
+            "CertusQuartz",
+            "ChargedCertusQuartz",
+            "Dark",
+            "Mithril",
+            "QuartzBlack",
+            "Saltpeter"
+        ]
+    },
+    {
+        "name": "shard",
+        "type": "item",
+        "defaultMaterialBlacklist": [
+            "Abyssalnite",
+            "CertusQuartz",
+            "ChargedCertusQuartz",
+            "Dark",
+            "Mithril",
+            "QuartzBlack",
+            "Saltpeter"
+        ]
+    },
+    {
+        "name": "clump",
+        "type": "item",
+        "defaultMaterialBlacklist": [
+            "Abyssalnite",
+            "CertusQuartz",
+            "ChargedCertusQuartz",
+            "Dark",
+            "Mithril",
+            "QuartzBlack",
+            "Saltpeter"
+        ]
+    },
+    {
+        "name": "dirty_dust",
+        "type": "item",
+        "defaultMaterialBlacklist": [
+            "Abyssalnite",
+            "CertusQuartz",
+            "ChargedCertusQuartz",
+            "Dark",
+            "Mithril",
+            "QuartzBlack",
+            "Saltpeter"
+        ]
+    },
+    {
+        "name": "solution",
+        "type": "fluid",
+        "defaultMaterialBlacklist": [
+            "Abyssalnite",
+            "CertusQuartz",
+            "ChargedCertusQuartz",
+            "Dark",
+            "Mithril",
+            "QuartzBlack",
+            "Saltpeter",
+            "AirElemental",
+            "Amber",
+            "Dilithium",
+            "DimensionalShard",
+            "EarthElemental",
+            "Elemental",
+            "FireElemental",
+            "Mithriline",
+            "WaterElemental"
+        ]
+    }
+]

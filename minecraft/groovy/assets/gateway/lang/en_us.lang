@@ -22,3 +22,9 @@ resonant_caster.name=Resonant Caster
 tile.gateway.resonant_caster.name=Resonant Caster
 multiblocked.recipe_map.resonant_caster=Resonant Caster
 gateway.resonant_caster.description=Coats items with high-quality RCL
+
+fluid.jaopca.solution=%s Ore Solution
+item.jaopca.ore_cluster=Native %s Cluster
+item.jaopca.shard=%s Ore Shard
+item.jaopca.clump=%s Clump
+item.jaopca.dirty_dust=Dirty %s Dust

@@ -1,0 +1,5 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = ["Abyssalnite", "AirElemental", "Amber", "Ardite", "ChargedCertusQuartz", "Coralium", "Dark", "DimensionalShard", "EarthElemental", "Elemental", "FireElemental", "LiquifiedCoralium", "WaterElemental"]
+
