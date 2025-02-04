@@ -1,13 +1,16 @@
-filename = 'embers_extended_life-1.23.6.jar'
+filename = 'embers_extended_life-1.25.1.jar'
 name = 'Embers Unofficial Extended Life'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '1df821e51b06d15829dea74e4c4f6e503af608d5'
+hash = 'b0f42a89a9cb10a33f20723502caf8a68a05a624'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5321973
+file-id = 5925746
 project-id = 936489
