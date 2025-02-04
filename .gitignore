@@ -20,6 +20,7 @@ minecraft/usercache.json
 minecraft/usernamecache.json
 minecraft/memory_repo
 minecraft/resourcepacks
+minecraft/mods/.index
 
 *.log
 minecraft/patchouli_data.json
