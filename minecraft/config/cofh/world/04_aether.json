@@ -1,10 +1,9 @@
 {
 	"populate": {
 		"ambrosium": {
-
 			"distribution": "uniform",
 			"generator": {
-                "block": "aether_legacy:ambrosium_ore",
+				"block": "aether_legacy:ambrosium_ore",
 				"material": "aether_legacy:holystone",
 				"cluster-size": 16
 			},
@@ -16,10 +15,9 @@
 			"dimension": "all"
 		},
 		"icestone": {
-
 			"distribution": "uniform",
 			"generator": {
-                "block": "aether_legacy:icestone",
+				"block": "aether_legacy:icestone",
 				"material": "aether_legacy:holystone",
 				"cluster-size": 16
 			},
@@ -30,26 +28,10 @@
 			"biome": "all",
 			"dimension": "all"
 		},
-		"gravitite": {
-
-			"distribution": "uniform",
-			"generator": {
-                "block": "aether_legacy:gravitite_ore",
-				"material": "aether_legacy:holystone",
-				"cluster-size": 6
-			},
-			"cluster-count": 2,
-			"min-height": 24,
-			"max-height": 38,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": "all"
-		},
 		"zanite": {
-
 			"distribution": "uniform",
 			"generator": {
-                "block": "aether_legacy:zanite_ore",
+				"block": "aether_legacy:zanite_ore",
 				"material": "aether_legacy:holystone",
 				"cluster-size": 8
 			},
@@ -61,10 +43,9 @@
 			"dimension": "all"
 		},
 		"aether_dirt": {
-
 			"distribution": "uniform",
 			"generator": {
-                "block": "aether_legacy:aether_dirt",
+				"block": "aether_legacy:aether_dirt",
 				"material": "aether_legacy:holystone",
 				"cluster-size": 32
 			},
@@ -76,6 +57,5 @@
 			"biome": "all",
 			"dimension": "all"
 		}
-
-    }
+	}
 }

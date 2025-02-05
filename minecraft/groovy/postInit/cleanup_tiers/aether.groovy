@@ -67,5 +67,14 @@ def brokenLoot = [
     aitem("obsidian_helmet"), aitem("obsidian_leggings"), aitem("obsidian_boots"), aitem("candy_cane_sword"),
     aitem("obsidian_gloves"),
 ]
-for (def it in brokenLoot) GatewayHelpers.hide(it)
+
+def removeRecipes = [
+    alitem("gravitite_shield"), aitem("gravitite_helmet"), aitem("gravitite_chestplate"),
+    aitem("gravitite_leggings"), aitem("gravitite_boots"), aitem("gravitite_gloves")
+]
+
+def justHide = [aitem("gravitite_ore"), aitem("enchanted_gravitite")]
+
+for (def it in brokenLoot + removeRecipes + justHide) GatewayHelpers.hide(it)
+for (def it in removeRecipes) crafting.removeByOutput(it)
 GatewayHelpers.hide(aitem("developer_stick"))
