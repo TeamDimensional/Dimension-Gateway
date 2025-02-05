@@ -27,7 +27,7 @@ def items = [
     mitem("latex_processing_unit"), mitem("sewage_composter_solidifier"), mitem("animal_byproduct_recolector"),
     mitem("sludge_refiner"), mitem("lava_fabricator"), mitem("spores_recreator"), mitem("material_stonework_factory"),
     mitem("black_hole_tank"), mitem("hydrator"), mitem("wither_builder"), mitem("plant_interactor"),
-    mitem("ore_washer"), mitem("ore_fermenter"), mitem("ore_sieve"), mitem("tinydryrubber"), mitem("plastic"), mitem("fertilizer"),
+    mitem("tinydryrubber"), mitem("plastic"), mitem("fertilizer"),
     mitem("meat_feeder"), mitem("mob_imprisonment_tool"), mitem("pink_slime"), mitem("pink_slime_ingot"), mitem("infinity_drill"),
     mitem("energy_field_provider"), mitem("energy_field_addon"), mitem("leaf_shearing"), mitem("fortune_addon"),
     item("teslacorelib:base_addon"), item("teslacorelib:energy_tier1"), item("teslacorelib:energy_tier2"),
@@ -41,6 +41,7 @@ def removeCrafting = [
     mitem("ore_processor"), mitem("laser_base"), mitem("laser_drill"), mitem("resourceful_furnace"), mitem("villager_trade_exchanger"),
     mitem("oredictionary_converter"), mitem("protein_reactor"), mitem("fluiddictionary_converter"),
     mitem("dryrubber"), mitem("straw"),
+    mitem("ore_washer"), mitem("ore_fermenter"), mitem("ore_sieve"), 
 ]
 for (def i in 0..15) {
     removeCrafting.add(mitem("laser_lens", i))

@@ -5,7 +5,7 @@ import classes.GatewayHelpers
 
 // Flour
 mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:wheat"))
-mods.enderio.sag_mill.removeByInput(item("minecraft:wheat"))
+// mods.enderio.sag_mill.removeByInput(item("minecraft:wheat"))
 mods.nuclearcraft.manufactory.removeRecipeWithInput(item("minecraft:wheat"))
 def flours = [item("prodigytech:flour"), item("appliedenergistics2:material", 4), item("enderio:item_material", 21), item("nuclearcraft:flour")]
 for (def it in flours) {
@@ -57,11 +57,9 @@ CrusherHelper.builder()
     .register()
 
 // Coal Dust
-mods.prodigytech.rotary_grinder.removeByInput(ore("oreCoal"))
 mods.prodigytech.rotary_grinder.removeByInput(ore("blockCoal"))
 mods.prodigytech.rotary_grinder.removeByInput(ore("plateCarbon"))
 mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:coal"))
-mods.prodigytech.ore_refinery.removeByInput(ore("oreCoal"))
 
 CrusherHelper.builder()
     .input(ore("coal"))
@@ -71,17 +69,6 @@ CrusherHelper.builder()
 CrusherHelper.builder()
     .input(ore("blockCoal"))
     .output(item("thermalfoundation:material", 768) * 9)
-    .register()
-
-mods.prodigytech.rotary_grinder.recipeBuilder()
-    .input(ore("oreCoal"))
-    .output(item("minecraft:coal") * 3)
-    .register()
-
-mods.prodigytech.ore_refinery.recipeBuilder()
-    .input(ore("oreCoal"))
-    .output(item("minecraft:coal") * 3, item("thermalfoundation:material", 771))
-    .secondaryChance(0.4)
     .register()
 
 ore("dustCoal").remove(item("prodigytech:coal_dust"))
@@ -122,7 +109,6 @@ for (def it in goldDusts) {
 
 // Quartz Dust
 mods.prodigytech.rotary_grinder.removeByInput(ore("gemQuartz"))
-mods.prodigytech.rotary_grinder.removeByInput(ore("oreQuartz"))
 mods.prodigytech.rotary_grinder.removeByInput(ore("blockQuartz"))
 mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:quartz_stairs"))
 mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:stone_slab", 7))
@@ -137,17 +123,6 @@ CrusherHelper.builder()
     .output(item("nuclearcraft:gem_dust", 2) * 4)
     .register()
 
-mods.prodigytech.rotary_grinder.recipeBuilder()
-    .input(ore("oreQuartz"))
-    .output(item("minecraft:quartz") * 2)
-    .register()
-
-mods.prodigytech.ore_refinery.recipeBuilder()
-    .input(ore("oreQuartz"))
-    .output(item("minecraft:quartz") * 2, item("thermalfoundation:material", 771))
-    .secondaryChance(0.25)
-    .register()
-
 def quartzDusts = [
     item("appliedenergistics2:material", 3), item("actuallyadditions:item_dust", 5), item("enderio:item_material", 33), item("prodigytech:quartz_dust")
 ]
@@ -158,23 +133,11 @@ for (def it in quartzDusts) {
 
 // Diamond Dust
 mods.prodigytech.rotary_grinder.removeByInput(ore("gemDiamond"))
-mods.prodigytech.rotary_grinder.removeByInput(ore("oreDiamond"))
 mods.prodigytech.rotary_grinder.removeByInput(ore("blockDiamond"))
 
 CrusherHelper.builder()
     .input(ore("gemDiamond"))
     .output(item("nuclearcraft:gem_dust"))
-    .register()
-
-mods.prodigytech.rotary_grinder.recipeBuilder()
-    .input(ore("oreDiamond"))
-    .output(item("minecraft:diamond") * 2)
-    .register()
-
-mods.prodigytech.ore_refinery.recipeBuilder()
-    .input(ore("oreDiamond"))
-    .output(item("minecraft:diamond") * 2, item("minecraft:emerald"))
-    .secondaryChance(0.25)
     .register()
 
 def diamondDusts = [

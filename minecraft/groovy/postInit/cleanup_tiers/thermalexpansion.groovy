@@ -22,11 +22,12 @@ def creativeItems = [
 ]
 
 def removeRecipes = [
+    mitem("machine"),
     mitem("machine", 1), mitem("machine", 2), mitem("machine", 3), mitem("machine", 8), mitem("machine", 12), mitem("machine", 13),
     mitem("device", 1), mitem("device", 2), mitem("device", 3), mitem("device", 4), mitem("device", 7), mitem("device", 10),
     mitem("dynamo"), mitem("dynamo", 1), mitem("dynamo", 2), mitem("dynamo", 3), mitem("dynamo", 4), mitem("dynamo", 5),
 ]
-for (def i in [257, 273, 288, 303, 323, 336, 337, 352, 369, 448, 512, 513, 514, 515, 576, 640, 656, 672, 673, 674, 688, 704, 720])
+for (def i in [257, 273, 288, 303, 304, 323, 336, 337, 352, 369, 448, 512, 513, 514, 515, 576, 640, 656, 672, 673, 674, 688, 704, 720])
     removeRecipes.add(mitem("augment", i))
 
 def hideFromJei = [

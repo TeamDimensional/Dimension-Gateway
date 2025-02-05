@@ -20,13 +20,13 @@ gearItems = [
 ]
 
 redstoneItems = [
-    mitem("capacitor_aeroheater"), mitem("solderer"), mitem("magnetic_reassembler"), mitem("ore_refinery"), mitem("fuel_processor"), mitem("food_enricher"),
+    mitem("capacitor_aeroheater"), mitem("solderer"), mitem("magnetic_reassembler"), mitem("fuel_processor"), mitem("food_enricher"),
     mitem("inferno_fuel"), mitem("inferno_crystal"), mitem("circuit_plate"), mitem("circuit_crude"), mitem("circuit_refined"),
     mitem("sugar_cube"), mitem("gold_dust_tiny"), mitem("pattern_circuit_perfected"),
     mitem("pattern_circuit_crude"), mitem("pattern_circuit_refined"), mitem("heat_capacitor_0", 32767), mitem("heat_capacitor_1", 32767),
 ]
 
-gemstoneItems = [mitem("diamond_dust"), mitem("emerald_dust")]
+gemstoneItems = [mitem("diamond_dust"), mitem("emerald_dust"), mitem("ore_refinery")]
 enderItems = [mitem("wormhole_funnel"), mitem("wormhole_linker")]
 energionItems = [
     mitem("energion_aeroheater"), mitem("automatic_crystal_cutter"), mitem("primordialis_reactor"), mitem("atomic_reshaper"),

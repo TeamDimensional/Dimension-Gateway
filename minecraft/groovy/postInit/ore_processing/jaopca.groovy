@@ -6,6 +6,20 @@ Byproduct 4 - tier 7
 Byproduct 5 - tier 13
 */
 
+// Remove registries that have to be removed now
+mods.prodigytech.rotary_grinder.removeAll()
+mods.prodigytech.ore_refinery.removeAll()
+// what the fuck?
+if (!isReloading()) mods.enderio.sag_mill.removeAll()
+
+// TODO: figure out why Technetium (Resonating) does not have recipes added FOR THE ORE,
+// only for the native cluster
+
+oreOverride = [
+    // For when recipes don't want to work with ore
+    "Resonating": item("deepresonance:resonating_ore", 2),
+]
+
 def oresMetallic = [
     "Coal": ["Coal", "Coal", "Sulfur", "Graphite"],
     "Gold": ["Copper", "Silver", "Silver", "Ardite"],
@@ -137,7 +151,7 @@ mods.essentialcraft.magmatic_smeltery.removeAll()
 
 def addOre(key, byproducts, addFluidOps) {
     def snakeCase = key.replaceAll(/(?<!^)([A-Z])/, '_$1').toLowerCase()
-    def itemOre = ore("ore" + key)
+    def itemOre = oreOverride.get(key, ore("ore" + key))
     def itemCluster = item("jaopca:ore_cluster." + snakeCase)
     def itemCrystal = item("jaopca:ore_crystal." + snakeCase)
     def itemShard = item("jaopca:shard." + snakeCase)
@@ -245,7 +259,7 @@ def addOre(key, byproducts, addFluidOps) {
         def fluidOut = getOutputFluid(key)
 
         mods.embers.melter.recipeBuilder()
-            .input(itemOre | itemCluster | itemCrystal | itemShard | itemDirty)
+            .input(itemCluster | itemCrystal | itemShard | itemDirty)
             .fluidOutput(fluidSolution * 160, fluidByproduct)
             .register()
         

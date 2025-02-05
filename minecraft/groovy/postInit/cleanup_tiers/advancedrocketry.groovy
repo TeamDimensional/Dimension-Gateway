@@ -47,7 +47,7 @@ def tier12Items = [
     mitem("gravitycontroller"), mitem("altitudecontroller"), mitem("planetselector"), mitem("planetholoselector"),
     mitem("oxygenscrubber"), mitem("oxygenvent"), mitem("hotturf"), mitem("basalt"), mitem("geode"), mitem("vitrifiedsand"),
     mitem("charcoallog"), mitem("electricmushroom"), mitem("alienwood"), mitem("alienleaves"), mitem("aliensapling"),
-    mitem("planks"), item("libvulpes:ore0", 10),
+    mitem("planks"),
     // Titanium Iridium
     mitem("productdust", 1), mitem("productingot", 1), mitem("productnugget", 1), mitem("productplate", 1), mitem("productrod", 1),
     mitem("productsheet", 1), mitem("productgear", 1), mitem("metal0", 1), item("libvulpes:productrod", 10),
@@ -81,7 +81,7 @@ def removeCrystallizer = [
 ]
 
 def hideFromJei = [
-    mitem("landingfloat"), mitem("basiclasergun"), mitem("unlittorch"),
+    mitem("landingfloat"), mitem("basiclasergun"), mitem("unlittorch"), item("libvulpes:ore0", 10),
 ] + removeRecipes + removeCutting + removeAssembler + removeCrystallizer
 
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)

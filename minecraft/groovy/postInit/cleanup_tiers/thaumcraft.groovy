@@ -102,6 +102,7 @@ for (int i in 0..3) hideFromJei.add(gitem("eldritch_lock", i))
 for (int i in 0..1) hideFromJei.add(gitem("obelisk_placer", i))
 for (int i in 0..6) hideFromJei.add(mitem("curio", i))
 for (int i in 0..2) hideFromJei.add(mitem("loot_bag", i))
+for (int i in 0..7) hideFromJei.add(mitem("cluster", i))
 for (def a in ["rare", "uncommon", "common"]) for (def b in ["crate", "urn"]) hideFromJei.add(mitem("loot_${b}_${a}"))
 
 TooltipEvents.setModTier("thaumcraft", 5)
