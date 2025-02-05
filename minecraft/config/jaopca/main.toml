@@ -43,7 +43,7 @@
 	#List of oredict modules that should not be registered.
 	moduleBlacklist = []
 	#List of custom oredict entries to add. Format: <mod:item@meta=oredict>
-	custom = []
+	custom = ["aether_legacy:zanite_ore=oreZanite", "aether_legacy:zanite_gemstone=gemZanite", "aether_legacy:zanite_block=blockZanite", "aether_legacy:ambrosium_ore=oreAmbrosium", "aether_legacy:ambrosium_shard=gemAmbrosium", "deepresonance:resonating_ore@2=oreResonating", "deepresonance:resonating_plate=gemResonating", "aetherworks:aether_ore=oreAether", "aetherworks:item_resource@5=gemAether", "theaurorian:auroriancoalore=oreAurorianCoal", "theaurorian:auroriancoal=gemAurorianCoal", "theaurorian:auroriancoalblock=blockAurorianCoal", "theaurorian:ceruleanore=oreCerulean", "theaurorian:ceruleaningot=ingotCerulean", "theaurorian:ceruleanblock=blockCerulean", "theaurorian:geodeore=oreAurorianGeode", "theaurorian:crystal=gemAurorianGeode", "theaurorian:moonstoneore=oreMoonstone", "theaurorian:moonstoneingot=ingotMoonstone", "theaurorian:moonstoneblock=blockMoonstone"]
 
 #Configurations related to recipes.
 [recipes]

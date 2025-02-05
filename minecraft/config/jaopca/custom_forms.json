@@ -10,7 +10,9 @@
             "Mithril",
             "QuartzBlack",
             "Saltpeter",
-            "Coralium"
+            "Coralium",
+            "Platinum",
+            "Elemental"
         ]
     },
     {
@@ -24,7 +26,9 @@
             "Mithril",
             "QuartzBlack",
             "Saltpeter",
-            "Coralium"
+            "Coralium",
+            "Platinum",
+            "Elemental"
         ]
     },
     {
@@ -38,7 +42,9 @@
             "Mithril",
             "QuartzBlack",
             "Saltpeter",
-            "Coralium"
+            "Coralium",
+            "Platinum",
+            "Elemental"
         ]
     },
     {
@@ -52,7 +58,9 @@
             "Mithril",
             "QuartzBlack",
             "Saltpeter",
-            "Coralium"
+            "Coralium",
+            "Platinum",
+            "Elemental"
         ]
     },
     {
@@ -66,7 +74,9 @@
             "Mithril",
             "QuartzBlack",
             "Saltpeter",
-            "Coralium"
+            "Coralium",
+            "Platinum",
+            "Elemental"
         ]
     },
     {
@@ -89,7 +99,8 @@
             "FireElemental",
             "Mithriline",
             "WaterElemental",
-            "Coralium"
+            "Coralium",
+            "Platinum"
         ]
     }
 ]

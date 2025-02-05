@@ -1,5 +1,5 @@
 
 [general]
 	#The material blacklist of this module.
-	materialBlacklist = ["Abyssalnite", "Aluminum", "Ardite", "Boron", "Cobalt", "Iridium", "LiquifiedCoralium", "Lithium", "Magnesium", "Mithril", "Nickel", "Platinum", "Thorium", "Titanium", "Uranium"]
+	materialBlacklist = ["Abyssalnite", "Aluminum", "Ardite", "Boron", "Cobalt", "Iridium", "LiquifiedCoralium", "Lithium", "Magnesium", "Mithril", "Nickel", "Platinum", "Thorium", "Titanium", "Uranium", "Cerulean", "Moonstone"]
 

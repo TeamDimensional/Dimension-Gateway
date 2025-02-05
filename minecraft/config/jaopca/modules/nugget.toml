@@ -1,7 +1,7 @@
 
 [general]
 	#The material blacklist of this module.
-	materialBlacklist = ["Boron", "Magnesium", "Thorium", "Lithium"]
+	materialBlacklist = ["Boron", "Magnesium", "Thorium", "Lithium", "Cerulean", "Moonstone"]
 	#The materials to force generate passive forms for this module.
 	passiveMaterialWhitelist = []
 

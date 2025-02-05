@@ -1,5 +1,5 @@
 
-#Configurations for material Dilithium.
+#Configurations for material Ambrosium.
 [general]
 	#The alternative names of this material.
 	alternativeNames = []
@@ -14,9 +14,13 @@
 	#The model type of the material.
 	modelType = "crystal"
 	#The color of this material.
-	color = 11510689
+	color = 12763757
 
 [molten]
 	#The temperature of this molten fluid.
 	temperature = 1000
+
+[enderio]
+	#The default byproduct material to output in Ender IO's sagmill.
+	byproduct = "minecraft:cobblestone"
 

@@ -29,3 +29,9 @@ item.jaopca.ore_crystal=%s Ore Crystal
 item.jaopca.shard=%s Ore Shard
 item.jaopca.clump=%s Shard Pile
 item.jaopca.dirty_dust=Dirty %s Dust
+
+jaopca.material.Aether=Aetherium
+
+jaopca.material.Resonating=Technetium
+item.deepresonance.resonating_plate.name=Technetium Plate
+tile.deepresonance.resonating_ore.name=Technetium Ore

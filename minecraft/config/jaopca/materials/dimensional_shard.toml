@@ -10,7 +10,7 @@
 	#The module blacklist of this material.
 	moduleBlacklist = []
 	#Should items of this material have the enchanted glow.
-	hasEffect = true
+	hasEffect = false
 	#The model type of the material.
 	modelType = "crystal"
 	#The color of this material.

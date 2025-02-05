@@ -9,6 +9,7 @@ def tier3 = [
     fluid("copper"), fluid("tin"), fluid("bronze"), fluid("lead"), fluid("nickel"), fluid("silver"), fluid("electrum"),
     fluid("steel"), fluid("aluminum"), fluid("stone"), fluid("clay"), fluid("dirt"), fluid("glass"), fluid("blood"),
     fluid("purpleslime"), fluid("xu_demonic_metal"), fluid("oil"), fluid("diesel"), fluid("lubricant"), fluid("gasoline"), fluid("napalm"),
+    fluid("cerulean"), fluid("moonstone"),
 ]
 
 def tier4 = [

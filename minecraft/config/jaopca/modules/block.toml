@@ -1,5 +1,5 @@
 
 [general]
 	#The material blacklist of this module.
-	materialBlacklist = ["CertusQuartz", "ChargedCertusQuartz", "Coralium", "Dark", "Dilithium", "DimensionalShard", "Saltpeter"]
+	materialBlacklist = ["CertusQuartz", "ChargedCertusQuartz", "Coralium", "Dark", "Dilithium", "DimensionalShard", "Saltpeter", "Aether", "Resonating", "Ambrosium", "AurorianGeode"]
 
