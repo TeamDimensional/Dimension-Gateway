@@ -56,7 +56,7 @@ def tier8 = [
     fluid("ethyne"), fluid("tetrafluoroethene"), fluid("hydrogen_sulfide"), fluid("ammonium_sulfate_solution"),
     fluid("ammonium_bisulfate_solution"), fluid("ammonium_persulfate_solution"),
     fluid("hydroquinone_solution"), fluid("sodium_hydroquinone_solution"), fluid("potassium_hydroquinone_solution"),
-    fluid("polytetrafluoroethene"), fluid("polyethersulfone"),
+    fluid("polytetrafluoroethene"), fluid("polyethersulfone"), fluid("pyro_cinnabar_mixture"),
 ]
 for (def c in GatewayHelpers.qmdChemiFluids) tier8.add(fluid(c))
 

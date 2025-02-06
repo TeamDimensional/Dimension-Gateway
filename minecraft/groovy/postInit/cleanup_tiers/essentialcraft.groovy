@@ -22,8 +22,7 @@ def magicalTier = [
     mitem("potionspreader"), mitem("magicalenchanter"), mitem("magicalrepairer"), mitem("matrixabsorber"), mitem("radiatingchamber"),
     mitem("magicaljukebox"), mitem("chargingchamber"), mitem("magicfence"), mitem("ffence"), mitem("blockpale"), mitem("platingpale"),
     mitem("corruptioncleaner"), mitem("magicalmirror"), mitem("controlrod"), mitem("redstonetransmitter"), mitem("magicalhopper"),
-    mitem("metadatamanager"), mitem("blockbreaker"), mitem("furnacemagic"), mitem("furnacemagic", 4), mitem("furnacemagic", 8), 
-    mitem("chest"), mitem("advbreaker"), mitem("intersector"), mitem("mrumover1"), mitem("bound_gem"), mitem("magicmonocle"),
+    mitem("metadatamanager"), mitem("blockbreaker"), mitem("chest"), mitem("advbreaker"), mitem("intersector"), mitem("mrumover1"), mitem("bound_gem"), mitem("magicmonocle"),
     mitem("itemfilter"), mitem("itemfilter", 2), mitem("monsterclinger"), mitem("soulstone"), mitem("mrumover_t2"), mitem("craftingframe"),
     mitem("magicalalloy"), mitem("echoldingchamber"), mitem("gun.pistol"), mitem("gun.rifle"), mitem("gun.sniper"), mitem("gun.gatling"),
 ] + elementalTools
@@ -90,8 +89,8 @@ def hoannaBuildingLoot = [
 ]
 
 def hoannaTier = [
-    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("magicalfurnace"), mitem("emberforge"), mitem("voidfence"),
-    mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("furnacemagic", 12), mitem("mithrilinecrystal", 6), mitem("chest", 1),
+    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"),
+    mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("mithrilinecrystal", 6), mitem("chest", 1), mitem("magicalfurnace"),
     mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
 for (def i in armorParts) hoannaTier.add(mitem("${i}_void"))
@@ -136,13 +135,14 @@ def removeItems = [
     mitem("mimejectorp"), mitem("miminjectorp"), mitem("inventorygem"), mitem("magicalquarry"),
 ]
 for (int i in [17, 18, 19, 77, 78, 80, 81]) removeItems.add(mitem("genitem", i))
+for (int i in [0, 4, 8, 12]) removeItems.add(mitem("furnacemagic", i))
 
 def hideFromJei = [
     item("baubles:ring"), mitem("drops"), mitem("drops", 1), mitem("drops", 2), mitem("drops", 3), mitem("elementalcrystal"),
     mitem("flowergreen"), mitem("fruit"), mitem("tallgrass"), mitem("torch"), mitem("magicaldisplay"), mitem("portal"),
     mitem("mithrilinecrystal", 12), mitem("weathercontroller"), mitem("testitem"), mitem("mrumatrixprojection", 4), mitem("fruit_item"), mitem("bauble"),
     mitem("shadesword"), mitem("shadeslasher"), mitem("shadeknife"), mitem("collectedspawner"), mitem("balance_setter"),
-    mitem("clearing_catalyst"), mitem("raining_catalyst"), mitem("thundering_catalyst")
+    mitem("clearing_catalyst"), mitem("raining_catalyst"), mitem("thundering_catalyst"),
 ] + corruptions + removedOres + removeItems
 for (int i in [2, 76]) hideFromJei.add(mitem("genitem", i))
 for (int i in 0..13) hideFromJei.add(mitem("entityegg", i))
@@ -160,7 +160,6 @@ for (def it in inqDrops) TooltipEvents.setTooltip(it, "Dropped by the Holographi
 for (def it in hoannaLoot) TooltipEvents.setTooltip(it, "Found in dungeons in Hoanna.")
 for (def it in hoannaBuildingLoot) TooltipEvents.setTooltip(it, "Found in city ruins in Hoanna.")
 for (def it in 0..15) TooltipEvents.setTooltip(mitem("essence", it), "Produced by the Crystal Extractor.")
-TooltipEvents.setTooltip(mitem("magicalalloy"), "Made in the Magmatic Furnace or Magmatic Smeltery.")
 TooltipEvents.setTooltip(mitem("elementalsword"), "Made in Ember Forge.")
 TooltipEvents.setUnlock(mitem("windtablet"), 13)
 

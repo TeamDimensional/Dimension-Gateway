@@ -3,6 +3,7 @@ item.gateway.resonating_gem.name=Resonating Gem
 item.gateway.impure_resonating_gem.name=Impure Resonating Gem
 fluid.gateway.aluminum_nitride.name=Aluminum Nitride Solution
 fluid.gateway.uranium_albn_mixture.name=Uranium-Aluminum Nitride Mixture
+fluid.gateway.pyro_cinnabar_mixture.name=Pyrotheum-Cinnabar Mixture
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
 
