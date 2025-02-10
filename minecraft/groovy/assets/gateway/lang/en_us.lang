@@ -36,3 +36,46 @@ jaopca.material.Aether=Aetherium
 jaopca.material.Resonating=Technetium
 item.deepresonance.resonating_plate.name=Technetium Plate
 tile.deepresonance.resonating_ore.name=Technetium Ore
+
+ac.ritual.gateway:odb=Oblivion Deathbomb
+ac.ritual.gateway:odb.desc=Combines the deadliest known fluid, the most evil known metal, and the most powerful known power catalyst to create a destroyer of worlds.
+ac.ritual.gateway:transmutationgem=Transmutation Gem
+ac.ritual.gateway:transmutationgem.desc=Combines four different elements with materials wielding dark power, allowing production of seemingly impossible items.
+
+ac.ritual.gateway:overworld_energy_pedestal=Overworld Energy Pedestal
+ac.ritual.gateway:overworld_energy_pedestal.desc=Infuses an Ender Resonator with a number of materials from Overworld and The End to allow automatic book recharging.
+ac.ritual.gateway:overworld_sacrificial_altar=Overworld Sacrificial Altar
+ac.ritual.gateway:overworld_sacrificial_altar.desc=Infuses a Rune of Sacrifice with a number of materials from Overworld and The End to allow converting life essence of mobs into pure power.
+ac.ritual.gateway:overworld_energy_collector=Overworld Energy Collector
+ac.ritual.gateway:overworld_energy_collector.desc=Infuses an Energy Collector with a number of materials from Overworld and The End to allow automatic power generation.
+ac.ritual.gateway:overworld_energy_relay=Overworld Energy Relay
+ac.ritual.gateway:overworld_energy_relay.desc=Infuses a Displacement Rune with a number of materials from Overworld and The End to allow rapid power transfer.
+ac.ritual.gateway:overworld_energy_container=Overworld Energy Container
+ac.ritual.gateway:overworld_energy_container.desc=Infuses a Rune of Augmented Capacity with a number of materials from Overworld and The End to create a highly effective power storage.
+
+ac.ritual.gateway:wasteland_energy_pedestal=Abyssal Energy Pedestal
+ac.ritual.gateway:wasteland_energy_pedestal.desc=Upgrades Overworld Energy Pedestal with Abyssal Materials, Empowered Void and Shadow Gems.
+ac.ritual.gateway:wasteland_sacrificial_altar=Abyssal Sacrificial Altar
+ac.ritual.gateway:wasteland_sacrificial_altar.desc=Upgrades Overworld Sacrificial Altar with Abyssal Materials, Empowered Void and Shadow Gems.
+ac.ritual.gateway:wasteland_energy_collector=Abyssal Energy Collector
+ac.ritual.gateway:wasteland_energy_collector.desc=Upgrades Overworld Energy Collector with Abyssal Materials, Empowered Void and Shadow Gems.
+ac.ritual.gateway:wasteland_energy_relay=Abyssal Energy Relay
+ac.ritual.gateway:wasteland_energy_relay.desc=Upgrades Overworld Energy Relay with Abyssal Materials, Empowered Void and Shadow Gems.
+ac.ritual.gateway:wasteland_energy_container=Abyssal Energy Container
+ac.ritual.gateway:wasteland_energy_container.desc=Upgrades Overworld Energy Container with Abyssal Materials, Empowered Void and Shadow Gems.
+
+ac.ritual.gateway:omothol_energy_pedestal=Omothol Energy Pedestal
+ac.ritual.gateway:omothol_energy_pedestal.desc=Upgrades Abyssal Energy Pedestal with Omothol Materials, Empowered Diamantine and isotopes of Plutonium.
+ac.ritual.gateway:omothol_sacrificial_altar=Omothol Sacrificial Altar
+ac.ritual.gateway:omothol_sacrificial_altar.desc=Upgrades Abyssal Sacrificial Altar with Omothol Materials, Empowered Diamantine and isotopes of Plutonium.
+ac.ritual.gateway:omothol_energy_collector=Omothol Energy Collector
+ac.ritual.gateway:omothol_energy_collector.desc=Upgrades Abyssal Energy Collector with Omothol Materials, Empowered Diamantine and isotopes of Plutonium.
+ac.ritual.gateway:omothol_energy_relay=Omothol Energy Relay
+ac.ritual.gateway:omothol_energy_relay.desc=Upgrades Abyssal Energy Relay with Omothol Materials, Empowered Diamantine and isotopes of Plutonium.
+ac.ritual.gateway:omothol_energy_container=Omothol Energy Container
+ac.ritual.gateway:omothol_energy_container.desc=Upgrades Abyssal Energy Container with Omothol Materials, Empowered Diamantine and isotopes of Plutonium.
+
+ac.ritual.gateway:drainstaff_omt=Omothol Staff of Rending
+ac.ritual.gateway:drainstaff_omt.desc=Upgrades Abyssal Staff of Rending with an additional Shadow Gem to make it even stronger.
+ac.ritual.gateway:acstaff=Staff of the Gatekeeper
+ac.ritual.gateway:acstaff.desc=Upgrades Omothol Staff of Rending with bizarre materials from every conceivable reality to unlock its maximum potential.
