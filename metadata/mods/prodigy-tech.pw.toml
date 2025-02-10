@@ -1,6 +1,9 @@
 filename = 'prodigytech-1.12.2-1.3.4.jar'
 name = 'Prodigy Tech'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '1395abc8da34f471afabd2ee114fafcec7c8a03f'

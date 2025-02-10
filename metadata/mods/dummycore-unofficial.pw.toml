@@ -1,6 +1,9 @@
 filename = 'DummyCoreUnofficial-2.4.112.5.jar'
 name = 'DummyCore Unofficial'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
 hash = '279499fec7b1ea593669c7fc09959b2266aabe78'

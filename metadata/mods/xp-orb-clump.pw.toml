@@ -1,13 +1,16 @@
-filename = 'Fixeroo-2.0.jar'
-name = 'Fixeroo'
+filename = 'Fixeroo-2.3.4.jar'
+name = 'XP Orb Clump'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '368aa931235ca5c401351c91619406636327933c'
+hash = '2dec71f06d9c718cdd04cd3a7846b90e66da06e1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 4412006
+file-id = 6124010
 project-id = 633806

@@ -1,13 +1,16 @@
-filename = 'multiblockednbt-1.0.0.jar'
+filename = 'multiblockednbt-1.1.0.jar'
 name = 'Multiblocked NBT'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '5ca66fc641608800376c0f90213bb023f92d1574'
+hash = '0697f612b7bbff30f574e7e2f5acbd9ccfa1d26a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5553808
+file-id = 5694093
 project-id = 1068740

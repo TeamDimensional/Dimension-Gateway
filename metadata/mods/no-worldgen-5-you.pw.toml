@@ -1,6 +1,9 @@
 filename = 'NoWorldgen5You-1.12.2-1.0.8.jar'
 name = 'No Worldgen 5 You'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'alpha'
 
 [download]
 hash = 'de109b3247a4a19fef7515983b25fc77c17645ad'

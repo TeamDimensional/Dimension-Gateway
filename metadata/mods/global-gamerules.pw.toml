@@ -1,6 +1,9 @@
 filename = 'GlobalGameRules-1.12.2-2.2.7.jar'
 name = 'Global GameRules'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'ca223e0b0f7978c4c62f975cac7fbef29d8d2ca5'

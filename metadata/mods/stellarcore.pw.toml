@@ -1,13 +1,16 @@
-filename = 'StellarCore-1.1.11.jar'
-name = 'StellarCore'
+filename = 'StellarCore-1.5.21.jar'
+name = 'Stellar Core'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'cee59ccc38967058f5f8d27abe7ee6a73689c07d'
+hash = 'a1be216f5d0d82daee54c6d8bbedb3c3f89c551d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5620234
+file-id = 5952608
 project-id = 1064321

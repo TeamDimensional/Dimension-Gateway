@@ -1,6 +1,9 @@
 filename = 'Hwyla-1.8.26-B41_1.12.2.jar'
 name = 'Hwyla'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '7280d5c0dab42436549bcefc63ff64a1049e5501'

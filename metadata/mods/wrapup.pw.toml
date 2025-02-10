@@ -1,0 +1,16 @@
+filename = 'WrapUp-1.12-1.1.3.jar'
+name = 'WrapUp'
+side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '29f89705011794531150e5e00a73d62cc0134888'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2486198
+project-id = 275153

@@ -130,7 +130,8 @@ for (def pair in items) {
         .output(owItem)
         .bookTier(0)
         .energy(400)
-        .input(pair[1],
+        .centerItem(pair[1])
+        .input(
             item("calculator:enddiamond"), item("industrialforegoing:plastic"), item("botania:manaresource"),
             item("minecraft:stone"), item("calculator:enddiamond"), item("minecraft:stone"), item("minecraft:ender_eye"),
             item("industrialforegoing:plastic"))
@@ -141,7 +142,8 @@ for (def pair in items) {
         .output(awItem)
         .bookTier(1)
         .energy(800)
-        .input(owItem,
+        .centerItem(owItem)
+        .input(
             item("abyssalcraft:shadowgem"), item("actuallyadditions:item_crystal_empowered", 3), item("abyssalcraft:cingot"),
             item("abyssalcraft:abystone"), item("abyssalcraft:shadowgem"), item("abyssalcraft:abystone"), item("enderutilities:enderpart", 2),
             item("actuallyadditions:item_crystal_empowered", 3))
@@ -152,7 +154,8 @@ for (def pair in items) {
         .output(omItem)
         .bookTier(3)
         .energy(1600)
-        .input(awItem,
+        .centerItem(awItem)
+        .input(
             item("nuclearcraft:plutonium", 5), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:ethaxiumingot"),
             item("abyssalcraft:darkethaxiumbrick"), item("nuclearcraft:plutonium", 5), item("abyssalcraft:darkethaxiumbrick"),
             item("abyssalcraft:abyingot"), item("actuallyadditions:item_crystal_empowered", 2))
@@ -168,7 +171,8 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .bookTier(4)
     .energy(75000)
     .dimension(54)
-    .input(item("evilcraft:lightning_bomb"),
+    .centerItem(item("evilcraft:lightning_bomb"))
+    .input(
         item("essentialcraft:genitem", 36),
         item("openblocks:tank").withNbt(["tank": ["FluidName": "liquidantimatter", "Amount": 16000]]),
         item("thaumadditions:adaminite_ingot"), item("thaumadditions:adaminite_ingot"),
@@ -204,7 +208,8 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .output(item("abyssalcraft:transmutationgem"))
     .bookTier(1)
     .energy(500)
-    .input(item("minecraft:ender_eye"),
+    .centerItem(item("minecraft:ender_eye"))
+    .input(
         item("abyssalcraft:shadowgem"), item("minecraft:blaze_powder"), item("minecraft:ender_pearl"), item("thermalfoundation:material", 2049),
         item("abyssalcraft:shadowgem"), item("thermalfoundation:material", 2051), item("minecraft:ender_pearl"), item("thermalfoundation:material", 2053))
     .register()
@@ -268,7 +273,8 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .bookTier(3)
     .energy(2000)
     .dimension(52)
-    .input(item("abyssalcraft:drainstaff_aw"),
+    .centerItem(item("abyssalcraft:drainstaff_aw"))
+    .input(
         item("abyssalcraft:shadowgem"), item("abyssalcraft:omotholstone"), item("abyssalcraft:omotholflesh"), item("abyssalcraft:omotholstone"),
         item("abyssalcraft:omotholflesh"), item("abyssalcraft:omotholstone"), item("abyssalcraft:omotholflesh"), item("abyssalcraft:omotholstone"))
     .register()
@@ -280,7 +286,8 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .bookTier(3)
     .energy(20000)
     .dimension(52)
-    .input(item("abyssalcraft:drainstaff_omt"),
+    .centerItem(item("abyssalcraft:drainstaff_omt"))
+    .input(
         item("abyssalcraft:coralium_crystal_cluster"), item("abyssalcraft:dreadium_crystal_cluster"), item("abyssalcraft:eldritchscale"),
         item("prodigytech:primordium"), item("abyssalcraft:gatewaykeyjzh"), item("prodigytech:primordium"),
         item("abyssalcraft:ethaxiumingot"), item("abyssalcraft:blaze_crystal_cluster"))

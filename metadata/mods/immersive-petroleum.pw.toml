@@ -1,6 +1,9 @@
 filename = 'immersivepetroleum-1.12.2-1.1.10.jar'
 name = 'Immersive Petroleum'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'dd0ec378fef19acc7cf649be13ced76aa72e42ac'

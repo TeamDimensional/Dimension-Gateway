@@ -1,13 +1,16 @@
-filename = 'AbyssalCraft-1.12.2-2.0.0-ALPHA-8.jar'
+filename = 'AbyssalCraft-1.12.2-2.0.0-BETA-1.jar'
 name = 'AbyssalCraft'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = 'c44d6f004bafa04e919c5fa1b2ae80a9d8413dd1'
+hash = '3d79a68403c616d1af02ab2f84b7a37c52e19d0d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5482166
+file-id = 5908270
 project-id = 53686

@@ -1,6 +1,9 @@
 filename = 'ImmersiveEngineering-0.12-98.jar'
 name = 'Immersive Engineering'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '633070d9c447fdaf6a9ead59425017815c890c63'

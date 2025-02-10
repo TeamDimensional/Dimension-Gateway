@@ -1,6 +1,9 @@
 filename = 'startuptimer-1.1.0.jar'
 name = 'Startup Timer'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'c8c47eeb443680978d49e93da895fb0af5e25e62'

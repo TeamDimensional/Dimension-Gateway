@@ -1,13 +1,16 @@
-filename = 'aetherworks_extended_life-1.1.1.jar'
+filename = 'aetherworks_extended_life-1.2.2.jar'
 name = 'Aetherworks Unofficial Extended Life'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '8bd73f70bc49729ce8b4f089ef1b55fb83dccb43'
+hash = 'ff4f59369f4ad16e2f2db47b4fef4712a8a439bd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5528780
+file-id = 6004508
 project-id = 1003576

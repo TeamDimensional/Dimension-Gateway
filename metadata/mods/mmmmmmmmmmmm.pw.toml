@@ -1,6 +1,9 @@
 filename = 'MmmMmmMmmMmm-1.12-1.14.jar'
 name = 'MmmMmmMmmMmm (Target Dummy)'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '77ae10c019948bf1aec61b266e870609d8481058'

@@ -1,13 +1,16 @@
-filename = 'multiblocked-0.8.6.jar'
+filename = 'multiblocked-0.8.10.jar'
 name = 'Multiblocked'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '03b355a6a8cefa7e0fa5511af171bf722ac9bc60'
+hash = '03b763512f9be053f42a19a4410dfb40554a101c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5078880
+file-id = 6153909
 project-id = 604054

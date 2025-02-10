@@ -1,6 +1,9 @@
 filename = 'mysticalworld-1.12.2-1.11.0.jar'
 name = 'Mystical World'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '2c553879a5399c0ecbd6d66ab2f2295ecc8deb89'

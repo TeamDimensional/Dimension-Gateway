@@ -1,13 +1,16 @@
-filename = 'xnet-1.12-1.8.3-ynet.jar'
-name = 'YNet [XNet Fork]'
+filename = 'xnet-1.12-1.8.4-ynet.jar'
+name = 'XNet'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '11e703d9a437f27e26fe1dde2d7420e89f6f289a'
+hash = 'd5886bc1e309a5d31fd251fa37c4c622e50dd715'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5243319
+file-id = 5665405
 project-id = 999559

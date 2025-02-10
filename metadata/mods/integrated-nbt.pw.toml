@@ -1,6 +1,9 @@
 filename = 'integratednbt-1.2.2.jar'
 name = 'Integrated NBT'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '7b2dfdfa0e26bfa5b00769e1110eb0512d5c3f52'

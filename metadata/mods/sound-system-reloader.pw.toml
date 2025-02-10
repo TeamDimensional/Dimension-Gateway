@@ -1,6 +1,9 @@
 filename = 'soundsystemreloader-1.0.0.jar'
 name = 'Sound System Reloader'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '053e9f5d6fcc8a1bcae36d3599ebc7e1b2cc50b3'

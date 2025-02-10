@@ -1,6 +1,9 @@
 filename = 'BiomeTweaker-1.12.2-3.2.369.jar'
 name = 'BiomeTweaker'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '4f85402caa88c73794e8dc050386313f0a4c9ad5'

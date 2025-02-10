@@ -1,6 +1,9 @@
 filename = 'CTM-MC1.12.2-1.0.2.31.jar'
 name = 'ConnectedTexturesMod'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '892e0788531269bfa2f356e4e12825e19d4e5412'

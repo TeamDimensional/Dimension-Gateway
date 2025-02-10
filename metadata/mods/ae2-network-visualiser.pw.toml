@@ -1,6 +1,9 @@
 filename = 'AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar'
 name = 'AE2 Network Visualiser'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
 hash = 'bac9c21d2a1c12d46b97b115e5d1376901776ca5'

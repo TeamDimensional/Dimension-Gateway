@@ -1,6 +1,9 @@
 filename = 'omniwand-1.12.2-1.0.1.jar'
 name = 'Omniwand'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '5c3a75b4efd047636c5715c8fc3245986df85048'

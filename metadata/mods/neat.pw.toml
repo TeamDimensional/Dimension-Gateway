@@ -1,6 +1,9 @@
 filename = 'Neat 1.4-17.jar'
 name = 'Neat'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '831c286d99fe78503e966ef80ad27f54ae6a81cb'

@@ -1,6 +1,9 @@
 filename = 'ForgivingVoid_1.12.2-1.1.0.jar'
 name = 'Forgiving Void'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '1745ca1164b14f6d72e25777770d2675b3a4cbf0'

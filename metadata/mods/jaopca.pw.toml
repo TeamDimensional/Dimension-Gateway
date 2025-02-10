@@ -1,0 +1,16 @@
+filename = 'JAOPCA-1.12.2-2.3.12.30.jar'
+name = 'JAOPCA'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8ddd3d8495094f22688e8de3027653b47258727f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6177421
+project-id = 266936

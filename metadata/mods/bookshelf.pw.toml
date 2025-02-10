@@ -1,6 +1,9 @@
 filename = 'Bookshelf-1.12.2-2.3.590.jar'
 name = 'Bookshelf'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '83a1864dd78f48102609849dd36866d6cf32b907'

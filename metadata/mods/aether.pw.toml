@@ -1,6 +1,9 @@
 filename = 'aether-1.12.2-v1.5.4.0.jar'
 name = 'The Aether'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '2c016c60a0ad281f8a5559afe27cd03607b6af0e'

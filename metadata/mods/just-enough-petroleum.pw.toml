@@ -1,6 +1,9 @@
 filename = 'JustEnoughPetroleum-0.1.jar'
 name = 'Just Enough Petroleum'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '5c53e70b61328eaee4631529b0a46efc911e4c06'

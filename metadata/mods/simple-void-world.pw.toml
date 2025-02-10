@@ -1,6 +1,9 @@
 filename = 'Simple-Void-World-1.12-1.2.0.9-universal.jar'
 name = 'Simple Void World'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '9e980ac6dd6945c356c136fa6fc09fd7047ccdbb'

@@ -1,6 +1,9 @@
 filename = 'NC-ReactorBuilder-1.12.2-1.0.4b.jar'
 name = 'NuclearCraft Reactor Builder'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
 hash = 'cf3e272b074048a6097e22ab683dc40a75b98a56'

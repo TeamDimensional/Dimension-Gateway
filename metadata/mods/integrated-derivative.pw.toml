@@ -1,13 +1,16 @@
-filename = 'integratedderivative-1.0.2.jar'
+filename = 'integratedderivative-1.1.2.jar'
 name = 'Integrated Derivative'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'b694ba546ad1591f43216c984799556a2c26514b'
+hash = '56413576f77d08ac395b05662008539a0288cbf4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5594143
+file-id = 5994116
 project-id = 1067548

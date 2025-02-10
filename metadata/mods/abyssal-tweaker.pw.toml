@@ -1,0 +1,16 @@
+filename = 'abyssaltweaker-0.3.jar'
+name = 'Abyssal Tweaker'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1971e5edf3f195c282f68e821b465afcab677fab'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6178305
+project-id = 1124512

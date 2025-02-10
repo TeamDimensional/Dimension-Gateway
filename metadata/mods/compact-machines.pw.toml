@@ -1,6 +1,9 @@
 filename = 'compactmachines3-1.12.2-3.0.18-b278.jar'
 name = 'Compact Machines'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
 hash = 'aca4d439b8a7c480217c43ebda60772ef6eb392e'

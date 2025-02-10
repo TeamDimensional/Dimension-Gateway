@@ -1,6 +1,9 @@
 filename = 'lost-aether-content-1.12.2-1.0.2.jar'
 name = 'Aether: Lost Content Addon'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '7afd5c89092db20080f5e11a3cbae0511bdabbb9'

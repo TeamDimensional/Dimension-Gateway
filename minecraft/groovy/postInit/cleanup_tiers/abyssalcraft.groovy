@@ -42,7 +42,7 @@ def abyssalItems = [
     mitem("cudgel"), mitem("soulreaper"), mitem("necronomicon"), mitem("necronomicon_cor"), mitem("shoggothflesh_overworld"),
     mitem("shoggothflesh_abyssal"), mitem("nugget_coralium"), mitem("drainstaff"), mitem("drainstaff_aw"),
     mitem("essence_abyssalwasteland"), mitem("interdimensionalcage"), mitem("scroll_lesser"), mitem("scroll_moderate"),
-    mitem("coralium_antidote"), mitem("monolithstone"),
+    mitem("coralium_antidote"), mitem("monolithstone"), mitem("darklands_oak_fence_gate"),
 ] + statues
 for (def i in 2..9) abyssalItems.add(mitem("ccluster${i}"))
 
@@ -87,12 +87,11 @@ def tier13Items = [
 ]
 
 def removeRecipes = [
-    mitem("door_drt"), mitem("coraliumstone"), mitem("odbcore"), mitem("dreadbrick"), mitem("chiseled_dreadstone_brick"), mitem("abydreadbrick"),
-    mitem("chiseled_abyssalnite_stone_brick"),  mitem("dreadplanks"), mitem("dreadbrickstairs"),
-    mitem("dreadbrickfence"), mitem("dreadbrickslab1"), mitem("abydreadbrickstairs"), mitem("abydreadbrickfence"), mitem("abydreadbrickslab1"),
+    mitem("door_drt"), mitem("coraliumstone"), mitem("odbcore"), mitem("dreadbrick"), mitem("chiseled_dreadstone_brick"),
+    mitem("dreadplanks"), mitem("dreadbrickstairs"),
+    mitem("dreadbrickfence"), mitem("dreadbrickslab1"),
     mitem("drtfence"), mitem("materializer"), mitem("sacrificialaltar"), mitem("energypedestal"), mitem("energycollector"), mitem("energyrelay"),
     mitem("dreadstonecobblestonestairs"), mitem("dreadstonecobblestoneslab1"), mitem("dreadstonecobblestonewall"),
-    mitem("abyssalnitecobblestonestairs"), mitem("abyssalnitecobblestoneslab1"), mitem("abyssalnitecobblestonewall"),
     mitem("statetransformer"), mitem("energydepositioner"), mitem("sequential_brewing_stand"), mitem("platec"),
     mitem("dpick"), mitem("daxe"), mitem("dshovel"), mitem("dsword"), mitem("dhoe"),
     mitem("apick"), mitem("aaxe"), mitem("ashovel"), mitem("asword"), mitem("ahoe"),
@@ -102,20 +101,25 @@ def removeRecipes = [
     mitem("carboncluster"), mitem("densecarboncluster"), mitem("dreadcloth"), mitem("dreadplate"), mitem("dreadblade"), mitem("dreadhilt"),
     mitem("coin"), mitem("necronomicon_dre"), mitem("skin_abyssalwasteland"), mitem("skin_dreadlands"), mitem("skin_omothol"),
     mitem("stonetablet"), mitem("dread_antidote"), mitem("cchunk"),
+    mitem("dreadwood_button"), mitem("dreadwood_pplate"), mitem("dreadwood_fence_gate"),
+    mitem("elysian_stone_brick"), mitem("chiseled_elysian_stone_brick"), mitem("elysian_stone_brick_stairs"),
+    mitem("elysian_stone_brick_fence"), mitem("elysian_stone_brick_slab1"), mitem("elysiancobblestonestairs"),
+    mitem("elysiancobblestoneslab1"), mitem("elysiancobblestonewall"), mitem("dreadwood_slab1"),
+    mitem("dreadwood_stairs"), mitem("research_table"),
 ]
 for (def m in materials) removeRecipes.add(mitem("${m}_crystal_fragment"))
-for (def it in ["small", "medium", "large", "huge"]) removeRecipes.add(mitem("crystalbag_${it}"))
+for (def it in ["small", "medium", "large", "huge"]) removeRecipes.add(mitem("crystalbag_${it}")) // im gay
 
 def removeFurnace = [
-    mitem("dreadstone"), mitem("abydreadstone"), mitem("charcoal"), mitem("cooked_generic_meat"), mitem("cracked_dreadstone_brick"),
-    mitem("cracked_abyssalnite_stone_brick"),
+    mitem("dreadstone"), mitem("charcoal"), mitem("cooked_generic_meat"), mitem("cracked_dreadstone_brick"),
+    mitem("cracked_elysian_stone_brick"), mitem("elysian_stone"),
 ]
 
 def removeRitual = [
-    mitem("psdl"), mitem("dreadaltartop"), mitem("dreadaltarbottom"), mitem("dreadlands_energy_pedestal"), mitem("dreadlands_sacrificial_altar"),
+    mitem("psdl"), mitem("dreadlands_energy_pedestal"), mitem("dreadlands_sacrificial_altar"),
     mitem("energycontainer"), mitem("dreadlands_energy_collector"), mitem("dreadlands_energy_relay"), mitem("dreadlands_energy_container"),
     mitem("gatewaykeydl"), mitem("dhelmet"), mitem("dplate"), mitem("dlegs"), mitem("dboots"), mitem("jzaharcoin"),
-    mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"),
+    mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"), mitem("sealing_key"),
 ]
 
 def unobtainable = [
@@ -128,14 +132,16 @@ def hideFromJei = [
     mitem("abynitore"), mitem("abytinore"), mitem("abycopore"), mitem("dreadlandsdirt"), mitem("idol_of_fading"), mitem("abyssal_abyssalnite_ore"),
     mitem("mural"), mitem("dreadshard"), mitem("dreadchunk"), mitem("abychunk"), mitem("dreadfragment"), mitem("dreadkey"),
     mitem("shoggothflesh_dreaded"), mitem("essence_dreadlands"), mitem("generic_meat"), mitem("lost_page"),
-    mitem("dreadbrickslab2"), mitem("abydreadbrickslab2"), mitem("dreadguardspawner"), mitem("chagarothspawner"),
-    mitem("jzaharspawner"), mitem("gatekeeperminionspawner"), mitem("fire"), mitem("dreadstonecobblestoneslab2"), mitem("abyssalnitecobblestoneslab2"),
-    mitem("dreadstonecobblestone"), mitem("abyssalnitecobblestone"), mitem("abycorore"),
+    mitem("dreadbrickslab2"), mitem("dreadguardspawner"), mitem("chagarothspawner"),
+    mitem("jzaharspawner"), mitem("gatekeeperminionspawner"), mitem("fire"), mitem("dreadstonecobblestoneslab2"),
+    mitem("dreadstonecobblestone"), mitem("abycorore"), mitem("scriptures_omniscience"), mitem("sealing_lock"), mitem("unlocked_sealing_lock"),
+    mitem("dreadlands_muck"), mitem("elysian_stone_brick_slab2"), mitem("ritual_altar_elysian_stone"), mitem("ritual_pedestal_elysian_stone"),
+    mitem("elysiancobblestoneslab2"), mitem("dreadwood_slab2"), mitem("elysian_cobblestone"),
 ] + removeRecipes + removeFurnace + removeRitual
 
 for (def it in ["altar", "pedestal"]) {
     for (def mat in ["stone", "darkstone", "abyssal_stone", "coralium_stone"]) abyssalItems.add(mitem("ritual_${it}_${mat}"))
-    for (def mat in ["dreadstone", "abyssalnite_stone"]) hideFromJei.add(mitem("ritual_${it}_${mat}"))
+    for (def mat in ["dreadstone"]) hideFromJei.add(mitem("ritual_${it}_${mat}"))
     omotholItems.add(mitem("ritual_${it}_ethaxium"))
     tier13Items.add(mitem("ritual_${it}_dark_ethaxium"))
 }
@@ -153,3 +159,12 @@ for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Can be looted in O
 TooltipEvents.setTooltip(item("abyssalcraft:odb"), "Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.")
 TooltipEvents.setUnlock(mitem("gatewaykeyjzh"), 11)
 for (int i in 0..27) crafting.remove("abyssalcraft:crystalshard_${i}_alt")
+
+// Fix fence gate
+crafting.removeByOutput(mitem("darklands_oak_fence_gate"))
+crafting.shapedBuilder()
+        .output(mitem("darklands_oak_fence_gate"))
+        .matrix("SPS", "SPS")
+        .key("S", ore("stickWood"))
+        .key("P", mitem("dltplank"))
+        .register()

@@ -1,6 +1,9 @@
 filename = 'ElecCore-1.12.2-1.9.453.jar'
 name = 'ElecCore'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '112cda98b049902b8c073ec37b96495ff5e0bdf6'

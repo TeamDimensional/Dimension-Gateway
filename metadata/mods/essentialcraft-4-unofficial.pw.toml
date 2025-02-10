@@ -1,6 +1,9 @@
 filename = 'EssentialCraftUnofficial-4.9.112.6.jar'
 name = 'EssentialCraft 4 Unofficial'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
 hash = '2ff6d0d599c8bedcd694de9906c1e9d834ad9011'

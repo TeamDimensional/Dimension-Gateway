@@ -1,6 +1,9 @@
 filename = 'particleculling-1.12.2-v1.4.3.jar'
 name = 'Particle Culling'
-side = 'both'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '2c4847ca6c7cf1d41ff320943394ff61028c7e72'

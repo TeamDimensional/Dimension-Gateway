@@ -1,6 +1,9 @@
 filename = 'BetterAdvancements-1.12.2-0.1.0.77.jar'
 name = 'Better Advancements'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '13948f45e69059c3714266a1549bf643fee6ebc3'

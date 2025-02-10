@@ -1,6 +1,9 @@
 filename = 'enderutilities-1.12.2-0.7.15.jar'
 name = 'Ender Utilities'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'cf80a6629d04876090890d6417ba4685c9aedc08'

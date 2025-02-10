@@ -29,7 +29,7 @@ deleted_files = []
 
 
 def force_inclusion(file):
-    return file.startswith("gatewaycore") or file.startswith("abyssaltweaker")
+    return file.startswith("gatewaycore")
 
 
 for fn in os.listdir(index_path):

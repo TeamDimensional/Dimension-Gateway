@@ -1,6 +1,9 @@
 filename = 'DefaultWorldGenerator-port-1.12-2.3.jar'
 name = 'Default World Generator (port)'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'd3f19e09346849b71a447b5e6253f9b2cd110756'

@@ -1,6 +1,9 @@
 filename = 'EvilCraft-1.12.2-0.10.78.jar'
 name = 'EvilCraft'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '299dcaf20edcf59009dfb834a1b5fa2ac32126f2'

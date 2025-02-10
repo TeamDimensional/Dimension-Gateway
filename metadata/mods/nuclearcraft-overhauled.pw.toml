@@ -1,16 +1,16 @@
-filename = 'nuclearcraft-1.12.2-2o.8.0.jar'
-name = 'NuclearCraft: Overhauled'
+filename = 'nuclearcraft-1.12.2-2o.8.1.jar'
+name = 'NuclearCraft'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = '5305598fb47b57a7a8fe06006422dfaf9478534e'
+hash = '9df5f4aad5b7feb1676b0c6fc4c32ec7d986d9bd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6155052
+file-id = 6160826
 project-id = 336895

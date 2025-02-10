@@ -1,6 +1,9 @@
 filename = 'ThermalExpansion-1.12.2-5.5.7.1-universal.jar'
 name = 'Thermal Expansion'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '3568d977c90987c58ad2c7cb3837c4ac8de49216'

@@ -1,6 +1,9 @@
 filename = 'blockdrops-1.12.2-1.4.0.jar'
 name = 'Block Drops (JEI Addon)'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'b47558862e4bb042ec8e851334b564b04388d35e'

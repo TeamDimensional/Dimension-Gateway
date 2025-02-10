@@ -1,6 +1,9 @@
 filename = 'deepresonance-1.12-1.8.0.jar'
 name = 'Deep Resonance'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'd64e2821636a70fa182152420d7782f88707793e'

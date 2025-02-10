@@ -1,6 +1,9 @@
 filename = 'EngineersWorkshopReborn-1.12.2-1.0.9.40.jar'
 name = 'Engineers Workshop Reborn'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = 'd5e3f62aa56bef4c93fbd2598e2363ebbbdac37c'

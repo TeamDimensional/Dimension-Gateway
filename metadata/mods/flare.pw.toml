@@ -1,4 +1,4 @@
-filename = 'flare-0.2.1.jar'
+filename = 'flare-0.3.0.jar'
 name = 'Flare'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = 'a73f17443ceedaeda2f483c091e6ca353f21bfd8'
+hash = '14a37a607e55c43e654cb9ff883daf1ec969aced'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5694983
+file-id = 6162184
 project-id = 692142

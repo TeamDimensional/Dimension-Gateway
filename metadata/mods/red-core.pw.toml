@@ -1,13 +1,16 @@
-filename = '!Red-Core-MC-1.8-1.12-0.6-Dev-5.jar'
+filename = '!Red-Core-MC-1.8-1.12-0.6.jar'
 name = 'Red Core'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.10', '1.10.2', '1.11', '1.11.2', '1.12', '1.12.2', '1.8', '1.8.8', '1.8.9', '1.9', '1.9.4' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = '25a8467d3490a76f61620639ffc90ad94080ac1e'
+hash = 'ac72ee1e7777a3f20ace120c301fde68a3dfea23'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5403908
+file-id = 6147102
 project-id = 873867

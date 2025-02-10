@@ -1,6 +1,9 @@
 filename = 'RebornCore-1.12.2-3.19.5-universal.jar'
 name = 'Reborn Core'
 side = 'both'
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
 hash = '7a296b3ea8cbffce723b9949bf3726af3a4e8215'
