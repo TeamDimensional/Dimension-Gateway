@@ -20,10 +20,6 @@ ore("oreResonating").add(item("deepresonance:resonating_ore", 2))
 GatewayHelpers.hide(item("deepresonance:resonating_ore"))
 GatewayHelpers.hide(item("deepresonance:resonating_ore", 1))
 
-// Dark Ore
-ore("oreDark").remove(item("evilcraft:dark_ore"))
-GatewayHelpers.hide(item("evilcraft:dark_ore"))
-
 // Copper, Tin, etc.
 ore("oreCopper").remove(item("nuclearcraft:ore"))
 ore("oreCopper").remove(item("libvulpes:ore0", 4))

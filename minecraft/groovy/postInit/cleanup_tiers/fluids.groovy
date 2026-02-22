@@ -13,7 +13,7 @@ def tier3 = [
 ]
 
 def tier4 = [
-    fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("evilcraftblood"), fluid("diamond"),
+    fluid("emerald"), fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("diamond"),
 ]
 
 def tier5 = [

@@ -167,7 +167,7 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .bookTier(4)
     .energy(75000)
     .dimension(54)
-    .centerItem(item("evilcraft:lightning_bomb"))
+    .centerItem(item("botania:manabomb"))
     .input(
         item("essentialcraft:genitem", 36),
         item("openblocks:tank").withNbt(["tank": ["FluidName": "liquidantimatter", "Amount": 16000]]),

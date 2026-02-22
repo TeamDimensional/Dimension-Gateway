@@ -39,7 +39,6 @@ for (def i in [0, 2]) mods.immersiveengineering.crusher.removeByInput(item("deep
 mods.immersiveengineering.crusher.removeByOutput(item("nuclearcraft:dust", 12))
 mods.immersiveengineering.crusher.removeByOutput(item("libvulpes:productdust", 3))
 for (def i in [0, 1]) mods.immersiveengineering.crusher.removeByOutput(item("appliedenergistics2:material", i))
-mods.immersiveengineering.crusher.removeByOutput(item("evilcraft:dark_gem"))
 mods.immersiveengineering.crusher.removeByOutput(item("actuallyadditions:item_misc", 5))
 
 // Actually Additions Crusher
@@ -73,7 +72,6 @@ mods.actuallyadditions.crusher.removeByInput(item("theaurorian:geodeore"))
 // Broken recipes - same as above
 mods.actuallyadditions.crusher.removeByOutput(item("nuclearcraft:dust", 12))
 mods.actuallyadditions.crusher.removeByOutput(item("appliedenergistics2:material"))
-mods.actuallyadditions.crusher.removeByOutput(item("evilcraft:dark_gem"))
 mods.actuallyadditions.crusher.removeByOutput(item("actuallyadditions:item_misc:5"))
 
 // Stone Separator

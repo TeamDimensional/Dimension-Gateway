@@ -5,11 +5,11 @@ TooltipEvents.setTierName(1, "Beginnings")
 TooltipEvents.setTierName(2, "Temple Run")
 TooltipEvents.setUnlock(item("theaurorian:aurorianportalframebricks"), 2)
 
-TooltipEvents.setTierName(3, "Metallurgy")
+TooltipEvents.setTierName(3, "Early Metallurgy")
 TooltipEvents.setUnlock(item("tconstruct:materials"), 3)
 
-TooltipEvents.setTierName(4, "The Evil Arc")
-TooltipEvents.setUnlock(item("evilcraft:dark_gem"), 4)
+TooltipEvents.setTierName(4, "Blazing Performance")
+TooltipEvents.setUnlock(item("embers:ember_bore"), 4)
 
 TooltipEvents.setTierName(5, "Basics of Magic")
 TooltipEvents.setUnlock(item("thaumcraft:salis_mundus"), 5)

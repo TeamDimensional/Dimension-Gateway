@@ -29,8 +29,8 @@ def requiresFey = [mitem("materials", 18), mitem("materials", 19)]
 
 def requiresGemstones = [mitem("materials", 15), mitem("materials", 16), mitem("metal", 6)]
 
-def requiresEvilcraft = []
-for (int i in 0..4) requiresEvilcraft.add(mitem("slimesling", i))
+def requiresAA = []
+for (int i in 0..4) requiresAA.add(mitem("slimesling", i))
 
 def requiresObsidian = [mitem("fancy_frame", 0), mitem("fancy_frame", 1), mitem("fancy_frame", 5), mitem("materials", 14)]
 def requiresAoE = [mitem("materials", 12), mitem("materials", 13)]
@@ -52,7 +52,7 @@ for (def it in searedItems) TooltipEvents.setTier(it, 3)
 for (def it in requiresSmeltery) TooltipEvents.setTier(it, 3)
 for (def it in requiresFey) TooltipEvents.setTier(it, 3)
 for (def it in requiresGemstones) TooltipEvents.setTier(it, 4)
-for (def it in requiresEvilcraft) TooltipEvents.setTier(it, 4)
+for (def it in requiresAA) TooltipEvents.setTier(it, 4)
 for (def it in requiresAoE) TooltipEvents.setTier(it, 4)
 for (def it in requiresObsidian) TooltipEvents.setTier(it, 5)
 for (def it in cobaltArditeItems) TooltipEvents.setTier(it, 7)
