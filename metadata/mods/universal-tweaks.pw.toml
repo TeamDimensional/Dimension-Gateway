@@ -1,16 +1,17 @@
-filename = 'UniversalTweaks-1.12.2-1.14.0.jar'
+filename = 'UniversalTweaks-1.12.2-1.18.0.jar'
 name = 'Universal Tweaks'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.18.0'
 
 [download]
-hash = '5aba6b295a6ed66a75c0d393c537ef2cdc4206c7'
+hash = 'bb54c9dc58dac10549552e3cf84912ac5c95800f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6123916
+file-id = 7403701
 project-id = 705000

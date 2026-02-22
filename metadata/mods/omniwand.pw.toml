@@ -1,16 +1,17 @@
-filename = 'omniwand-1.12.2-1.0.1.jar'
+filename = 'omniwand-1.12.2-2.0.4.jar'
 name = 'Omniwand'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'omniwand-1.12.2-2.0.4.jar'
 
 [download]
-hash = '5c3a75b4efd047636c5715c8fc3245986df85048'
+hash = '66c3f1f4e7761a9ff830d2d4f41d1951ad4b80a5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 4805869
+file-id = 7476868
 project-id = 923677

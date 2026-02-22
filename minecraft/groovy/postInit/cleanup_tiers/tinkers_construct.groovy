@@ -44,7 +44,7 @@ def removeThese = [
     mitem("wooden_hopper"), mitem("throwball", 1), mitem("wood_rail"), mitem("wood_rail_trapdoor"), mitem("piggybackpack"), mitem("soil"),
 ]
 
-def hideFromJei = [mitem("clay_cast"), mitem("cast_custom", 4)] + removeThese
+def hideFromJei = [mitem("cast_custom", 4)] + removeThese
 
 def creativeItems = [mitem("materials", 50)]
 

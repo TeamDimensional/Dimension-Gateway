@@ -1,16 +1,17 @@
-filename = 'reim-0.1.jar'
+filename = 'reim-0.2.jar'
 name = 'Rather Enough Immersive Multiblocks'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'reim-0.2.jar'
 
 [download]
-hash = '5446b1459e0530ed6756f3e1a09427eb34921751'
+hash = 'b966d11844eaa25b38c7effe2a694e057df0514e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5579062
+file-id = 6745649
 project-id = 1073925

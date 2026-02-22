@@ -1,16 +1,17 @@
-filename = 'aether-1.12.2-v1.5.4.0.jar'
+filename = 'aether-1.12.2-v1.5.4.1.jar'
 name = 'The Aether'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'The Aether v1.12.2-1.5.4.1'
 
 [download]
-hash = '2c016c60a0ad281f8a5559afe27cd03607b6af0e'
+hash = '22509d36e97a0d5c180fa7481609dce600068283'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5035622
+file-id = 6316434
 project-id = 255308

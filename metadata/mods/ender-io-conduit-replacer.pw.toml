@@ -1,0 +1,17 @@
+filename = 'enderio-conduit-replacer-1.1.0.jar'
+name = 'Ender IO Conduit Replacer'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'enderio-conduit-replacer-1.1.0.jar'
+
+[download]
+hash = '45f87b51a8ca0fd7ca0cc8241ff594978cfd223b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7528561
+project-id = 1422026

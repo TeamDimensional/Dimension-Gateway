@@ -1,0 +1,17 @@
+filename = 'TinkersAntique-1.12.2-2.13.0.205.jar'
+name = "Tinkers' Antique"
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.13.0.205'
+
+[download]
+hash = '84f3dc7d5e141e9647596a826113524d5eecb48d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7339332
+project-id = 1242239

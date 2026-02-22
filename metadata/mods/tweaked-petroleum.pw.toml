@@ -1,16 +1,17 @@
-filename = 'tweakedpetroleum-2.0.1.jar'
+filename = 'tweakedpetroleum-2.0.3.jar'
 name = 'Tweaked Petroleum'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'tweakedpetroleum-2.0.3.jar'
 
 [download]
-hash = '7ddfdfb5c2ad183a09d3bcb9be772772bb19dee2'
+hash = '317fb1799de012651b816a3b5abe6e29a4703ebd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5409500
+file-id = 6243556
 project-id = 653506

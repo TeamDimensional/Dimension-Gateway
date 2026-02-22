@@ -34,7 +34,7 @@ def abyssalItems = [
     mitem("overworld_energy_collector"), mitem("abyssal_wasteland_energy_collector"),
     mitem("overworld_energy_relay"), mitem("abyssal_wasteland_energy_relay"),
     mitem("overworld_energy_container"), mitem("abyssal_wasteland_energy_container"),
-    mitem("coralium"), mitem("cpearl"), mitem("cingot"), mitem("transmutationgem", 32767), mitem("corflesh"), mitem("corbone"),
+    mitem("coralium"), mitem("cpearl"), mitem("cingot"), mitem("transmutationgem", 32767), mitem("corflesh"),
     mitem("corhelmet"), mitem("corplate"), mitem("corlegs"), mitem("corboots"),
     mitem("depthshelmet"), mitem("depthsplate"), mitem("depthslegs"), mitem("depthsboots"),
     mitem("corhelmetp"), mitem("corplatep"), mitem("corlegsp"), mitem("corbootsp"),
@@ -48,7 +48,7 @@ for (def i in 2..9) abyssalItems.add(mitem("ccluster${i}"))
 
 def materials = [
     "iron", "gold", "sulfur", "carbon", "oxygen", "hydrogen", "nitrogen", "phosphorus", "potassium", "nitrate", "methane",
-    "redstone", "abyssalnite", "coralium", "dreadium", "blaze", "tin", "copper", "silicon", "magnesium", "aluminium", "silica",
+    "redstone", "abyssalnite", "coralium", "dreadium", "blaze", "silicon", "magnesium", "aluminium", "silica",
     "alumina", "magnesia", "zinc", "calcium", "beryllium", "beryl",
 ]
 
@@ -68,15 +68,14 @@ def omotholItems = [
     mitem("antibeef"), mitem("antichicken"), mitem("antipork"), mitem("antiflesh"), mitem("antibone"), mitem("antispidereye"),
     mitem("ethbrick"), mitem("ethaxiumingot"), mitem("lifecrystal"), mitem("eldritchscale"), mitem("omotholflesh"),
     mitem("ethaxiumhelmet"), mitem("ethaxiumplate"), mitem("ethaxiumlegs"), mitem("ethaxiumboots"),
-    mitem("anticorflesh"), mitem("anticorbone"), mitem("necronomicon_omt"), mitem("shoggothflesh_omothol"),
+    mitem("anticorflesh"), mitem("necronomicon_omt"), mitem("shoggothflesh_omothol"),
     mitem("shoggothflesh_shadow"), mitem("nugget_abyssalnite"), mitem("nugget_dreadium"), mitem("nugget_ethaxium"),
     mitem("drainstaff_omt"), mitem("essence_omothol"), mitem("gatekeeperessence"), mitem("scroll_greater"), mitem("scroll_unique_anti"),
-    mitem("scroll_unique_oblivion"), mitem("configurator"), mitem("face_book"), mitem("ethaxiumbrickslab2"), mitem("darkethaxiumbrickslab2"),
+    mitem("scroll_unique_oblivion"), mitem("face_book"), mitem("ethaxiumbrickslab2"), mitem("darkethaxiumbrickslab2"),
     mitem("transmutator"), 
 ] + crystalClusters
 for (def m in materials) omotholItems.add(mitem("${m}_crystal"))
 for (def m in materials) omotholItems.add(mitem("${m}_crystal_shard"))
-for (def i in 0..3) omotholItems.add(mitem("configurator_shard_${i}"))
 
 def charmBuffs = ["", "_range", "_duration", "_power"]
 for (def cb in charmBuffs) for (def g in gods) omotholItems.add(mitem("${g}charm${cb}"))
@@ -93,7 +92,6 @@ def removeRecipes = [
     mitem("drtfence"), mitem("materializer"), mitem("sacrificialaltar"), mitem("energypedestal"), mitem("energycollector"), mitem("energyrelay"),
     mitem("dreadstonecobblestonestairs"), mitem("dreadstonecobblestoneslab1"), mitem("dreadstonecobblestonewall"),
     mitem("statetransformer"), mitem("energydepositioner"), mitem("sequential_brewing_stand"), mitem("platec"),
-    mitem("dpick"), mitem("daxe"), mitem("dshovel"), mitem("dsword"), mitem("dhoe"),
     mitem("apick"), mitem("aaxe"), mitem("ashovel"), mitem("asword"), mitem("ahoe"),
     mitem("corpick"), mitem("coraxe"), mitem("corshovel"), mitem("corsword"), mitem("corhoe"),
     mitem("dreadiumpickaxe"), mitem("dreadiumaxe"), mitem("dreadiumshovel"), mitem("dreadiumsword"), mitem("dreadiumhoe"),
@@ -108,7 +106,7 @@ def removeRecipes = [
     mitem("dreadwood_stairs"), mitem("research_table"),
 ]
 for (def m in materials) removeRecipes.add(mitem("${m}_crystal_fragment"))
-for (def it in ["small", "medium", "large", "huge"]) removeRecipes.add(mitem("crystalbag_${it}")) // im gay
+for (def it in ["small", "medium", "large", "huge"]) removeRecipes.add(mitem("crystalbag_${it}"))
 
 def removeFurnace = [
     mitem("dreadstone"), mitem("charcoal"), mitem("cooked_generic_meat"), mitem("cracked_dreadstone_brick"),
@@ -118,7 +116,7 @@ def removeFurnace = [
 def removeRitual = [
     mitem("psdl"), mitem("dreadlands_energy_pedestal"), mitem("dreadlands_sacrificial_altar"),
     mitem("energycontainer"), mitem("dreadlands_energy_collector"), mitem("dreadlands_energy_relay"), mitem("dreadlands_energy_container"),
-    mitem("gatewaykeydl"), mitem("dhelmet"), mitem("dplate"), mitem("dlegs"), mitem("dboots"), mitem("jzaharcoin"),
+    mitem("gatewaykeydl"), mitem("jzaharcoin"),
     mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"), mitem("sealing_key"),
 ]
 
@@ -129,8 +127,8 @@ def unobtainable = [
 def hideFromJei = [
     mitem("dltleaves"), mitem("dltlog"), mitem("dltlog2"), mitem("dltsapling"), mitem("coraliumore"), mitem("abyore"), mitem("abydreadore"),
     mitem("dreadore"), mitem("dreadgrass"), mitem("dreadlog"), mitem("dreadleaves"), mitem("dreadsapling"), mitem("nitreore"),
-    mitem("abynitore"), mitem("abytinore"), mitem("abycopore"), mitem("dreadlandsdirt"), mitem("idol_of_fading"), mitem("abyssal_abyssalnite_ore"),
-    mitem("mural"), mitem("dreadshard"), mitem("dreadchunk"), mitem("abychunk"), mitem("dreadfragment"), mitem("dreadkey"),
+    mitem("abynitore"), mitem("dreadlandsdirt"), mitem("idol_of_fading"), mitem("abyssal_abyssalnite_ore"),
+    mitem("mural"), mitem("dreadshard"), mitem("dreadfragment"), mitem("dreadkey"),
     mitem("shoggothflesh_dreaded"), mitem("essence_dreadlands"), mitem("generic_meat"), mitem("lost_page"),
     mitem("dreadbrickslab2"), mitem("dreadguardspawner"), mitem("chagarothspawner"),
     mitem("jzaharspawner"), mitem("gatekeeperminionspawner"), mitem("fire"), mitem("dreadstonecobblestoneslab2"),

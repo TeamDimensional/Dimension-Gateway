@@ -5,7 +5,6 @@ mods.abyssaltweaker.fuel.removeTransmutator(item("minecraft:blaze_powder"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:cchunk"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:transmutationgem:*"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:corflesh"))
-mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:corbone"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:cbrick"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:methane"))
 

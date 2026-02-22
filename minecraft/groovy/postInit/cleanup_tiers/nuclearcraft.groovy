@@ -94,20 +94,19 @@ def tier12Items = [
 ]
 
 def tier13Items = [
-    mitem("decay_generator"), mitem("tritium_lamp"), mitem("alloy", 17), mitem("machine_sieve_tray", 2),
+    mitem("decay_generator"), mitem("tritium_lamp"), mitem("alloy", 17),
 ]
 
 def removeRecipes = [
     mitem("manufactory"), mitem("alloy_furnace"), mitem("pressurizer"), mitem("electric_furnace"), mitem("melter"),
     mitem("rtg_uranium"), mitem("rtg_plutonium"), mitem("rtg_americium"), mitem("rtg_californium"),
     mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
-    mitem("heat_exchanger_controller"), mitem("heat_exchanger_casing"), mitem("heat_exchanger_glass"), mitem("heat_exchanger_vent"),
+    mitem("heat_exchanger_controller"), mitem("heat_exchanger_casing"), mitem("heat_exchanger_glass"),
     mitem("condenser_controller"), mitem("glowing_mushroom"),
     mitem("compound", 2), mitem("compound", 9), mitem("part", 11),
     mitem("assembler"), mitem("fission_power_port"),
 ]
 for (def m in ["copper", "hard_carbon", "thermoconducting"]) removeRecipes.add(mitem("heat_exchanger_tube_${m}"))
-for (def m in ["copper", "hard_carbon", "thermoconducting"]) removeRecipes.add(mitem("condenser_tube_${m}"))
 
 def hideFromJei = [
     mitem("glowing_mushroom_block"), mitem("wasteland_earth"), mitem("wasteland_portal"), mitem("solidified_corium"), mitem("part", 13),

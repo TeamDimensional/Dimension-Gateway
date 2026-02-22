@@ -1,0 +1,17 @@
+filename = 'visualores-0.2.7.jar'
+name = 'VisualOres'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'VisualOres − 0.2.7'
+
+[download]
+hash = '46a27e52e387a17308e8812ea368a34777afc63d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6495943
+project-id = 895539

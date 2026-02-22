@@ -1,0 +1,17 @@
+filename = 'asaafp-1.0.0(2).jar'
+name = 'Astral Sorcery Anti Anti Fake Player (ASAAFP)'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'asaafp-1.0.1.jar'
+
+[download]
+hash = '8bd7738e5d17a10073e07542869ee76d772dcecf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7430544
+project-id = 1174543

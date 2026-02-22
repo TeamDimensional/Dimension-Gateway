@@ -1,0 +1,17 @@
+filename = 'Gadothaumy-1.1.3.jar'
+name = 'Infusion Claw Mod'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Gadothaumy-1.1.3'
+
+[download]
+hash = 'df201ee1c12f0e2cff3652d32ca37d7dfa46eaec'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7583361
+project-id = 1195285

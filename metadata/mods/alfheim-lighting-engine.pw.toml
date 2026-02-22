@@ -1,16 +1,17 @@
-filename = 'Alfheim-1.5-Dev-4.jar'
+filename = 'Alfheim-1.6.jar'
 name = 'Alfheim'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
-x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Alfheim 1.6'
 
 [download]
-hash = 'f8e043eea7c125df7cec6113f4ea0fd5e6322a4d'
+hash = '15aaa39a13e18ab2f29456b25fd9732da1949329'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6003953
+file-id = 6687458
 project-id = 910715
