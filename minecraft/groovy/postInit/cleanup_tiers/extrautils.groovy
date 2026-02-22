@@ -58,7 +58,7 @@ def removedMachines = [
     "furnace", "generator_pink", "generator_enchant", "generator_tnt", "generator_lava",
 ]
 
-def hideFromJei = [mitem("ingredients", 14), mitem("decorativesolid", 8)]
+def hideFromJei = [mitem("ingredients", 14)]
 
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)

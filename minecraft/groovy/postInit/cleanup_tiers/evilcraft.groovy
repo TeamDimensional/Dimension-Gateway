@@ -65,7 +65,6 @@ for (def it in particleItems) TooltipEvents.setTier(it, 13)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-TooltipEvents.setUnlock(mitem("dark_gem"), 4)
 
 def setBroomPartTier(name, tier) {
     def upgrade = mitem("broom_part").withNbt(["broom_parts_tag": [name]])

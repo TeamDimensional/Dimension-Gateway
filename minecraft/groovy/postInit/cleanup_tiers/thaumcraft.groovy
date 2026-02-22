@@ -66,7 +66,7 @@ def voidItems = [
     mitem("metal_void"), mitem("void_siphon"), mitem("primordial_pearl", 32767), mitem("ingot", 1), mitem("nugget", 7), mitem("plate", 3),
     mitem("void_seed"), mitem("void_axe"), mitem("void_sword"), mitem("void_shovel"), mitem("void_pick"), mitem("void_hoe"),
     mitem("primal_crusher"), mitem("void_helm"), mitem("void_chest"), mitem("void_legs"), mitem("void_boots"),
-    mitem("void_robe_helm"), mitem("void_robe_chest"), mitem("void_robe_legs"), mitem("voidseer_charm"), mitem("focus_3"),
+    mitem("void_robe_helm"), mitem("void_robe_chest"), mitem("void_robe_legs"), mitem("voidseer_charm"), mitem("focus_3"), mitem("causality_collapser"),
 ]
 for (int i in 0..11) voidItems.add(gitem("stone", i))
 for (int i in 0..2) voidItems.add(gitem("urn", i))
@@ -109,7 +109,6 @@ TooltipEvents.setModTier("thaumcraft", 5)
 TooltipEvents.setModTier("thaumadditions", 12)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
 TooltipEvents.setModTier("thaumicenergistics", 9)
-TooltipEvents.setUnlock(mitem("causality_collapser"), 14)
 
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])

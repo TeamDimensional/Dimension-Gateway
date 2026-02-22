@@ -37,7 +37,7 @@ def sentientItems = [
     mitem("demon_stairs_1"), mitem("demon_stairs_1", 1), mitem("demon_stairs_2"), mitem("demon_stairs_2", 1),
     mitem("demon_stairs_3"), mitem("teleposer"), mitem("sigil_haste"), mitem("sigil_teleposition"), mitem("sigil_transposition"),
     mitem("blood_shard", 1), mitem("sentient_sword"), mitem("sentient_bow"), mitem("sentient_axe"),
-    mitem("sentient_pickaxe"), mitem("sentient_shovel"), mitem("demon_will_gauge"),
+    mitem("sentient_pickaxe"), mitem("sentient_shovel"), mitem("demon_will_gauge"), mitem("soul_snare"),
 ]
 def coloredThings = [
     ["demon_crystal", 0],
@@ -99,5 +99,3 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeArray) mods.bloodmagic.alchemy_array.removeByOutput(it)
 // for (def it in removeTable) mods.bloodmagic.alchemy_table.removeByOutput(it)
 for (def it in removeHellfire) mods.bloodmagic.tartaric_forge.removeByOutput(it)
-
-TooltipEvents.setUnlock(mitem("soul_snare"), 12)

@@ -59,5 +59,3 @@ for (def it in cobaltArditeItems) TooltipEvents.setTier(it, 7)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-
-TooltipEvents.setUnlock(mitem("materials"), 3)

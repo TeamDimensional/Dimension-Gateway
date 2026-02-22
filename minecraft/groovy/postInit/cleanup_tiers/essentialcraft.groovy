@@ -57,7 +57,7 @@ for (int i in 0..15) {
 for (int i in 0..3) windTier.add(mitem("mrumatrixprojection", i))
 
 def industrialTier = [
-    mitem("ecbalancer"), mitem("moonwell"), mitem("monsterharvester"), mitem("magmaticsmeltery"), mitem("crystalformer"), mitem("crystalcontroller"),
+    mitem("ecbalancer"), mitem("moonwell"), mitem("monsterharvester"), mitem("magmaticsmeltery"), mitem("crystalcontroller"),
     mitem("crystalextractor"), mitem("mrucoilhardener"), mitem("mrucoil"), mitem("mimic"), mitem("magicalslag"), mitem("frozenmace"),
     mitem("magicaldigger"), mitem("spawnercollector"), mitem("staffoflife"), mitem("biomewand"), mitem("emeraldheart"),
     mitem("magicalshield"), mitem("spikyshield"), mitem("chaosfork"), mitem("magicwaterbottle"), mitem("magicalporkchop"), mitem("playerlist"),
@@ -89,7 +89,7 @@ def hoannaBuildingLoot = [
 ]
 
 def hoannaTier = [
-    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"),
+    mitem("windtablet"), mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"),
     mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("mithrilinecrystal", 6), mitem("chest", 1), mitem("magicalfurnace"),
     mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
@@ -161,6 +161,5 @@ for (def it in hoannaLoot) TooltipEvents.setTooltip(it, "Found in dungeons in Ho
 for (def it in hoannaBuildingLoot) TooltipEvents.setTooltip(it, "Found in city ruins in Hoanna.")
 for (def it in 0..15) TooltipEvents.setTooltip(mitem("essence", it), "Produced by the Crystal Extractor.")
 TooltipEvents.setTooltip(mitem("elementalsword"), "Made in Ember Forge.")
-TooltipEvents.setUnlock(mitem("windtablet"), 13)
 
 for (def tool in allTools) GatewayHelpers.banTool(tool)

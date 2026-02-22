@@ -111,5 +111,3 @@ for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in runestoneLoot) TooltipEvents.setTooltip(it, "Found in the Runestone Temple in Aurorian.")
 for (def it in darkstoneLoot) TooltipEvents.setTooltip(it, "Found in the Darkstone Temple in Aurorian.")
 for (def it in moonTempleLoot) TooltipEvents.setTooltip(it, "Found in the Moon Temple in Aurorian.")
-
-TooltipEvents.setUnlock(mitem("aurorianportalframebricks"), 2)

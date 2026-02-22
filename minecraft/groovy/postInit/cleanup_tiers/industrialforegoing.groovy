@@ -31,7 +31,7 @@ def items = [
     mitem("meat_feeder"), mitem("mob_imprisonment_tool"), mitem("pink_slime"), mitem("pink_slime_ingot"), mitem("infinity_drill"),
     mitem("energy_field_provider"), mitem("energy_field_addon"), mitem("leaf_shearing"), mitem("fortune_addon"),
     item("teslacorelib:base_addon"), item("teslacorelib:energy_tier1"), item("teslacorelib:energy_tier2"),
-    item("teslacorelib:speed_tier1"), item("teslacorelib:speed_tier2"),
+    item("teslacorelib:speed_tier1"), item("teslacorelib:speed_tier2"), item("teslacorelib:machine_case"),
 ]
 for (def i in 0..6) items.add(mitem("conveyor_upgrade", i))
 for (def i in 0..15) items.add(mitem("conveyor", i))
@@ -58,5 +58,3 @@ for (def it in advDevices) TooltipEvents.setTier(it, 8)
 for (def it in items) TooltipEvents.setTier(it, 10)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeCrafting) crafting.removeByOutput(it)
-
-TooltipEvents.setUnlock(item("teslacorelib:machine_case"), 10)

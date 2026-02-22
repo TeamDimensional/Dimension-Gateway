@@ -67,7 +67,7 @@ def tier7Items = [
 ]
 
 def tier10Items = [
-    mitem("block_empowerer"), mitem("block_shock_suppressor"), mitem("block_player_interface"), mitem("block_miner"),
+    mitem("block_shock_suppressor"), mitem("block_player_interface"), mitem("block_miner"),
     mitem("block_laser_relay_advanced"), mitem("block_laser_relay_extreme"), mitem("block_xp_solidifier"),
     mitem("block_lava_factory_controller"), mitem("block_misc", 8), mitem("block_giant_chest_large"), mitem("block_fishing_net"),
     mitem("block_furnace_solar"), mitem("block_item_repairer"), mitem("block_greenhouse_glass"), mitem("block_phantom_booster"),

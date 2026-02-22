@@ -38,7 +38,7 @@ def abyssalItems = [
     mitem("corhelmet"), mitem("corplate"), mitem("corlegs"), mitem("corboots"),
     mitem("depthshelmet"), mitem("depthsplate"), mitem("depthslegs"), mitem("depthsboots"),
     mitem("corhelmetp"), mitem("corplatep"), mitem("corlegsp"), mitem("corbootsp"),
-    mitem("shadowfragment"), mitem("shadowshard"), mitem("shadowgem"), mitem("oblivionshard"), mitem("corbow"), mitem("cbrick"),
+    mitem("shadowfragment"), mitem("shadowshard"), mitem("oblivionshard"), mitem("corbow"), mitem("cbrick"),
     mitem("cudgel"), mitem("soulreaper"), mitem("necronomicon"), mitem("necronomicon_cor"), mitem("shoggothflesh_overworld"),
     mitem("shoggothflesh_abyssal"), mitem("nugget_coralium"), mitem("drainstaff"), mitem("drainstaff_aw"),
     mitem("essence_abyssalwasteland"), mitem("interdimensionalcage"), mitem("scroll_lesser"), mitem("scroll_moderate"),
@@ -155,7 +155,6 @@ for (def it in removeRitual) mods.abyssaltweaker.ritual.removeByOutput(it)
 for (def it in statues) TooltipEvents.setTooltip(it, "Can be looted in Omothol in tier 11.")
 for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Can be looted in Omothol before Crystallizer is available.")
 TooltipEvents.setTooltip(item("abyssalcraft:odb"), "Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.")
-TooltipEvents.setUnlock(mitem("gatewaykeyjzh"), 11)
 for (int i in 0..27) crafting.remove("abyssalcraft:crystalshard_${i}_alt")
 
 // Fix fence gate

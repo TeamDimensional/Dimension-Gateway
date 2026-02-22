@@ -31,14 +31,14 @@ def tier8Items = [
     item("libvulpes:forgepowerinput"), item("libvulpes:forgepoweroutput"), item("libvulpes:motor"), item("libvulpes:advancedmotor"),
     item("libvulpes:enhancedmotor"), item("libvulpes:productdust"), item("libvulpes:productgem"), item("libvulpes:ore0"),
     item("libvulpes:coil0", 2), item("libvulpes:coil0", 4), item("libvulpes:coil0", 7), item("libvulpes:coil0", 9),
-    item("libvulpes:linker"), item("libvulpes:holoprojector"),
+    item("libvulpes:linker"), item("libvulpes:holoprojector"), item("libvulpes:structuremachine"),
 ]
 for (def i in 0..3) tier8Items.add(mitem("pressuretank", i))
 for (def i in 0..5) tier8Items.add(mitem("itemupgrade", i))
 for (def i in 0..3) tier8Items.add(item("libvulpes:hatch", i))
 
 def tier12Items = [
-    mitem("vacuumlaser"), mitem("precisionlaseretcher"), mitem("observatory"), mitem("planetanalyser"), mitem("satellitebuilder"),
+    mitem("vacuumlaser"), mitem("precisionlaseretcher"), mitem("observatory"), mitem("planetanalyser"),
     mitem("blackholegenerator"), mitem("microwavereciever"), mitem("warpcore"), mitem("biomescanner"),
     mitem("spaceelevatorcontroller"), mitem("gravitymachine"), mitem("spacelaser"), mitem("stationmarker"),
     mitem("advrocketmotor"), mitem("nuclearrocketmotor"), mitem("nuclearfueltank"), mitem("nuclearcore"),
@@ -91,5 +91,3 @@ for (def it in tier12Items) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-
-TooltipEvents.setUnlock(item("libvulpes:structuremachine"), 8)

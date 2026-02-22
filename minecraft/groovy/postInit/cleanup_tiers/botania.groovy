@@ -31,7 +31,7 @@ def tier1Items = [
     mitem("managlasspane"), mitem("spreader"), mitem("spreader", 1), mitem("pylon"), mitem("pistonrelay"), mitem("distributor"), mitem("manavoid"),
     mitem("manadetector"), mitem("turntable"), mitem("tinyplanetblock"), mitem("foresteye"), mitem("storage"), mitem("storage", 3),
     mitem("forestdrum"), mitem("forestdrum", 2), mitem("platform"), mitem("tinypotato"), mitem("brewery"), mitem("managlass"), mitem("pump"),
-    mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"),
+    mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"), mitem("altar"),
 ] + getQuartzList("dark") + getQuartzList("mana") + getQuartzList("blaze")
 for (int i in [0, 1, 2, 3, 6, 11, 16, 17, 22, 23]) tier1Items.add(mitem("manaresource", i))
 for (int i in [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 15, 16, 17, 22]) tier1Items.add(mitem("lens", i))
@@ -120,8 +120,6 @@ for (def it in tier3Items) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-
-TooltipEvents.setUnlock(mitem("altar"), 9)
 
 for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "Dropped by the Guardian of Gaia.")
 for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "Dropped by the 2nd tier Guardian of Gaia.")

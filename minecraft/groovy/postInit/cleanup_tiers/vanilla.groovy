@@ -81,5 +81,3 @@ TooltipEvents.addTierPredicate("waterbottle", s -> s in waterPotion, 1)
 
 furnace.removeByOutput(mitem("iron_nugget"))
 furnace.removeByOutput(mitem("gold_nugget"))
-
-TooltipEvents.setUnlock(mitem("ender_eye"), 6)

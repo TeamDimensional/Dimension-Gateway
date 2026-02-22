@@ -26,7 +26,7 @@ for (def tool in ["pickaxe", "axe", "shovel", "sword", "hoe", "helmet", "chest",
     altarItems.add(mitem("infused_iron_${tool}"))
 
 offeringItems = [
-    mitem("potion_generator"), mitem("conversion_catalyst"), mitem("offering_table"), mitem("spawn_lamp"), mitem("animal_generator"),
+    mitem("potion_generator"), mitem("conversion_catalyst"), mitem("spawn_lamp"), mitem("animal_generator"),
     mitem("mover_cart"), mitem("effect_powder"), mitem("animal_spawner"), mitem("time_changer"), mitem("generator_limit_remover"),
     mitem("firework_generator"), mitem("projectile_generator"), mitem("color_changer"), mitem("shockwave_creator"), mitem("sky_ingot"),
     mitem("calling_spirit"), mitem("clock_hand"), mitem("eye_improved"), mitem("aura_trove"), 
