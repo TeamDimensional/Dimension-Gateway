@@ -263,8 +263,20 @@ def addOre(key, byproducts, addFluidOps) {
             .fluidOutput(fluidSolution * 160, fluidByproduct)
             .register()
         
+        // TODO: this is currently bugged in NCO
+        /*
         mods.nuclearcraft.enricher.builder()
             .input(itemOre | itemCluster | itemCrystal | itemShard | itemDirty)
+            .fluidInput(fluid("hydrofluoric_acid") * 125)
+            .fluidOutput(fluidSolution * 216)
+            .register()
+        */
+        def ncoInputOre = ore("nuclearcraftInput" + key)
+        for (def x in [itemOre, itemCluster, itemCrystal, itemShard, itemDirty]) {
+            ncoInputOre.add(x)
+        }
+        mods.nuclearcraft.enricher.builder()
+            .input(ncoInputOre)
             .fluidInput(fluid("hydrofluoric_acid") * 125)
             .fluidOutput(fluidSolution * 216)
             .register()

@@ -10,7 +10,6 @@ mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:methane"))
 
 mods.abyssaltweaker.fuel.removeCrystallizer(item("minecraft:blaze_rod"))
 mods.abyssaltweaker.fuel.removeCrystallizer(item("abyssalcraft:dreadshard"))
-mods.abyssaltweaker.fuel.removeCrystallizer(item("abyssalcraft:dreadchunk"))
 mods.abyssaltweaker.fuel.removeCrystallizer(item("abyssalcraft:dreadfragment"))
 mods.abyssaltweaker.fuel.removeCrystallizer(item("abyssalcraft:carboncluster"))
 mods.abyssaltweaker.fuel.removeCrystallizer(item("abyssalcraft:densecarboncluster"))
@@ -28,8 +27,6 @@ def transmutationChemicals = [
     ["blaze", item("minecraft:blaze_rod")],
     ["redstone", item("minecraft:redstone")],
     ["methane", item("abyssalcraft:methane")],
-    ["tin", item("thermalfoundation:material", 129)],
-    ["copper", item("thermalfoundation:material", 128)],
     ["aluminium", item("thermalfoundation:material", 132)],
     ["magnesium", item("nuclearcraft:ingot", 7)],
     ["carbon", item("minecraft:coal")],
