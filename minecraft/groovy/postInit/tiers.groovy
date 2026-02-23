@@ -27,7 +27,8 @@ TooltipEvents.setTierName(9, "Chemical Mayhem")
 TooltipEvents.setUnlock(item("actuallyadditions:block_empowerer"), 9)
 
 TooltipEvents.setTierName(10, "Lunar Industry")
-TooltipEvents.setUnlock(item("essentialcraft:crystalformer"), 10)
+// TooltipEvents.setUnlock(item("essentialcraft:crystalformer"), 10)
+TooltipEvents.setUnlock(item("libvulpes:productingot", 7), 10)
 
 TooltipEvents.setTierName(11, "Monsters' University")
 TooltipEvents.setUnlock(item("enderio:item_material", 1), 11)

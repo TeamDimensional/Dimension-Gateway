@@ -21,7 +21,6 @@ for (int i in [0, 2, 3, 4, 9]) basicItems.add(mitem("material", i))
 
 def atomicItems = [
     mitem("atomiccalculator"), mitem("dynamiccalculator"), mitem("algorithmseparator"), mitem("healthprocessor"),
-    mitem("precisionchamber"), mitem("processingchamber"), mitem("storagechamber"), mitem("fabricationchamber"),
     mitem("advancedgreenhouse"), mitem("conductormast"), mitem("weatherstation"), mitem("transmitter"),
     mitem("glowstoneextractor"), mitem("weathercontroller"), mitem("stoneassimilator"), mitem("algorithmassimilator"),
     mitem("amethystlog"), mitem("amethystplanks"), mitem("amethyststairs"), mitem("amethystfence"), mitem("amethystleaves"),
@@ -32,6 +31,8 @@ def atomicItems = [
     mitem("electricdiamond"), mitem("largetanzanite"), mitem("smalltanzanite"), mitem("shardtanzanite"), mitem("prunaeseeds"),
     mitem("storagemodule"), mitem("pearlog"), mitem("pearplanks"), mitem("pearstairs"), mitem("pearfence"),
     mitem("pearleaves"), mitem("pearsapling"), mitem("pear"), mitem("rottenpear"),
+    // Circuits part 1 needed for powergens and upgrades
+    mitem("precisionchamber"), mitem("processingchamber"), mitem("storagechamber"), mitem("analysingchamber"),
 ]
 for (int i in [1, 5, 6, 7]) atomicItems.add(mitem("material", i))
 for (int i in 0..13) {
@@ -51,8 +52,8 @@ def flawlessItems = [
     mitem("obsidiankey"), mitem("fiddledewfruit"), mitem("controlledfuel"),
 ]
 
-def tier9Items = [
-    mitem("analysingchamber"), mitem("calculatorlocator"), mitem("calculatorplug"), mitem("locatormodule"),
+def circuitItems = [
+    mitem("calculatorlocator"), mitem("calculatorplug"), mitem("locatormodule"), mitem("fabricationchamber"),
 ]
 
 def removeRecipes = [
@@ -65,7 +66,9 @@ def creativeItems = [
 ]
 
 def hideFromJei = [
-    mitem("amethystpiping"), mitem("tanzanitepiping"), mitem("magneticflux")
+    mitem("amethystpiping"), mitem("tanzanitepiping"), mitem("magneticflux"), mitem("conductormastblock"), mitem("weatherstationblock"),
+    mitem("transmitterblock"), mitem("gaslanternon"), mitem("scarecrowblock"), mitem("calculatorscreenblock"),
+    mitem("cropbroccoli"), mitem("cropprunae"), mitem("cropfiddledew"),
 ] + removeRecipes
 
 def tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
@@ -75,14 +78,14 @@ for (def it in tools) {
     for (def mat in ["endforged"]) cobaltItems.add(mitem(mat + it))
 }
 
-for (def it in basicItems) TooltipEvents.setTier(it, 5)
+for (def it in basicItems) TooltipEvents.setTier(it, 6)
 for (def it in atomicItems) TooltipEvents.setTier(it, 6)
 for (def it in cobaltItems) TooltipEvents.setTier(it, 7)
-for (def it in flawlessItems) TooltipEvents.setTier(it, 8)
-for (def it in tier9Items) TooltipEvents.setTier(it, 9)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in flawlessItems) TooltipEvents.setTier(it, 12)
+for (def it in circuitItems) TooltipEvents.setTier(it, 12)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
 TooltipEvents.setTooltip(mitem("jumpmodule"), "Warning! Don't use this without a good Feather Falling armor or equivalent.", textformat("RED"))
-TooltipEvents.setModTier("sonarcore", 5)
+TooltipEvents.setModTier("sonarcore", 6)

@@ -62,7 +62,7 @@ def industrialTier = [
     mitem("magicaldigger"), mitem("spawnercollector"), mitem("staffoflife"), mitem("biomewand"), mitem("emeraldheart"),
     mitem("magicalshield"), mitem("spikyshield"), mitem("chaosfork"), mitem("magicwaterbottle"), mitem("magicalporkchop"), mitem("playerlist"),
     mitem("magmaticstaff"), mitem("magicallantern"), mitem("magnetizingstaff"), mitem("chunkloader"), mitem("dimtransciever"), mitem("magicalwings"),
-    mitem("holymace"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"),
+    mitem("holymace"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"), mitem("crystalformer"),
 ]
 for (int i in 0..5) industrialTier.add(mitem("rightclicker", i))
 for (int i in 0..15) industrialTier.add(mitem("essence", i))
@@ -142,17 +142,17 @@ def hideFromJei = [
     mitem("flowergreen"), mitem("fruit"), mitem("tallgrass"), mitem("torch"), mitem("magicaldisplay"), mitem("portal"),
     mitem("mithrilinecrystal", 12), mitem("weathercontroller"), mitem("testitem"), mitem("mrumatrixprojection", 4), mitem("fruit_item"), mitem("bauble"),
     mitem("shadesword"), mitem("shadeslasher"), mitem("shadeknife"), mitem("collectedspawner"), mitem("balance_setter"),
-    mitem("clearing_catalyst"), mitem("raining_catalyst"), mitem("thundering_catalyst"),
+    mitem("clearing_catalyst"), mitem("raining_catalyst"), mitem("thundering_catalyst"), mitem("air"),
 ] + corruptions + removedOres + removeItems
 for (int i in [2, 76]) hideFromJei.add(mitem("genitem", i))
 for (int i in 0..13) hideFromJei.add(mitem("entityegg", i))
 
 for (def it in magicalTier) TooltipEvents.setTier(it, 5)
-for (def it in windTier) TooltipEvents.setTier(it, 8)
-for (def it in industrialTier) TooltipEvents.setTier(it, 8)
-for (def it in hoannaTier) TooltipEvents.setTier(it, 13)
-for (def it in demonTier) TooltipEvents.setTier(it, 14)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in windTier) TooltipEvents.setTier(it, 10)
+for (def it in industrialTier) TooltipEvents.setTier(it, 10)
+for (def it in hoannaTier) TooltipEvents.setTier(it, 15)
+for (def it in demonTier) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in unknownItems) TooltipEvents.setTier(it, -1)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)

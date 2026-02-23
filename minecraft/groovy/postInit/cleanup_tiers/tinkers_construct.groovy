@@ -8,22 +8,26 @@ def mitem(name, k=0) {
 def searedItems = [
     mitem("faucet"), mitem("channel"), mitem("smeltery_io"), mitem("casting"), mitem("tinker_tank_controller"), mitem("seared_glass"),
     mitem("seared_furnace_controller"), mitem("casting", 1), mitem("toolforge"),
+    mitem("seared_ladder"),
 ]
 for (int i in 2..11) searedItems.add(mitem("seared", i))
 for (int i in 2..11) searedItems.add(mitem("seared_slab", i))
+for (int i in 0..3) searedItems.add(mitem("seared_slab2", i))
 for (int i in 0..2) searedItems.add(mitem("seared_tank", i))
 for (def i in ["paver", "brick", "brick_cracked", "brick_fancy", "brick_square", "brick_triangle", "brick_small", "road", "tile", "creeper"])
     searedItems.add(mitem("seared_stairs_${i}"))
 
 def requiresSmeltery = [
     mitem("smeltery_controller"), mitem("casting", 1), mitem("firewood"), mitem("firewood", 1),
-    mitem("nuggets", 3), mitem("nuggets", 4), mitem("nuggets", 5), mitem("ingots", 3), mitem("ingots", 4), mitem("ingots", 5),
+    mitem("nuggets", 3), mitem("nuggets", 4), mitem("nuggets", 5), mitem("nuggets", 6),
+    mitem("ingots", 3), mitem("ingots", 4), mitem("ingots", 5), mitem("nuggets", 6),
     mitem("metal", 3), mitem("metal", 4), mitem("metal", 5), mitem("cast"), mitem("firewood_stairs"), mitem("lavawood_stairs"),
     mitem("firewood_slab"), mitem("firewood_slab", 1), mitem("edible", 33), mitem("clear_glass"), mitem("fancy_frame", 6), mitem("seared"),
     mitem("seared", 1), mitem("seared_slab"), mitem("seared_slab", 1), mitem("seared_stairs_stone"), mitem("seared_stairs_cobble"),
 ]
 for (int i in 0..15) requiresSmeltery.add(mitem("clear_stained_glass", i))
 for (int i in 0..3) requiresSmeltery.add(mitem("cast_custom", i))
+for (int i in [20, 21, 22, 23]) requiresSmeltery.add(mitem("materials", i))
 
 def requiresFey = [mitem("materials", 18), mitem("materials", 19)]
 
@@ -56,6 +60,6 @@ for (def it in requiresAA) TooltipEvents.setTier(it, 4)
 for (def it in requiresAoE) TooltipEvents.setTier(it, 4)
 for (def it in requiresObsidian) TooltipEvents.setTier(it, 5)
 for (def it in cobaltArditeItems) TooltipEvents.setTier(it, 7)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

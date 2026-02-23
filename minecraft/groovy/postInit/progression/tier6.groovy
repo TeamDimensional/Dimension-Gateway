@@ -2,58 +2,44 @@
 // TODO: "Sky Steel"? Custom item. Ingot of the Skies + some other metals in a smelter
 
 crafting.remove("immersiveengineering:metal_decoration/generator")
-/*
 crafting.shapedBuilder()
         .name("tier6/generator_block")
         .output(item("immersiveengineering:metal_decoration0", 6) * 2)
         .matrix("SSS", "EGE", "SSS")
-        .key("E", ore("blockElectrum")).key("S", ore("ingotSkysteel")).key("G", SomeGeneratorHere)
+        .key("E", ore("blockElectrum")).key("S", ore("ingotStarsteel")).key("G", item("immersiveengineering:metal_device1", 3))
         .register()
-*/
 
 crafting.remove("immersiveengineering:metal_decoration/radiator")
-/*
 crafting.shapedBuilder()
         .name("tier6/radiator_block")
         .output(item("immersiveengineering:metal_decoration0", 7) * 2)
         .matrix("ScS", "CGC", "ScS")
-        .key("C", ore("blockCopper")).key("c", ore("ingotCopper")).key("S", ore("ingotSkysteel")).key("G", SomeKindOfWater)
+        .key("C", ore("blockCopper")).key("c", ore("ingotCopper")).key("S", ore("ingotStarsteel")).key("G", fluid("water") * 1000)
         .register()
-*/
 
 crafting.remove("immersiveengineering:metal_devices/coresample_drill")
-/*
-coreSampleCircuit = CircuitBuilder.builder()
-    .require("logic", 2)
-    .require("detection", 1)
-    .build()
 crafting.shapedBuilder()
         .name("tier6/core_sample_drill")
         .output(item("immersiveengineering:metal_device1", 7))
-        .matrix("SFS", "SCS", "EFE")
-        .key("S", ore("ingotSkysteel")).key("F", item("immersiveengineering:metal_decoration1"))
-        .key("E", item("immersiveengineering:metal_decoration0", 4)).key("C", coreSampleCircuit)
+        .matrix("SFS", "SFS", "ECE")
+        .key("S", ore("ingotStarsteel")).key("F", item("immersiveengineering:metal_decoration1"))
+        .key("E", item("immersiveengineering:metal_decoration0", 4)).key("C", item("calculator:circuitboard", 1))
         .register()
-*/
 
 crafting.remove("immersiveengineering:wirecoils/wirecoil_hv")
 crafting.remove("immersiveengineering:wirecoils/wirecoil_hv2")
-/*
 crafting.shapedBuilder()
         .name("tier6/hv_coil")
         .output(item("immersiveengineering:wirecoil", 2) * 4)
         .matrix(" W ", "SRS", " W ")
-        .key("W", item("immersiveengineering:material", 22)).key("S", ore("ingotSkysteel")).key("R", item("immersiveengineering:material", 2))
+        .key("W", item("immersiveengineering:material", 22)).key("S", ore("ingotStarsteel")).key("R", item("immersiveengineering:material", 2))
         .register()
-*/
 
-// Powder of Bountiful Core
-bountyPowder = item('naturesaura:effect_powder').withNbt(['effect': 'naturesaura:ore_spawn'])
-mods.naturesaura.ritual.removeByOutput(bountyPowder)
-mods.naturesaura.ritual.recipeBuilder()
-    .name("tier6/bounty_powder")
-    .input(item("naturesaura:gold_powder"), item("naturesaura:gold_powder"), item("naturesaura:sky_ingot"), item("minecraft:redstone_ore"))
-    .output(bountyPowder * 4)
-    .time(250)
-    .sapling(item("minecraft:sapling", 1))
-    .register()
+// Garden Cloche
+crafting.remove("immersiveengineering:metal_devices/garden_cloche")
+crafting.shapedBuilder()
+        .name("tier7/garden_cloche")
+        .output(item("immersiveengineering:metal_device1", 13))
+        .matrix("GTG", "G G", "PLP")
+        .key("G", ore("blockGlass")).key("T", item("calculator:circuitboard", 8)).key("P", ore("plankTreatedWood")).key("L", item("immersiveengineering:material", 8))
+        .register()

@@ -68,13 +68,13 @@ def hideFromJei = [
     mitem("spell_dust"), mitem("spirit_bag"), mitem("reliquary"),
 ] + removeFromFey + removeFromShearing + removeFromCrafting
 
-for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
+for (def it in feyCrafting) TooltipEvents.setTier(it, 1)
 for (def it in goldItems) TooltipEvents.setTier(it, 3)
-for (def it in spells) TooltipEvents.setTier(it, 4)
+for (def it in spells) TooltipEvents.setTier(it, 2)
 for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
 for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
-for (def it in industrialTier) TooltipEvents.setTier(it, 9)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in industrialTier) TooltipEvents.setTier(it, 4)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeFromCrafting) crafting.removeByOutput(it)
 for (def it in removeFromFey) mods.roots.fey_crafter.removeByOutput(it)

@@ -292,6 +292,7 @@ mods.abyssaltweaker.ritual.recipeBuilder()
 inWorldCrafting.fluidToFluid.recipeBuilder()
         .fluidInput(fluid("sludge"))
         .input(item("enderio:item_material", 36))
+        .input(item("astralsorcery:itemcraftingcomponent", 4), 0.3f)
         .fluidOutput(fluid("liquidcoralium"))
         .register()
 

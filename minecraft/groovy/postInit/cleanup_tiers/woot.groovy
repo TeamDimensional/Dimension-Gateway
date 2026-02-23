@@ -5,7 +5,7 @@ def mitem(name, k=0) {
     return item("woot:${name}", k)
 }
 
-TooltipEvents.setModTier("woot", 9)
+TooltipEvents.setModTier("woot", 11)
 def advItems = [
     mitem("factorycore", 3), mitem("cell", 2),
 ]
@@ -29,8 +29,8 @@ def removeRecipes = [
 
 def hideFromJei = [mitem("shard", 4), mitem("shard", 5), mitem("shard", 6)] + removeAnvil + removeRecipes
 
-TooltipEvents.setTier(item("guideapi:woot-guide"), 1)
-for (def it in advItems) TooltipEvents.setTier(it, 11)
+TooltipEvents.setTier(item("guideapi:woot-guide"), 11)
+for (def it in advItems) TooltipEvents.setTier(it, 13)
 for (def it in eliteItems) TooltipEvents.setTier(it, 13)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

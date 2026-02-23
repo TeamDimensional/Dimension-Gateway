@@ -8,8 +8,8 @@ def alitem(name, k=0) {
     return item("lost_aether:${name}", k)
 }
 
-TooltipEvents.setModTier("aether_legacy", 6)
-TooltipEvents.setModTier("lost_aether", 6)
+TooltipEvents.setModTier("aether_legacy", 7)
+TooltipEvents.setModTier("lost_aether", 7)
 
 TooltipEvents.setTier(aitem("lore_book"), 1)
 

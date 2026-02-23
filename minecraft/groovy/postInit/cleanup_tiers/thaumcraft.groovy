@@ -31,7 +31,7 @@ def mainItems = [
     mitem("stairs_silverwood"), mitem("slab_greatwood"), mitem("slab_silverwood"), mitem("flesh_block"),
 ]
 
-def tier7Items = [
+def astralItems = [
     gitem("starfield_glass"), gitem("starfield_glass", 2), mitem("quicksilver"), mitem("nugget", 5), mitem("mirrored_glass"),
     mitem("sanity_checker"),
 ]
@@ -106,9 +106,9 @@ for (int i in 0..7) hideFromJei.add(mitem("cluster", i))
 for (def a in ["rare", "uncommon", "common"]) for (def b in ["crate", "urn"]) hideFromJei.add(mitem("loot_${b}_${a}"))
 
 TooltipEvents.setModTier("thaumcraft", 5)
-TooltipEvents.setModTier("thaumadditions", 12)
+TooltipEvents.setModTier("thaumadditions", 11)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
-TooltipEvents.setModTier("thaumicenergistics", 9)
+TooltipEvents.setModTier("thaumicenergistics", 8)
 
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])
@@ -117,10 +117,10 @@ TooltipEvents.addTierPredicate("emptiness", predicateBook, 14)
 
 for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in mainItems) TooltipEvents.setTier(it, 5)
-for (def it in tier7Items) TooltipEvents.setTier(it, 7)
-for (def it in mithrilliumItems) TooltipEvents.setTier(it, 9)
-for (def it in infusionItems) TooltipEvents.setTier(it, 12)
-for (def it in hoannaItems) TooltipEvents.setTier(it, 13)
+for (def it in astralItems) TooltipEvents.setTier(it, 6)
+for (def it in mithrilliumItems) TooltipEvents.setTier(it, 11)
+for (def it in infusionItems) TooltipEvents.setTier(it, 14)
+for (def it in hoannaItems) TooltipEvents.setTier(it, 14)
 for (def it in voidItems) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeCrafting) crafting.removeByOutput(it)

@@ -54,6 +54,6 @@ TooltipEvents.setTooltip(fluid("aetherworks.impure_aetherium_gas"), "Produced by
 TooltipEvents.setTooltip(mitem("item_potion_gem"), "Craft with a potion to attune.")
 for (def it in potionGems) TooltipEvents.setTooltip(it, "Craft with the Aetherium Crown to apply the effect.")
 
-for (def it in ourItems) TooltipEvents.setTier(it, 6)
+for (def it in ourItems) TooltipEvents.setTier(it, 7)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

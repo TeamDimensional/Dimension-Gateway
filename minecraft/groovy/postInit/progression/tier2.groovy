@@ -9,7 +9,10 @@ crafting.shapedBuilder()
 
 // Gold Fiber
 crafting.remove("naturesaura:gold_fiber")
-// TODO: wait until Aurorian integration is available to add this recipe.
+mods.theaurorian.scrapper.recipeBuilder()
+    .input(item("thermalfoundation:material", 163))
+    .output(item("naturesaura:gold_fiber"))
+    .register()
 
 // Bottle and cork
 crafting.remove("naturesaura:bottle_two_the_rebottling")

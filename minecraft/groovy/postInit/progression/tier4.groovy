@@ -9,34 +9,30 @@ crafting.shapedBuilder()
 
 // Controller Slave
 crafting.remove("storagedrawers:controller_slave")
-/*
 crafting.shapedBuilder()
-        .name("tier4/drawer/controller_slave")
-        .output(item("tconstruct:materials", 13))
+        .name("tier4/drawer/controllerslave")
+        .output(item("storagedrawers:controllerslave"))
         .matrix("SSS", "RDR", "SGS")
-        .key("S", item("minecraft:stone")).key("R", RESTONIA).key("D", ore("drawerBasic")).key("G", ore("ingotGold"))
+        .key("S", item("minecraft:stone")).key("R", item("actuallyadditions:item_crystal")).key("D", ore("drawerBasic")).key("G", ore("ingotGold"))
         .register()
-*/
 
 // Storage Upgrades
 crafting.remove("storagedrawers:upgrade_void")
 crafting.remove("storagedrawers:upgrade_storage_obsidian")
 crafting.remove("storagedrawers:upgrade_storage_iron")
 crafting.remove("storagedrawers:upgrade_storage_gold")
-/*
 crafting.shapedBuilder()
         .name("tier4/drawer/upgrade_void")
         .output(item("storagedrawers:upgrade_void"))
         .matrix("VSV", "STS", "VSV")
-        .key("S", ore("stickWood")).key("V", VOID).key("T", item("storagedrawers:upgrade_template"))
+        .key("S", ore("stickWood")).key("V", item("actuallyadditions:item_crystal", 3)).key("T", item("storagedrawers:upgrade_template"))
         .register()
 crafting.shapedBuilder()
         .name("tier4/drawer/upgrade_t1")
         .output(item("storagedrawers:upgrade_storage"))
         .matrix("SSS", "VTV", "SSS")
-        .key("S", ore("stickWood")).key("V", VOID).key("T", item("storagedrawers:upgrade_template"))
+        .key("S", ore("stickWood")).key("V", item("actuallyadditions:item_crystal", 1)).key("T", item("storagedrawers:upgrade_template"))
         .register()
-*/
 crafting.shapedBuilder()
         .name("tier4/drawer/upgrade_t2")
         .output(item("storagedrawers:upgrade_storage", 1))
@@ -52,13 +48,11 @@ crafting.shapedBuilder()
 
 // Natural Altar
 mods.naturesaura.ritual.removeByOutput(item("naturesaura:nature_altar"))
-/*
 mods.naturesaura.ritual.recipeBuilder()
     .name("tier4/nat_altar")
     .input(item("minecraft:stone"), item("minecraft:stone"), item("roots:runic_dust"), item("naturesaura:gold_leaf"),
-           item("naturesaura:token_joy"), DIAMATINE, DIAMATINE)
-    .output(item("naturesaura:eye"))
+           item("naturesaura:token_joy"), item("actuallyadditions:item_crystal", 2), item("actuallyadditions:item_crystal", 2))
+    .output(item("naturesaura:nature_altar"))
     .time(250)
     .sapling(item("minecraft:sapling", 2))
     .register()
-*/

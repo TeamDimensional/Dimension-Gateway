@@ -5,18 +5,18 @@ def mitem(name, k=0) {
     return item("enderio:${name}", k)
 }
 
-def tier3Items = [
-    mitem("block_exit_rail"), mitem("block_painted_pressure_plate", 7),
+def earlyItems = [
+    mitem("block_exit_rail"), mitem("block_painted_pressure_plate", 7), mitem("block_electric_light", 3),
 ]
 
 for (def a in [5, 10, 30, 60, 300])
     for (def b in ["", "i"])
-        tier3Items.add(mitem("block_self_resetting_lever${a}${b}"))
+        earlyItems.add(mitem("block_self_resetting_lever${a}${b}"))
 
-def tier6Items = [mitem("item_coord_selector"), mitem("block_enderman_skull")]
+def enderItems = [mitem("block_enderman_skull")]
 
 def items = [
-    mitem("block_infinity_fog"), mitem("block_infinity"), mitem("block_infinity", 0), mitem("block_infinity", 1), mitem("block_dark_steel_ladder"),
+    mitem("block_infinity_fog"), mitem("block_infinity"), mitem("block_infinity", 2), mitem("block_infinity", 1), mitem("block_dark_steel_ladder"),
     mitem("block_dark_iron_bars"), mitem("block_dark_steel_trapdoor"), mitem("block_dark_steel_door"), mitem("block_reinforced_obsidian"),
     mitem("block_industrial_insulation"), mitem("item_conduit_probe"), mitem("item_yeta_wrench"), mitem("item_xp_transfer"),
     mitem("item_magnet"), mitem("block_enderman_skull", 2), mitem("item_enchantment_filter_normal"), mitem("item_enchantment_filter_big"),
@@ -32,7 +32,8 @@ def items = [
     mitem("block_normal_wireless_charger"), mitem("block_tank", 1), mitem("block_vacuum_chest"), mitem("block_xp_vacuum"), mitem("block_niard"),
     mitem("block_travel_anchor"), mitem("block_tele_pad"), mitem("block_dialing_device"), mitem("block_impulse_hopper"),
     mitem("block_cap_bank", 1), mitem("block_cap_bank", 2), mitem("block_cap_bank", 3), mitem("block_gauge"),
-    mitem("block_power_monitor"), mitem("block_advanced_power_monitor"),
+    mitem("block_power_monitor"), mitem("block_advanced_power_monitor"), mitem("item_coord_selector"),
+    item("enderio-conduit-replacer:conduit_replacer"),
 ]
 for (def i in 0..3) items.add(mitem("item_conduit_facade", i))
 for (def i in 0..2) items.add(mitem("item_basic_capacitor", i))
@@ -46,7 +47,7 @@ for (def i in 0..7) {
     items.add(mitem("item_alloy_nugget", i))
     items.add(mitem("item_alloy_ball", i))
 }
-for (def i in [2, 3, 4, 6, 7, 8, 11, 12, 13, 14, 15, 20, 30, 31, 40, 41, 43, 45, 46, 47, 48, 49, 50, 53, 57, 58, 59, 60, 65, 70, 73, 76])
+for (def i in [2, 3, 4, 6, 7, 8, 11, 12, 13, 14, 15, 20, 30, 31, 40, 41, 43, 45, 46, 47, 48, 49, 50, 53, 57, 58, 59, 60, 65, 70, 73, 74, 76])
     items.add(mitem("item_material", i))
 for (def i in 0..2) items.add(mitem("block_dark_steel_anvil", i))
 for (def i in 8..13) items.add(mitem("block_painted_pressure_plate", i))
@@ -74,6 +75,12 @@ advancedItems.add(mitem("block_alloy", 8))
 advancedItems.add(mitem("item_alloy_ingot", 8))
 advancedItems.add(mitem("item_alloy_nugget", 8))
 advancedItems.add(mitem("item_alloy_ball", 8))
+for (def i in 1..6) {
+    advancedItems.add(mitem("item_alloy_endergy_ingot", i))
+    advancedItems.add(mitem("item_alloy_endergy_ball", i))
+    advancedItems.add(mitem("item_alloy_endergy_nugget", i))
+    advancedItems.add(mitem("block_alloy_endergy", i))
+}
 for (def it in ["huge", "enormous", "warehouse", "warehouse13"]) advancedItems.add(mitem("block_inventory_chest_${it}"))
 for (def i in 0..2) advancedItems.add(mitem("item_inventory_remote", i))
 
@@ -97,10 +104,12 @@ def creativeItems = [mitem("block_buffer", 3), mitem("block_cap_bank")]
 
 def removeRecipes = [
     mitem("block_alloy", 9), mitem("item_alloy_ingot", 9), mitem("item_alloy_nugget", 9),
+    // mitem("block_alloy_endergy"), mitem("item_alloy_endergy_ingot"), mitem("item_alloy_endergy_ingot"),
     mitem("item_ender_food"), mitem("item_dark_steel_hand"), mitem("item_inventory_charger_simple"),
     mitem("block_simple_furnace"), mitem("block_simple_alloy_smelter"), mitem("block_simple_stirling_generator"),
     mitem("block_stirling_generator"), mitem("block_lava_generator"), mitem("block_simple_sag_mill"),
     mitem("block_simple_wired_charger"), mitem("block_dark_paper_anvil"),
+    mitem("block_confusion_charge"), mitem("block_concussion_charge"),
 ]
 for (def i in [0, 22, 38, 51, 52, 66, 67, 69, 77, 81]) removeRecipes.add(mitem("item_material", i))
 for (def b in 0..15) for (def a in [1, 2]) removeRecipes.add(mitem("block_decoration${a}", b))
@@ -108,31 +117,30 @@ for (def b in 0..4) removeRecipes.add(mitem("block_decoration3", b))
 ore("blockConstructionAlloy").remove(mitem("block_alloy", 9))
 ore("ingotConstructionAlloy").remove(mitem("item_alloy_ingot", 9))
 ore("nuggetConstructionAlloy").remove(mitem("item_alloy_nugget", 9))
+ore("blockCrudeSteel").remove(mitem("block_alloy_endergy"))
+ore("ingotCrudeSteel").remove(mitem("item_alloy_endergy_ingot"))
+ore("nuggetCrudeSteel").remove(mitem("item_alloy_endergy_nugget"))
 ore("nuggetEnderPearl").remove(mitem("item_material", 28))
 
 def removeSagMill = [mitem("item_material", 28), mitem("block_holier_fog")]
 def removeSagMillInputs = [item("minecraft:ender_pearl"), item("appliedenergistics2:material", 46), mitem("item_material", 76)]
-def removeAlloy = [mitem("item_material", 39), mitem("item_material", 72), mitem("item_material", 76), mitem("block_death_pouch")]
+def removeAlloy = [mitem("block_death_pouch")]
+for (def i in [39, 72, 76, 75]) removeAlloy.add(mitem("item_material", i))
 def removeTank = [mitem("item_material", 8)]
 
 def hideFromJei = [
-    mitem("item_alloy_ball", 9), mitem("item_material", 5), mitem("block_holy_fog"), mitem("block_creative_spawner"),
-    mitem("block_dark_paper_anvil", 1), mitem("block_dark_paper_anvil", 2),
+    mitem("item_alloy_ball", 9), mitem("item_alloy_endergy_ball"), mitem("item_material", 5), mitem("block_holy_fog"), mitem("block_creative_spawner"),
+    mitem("block_dark_paper_anvil", 1), mitem("block_dark_paper_anvil", 2), mitem("item_dark_steel_treetap"),
+    mitem("item_owl_egg"), mitem("item_enderface"),
+    mitem("block_alloy_endergy"), mitem("item_alloy_endergy_ingot"), mitem("item_alloy_endergy_ingot"),
 ] + removeRecipes + removeSagMill + removeAlloy + removeTank
+for (def i in [61, 62, 63, 9, 10]) hideFromJei.add(mitem("item_material", i))
 
-def setUpgradeTier(name, tier) {
-    def upgrade = item("enderio:item_dark_steel_upgrade", 1).withNbt(["enderio:dsu": name])
-    def predicate = stack -> stack in upgrade
-    TooltipEvents.addTierPredicate("eioupgrade:" + name, predicate, tier)
-}
-
-setUpgradeTier("enderio:travel", 9)
-
-for (def it in tier3Items) TooltipEvents.setTier(it, 3)
-for (def it in tier6Items) TooltipEvents.setTier(it, 6)
-for (def it in items) TooltipEvents.setTier(it, 7)
-for (def it in advancedItems) TooltipEvents.setTier(it, 9)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in earlyItems) TooltipEvents.setTier(it, 3)
+for (def it in enderItems) TooltipEvents.setTier(it, 6)
+for (def it in items) TooltipEvents.setTier(it, 11)
+for (def it in advancedItems) TooltipEvents.setTier(it, 11)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 

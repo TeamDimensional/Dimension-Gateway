@@ -5,15 +5,15 @@ def mitem(name, k=0) {
     return item("thermalexpansion:${name}", k)
 }
 
-def tier2Items = [mitem("strongbox")]
+def tinItems = [mitem("strongbox")]
 
-def tier3Items = [
+def basicItems = [
     mitem("device"), mitem("device", 5), mitem("device", 6), mitem("device", 12), mitem("tank"), mitem("cache"),
     mitem("reservoir"), mitem("reservoir", 1), mitem("satchel"), mitem("satchel", 1), mitem("satchel", 2), mitem("satchel", 100),
     mitem("frame", 64),
 ]
 
-def tier8Items = [
+def advancedAugments = [
     mitem("augment", 129), mitem("augment", 402), mitem("augment", 433), 
 ]
 
@@ -35,10 +35,10 @@ def hideFromJei = [
     mitem("frame", 147), mitem("frame", 148),
 ] + removeRecipes
 
-TooltipEvents.setModTier("thermalexpansion", 7)
-for (def it in tier2Items) TooltipEvents.setTier(it, 2)
-for (def it in tier3Items) TooltipEvents.setTier(it, 3)
-for (def it in tier8Items) TooltipEvents.setTier(it, 8)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+TooltipEvents.setModTier("thermalexpansion", 8)
+for (def it in tinItems) TooltipEvents.setTier(it, 2)
+for (def it in basicItems) TooltipEvents.setTier(it, 3)
+for (def it in advancedAugments) TooltipEvents.setTier(it, 8)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

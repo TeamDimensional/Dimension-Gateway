@@ -25,12 +25,12 @@ def advItems = [
     mitem("infused_enderpearl"), mitem("advanced_charged_porter"), mitem("matter_booster"), mitem("machine_infuser"),
     mitem("locator"), mitem("remote_scanner"), mitem("powercell_advanced"), mitem("shield_block4"),
 ]
-for (int i in [3, 4, 6, 7]) advItems.add(mitem("shape_card", i))
+for (int i in [2, 3, 4, 5, 6, 7]) advItems.add(mitem("shape_card", i))
 
 def eliteItems = [
     mitem("infused_diamond"), mitem("regeneration_module"), mitem("regenerationplus_module"), mitem("speed_module"), mitem("speedplus_module"),
     mitem("haste_module"), mitem("hasteplus_module"), mitem("saturation_module"), mitem("saturationplus_module"), mitem("featherfalling_module"),
-    mitem("featherfallingplus_module"), mitem("flight_module"), mitem("peace_essence"), mitem("peaceful_module"), mitem("waterbreathing_module"),
+    mitem("featherfallingplus_module"), mitem("flight_module"), mitem("peaceful_module"), mitem("waterbreathing_module"),
     mitem("nightvision_module"), mitem("blindness_module"), mitem("weakness_module"), mitem("poison_module"), mitem("slowness_module"),
     mitem("glowing_module"), mitem("noteleport_module"), mitem("luck_module"), mitem("environmental_controller"),
 ]
@@ -40,8 +40,18 @@ def unobtainable = [mitem("support_block")]
 def removeCrafting = [mitem("network_monitor"), mitem("oredict_module"), mitem("rf_monitor")]
 
 def hideFromJei = [
-    mitem("shard_wand"), mitem("developers_delight"), mitem("teleport_probe"), mitem("creative_screen")
+    mitem("shard_wand"), mitem("developers_delight"), mitem("teleport_probe"), mitem("creative_screen"),
+    mitem("invisible_shield_block"), mitem("notick_invisible_shield_block"), mitem("invisible_shield_block_opaque"),
+    mitem("notick_invisible_shield_block_opaque"), mitem("solid_shield_block"), mitem("notick_solid_shield_block"),
 ] + removeCrafting
+
+for (prefix in ["notick_", ""]) {
+    for (suffix in ["_opaque", ""]) {
+        for (k in ["invisible", "camo", "solid"]) {
+            hideFromJei.add(mitem(prefix + k + "_shield_block" + suffix))
+        }
+    }
+}
 
 def creativeItems = [mitem("powercell_creative")]
 
@@ -51,9 +61,9 @@ for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier5Items) TooltipEvents.setTier(it, 5)
 for (def it in tier6Items) TooltipEvents.setTier(it, 6)
-for (def it in advItems) TooltipEvents.setTier(it, 8)
-for (def it in eliteItems) TooltipEvents.setTier(it, 10)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in advItems) TooltipEvents.setTier(it, 13)
+for (def it in eliteItems) TooltipEvents.setTier(it, 13)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeCrafting) crafting.removeByOutput(it)

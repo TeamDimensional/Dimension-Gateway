@@ -9,10 +9,10 @@ def titem(name, k=0) {
     return item("integratedtunnels:${name}", k)
 }
 
-TooltipEvents.setModTier("integratedcrafting", 6)
-TooltipEvents.setModTier("integrateddynamics", 6)
-TooltipEvents.setModTier("integratedterminals", 6)
-TooltipEvents.setModTier("integratedtunnels", 6)
+TooltipEvents.setModTier("integratedcrafting", 7)
+TooltipEvents.setModTier("integrateddynamics", 7)
+TooltipEvents.setModTier("integratedterminals", 7)
+TooltipEvents.setModTier("integratedtunnels", 7)
 
 def advancedItems = [
     mitem("part_connector_omni_directional_item"), mitem("logic_director"),
@@ -34,6 +34,6 @@ def removeRecipes = [
 def hideFromJei = [mitem("creative_energy_battery")] + removeRecipes
 
 for (def it in advancedItems) TooltipEvents.setTier(it, 8)
-TooltipEvents.setTier(titem("part_player_simulator_item"), 9)
+TooltipEvents.setTier(titem("part_player_simulator_item"), 8)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

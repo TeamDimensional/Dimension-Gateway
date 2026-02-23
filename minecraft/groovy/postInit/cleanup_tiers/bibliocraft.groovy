@@ -22,5 +22,5 @@ for (int i in 0..5) hideFromJei.add(mitem("bookcasecreative", i))
 
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)
 for (def it in goldItems) TooltipEvents.setTier(it, 3)
-for (def it in bookPrinting) TooltipEvents.setTier(it, 10)
+for (def it in bookPrinting) TooltipEvents.setTier(it, 9)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

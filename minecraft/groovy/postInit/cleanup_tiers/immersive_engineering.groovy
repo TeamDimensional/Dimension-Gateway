@@ -63,7 +63,7 @@ def hvTier = [
 for (int i in [2, 6, 7]) hvTier.add(mitem("metal_decoration0", i))
 for (int i in [4, 5, 8]) hvTier.add(mitem("connector", i))
 
-def tier7Items = [mitem("metal_device1", 13)]
+def advancedItems = [mitem("metal_device1", 13)]
 
 metallurgyTier += [
     mitem("metal_device1", 10), mitem("metal_device1", 11), mitem("revolver"), mitem("speedloader"), mitem("chemthrower"), mitem("railgun"),
@@ -79,8 +79,8 @@ def creativeItems = [mitem("metal_device0", 3)]
 for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
 for (def it in arcTier) TooltipEvents.setTier(it, 4)
 for (def it in hvTier) TooltipEvents.setTier(it, 6)
-for (def it in tier7Items) TooltipEvents.setTier(it, 7)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in advancedItems) TooltipEvents.setTier(it, 6)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def tool in steelTools) GatewayHelpers.banTool(tool)

@@ -44,7 +44,7 @@ def hideFromJei = [
     mitem("iron_dust"), mitem("iron_dust_tiny"), mitem("gold_dust"), mitem("gold_dust_tiny"),
 ] + removeItems + copperItems + silverItems
 
-for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
+// for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
 for (def it in amethystItems) TooltipEvents.setTier(it, 5)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)

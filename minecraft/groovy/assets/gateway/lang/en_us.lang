@@ -1,6 +1,7 @@
 tile.gateway.wilted_daisy.name=Wilted Daisy
-item.gateway.resonating_gem.name=Resonating Gem
-item.gateway.impure_resonating_gem.name=Impure Resonating Gem
+item.gateway.resonating_gem.name=Radioinfused Tanzanite
+item.gateway.impure_resonating_gem.name=Impure Radioinfused Tanzanite
+item.gateway.starsteel_ingot.name=Starsteel Ingot
 
 item.gateway.detail_basic_fire.name=Fire-Attuned Details
 item.gateway.detail_basic_water.name=Water-Attuned Details
@@ -28,8 +29,9 @@ item.gateway.substrate_magical_water.name=Magically Reinforced Water Substrate
 item.gateway.substrate_magical_air.name=Magically Reinforced Air Substrate
 item.gateway.substrate_magical_earth.name=Magically Reinforced Earth Substrate
 
-fluid.gateway.aluminum_nitride.name=Aluminum Nitride Solution
-fluid.gateway.uranium_albn_mixture.name=Uranium-Aluminum Nitride Mixture
+fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
+fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution
+fluid.gateway.uranium_titanide_mixture.name=Uranium Titanide Mixture
 fluid.gateway.pyro_cinnabar_mixture.name=Pyrotheum-Cinnabar Mixture
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt

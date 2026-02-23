@@ -134,3 +134,18 @@ for (def x in fixedRecipes) x.register()
 for (def x in centrifugeReplacements) {
     GatewayHelpers.hide(x[0])
 }
+
+// Removing FT Glowstone to improve cross-mod interactions
+mods.factorytech.agitator.removeByOutput(fluid("energite"))
+mods.factorytech.agitator.recipeBuilder()
+    .fluidInput(fluid("h2so4") * 100, fluid("aetherworks.impure_aetherium_gas") * 48)
+    .input(item("factorytech:intermediate", 3))
+    .fluidOutput(fluid("energite") * 200)
+    .register()
+mods.factorytech.refrigerator.removeByOutput(item("minecraft:glowstone"))
+mods.factorytech.compressor.removeByOutput(item("factorytech:tank", 6))
+mods.factorytech.compressor.recipeBuilder()
+    .fluidInput(fluid("glowstone") * 2500)
+    .input(item("factorytech:tank"))
+    .output(item("factorytech:tank", 6))
+    .register()

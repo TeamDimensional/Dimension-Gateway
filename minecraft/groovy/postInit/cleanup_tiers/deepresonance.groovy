@@ -18,7 +18,7 @@ def removeRecipes = [mitem("machine_frame")]
 
 def hideFromJei = [mitem("insert_liquid"), mitem("debug_block")] + removeRecipes
 
-for (def it in items) TooltipEvents.setTier(it, 7)
+for (def it in items) TooltipEvents.setTier(it, 8)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 

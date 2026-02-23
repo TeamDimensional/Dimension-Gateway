@@ -11,26 +11,26 @@ for (def it in armorPieces) bronzeArmor.add(mitem("armor.${it}_bronze"))
 def invarArmor = []
 for (def it in armorPieces) invarArmor.add(mitem("armor.${it}_invar"))
 
-def tier2Items = [
+def tinItems = [
     mitem("ore"), mitem("ore", 1), mitem("storage"), mitem("storage", 1), mitem("storage_alloy", 3), mitem("storage_resource", 1), mitem("wrench"),
 ] + bronzeArmor
-for (int i in [128, 129, 163, 192, 193, 227]) tier2Items.add(mitem("material", i))
+for (int i in [128, 129, 163, 192, 193, 227]) tinItems.add(mitem("material", i))
 
-def tier3Items = [
+def metallurgyItems = [
     mitem("ore", 2), mitem("ore", 3), mitem("ore", 5), mitem("storage", 2), mitem("storage", 3), mitem("storage", 5),
     mitem("tome_lexicon"), mitem("fertilizer"), mitem("bait"),
 ] + invarArmor
-for (int i in [0, 1, 2, 4]) tier3Items.add(mitem("storage_alloy", i))
+for (int i in [0, 1, 2, 4]) metallurgyItems.add(mitem("storage_alloy", i))
 for (int i in [0, 1, 24, 25, 32, 33, 64, 65, 66, 67, 68, 69, 96, 97, 98, 99, 100, 130, 131, 133, 160, 161, 162, 164,
                194, 195, 197, 224, 225, 226, 228, 256, 257, 258, 259, 260, 261, 288, 289, 290, 291, 292,
                320, 321, 322, 323, 324, 325, 352, 353, 354, 355, 356, 512, 768, 769, 771, 772, 800, 864])
-    tier3Items.add(mitem("material", i))
-for (int i in 0..15) tier3Items.add(mitem("rockwool", i))
+    metallurgyItems.add(mitem("material", i))
+for (int i in 0..15) metallurgyItems.add(mitem("rockwool", i))
 
-def tier4Items = [mitem("diagram_redprint")]
-for (int i in [16, 17, 26, 27]) tier4Items.add(mitem("material", i))
+def gemstoneItems = [mitem("diagram_redprint")]
+for (int i in [16, 17, 26, 27]) gemstoneItems.add(mitem("material", i))
 
-def tier5Items = [mitem("material", 770),  mitem("tome_experience")]
+def magicItems = [mitem("material", 770),  mitem("tome_experience")]
 
 def techTierItems = [
     mitem("storage", 6), mitem("security"), mitem("fertilizer", 1), mitem("fertilizer", 2), mitem("bait", 1), mitem("bait", 2), mitem("meter"),
@@ -65,14 +65,14 @@ def hideFromJei = [
 for (int i in 0..5) hideFromJei.add(mitem("ore_fluid", i))
 for (int i in [0, 1, 64, 65, 66, 67, 68, 69, 70, 71, 72, 96, 97, 98, 99, 100, 101, 102, 103]) hideFromJei.add(mitem("coin", i))
 
-for (def it in tier2Items) TooltipEvents.setTier(it, 2)
-for (def it in tier3Items) TooltipEvents.setTier(it, 3)
-for (def it in tier4Items) TooltipEvents.setTier(it, 4)
-for (def it in tier5Items) TooltipEvents.setTier(it, 5)
-for (def it in techTierItems) TooltipEvents.setTier(it, 7)
+for (def it in tinItems) TooltipEvents.setTier(it, 2)
+for (def it in metallurgyItems) TooltipEvents.setTier(it, 3)
+for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
+for (def it in magicItems) TooltipEvents.setTier(it, 5)
+for (def it in techTierItems) TooltipEvents.setTier(it, 8)
 for (def it in elementalDrops) TooltipEvents.setTier(it, 8)
 for (def it in industrialTierItems) TooltipEvents.setTier(it, 8)
 for (def it in rocketScienceItems) TooltipEvents.setTier(it, 12)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

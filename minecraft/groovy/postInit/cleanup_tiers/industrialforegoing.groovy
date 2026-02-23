@@ -5,7 +5,7 @@ def mitem(name, k=0) {
     return item("industrialforegoing:${name}", k)
 }
 
-def tier3Items = [item("teslacorelib:wrench")]
+def basicItems = [item("teslacorelib:wrench")]
 
 def devices = [
     mitem("enchantment_refiner"), mitem("animal_independence_selector"), mitem("animal_stock_increaser"), mitem("black_hole_unit"),
@@ -52,9 +52,9 @@ def hideFromJei = [
     mitem("black_hole_controller"), mitem("protein_generator"),
 ] + removeCrafting
 
-for (def it in tier3Items) TooltipEvents.setTier(it, 3)
+for (def it in basicItems) TooltipEvents.setTier(it, 3)
 for (def it in devices) TooltipEvents.setTier(it, 7)
-for (def it in advDevices) TooltipEvents.setTier(it, 8)
-for (def it in items) TooltipEvents.setTier(it, 10)
+for (def it in advDevices) TooltipEvents.setTier(it, 9)
+for (def it in items) TooltipEvents.setTier(it, 9)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeCrafting) crafting.removeByOutput(it)

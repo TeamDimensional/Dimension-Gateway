@@ -58,9 +58,9 @@ def setBottleTier(name, tier) {
 
 for (def it in forestItems) TooltipEvents.setTier(it, 2)
 for (def it in altarItems) TooltipEvents.setTier(it, 4)
-for (def it in offeringItems) TooltipEvents.setTier(it, 6)
-for (def it in enderItems) TooltipEvents.setTier(it, 6)
-for (def it in automationItems) TooltipEvents.setTier(it, 8)
+for (def it in offeringItems) TooltipEvents.setTier(it, 7)
+for (def it in enderItems) TooltipEvents.setTier(it, 7)
+for (def it in automationItems) TooltipEvents.setTier(it, 7)
 for (def it in unobtainableItems) TooltipEvents.setTier(it, 0)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hiddenItems) GatewayHelpers.hide(it)

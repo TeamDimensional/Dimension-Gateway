@@ -41,7 +41,7 @@ def items = [
     mitem("explosion_pedestal"), mitem("heat_coil"),
 ]
 
-def tier7Items = [mitem("breaker")]
+def breakerItems = [mitem("breaker")]
 
 def creativeItems = [mitem("creative_ember_source")]
 
@@ -63,9 +63,9 @@ def hideFromJei = [
 
 for (def it in ashItems) TooltipEvents.setTier(it, 2)
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
-for (def it in items) TooltipEvents.setTier(it, 6)
-for (def it in tier7Items) TooltipEvents.setTier(it, 7)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in items) TooltipEvents.setTier(it, 4)
+for (def it in breakerItems) TooltipEvents.setTier(it, 7)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeFurnace) furnace.removeByOutput(it)

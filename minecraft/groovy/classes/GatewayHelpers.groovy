@@ -12,7 +12,7 @@ class GatewayHelpers {
     static def qmdChemiFluids = [
         "hydrochloric_acid", "nitric_acid", "sodium_chloride_solution", "sodium_nitrate_solution", "lead_nitrate_solution",
         "liquid_hydrogen", "argon", "liquid_argon", "neon", "liquid_neon", "liquid_oxygen", "chlorine", "nitric_oxide",
-        "nitrogen_dioxide", "compressed_air", "titanium", "carbon", "sodium_chloride", 
+        "nitrogen_dioxide", "compressed_air", "titanium", "carbon", "sodium_chloride", "liquid_air",
     ]
 
     static void banTool(ItemStack itemStack) {

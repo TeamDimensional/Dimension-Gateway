@@ -1,21 +1,16 @@
-// Garden Cloche
-
-crafting.remove("immersiveengineering:metal_devices/garden_cloche")
-/*
-clocheCircuit = CircuitBuilder.builder()
-    .require("nature", 2)
-    .require("logic", 2)
-    .build()
-crafting.shapedBuilder()
-        .name("tier7/garden_cloche")
-        .output(item("immersiveengineering:metal_device1", 13))
-        .matrix("GTG", "G G", "PLP")
-        .key("G", ore("blockGlass")).key("T", clocheCircuit).key("P", ore("plankTreatedWood")).key("L", item("immersiveengineering:material", 8))
-        .register()
-*/
-
 // Signalum, Lumium, Enderium
 crafting.remove("thermalfoundation:dust_signalum")
 crafting.remove("thermalfoundation:dust_lumium")
 crafting.remove("thermalfoundation:dust_enderium")
 // TODO: readd these recipes
+
+// Powder of Bountiful Core
+bountyPowder = item('naturesaura:effect_powder').withNbt(['effect': 'naturesaura:ore_spawn'])
+mods.naturesaura.ritual.removeByOutput(bountyPowder)
+mods.naturesaura.ritual.recipeBuilder()
+    .name("tier6/bounty_powder")
+    .input(item("naturesaura:gold_powder"), item("naturesaura:gold_powder"), item("naturesaura:sky_ingot"), item("minecraft:redstone_ore"))
+    .output(bountyPowder * 4)
+    .time(250)
+    .sapling(item("minecraft:sapling", 1))
+    .register()

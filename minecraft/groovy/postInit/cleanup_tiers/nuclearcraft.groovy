@@ -52,7 +52,7 @@ def fuelCounts = [
 
 def tier1Items = [mitem("dominos")]
 
-def tier3Items = [
+def earlyItems = [
     mitem("gem_dust", 2), mitem("record_money_for_nothing"),
 ]
 
@@ -64,12 +64,15 @@ def tier6Items = [
     mitem("gem", 6), mitem("gem_dust", 11), mitem("alloy", 13),
 ]
 
-def tier7Items = [
-    mitem("graham_cracker"), mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"), mitem("ore", 4), mitem("ingot_block", 4),
-    mitem("ingot", 4), mitem("dust", 4),
+def thermalItems = [
+    mitem("graham_cracker"), mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"),
 ]
 
-def tier11Items = [
+def uraniumItems = [
+    mitem("ore", 4), mitem("ingot_block", 4), mitem("ingot", 4), mitem("dust", 4),
+]
+
+def fissionItems = [
     mitem("fertile_isotope", 32767), mitem("heavy_water_moderator"), mitem("decay_hastener"), mitem("fuel_reprocessor"),
     mitem("fission_casing"), mitem("fission_glass"), mitem("fission_monitor"), mitem("fission_reflector", 32767),
     mitem("fission_vent"), mitem("fission_irradiator"), mitem("fission_source", 32767), mitem("fission_shield"),
@@ -83,35 +86,38 @@ def tier11Items = [
     mitem("ingot2", 1), mitem("dust2", 1), mitem("ingot_block2", 1),
     mitem("ingot2", 5), mitem("dust2", 5), mitem("ingot_block2", 5),
     mitem("alloy", 16), mitem("material_block"),
+    mitem("condenser_controller"),
+    mitem("rtg_plutonium"), mitem("rtg_americium"), mitem("rtg_californium"),
 ]
-for (def m in ["steel", "extreme", "sic_sic_cmc"]) tier11Items.add(mitem("turbine_rotor_blade_${m}"))
+for (def m in ["steel", "extreme", "sic_sic_cmc"]) fissionItems.add(mitem("turbine_rotor_blade_${m}"))
 
-def tier12Items = [
+def moltenSaltItems = [
     mitem("fission_heater_port", 32767), mitem("fission_heater_port2", 32767), mitem("salt_fission_controller"), mitem("fission_vessel_port"),
     mitem("salt_fission_vessel"), mitem("salt_fission_heater", 32767), mitem("salt_fission_heater2", 32767),
     mitem("ingot2", 6), mitem("dust2", 6), mitem("ingot_block2", 6),
     // mitem("assembler"), mitem("part", 15),
 ]
 
-def tier13Items = [
+def qmdItems = [
     mitem("decay_generator"), mitem("tritium_lamp"), mitem("alloy", 17),
+]
+
+def hxItems = [
+    mitem("heat_exchanger_casing"), mitem("heat_exchanger_glass"), mitem("heat_exchanger_controller"), 
 ]
 
 def removeRecipes = [
     mitem("manufactory"), mitem("alloy_furnace"), mitem("pressurizer"), mitem("electric_furnace"), mitem("melter"),
-    mitem("rtg_uranium"), mitem("rtg_plutonium"), mitem("rtg_americium"), mitem("rtg_californium"),
+    mitem("rtg_uranium"), 
     mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
-    mitem("heat_exchanger_controller"), mitem("heat_exchanger_casing"), mitem("heat_exchanger_glass"),
-    mitem("condenser_controller"), mitem("glowing_mushroom"),
-    mitem("compound", 2), mitem("compound", 9), mitem("part", 11),
+    mitem("glowing_mushroom"), mitem("compound", 2), mitem("compound", 9), mitem("part", 11),
     mitem("assembler"), mitem("fission_power_port"),
 ]
-for (def m in ["copper", "hard_carbon", "thermoconducting"]) removeRecipes.add(mitem("heat_exchanger_tube_${m}"))
+for (def m in ["copper", "hard_carbon", "thermoconducting"]) hxItems.add(mitem("heat_exchanger_tube_${m}"))
 
 def hideFromJei = [
-    mitem("glowing_mushroom_block"), mitem("wasteland_earth"), mitem("wasteland_portal"), mitem("solidified_corium"), mitem("part", 13),
+    mitem("glowing_mushroom_block"), mitem("wasteland_earth"), mitem("wasteland_portal"), mitem("solidified_corium"),
     mitem("fluid_steel"), mitem("fluid_enderium"), mitem("fluid_lead_platinum"), mitem("fluid_ethanol"), mitem("fluid_milk"),
-    mitem("fluid_low_pressure_steam"), mitem("fluid_condensate_water"), mitem("fluid_sic_vapor"),
     mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("compound", 7), mitem("compound", 8), mitem("part", 15),
     mitem("fluid_radaway"), mitem("fluid_radaway_slow"), mitem("fluid_redstone_ethanol"),
     mitem("fluid_borax_solution"), mitem("fluid_irradiated_borax_solution"),
@@ -125,11 +131,11 @@ TooltipEvents.setTooltip(mitem("fission_dust", 9), "Byproduct from the Pu-based 
 TooltipEvents.setTooltip(mitem("fission_dust", 10), "Byproduct from the Cm-based and Cf-251 fuels.")
 
 for (def f in isotopes) {
-    tier11Items.add(mitem(f[0], f[1] * 5 + 0))
-    hideFromJei.add(mitem(f[0], f[1] * 5 + 1))
-    tier11Items.add(mitem(f[0], f[1] * 5 + 2))
-    tier11Items.add(mitem(f[0], f[1] * 5 + 3))
-    tier11Items.add(mitem(f[0], f[1] * 5 + 4))
+    fissionItems.add(mitem(f[0], f[1] * 5 + 0))
+    hideFromJei.add(mitem(f[0], f[1] * 5 + 1))  // Carbide fuel
+    fissionItems.add(mitem(f[0], f[1] * 5 + 2))
+    fissionItems.add(mitem(f[0], f[1] * 5 + 3))
+    fissionItems.add(mitem(f[0], f[1] * 5 + 4))
     // TooltipEvents.setTooltip(mitem(f[0], f[1] * 5 + 1), "Only usable in Pebble Bed Reactors (tier 12).")
 }
 for (def f in fuelCounts) {
@@ -138,25 +144,27 @@ for (def f in fuelCounts) {
         for (def d in ["depleted_", ""]) {
             hideFromJei.add(mitem("${d}fuel_${f[0]}", i * 4))
             // tier12Items.add(mitem("${d}fuel_${f[0]}", i * 4))
-            tier11Items.add(mitem("${d}fuel_${f[0]}", i * 4 + 1))
-            tier11Items.add(mitem("${d}fuel_${f[0]}", i * 4 + 2))
-            tier11Items.add(mitem("${d}fuel_${f[0]}", i * 4 + 3))
+            fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 1))
+            fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 2))
+            fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 3))
         }
-        tier11Items.add(mitem("pellet_${f[0]}", i * 2))
+        fissionItems.add(mitem("pellet_${f[0]}", i * 2))
         hideFromJei.add(mitem("pellet_${f[0]}", i * 2 + 1))
         // TooltipEvents.setTooltip(mitem("pellet_${f[0]}", i * 2 + 1), "Only usable in Pebble Bed Reactors (tier 12).")
     }
 }
 
-TooltipEvents.setModTier("nuclearcraft", 8)
+TooltipEvents.setModTier("nuclearcraft", 9)
 for (def it in tier1Items) TooltipEvents.setTier(it, 1)
-for (def it in tier3Items) TooltipEvents.setTier(it, 3)
+for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier6Items) TooltipEvents.setTier(it, 6)
-for (def it in tier7Items) TooltipEvents.setTier(it, 7)
-for (def it in tier11Items) TooltipEvents.setTier(it, 11)
-for (def it in tier12Items) TooltipEvents.setTier(it, 12)
-for (def it in tier13Items) TooltipEvents.setTier(it, 13)
-TooltipEvents.setTier(item("reactorbuilder:creativereactorbuilder"), 15)
+for (def it in thermalItems) TooltipEvents.setTier(it, 8)
+for (def it in uraniumItems) TooltipEvents.setTier(it, 10)
+for (def it in fissionItems) TooltipEvents.setTier(it, 11)
+for (def it in moltenSaltItems) TooltipEvents.setTier(it, 13)
+for (def it in hxItems) TooltipEvents.setTier(it, 13)
+for (def it in qmdItems) TooltipEvents.setTier(it, 15)
+TooltipEvents.setTier(item("reactorbuilder:creativereactorbuilder"), 16)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-// for (def it in hideFromJei) GatewayHelpers.hide(it)
+for (def it in hideFromJei) GatewayHelpers.hide(it)

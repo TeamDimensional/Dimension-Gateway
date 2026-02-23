@@ -43,8 +43,12 @@ def abyssalItems = [
     mitem("shoggothflesh_abyssal"), mitem("nugget_coralium"), mitem("drainstaff"), mitem("drainstaff_aw"),
     mitem("essence_abyssalwasteland"), mitem("interdimensionalcage"), mitem("scroll_lesser"), mitem("scroll_moderate"),
     mitem("coralium_antidote"), mitem("monolithstone"), mitem("darklands_oak_fence_gate"),
+    mitem("spirit_altar"), mitem("spirit_tablet"),
+    mitem("ghoul_flesh"), mitem("abyssal_ghoul_flesh"), mitem("shadow_ghoul_flesh"), mitem("anti_ghoul_flesh"),
+    mitem("ring"), mitem("ring_overworld"), mitem("ring_abyssal_wasteland"),
 ] + statues
 for (def i in 2..9) abyssalItems.add(mitem("ccluster${i}"))
+for (def i in 0..3) abyssalItems.add(mitem("spirit_tablet_shard_${i}"))
 
 def materials = [
     "iron", "gold", "sulfur", "carbon", "oxygen", "hydrogen", "nitrogen", "phosphorus", "potassium", "nitrate", "methane",
@@ -72,7 +76,8 @@ def omotholItems = [
     mitem("shoggothflesh_shadow"), mitem("nugget_abyssalnite"), mitem("nugget_dreadium"), mitem("nugget_ethaxium"),
     mitem("drainstaff_omt"), mitem("essence_omothol"), mitem("gatekeeperessence"), mitem("scroll_greater"), mitem("scroll_unique_anti"),
     mitem("scroll_unique_oblivion"), mitem("face_book"), mitem("ethaxiumbrickslab2"), mitem("darkethaxiumbrickslab2"),
-    mitem("transmutator"), 
+    mitem("transmutator"), mitem("unchained_portal_anchor"),
+    mitem("odb"), mitem("abyssalnomicon"), mitem("silver_key"), mitem("ring_omothol"),
 ] + crystalClusters
 for (def m in materials) omotholItems.add(mitem("${m}_crystal"))
 for (def m in materials) omotholItems.add(mitem("${m}_crystal_shard"))
@@ -80,10 +85,6 @@ for (def m in materials) omotholItems.add(mitem("${m}_crystal_shard"))
 def charmBuffs = ["", "_range", "_duration", "_power"]
 for (def cb in charmBuffs) for (def g in gods) omotholItems.add(mitem("${g}charm${cb}"))
 for (def cb in charmBuffs) omotholItems.add(mitem("charm${cb}"))
-
-def tier13Items = [
-    mitem("odb"), mitem("abyssalnomicon"), mitem("silver_key"), 
-]
 
 def removeRecipes = [
     mitem("door_drt"), mitem("coraliumstone"), mitem("odbcore"), mitem("dreadbrick"), mitem("chiseled_dreadstone_brick"),
@@ -108,6 +109,10 @@ def removeRecipes = [
 for (def m in materials) removeRecipes.add(mitem("${m}_crystal_fragment"))
 for (def it in ["small", "medium", "large", "huge"]) removeRecipes.add(mitem("crystalbag_${it}"))
 
+def removeCrystallizer = [
+    mitem("dreaded_ghoul_flesh"),
+]
+
 def removeFurnace = [
     mitem("dreadstone"), mitem("charcoal"), mitem("cooked_generic_meat"), mitem("cracked_dreadstone_brick"),
     mitem("cracked_elysian_stone_brick"), mitem("elysian_stone"),
@@ -117,11 +122,15 @@ def removeRitual = [
     mitem("psdl"), mitem("dreadlands_energy_pedestal"), mitem("dreadlands_sacrificial_altar"),
     mitem("energycontainer"), mitem("dreadlands_energy_collector"), mitem("dreadlands_energy_relay"), mitem("dreadlands_energy_container"),
     mitem("gatewaykeydl"), mitem("jzaharcoin"),
-    mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"), mitem("sealing_key"),
+    mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"), mitem("sealing_key"), mitem("ring_dreadlands"),
 ]
 
 def unobtainable = [
     mitem("portal_anchor"),
+]
+
+def creativeItems = [
+    mitem("devsword"),
 ]
 
 def hideFromJei = [
@@ -134,25 +143,32 @@ def hideFromJei = [
     mitem("jzaharspawner"), mitem("gatekeeperminionspawner"), mitem("fire"), mitem("dreadstonecobblestoneslab2"),
     mitem("dreadstonecobblestone"), mitem("abycorore"), mitem("scriptures_omniscience"), mitem("sealing_lock"), mitem("unlocked_sealing_lock"),
     mitem("dreadlands_muck"), mitem("elysian_stone_brick_slab2"), mitem("ritual_altar_elysian_stone"), mitem("ritual_pedestal_elysian_stone"),
-    mitem("elysiancobblestoneslab2"), mitem("dreadwood_slab2"), mitem("elysian_cobblestone"),
-] + removeRecipes + removeFurnace + removeRitual
+    mitem("elysiancobblestoneslab2"), mitem("dreadwood_slab2"), mitem("elysian_cobblestone"), mitem("altar"),
+    mitem("crystallizer_on"), mitem("transmutator_on"), mitem("engraver_on"), mitem("multiblock"),
+    mitem("shoggoth_projectile"),
+] + removeRecipes + removeFurnace + removeRitual + removeCrystallizer
+
+for (def it in ["stone", "abyssal_stone", "coralium_stone", "darkstone", "dreadstone", "elysian_stone", "ethaxium", "monolith_stone", "omothol_stone"]) {
+    hideFromJei.add(mitem("tombstone_${it}"))
+}
 
 for (def it in ["altar", "pedestal"]) {
     for (def mat in ["stone", "darkstone", "abyssal_stone", "coralium_stone"]) abyssalItems.add(mitem("ritual_${it}_${mat}"))
     for (def mat in ["dreadstone"]) hideFromJei.add(mitem("ritual_${it}_${mat}"))
     omotholItems.add(mitem("ritual_${it}_ethaxium"))
-    tier13Items.add(mitem("ritual_${it}_dark_ethaxium"))
+    omotholItems.add(mitem("ritual_${it}_dark_ethaxium"))
 }
 
-for (def it in abyssalItems) TooltipEvents.setTier(it, 10)
-for (def it in omotholItems) TooltipEvents.setTier(it, 11)
-for (def it in tier13Items) TooltipEvents.setTier(it, 13)
+for (def it in abyssalItems) TooltipEvents.setTier(it, 13)
+for (def it in omotholItems) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeFurnace) furnace.removeByOutput(it)
 for (def it in removeRitual) mods.abyssaltweaker.ritual.removeByOutput(it)
-for (def it in statues) TooltipEvents.setTooltip(it, "Can be looted in Omothol in tier 11.")
+for (def it in removeCrystallizer) mods.abyssaltweaker.crystallizer.removeByOutput(it)
+for (def it in statues) TooltipEvents.setTooltip(it, "Can be looted in Omothol in tier 15.")
 for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Can be looted in Omothol before Crystallizer is available.")
 TooltipEvents.setTooltip(item("abyssalcraft:odb"), "Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.")
 for (int i in 0..27) crafting.remove("abyssalcraft:crystalshard_${i}_alt")
