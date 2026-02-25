@@ -55,7 +55,7 @@ def hideFromJei = [
 for (int i in 0..5) hideFromJei.add(mitem("monster_egg", i))
 
 for (def type in toolTypes) {
-    for (def material in ["wooden", "stone", "iron", "golden", "diamond"]) {
+    for (def material in ["wooden", "stone", "golden"]) {
         GatewayHelpers.banTool(mitem("${material}_${type}"))
     }
     diamondItems.add(mitem("diamond_${type}"))

@@ -86,7 +86,6 @@ def removedTools = []
 for (def tool in ["axe", "hoe", "shovel", "pickaxe", "sword"]) {
     removedTools.add(mitem("aurorianstone${tool}"))
     removedTools.add(mitem("silentwood${tool}"))
-    removedTools.add(mitem("moonstone${tool}"))
 }
 
 def unknownItems = [mitem("livingdiviningrod")]

@@ -31,7 +31,7 @@ def buildList(metal) {
 def copperItems = buildList("copper")
 def silverItems = buildList("silver")
 def amethystItems = buildToolList("amethyst")
-def tools = buildToolList("copper") + amethystItems + buildToolList("silver")
+def tools = buildToolList("copper") + buildToolList("silver")
 amethystItems.add(mitem("amethyst_knife"))
 
 def feyCrafting = [mitem("pearl")]
@@ -45,7 +45,7 @@ def hideFromJei = [
 ] + removeItems + copperItems + silverItems
 
 // for (def it in feyCrafting) TooltipEvents.setTier(it, 3)
-for (def it in amethystItems) TooltipEvents.setTier(it, 5)
+for (def it in amethystItems) TooltipEvents.setTier(it, 6)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)
 for (def it in tools) GatewayHelpers.banTool(it)

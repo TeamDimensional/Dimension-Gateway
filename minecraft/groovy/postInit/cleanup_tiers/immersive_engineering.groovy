@@ -83,7 +83,6 @@ for (def it in advancedItems) TooltipEvents.setTier(it, 6)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-for (def tool in steelTools) GatewayHelpers.banTool(tool)
 
 crafting.remove("immersiveengineering:stone_decoration/blastbrick_reinforced_slab_back")
 crafting.remove("immersiveengineering:stone_decoration/alloybrick_slab_back")

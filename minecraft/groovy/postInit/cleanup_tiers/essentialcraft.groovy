@@ -14,7 +14,6 @@ for (def type in toolParts) {
     weakTools.add(mitem("weak_elemental_${type}"))
     windTools.add(mitem("wind_elemental_${type}"))
 }
-def allTools = elementalTools + windTools + weakTools
 
 def magicalTier = [
     mitem("magicplating"), mitem("fortifiedglass"), mitem("eccontroller"), mitem("ecacceptor"), mitem("ecejector"), mitem("ecstatechecker"),
@@ -161,5 +160,3 @@ for (def it in hoannaLoot) TooltipEvents.setTooltip(it, "Found in dungeons in Ho
 for (def it in hoannaBuildingLoot) TooltipEvents.setTooltip(it, "Found in city ruins in Hoanna.")
 for (def it in 0..15) TooltipEvents.setTooltip(mitem("essence", it), "Produced by the Crystal Extractor.")
 TooltipEvents.setTooltip(mitem("elementalsword"), "Made in Ember Forge.")
-
-for (def tool in allTools) GatewayHelpers.banTool(tool)
