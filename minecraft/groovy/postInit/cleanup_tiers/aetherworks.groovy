@@ -15,28 +15,27 @@ for (int i in 0..5) geodes.add(mitem("item_geode", i))
 def ourItems = [
     mitem("aether_ore"), mitem("block_aether"), mitem("item_pickaxe_aether"), mitem("item_pickaxe_ember"),
     mitem("item_shovel_redstone"), mitem("item_shovel_slime"), mitem("item_crown"), mitem("item_crossbow_quartz"),
-    mitem("item_crossbow_magma"), mitem("item_potion_gem")
+    mitem("item_crossbow_magma"), mitem("item_potion_gem"),
+    mitem("aetherium_ashen_cloak_head"), mitem("aetherium_ashen_cloak_chest"), mitem("aetherium_ashen_cloak_legs"),
+    mitem("aetherium_ashen_cloak_boots"), mitem("heat_dial"),
 ] + aetheriumPrismParts + geodes
-for (int i in [0, 2, 4, 5, 7, 8, 10, 11, 12, 18, 19, 20, 22, 25, 26, 27, 28, 29]) ourItems.add(mitem("item_resource", i))
+for (int i in 0..14) ourItems.add(mitem("item_resource", i))
+for (int i in 17..29) ourItems.add(mitem("item_resource", i))
+for (int i in 0..5) ourItems.add(mitem("forge_component", i))
 
 def potionGems = []
 for (int i in 1..140) potionGems.add(mitem("item_potion_gem", i))
 
-// Removing Aetherium Forge because no one knows how it works, including me after extensively reading the code.
 // Removing some Aetherium tools because they're terrible for when they're obtained LMAO.
-def removeRecipes = [
-    mitem("heat_dial"), mitem("item_axe_prismarine"), mitem("item_axe_ender"),
-]
-for (int i in 0..5) removeRecipes.add(mitem("forge_component", i))
-for (int i in [6, 9, 13, 17, 21, 23, 24]) removeRecipes.add(mitem("item_resource", i))
-
-// TODO: wait for Embers UEL to update and remove those too.
-def removeStamping = [mitem("item_resource", 1), mitem("item_resource", 3)]
+def removeRecipes = [mitem("item_axe_prismarine"), mitem("item_axe_ender")]
 def removeAlchemy = [mitem("item_resource", 15), mitem("item_resource", 16)]
 
 def hideFromJei = [
-    mitem("forge_structure"), mitem("item_resource", 14),
-] + removeRecipes + removeStamping + removeAlchemy + potionGems
+    mitem("forge_structure"),
+// Unobtainable tools => probably unfinished
+    mitem("staff_aetherium"), mitem("aetheriumclockworkaxe"), mitem("aetheriumclockworkpickaxe"), mitem("aetheriumclockworkgrandhammer"),
+    mitem("aetheriumblazingray"),
+] + removeRecipes + removeAlchemy + potionGems
 
 // Many tooltips
 TooltipEvents.setTooltip(mitem("item_pickaxe_aether"), "Right-click breaks large veins of the same block automatically.")
@@ -57,3 +56,4 @@ for (def it in potionGems) TooltipEvents.setTooltip(it, "Craft with the Aetheriu
 for (def it in ourItems) TooltipEvents.setTier(it, 7)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
+for (def it in removeAlchemy) mods.embers.alchemy.removeByOutput(it)

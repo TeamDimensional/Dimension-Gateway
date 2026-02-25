@@ -38,7 +38,7 @@ def items = [
     mitem("seed_aluminum"), mitem("seed_copper"), mitem("seed_dawnstone"), mitem("block_dawnstone"), mitem("seed_gold"),
     mitem("seed_iron"), mitem("seed_lead"), mitem("seed_nickel"), mitem("seed_silver"), mitem("seed_tin"),
     mitem("ember_emitter"), mitem("ember_receiver"), mitem("ember_funnel"), mitem("ember_pulser"), mitem("charger"), mitem("ember_pipe"),
-    mitem("explosion_pedestal"), mitem("heat_coil"),
+    mitem("explosion_pedestal"), mitem("heat_coil"), mitem("stamper"), mitem("stamper_base")
 ]
 
 def breakerItems = [mitem("breaker")]
@@ -47,7 +47,7 @@ def creativeItems = [mitem("creative_ember_source")]
 
 def stamps = ["bar", "flat", "gear", "plate", "rod", "round"]
 def removeRecipes = [
-    mitem("archaic_circuit"), mitem("cinder_plinth"), mitem("field_chart"), mitem("mechanical_pump"), mitem("stamper"), mitem("stamper_base")
+    mitem("archaic_circuit"), mitem("cinder_plinth"), mitem("field_chart"), mitem("mechanical_pump"),
 ]
 def removeFurnace = []
 for (def it in stamps) {

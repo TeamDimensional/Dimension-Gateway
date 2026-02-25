@@ -33,6 +33,7 @@ crafting.remove("immersiveengineering:metal_storage/uranium_slab")
 crafting.remove("immersiveengineering:metal_storage/uranium_slab_back")
 for (int i in [0, 1, 2, 3, 4, 5, 6, 7]) GatewayHelpers.hide(item("immersiveengineering:storage", i))
 for (int i in 0..8) GatewayHelpers.hide(item("immersiveengineering:storage_slab", i))
+for (int i in [0, 1, 3]) GatewayHelpers.hide(item("factorytech:oreblock", i))
 
 // Ingots
 for (def name in ["copper", "aluminum", "lead", "silver", "nickel", "constantan", "uranium", "electrum", "iron"]) {

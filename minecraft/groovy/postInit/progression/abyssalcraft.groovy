@@ -128,9 +128,9 @@ for (def pair in items) {
         .energy(400)
         .centerItem(pair[1])
         .input(
-            item("calculator:enddiamond"), item("industrialforegoing:plastic"), item("botania:manaresource"),
-            item("minecraft:stone"), item("calculator:enddiamond"), item("minecraft:stone"), item("minecraft:ender_eye"),
-            item("industrialforegoing:plastic"))
+            item("calculator:enddiamond"), item("advancedrocketry:productplate", 1), item("botania:manaresource"),
+            item("minecraft:stone"), item("astralsorcery:itemcraftingcomponent", 4), item("minecraft:stone"), item("minecraft:ender_eye"),
+            item("advancedrocketry:productplate", 1))
         .register()
 
     mods.abyssaltweaker.ritual.recipeBuilder()
@@ -140,9 +140,9 @@ for (def pair in items) {
         .energy(800)
         .centerItem(owItem)
         .input(
-            item("abyssalcraft:shadowgem"), item("actuallyadditions:item_crystal_empowered", 3), item("abyssalcraft:cingot"),
-            item("abyssalcraft:abystone"), item("abyssalcraft:shadowgem"), item("abyssalcraft:abystone"), item("enderutilities:enderpart", 2),
-            item("actuallyadditions:item_crystal_empowered", 3))
+            item("nuclearcraft:americium"), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:cingot"),
+            item("abyssalcraft:abystone"), item("nuclearcraft:americium"), item("abyssalcraft:abystone"), item("enderutilities:enderpart", 2),
+            item("actuallyadditions:item_crystal_empowered", 2))
         .register()
 
     mods.abyssaltweaker.ritual.recipeBuilder()
@@ -152,9 +152,9 @@ for (def pair in items) {
         .energy(1600)
         .centerItem(awItem)
         .input(
-            item("nuclearcraft:plutonium", 5), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:ethaxiumingot"),
-            item("abyssalcraft:darkethaxiumbrick"), item("nuclearcraft:plutonium", 5), item("abyssalcraft:darkethaxiumbrick"),
-            item("abyssalcraft:abyingot"), item("actuallyadditions:item_crystal_empowered", 2))
+            item("abyssalcraft:abyingot"), item("botania:quartz", 5), item("abyssalcraft:ethaxiumingot"),
+            item("abyssalcraft:darkethaxiumbrick"), item("thaumicaugmentation:material", 5), item("abyssalcraft:darkethaxiumbrick"),
+            item("abyssalcraft:ethaxiumingot"), item("botania:quartz", 5))
         .register()
 }
 

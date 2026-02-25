@@ -13,10 +13,13 @@ def gitem(name, k=0) {
 def eitem(name, k=0) {
     return item("thaumicenergistics:${name}", k)
 }
+def titem(name, k=0) {
+    return item("thaumictinkerer:${name}", k)
+}
 
 def tier1Items = [
     gitem("item_grate"), aitem("iron_framed_greatwood"), aitem("chiseled_greatwood"), mitem("stone_arcane"), mitem("stone_arcane_brick"),
-    mitem("slab_arcane_stone"), mitem("slab_arcane_brick"),
+    mitem("slab_arcane_stone"), mitem("slab_arcane_brick"), titem("kamiresource", 1)
 ]
 for (def i in ["aer", "aqua", "ignis", "terra", "ordo", "perditio"]) tier1Items.add(mitem("crystal_${i}"))
 
@@ -33,7 +36,7 @@ def mainItems = [
 
 def astralItems = [
     gitem("starfield_glass"), gitem("starfield_glass", 2), mitem("quicksilver"), mitem("nugget", 5), mitem("mirrored_glass"),
-    mitem("sanity_checker"),
+    mitem("sanity_checker"), titem("kamiresource"),
 ]
 
 def mithrilliumItems = [
@@ -52,6 +55,22 @@ def hoannaItems = [
     gitem("rift_monitor"), gitem("stairs_eldritch_tile"), gitem("starfield_glass", 1), gitem("elytra_harness"), aitem("void_anvil"),
     aitem("jar_eldritch"), mitem("stone_eldritch_tile"), mitem("slab_eldritch"), mitem("pedestal_eldritch"),
 ]
+
+def ichorItems = [
+    titem("sky_pearl"), titem("warp_gate"),
+]
+for (def i in ["pick", "axe", "shovel", "sword"]) {
+    for (def j in ["", "_adv"]) {
+        ichorItems.add(titem("ichorium_${i}${j}"))
+    }
+}
+for (def i in ["ichor", "kami"]) {
+    for (def j in ["helm", "chest", "legs", "boots"]) {
+        ichorItems.add(titem("${i}_${j}"))
+    }
+}
+
+for (def i in 2..5) ichorItems.add(titem("kamiresource", i))
 
 def voidItems = [
     gitem("impetus_drainer"), gitem("impetus_relay"), gitem("impetus_diffuser"), gitem("impetus_matrix"), gitem("impetus_matrix_base"),
@@ -74,7 +93,7 @@ for (int i in [3, 5]) voidItems.add(gitem("material", i))
 for (int i in 0..3) voidItems.add(gitem("eldritch_lock_key", i))
 for (def t in ["pickaxe", "axe", "shovel", "hoe"]) voidItems.add(aitem("void_elemental_${t}"))
 
-def creativeItems = [gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge")]
+def creativeItems = [gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge"), eitem("essentia_cell_creative")]
 
 def unknownItems = [
     mitem("crimson_blade"), mitem("crimson_plate_helm"), mitem("crimson_plate_chest"), mitem("crimson_plate_legs"), mitem("crimson_boots"),
@@ -83,7 +102,7 @@ def unknownItems = [
 ]
 
 def removeCrafting = [
-    mitem("table_stone"),
+    mitem("table_stone"), titem("black_quartz"), titem("black_quartz_block")
 ]
 
 def removeArcaneCrafting = [
@@ -95,7 +114,7 @@ def hideFromJei = [
     aitem("recharge_charm"), mitem("ore_cinnabar"), mitem("grass_ambient"),
     mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
-    mitem("enchanted_placeholder"),
+    mitem("enchanted_placeholder"), titem("enchantment_pillar"),
 ] + removeCrafting + removeArcaneCrafting
 for (int i in 0..3) hideFromJei.add(gitem("capstone", i))
 for (int i in 0..3) hideFromJei.add(gitem("eldritch_lock", i))
@@ -106,9 +125,13 @@ for (int i in 0..7) hideFromJei.add(mitem("cluster", i))
 for (def a in ["rare", "uncommon", "common"]) for (def b in ["crate", "urn"]) hideFromJei.add(mitem("loot_${b}_${a}"))
 
 TooltipEvents.setModTier("thaumcraft", 5)
+TooltipEvents.setModTier("thaumictinkerer", 5)
 TooltipEvents.setModTier("thaumadditions", 11)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
 TooltipEvents.setModTier("thaumicenergistics", 8)
+ore("quartzDark").remove(titem("black_quartz"))
+ore("blockQuartzDark").remove(titem("black_quartz_block"))
+TooltipEvents.setTooltip(titem("bedrock_portal"), "Created by breaking Bedrock with Awakened Ichorium Pickaxe.")
 
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])
@@ -119,9 +142,9 @@ for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in mainItems) TooltipEvents.setTier(it, 5)
 for (def it in astralItems) TooltipEvents.setTier(it, 6)
 for (def it in mithrilliumItems) TooltipEvents.setTier(it, 11)
-for (def it in infusionItems) TooltipEvents.setTier(it, 14)
+for (def it in infusionItems) TooltipEvents.setTier(it, 11)
 for (def it in hoannaItems) TooltipEvents.setTier(it, 14)
 for (def it in voidItems) TooltipEvents.setTier(it, 14)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in removeCrafting) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

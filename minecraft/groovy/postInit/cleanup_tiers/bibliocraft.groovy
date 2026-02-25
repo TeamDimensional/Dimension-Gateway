@@ -7,18 +7,17 @@ def mitem(name, k=0) {
 
 def quartzItems = [mitem("dinnerplate")]
 def goldItems = [
-    mitem("bell"), mitem("cookiejar"), mitem("compass"), mitem("plumbline"), mitem("bibliodrill"), mitem("biblioglasses", 2)
+    mitem("bell"), mitem("cookiejar"), mitem("compass"), mitem("plumbline"), mitem("bibliodrill"), mitem("biblioglasses", 2), mitem("biblioredbook")
 ]
 for (int i in 0..15) goldItems.add(mitem("lanterngold", i))
 for (int i in 0..15) goldItems.add(mitem("lampgold", i))
 
 def bookPrinting = [
     mitem("typesettingtable"), mitem("printingpress"), mitem("bibliochase"), mitem("printplate"), mitem("enchantedplate"),
-    mitem("biblioredbook")
 ]
 
 def hideFromJei = [mitem("bibliocreativelock"), mitem("markerpole"), mitem("clipboard")]
-for (int i in 0..5) hideFromJei.add(mitem("bookcasecreative", i))
+for (int i in 0..6) hideFromJei.add(mitem("bookcasecreative", i))
 
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)
 for (def it in goldItems) TooltipEvents.setTier(it, 3)

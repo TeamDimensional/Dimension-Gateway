@@ -44,6 +44,7 @@ def centrifugeReplacements = [
     [item("factorytech:ingot", 1), item("thermalfoundation:material", 133)],
     [item("factorytech:ingot", 3), item("thermalfoundation:material", 162)],
 ]
+def removedItems = [item("factorytech:ore_dust", 3), item("factorytech:ore_dust", 10)]
 def electroplaterReplacements = [
     item("libvulpes:productdust", 4),
     item("immersiveengineering:metal", 9),
@@ -72,6 +73,11 @@ mods.factorytech.centrifuge.streamRecipes()
         for (def it in centrifugeReplacements) {
             if (it[0] in recipe.input()) {
                 return true // FT makes oredicted recipes, so it's fine.
+            }
+        }
+        for (def it in removedItems) {
+            if (it in recipe.input()) {
+                return true
             }
         }
         for (def x in recipe.output()) {

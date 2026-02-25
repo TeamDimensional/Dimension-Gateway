@@ -68,7 +68,7 @@ def empoweringItems = [
     mitem("block_shock_suppressor"), mitem("block_player_interface"), mitem("block_miner"),
     mitem("block_laser_relay_advanced"), mitem("block_laser_relay_extreme"), mitem("block_xp_solidifier"),
     mitem("block_lava_factory_controller"), mitem("block_misc", 8), mitem("block_giant_chest_large"), mitem("block_fishing_net"),
-    mitem("block_furnace_solar"), mitem("block_item_repairer"), mitem("block_greenhouse_glass"), mitem("block_phantom_booster"),
+    mitem("block_item_repairer"), mitem("block_greenhouse_glass"), mitem("block_phantom_booster"),
     mitem("item_engineer_goggles_advanced"), mitem("item_filling_wand"), mitem("item_player_probe"), mitem("item_spawner_changer"),
     mitem("item_misc", 24), mitem("item_medium_to_large_crate_upgrade"), mitem("item_growth_ring"), mitem("item_tele_staff"),
     mitem("item_wings_of_the_bats"), mitem("item_battery_triple"), mitem("item_battery_quadruple"), mitem("item_battery_quintuple"),
@@ -87,7 +87,7 @@ for (def i in 0..5) {
     empoweringItems.add(mitem("item_crystal_empowered", i))
 }
 
-def removeRecipes = [mitem("block_coal_generator"), mitem("item_resonant_rice")]
+def removeRecipes = [mitem("block_coal_generator"), mitem("item_resonant_rice"), mitem("block_furnace_solar")]
 for (def i in 0..5) removeRecipes.add(mitem("item_crystal_shard", i))
 
 def hideFromJei = [
@@ -99,7 +99,8 @@ for (def i in 0..6) hideFromJei.add(mitem("item_jam", i))
 // crystal shard packing
 for (def i in [188, 194, 200, 206, 212, 218]) crafting.remove("actuallyadditions:recipes${i}")
 
-for (def it in earlyItems) TooltipEvents.setTier(it, 3)
+for (def it in earlyItems) TooltipEvents.setTier(it, 4)
+TooltipEvents.setTier(mitem("item_dust", 4), 3)  // lapis dust
 for (def it in mainItems) TooltipEvents.setTier(it, 4)
 for (def it in laserItems) TooltipEvents.setTier(it, 4)
 for (def it in obsidianItems) TooltipEvents.setTier(it, 6)

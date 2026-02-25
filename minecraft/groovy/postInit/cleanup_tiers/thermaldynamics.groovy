@@ -6,7 +6,7 @@ def mitem(name, k=0) {
 }
 
 def normalItems = [
-    mitem("duct_0"), mitem("duct_16"), mitem("duct_16", 1), mitem("duct_32"), mitem("duct_32", 1), mitem("duct_48"),
+    mitem("duct_0"), mitem("duct_16"), mitem("duct_16", 1), mitem("duct_16", 2), mitem("duct_16", 3), mitem("duct_32"), mitem("duct_32", 1), mitem("duct_48"),
     mitem("servo"), mitem("servo", 1), mitem("filter"), mitem("filter", 1), mitem("cover"),
 ]
 
