@@ -90,7 +90,7 @@ def tier9 = [
     fluid("ethyne"), fluid("tetrafluoroethene"), fluid("hydrogen_sulfide"), fluid("ammonium_sulfate_solution"),
     fluid("ammonium_bisulfate_solution"), fluid("ammonium_persulfate_solution"),
     fluid("hydroquinone_solution"), fluid("sodium_hydroquinone_solution"), fluid("potassium_hydroquinone_solution"),
-    fluid("polytetrafluoroethene"), fluid("polyethersulfone"), fluid("pyro_cinnabar_mixture"),
+    fluid("polytetrafluoroethene"), fluid("polyethersulfone"),
     fluid("lithium"), fluid("magnesium"), fluid("manganese"),
     fluid("fluorite"), fluid("villiaumite"), fluid("carobbiite"), fluid("preheated_water"), fluid("sic_vapor"),
     fluid("dimethyldifluorosilane"), fluid("salt_water"), fluid("depleted_hydrogen_sulfide"),
@@ -106,7 +106,7 @@ for (def c in GatewayHelpers.qmdChemiFluids) tier9.add(fluid(c))
 
 def tier10 = [
     // Advanced Rocketry
-    fluid("rocketfuel"), fluid("titanium_aluminum_nitride"), fluid("titanium_aluminide"),
+    fluid("rocketfuel"), fluid("titanium_aluminum_nitride"), fluid("titanium_aluminide"), fluid("pyro_cinnabar_mixture"),
     // Moon
     fluid("uranium"), fluid("uranium_titanide_mixture"), fluid("thorium"), 
 ]

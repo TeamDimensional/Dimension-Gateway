@@ -23,7 +23,9 @@ def magicalTier = [
     mitem("corruptioncleaner"), mitem("magicalmirror"), mitem("controlrod"), mitem("redstonetransmitter"), mitem("magicalhopper"),
     mitem("metadatamanager"), mitem("blockbreaker"), mitem("chest"), mitem("advbreaker"), mitem("intersector"), mitem("mrumover1"), mitem("bound_gem"), mitem("magicmonocle"),
     mitem("itemfilter"), mitem("itemfilter", 2), mitem("monsterclinger"), mitem("soulstone"), mitem("mrumover_t2"), mitem("craftingframe"),
-    mitem("magicalalloy"), mitem("echoldingchamber"), mitem("gun.pistol"), mitem("gun.rifle"), mitem("gun.sniper"), mitem("gun.gatling"),
+    mitem("echoldingchamber"), mitem("gun.pistol"), mitem("gun.rifle"), mitem("gun.sniper"), mitem("gun.gatling"),
+    // normally it's not here, but I want to make end exploration nicer
+    mitem("magicalwings"),
 ] + elementalTools
 for (int i in 0..3) magicalTier.add(mitem("weaponmaker", i))
 for (int i in 0..4) magicalTier.add(mitem("storage", i))
@@ -60,8 +62,8 @@ def industrialTier = [
     mitem("crystalextractor"), mitem("mrucoilhardener"), mitem("mrucoil"), mitem("mimic"), mitem("magicalslag"), mitem("frozenmace"),
     mitem("magicaldigger"), mitem("spawnercollector"), mitem("staffoflife"), mitem("biomewand"), mitem("emeraldheart"),
     mitem("magicalshield"), mitem("spikyshield"), mitem("chaosfork"), mitem("magicwaterbottle"), mitem("magicalporkchop"), mitem("playerlist"),
-    mitem("magmaticstaff"), mitem("magicallantern"), mitem("magnetizingstaff"), mitem("chunkloader"), mitem("dimtransciever"), mitem("magicalwings"),
-    mitem("holymace"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"), mitem("crystalformer"),
+    mitem("magmaticstaff"), mitem("magicallantern"), mitem("magnetizingstaff"), mitem("chunkloader"), mitem("dimtransciever"),
+    mitem("holymace"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"), mitem("crystalformer"), mitem("magicalalloy"),
 ]
 for (int i in 0..5) industrialTier.add(mitem("rightclicker", i))
 for (int i in 0..15) industrialTier.add(mitem("essence", i))

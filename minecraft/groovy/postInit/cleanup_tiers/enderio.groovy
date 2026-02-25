@@ -143,6 +143,8 @@ for (def it in advancedItems) TooltipEvents.setTier(it, 11)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
+TooltipEvents.setTier(item("enderio:item_material", 30), 7)
+TooltipEvents.setTier(item("enderio:item_material", 31), 7)
 
 // for (def it in removeSagMillInputs) mods.enderio.sag_mill.removeByInput(it)
 for (def it in removeAlloy) mods.enderio.alloy_smelter.remove(it)

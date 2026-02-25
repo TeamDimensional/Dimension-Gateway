@@ -66,6 +66,8 @@ def tier6Items = [
 
 def thermalItems = [
     mitem("graham_cracker"), mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"),
+    // emerald oreproc for early beryllium
+    mitem("dust", 9),
 ]
 
 def uraniumItems = [
@@ -160,7 +162,7 @@ for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
-for (def it in uraniumItems) TooltipEvents.setTier(it, 10)
+for (def it in uraniumItems) TooltipEvents.setTier(it, 8)  // from thermal
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)
 for (def it in moltenSaltItems) TooltipEvents.setTier(it, 13)
 for (def it in hxItems) TooltipEvents.setTier(it, 13)

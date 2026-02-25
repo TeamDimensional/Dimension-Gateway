@@ -40,7 +40,7 @@ for (def color in GatewayHelpers.colors)
 
 def endItems = [
     mitem("end_stone"), mitem("purpur_block"), mitem("purpur_pillar"), mitem("purpur_stairs"), mitem("purpur_slab"), mitem("end_bricks"),
-    mitem("end_portal_frame"), mitem("dragon_egg"), mitem("skull", 5), mitem("chorus_plant"), mitem("chorus_flower"), mitem("end_crystal"),
+    mitem("dragon_egg"), mitem("skull", 5), mitem("chorus_plant"), mitem("chorus_flower"), mitem("end_crystal"),
     mitem("ender_pearl"), mitem("chorus_fruit"), mitem("chorus_fruit_popped"), mitem("end_rod"), mitem("dragon_breath"), mitem("lingering_potion"),
     mitem("shulker_shell"), mitem("tipped_arrow"), mitem("ender_chest"), mitem("elytra"),
 ] + shulkerBoxes
@@ -50,7 +50,7 @@ def potionItems = [mitem("brewing_stand"), mitem("potion"), mitem("splash_potion
 def hideFromJei = [
     mitem("mob_spawner"), mitem("command_block"), mitem("barrier"), mitem("knowledge_book"), mitem("repeating_command_block"),
     mitem("chain_command_block"), mitem("structure_void"), mitem("structure_block"), mitem("filled_map"), mitem("command_block_minecart"),
-    mitem("written_book")
+    mitem("written_book"), mitem("end_portal_frame")
 ]
 for (int i in 0..5) hideFromJei.add(mitem("monster_egg", i))
 

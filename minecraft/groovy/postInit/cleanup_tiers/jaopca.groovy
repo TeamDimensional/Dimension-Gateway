@@ -51,13 +51,13 @@ def all_materials = fluid_materials + [
 def prefixes = [
     "ore_cluster": 5,
     "ore_crystal": 3,
-    "shard": 7,
+    "shard": 8,
     "clump": 3,
     "dirty_dust": 3,
 ]
 
 def fluid_prefixes = [
-    "solution": 6,
+    "solution": 4,
 ]
 
 for (def m in all_materials) {

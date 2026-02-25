@@ -1,3 +1,5 @@
+// priority: 50
+
 import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
@@ -22,7 +24,7 @@ def creativeItems = [
 ]
 
 def removeRecipes = [
-    mitem("machine", 1), mitem("machine", 2), mitem("machine", 8), mitem("machine", 12), mitem("machine", 13),
+    mitem("machine", 2), mitem("machine", 8), mitem("machine", 12), mitem("machine", 13),
     mitem("device", 1), mitem("device", 2), mitem("device", 3), mitem("device", 4), mitem("device", 7), mitem("device", 10),
     mitem("dynamo"), mitem("dynamo", 1), mitem("dynamo", 2), mitem("dynamo", 3), mitem("dynamo", 4), mitem("dynamo", 5),
 ]
@@ -41,3 +43,5 @@ for (def it in advancedAugments) TooltipEvents.setTier(it, 8)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
+
+mods.thermalexpansion.pulverizer.removeAll()

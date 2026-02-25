@@ -202,9 +202,16 @@ def addOre(key, byproducts, addFluidOps) {
     mods.enderio.sag_mill.recipeBuilder()
         .input(itemOre | itemCluster | itemCrystal)
         .output(itemShard)
-        .output(itemShard, 0.05)
-        .output(outputs[byproducts[3]][0], 0.25)
+        .output(itemShard, 0.1)
+        .output(outputs[byproducts[3]][0], 0.15)
         .bonusTypeMultiply()
+        .register()
+
+    mods.thermalexpansion.pulverizer.recipeBuilder()
+        .input(itemOre | itemCluster | itemCrystal)
+        .output(itemShard, outputs[byproducts[3]][0])
+        .chance(10)  // this is so low, because Secondary Sieve is busted
+        .energy(16000)
         .register()
 
     mods.calculator.flawless_calculator.recipeBuilder()
