@@ -16,8 +16,6 @@ def earlyItems = [
 for (def a in ["wall", "stair", "slab"])
     for (def b in ["", "chiseled_", "pillar_"])
         earlyItems.add(mitem("block_${b}quartz_${a}"))
-for (def a in armor)
-    earlyItems.add(mitem("item_${a}_quartz"))
 
 def mainItems = [
     mitem("block_battery_box"), mitem("block_item_viewer_hopping"), mitem("block_farmer"), mitem("block_display_stand"),
