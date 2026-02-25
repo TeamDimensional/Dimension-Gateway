@@ -104,3 +104,14 @@ crafting.shapelessBuilder()
         .input(ore("plateIron"), item("minecraft:paper"))
         .register()
 
+// Natural Altar
+mods.naturesaura.ritual.removeByOutput(item("naturesaura:nature_altar"))
+mods.naturesaura.ritual.recipeBuilder()
+    .name("tier3/nat_altar")
+    .input(item("minecraft:stone"), item("minecraft:stone"), item("roots:runic_dust"), item("naturesaura:gold_leaf"),
+           item("naturesaura:token_joy"), item("thermalfoundation:material", 160), item("thermalfoundation:material", 162))
+    .output(item("naturesaura:nature_altar"))
+    .time(250)
+    .sapling(item("minecraft:sapling", 2))
+    .register()
+

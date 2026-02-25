@@ -46,17 +46,6 @@ crafting.shapedBuilder()
         .key("G", ore("plateGold")).key("T", item("storagedrawers:upgrade_storage", 1))
         .register()
 
-// Natural Altar
-mods.naturesaura.ritual.removeByOutput(item("naturesaura:nature_altar"))
-mods.naturesaura.ritual.recipeBuilder()
-    .name("tier4/nat_altar")
-    .input(item("minecraft:stone"), item("minecraft:stone"), item("roots:runic_dust"), item("naturesaura:gold_leaf"),
-           item("naturesaura:token_joy"), item("actuallyadditions:item_crystal", 2), item("actuallyadditions:item_crystal", 2))
-    .output(item("naturesaura:nature_altar"))
-    .time(250)
-    .sapling(item("minecraft:sapling", 2))
-    .register()
-
 // Blaze Superfuel
 mods.embers.mixer.recipeBuilder()
         .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 50)
