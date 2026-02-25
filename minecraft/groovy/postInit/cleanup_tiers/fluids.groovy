@@ -25,7 +25,7 @@ def tier4 = [
     // Ore level
     fluid("emerald"), fluid("diamond"),
     // Actually Additions
-    fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"),
+    fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("blaze_superfuel"),
     // Embers
     fluid("oil_soul"), fluid("oil_dwarf"), fluid("gas_dwarf"), fluid("dawnstone"), fluid("alchemical_redstone"), fluid("steam"), fluid("mercury"),
 ]

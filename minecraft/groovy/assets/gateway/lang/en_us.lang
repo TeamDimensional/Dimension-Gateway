@@ -3,36 +3,11 @@ item.gateway.resonating_gem.name=Radioinfused Tanzanite
 item.gateway.impure_resonating_gem.name=Impure Radioinfused Tanzanite
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 
-item.gateway.detail_basic_fire.name=Fire-Attuned Details
-item.gateway.detail_basic_water.name=Water-Attuned Details
-item.gateway.detail_basic_air.name=Air-Attuned Details
-item.gateway.detail_basic_earth.name=Earth-Attuned Details
-item.gateway.detail_advanced_fire.name=Activated Fire Details
-item.gateway.detail_advanced_water.name=Activated Water Details
-item.gateway.detail_advanced_air.name=Activated Air Details
-item.gateway.detail_advanced_earth.name=Activated Earth Details
-item.gateway.detail_hellfire.name=Details of Hellfire
-item.gateway.detail_toxic.name=Details of Toxicity
-item.gateway.detail_tenebral.name=Details of the Dark
-item.gateway.detail_radiating.name=Details of Radiation
-
-item.gateway.substrate_basic_fire.name=Fire Substrate
-item.gateway.substrate_basic_water.name=Water Substrate
-item.gateway.substrate_basic_air.name=Air Substrate
-item.gateway.substrate_basic_earth.name=Earth Substrate
-item.gateway.substrate_ender_fire.name=Ender-Infused Fire Substrate
-item.gateway.substrate_ender_water.name=Ender-Infused Water Substrate
-item.gateway.substrate_ender_air.name=Ender-Infused Air Substrate
-item.gateway.substrate_ender_earth.name=Ender-Infused Earth Substrate
-item.gateway.substrate_magical_fire.name=Magically Reinforced Fire Substrate
-item.gateway.substrate_magical_water.name=Magically Reinforced Water Substrate
-item.gateway.substrate_magical_air.name=Magically Reinforced Air Substrate
-item.gateway.substrate_magical_earth.name=Magically Reinforced Earth Substrate
-
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution
 fluid.gateway.uranium_titanide_mixture.name=Uranium Titanide Mixture
 fluid.gateway.pyro_cinnabar_mixture.name=Pyrotheum-Cinnabar Mixture
+fluid.gateway.blaze_superfuel.name=Blaze Superfuel
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
 

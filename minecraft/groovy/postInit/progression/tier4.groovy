@@ -56,3 +56,9 @@ mods.naturesaura.ritual.recipeBuilder()
     .time(250)
     .sapling(item("minecraft:sapling", 2))
     .register()
+
+// Blaze Superfuel
+mods.embers.mixer.recipeBuilder()
+        .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 50)
+        .fluidOutput(fluid("blaze_superfuel") * 150)
+        .register()
