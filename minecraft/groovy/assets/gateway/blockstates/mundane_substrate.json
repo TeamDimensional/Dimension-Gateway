@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "gateway:mundane_substrate"
+    }
+  }
+}

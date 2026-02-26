@@ -34,6 +34,8 @@ mods.immersiveengineering.crusher.removeByInput(item("aetherworks:aether_ore"))
 mods.immersiveengineering.crusher.removeByInput(item("theaurorian:auroriancoalore"))
 mods.immersiveengineering.crusher.removeByInput(item("theaurorian:geodeore"))
 for (def i in [0, 2]) mods.immersiveengineering.crusher.removeByInput(item("deepresonance:resonating_ore", i))
+mods.immersiveengineering.crusher.removeByInput(item("astralsorcery:blockcustomsandore"))
+mods.immersiveengineering.crusher.removeByInput(item("astralsorcery:blockcustomore", 1))
 
 // Crusher - removing bugged recipes for no-longer-existing ores
 mods.immersiveengineering.crusher.removeByOutput(item("nuclearcraft:dust", 12))
@@ -68,6 +70,8 @@ mods.actuallyadditions.crusher.removeByInput(item("aether_legacy:ambrosium_ore")
 mods.actuallyadditions.crusher.removeByInput(item("aetherworks:aether_ore"))
 mods.actuallyadditions.crusher.removeByInput(item("theaurorian:auroriancoalore"))
 mods.actuallyadditions.crusher.removeByInput(item("theaurorian:geodeore"))
+mods.actuallyadditions.crusher.removeByInput(item("astralsorcery:blockcustomsandore"))
+mods.actuallyadditions.crusher.removeByInput(item("astralsorcery:blockcustomore", 1))
 
 // Broken recipes - same as above
 mods.actuallyadditions.crusher.removeByOutput(item("nuclearcraft:dust", 12))
@@ -141,6 +145,8 @@ for (def i in [3, 4]) mods.bloodmagic.alchemy_table.removeByOutput(item("qmd:dus
 mods.bloodmagic.alchemy_table.removeByOutput(item("libvulpes:productdust") * 2)
 for (def i in [4, 7]) mods.bloodmagic.alchemy_table.removeByOutput(item("actuallyadditions:item_dust", i) * 2)
 mods.bloodmagic.alchemy_table.removeByOutput(item("prodigytech:emerald_dust") * 2)
+mods.bloodmagic.alchemy_table.removeByOutput(item("jaopca:dust.aquamarine") * 2)
+mods.bloodmagic.alchemy_table.removeByOutput(item("astralsorcery:itemcraftingcomponent", 2) * 2)
 
 // TODO - ore leacher
 // TODO - mass spectrometer

@@ -9,3 +9,10 @@ class BlockWiltedDaisy extends BlockBush {
 }
 
 content.registerBlock("wilted_daisy", new BlockWiltedDaisy())
+
+content.createBlock("metallic_substrate").register()
+content.createBlock("light_metal_substrate").register()
+content.createBlock("heavy_metal_substrate").register()
+content.createBlock("mundane_substrate").register()
+content.createBlock("gemstone_substrate").register()
+content.createBlock("exotic_substrate").register()

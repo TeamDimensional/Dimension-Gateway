@@ -9,8 +9,7 @@ Byproduct 5 - tier 13
 // Remove registries that have to be removed now
 mods.prodigytech.rotary_grinder.removeAll()
 mods.prodigytech.ore_refinery.removeAll()
-// what the fuck?
-if (!isReloading()) mods.enderio.sag_mill.removeAll()
+mods.enderio.sag_mill.removeAll()
 
 // TODO: figure out why Technetium (Resonating) does not have recipes added FOR THE ORE,
 // only for the native cluster
@@ -47,6 +46,7 @@ def oresMetallic = [
     "Titanium": ["Iron", "Aluminum", "Iron", "Ardite"],
     "Iridium": ["Platinum", "Cobalt", "Platinum", "Osmium"],
     "LiquifiedCoralium": ["Cobalt", "Titanium", "Platinum", "Diamond"],
+    "AstralStarmetal": ["AstralStarmetal", "Iron", "Moonstone", "Iridium"],
 ]
 
 def oresNonMetallic = [
@@ -64,6 +64,7 @@ def oresNonMetallic = [
     "Dilithium": ["Lithium", "Dilithium", "Lapis", "Magnesium"],
     "Resonating": ["Redstone", "Lead", "Redstone", "Uranium"],
     "Amber": ["Amber", "AirElemental", "EarthElemental", "Ambrosium"],
+    "Aquamarine": ["Aquamarine", "WaterElemental", "WaterElemental", "Aquamarine"],
 ]
 
 // First entry is a crusher byproduct (i.e. dust), second entry is a furnace output (i.e. ingot)
@@ -118,6 +119,8 @@ outputs = [
     "Quartz": [item("minecraft:quartz"), item("minecraft:quartz")],
     "Titanium": [item("libvulpes:productdust", 7), item("libvulpes:productingot", 7)],
     "Iridium": [item("thermalfoundation:material", 71), item("thermalfoundation:material", 135)],
+    "Aquamarine": [item("astralsorcery:itemcraftingcomponent") * 2, item("astralsorcery:itemcraftingcomponent") * 2],
+    "AstralStarmetal": [item("astralsorcery:itemcraftingcomponent", 2), item("astralsorcery:itemcraftingcomponent", 1)],
 ]
 
 outputFluids = [  // overrides from default fluid(name) * 144

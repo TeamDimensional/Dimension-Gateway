@@ -54,6 +54,9 @@ def tier7 = [
     fluid("xu_evil_metal"), fluid("xu_enchanted_metal"),
     // Integrated Dynamics
     fluid("menrilresin"),
+    // Industrial Foregoing
+    fluid("essence"), fluid("meat"), fluid("latex"), fluid("sewage"),
+    fluid("sludge"), fluid("biofuel"), fluid("if.pink_slime"),
 ]
 
 def tier8 = [
@@ -97,11 +100,8 @@ def tier9 = [
     fluid("dimethyldifluorosilane"), fluid("salt_water"), fluid("depleted_hydrogen_sulfide"),
     fluid("polydimethylsilylene"), fluid("polyphenylene_sulfide"), fluid("sodium_sulfide"), fluid("potassium_sulfide"),
     fluid("difluorobenzene"), fluid("dfdps"), fluid("polymethylsilylene_methylene"),
-    // Industrial Foregoing
     fluid("ferroboron"), fluid("tough"), fluid("diborane"), fluid("boric_acid"), fluid("boron_nitride_solution"),
     fluid("bas"), fluid("boron"),
-    fluid("essence"), fluid("meat"), fluid("latex"), fluid("sewage"),
-    fluid("sludge"), fluid("biofuel"), fluid("if.pink_slime"), fluid("if.ore_fluid_raw"), fluid("if.ore_fluid_fermented"),
 ]
 for (def c in GatewayHelpers.qmdChemiFluids) tier9.add(fluid(c))
 
@@ -164,6 +164,7 @@ def removeFluids = [
     "ftglowstone", "solution_ambrosium", "solution_aurorian_geode",
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
     "boiling_potato_juice", "boiling_wormwood", "boiling_beetroot_soup", "vodka", "umber_ale", "absinthe", "snowpoff",
+    "aquamarine", "solution_aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
 ]
 
 def ncIsotopes = [

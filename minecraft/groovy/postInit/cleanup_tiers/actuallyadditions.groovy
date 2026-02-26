@@ -74,7 +74,7 @@ def empoweringItems = [
     mitem("item_wings_of_the_bats"), mitem("item_battery_triple"), mitem("item_battery_quadruple"), mitem("item_battery_quintuple"),
     mitem("item_drill_upgrade_speed_iii"), mitem("item_drill_upgrade_silk_touch"), mitem("item_drill_upgrade_fortune"),
     mitem("item_drill_upgrade_fortune_ii"), mitem("item_drill_upgrade_five_by_five"), mitem("item_phantom_connector"),
-    mitem("item_disenchanting_lens"), item("actuallyadditions:item_mining_lens"),
+    mitem("item_disenchanting_lens"),
 ]
 
 for (def it in ["face", "_placer", "_liquiface", "_energyface", "_redstoneface", "_breaker"])
@@ -87,7 +87,8 @@ for (def i in 0..5) {
     empoweringItems.add(mitem("item_crystal_empowered", i))
 }
 
-def removeRecipes = [mitem("block_coal_generator"), mitem("item_resonant_rice"), mitem("block_furnace_solar")]
+// It turns out that mining lens only works on stone and netherrack, which makes it absolutely worthless in this pack.
+def removeRecipes = [mitem("block_coal_generator"), mitem("item_resonant_rice"), mitem("block_furnace_solar"), mitem("item_mining_lens")]
 for (def i in 0..5) removeRecipes.add(mitem("item_crystal_shard", i))
 
 def hideFromJei = [

@@ -23,10 +23,12 @@ def advancedItems = [
     mitem("blockcelestialcollectorcrystal"), mitem("blockinfusedwood", 6),
 ]
 
-def hideFromJei = [mitem("blockfaketree"), mitem("blockportalnode")]
+def removeAstralRecipes = [mitem("blockmachine", 1)]
+def hideFromJei = [mitem("blockfaketree"), mitem("blockportalnode")] + removeAstralRecipes
 
 TooltipEvents.setModTier("astralsorcery", 6)
 for (def x in marbleItems) TooltipEvents.setTier(x, 1)
 for (def x in aquamarineItems) TooltipEvents.setTier(x, 3)
 for (def x in advancedItems) TooltipEvents.setTier(x, 12)
 for (def x in hideFromJei) GatewayHelpers.hide(x)
+for (def x in removeAstralRecipes) mods.astralsorcery.starlight_altar.removeByOutput(x)

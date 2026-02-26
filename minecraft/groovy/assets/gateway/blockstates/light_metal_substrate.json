@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "gateway:light_metal_substrate"
+    }
+  }
+}
