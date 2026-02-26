@@ -1,0 +1,17 @@
+filename = 'soot_extended_life-1.12.0.jar'
+name = 'Soot Unofficial Extended Life'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'soot_extended_life-1.12.0.jar'
+
+[download]
+hash = '6301dc23073bc36c0bddd248f70857e28d372aec'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6079170
+project-id = 982730
