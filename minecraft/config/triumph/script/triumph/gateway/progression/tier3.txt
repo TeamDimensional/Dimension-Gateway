@@ -1,20 +1,10 @@
-
-//Set icon item
 setIcon(<tconstruct:materials>)
-
-//Set title String
-setTitle("Metallurgy")
-
-//Set description String
-setDescription("Create Seared Bricks")
-
-//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setTitle("Early Metallurgy")
+setDescription("Create Seared Bricks and begin your first technology with Immersive Engineering")
 addParent("triumph:gateway/progression/tier2")
+setPos(-110,0)
 
-//Set the position
-setPos(107,17)
-
-criteria = addCriteria("hasSmeltery", "minecraft:inventory_changed")
+criteria = addCriteria("tier3", "minecraft:inventory_changed")
 criteria.setItem("tconstruct:materials")
 
 addRewardFunction("triumph:tier3")

@@ -1,23 +1,10 @@
-
-//Set icon item
 setIcon(<theaurorian:aurorianportalframebricks>)
-
-//Set title String
 setTitle("Temple Run")
-
-//Set description String
-setDescription("Enter the Aurorian dimension")
-
-//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+setDescription("Enter Aurorian to expand your grasp on natural sciences with Roots and Nature's Aura")
 addParent("triumph:gateway/root")
+setPos(-130,52)
 
-//Set the position
-setPos(59,17)
-
-//Adds criteria named "entered_nether" with the trigger type "minecraft:location". This function returns the criteria as an object
-criteria = addCriteria("entered_aurorian", "minecraft:location")
-
-//Sets the required dimension id for the criteria. This is the dimension the player must be in.
+criteria = addCriteria("tier2", "minecraft:location")
 criteria.setDimID(424)
 
 addRewardFunction("triumph:tier2")

@@ -1,0 +1,10 @@
+setIcon(<aether_legacy:aether_portal_frame>)
+setTitle("Heavenly Research")
+setDescription("Enter Aether and expand your automation with Industrial Foregoing")
+addParent("triumph:gateway/progression/tier6")
+setPos(-30,0)
+
+criteria = addCriteria("tier7", "minecraft:location")
+criteria.setDimID(4)
+
+addRewardFunction("triumph:tier7")

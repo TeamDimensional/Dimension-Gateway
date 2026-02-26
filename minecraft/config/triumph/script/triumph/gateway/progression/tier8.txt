@@ -1,0 +1,10 @@
+setIcon(<thermalexpansion:frame>)
+setTitle("Electrical Engineering")
+setDescription("Begin Thermal Expansion and unlock perfect automation with Applied Energistics and Factory Tech")
+addParent("triumph:gateway/progression/tier7")
+setPos(-10,52)
+
+criteria = addCriteria("tier8", "minecraft:inventory_changed")
+criteria.setItem("thermalexpansion:frame")
+
+addRewardFunction("triumph:tier8")

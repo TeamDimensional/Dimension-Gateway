@@ -1,0 +1,10 @@
+setIcon(<minecraft:ender_eye>)
+setTitle("Sky Exploration")
+setDescription("Visit The End, examine stars with Astral Sorcery, and channel thunderstorms with Calculator")
+addParent("triumph:gateway/progression/tier5")
+setPos(-50,52)
+
+criteria = addCriteria("tier6", "minecraft:location")
+criteria.setDimID(1)
+
+addRewardFunction("triumph:tier6")

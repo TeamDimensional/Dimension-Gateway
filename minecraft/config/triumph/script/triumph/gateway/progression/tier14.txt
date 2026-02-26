@@ -1,0 +1,10 @@
+setIcon(<extrautils2:decorativesolid:8>)
+setTitle("Fabled Convergence")
+setDescription("Finish magic progression with the power of rainbows")
+addParent("triumph:gateway/progression/tier13")
+setPos(110,52)
+
+criteria = addCriteria("tier14", "minecraft:inventory_changed")
+criteria.setItem("extrautils2:decorativesolid", 8)
+
+addRewardFunction("triumph:tier14")

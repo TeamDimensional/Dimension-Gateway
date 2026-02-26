@@ -1,0 +1,10 @@
+setIcon(<embers:ember_bore>)
+setTitle("Blazing Performance")
+setDescription("Create an Ember Bore and study fuel refinement with Embers, Actually Additions and Immersive Petroleum")
+addParent("triumph:gateway/progression/tier3")
+setPos(-90,52)
+
+criteria = addCriteria("tier4", "minecraft:inventory_changed")
+criteria.setItem("embers:ember_bore")
+
+addRewardFunction("triumph:tier4")

@@ -1,0 +1,10 @@
+setIcon(<enderio:item_material:1>)
+setTitle("Monsters' University")
+setDescription("Create and destroy living matter with EnderIO, Blood Magic and Fission reactors")
+addParent("triumph:gateway/progression/tier10")
+setPos(50,0)
+
+criteria = addCriteria("tier11", "minecraft:inventory_changed")
+criteria.setItem("enderio:item_material", 1)
+
+addRewardFunction("triumph:tier11")

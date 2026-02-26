@@ -18,7 +18,7 @@ TooltipEvents.setTierName(6, "Sky Exploration")
 TooltipEvents.setUnlock(item("minecraft:ender_eye"), 6)
 
 TooltipEvents.setTierName(7, "Heavenly Research")
-TooltipEvents.setUnlock(item("naturesaura:offering_table"), 7)
+TooltipEvents.setUnlock(item("aether_legacy:aether_portal_frame"), 7)
 
 TooltipEvents.setTierName(8, "Electrical Engineering")
 TooltipEvents.setUnlock(item("thermalexpansion:frame"), 8)

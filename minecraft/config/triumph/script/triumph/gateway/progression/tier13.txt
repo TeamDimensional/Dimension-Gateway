@@ -1,0 +1,10 @@
+setIcon(<abyssalcraft:shadowgem>)
+setTitle("Constructing Fallout")
+setDescription("Venture into the Abyss and recolor the world with Molten Salt Reactors")
+addParent("triumph:gateway/progression/tier12")
+setPos(90,0)
+
+criteria = addCriteria("tier13", "minecraft:inventory_changed")
+criteria.setItem("abyssalcraft:shadowgem")
+
+addRewardFunction("triumph:tier13")

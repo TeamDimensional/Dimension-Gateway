@@ -1,0 +1,10 @@
+setIcon(<actuallyadditions:block_empowerer>)
+setTitle("Chemical Mayhem")
+setDescription("Finish Actually Additions and study polymer chemistry with Nuclearcraft")
+addParent("triumph:gateway/progression/tier8")
+setPos(10,0)
+
+criteria = addCriteria("tier9", "minecraft:inventory_changed")
+criteria.setItem("actuallyadditions:block_empowerer")
+
+addRewardFunction("triumph:tier9")

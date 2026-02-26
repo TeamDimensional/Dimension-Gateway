@@ -1,0 +1,10 @@
+setIcon(<advancedrocketry:satellitebuilder>)
+setTitle("Stellar Culmination")
+setDescription("Harvest resources from Asteroids and find patterns in even the rarest constellations")
+addParent("triumph:gateway/progression/tier11")
+setPos(70,52)
+
+criteria = addCriteria("tier12", "minecraft:inventory_changed")
+criteria.setItem("advancedrocketry:satellitebuilder")
+
+addRewardFunction("triumph:tier12")

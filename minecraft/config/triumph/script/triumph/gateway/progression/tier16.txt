@@ -1,0 +1,10 @@
+setIcon(<storagedrawers:upgrade_creative>)
+setTitle("Beyond Creativity")
+setDescription("Achieve the Godhood")
+addParent("triumph:gateway/progression/tier15")
+setPos(150,52)
+
+criteria = addCriteria("tier16", "minecraft:inventory_changed")
+criteria.setItem("storagedrawers:upgrade_creative")
+
+addRewardFunction("triumph:tier16")
