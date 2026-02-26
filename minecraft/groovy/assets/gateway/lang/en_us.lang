@@ -8,7 +8,6 @@ tile.gateway.light_metal_substrate.name=Light Metal Substrate
 tile.gateway.heavy_metal_substrate.name=Heavy Metal Substrate
 tile.gateway.mundane_substrate.name=Mundane Material Substrate
 tile.gateway.gemstone_substrate.name=Gemstone Substrate
-tile.gateway.exotic_substrate.name=Exotic Material Substrate
 
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution

@@ -46,7 +46,7 @@ def oresMetallic = [
     "Titanium": ["Iron", "Aluminum", "Iron", "Ardite"],
     "Iridium": ["Platinum", "Cobalt", "Platinum", "Osmium"],
     "LiquifiedCoralium": ["Cobalt", "Titanium", "Platinum", "Diamond"],
-    "AstralStarmetal": ["AstralStarmetal", "Iron", "Moonstone", "Iridium"],
+    "AstralStarmetal": ["AstralStarmetal", "Iron", "Moonstone", "Platinum"],
 ]
 
 def oresNonMetallic = [

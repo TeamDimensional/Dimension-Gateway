@@ -110,22 +110,3 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .primordium(25)
     .time(200)
     .register()
-
-// Exotic gives 34% chance of Starmetal Ore, and processing it with Secondary Sieves yields up to 3.5 Iridium per Ore,
-// for an average of 1.17 Iridium per Ore. Everything else is a bonus.
-TooltipEvents.setTier(item("gateway:exotic_substrate"), 12)
-mods.factorytech.compressor.recipeBuilder()
-    .input(item("gateway:light_metal_substrate"))
-    .fluidInput(fluid("iridium") * 144)
-    .output(item("gateway:exotic_substrate"))
-    .register()
-mods.prodigytech.atomic_reshaper.recipeBuilder()
-    .input(item("gateway:exotic_substrate"))
-    .output(item("astralsorcery:blockcustomore", 1), 10)   // starmetal
-    .output(item("libvulpes:ore0"), 4)  // Dilithium
-    .output(item("essentialcraft:oremithriline"), 5)
-    .output(item("deepresonance:resonating_ore", 2), 4)
-    .output(item("aetherworks:aether_ore"), 6)
-    .primordium(50)
-    .time(400)
-    .register()
