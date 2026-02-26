@@ -49,17 +49,16 @@ def stamps = ["bar", "flat", "gear", "plate", "rod", "round"]
 def removeRecipes = [
     mitem("archaic_circuit"), mitem("cinder_plinth"), mitem("field_chart"), mitem("mechanical_pump"),
 ]
-def removeFurnace = []
 for (def it in stamps) {
-    removeRecipes.add(mitem("stamp_${it}_raw"))
-    removeFurnace.add(mitem("stamp_${it}"))
+    items.add(mitem("stamp_${it}_raw"))
+    items.add(mitem("stamp_${it}"))
 }
 def removeAlchemy = [mitem("dust_metallurgic"), mitem("isolated_materia")]
 
 def hideFromJei = [
     mitem("alchemic_waste"), mitem("spark_plug"), mitem("item_gauge"), mitem("turret"),
     mitem("ashen_brick_slab_double"), mitem("ashen_stone_slab_double"), mitem("ashen_tile_slab_double"), mitem("block_caminite_brick_slab_double")
-] + removeRecipes + removeAlchemy + removeFurnace
+] + removeRecipes + removeAlchemy
 
 for (def it in ashItems) TooltipEvents.setTier(it, 2)
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
@@ -68,4 +67,3 @@ for (def it in breakerItems) TooltipEvents.setTier(it, 7)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-for (def it in removeFurnace) furnace.removeByOutput(it)

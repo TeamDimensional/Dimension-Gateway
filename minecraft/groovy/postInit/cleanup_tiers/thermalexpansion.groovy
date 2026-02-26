@@ -28,7 +28,7 @@ def removeRecipes = [
     mitem("device", 1), mitem("device", 2), mitem("device", 3), mitem("device", 4), mitem("device", 7), mitem("device", 10),
     mitem("dynamo"), mitem("dynamo", 1), mitem("dynamo", 2), mitem("dynamo", 3), mitem("dynamo", 4), mitem("dynamo", 5),
 ]
-for (def i in [257, 273, 288, 303, 304, 323, 336, 337, 352, 369, 448, 512, 513, 514, 515, 576, 640, 656, 672, 673, 674, 688, 704, 720])
+for (def i in [257, 273, 288, 303, 304, 323, 336, 352, 369, 448, 512, 513, 514, 515, 576, 640, 656, 672, 673, 674, 688, 704, 720])
     removeRecipes.add(mitem("augment", i))
 
 def hideFromJei = [
@@ -45,3 +45,13 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
 mods.thermalexpansion.pulverizer.removeAll()
+
+// Remove augments from JEI
+// Normally this is done automatically as the ingredient is hidden, but JEI adds both the machine and the augment into the left panel
+mods.jei.category.remove("thermalexpansion.pulverizer_petrotheum")
+mods.jei.category.remove("thermalexpansion.furnace_ore")
+mods.jei.category.remove("thermalexpansion.smelter_pyrotheum")
+mods.jei.category.remove("thermalexpansion.insolator_tree")
+mods.jei.category.remove("thermalexpansion.compactor_mint")
+mods.jei.category.remove("thermalexpansion.crucible_lava")
+mods.jei.category.remove("thermalexpansion.refinery_potion")
