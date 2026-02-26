@@ -15,7 +15,7 @@ def tier3 = [
     fluid("coal"), fluid("redstone"), fluid("glowstone"), fluid("quartz"), fluid("lapis"),
     // Tinker's Construct
     fluid("knightslime"), fluid("pigiron"), fluid("stone"), fluid("clay"), fluid("dirt"), fluid("glass"), fluid("blood"),
-    fluid("greenslime"), fluid("purpleslime"), fluid("blazing_blood"), fluid("blueslime"), fluid("venom"), fluid("notmilk"),
+    fluid("greenslime"), fluid("purpleslime"), fluid("blazing_blood"), fluid("blueslime"), fluid("venom"), fluid("notmilk"), fluid("sugar"),
     // Immersive Engineering
     fluid("plantoil"), fluid("ethanol"), fluid("biodiesel"), fluid("concrete"), fluid("potion"),
     fluid("oil"), fluid("diesel"), fluid("lubricant"), fluid("gasoline"), fluid("napalm"),
@@ -28,6 +28,7 @@ def tier4 = [
     fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("blaze_superfuel"),
     // Embers
     fluid("oil_soul"), fluid("oil_dwarf"), fluid("gas_dwarf"), fluid("dawnstone"), fluid("alchemical_redstone"), fluid("steam"), fluid("mercury"),
+    fluid("boiling_wort"), fluid("antimony"), fluid("dwarven_ale"), fluid("inner_fire"),
 ]
 
 def tier5 = [
@@ -83,7 +84,7 @@ def tier9 = [
     fluid("sulfuric_acid"), fluid("fluorite_water"), fluid("calcium_sulfate_solution"),
     fluid("sodium_fluoride_solution"), fluid("potassium_fluoride_solution"), fluid("sodium_hydroxide_solution"), fluid("potassium_hydroxide_solution"),
     fluid("chocolate_liquor"), fluid("cocoa_butter"), fluid("unsweetened_chocolate"), fluid("dark_chocolate"), fluid("milk_chocolate"),
-    fluid("sugar"), fluid("gelatin"), fluid("hydrated_gelatin"), fluid("marshmallow"),
+    fluid("gelatin"), fluid("hydrated_gelatin"), fluid("marshmallow"),
     fluid("lif"), fluid("bef2"), fluid("naoh"), fluid("koh"), fluid("sodium"), fluid("potassium"),
     fluid("emergency_coolant"), fluid("arsenic"), fluid("alugentum"), fluid("alumina"),
     fluid("benzene"), fluid("phenol"), fluid("fluorobenzene"), fluid("le_water"), fluid("he_water"), fluid("hydrogen_peroxide"),
@@ -162,6 +163,7 @@ def removeFluids = [
     "solution_aether", "mushroom_stew", "solution_zanite", "solution_aurorian_coal",
     "ftglowstone", "solution_ambrosium", "solution_aurorian_geode",
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
+    "boiling_potato_juice", "boiling_wormwood", "boiling_beetroot_soup", "vodka", "umber_ale", "absinthe", "snowpoff",
 ]
 
 def ncIsotopes = [
