@@ -1,0 +1,17 @@
+filename = 'Bubbles-2.4.9.jar'
+name = 'Bubbles'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Bubbles-2.4.9.jar'
+
+[download]
+hash = 'fc146ba779598154219c383a71cb5302e4e5c449'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6807550
+project-id = 995393

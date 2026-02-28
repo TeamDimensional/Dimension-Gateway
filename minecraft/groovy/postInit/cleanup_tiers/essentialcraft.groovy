@@ -139,7 +139,7 @@ for (int i in [17, 18, 19, 77, 78, 80, 81]) removeItems.add(mitem("genitem", i))
 for (int i in [0, 4, 8, 12]) removeItems.add(mitem("furnacemagic", i))
 
 def hideFromJei = [
-    item("baubles:ring"), mitem("drops"), mitem("drops", 1), mitem("drops", 2), mitem("drops", 3), mitem("elementalcrystal"),
+    mitem("drops"), mitem("drops", 1), mitem("drops", 2), mitem("drops", 3), mitem("elementalcrystal"),
     mitem("flowergreen"), mitem("fruit"), mitem("tallgrass"), mitem("torch"), mitem("magicaldisplay"), mitem("portal"),
     mitem("mithrilinecrystal", 12), mitem("weathercontroller"), mitem("testitem"), mitem("mrumatrixprojection", 4), mitem("fruit_item"), mitem("bauble"),
     mitem("shadesword"), mitem("shadeslasher"), mitem("shadeknife"), mitem("collectedspawner"), mitem("balance_setter"),
