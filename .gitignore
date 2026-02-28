@@ -31,7 +31,7 @@ splash.properties
 minecraft/local/client
 minecraft/local/ftbutilities
 minecraft/BotaniaVars.dat
-minecraft/tconstruct_oredictcache.dat
+tconstruct_oredictcache.dat
 minecraft/vintagefix/transformerCache
 minecraft/backups
 minecraft/caches/**/*.bin
