@@ -1,0 +1,17 @@
+filename = 'geckolib-forge-1.12.2-3.0.31.jar'
+name = 'GeckoLib'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'geckolib-forge-1.12.2-3.0.31.jar'
+
+[download]
+hash = 'abab17e7e19cba9ab575425a32419eb9db9cb876'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4020277
+project-id = 388172

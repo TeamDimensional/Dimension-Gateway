@@ -1,0 +1,17 @@
+filename = 'Into The End - 1.2 HotFix.jar'
+name = 'End Expansion - The Lamented Islands'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'End Expansion Hot Fix 1.2'
+
+[download]
+hash = '043e99d22cfe8d080ff020068723fec84a01508c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5997341
+project-id = 867216

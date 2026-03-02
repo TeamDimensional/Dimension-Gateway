@@ -1,0 +1,17 @@
+filename = 'Netherized-1.12.2-0.3.8B.jar'
+name = 'Netherized Kedition'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Netherized-1.12.2-0.3.8B'
+
+[download]
+hash = '2ca2484af6e1298615572b10db57b0a2c94b53ef'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7456938
+project-id = 1367297

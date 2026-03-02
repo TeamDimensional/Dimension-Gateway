@@ -1,13 +1,85 @@
 [
     {
-        "dimension": -1,
         "mobs": [
             {
                 "mob": "minecraft:creeper",
-                "weight": 5,
+                "weight": 6,
                 "groupcountmin": 1,
                 "groupcountmax": 1
             }
+        ],
+        "biome": [
+            "Hell",
+            "Warped Forest"
         ]
+    },
+    {
+        "mobs": [
+            {
+                "mob": "minecraft:husk",
+                "weight": 10,
+                "groupcountmin": 2,
+                "groupcountmax": 3
+            }
+        ],
+        "biome": [
+            "Hell",
+            "Soul Sand Valley"
+        ]
+    },
+    {
+        "dimension": -1,
+        "mobs": [
+            {
+                "mob": "natura:nitrocreeper",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "biome": "Basalt Deltas"
+    },
+    {
+        "dimension": -1,
+        "mobs": [
+            {
+                "mob": "natura:imp",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "biome": [
+            "Warped Forest",
+            "Crimson Forest"
+        ]
+    },
+    {
+        "dimension": -1,
+        "mobs": [
+            {
+                "mob": "natura:babyheatscarspider",
+                "weight": 5,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "biome": [
+            "Crimson Forest",
+            "Soul Sand Valley",
+            "Hell"
+        ]
+    },
+    {
+        "dimension": -1,
+        "mobs": [
+            {
+                "mob": "natura:heatscarspider",
+                "weight": 1,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ],
+        "biome": "Soul Sand Valley"
     }
 ]

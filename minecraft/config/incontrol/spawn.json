@@ -1,45 +1,116 @@
 [
     {
-        "mob": ["minecraft:creeper", "minecraft:enderman", "minecraft:witch", "essentialcraft:entitywindmage"],
+        "mob": [
+            "minecraft:creeper",
+            "minecraft:enderman",
+            "minecraft:witch",
+            "essentialcraft:entitywindmage"
+        ],
         "dimension": 0,
         "result": "deny"
     },
     {
-        "mob": ["minecraft:zombie_pigman", "minecraft:enderman"],
+        "mob": [
+            "minecraft:zombie_pigman",
+            "minecraft:enderman"
+        ],
         "dimension": -1,
         "result": "deny"
     },
     {
-        "mob": ["minecraft:creeper"],
-        "mincount": {
-            "amount": 55,
-            "perplayer": true,
-            "mob": ["minecraft:creeper"]
-        },
         "dimension": -1,
+        "mob": "minecraft:creeper",
+        "block": "minecraft:nether_brick",
         "result": "deny"
     },
     {
-      "dimension": -1,
-      "mob": "minecraft:creeper",
-      "block": "minecraft:nether_brick",
-      "result": "deny"
-    },
-    {
-        "mob": ["minecraft:ghast"],
+        "mob": [
+            "minecraft:ghast"
+        ],
         "mincount": {
             "amount": 5,
-            "perchunk": true,
-            "mob": ["minecraft:ghast"]
+            "perchunk": true
         },
         "dimension": -1,
         "result": "deny"
     },
     {
-        "mob": ["theaurorian:runestonedungeonkeeper", "theaurorian:spider"],
+        "mob": [
+            "minecraft:creeper"
+        ],
+        "mincount": {
+            "amount": 40,
+            "perchunk": true
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "natura:imp"
+        ],
+        "mincount": {
+            "amount": 30,
+            "perchunk": true
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "natura:heatscarspider"
+        ],
+        "mincount": {
+            "amount": 15,
+            "perchunk": true
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "natura:babyheatscarspider"
+        ],
+        "mincount": {
+            "amount": 30,
+            "perchunk": true
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "natura:nitrocreeper"
+        ],
+        "mincount": {
+            "amount": 25,
+            "perchunk": true
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "minecraft:husk"
+        ],
+        "mincount": {
+            "amount": 50,
+            "perchunk": true
+        },
+        "dimension": -1,
+        "result": "deny"
+    },
+    {
+        "mob": [
+            "theaurorian:runestonedungeonkeeper",
+            "theaurorian:spider"
+        ],
         "onjoin": true,
         "healthadd": 60,
         "damageadd": 2
+    },
+    {
+        "mob": "netherized:pigman",
+        "result": "deny"
     }
 ]
-  
