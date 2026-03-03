@@ -1,0 +1,38 @@
+{
+    "name": "Mob Farms",
+    "icon": "extrautils2:ingredients:10",
+    "category": "patchouli:general_tips",
+    "sortnum": 702,
+    "advancement": "triumph:gateway/progression/tier7",
+    "pages": [
+        {
+            "type": "text",
+            "text": "In Tier 7, Drop of Evil is unlocked. These can be used to build some mob farms, which can produce some useful materials.<br> <br>Stronger ways to make mob farms are unlocked in Tier 11 with Woot and EnderIO."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:embers:archaic_brick",
+                "item:minecraft:coal",
+                "item:minecraft:gunpowder"
+            ],
+            "text": "Ancient Golems can be used to infinitely make Archaic Bricks and Coal, and Creepers can be used to make Gunpowder. This was possible even in previous tiers, but Drop of Evil makes this kind of farms way faster. Also, Drop of Evil allows Creepers to spawn in Overworld."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:minecraft:glowstone",
+                "item:minecraft:redstone",
+                "item:minecraft:ender_pearl"
+            ],
+            "text": "Drop of Evil also can spawn Witches and Endermen in the Overworld, which can be used to automate these resources. Redstone may be faster to do through Mundane Substrate, though."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:minecraft:gold_ingot"
+            ],
+            "text": "Drop of Evil also can spawn Zombie Pigmen in the Nether, which can be used to farm Gold. Heavy Metal Substrate needed for this is not unlocked until Tier 10, though you can also use seeds."
+        }
+    ]
+}

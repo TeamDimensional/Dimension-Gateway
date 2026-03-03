@@ -1,0 +1,71 @@
+{
+    "name": "Resource Gathering",
+    "icon": "tconstruct:hammer",
+    "category": "patchouli:general_tips",
+    "sortnum": 302,
+    "advancement": "triumph:gateway/progression/tier3",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Now that you're entering your first tech mods, it's a good time to think how to get the resources for those mods. Oh well, there's no good way yet."
+        },
+        {
+            "title": "Speeding up Mining",
+            "type": "items",
+            "items": [
+                {
+                    "type": "item",
+                    "item": "tconstruct:toolforge",
+                    "nbt": "{textureBlock:{id:\"thermalfoundation:storage_alloy\",Count:1,Damage:2s}}"
+                },
+                "item:oeintegration:excavatemodifier",
+                "item:tconstruct:materials:12",
+                "item:tconstruct:materials:13"
+            ],
+            "text": "Your best bet so far is making either a Hammer, or a pickaxe with Excavate enchantment or modifier. In the next tier you will be able to make Expanders as well."
+        },
+        {
+            "title": "Crystal Seeds",
+            "type": "items",
+            "items": [
+                "item:embers:seed_iron",
+                "item:embers:seed_copper",
+                "item:embers:seed_silver"
+            ],
+            "text": "The basic metals can be automated in Tier 4 using Embers' Crystal Growth. Though, it's not the fastest method ever, and takes a while to get decent yield from it. And you can't get byproducts of any kind. But hey, at least it's infinite."
+        },
+        {
+            "title": "Burst Methods",
+            "type": "items",
+            "items": [
+                "item:immersiveengineering:metal_multiblock:11",
+                "item:actuallyadditions:block_miner",
+                "item:bloodmagic:activation_crystal:1",
+                "item:rftools:shape_card:2"
+            ],
+            "text": "The first of these is Excavator in Tier 6. They make ores very quickly, but also run out pretty quickly. I would not recommend making your whole infra hinge on these working."
+        },
+        {
+            "title": "Substrates",
+            "type": "items",
+            "items": [
+                "item:gateway:mundane_substrate",
+                "item:gateway:metallic_substrate",
+                "item:gateway:gemstone_substrate",
+                "item:gateway:light_metal_substrate",
+                "item:gateway:heavy_metal_substrate"
+            ],
+            "text": "The Substrates are unlocked in Tier 7 together with Atomic Reshaper and can be used to automate almost every ore in the game. They can go fully infinite at decent rates, but have nontrivial costs and so require support from ore processing."
+        },
+        {
+            "title": "Space Mining",
+            "type": "items",
+            "items": [
+                "item:advancedrocketry:observatory",
+                "item:advancedrocketry:spacelaser",
+                "item:thermalfoundation:material:135"
+            ],
+            "text": "The final method is using Orbital Laser Drills to obtain infinite resources from meteorites. It is the only source of Iridium. It is also quite tricky to set up and comes late in Tier 12."
+        }
+    ]
+}

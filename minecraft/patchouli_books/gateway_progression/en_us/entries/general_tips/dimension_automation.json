@@ -1,0 +1,37 @@
+{
+    "name": "Dimension Automation",
+    "icon": "naturesaura:sky_ingot",
+    "category": "patchouli:general_tips",
+    "sortnum": 701,
+    "advancement": "triumph:gateway/progression/tier7",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Several automation methods only work outside of Overworld for some reason."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "naturesaura.offering",
+                    "outputs": [
+                        "item:naturesaura:sky_ingot"
+                    ]
+                }
+            ],
+            "text": "The Offering Table resonates with the world much weaker than usual. In order to reach the Gods, it must be used in Aether."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "essentialcraft:windImbue",
+                    "outputs": [
+                        "item:essentialcraft:genitem:55"
+                    ]
+                }
+            ],
+            "text": "ESPE generators only work in the End. This changes the usability of Wind Rune and Mithriline Furnace. Also, trying to use Wind Rune when there's not enough power will make it lose power, which means some precision is needed to automate it."
+        }
+    ]
+}

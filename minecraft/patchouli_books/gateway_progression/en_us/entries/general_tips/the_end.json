@@ -1,0 +1,39 @@
+{
+    "name": "The End?",
+    "icon": "minecraft:ender_eye",
+    "category": "patchouli:general_tips",
+    "sortnum": 501,
+    "advancement": "triumph:gateway/progression/tier5",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Usually, you enter The End by finding a Stronghold. However, there's no Strongholds in the world here. So what you do here?<br> <br>To enter The End here, you need to make an Eye of Ender, and throw it into a rift. This will collapse it. Finally, rifts are useful for something..."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "THAUMCRAFT_CRUCIBLE",
+                    "outputs": [
+                        "item:minecraft:ender_eye"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "text": "You may also want to get some flight before visiting The End. The combination of Magical Wings and a glider is pretty decent for that. Alternatively, you can use the Roots's Flight spell, which gives Flight for a limited amount of time (and has to be refreshed quite often)."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "THAUMCRAFT_ARCANE_WORKBENCH",
+                    "outputs": [
+                        "item:essentialcraft:magicalwings"
+                    ]
+                }
+            ]
+        }
+    ]
+}

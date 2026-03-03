@@ -1,0 +1,27 @@
+{
+    "name": "About the World",
+    "icon": "minecraft:netherbrick",
+    "category": "patchouli:general_tips",
+    "sortnum": 103,
+    "pages": [
+        {
+            "type": "text",
+            "text": "The overworld appears to be from prehistoric times... So there's no structures in here. No villages, no dungeons, not even strongholds. The only structure that generates is Ocean Monuments, though you won't need to visit them for a while."
+        },
+        {
+            "type": "text",
+            "text": "There, however, are all kinds of structures in other dimensions. There's a lot more loot, too. You'll see a bunch of structures in Nether soon enough.<br> <br>Oh yeah, you'll need to visit Nether in Tier 1, so have fun. You can build the portal using Lava Buckets. Make sure to prepare decently good gear for your venture."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:aether_legacy:aether_portal_frame",
+                "item:advancedrocketry:moonturf",
+                "item:abyssalcraft:gatewaykey",
+                "item:essentialcraft:genitem:36",
+                "item:abyssalcraft:gatewaykeyjzh"
+            ],
+            "text": "Further in your journey you will encounter strange dimensions. Perhaps weirder than the End - and stronger as well. Every dimension after the End in progression will spawn more and more Champion mobs, so don't forget to upgrade your gear from time to time."
+        }
+    ]
+}

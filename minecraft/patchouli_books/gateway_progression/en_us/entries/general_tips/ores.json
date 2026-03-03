@@ -1,0 +1,104 @@
+{
+    "name": "The Ores",
+    "icon": "minecraft:diamond_ore",
+    "category": "patchouli:general_tips",
+    "sortnum": 104,
+    "pages": [
+        {
+            "type": "text",
+            "text": "In this world, a lot of materials are softer than you remember. Iron can barely harvest any ores, let alone getting diamonds. You'll need to get creative. Explosions also don't seem to harvest any ores, even ones that normally drop everything in their radius."
+        },
+        {
+            "type": "items",
+            "title": "Tier 1 Ores",
+            "items": [
+                {
+                    "type": "item",
+                    "item": "tconstruct:pickaxe",
+                    "nbt": "{TinkerData:{Materials:[\"gateway_wood\",\"gateway_flint\",\"gateway_wood\"],Modifiers:[]},Stats:{MiningSpeed:5.25f,FreeModifiers:3,AttackSpeedMultiplier:1.0f,HarvestLevel:0,Attack:2.6f,Durability:260},Special:{Categories:[\"harvest\",\"tool\",\"aoe\"]},Modifiers:[{identifier:\"gateway_ecological\",color:-7444965,level:2,gateway_ecological:1b},{identifier:\"gateway_crude\",color:-10921639,level:2,gateway_crude:1b}],StatsOriginal:{FreeModifiers:3,MiningSpeed:5.25f,AttackSpeedMultiplier:1.0f,HarvestLevel:0,Attack:2.6f,Durability:260},Traits:[\"gateway_ecological\",\"gateway_crude2\"]}"
+                },
+                "item:minecraft:iron_ore",
+                "item:minecraft:coal_ore",
+                "item:essentialcraft:oredrops:6",
+                "item:essentialcraft:oredrops:7",
+                "item:thermalfoundation:ore:4"
+            ],
+            "text": "The first tier 1 material is Flint. It unlocks Iron, Coal, Elemental Drops, and Aluminium ores."
+        },
+        {
+            "type": "items",
+            "title": "Tier 2 Ores",
+            "items": [
+                {
+                    "type": "item",
+                    "item": "tconstruct:pickaxe",
+                    "nbt": "{Special:{Categories:[\"harvest\",\"tool\",\"aoe\"]},Stats:{MiningSpeed:5.5f,FreeModifiers:3,AttackSpeedMultiplier:1.0f,HarvestLevel:1,Attack:2.0f,Durability:410},TinkerData:{Materials:[\"gateway_wood\",\"gateway_crystal\",\"gateway_wood\"],Modifiers:[]},Modifiers:[{identifier:\"gateway_ecological\",color:-7444965,level:2,gateway_ecological:1b},{identifier:\"moonlit\",color:-3045167,level:1}],StatsOriginal:{FreeModifiers:3,MiningSpeed:5.5f,AttackSpeedMultiplier:1.0f,HarvestLevel:1,Attack:2.0f,Durability:410},Traits:[\"gateway_ecological\",\"moonlit\"]}"
+                },
+                "item:thermalfoundation:ore",
+                "item:thermalfoundation:ore:1",
+                "item:minecraft:lapis_ore",
+                "item:minecraft:quartz_ore",
+                "item:theaurorian:moonstoneore"
+            ],
+            "text": "The first tier 2 material is Crystal. It unlocks Copper, Tin, Lapis, Nether Quartz, and Moonstone."
+        },
+        {
+            "type": "items",
+            "title": "Tier 3 Ores",
+            "items": [
+                "item:immersiveengineering:pickaxe_steel",
+                "item:minecraft:redstone_ore",
+                "item:minecraft:gold_ore",
+                "item:thermalfoundation:ore:2",
+                "item:thermalfoundation:ore:3",
+                "item:thermalfoundation:ore:5"
+            ],
+            "text": "The first tier 3 material is Steel. It unlocks Redstone and many metallic Ores."
+        },
+        {
+            "type": "items",
+            "title": "Tier 4 Ores",
+            "items": [
+                "item:actuallyadditions:item_pickaxe_crystal_green",
+                "item:minecraft:diamond_ore",
+                "item:minecraft:emerald_ore"
+            ],
+            "text": "The first tier 4 material is Emeradic. It unlocks various Gemstone ores."
+        },
+        {
+            "type": "items",
+            "title": "Tier 5 Ores",
+            "items": [
+                "item:thaumcraft:thaumium_pick",
+                "item:thaumcraft:ore_amber",
+                "item:minecraft:obsidian"
+            ],
+            "text": "The first tier 5 material is Thaumium. It unlocks Obsidian and Amber ores."
+        },
+        {
+            "type": "items",
+            "title": "Tier 6 Ores",
+            "items": [
+                "item:gateway:starsteel_ingot",
+                "item:calculator:electricpickaxe",
+                "item:deepresonance:resonating_ore:2",
+                "item:rftools:dimensional_shard_ore:2",
+                "item:tconstruct:ore",
+                "item:tconstruct:ore:1"
+            ],
+            "text": "The first tier 6 material is Starsteel (if you're not a fan of Tinkers, you can use Electric Diamond). It unlocks the remaining ores."
+        },
+        {
+            "type": "items",
+            "title": "Automatic Harvesting",
+            "items": [
+                "item:calculator:enddiamond",
+                "item:embers:breaker",
+                "item:naturesaura:field_creator",
+                "item:integratedtunnels:part_importer_world_block_item",
+                "item:actuallyadditions:block_breaker"
+            ],
+            "text": "Starsteel is also used to make End diamonds, which can be used to make the hardest drill tips, necessary for most of the block breakers in the pack."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "name": "Growing Resources",
+    "icon": "actuallyadditions:item_misc:5",
+    "category": "patchouli:general_tips",
+    "sortnum": 401,
+    "advancement": "triumph:gateway/progression/tier4",
+    "pages": [
+        {
+            "type": "items",
+            "items": [
+                "item:actuallyadditions:item_misc:5",
+                "item:calculator:smallamethyst",
+                "item:thermalfoundation:material:134"
+            ],
+            "text": "A few resource types can't be obtained from ores, or at least not directly. Some examples are Black Quartz, Amethyst, and Platinum."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "aetherworks.metal_former",
+                    "outputs": [
+                        "item:minecraft:emerald"
+                    ]
+                }
+            ],
+            "text": "Emerald is somewhat a special case as well - Diamond and Emerald ores need at least Emeradic Tools to break. This means you'll need to get Emerald through this recipe first."
+        }
+    ]
+}

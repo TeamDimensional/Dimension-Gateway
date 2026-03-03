@@ -1,0 +1,32 @@
+{
+    "name": "Early Power",
+    "icon": "minecraft:redstone",
+    "category": "patchouli:general_tips",
+    "sortnum": 301,
+    "advancement": "triumph:gateway/progression/tier3",
+    "pages": [
+        {
+            "type": "items",
+            "items": [
+                "item:calculator:advancedpowercube",
+                "item:minecraft:redstone"
+            ],
+            "text": "Most power generators already require an ability to make metallic parts, so they might be not an option right now. The earliest generator that seems to be available is Calculator's Power Cube, which can turn a Redstone dust into 1000 RF."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:immersiveengineering:metal_device1:3",
+                "item:immersiveengineering:metal_device1:2",
+                {
+                    "type": "item",
+                    "item": "forge:bucketfilled",
+                    "nbt": "{FluidName:\"blazing_blood\",Amount:1000}"
+                },
+                "item:immersiveengineering:wooden_device1:1",
+                "item:immersiveengineering:material:12"
+            ],
+            "text": "The other methods available in this chapter include Thermoelectric Generators (50 RF/t with two sides of Blazing Blood, become stronger with things like Blaze Superfuel) and Wind Mills (70 RF/t with sails and more during rains). All quite large in scale, but you'll unlock smaller ones soon."
+        }
+    ]
+}

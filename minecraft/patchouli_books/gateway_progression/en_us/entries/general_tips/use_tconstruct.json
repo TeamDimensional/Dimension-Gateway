@@ -1,0 +1,33 @@
+{
+    "name": "Tinkering",
+    "icon": "tconstruct:pickaxe",
+    "category": "patchouli:general_tips",
+    "sortnum": 102,
+    "pages": [
+        {
+            "type": "text",
+            "text": "You may have noticed Wooden and Stone tools won't cut it anymore. They have 2 durability and don't have any harvest levels. There's a few other materials that don't work either.<br> <br>The first tools that you can make are from Tinker's Construct, using Wood and Flint parts. Or Bone if you're a GTNH player at heart."
+        },
+        {
+            "type": "items",
+            "items": [
+                {
+                    "type": "item",
+                    "item": "tconstruct:pickaxe",
+                    "nbt": "{TinkerData:{Materials:[\"gateway_livingwood\",\"gateway_flint\",\"gateway_crystal\"],Modifiers:[]},Stats:{MiningSpeed:5.25f,FreeModifiers:3,AttackSpeedMultiplier:1.0f,HarvestLevel:0,Attack:2.6f,Durability:198},Special:{Categories:[\"tool\",\"aoe\",\"harvest\"]},Modifiers:[{identifier:\"naturalselection\",color:-9426936,level:1},{identifier:\"gateway_crude\",color:-10921639,level:2,gateway_crude:1b},{identifier:\"moonlit\",color:-3045167,level:1}],StatsOriginal:{FreeModifiers:3,MiningSpeed:5.25f,AttackSpeedMultiplier:1.0f,HarvestLevel:0,Attack:2.6f,Durability:198},Traits:[\"naturalselection\",\"gateway_crude2\",\"moonlit\"]}"
+                },
+                {
+                    "type": "item",
+                    "item": "tconstruct:broadsword",
+                    "nbt": "{Special:{Categories:[\"weapon\",\"tool\"]},Stats:{FreeModifiers:3,MiningSpeed:2.1f,AttackSpeedMultiplier:1.0f,HarvestLevel:0,Attack:9.5f,Durability:841},TinkerData:{Materials:[\"gateway_bone\",\"magmaslime\",\"gateway_bone\"],Modifiers:[]},Modifiers:[{identifier:\"fractured\",color:-1186113,level:1},{identifier:\"superheat\",color:-27123,level:1}],StatsOriginal:{FreeModifiers:3,MiningSpeed:2.1f,AttackSpeedMultiplier:1.0f,HarvestLevel:0,Attack:8.0f,Durability:841},Traits:[\"fractured\",\"superheat\"]}"
+                },
+                {
+                    "type": "item",
+                    "item": "tconstruct:mattock",
+                    "nbt": "{Special:{Categories:[\"harvest\",\"tool\",\"aoe\"]},Stats:{MiningSpeed:4.75f,HarvestLevelShovel:0,HarvestLevel:0,HarvestLevelAxe:0,FreeModifiers:3,AttackSpeedMultiplier:1.0f,Attack:4.75f,Durability:503},TinkerData:{Materials:[\"blueslime\",\"gateway_livingrock\",\"gateway_elemental_block\"],Modifiers:[]},Modifiers:[{identifier:\"slimey_blue\",color:-9123641,level:1},{identifier:\"stonebound\",color:-2630969,level:1},{identifier:\"activation\",color:-3177490,level:1}],StatsOriginal:{MiningSpeed:4.75f,HarvestLevelShovel:0,HarvestLevel:0,FreeModifiers:3,HarvestLevelAxe:0,AttackSpeedMultiplier:1.0f,Attack:4.75f,Durability:503},Traits:[\"slimey_blue\",\"stonebound\",\"activation\"]}"
+                }
+            ],
+            "text": "The materials in Tinker's Construct have been heavily tweaked as well. I recommend checking Materials & You if you're unsure.<br> <br>You can also use exclusively vanilla-style tools starting from your first Iron, but I do recommend looking into Tinker's Construct. It's more powerful than it might look."
+        }
+    ]
+}

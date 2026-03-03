@@ -1,0 +1,1 @@
+give @p patchouli:guide_book 1 0 {"patchouli:book":"patchouli:gateway_progression"}

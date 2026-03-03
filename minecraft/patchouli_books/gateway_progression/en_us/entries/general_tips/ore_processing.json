@@ -1,0 +1,169 @@
+{
+    "name": "Ore Processing",
+    "icon": "jaopca:ore_crystal.gold",
+    "category": "patchouli:general_tips",
+    "sortnum": 303,
+    "advancement": "triumph:gateway/progression/tier3",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Since the raw resources are so hard to get, it's a good idea to supplement their generation with ore processing. There are many different pathways, each with their advantages and disadvantages. Also, each step can be skipped, though you will lose on some resources."
+        },
+        {
+            "title": "Step 1: Ore Clusters",
+            "type": "items",
+            "items": [
+                "item:thaumcraft:elemental_pick"
+            ],
+            "text": "The first step into Ore Processing is to turn Ores into Native Clusters. Native Clusters are not better than ores by themselves, but this step increases the yield basically 'for free'. But you do need to interact with Thaumcraft if you want that."
+        },
+        {
+            "title": "Step 2: Ore Crystals",
+            "type": "text",
+            "text": "The second step is making Ore Crystals. The Ore Refinery gives a byproduct, while the Atomic Calculator gives more yield but requires Petrotheum. This can also be done earlier, needing only a Grinder instead of Ore Refinery."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "ptrefinery",
+                    "outputs": [
+                        "item:jaopca:ore_crystal.gold"
+                    ],
+                    "inputs": [
+                        "item:minecraft:gold_ore"
+                    ]
+                },
+                {
+                    "category": "Atomic",
+                    "outputs": [
+                        "item:jaopca:ore_crystal.gold"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Step 3: Ore Shards",
+            "type": "text",
+            "text": "This is only available in Tier 8. Pulverizer and SAG Mill give boostable byproducts, and Flawless Calculator gives incredible yield but also requires a native cluster."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "Flawless",
+                    "outputs": [
+                        "item:jaopca:shard.gold"
+                    ]
+                },
+                {
+                    "category": "SagMill",
+                    "outputs": [
+                        "item:jaopca:shard.gold"
+                    ],
+                    "inputs": [
+                        "item:jaopca:ore_crystal.gold"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Step 4: Shard Piles",
+            "type": "text",
+            "text": "Shards and Crystals can be compiled into piles. Each pile is 8 shards, and breaks into 8 dusts by default, so this step does not really do anything by itself. Though, Fluid Infuser makes it more efficient, as do differing ways to break down piles."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "minecraft.crafting",
+                    "outputs": [
+                        "item:jaopca:clump.gold"
+                    ]
+                },
+                {
+                    "category": "nuclearcraft_infuser",
+                    "outputs": [
+                        "item:jaopca:clump.gold"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Step 5: Dirty Dust",
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "minecraft.crafting",
+                    "outputs": [
+                        "item:jaopca:dirty_dust.gold"
+                    ]
+                }
+            ],
+            "text": "The default method of breaking clumps is by combining them with Stalicripe, which yields 8 Dirty Dust. It's fast, but Crumbling Catalyst and Magmatic Smeltery are more efficient."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "naturesaura.altar",
+                    "outputs": [
+                        "item:jaopca:dirty_dust.gold"
+                    ]
+                },
+                {
+                    "category": "gateway:magmatic_smeltery",
+                    "outputs": [
+                        "item:jaopca:dirty_dust.gold"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Step 6: Ore Solution",
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "minecraft.smelting",
+                    "inputs": [
+                        "item:jaopca:dirty_dust.gold"
+                    ]
+                }
+            ],
+            "text": "Dirty Dusts can be smelted directly, but venturing into Embers and Nuclearcraft allows increasing their yield. Embers also allows extracting a byproduct."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "embers.geologic_separator",
+                    "inputs": [
+                        "item:jaopca:dirty_dust.gold"
+                    ]
+                },
+                {
+                    "category": "nuclearcraft_enricher",
+                    "inputs": [
+                        "item:jaopca:dirty_dust.gold"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Step 7: Molten Metal",
+            "type": "text",
+            "text": "Finally, Ore Solution must be mixed with Water to retrieve the metal. The metal can be used in Stamper, Ingot Former, Casting tables, or anywhere really."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "embers.mixer",
+                    "outputs": [
+                        "fluid:gold"
+                    ]
+                }
+            ]
+        }
+    ]
+}

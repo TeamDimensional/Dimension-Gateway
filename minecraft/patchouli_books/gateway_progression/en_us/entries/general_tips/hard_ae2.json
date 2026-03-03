@@ -1,0 +1,17 @@
+{
+    "name": "On Applied Energistics",
+    "icon": "appliedenergistics2:controller",
+    "category": "patchouli:general_tips",
+    "sortnum": 801,
+    "advancement": "triumph:gateway/progression/tier8",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Perhaps you're used to AE2 doing everything for you in other packs. Maybe even solve the whole pack through on-demand crafting. Well, not anymore."
+        },
+        {
+            "type": "text",
+            "text": "In this pack, AE2 networks are hard capped on how much power they can take. The default restriction is 100 RF/t, so if your network uses more (which is easy with even small crafting processors), it will constantly black out. However, this can be upgraded using an Electro-Matter Modulator. This machine requires Factory parts to run. The better the parts, the higher the power cap, but there's still a ceiling that is pretty hard to beat."
+        }
+    ]
+}

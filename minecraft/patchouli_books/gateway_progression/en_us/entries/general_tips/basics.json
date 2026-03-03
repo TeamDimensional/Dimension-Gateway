@@ -1,0 +1,28 @@
+{
+    "name": "Progression",
+    "icon": "botania:kingkey",
+    "category": "patchouli:general_tips",
+    "sortnum": 101,
+    "pages": [
+        {
+            "type": "text",
+            "text": "Welcome to The Journey.<br> <br>There's no one to help you with a bunch of quests here, so you'll need to define your goals yourself. The easiest way to choose where to go is to search for #unlocks in JEI for the tier you are in. For example, the tier 1 unlock is Aurorian Portal."
+        },
+        {
+            "type": "jei",
+            "text": "Research JEI to see how to get there!",
+            "recipes": [
+                {
+                    "category": "botania.pureDaisy",
+                    "outputs": [
+                        "item:theaurorian:aurorianportalframebricks"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "text": "As you go further through the pack, there will be less handholding, though some useful notes will still be in this book."
+        }
+    ]
+}
