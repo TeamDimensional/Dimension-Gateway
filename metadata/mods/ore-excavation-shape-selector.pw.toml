@@ -1,0 +1,17 @@
+filename = 'shapeselector-1.12.2b4.jar'
+name = 'Ore-Excavation:Shape Selector'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'shapeselector-1.12.2b4.jar'
+
+[download]
+hash = '7ee2d82c62435c5d02aa0faa7a71ae7b8f537466'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2892316
+project-id = 365014
