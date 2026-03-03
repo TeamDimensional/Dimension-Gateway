@@ -21,6 +21,10 @@ def tier6Items = [
     mitem("redstone_transmitter_block"), mitem("redstone_receiver_block"), mitem("button_module"), mitem("simple_dialer"),
 ]
 
+def oreItems = [
+    mitem("dimensional_shard"), mitem("dimensional_shard_ore", 2)
+]
+
 def advItems = [
     mitem("infused_enderpearl"), mitem("advanced_charged_porter"), mitem("matter_booster"), mitem("machine_infuser"),
     mitem("locator"), mitem("remote_scanner"), mitem("powercell_advanced"), mitem("shield_block4"),
@@ -60,7 +64,7 @@ for (def it in tier2Items) TooltipEvents.setTier(it, 2)
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier5Items) TooltipEvents.setTier(it, 5)
-for (def it in tier6Items) TooltipEvents.setTier(it, 6)
+for (def it in tier6Items + oreItems) TooltipEvents.setTier(it, 6)
 for (def it in advItems) TooltipEvents.setTier(it, 13)
 for (def it in eliteItems) TooltipEvents.setTier(it, 13)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)

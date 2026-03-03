@@ -43,11 +43,11 @@ def tier6 = [
     fluid("ender"),
     // Astral Sorcery
     fluid("astral_starmetal"), fluid("aquamarine"), fluid("astralsorcery.liquidstarlight"),
+    // Ore level
+    fluid("cobalt"), fluid("ardite"), fluid("manyullyn"),
 ]
 
 def tier7 = [
-    // Ore level
-    fluid("cobalt"), fluid("ardite"), fluid("manyullyn"),
     // Aetherworks
     fluid("aetherworks.aetherium_gas"), fluid("aetherworks.impure_aetherium_gas"),
     // XU2

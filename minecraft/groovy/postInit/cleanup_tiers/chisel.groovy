@@ -32,7 +32,7 @@ for (def i in 0..14) TooltipEvents.setTier(mitem("voidstonerunic", i), 6)
 for (def i in 0..15) TooltipEvents.setTier(mitem("endstone", i), 6)
 for (def i in 0..15) TooltipEvents.setTier(mitem("endstone1", i), 6)
 for (def i in 0..6) TooltipEvents.setTier(mitem("endstone2", i), 6)
-for (def i in 0..6) TooltipEvents.setTier(mitem("blockcobalt", i), 7)
+for (def i in 0..6) TooltipEvents.setTier(mitem("blockcobalt", i), 6)
 for (def i in 0..6) TooltipEvents.setTier(mitem("blockplatinum", i), 8)
 for (def i in 0..6) TooltipEvents.setTier(mitem("blockuranium", i), 10)
 

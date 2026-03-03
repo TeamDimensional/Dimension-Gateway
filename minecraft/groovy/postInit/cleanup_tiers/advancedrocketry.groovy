@@ -9,10 +9,13 @@ def earlyItems = [
     mitem("thermitetorch"), mitem("circlelight"), mitem("thermite"), mitem("smallairlockdoor"), item("libvulpes:productrod", 4),
 ]
 
+def titaniumOre = [
+    item("libvulpes:ore0", 8)
+]
+
 def titaniumMetal = [
     item("libvulpes:productdust", 7), item("libvulpes:productnugget", 7),
-    item("libvulpes:productplate", 7), item("libvulpes:productrod", 7), item("libvulpes:productgear", 7), item("libvulpes:ore0", 8),
-    item("libvulpes:metal0", 7),
+    item("libvulpes:productplate", 7), item("libvulpes:productrod", 7), item("libvulpes:productgear", 7), item("libvulpes:metal0", 7),
 ]
 
 def part1Items = [
@@ -87,6 +90,7 @@ def hideFromJei = [
 
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in titaniumMetal) TooltipEvents.setTier(it, 10)
+for (def it in titaniumOre) TooltipEvents.setTier(it, 6)
 for (def it in part1Items) TooltipEvents.setTier(it, 10)
 for (def it in part2Items) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)

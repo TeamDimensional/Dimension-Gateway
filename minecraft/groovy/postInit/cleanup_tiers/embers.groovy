@@ -63,7 +63,7 @@ def hideFromJei = [
 for (def it in ashItems) TooltipEvents.setTier(it, 2)
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in items) TooltipEvents.setTier(it, 4)
-for (def it in breakerItems) TooltipEvents.setTier(it, 7)
+for (def it in breakerItems) TooltipEvents.setTier(it, 6)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

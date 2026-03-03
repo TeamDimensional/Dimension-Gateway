@@ -41,7 +41,7 @@ for (int i in 0..13) {
     atomicItems.add(mitem("circuitdirty", i))
 }
 
-def cobaltItems = [
+def starsteelItems = [
     mitem("material", 8), mitem("nutritionmodule"), mitem("enddiamond"),
 ]
 
@@ -75,12 +75,12 @@ def tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
 for (def it in tools) {
     for (def mat in ["reinforced", "enrichedgold", "reinforcediron", "redstone", "weakeneddiamond"]) basicItems.add(mitem(mat + it))
     for (def mat in ["flawlessdiamond", "firediamond", "electric"]) atomicItems.add(mitem(mat + it))
-    for (def mat in ["endforged"]) cobaltItems.add(mitem(mat + it))
+    for (def mat in ["endforged"]) starsteelItems.add(mitem(mat + it))
 }
 
 for (def it in basicItems) TooltipEvents.setTier(it, 6)
 for (def it in atomicItems) TooltipEvents.setTier(it, 6)
-for (def it in cobaltItems) TooltipEvents.setTier(it, 7)
+for (def it in starsteelItems) TooltipEvents.setTier(it, 6)
 for (def it in flawlessItems) TooltipEvents.setTier(it, 12)
 for (def it in circuitItems) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 16)

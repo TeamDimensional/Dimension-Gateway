@@ -5,19 +5,24 @@ def mitem(name, k=0) {
     return item("deepresonance:${name}", k)
 }
 
+def oreItems = [
+    mitem("resonating_ore", 2), mitem("resonating_block"), mitem("resonating_plate"),
+]
+
 def items = [
-    mitem("dr_manual"), mitem("radiation_monitor"), mitem("resonating_plate"), mitem("filter"), mitem("spent_filter"),
+    mitem("dr_manual"), mitem("radiation_monitor"), mitem("filter"), mitem("spent_filter"),
     mitem("radiation_module"), mitem("rcl_module"), mitem("resonating_crystal"), mitem("generator"), mitem("generator_controller"),
     mitem("energy_collector"), mitem("crystalizer"), mitem("smelter"), mitem("tank"), mitem("purifier"),
     mitem("pedestal"), mitem("advanced_pedestal"), mitem("valve"), mitem("lens"), mitem("laser"),
-    mitem("dense_glass"), mitem("dense_obsidian"), mitem("poisoned_dirt"), mitem("resonating_block"),
-    mitem("resonating_ore", 2), mitem("radiation_sensor"), mitem("boots"), mitem("helmet"), mitem("chest"), mitem("leggings"),
+    mitem("dense_glass"), mitem("dense_obsidian"), mitem("poisoned_dirt"),
+    mitem("radiation_sensor"), mitem("boots"), mitem("helmet"), mitem("chest"), mitem("leggings"),
 ]
 
 def removeRecipes = [mitem("machine_frame")]
 
 def hideFromJei = [mitem("insert_liquid"), mitem("debug_block")] + removeRecipes
 
+for (def it in oreItems) TooltipEvents.setTier(it, 6)
 for (def it in items) TooltipEvents.setTier(it, 8)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

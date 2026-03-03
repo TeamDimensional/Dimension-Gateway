@@ -37,6 +37,12 @@ def mainItems = [
 for (def i in [6, 7, 8, 14, 16, 18, 23])
     mainItems.add(mitem("item_misc", i))
 
+for (def color in ["red", "blue", "green", "white"]) {
+    for (def tool in ["pickaxe", "axe", "shovel", "sword", "hoe"]) {
+        mainItems.add(mitem("item_${tool}_crystal_${color}"))
+    }
+}
+
 for (def t in ["wall", "fence", "stairs", "slab"])
     for (def c in ["green", "white"])
         mainItems.add(mitem("block_testifi_bucks_${c}_${t}"))
@@ -104,8 +110,8 @@ for (def it in earlyItems) TooltipEvents.setTier(it, 4)
 TooltipEvents.setTier(mitem("item_dust", 4), 3)  // lapis dust
 for (def it in mainItems) TooltipEvents.setTier(it, 4)
 for (def it in laserItems) TooltipEvents.setTier(it, 4)
-for (def it in obsidianItems) TooltipEvents.setTier(it, 6)
-for (def it in blockBreakers) TooltipEvents.setTier(it, 9)
+for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
+for (def it in blockBreakers) TooltipEvents.setTier(it, 6)
 for (def it in empoweringItems) TooltipEvents.setTier(it, 9)
 TooltipEvents.setTooltip(item("actuallyadditions:block_leaf_generator"), "Gets disabled with a Redstone signal. Use this to your advantage!")
 for (def it in hideFromJei) GatewayHelpers.hide(it)
