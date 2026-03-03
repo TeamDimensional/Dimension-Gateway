@@ -5,12 +5,12 @@ TooltipEvents.setModTier("compactmachines3", 7)
 
 def tier3Items = [
     item("supersoundmuffler:sound_muffler"), item("supersoundmuffler:sound_muffler_bauble"),
-    item("naturescompass:naturescompass"),
+    item("naturescompass:naturescompass"), item("oeintegration:excavatemodifier"),
 ]
 for (def i in [1, 3, 4, 5, 6, 7]) tier3Items.add(item("engineersworkshop:upgrade", i))
 
 def tier4Items = [
-    item("omniwand:wand"), item("engineersworkshop:upgrade", 8),
+    item("omniwand:wand"), item("engineersworkshop:upgrade", 8), item("simplevoidworld:portal"),
 ]
 
 def basicXnet = [
@@ -23,7 +23,7 @@ def advancedXnet = [
 ]
 
 def tier7Items = [
-    item("simplevoidworld:portal"), item("translocators:translocator_part"), item("translocators:translocator_part", 1),
+    item("translocators:translocator_part"), item("translocators:translocator_part", 1),
 ]
 
 for (def i in 0..3) {

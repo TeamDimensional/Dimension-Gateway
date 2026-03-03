@@ -17,7 +17,7 @@ redstoneItems = [
     mitem("guide"), mitem("sprinkler"), mitem("cannon"), mitem("auto_anvil"),
     mitem("block_placer"), mitem("item_dropper"), mitem("projector"), mitem("slimalyzer"), mitem("pedometer"),
 ]
-gemstoneItems = [mitem("village_highlighter"), mitem("block_breaker"), mitem("luggage")]
+gemstoneItems = [mitem("block_breaker"), mitem("luggage")]
 obsidianItems = [mitem("tank"), mitem("auto_enchantment_table"), mitem("paint_mixer"), mitem("sonic_glasses"), mitem("xp_shower")]
 
 enderItems = [
@@ -30,7 +30,7 @@ for (int i in 0..15) enderItems.add(mitem("elevator_rotating", i))
 
 opItems = [mitem("heal")]
 
-removedItems = [mitem("golden_egg"), mitem("generic", 4), mitem("tasty_clay"), mitem("dev_null")]
+removedItems = [mitem("village_highlighter"), mitem("golden_egg"), mitem("generic", 4), mitem("tasty_clay"), mitem("dev_null")]
 
 hideFromJei = [mitem("serious_glasses")] + removedItems
 for (int i in 0..14) hideFromJei.add(mitem("stencil", i))

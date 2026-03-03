@@ -20,7 +20,7 @@ gearItems = [
 ]
 
 redstoneItems = [
-    mitem("capacitor_aeroheater"), mitem("solderer"), mitem("magnetic_reassembler"), mitem("fuel_processor"), mitem("food_enricher"),
+    mitem("capacitor_aeroheater"), mitem("solderer"), mitem("fuel_processor"), mitem("food_enricher"),
     mitem("inferno_fuel"), mitem("inferno_crystal"), mitem("circuit_plate"), mitem("circuit_crude"), mitem("circuit_refined"),
     mitem("sugar_cube"), mitem("gold_dust_tiny"), mitem("pattern_circuit_perfected"),
     mitem("pattern_circuit_crude"), mitem("pattern_circuit_refined"), mitem("heat_capacitor_0", 32767), mitem("heat_capacitor_1", 32767),
@@ -40,6 +40,12 @@ zorrasteelItems = [
     mitem("zorrasteel_handbow"),
 ]
 
+def removeRecipes = [
+    mitem("magnetic_reassembler"),
+]
+
+def hideFromJei = removeRecipes
+
 for (def it in baseItems) TooltipEvents.setTier(it, 2)
 for (def it in gearItems) TooltipEvents.setTier(it, 3)
 for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
@@ -47,3 +53,5 @@ for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in energionItems) TooltipEvents.setTier(it, 7)
 for (def it in zorrasteelItems) TooltipEvents.setTier(it, 7)
+for (def it in removeRecipes) crafting.removeByOutput(it)
+for (def it in hideFromJei) GatewayHelpers.hide(it)

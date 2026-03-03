@@ -13,3 +13,17 @@ crafting.shapedBuilder()
         .matrix("G", "T", "G")
         .key("G", item("essentialcraft:genitem", 40)).key("T", item("storagedrawers:upgrade_storage", 3))
         .register()
+
+// Ender Eye
+crafting.removeByOutput(item("minecraft:ender_eye"))
+mods.astralsorcery.infusion_altar.removeByOutput(item("minecraft:ender_eye"))
+
+mods.thaumcraft.crucible.recipeBuilder()
+    .researchKey("UNLOCKALCHEMY@3")
+    .catalyst(item("essentialcraft:genitem", 38))
+    .output(item("minecraft:ender_eye"))
+    .aspect(aspect("alienis") * 20)
+    .aspect(aspect("auram") * 10)
+    .aspect(aspect("praecantatio") * 15)
+    .aspect(aspect("motus") * 10)
+    .register()

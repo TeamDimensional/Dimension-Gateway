@@ -3,7 +3,14 @@
         "mob": [
             "minecraft:creeper",
             "minecraft:enderman",
-            "minecraft:witch",
+            "minecraft:witch"
+        ],
+        "dimension": 0,
+        "result": "deny",
+        "spawner": false
+    },
+    {
+        "mob": [
             "essentialcraft:entitywindmage"
         ],
         "dimension": 0,
@@ -15,13 +22,15 @@
             "minecraft:enderman"
         ],
         "dimension": -1,
-        "result": "deny"
+        "result": "deny",
+        "spawner": false
     },
     {
         "dimension": -1,
         "mob": "minecraft:creeper",
         "block": "minecraft:nether_brick",
-        "result": "deny"
+        "result": "deny",
+        "spawner": false
     },
     {
         "mob": [

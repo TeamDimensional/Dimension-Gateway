@@ -27,7 +27,6 @@ TooltipEvents.setTierName(9, "Chemical Mayhem")
 TooltipEvents.setUnlock(item("actuallyadditions:block_empowerer"), 9)
 
 TooltipEvents.setTierName(10, "Lunar Industry")
-// TooltipEvents.setUnlock(item("essentialcraft:crystalformer"), 10)
 TooltipEvents.setUnlock(item("libvulpes:productingot", 7), 10)
 
 TooltipEvents.setTierName(11, "Monsters' University")
@@ -43,7 +42,7 @@ TooltipEvents.setTierName(14, "Fabled Convergence")
 TooltipEvents.setUnlock(item("extrautils2:decorativesolid", 8), 14)
 
 TooltipEvents.setTierName(15, "Profane Horizons")
-TooltipEvents.setUnlock(item("abyssalcraft:gatewaykeyjzh"), 15)
+TooltipEvents.setUnlock(item("essentialcraft:windtablet"), 15)
 
 TooltipEvents.setTierName(16, "Beyond Creativity")
 TooltipEvents.setUnlock(item("storagedrawers:upgrade_creative"), 16)

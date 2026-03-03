@@ -77,7 +77,7 @@ def omotholItems = [
     mitem("drainstaff_omt"), mitem("essence_omothol"), mitem("gatekeeperessence"), mitem("scroll_greater"), mitem("scroll_unique_anti"),
     mitem("scroll_unique_oblivion"), mitem("face_book"), mitem("ethaxiumbrickslab2"), mitem("darkethaxiumbrickslab2"),
     mitem("transmutator"), mitem("unchained_portal_anchor"),
-    mitem("odb"), mitem("abyssalnomicon"), mitem("silver_key"), mitem("ring_omothol"),
+    mitem("odb"), mitem("abyssalnomicon"), mitem("silver_key"), mitem("ring_omothol"), mitem("gatewaykeyjzh"),
 ] + crystalClusters
 for (def m in materials) omotholItems.add(mitem("${m}_crystal"))
 for (def m in materials) omotholItems.add(mitem("${m}_crystal_shard"))

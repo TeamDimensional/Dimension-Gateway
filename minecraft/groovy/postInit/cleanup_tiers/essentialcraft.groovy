@@ -90,7 +90,7 @@ def hoannaBuildingLoot = [
 ]
 
 def hoannaTier = [
-    mitem("windtablet"), mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"),
+    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"),
     mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("mithrilinecrystal", 6), mitem("chest", 1), mitem("magicalfurnace"),
     mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
