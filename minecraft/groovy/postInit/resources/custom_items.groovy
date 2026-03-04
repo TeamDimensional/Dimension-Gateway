@@ -42,14 +42,14 @@ mods.thermalexpansion.crucible.recipeBuilder()
 
 // Blaze Superfuel
 mods.soot.alchemical_mixer.recipeBuilder()
-        .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 50, fluid("crystaloil") * 100)
-        .fluidOutput(fluid("blaze_superfuel") * 250)
+        .fluidInput(fluid("blazing_blood") * 10, fluid("napalm") * 40, fluid("gas_dwarf") * 20, fluid("crystaloil") * 50)
+        .fluidOutput(fluid("blaze_superfuel") * 120)
         .setAspect("copper", 2, 4)
         .register()
 mods.embers.alchemy.addAspect("destabilized", item("thermalfoundation:material", 893))
 mods.soot.alchemical_mixer.recipeBuilder()
-        .fluidInput(fluid("blazing_blood") * 40, fluid("napalm") * 160, fluid("gas_dwarf") * 100, fluid("empoweredoil") * 200)
-        .fluidOutput(fluid("blaze_superfuel") * 900)
+        .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 40, fluid("empoweredoil") * 100)
+        .fluidOutput(fluid("blaze_superfuel") * 400)
         .setAspect("destabilized", 8, 16)
         .register()
 
