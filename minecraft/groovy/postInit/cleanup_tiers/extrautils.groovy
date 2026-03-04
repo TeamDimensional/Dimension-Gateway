@@ -67,7 +67,7 @@ for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in items) TooltipEvents.setTier(it, 7)
 for (def it in advancedItems) TooltipEvents.setTier(it, 12)
 for (def it in antimatterItems) TooltipEvents.setTier(it, 15)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removedMachines) {
     def a = mitem("machine").withNbt(["Type": "extrautils2:${it}".toString()])

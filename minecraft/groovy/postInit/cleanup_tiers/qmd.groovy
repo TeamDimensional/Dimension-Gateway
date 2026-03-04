@@ -56,7 +56,7 @@ for (def it in chemistryItems) TooltipEvents.setTier(it, 9)
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)
 for (def it in tier12Items) TooltipEvents.setTier(it, 12)
 for (def it in antimatterItems) TooltipEvents.setTier(it, 15)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 

@@ -43,6 +43,3 @@ TooltipEvents.setUnlock(item("extrautils2:decorativesolid", 8), 14)
 
 TooltipEvents.setTierName(15, "Profane Horizons")
 TooltipEvents.setUnlock(item("essentialcraft:windtablet"), 15)
-
-TooltipEvents.setTierName(16, "Beyond Creativity")
-TooltipEvents.setUnlock(item("storagedrawers:upgrade_creative"), 16)

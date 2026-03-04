@@ -161,7 +161,7 @@ for (def it in ["altar", "pedestal"]) {
 
 for (def it in abyssalItems) TooltipEvents.setTier(it, 13)
 for (def it in omotholItems) TooltipEvents.setTier(it, 15)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in removeRecipes) crafting.removeByOutput(it)

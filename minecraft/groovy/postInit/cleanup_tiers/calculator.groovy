@@ -83,7 +83,7 @@ for (def it in atomicItems) TooltipEvents.setTier(it, 6)
 for (def it in starsteelItems) TooltipEvents.setTier(it, 6)
 for (def it in flawlessItems) TooltipEvents.setTier(it, 12)
 for (def it in circuitItems) TooltipEvents.setTier(it, 12)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 

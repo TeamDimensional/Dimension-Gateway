@@ -2,37 +2,38 @@
     "name": "On Singularities",
     "icon": "essentialcraft:genitem:37",
     "category": "patchouli:general_tips",
-    "sortnum": 1501,
-    "advancement": "triumph:gateway/progression/tier15",
+    "sortnum": 1401,
+    "advancement": "triumph:gateway/progression/tier14",
     "pages": [
         {
             "type": "text",
-            "text": "In most packs, this is where you would start using singularities. Perhaps that would happen even earlier. Though, power creep was one of the core goals of Dimension Gateway, so there's no singularities. Though, I hope that the remaining two tiers nonetheless can provide an interesting challenge for your factory. Enjoy!"
+            "text": "In most packs, this is where you would start using singularities. Perhaps that would happen even earlier. Though, power creep was one of the core non-goals of Dimension Gateway, so there's no singularities. However, I hope that the remaining two tiers nonetheless can provide an interesting challenge for your factory. Enjoy!"
         },
         {
             "type": "items",
             "title": "The Final Steps",
             "items": [
+                "item:botania:manaresource:5",
+                "item:thaumcraft:causality_collapser",
+                "item:thaumicaugmentation:eldritch_lock_key:2",
+                {
+                    "type": "item",
+                    "item": "botania:brewflask",
+                    "nbt": "{brewKey:\"clear\"}"
+                },
+                "item:botania:lens:14",
+                "item:bloodmagic:demon_will_gauge",
                 "item:essentialcraft:genitem:37",
                 "item:abyssalcraft:abyssalnomicon",
                 "item:essentialcraft:demonicpentacle",
                 "item:nuclearcraft:decay_generator",
-                "item:extrautils2:lawsword",
+                "item:essentialcraft:holopad",
+                "item:abyssalcraft:odb",
+                "item:gateway:demon_factory",
                 "item:qmd:ring_accelerator_controller",
-                "item:qmd:nucleosynthesis_chamber_controller",
-                "item:qmd:isotope:7",
-                "item:qmd:copernicium",
-                "item:storagedrawers:upgrade_creative",
-                "item:openblocks:heal",
-                "item:essentialcraft:device:4",
-                "item:botania:pool:1",
-                "item:extrautils2:passivegenerator:6",
-                "item:extrautils2:spike_creative",
-                "item:calculator:atomicmultiplier",
-                "item:thaumicenergistics:essentia_cell_creative",
-                "item:storagedrawers:upgrade_creative:1"
+                "item:qmd:nucleosynthesis_chamber_controller"
             ],
-            "text": "Some of the items in the remaining chapter."
+            "text": "Some of the remaining parts of progression and automation challenges of the pack."
         }
     ]
 }

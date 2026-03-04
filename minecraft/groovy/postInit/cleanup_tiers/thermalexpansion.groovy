@@ -40,7 +40,7 @@ TooltipEvents.setModTier("thermalexpansion", 8)
 for (def it in tinItems) TooltipEvents.setTier(it, 2)
 for (def it in basicItems) TooltipEvents.setTier(it, 3)
 for (def it in advancedAugments) TooltipEvents.setTier(it, 8)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 

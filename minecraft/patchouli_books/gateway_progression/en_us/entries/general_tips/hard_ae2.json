@@ -7,6 +7,23 @@
     "pages": [
         {
             "type": "text",
+            "text": "Welcome to Tier 8, the tier that - finally - unlocks Applied Energistics 2. Though, don't rush to remove all of your setups now - they're still useful. Also, don't forget to scale them to support the Certus Quartz costs of various machines."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "thermalexpansion.pulverizer",
+                    "inputs": [
+                        "item:jaopca:ore_crystal.quartz"
+                    ],
+                    "removeBackground": false
+                }
+            ],
+            "text": "The main source of Certus Quartz in the pack. Install Secondary Sieves and process through a Resonator to get gems."
+        },
+        {
+            "type": "text",
             "text": "Perhaps you're used to AE2 doing everything for you in other packs. Maybe even solve the whole pack through on-demand crafting. Well, not anymore."
         },
         {

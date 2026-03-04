@@ -80,7 +80,7 @@ for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
 for (def it in arcTier) TooltipEvents.setTier(it, 4)
 for (def it in hvTier) TooltipEvents.setTier(it, 6)
 for (def it in advancedItems) TooltipEvents.setTier(it, 6)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 

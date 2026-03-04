@@ -28,7 +28,7 @@ for (int i in 1..140) potionGems.add(mitem("item_potion_gem", i))
 
 // Removing some Aetherium tools because they're terrible for when they're obtained LMAO.
 def removeRecipes = [mitem("item_axe_prismarine"), mitem("item_axe_ender")]
-def removeAlchemy = [mitem("item_resource", 15), mitem("item_resource", 16)]
+def removeAlchemy = [mitem("item_resource", 15), mitem("item_resource", 15)]
 
 def hideFromJei = [
     mitem("forge_structure"),

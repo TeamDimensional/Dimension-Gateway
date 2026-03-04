@@ -75,7 +75,7 @@ for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in modItems) TooltipEvents.setTier(it, 8)
 for (def it in advancedItems) TooltipEvents.setTier(it, 10)
 for (def it in eliteItems) TooltipEvents.setTier(it, 11)
-for (def it in creativeItems) TooltipEvents.setTier(it, 16)
+for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
