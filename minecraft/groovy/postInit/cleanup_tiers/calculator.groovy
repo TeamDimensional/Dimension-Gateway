@@ -5,6 +5,10 @@ def mitem(name, k=0) {
     return item("calculator:${name}", k)
 }
 
+def t3Items = [
+    mitem("advancedpowercube"),
+]
+
 def basicItems = [
     mitem("reinforcedchest"), mitem("stoneseparator"), mitem("hungerprocessor"), mitem("dockingstation"),
     mitem("basicgreenhouse"), mitem("starchextractor"), mitem("redstoneextractor"), mitem("rainsensor"),
@@ -57,7 +61,7 @@ def circuitItems = [
 ]
 
 def removeRecipes = [
-    mitem("powercube"), mitem("advancedpowercube"), mitem("reinforcedfurnace"), mitem("extractionchamber"), mitem("reassemblychamber"),
+    mitem("powercube"), mitem("reinforcedfurnace"), mitem("extractionchamber"), mitem("reassemblychamber"),
     mitem("restorationchamber"), mitem("handcrankedgenerator"), mitem("crankhandle"), mitem("grenadecasing"),
 ]
 
@@ -78,11 +82,12 @@ for (def it in tools) {
     for (def mat in ["endforged"]) starsteelItems.add(mitem(mat + it))
 }
 
+for (def it in t3Items) TooltipEvents.setTier(it, 3)
 for (def it in basicItems) TooltipEvents.setTier(it, 6)
 for (def it in atomicItems) TooltipEvents.setTier(it, 6)
 for (def it in starsteelItems) TooltipEvents.setTier(it, 6)
-for (def it in flawlessItems) TooltipEvents.setTier(it, 12)
-for (def it in circuitItems) TooltipEvents.setTier(it, 12)
+for (def it in flawlessItems) TooltipEvents.setTier(it, 6)
+for (def it in circuitItems) TooltipEvents.setTier(it, 6)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
