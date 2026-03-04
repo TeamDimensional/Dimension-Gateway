@@ -56,7 +56,7 @@ AlloyHelper.builder()
 AlloyHelper.builder()
     .name("alloy/pigiron")
     .output(item("tconstruct:ingots", 4))
-    .input(iron, item("tconstruct:edible", 3))
+    .input(invar, item("tconstruct:edible", 3))
     .time(200)
     .register()
 

@@ -113,7 +113,7 @@ def removeRecipes = [
     mitem("rtg_uranium"), 
     mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
     mitem("glowing_mushroom"), mitem("compound", 2), mitem("compound", 9), mitem("part", 11),
-    mitem("assembler"), mitem("fission_power_port"),
+    mitem("fission_power_port"),
 ]
 for (def m in ["copper", "hard_carbon", "thermoconducting"]) hxItems.add(mitem("heat_exchanger_tube_${m}"))
 

@@ -179,13 +179,7 @@ def addOre(key, byproducts, addFluidOps) {
         .secondaryOutput(outputs[byproducts[0]][0], 0.3)
         .energy(4000)
         .register()
-    
-    mods.actuallyadditions.crusher.recipeBuilder()
-        .input(itemOre | itemCluster)
-        .output(itemCrystal * 2, outputs[byproducts[0]][0])
-        .chance(20)
-        .register()
-    
+
     mods.prodigytech.ore_refinery.recipeBuilder()
         .input(itemOre | itemCluster)
         .output(itemCrystal * 2, outputs[byproducts[1]][0])
@@ -220,7 +214,7 @@ def addOre(key, byproducts, addFluidOps) {
         .input(itemOre | itemCluster | itemCrystal)
         .output(itemShard, byproduct)
         .chance(chance)
-        .energy(6400)
+        .energy(3000)
         .register()
 
     mods.calculator.flawless_calculator.recipeBuilder()

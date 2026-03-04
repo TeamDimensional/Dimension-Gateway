@@ -102,35 +102,6 @@ mods.thermalexpansion.crucible.removeByInput(item("tconstruct:ore", 1))
 for (def i in 0..8) mods.thermalexpansion.crucible.removeByInput(item("thermalfoundation:ore", i))
 for (def i in 0..4) mods.thermalexpansion.crucible.removeByInput(item("thermalfoundation:ore_fluid", i))
 
-// Replace recipes specific to SAG Mill
-mods.botania.mana_infusion.recipeBuilder()
-    .input(item("enderio:item_material", 14))
-    .output(item("enderio:item_material", 36))
-    .mana(10000)
-    .catalyst(blockstate("naturesaura:crushing_catalyst"))
-    .register()
-
-mods.botania.mana_infusion.recipeBuilder()
-    .input(item("enderio:item_material", 15))
-    .output(item("enderio:item_material", 35))
-    .mana(10000)
-    .catalyst(blockstate("naturesaura:crushing_catalyst"))
-    .register()
-
-mods.botania.mana_infusion.recipeBuilder()
-    .input(item("enderio:item_material", 16))
-    .output(item("enderio:item_material", 37))
-    .mana(25000)
-    .catalyst(blockstate("naturesaura:crushing_catalyst"))
-    .register()
-
-mods.botania.mana_infusion.recipeBuilder()
-    .input(item("enderio:item_material", 19))
-    .output(item("enderio:item_material", 34))
-    .mana(25000)
-    .catalyst(blockstate("naturesaura:crushing_catalyst"))
-    .register()
-
 // Alchemy Table
 mods.bloodmagic.alchemy_table.removeByOutput(item("minecraft:redstone") * 8)
 mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 19) * 2)

@@ -1,3 +1,5 @@
+import classes.AlloyHelper
+
 // Starsteel
 def citem(name, k=0) {
     return item("gateway:${name}", k)
@@ -5,19 +7,18 @@ def citem(name, k=0) {
 
 ore("ingotStarsteel").add(citem("starsteel_ingot"))
 
-mods.immersiveengineering.arc_furnace.recipeBuilder()
-    .mainInput(ore("ingotSteel"))
-    .input(ore("ingotAstralStarmetal"), ore("dustDiamond"))
+AlloyHelper.builder()
+    .input(ore("ingotSteel"), ore("ingotAstralStarmetal"), ore("dustDiamond"))
     .output(citem("starsteel_ingot") * 2)
-    .time(150)
-    .energyPerTick(250)
+    .time(160)
+    .maxTier(2)
     .register()
 
-mods.enderio.alloy_smelter.recipeBuilder()
+AlloyHelper.builder()
     .input(ore("ingotManasteel"), ore("ingotAstralStarmetal") * 2, ore("dustDiamond") * 2)
     .output(citem("starsteel_ingot") * 4)
-    .tierAny()
-    .energy(80000)
+    .time(400)
+    .minTier(3)
     .register()
 
 // Radioinfused Tanzanite line
@@ -37,3 +38,16 @@ mods.thermalexpansion.crucible.recipeBuilder()
     .fluidOutput(fluid("titanium_aluminide") * 144)
     .energy(4000)
     .register()
+
+// Blaze Superfuel
+mods.soot.alchemical_mixer.recipeBuilder()
+        .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 50, fluid("crystaloil") * 100)
+        .fluidOutput(fluid("blaze_superfuel") * 250)
+        .setAspect("copper", 2, 4)
+        .register()
+mods.embers.alchemy.addAspect("destabilized", item("thermalfoundation:material", 893))
+mods.soot.alchemical_mixer.recipeBuilder()
+        .fluidInput(fluid("blazing_blood") * 40, fluid("napalm") * 160, fluid("gas_dwarf") * 100, fluid("empoweredoil") * 200)
+        .fluidOutput(fluid("blaze_superfuel") * 900)
+        .setAspect("destabilized", 8, 16)
+        .register()
