@@ -1,12 +1,3 @@
-// Unlock piston in tier 2 to allow using it for piston crafts
-crafting.shapedBuilder()
-        .name("tier2/aurorian_piston")
-        .output(item("minecraft:piston"))
-        .matrix("PPP", "SCS", "ScS")
-        .key("P", item("theaurorian:silentwoodplanks")).key("C", ore("ingotCerulean")).key("S", item("theaurorian:auroriancobblestone"))
-        .key("c", item("theaurorian:crystal"))
-        .register()
-
 // Gold Fiber
 crafting.remove("naturesaura:gold_fiber")
 mods.theaurorian.scrapper.recipeBuilder()
@@ -44,44 +35,29 @@ mods.naturesaura.ritual.recipeBuilder()
     .sapling(item("minecraft:sapling"))
     .register()
 
-// Explosion Furnace
-crafting.remove("prodigytech:machine/explosion_furnace")
-crafting.shapedBuilder()
-        .name("tier2/explosion_furnace")
-        .output(item("prodigytech:explosion_furnace"))
-        .matrix("BBB", "BAB", "BBB")
-        .key("B", ore("bricksStone")).key("A", item("naturesaura:token_anger"))
-        .register()
-
-// Gold Powder
-crafting.remove("naturesaura:gold_powder")
-inWorldCrafting.pistonPush.recipeBuilder()
-    .input(item("naturesaura:gold_leaf"))
-    .output(item("naturesaura:gold_powder"))
-    .minHarvestLevel(1)
-    .maxConversionsPerPush(16)
-    .register()
-
-// Incinerator
-crafting.remove("prodigytech:machine/incinerator")
-crafting.shapedBuilder()
-        .name("tier2/incinerator")
-        .output(item("prodigytech:incinerator"))
-        .matrix("FUF", "FUF", "FSF")
-        .key("F", ore("ingotFerramic")).key("U", item("theaurorian:scrapumbra")).key("S", item("naturesaura:token_sorrow"))
-        .register()
-
-// Seared Brick
-furnace.removeByOutput(item("tconstruct:materials"))
-mods.roots.pyre.recipeBuilder()
-    .name("tier2/seared_brick")
-    .input(item("minecraft:brick"), item("minecraft:brick"), item("minecraft:netherbrick"),
-           item("minecraft:netherbrick"), ore("dustAsh"))
-    .output(item("tconstruct:materials") * 4)
-    .burnTime(160)
-    .register()
-
 // Gold Leaf info
 mods.jei.description.add(item("naturesaura:golden_leaves"),
                          ["Spreads to the nearby Leaves blocks when grown.", "Only fully grown Leaves can drop Gold Leaf!"])
 mods.jei.description.add(item("naturesaura:gold_leaf"), ["Only fully grown Leaves can drop Gold Leaf!"])
+
+// Natural Altar
+mods.naturesaura.ritual.removeByOutput(item("naturesaura:nature_altar"))
+mods.naturesaura.ritual.recipeBuilder()
+    .name("tier3/nat_altar")
+    .input(item("minecraft:stone"), item("minecraft:stone"), item("roots:runic_dust"), item("naturesaura:gold_leaf"),
+           item("naturesaura:token_joy"), item("thermalfoundation:material", 160), item("thermalfoundation:material", 162))
+    .output(item("naturesaura:nature_altar"))
+    .time(250)
+    .sapling(item("minecraft:sapling", 2))
+    .register()
+
+// Powder of Bountiful Core
+bountyPowder = item('naturesaura:effect_powder').withNbt(['effect': 'naturesaura:ore_spawn'])
+mods.naturesaura.ritual.removeByOutput(bountyPowder)
+mods.naturesaura.ritual.recipeBuilder()
+    .name("tier6/bounty_powder")
+    .input(item("naturesaura:gold_powder"), item("naturesaura:gold_powder"), item("naturesaura:sky_ingot"), item("minecraft:redstone_ore"))
+    .output(bountyPowder * 4)
+    .time(250)
+    .sapling(item("minecraft:sapling", 1))
+    .register()

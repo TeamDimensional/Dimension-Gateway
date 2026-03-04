@@ -1,4 +1,5 @@
 import classes.AlloyHelper
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 // Starsteel
 def citem(name, k=0) {
@@ -51,3 +52,11 @@ mods.soot.alchemical_mixer.recipeBuilder()
         .fluidOutput(fluid("blaze_superfuel") * 900)
         .setAspect("destabilized", 8, 16)
         .register()
+
+// Wilted Daisy
+mods.roots.flower_generation.recipeBuilder()
+    .name("wilteddaisy")
+    .flower(blockstate("gateway:wilted_daisy"))
+    .register()
+TooltipEvents.setTooltip(
+    item("gateway:wilted_daisy"), "This flower does not spawn in world! Use the Flower Growth ritual to obtain it.")

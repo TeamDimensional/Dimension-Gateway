@@ -1,5 +1,4 @@
 // Various cleanup of dreadlands, non-functional recipes, machine identities...
-
 mods.abyssaltweaker.fuel.removeTransmutator(item("minecraft:blaze_rod"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("minecraft:blaze_powder"))
 mods.abyssaltweaker.fuel.removeTransmutator(item("abyssalcraft:cchunk"))
@@ -288,16 +287,3 @@ mods.abyssaltweaker.ritual.recipeBuilder()
         item("prodigytech:primordium"), item("abyssalcraft:gatewaykeyjzh"), item("prodigytech:primordium"),
         item("abyssalcraft:ethaxiumingot"), item("abyssalcraft:blaze_crystal_cluster"))
     .register()
-
-inWorldCrafting.fluidToFluid.recipeBuilder()
-        .fluidInput(fluid("sludge"))
-        .input(item("enderio:item_material", 36))
-        .input(item("astralsorcery:itemcraftingcomponent", 4), 0.3f)
-        .fluidOutput(fluid("liquidcoralium"))
-        .register()
-
-inWorldCrafting.fluidToItem.recipeBuilder()
-        .fluidInput(fluid("liquidcoralium"), 0.2f)
-        .input(item("essentialcraft:genitem", 47))
-        .output(item("abyssalcraft:shadowgem"))
-        .register()

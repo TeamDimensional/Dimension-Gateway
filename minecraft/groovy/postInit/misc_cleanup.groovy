@@ -1,3 +1,11 @@
+// don't show 16 sponge recipes
+crafting.removeByOutput(item("openblocks:sponge"))
+crafting.shapelessBuilder()
+        .name("tier1/qol/sponge")
+        .output(item("openblocks:sponge"))
+        .input(ore("wool"), ore("slimeball"))
+        .register()
+
 // Make silentwood great again
 ore("plankWood").add(item("theaurorian:silentwoodplanks"))
 ore("logWood").add(item("theaurorian:silentwoodlog"))
@@ -28,26 +36,6 @@ crafting.shapedBuilder()
         .register()
 
 crafting.remove("theaurorian:items/bowl")
-
-// Hang Glider
-crafting.remove("openblocks:hang_glider_0")
-crafting.shapedBuilder()
-        .name("tier2/qol/hang_glider")
-        .output(item("openblocks:hang_glider"))
-        .matrix("WSW")
-        .key("W", item("openblocks:generic")).key("S", item("naturesaura:ancient_stick"))
-        .register()
-
-// Hang Glider Wing
-crafting.remove("openblocks:glider_wing_0")
-crafting.remove("openblocks:glider_wing_1")
-crafting.shapedBuilder()
-        .name("tier2/qol/glider_wing")
-        .output(item("openblocks:generic"))
-        .matrix("LS ", "LLS", "MLL")
-        .key("L", item("minecraft:leather")).key("S", ore("stickWood")).key("M", ore("ingotMoonstone"))
-        .mirrored()
-        .register()
 
 // Fix Plant Fiber -> String since it's already oredicted as that
 crafting.remove("theaurorian:items/stringfromplantfiber")

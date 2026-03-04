@@ -1,0 +1,36 @@
+// Unlock piston in tier 2 to allow using it for piston crafts
+crafting.shapedBuilder()
+        .name("tier2/aurorian_piston")
+        .output(item("minecraft:piston"))
+        .matrix("PPP", "SCS", "ScS")
+        .key("P", item("theaurorian:silentwoodplanks")).key("C", ore("ingotCerulean")).key("S", item("theaurorian:auroriancobblestone"))
+        .key("c", item("theaurorian:crystal"))
+        .register()
+
+// Emerald and Diamond from dusts
+mods.aetherworks.metal_former.recipeBuilder()
+    .fluidInput(fluid("blaze_superfuel") * 500)
+    .input(item("nuclearcraft:gem_dust"))
+    .output(item("minecraft:diamond"))
+    .temperature(2000)
+    .register()
+mods.aetherworks.metal_former.recipeBuilder()
+    .fluidInput(fluid("blaze_superfuel") * 500)
+    .input(item("prodigytech:emerald_dust"))
+    .output(item("minecraft:emerald"))
+    .temperature(1750)
+    .register()
+
+// Ender Eye
+crafting.removeByOutput(item("minecraft:ender_eye"))
+mods.astralsorcery.infusion_altar.removeByOutput(item("minecraft:ender_eye"))
+
+mods.thaumcraft.crucible.recipeBuilder()
+    .researchKey("UNLOCKALCHEMY@3")
+    .catalyst(item("essentialcraft:genitem", 38))
+    .output(item("minecraft:ender_eye"))
+    .aspect(aspect("alienis") * 20)
+    .aspect(aspect("auram") * 10)
+    .aspect(aspect("praecantatio") * 15)
+    .aspect(aspect("motus") * 10)
+    .register()

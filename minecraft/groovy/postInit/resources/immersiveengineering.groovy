@@ -1,0 +1,20 @@
+// Require crafting for mechanical components
+crafting.remove("immersiveengineering:material/component_iron")
+crafting.remove("immersiveengineering:material/component_steel")
+
+// Engineer's Blueprint (avoid useless crafting components)
+crafting.remove("immersiveengineering:blueprints/components")
+crafting.shapedBuilder()
+        .name("tier3/blueprints/components")
+        .output(item("immersiveengineering:blueprint").withNbt(["blueprint": "components"]))
+        .matrix(" C ", "LLL", "PPP")
+        .key("P", ore("paper")).key("L", ore("dyeBlue")).key("C", item("prodigytech:circuit_refined"))
+        .register()
+
+crafting.remove("immersiveengineering:blueprints/common_cartridges")
+crafting.shapedBuilder()
+        .name("tier3/blueprints/bullet")
+        .output(item("immersiveengineering:blueprint").withNbt(["blueprint": "bullet"]))
+        .matrix("GCG", "LLL", "PPP")
+        .key("P", ore("paper")).key("L", ore("dyeBlue")).key("C", ore("plateCopper")).key("G", item("minecraft:gunpowder"))
+        .register()
