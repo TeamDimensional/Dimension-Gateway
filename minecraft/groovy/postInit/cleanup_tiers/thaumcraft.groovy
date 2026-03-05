@@ -41,11 +41,12 @@ def astralItems = [
 
 def mithrilliumItems = [
     aitem("mithrillium_nugget"), aitem("mithrillium_ingot"), aitem("mithrillium_plate"), aitem("the_beheader"), aitem("mithrillium_smelter"),
-    aitem("jar_mithrillium"), aitem("mithrillium_block"), mitem("metal_alchemical_advanced"), mitem("thaumonomicon", 1), mitem("focus_2"),
+    aitem("jar_mithrillium"), aitem("mithrillium_block"), mitem("metal_alchemical_advanced"), mitem("thaumonomicon", 1), mitem("focus_2"),\
+    eitem("essentia_cell_64k"), eitem("essentia_component_64k"),
 ]
 
 def infusionItems = [
-    eitem("essentia_cell_64k"), eitem("essentia_component_64k"), eitem("upgrade_arcane"), eitem("infusion_provider"),
+    eitem("upgrade_arcane"), eitem("infusion_provider"),
     gitem("autocaster_placer"), aitem("seal_symbol"), mitem("matrix_speed"), mitem("matrix_cost"),
     mitem("jar_brain"), mitem("infusion_matrix"), mitem("mirror"), mitem("mirror_essentia"), mitem("mind", 1), mitem("turret", 1),
     mitem("hand_mirror"), mitem("verdant_charm"), mitem("charm_undying"),
@@ -142,7 +143,7 @@ for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in mainItems) TooltipEvents.setTier(it, 5)
 for (def it in astralItems) TooltipEvents.setTier(it, 6)
 for (def it in mithrilliumItems) TooltipEvents.setTier(it, 11)
-for (def it in infusionItems) TooltipEvents.setTier(it, 11)
+for (def it in infusionItems) TooltipEvents.setTier(it, 5)
 for (def it in ichorItems) TooltipEvents.setTier(it, 11)
 for (def it in hoannaItems) TooltipEvents.setTier(it, 14)
 for (def it in voidItems) TooltipEvents.setTier(it, 14)

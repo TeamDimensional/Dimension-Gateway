@@ -24,7 +24,8 @@ def magicalTier = [
     mitem("metadatamanager"), mitem("blockbreaker"), mitem("chest"), mitem("advbreaker"), mitem("intersector"), mitem("mrumover1"), mitem("bound_gem"), mitem("magicmonocle"),
     mitem("itemfilter"), mitem("itemfilter", 2), mitem("monsterclinger"), mitem("soulstone"), mitem("mrumover_t2"), mitem("craftingframe"),
     mitem("echoldingchamber"), mitem("gun.pistol"), mitem("gun.rifle"), mitem("gun.sniper"), mitem("gun.gatling"),
-    // normally it's not here, but I want to make end exploration nicer
+    // Moved from industrial to magical for better QOL
+    mitem("magicalshield"), mitem("magicaldigger"), mitem("spawnercollector"), mitem("magicalporkchop"), mitem("holymace"), mitem("monsterharvester"),
     mitem("magicalwings"),
 ] + elementalTools
 for (int i in 0..3) magicalTier.add(mitem("weaponmaker", i))
@@ -58,12 +59,10 @@ for (int i in 0..15) {
 for (int i in 0..3) windTier.add(mitem("mrumatrixprojection", i))
 
 def industrialTier = [
-    mitem("ecbalancer"), mitem("moonwell"), mitem("monsterharvester"), mitem("magmaticsmeltery"), mitem("crystalcontroller"),
+    mitem("ecbalancer"), mitem("moonwell"), mitem("magmaticsmeltery"), mitem("crystalcontroller"),
     mitem("crystalextractor"), mitem("mrucoilhardener"), mitem("mrucoil"), mitem("mimic"), mitem("magicalslag"), mitem("frozenmace"),
-    mitem("magicaldigger"), mitem("spawnercollector"), mitem("staffoflife"), mitem("biomewand"), mitem("emeraldheart"),
-    mitem("magicalshield"), mitem("spikyshield"), mitem("chaosfork"), mitem("magicwaterbottle"), mitem("magicalporkchop"), mitem("playerlist"),
-    mitem("magmaticstaff"), mitem("magicallantern"), mitem("magnetizingstaff"), mitem("chunkloader"), mitem("dimtransciever"),
-    mitem("holymace"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"), mitem("crystalformer"), mitem("magicalalloy"),
+    mitem("spikyshield"), mitem("chaosfork"), mitem("magicwaterbottle"), mitem("playerlist"), mitem("emeraldheart"),
+    mitem("chunkloader"), mitem("dimtransciever"), mitem("genitem"), mitem("genitem", 20), mitem("coldstone"), mitem("crystalformer"), mitem("magicalalloy"),
 ]
 for (int i in 0..5) industrialTier.add(mitem("rightclicker", i))
 for (int i in 0..15) industrialTier.add(mitem("essence", i))
@@ -75,7 +74,7 @@ for (int i in 0..15) {
     industrialTier.add(mitem("fancyblock.coldstone", i))
 }
 for (int i in 0..3) industrialTier.add(mitem("elementalfuel", i))
-for (int i in 0..9) industrialTier.add(mitem("charm", i))
+for (int i in 0..8) magicalTier.add(mitem("charm", i))  // moved from industrial
 for (def i in ["e", "f", "w", "a"]) industrialTier.add(mitem("${i}focus"))
 
 def hoannaLoot = [
@@ -134,8 +133,11 @@ def creativeItems = [mitem("device", 4), mitem("device", 8)]
 def removeItems = [
     mitem("miminvstorage"), mitem("newmim"), mitem("mimscreen"), mitem("mimcrafter"), mitem("mimejector"), mitem("miminjector"),
     mitem("mimejectorp"), mitem("miminjectorp"), mitem("inventorygem"), mitem("magicalquarry"),
+    mitem("magmaticstaff"), mitem("magnetizingstaff"), mitem("charm", 9), mitem("magicallantern"),
     // doesn't work
     mitem("biomewand"),
+    // does not spend MRU correctly when used by players, and optimal use case is a player simulator, which goes against the purpose
+    mitem("staffoflife"),
 ]
 for (int i in [17, 18, 19, 77, 78, 80, 81]) removeItems.add(mitem("genitem", i))
 for (int i in [0, 4, 8, 12]) removeItems.add(mitem("furnacemagic", i))

@@ -186,7 +186,7 @@ mods.botania.rune_altar.recipeBuilder()
     .register()
 // Winter
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaGlass, item("botania:rune", 0), item("botania:rune", 2), item("naturesaura:token_sorrow"), item("minecraft:cake"), item("minecraft:packed_ice"))
+    .input(manaGlass, item("botania:rune", 0), item("botania:rune", 2), item("naturesaura:token_grief"), item("minecraft:cake"), item("minecraft:packed_ice"))
     .output(item("botania:rune", 7) * 2)
     .mana(t2Cost)
     .register()

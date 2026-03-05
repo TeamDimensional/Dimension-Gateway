@@ -10,10 +10,10 @@ def t3Items = [
 ]
 
 def basicItems = [
-    mitem("reinforcedchest"), mitem("stoneseparator"), mitem("hungerprocessor"), mitem("dockingstation"),
+    mitem("reinforcedchest"), mitem("stoneseparator"), mitem("dockingstation"),
     mitem("basicgreenhouse"), mitem("starchextractor"), mitem("redstoneextractor"), mitem("rainsensor"),
     mitem("gaslanternoff"), mitem("scarecrow"), mitem("infocalculator"), mitem("craftingcalculator"),
-    mitem("scientificcalculator"), mitem("hungermodule"), mitem("terrainmodule"), mitem("advancedterrainmodule"),
+    mitem("scientificcalculator"), mitem("terrainmodule"), mitem("advancedterrainmodule"),
     mitem("energymodule"), mitem("smallstone"), mitem("calculatorscreen"), mitem("calculatorassembly"), mitem("advancedassembly"),
     mitem("wrench"), mitem("sickle"), mitem("enrichedgold"), mitem("enrichedgoldingot"), mitem("reinforcedironingot"),
     mitem("redstoneingot"), mitem("weakeneddiamond"), mitem("largeamethyst"), mitem("smallamethyst"), mitem("shardamethyst"),
@@ -24,17 +24,14 @@ def basicItems = [
 for (int i in [0, 2, 3, 4, 9]) basicItems.add(mitem("material", i))
 
 def atomicItems = [
-    mitem("atomiccalculator"), mitem("dynamiccalculator"), mitem("algorithmseparator"), mitem("healthprocessor"),
+    mitem("atomiccalculator"), mitem("dynamiccalculator"), mitem("algorithmseparator"),
     mitem("advancedgreenhouse"), mitem("conductormast"), mitem("weatherstation"), mitem("transmitter"),
-    mitem("glowstoneextractor"), mitem("weathercontroller"), mitem("stoneassimilator"), mitem("algorithmassimilator"),
-    mitem("amethystlog"), mitem("amethystplanks"), mitem("amethyststairs"), mitem("amethystfence"), mitem("amethystleaves"),
-    mitem("amethystsapling"), mitem("tanzanitelog"), mitem("tanzaniteplanks"), mitem("tanzanitestairs"), mitem("tanzanitefence"),
-    mitem("tanzaniteleaves"), mitem("tanzanitesapling"), mitem("warpmodule"), mitem("jumpmodule"), mitem("healthmodule"),
+    mitem("glowstoneextractor"), mitem("weathercontroller"), mitem("warpmodule"), mitem("jumpmodule"),
     mitem("soil"), mitem("speedupgrade"), mitem("energyupgrade"), mitem("voidupgrade"), mitem("transferupgrade"),
     mitem("atomicmodule"), mitem("atomicassembly"), mitem("atomicbinder"), mitem("flawlessdiamond"), mitem("firediamond"),
     mitem("electricdiamond"), mitem("largetanzanite"), mitem("smalltanzanite"), mitem("shardtanzanite"), mitem("prunaeseeds"),
     mitem("storagemodule"), mitem("pearlog"), mitem("pearplanks"), mitem("pearstairs"), mitem("pearfence"),
-    mitem("pearleaves"), mitem("pearsapling"), mitem("pear"), mitem("rottenpear"),
+    mitem("pearleaves"), mitem("pearsapling"), mitem("pear"), mitem("rottenpear"), mitem("fabricationchamber"),
     // Circuits part 1 needed for powergens and upgrades
     mitem("precisionchamber"), mitem("processingchamber"), mitem("storagechamber"), mitem("analysingchamber"),
 ]
@@ -45,8 +42,18 @@ for (int i in 0..13) {
     atomicItems.add(mitem("circuitdirty", i))
 }
 
+def hungerItems = [
+    mitem("amethystlog"), mitem("amethystplanks"), mitem("amethyststairs"), mitem("amethystfence"), mitem("amethystleaves"),
+    mitem("amethystsapling"), mitem("hungerprocessor"), mitem("hungermodule"), mitem("stoneassimilator"),
+]
+
+def healthItems = [
+    mitem("tanzanitelog"), mitem("tanzaniteplanks"), mitem("tanzanitestairs"), mitem("tanzanitefence"), mitem("tanzaniteleaves"),
+    mitem("tanzanitesapling"), mitem("algorithmassimilator"), mitem("healthprocessor"), mitem("healthmodule"), mitem("nutritionmodule"),
+]
+
 def starsteelItems = [
-    mitem("material", 8), mitem("nutritionmodule"), mitem("enddiamond"),
+    mitem("material", 8), mitem("enddiamond"),
 ]
 
 def flawlessItems = [
@@ -56,8 +63,8 @@ def flawlessItems = [
     mitem("obsidiankey"), mitem("fiddledewfruit"), mitem("controlledfuel"),
 ]
 
-def circuitItems = [
-    mitem("calculatorlocator"), mitem("calculatorplug"), mitem("locatormodule"), mitem("fabricationchamber"),
+def locatorItems = [
+    mitem("calculatorlocator"), mitem("calculatorplug"), mitem("locatormodule"),
 ]
 
 def removeRecipes = [
@@ -87,7 +94,9 @@ for (def it in basicItems) TooltipEvents.setTier(it, 6)
 for (def it in atomicItems) TooltipEvents.setTier(it, 6)
 for (def it in starsteelItems) TooltipEvents.setTier(it, 6)
 for (def it in flawlessItems) TooltipEvents.setTier(it, 6)
-for (def it in circuitItems) TooltipEvents.setTier(it, 6)
+for (def it in hungerItems) TooltipEvents.setTier(it, 7)
+for (def it in healthItems) TooltipEvents.setTier(it, 10)
+for (def it in locatorItems) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
