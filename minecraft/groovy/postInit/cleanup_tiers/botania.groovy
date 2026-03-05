@@ -170,6 +170,6 @@ def setFloatingFlowerTier(name, tier) {
 }
 
 for (def it in tier1Flowers) setFlowerTier(it, 10)
-for (def it in tier2Flowers) setFlowerTier(it, 12)
+for (def it in tier2Flowers) setFlowerTier(it, 10)
 for (def it in tier3Flowers) setFlowerTier(it, 14)
 setFloatingFlowerTier("puredaisy", 10)
