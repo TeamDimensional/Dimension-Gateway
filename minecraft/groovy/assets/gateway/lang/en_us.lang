@@ -100,3 +100,6 @@ fluid.h2so4=Sulfuric Acid
 fluid.ftglowstone=Energized Glowstone
 fluid.bare_acid=Enderic Acid
 tile.AdvancedPowerCube.name=Power Cube
+
+tile.nuclearcraft.decay_generator.name=Decay Apparatus
+tile.nuclearcraft.decay_generator.desc=Irradiates blocks with primordial energy, causing their decay.
