@@ -134,6 +134,8 @@ def creativeItems = [mitem("device", 4), mitem("device", 8)]
 def removeItems = [
     mitem("miminvstorage"), mitem("newmim"), mitem("mimscreen"), mitem("mimcrafter"), mitem("mimejector"), mitem("miminjector"),
     mitem("mimejectorp"), mitem("miminjectorp"), mitem("inventorygem"), mitem("magicalquarry"),
+    // doesn't work
+    mitem("biomewand"),
 ]
 for (int i in [17, 18, 19, 77, 78, 80, 81]) removeItems.add(mitem("genitem", i))
 for (int i in [0, 4, 8, 12]) removeItems.add(mitem("furnacemagic", i))

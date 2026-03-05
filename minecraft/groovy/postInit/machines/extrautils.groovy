@@ -1,0 +1,86 @@
+// Terraformer
+crafting.remove("extrautils2:biome_marker")
+crafting.shapedBuilder()
+    .name("machine/xu2/biome_marker")
+    .matrix("DID", "ISI", "DID")
+    .key("D", item("extrautils2:ingredients", 3))
+    .key("I", item("aetherworks:item_resource", 4))
+    .key("S", ore("treeSapling"))
+    .output(item("extrautils2:biomemarker"))
+    .register()
+
+crafting.remove("extrautils2:terraformer_base")
+crafting.shapedBuilder()
+    .name("component/xu2/terraformer_base")
+    .matrix("IDI", "SCS", "IDI")
+    .key("I", item("aetherworks:item_resource", 4))
+    .key("S", ore("treeSapling"))
+    .key("D", item("minecraft:diamond"))
+    .key("C", item("extrautils2:machine"))
+    .output(item("extrautils2:terraformer", 9))
+    .register()
+
+crafting.remove("extrautils2:terraformer_antenna")
+crafting.shapedBuilder()
+    .name("machine/xu2/antenna")
+    .matrix("R R", "ISI", " I ")
+    .key("I", item("aetherworks:item_resource", 4))
+    .key("S", ore("treeSapling"))
+    .key("R", item("minecraft:end_rod"))
+    .output(item("extrautils2:terraformer", 1))
+    .register()
+
+crafting.remove("extrautils2:terraformer_humidifier")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(item("extrautils2:terraformer", 9), item("roots:unending_bowl"), item("roots:unending_bowl"), item("roots:unending_bowl"), item("roots:unending_bowl"))
+    .output(item("extrautils2:terraformer", 2))
+    .mru(200)
+    .register()
+
+crafting.remove("extrautils2:terraformer_dehumidifier")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(
+        item("extrautils2:terraformer", 9),
+        item("extrautils2:compressedsand"), item("extrautils2:compressedsand"), item("extrautils2:compressedsand"), item("extrautils2:compressedsand"))
+    .output(item("extrautils2:terraformer", 3))
+    .mru(200)
+    .register()
+
+crafting.remove("extrautils2:terraformer_heater")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(
+        item("extrautils2:terraformer", 9),
+        item("essentialcraft:genitem", 79), item("essentialcraft:genitem", 79), item("essentialcraft:genitem", 79), item("essentialcraft:genitem", 79))
+    .output(item("extrautils2:terraformer", 4))
+    .mru(200)
+    .register()
+
+crafting.remove("extrautils2:terraformer_cooler")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(item("extrautils2:terraformer", 9), item("aether_legacy:icestone"), item("aether_legacy:icestone"), item("aether_legacy:icestone"), item("aether_legacy:icestone"))
+    .output(item("extrautils2:terraformer", 5))
+    .mru(200)
+    .register()
+
+crafting.remove("extrautils2:terraformer_magic_absorbtion")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(item("extrautils2:terraformer", 9), item("embers:archaic_brick"), item("embers:archaic_brick"), item("embers:archaic_brick"), item("embers:archaic_brick"))
+    .output(item("extrautils2:terraformer", 7))
+    .mru(200)
+    .register()
+
+crafting.remove("extrautils2:terraformer_magic_infuser")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(
+        item("extrautils2:terraformer", 9),
+        item("extrautils2:ingredients", 12), item("extrautils2:ingredients", 12), item("extrautils2:ingredients", 12), item("extrautils2:ingredients", 12))
+    .output(item("extrautils2:terraformer", 8))
+    .mru(200)
+    .register()
+
+crafting.remove("extrautils2:terraformer_dehostilifier")
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(item("extrautils2:terraformer", 9), item("aether_legacy:aerogel"), item("aether_legacy:aerogel"), item("aether_legacy:aerogel"), item("aether_legacy:aerogel"))
+    .output(item("extrautils2:terraformer", 6))
+    .mru(200)
+    .register()

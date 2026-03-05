@@ -60,3 +60,22 @@ mods.roots.flower_generation.recipeBuilder()
     .register()
 TooltipEvents.setTooltip(
     item("gateway:wilted_daisy"), "This flower does not spawn in world! Use the Flower Growth ritual to obtain it.")
+
+// Runic Plate
+mods.advancedrocketry.cutting_machine.recipeBuilder()
+    .input(item("botania:livingrock"))
+    .output(item("gateway:incomplete_runic_plate") * 3)
+    .power(500)
+    .time(100)
+    .register()
+
+mods.extrautils2.resonator.recipeBuilder()
+    .input(item("gateway:incomplete_runic_plate"))
+    .output(item("gateway:runic_plate"))
+    .shouldProgress(
+        (resonator, _1, _2) ->
+        resonator.getWorld().getBiome(resonator.getPos()).getBiomeName() == "Magical Forest" &&
+        resonator.getWorld().provider.getDimension() != 0)
+    .requirementText("Must be in a Magical Forest, outside of Overworld")
+    .energy(2000)
+    .register()

@@ -25,7 +25,7 @@ def part1Items = [
     mitem("solararray"), mitem("launchpad"), mitem("landingpad"), mitem("seat"), mitem("rocketmotor"),
     mitem("fueltank"), mitem("guidancecomputer"), mitem("intake"), mitem("rocketbuilder"),
     mitem("loader", 2), mitem("loader", 3), mitem("loader", 4), mitem("loader", 5), mitem("fuelingstation"),
-    mitem("oxygencharger"), mitem("oxygendetection"), mitem("pipesealer"), mitem("moonturf"), mitem("moonturf_dark"),
+    mitem("oxygencharger"), mitem("oxygendetection"), mitem("pipesealer"), mitem("moonturf"), mitem("moonturf_dark"), mitem("cuttingmachine"),
     // Titanium Aluminide
     mitem("productdust"), mitem("productingot"), mitem("productnugget"), mitem("productplate"), mitem("productrod"),
     mitem("productsheet"), mitem("productgear"), mitem("metal0"), mitem("planetidchip"),
@@ -65,7 +65,7 @@ def creativeItems = [item("libvulpes:creativepowerbattery")]
 
 def removeRecipes = [
     mitem("platepress"), mitem("solargenerator"),
-    mitem("rollingmachine"), mitem("lathe"), mitem("cuttingmachine"), mitem("electrolyser"), mitem("centrifuge"),
+    mitem("rollingmachine"), mitem("lathe"), mitem("electrolyser"), mitem("centrifuge"),
     mitem("beacon"), mitem("railgun"), mitem("bipropellantrocketmotor"), mitem("advbipropellantrocketmotor"),
     mitem("bipropellantfueltank"), mitem("oxidizerfueltank"), mitem("terraformingterminal"), mitem("ic", 3), mitem("ic", 4), mitem("ic", 5),
     mitem("misc", 1), mitem("sawblade"), mitem("sawbladeiron"), item("libvulpes:coalgenerator"), item("libvulpes:productfan", 6),

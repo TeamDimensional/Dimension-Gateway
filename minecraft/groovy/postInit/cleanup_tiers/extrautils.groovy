@@ -40,6 +40,9 @@ for (def i in 0..2) items.add(mitem("simpledecorative", i))
 for (def i in 0..7) items.add(mitem("luxsaber", i))
 for (def i in [3, 6, 7]) items.add(mitem("decorativesolid", i))
 
+def terraformingItems = [mitem("biomemarker")]
+for (def i in 0..9) terraformingItems.add(mitem("terraformer", i))
+
 def advancedItems = []
 for (def i in 0..5) advancedItems.add(mitem("angelring", i))
 
@@ -65,6 +68,7 @@ for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier5Items) TooltipEvents.setTier(it, 5)
 for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in items) TooltipEvents.setTier(it, 7)
+for (def it in terraformingItems) TooltipEvents.setTier(it, 7)
 for (def it in advancedItems) TooltipEvents.setTier(it, 12)
 for (def it in antimatterItems) TooltipEvents.setTier(it, 15)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
