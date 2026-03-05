@@ -1,0 +1,23 @@
+{
+    "name": "ProjectE?",
+    "icon": "projecte:item.pe_transmutation_tablet",
+    "category": "patchouli:general_tips",
+    "sortnum": 110,
+    "pages": [
+        {
+            "type": "text",
+            "text": "It's a good idea to think about setting up a base early enough. You can try rushing to Void or even AE if you prefer, but I do not really recommend it... it would be a lot of work for little gain."
+        },
+        {
+            "type": "items",
+            "text": "To help you in this, powerful building tools are available as early as Tier 1, with ProjectE in Tier 2 for arbitrary building blocks. Ever thought what it's like to build things using Diamond blocks? Go ham!<br> <br>Or just use Limestone and Basalt like everyone in a certain pack does.",
+            "items": [
+                "item:betterbuilderswands:wandunbreakable",
+                "item:projecte:item.pe_transmutation_tablet",
+                "item:buildinggadgets:buildingtool",
+                "item:simplevoidworld:portal",
+                "item:projecte:condenser_mk2"
+            ]
+        }
+    ]
+}

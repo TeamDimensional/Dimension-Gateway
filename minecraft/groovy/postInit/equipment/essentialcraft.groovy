@@ -137,7 +137,7 @@ mods.thaumcraft.infusion_crafting.recipeBuilder()
 def foci = [
     [item("minecraft:fire_charge"), item("minecraft:potion").withNbt(["Potion":"minecraft:fire_resistance"]), "ignis", "ignis"],
     [item("minecraft:glass"), item("minecraft:potion").withNbt(["Potion":"minecraft:water_breathing"]), "aqua", "aer"],
-    [item("naturesaura:infused_iron_chest"), item("minecraft:golden_apple"), "terra", "praemunio"],
+    [item("naturesaura:infused_iron_chest"), item("minecraft:potion").withNbt(["Potion":"quark:resistance"]), "terra", "praemunio"],
     [item("naturesaura:infused_iron_shoes"), item("minecraft:potion").withNbt(["Potion":"minecraft:swiftness"]), "motus", "aer"],
     [item("tconstruct:materials", 22), item("minecraft:potion").withNbt(["Potion":"minecraft:swiftness"]), "mortuus", "ignis"],
     [item("tconstruct:materials", 23), item("minecraft:potion").withNbt(["Potion":"minecraft:fire_resistance"]), "ignis", "aqua"],

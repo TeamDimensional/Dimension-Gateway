@@ -34,11 +34,6 @@ for (int i in [0, 1, 2, 3, 5, 6, 7]) magicalTier.add(mitem("device", i))
 for (int i in [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
                21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
                33, 34, 38, 39, 40, 41, 42, 43, 44, 79]) magicalTier.add(mitem("genitem", i))
-for (int i in 0..15) {
-    magicalTier.add(mitem("fancyblock.fortifiedstone", i))
-    magicalTier.add(mitem("fancyblock.magicplating", i))
-    magicalTier.add(mitem("fancyblock.paleplating", i))
-}
 
 def spaceExplorationTier = [
     mitem("bottledwind"), mitem("imprisonedwind"), mitem("windkeeper"), mitem("helm_wind"), mitem("chest_wind"),
@@ -53,9 +48,6 @@ def windTier = [
 ] + windTools + spaceExplorationTier
 for (int i in [32, 46, 47, 48, 49, 50, 51, 55]) windTier.add(mitem("genitem", i))
 for (def i in armorParts2) windTier.add(mitem("wind_${i}"))
-for (int i in 0..15) {
-    windTier.add(mitem("fancyblock.mithrilineplating", i))
-}
 for (int i in 0..3) windTier.add(mitem("mrumatrixprojection", i))
 
 def industrialTier = [
@@ -68,11 +60,6 @@ for (int i in 0..5) industrialTier.add(mitem("rightclicker", i))
 for (int i in 0..15) industrialTier.add(mitem("essence", i))
 for (def i in armorParts) industrialTier.add(mitem("${i}_magic"))
 for (int i in 0..31) industrialTier.add(mitem("baublescore", i))
-for (int i in 0..15) {
-    industrialTier.add(mitem("fancyblock.mru", i))
-    industrialTier.add(mitem("fancyblock.mimic", i))
-    industrialTier.add(mitem("fancyblock.coldstone", i))
-}
 for (int i in 0..3) industrialTier.add(mitem("elementalfuel", i))
 for (int i in 0..8) magicalTier.add(mitem("charm", i))  // moved from industrial
 for (def i in ["e", "f", "w", "a"]) industrialTier.add(mitem("${i}focus"))
@@ -94,10 +81,6 @@ def hoannaTier = [
     mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
 for (def i in armorParts) hoannaTier.add(mitem("${i}_void"))
-for (int i in 0..15) {
-    hoannaTier.add(mitem("fancyblock.voidstone", i))
-    hoannaTier.add(mitem("fancyblock.concrete", i))
-}
 
 def inqDrops = [mitem("robocalypse"), mitem("orbitalremote"), mitem("dividergun")]
 for (int i in [70, 71, 72, 73]) inqDrops.add(mitem("genitem", i))
@@ -109,12 +92,9 @@ def demonTier = [
 for (int i in [52, 53, 54, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
                68, 69, 74, 75]) demonTier.add(mitem("genitem", i))
 for (def i in armorParts2) demonTier.add(mitem("computer_${i}"))
-for (int i in 0..15) {
-    demonTier.add(mitem("fancyblock.demonicplating", i))
-}
 
 def unknownItems = [
-    mitem("cacti"), mitem("record"), mitem("record_a"), mitem("record_secret"), mitem("genitem", 45),
+    mitem("cacti"), mitem("record"), mitem("record_a"), mitem("record_secret"),
 ]
 for (def i in armorParts) unknownItems.add(mitem("${i}_inq"))
 

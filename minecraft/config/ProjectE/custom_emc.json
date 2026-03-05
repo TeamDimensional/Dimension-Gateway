@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "item": "OD|emcBuildingBlock",
+      "emc": 1
+    },
+    {
+      "item": "OD|emcDecorBlock",
+      "emc": 1
+    },
+    {
+      "item": "OD|emcSpeedupBlock",
+      "emc": 4
+    },
+    {
+      "item": "OD|emcLightingBlock",
+      "emc": 16
+    },
+    {
+      "item": "essentialcraft:genitem|45",
+      "emc": 256
+    }
+  ]
+}

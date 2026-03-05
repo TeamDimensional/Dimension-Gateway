@@ -2,6 +2,11 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
 TooltipEvents.setModTier("compactmachines3", 7)
+TooltipEvents.setModTier("buildinggadgets", 4)
+
+def tier2Items = [
+    item("chisel:offsettool"),
+]
 
 def tier3Items = [
     item("supersoundmuffler:sound_muffler"), item("supersoundmuffler:sound_muffler_bauble"),
@@ -34,6 +39,8 @@ for (def i in 0..3) {
 
 def removeRecipes = [
     item("hammercore:manual"), item("engineersworkshop:upgrade", 9), item("microblockcbe:stone_rod"),
+    item("chisel:chisel_iron"), item("chisel:chisel_diamond"), item("chisel:chisel_hitech"), item("chisel:auto_chisel"),
+    item("betterbuilderswandsfix:break_core"), item("betterbuilderswands:wandstone"), item("betterbuilderswands:wandiron"),
 ]
 
 def hideFromJei = [
@@ -42,6 +49,7 @@ def hideFromJei = [
 for (def it in ["iron", "gold", "diamond", "emerald", "quartz"]) hideFromJei.add(item("hammercore:${it}_bordered_cobblestone"))
 
 for (def it in hideFromJei) GatewayHelpers.hide(it)
+for (def it in tier2Items) TooltipEvents.setTier(it, 2)
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in basicXnet) TooltipEvents.setTier(it, 5)
