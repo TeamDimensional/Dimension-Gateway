@@ -1,17 +1,17 @@
-filename = 'loliasm-5.30.jar'
+filename = 'loliasm-5.31.jar'
 name = 'LoliASM'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'censoredasm5.30.jar'
+x-prismlauncher-version-number = 'censoredasm5.31.jar'
 
 [download]
-hash = '9f1fa93f44e10c095f826dd25c537b42afd3f4aa'
+hash = '77d556456ffe96271d02b3bb7e74d88f930297c5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7267368
+file-id = 7671063
 project-id = 460609
