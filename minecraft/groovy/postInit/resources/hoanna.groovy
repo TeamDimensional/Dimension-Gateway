@@ -5,6 +5,9 @@ import net.minecraft.util.ResourceLocation
 if (!reloading) {
     NCRecipes.decay_generator.removeAllRecipes()
     NCRecipes.decay_generator.addRecipe(item("thaumcraft:metal_void"), item("essentialcraft:voidstone"), 400.0, 0, 0)
+    NCRecipes.decay_generator.addRecipe(item("abyssalcraft:dreadiumblock"), item("projecte:matter_block", 1), 400.0, 0, 0)
+    NCRecipes.decay_generator.addRecipe(item("abyssalcraft:abyblock"), item("projecte:matter_block"), 400.0, 0, 0)
+    NCRecipes.decay_generator.addRecipe(item("abyssalcraft:ethaxiumblock"), item("essentialcraft:concrete"), 400.0, 0, 0)
 }
 
 def getBlockIdAt(world, pos) {
@@ -12,11 +15,11 @@ def getBlockIdAt(world, pos) {
 }
 
 // Titanite and Twinkling Titanite
-def isDecayingVoid(resonator) {
+def isDecaying(resonator, name) {
     def shifts = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]]
     for (def x in shifts) {
         def shifted = resonator.getPos().add(x[0], x[1], x[2])
-        if (getBlockIdAt(resonator.getWorld(), shifted) == new ResourceLocation("thaumcraft:metal_void")) {
+        if (getBlockIdAt(resonator.getWorld(), shifted) == new ResourceLocation(name)) {
             for (def y in shifts) {
                 def shifted2 = shifted.add(y[0], y[1], y[2])
                 if (getBlockIdAt(resonator.getWorld(), shifted2) == new ResourceLocation("nuclearcraft:decay_generator")) {
@@ -31,7 +34,7 @@ def isDecayingVoid(resonator) {
 mods.extrautils2.resonator.recipeBuilder()
     .input(item("qmd:ingot", 15))
     .output(item("essentialcraft:titanite"))
-    .shouldProgress((resonator, _1, _2) -> isDecayingVoid(resonator))
+    .shouldProgress((resonator, _1, _2) -> isDecaying(resonator, "thaumcraft:metal_void"))
     .requirementText("Must be adjacent to decaying Void Metal")
     .energy(9000)
     .register()
@@ -39,7 +42,12 @@ mods.extrautils2.resonator.recipeBuilder()
 mods.extrautils2.resonator.recipeBuilder()
     .input(item("advancedrocketry:productingot", 1))
     .output(item("essentialcraft:twinkling_titanite"))
-    .shouldProgress((resonator, _1, _2) -> isDecayingVoid(resonator))
-    .requirementText("Must be adjacent to decaying Void Metal")
+    .shouldProgress((resonator, _1, _2) -> isDecaying(resonator, "abyssalcraft:ethaxiumblock"))
+    .requirementText("Must be adjacent to decaying Ethaxium")
     .energy(9000)
     .register()
+
+// Void Plate
+ore("plateVoid").remove(item("essentialcraft:genitem", 35))
+mods.thermalexpansion.compactor.removeByOutput(item("essentialcraft:genitem", 35))
+mods.immersiveengineering.metal_press.removeByOutput(item("essentialcraft:genitem", 35))
