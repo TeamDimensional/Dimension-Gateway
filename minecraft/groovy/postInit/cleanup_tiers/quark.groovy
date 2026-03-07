@@ -8,9 +8,8 @@ def quartzItems = [mitem("quartz_wall")]
 def tier3Items = [mitem("gold_button"), mitem("redstone_inductor"), mitem("lit_lamp")]
 def obsidianItems = [mitem("obsidian_pressure_plate")]
 def enderItems = [
-    mitem("duskbound_block"), mitem("duskbound_lantern"), mitem("duskbound_block_stairs"), mitem("duskbound_block_slab"),
-    mitem("purpur_block_wall"), mitem("end_bricks_wall"), mitem("duskbound_block_wall"), mitem("redstone_randomizer"),
-    mitem("gravisand"), mitem("rain_detector"), mitem("enderdragon_scale"),
+    mitem("redstone_randomizer"), mitem("gravisand"), mitem("rain_detector"), mitem("enderdragon_scale"),
+    mitem("end_bricks_stairs"), mitem("end_bricks_slab"),
 ]
 
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)

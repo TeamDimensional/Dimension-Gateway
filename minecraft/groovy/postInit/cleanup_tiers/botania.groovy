@@ -11,9 +11,7 @@ def getQuartzList(name) {
     return output
 }
 
-def lapisItems = [mitem("pavement", 2), mitem("pavement2slab"), mitem("pavement2stairs")]
-for (int i in 0..15) lapisItems.add(mitem("custombrick", i))
-def redstoneItems = [mitem("cacophonium"), mitem("pavement", 3), mitem("pavement3slab"), mitem("pavement3stairs")]
+def redstoneItems = [mitem("cacophonium")]
 def firstMagicItems = [mitem("baublebox")]
 def enderItems = [mitem("manaresource", 15), mitem("itemfinder"), mitem("endereyeblock")]
 def equipmentItems = ["helm", "chest", "legs", "boots", "helmreveal"]
@@ -109,7 +107,6 @@ def creativeItems = [mitem("pool", 1)]
 def removeThese = [mitem("spawnermover"), mitem("glasspick"), mitem("rfgenerator"), mitem("animatedtorch")]
 def hideFromJei = [mitem("platform", 2), mitem("enchanter"), mitem("bifrost"), mitem("cacophoniumblock"), mitem("root")] + removeThese
 
-for (def it in lapisItems) TooltipEvents.setTier(it, 2)
 for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
 for (def it in firstMagicItems) TooltipEvents.setTier(it, 5)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)

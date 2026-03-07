@@ -8,14 +8,6 @@ mods.roots.pyre.recipeBuilder()
     .burnTime(160)
     .register()
 
-// alternate brownstone recipe that doesnt require redstone
-crafting.shapedBuilder()
-        .name("tier1/qol/brownstone")
-        .output(item("tconstruct:brownstone", 1) * 3)
-        .matrix(" F ", "SSS", " E ")
-        .key("F", ore("gemFireElemental")).key("E", ore("gemEarthElemental")).key("S", ore("sandstone"))
-        .register()
-
 // Expanders
 crafting.remove("tconstruct:tools/materials/expander_h")
 crafting.remove("tconstruct:tools/materials/expander_w")

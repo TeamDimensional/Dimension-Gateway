@@ -113,7 +113,7 @@ def creativeItems = [mitem("device", 4), mitem("device", 8)]
 def removeItems = [
     mitem("miminvstorage"), mitem("newmim"), mitem("mimscreen"), mitem("mimcrafter"), mitem("mimejector"), mitem("miminjector"),
     mitem("mimejectorp"), mitem("miminjectorp"), mitem("inventorygem"), mitem("magicalquarry"),
-    mitem("magmaticstaff"), mitem("magnetizingstaff"), mitem("charm", 9), mitem("magicallantern"),
+    mitem("magmaticstaff"), mitem("magnetizingstaff"), mitem("charm", 9), mitem("magicallantern"), mitem("magicalchisel"),
     // doesn't work
     mitem("biomewand"),
     // does not spend MRU correctly when used by players, and optimal use case is a player simulator, which goes against the purpose

@@ -27,12 +27,28 @@ def chiselBlock(name, i, category = "Building") {
     return it
 }
 
+def configureItem(it, category = "Building", removeRecipe = true) {
+    if (removeRecipe) crafting.removeByOutput(it)
+    ore("emc${category}Block").add(it)
+    setEmcTooltip(it, emcValues[category])
+}
+
+def configureCraftable(it) {
+    TooltipEvents.setTooltip(it, "§eCraftable from EMC items§r")
+    TooltipEvents.setTier(it, 0)
+}
+
 def ec4BlockConfig(name, category = "Building") {
     for (def i in 0..15) {
         def it = item("essentialcraft:fancyblock.${name}", i)
-        crafting.removeByOutput(it)
-        ore("emc${category}Block").add(it)
-        setEmcTooltip(it, emcValues[category])
+        configureItem(it, category)
+    }
+}
+
+def bibliocraftBlockConfig(name, count, category = "Decor") {
+    for (def i in 0..count) {
+        def it = item("bibliocraft:${name}", i)
+        configureItem(it, category)
     }
 }
 
@@ -40,13 +56,12 @@ def ec4BlockConfig(name, category = "Building") {
 TooltipEvents.setTier(item("essentialcraft:genitem", 45), 2)
 setEmcTooltip(item("essentialcraft:genitem", 45), 256, false)
 
-// Remove oredicts from Chisel
-
+// Chisel
 def chiselRecipeItems = [
     item("chisel:antiblock", 15), item("chisel:bookshelf_spruce"), item("chisel:bookshelf_birch"), item("chisel:bookshelf_darkoak"),
     item("chisel:bookshelf_acacia"), item("chisel:bookshelf_jungle"), item("chisel:brownstone"), item("chisel:cloud"),
     item("chisel:factory"), item("chisel:futura"), item("chisel:laboratory"), item("chisel:lavastone"), item("chisel:temple"),
-    item("chisel:tyrian"), item("chisel:valentines"), item("chisel:voidstone"), item("chisel:waterstone"),
+    item("chisel:tyrian"), item("chisel:voidstone"), item("chisel:waterstone"), item("chisel:valentines", 9),
 ]
 
 for (def i in 0..6) {
@@ -219,6 +234,18 @@ for (def i in 0..33) chiselBlock("certus", i)
 for (def i in 0..36) if (!(i in 26..31)) chiselBlock("purpur", i)
 for (def i in 0..37) if (!(i in 26..31)) chiselBlock("bricks", i)
 
+for (def color in GatewayHelpers.colors) {
+    color = color == "silver" ? "light_gray" : color
+    def upperColor = color.startsWith("light") ? "Light" + color[6..<color.size()].capitalize() : color.capitalize()
+    def colorFix = upperColor.toLowerCase()
+    for (def i in 0..1) chiselBlock("carpet_${colorFix}", i, "Decor")
+}
+
+for (def it in chiselRecipeItems) {
+    crafting.removeByOutput(it)
+}
+
+// EC4 Fancy blocks
 ec4BlockConfig("fortifiedstone")
 ec4BlockConfig("magicplating")
 ec4BlockConfig("paleplating")
@@ -230,14 +257,96 @@ ec4BlockConfig("voidstone")
 ec4BlockConfig("concrete")
 ec4BlockConfig("demonicplating")
 
-for (def color in GatewayHelpers.colors) {
-    color = color == "silver" ? "light_gray" : color
-    def upperColor = color.startsWith("light") ? "Light" + color[6..<color.size()].capitalize() : color.capitalize()
-    def colorFix = upperColor.toLowerCase()
-    for (def i in 0..1) chiselBlock("carpet_${colorFix}", i, "Decor")
-    chiselRecipeItems.add(item("chisel:carpet_${colorFix}"))
+// Bibliocraft
+bibliocraftBlockConfig("lanterngold", 15, "Lighting")
+bibliocraftBlockConfig("lanterniron", 15, "Lighting")
+bibliocraftBlockConfig("lampgold", 15, "Lighting")
+bibliocraftBlockConfig("lampiron", 15, "Lighting")
+bibliocraftBlockConfig("clock", 6)
+for (def name in ["flat", "simple", "middle", "fancy", "borderless"]) {
+    bibliocraftBlockConfig("paintingframe${name}", 6)
+}
+bibliocraftBlockConfig("typewriter", 15)
+bibliocraftBlockConfig("bell", 0)
+bibliocraftBlockConfig("cookiejar", 0)
+bibliocraftBlockConfig("dinnerplate", 0)
+bibliocraftBlockConfig("discrack", 0)
+for (def idx in 1..5) {
+    bibliocraftBlockConfig("seatback${idx}", 6)
 }
 
-for (def it in chiselRecipeItems) {
+// Botania
+for (def i in 0..5) {
+    configureItem(item("botania:pavement", i))
+    configureCraftable(item("botania:pavement${i}slab"))
+    configureCraftable(item("botania:pavement${i}stairs"))
+}
+for (def i in 0..15) {
+    configureItem(item("botania:custombrick", i))
+}
 
+// TConstruct
+mods.tconstruct.drying.removeByOutput(item("tconstruct:dried_clay"))
+mods.tconstruct.drying.removeByOutput(item("tconstruct:materials", 2))
+for (def i in 0..11) configureItem(item("tconstruct:brownstone", i), "Speedup", i in 1..3)
+for (def i in 0..7) configureCraftable(item("tconstruct:brownstone_slab", i))
+for (def i in 0..3) configureCraftable(item("tconstruct:brownstone_slab2", i))
+for (def i in 0..1) {
+    configureItem(item("tconstruct:dried_clay", i), "Building", i == 1)
+    configureCraftable(item("tconstruct:dried_clay_slab", i))
+}
+
+for (def name in ["dried_clay_stairs", "dried_brick_stairs"]) {
+    configureCraftable(item("tconstruct:${name}"))
+}
+for (def name in ["smooth", "rough", "paver", "brick", "brick_cracked", "brick_fancy", "brick_square", "brick_triangle",
+                  "brick_small", "road", "tile", "creeper"]) {
+    configureCraftable(item("tconstruct:brownstone_stairs_${name}"))
+}
+
+// Quark
+for (def i in 0..15) {
+    configureItem(item("quark:stained_clay_tiles", i))
+    configureItem(item("quark:quilted_wool", i))
+}
+for (def i in 0..1) configureItem(item("quark:polished_netherrack", i))
+configureItem(item("quark:hardened_clay_tiles"))
+for (def i in 0..1) configureItem(item("quark:iron_plate", i))
+configureItem(item("quark:sandy_bricks"))
+configureItem(item("quark:thatch"))
+crafting.remove("quark:wheat")
+configureItem(item("quark:reed_block"))
+crafting.remove("quark:reeds")
+configureItem(item("quark:charred_nether_bricks"))
+configureItem(item("quark:magma_bricks"))
+configureItem(item("quark:midori_block"))
+configureItem(item("quark:midori_pillar"))
+configureItem(item("quark:duskbound_block"))
+configureItem(item("quark:duskbound_lantern"), "Lighting")
+configureItem(item("quark:framed_glass"))
+configureItem(item("quark:framed_glass_pane"))
+configureItem(item("quark:turf"))
+for (def i in 0..2) configureItem(item("quark:soul_sandstone", i))
+for (def i in 0..1) configureItem(item("quark:paper_lantern", i), "Lighting")
+configureItem(item("quark:paper_wall"), "Decor")
+configureItem(item("quark:paper_wall_big"), "Decor")
+configureItem(item("quark:paper_wall_sakura"), "Decor")
+
+for (def color in GatewayHelpers.colors) {
+    configureCraftable(item("quark:stained_clay_tiles_${color}_stairs"))
+    configureCraftable(item("quark:stained_clay_tiles_${color}_slab"))
+}
+def stairs = [
+    "hardened_clay_tiles", "iron_plate", "sandy_bricks", "thatch", "charred_nether_brick", "midori_block",
+    "magma_bricks", "duskbound_block", "reed_block", "soul_sandstone", "turf", "polished_netherrack_bricks",
+]
+def walls = [
+    "sandy_bricks", "midori_block", "duskbound_block", "reed_block", "polished_netherrack_bricks",
+]
+for (def it in stairs) {
+    configureCraftable(item("quark:${it}_stairs"))
+    configureCraftable(item("quark:${it}_slab"))
+}
+for (def it in walls) {
+    configureCraftable(item("quark:${it}_wall"))
 }
