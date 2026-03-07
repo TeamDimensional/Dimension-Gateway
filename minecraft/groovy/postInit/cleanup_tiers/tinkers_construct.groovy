@@ -24,6 +24,7 @@ def requiresSmeltery = [
     mitem("metal", 3), mitem("metal", 4), mitem("metal", 5), mitem("cast"), mitem("firewood_stairs"), mitem("lavawood_stairs"),
     mitem("firewood_slab"), mitem("firewood_slab", 1), mitem("edible", 33), mitem("clear_glass"), mitem("fancy_frame", 6), mitem("seared"),
     mitem("seared", 1), mitem("seared_slab"), mitem("seared_slab", 1), mitem("seared_stairs_stone"), mitem("seared_stairs_cobble"),
+    mitem("ingots", 6), mitem("metal", 7),
 ]
 for (int i in 0..15) requiresSmeltery.add(mitem("clear_stained_glass", i))
 for (int i in 0..3) requiresSmeltery.add(mitem("cast_custom", i))

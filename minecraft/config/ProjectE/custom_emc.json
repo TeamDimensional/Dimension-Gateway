@@ -19,6 +19,10 @@
     {
       "item": "essentialcraft:genitem|45",
       "emc": 256
+    },
+    {
+      "item": "projecte:item.pe_tome",
+      "emc": 1024
     }
   ]
 }

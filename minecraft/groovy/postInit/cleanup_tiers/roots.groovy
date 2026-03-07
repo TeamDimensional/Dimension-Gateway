@@ -68,7 +68,7 @@ def hideFromJei = [
     mitem("spell_dust"), mitem("spirit_bag"), mitem("reliquary"),
 ] + removeFromFey + removeFromShearing + removeFromCrafting
 
-for (def it in feyCrafting) TooltipEvents.setTier(it, 1)
+for (def it in feyCrafting) TooltipEvents.setTier(it, 2)
 for (def it in goldItems) TooltipEvents.setTier(it, 3)
 for (def it in spells) TooltipEvents.setTier(it, 2)
 for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
