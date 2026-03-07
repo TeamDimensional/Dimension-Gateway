@@ -1,6 +1,6 @@
 import classes.GatewayHelpers
 
-def hideFromJei = [item("toolprogression:magic_mushroom")]
+def hideFromJei = [item("toolprogression:magic_mushroom"), item("baubles:max_verstappen")]
 
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 

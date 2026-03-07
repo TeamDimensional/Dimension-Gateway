@@ -5,7 +5,7 @@ def magicalTier = [
     item("netherized:netherite_ingot"), item("netherized:netherite_sword"), item("netherized:netherite_shovel"), item("netherized:netherite_pickaxe"),
     item("netherized:netherite_axe"), item("netherized:netherite_hoe"), item("netherized:netherite_helmet"),
     item("netherized:netherite_chestplate"), item("netherized:netherite_leggings"), item("netherized:netherite_boots"),
-    item("netherized:netherite_horse_armor"), item("netherized:netherite_block"),
+    item("netherized:netherite_horse_armor"), item("netherized:netherite_block"), item("netherized:lodestone"),
 ]
 
 def removeRecipeNames = [
@@ -41,6 +41,7 @@ def hideFromJei = [
     item("ee:lighting_updater"), item("ee:invisible"), item("ee:bomb_proj"), item("ee:green_orb"),
     item("ee:mega_structure_block"), item("ee:door_on"), item("ee:source_on"), item("ee:reverse_on"),
     item("netherized:nether_gold_ore"), item("netherized:ancient_debris"), item("natura:redwood_leaves"), item("natura:redwood_sapling"),
+    item("netherized:gilded_blackstone"),
 ] + removeFurnace + removeRecipes
 for (def i in 0..2) hideFromJei.add(item("natura:redwood_logs", i))
 
@@ -50,4 +51,6 @@ def unbreakable = [
 
 TooltipEvents.setModTier("ee", 6)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
+for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
 for (def it in magicalTier) TooltipEvents.setTier(it, 5)
+for (def it in unbreakable) TooltipEvents.setTier(it, 0)

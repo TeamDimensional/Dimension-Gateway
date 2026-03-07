@@ -58,7 +58,7 @@ def hoannaItems = [
 ]
 
 def ichorItems = [
-    titem("sky_pearl"), titem("warp_gate"), titem("bedrock_portal"),
+    titem("sky_pearl"), titem("warp_gate"), titem("bedrock_portal"), titem("ichor_block"),
 ]
 for (def i in ["pick", "axe", "shovel", "sword"]) {
     for (def j in ["", "_adv"]) {
