@@ -10,7 +10,7 @@ def oreItems = [
 ]
 
 def items = [
-    mitem("dr_manual"), mitem("radiation_monitor"), mitem("filter"), mitem("spent_filter"),
+    mitem("radiation_monitor"), mitem("filter"), mitem("spent_filter"),
     mitem("radiation_module"), mitem("rcl_module"), mitem("resonating_crystal"), mitem("generator"), mitem("generator_controller"),
     mitem("energy_collector"), mitem("crystalizer"), mitem("smelter"), mitem("tank"), mitem("purifier"),
     mitem("pedestal"), mitem("advanced_pedestal"), mitem("valve"), mitem("lens"), mitem("laser"),

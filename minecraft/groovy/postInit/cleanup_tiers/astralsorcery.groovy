@@ -10,7 +10,7 @@ def aquamarineItems = [
 ]
 
 def marbleItems = [
-    mitem("blockmarble"), mitem("blockmarble", 1), mitem("blockmarblestairs"), mitem("blockmarbleslab"),
+    mitem("blockmarble"), mitem("blockmarble", 1), mitem("blockmarblestairs"), mitem("blockmarbleslab"), mitem("itemjournal"),
 ]
 
 def advancedItems = [

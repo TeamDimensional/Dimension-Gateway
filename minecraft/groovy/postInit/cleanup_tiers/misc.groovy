@@ -20,7 +20,7 @@ def tier4Items = [
 ]
 
 def basicXnet = [
-    item("xnet:xnet_manual"), item("xnet:facade"), item("xnet:controller"), item("xnet:router"),
+    item("xnet:facade"), item("xnet:controller"), item("xnet:router"),
 ]
 
 def advancedXnet = [
@@ -57,5 +57,6 @@ for (def it in basicXnet) TooltipEvents.setTier(it, 5)
 for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in advancedXnet) TooltipEvents.setTier(it, 7)
 for (def it in removeRecipes) crafting.removeByOutput(it)
+TooltipEvents.setTier(item("patchouli:guide_book"), 1)  // Make sure NCO book is not displayed as t9
 
 ore("rodStone").remove(item("microblockcbe:stone_rod"))

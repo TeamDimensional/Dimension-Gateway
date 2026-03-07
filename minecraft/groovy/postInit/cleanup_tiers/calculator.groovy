@@ -12,7 +12,7 @@ def t3Items = [
 def basicItems = [
     mitem("reinforcedchest"), mitem("stoneseparator"), mitem("dockingstation"),
     mitem("basicgreenhouse"), mitem("starchextractor"), mitem("redstoneextractor"), mitem("rainsensor"),
-    mitem("gaslanternoff"), mitem("scarecrow"), mitem("infocalculator"), mitem("craftingcalculator"),
+    mitem("gaslanternoff"), mitem("scarecrow"), mitem("craftingcalculator"),
     mitem("scientificcalculator"), mitem("terrainmodule"), mitem("advancedterrainmodule"),
     mitem("energymodule"), mitem("smallstone"), mitem("calculatorscreen"), mitem("calculatorassembly"), mitem("advancedassembly"),
     mitem("wrench"), mitem("sickle"), mitem("enrichedgold"), mitem("enrichedgoldingot"), mitem("reinforcedironingot"),

@@ -50,6 +50,7 @@ def unbreakable = [
 ]
 
 TooltipEvents.setModTier("ee", 6)
+TooltipEvents.setTier(item("ee:end_info_book"), 1)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
 for (def it in magicalTier) TooltipEvents.setTier(it, 5)

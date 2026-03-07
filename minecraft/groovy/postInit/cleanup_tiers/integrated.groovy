@@ -37,5 +37,6 @@ def hideFromJei = [mitem("creative_energy_battery")] + removeRecipes
 
 for (def it in advancedItems) TooltipEvents.setTier(it, 8)
 TooltipEvents.setTier(titem("part_player_simulator_item"), 8)
+TooltipEvents.setTier(mitem("on_the_dynamics_of_integration"), 1)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

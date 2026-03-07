@@ -9,7 +9,7 @@ def fitem(name, k=0) {
 }
 
 def t2Items = [
-    mitem("transmutation_table"), fitem("transmutation_tablet"), fitem("tome"), fitem("manual"),
+    mitem("transmutation_table"), fitem("transmutation_tablet"), fitem("tome"),
 ]
 
 def removeRecipes = [

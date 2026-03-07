@@ -59,8 +59,3 @@ for (def it in antimatterItems) TooltipEvents.setTier(it, 15)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-
-def predicateBook = stack -> {
-    return stack in item("patchouli:guide_book").withNbt(["patchouli:book": "qmd:guide"])
-}
-TooltipEvents.addTierPredicate("qmdbook", predicateBook, 9)

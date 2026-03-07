@@ -29,7 +29,7 @@ def removeRecipes = [
 
 def hideFromJei = [mitem("shard", 4), mitem("shard", 5), mitem("shard", 6)] + removeAnvil + removeRecipes
 
-TooltipEvents.setTier(item("guideapi:woot-guide"), 11)
+TooltipEvents.setTier(item("guideapi:woot-guide"), 1)
 for (def it in advItems) TooltipEvents.setTier(it, 13)
 for (def it in eliteItems) TooltipEvents.setTier(it, 13)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

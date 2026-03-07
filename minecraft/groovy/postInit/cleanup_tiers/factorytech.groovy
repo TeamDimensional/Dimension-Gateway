@@ -6,7 +6,7 @@ def mitem(name, k=0) {
 }
 
 def decor = [
-    mitem("crate"), mitem("scaffold"), mitem("hardhat"), mitem("safetyvest"), mitem("workpants"), mitem("steeltoeboots"),
+    mitem("crate"), mitem("scaffold"), mitem("hardhat"), mitem("safetyvest"), mitem("workpants"), mitem("steeltoeboots"), mitem("handbook"),
 ]
 for (def i in 0..5) decor.add(mitem("metal", i))
 for (def i in 0..3) decor.add(mitem("bricks", i))
@@ -16,7 +16,7 @@ def logistics = [
     mitem("stackmover"), mitem("filtermover"), mitem("bulkmover"), mitem("autopuller"), mitem("itempusher"), mitem("watercollector"),
     mitem("conveyor"), mitem("buffercrate"), mitem("elevator"), mitem("bottomhatch"), mitem("rednotifier"),
     mitem("inventorysensor"), mitem("realelevator"), mitem("pulser"), mitem("pulsecounter"), mitem("compacthopper"),
-    mitem("trapdoorconveyor"), mitem("pipe"), mitem("valve"), mitem("tankblock"), mitem("fluidpuller"), mitem("handbook"),
+    mitem("trapdoorconveyor"), mitem("pipe"), mitem("valve"), mitem("tankblock"), mitem("fluidpuller"),
     mitem("wrench"), mitem("redwatcher")
 ]
 

@@ -60,6 +60,8 @@ for (prefix in ["notick_", ""]) {
 def creativeItems = [mitem("powercell_creative")]
 
 TooltipEvents.setModTier("rftools", 7)
+TooltipEvents.setTier(item("rftools:rftools_manual"), 1)
+TooltipEvents.setTier(item("rftools:rftools_shape_manual"), 1)
 for (def it in tier2Items) TooltipEvents.setTier(it, 2)
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
