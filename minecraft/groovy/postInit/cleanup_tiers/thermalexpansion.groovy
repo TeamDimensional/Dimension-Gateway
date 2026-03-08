@@ -1,5 +1,3 @@
-// priority: 50
-
 import com.dimensional.gatewaycore.events.TooltipEvents
 import classes.GatewayHelpers
 
@@ -43,8 +41,6 @@ for (def it in advancedAugments) TooltipEvents.setTier(it, 8)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
-
-mods.thermalexpansion.pulverizer.removeAll()
 
 // Remove augments from JEI
 // Normally this is done automatically as the ingredient is hidden, but JEI adds both the machine and the augment into the left panel

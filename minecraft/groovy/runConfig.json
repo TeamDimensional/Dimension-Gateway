@@ -9,6 +9,8 @@
       "classes/"
     ],
     "postInit": [
+      "postInit_very_early/",
+      "postInit_early/",
       "postInit/"
     ]
   },

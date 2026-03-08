@@ -58,11 +58,13 @@ def laserItems = [
 ]
 
 def obsidianItems = [
-    mitem("block_ranged_collector"), mitem("block_misc", 6), mitem("item_void_bag"), mitem("item_misc", 19),
+    mitem("block_ranged_collector"), mitem("item_void_bag"), mitem("item_misc", 19),
 ]
 for (def i in 0..9) obsidianItems.add(mitem("item_potion_ring_advanced", i))
 // I wanted Drill in tier 4, but it has a mining level of 5 (Obsidian) and Tool Progression can't change it, so we put it in tier 6.
 for (def i in 0..15) obsidianItems.add(mitem("item_drill", i))
+
+def enderItems = [mitem("block_misc", 6)]
 
 // The Breakers have a mining level of 7 (Cobalt) for some reason, and it actually seems infinite, not 7
 // So they have to be moved to the highest harvest level tier, i.e. 7
@@ -112,6 +114,7 @@ for (def it in mainItems) TooltipEvents.setTier(it, 4)
 for (def it in laserItems) TooltipEvents.setTier(it, 4)
 for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
 for (def it in blockBreakers) TooltipEvents.setTier(it, 6)
+for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in empoweringItems) TooltipEvents.setTier(it, 9)
 TooltipEvents.setTooltip(item("actuallyadditions:block_leaf_generator"), "Gets disabled with a Redstone signal. Use this to your advantage!")
 for (def it in hideFromJei) GatewayHelpers.hide(it)

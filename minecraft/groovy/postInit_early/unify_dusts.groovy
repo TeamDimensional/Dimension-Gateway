@@ -1,11 +1,9 @@
 // priority: 100
 
-import classes.CrusherHelper
+import classes.CrushingHelper
 import classes.GatewayHelpers
 
 // Flour
-mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:wheat"))
-// mods.enderio.sag_mill.removeByInput(item("minecraft:wheat"))
 mods.nuclearcraft.manufactory.removeRecipeWithInput(item("minecraft:wheat"))
 def flours = [item("prodigytech:flour"), item("appliedenergistics2:material", 4), item("enderio:item_material", 21), item("nuclearcraft:flour")]
 for (def it in flours) {
@@ -13,15 +11,12 @@ for (def it in flours) {
     ore("dustWheat").remove(it)
 }
 
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(item("minecraft:wheat"))
     .output(item("roots:flour"))
     .register()
 
 // Sawdust
-mods.prodigytech.rotary_grinder.removeByInput(ore("logWood"))
-mods.prodigytech.rotary_grinder.removeByInput(ore("plankWood"))
-
 def fixedSawmillRecipes = []
 
 mods.prodigytech.heat_sawmill.streamRecipes()
@@ -46,27 +41,23 @@ for (def it in fixedSawmillRecipes) {
 ore("dustWood").remove(item("prodigytech:sawdust"))
 GatewayHelpers.hide(item("prodigytech:sawdust"))
 
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("logWood"))
     .output(item("thermalfoundation:material", 800) * 4)
     .register()
 
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("plankWood"))
     .output(item("thermalfoundation:material", 800))
     .register()
 
 // Coal Dust
-mods.prodigytech.rotary_grinder.removeByInput(ore("blockCoal"))
-mods.prodigytech.rotary_grinder.removeByInput(ore("plateCarbon"))
-mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:coal"))
-
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("coal"))
     .output(item("thermalfoundation:material", 768))
     .register()
 
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("blockCoal"))
     .output(item("thermalfoundation:material", 768) * 9)
     .register()
@@ -75,11 +66,6 @@ ore("dustCoal").remove(item("prodigytech:coal_dust"))
 GatewayHelpers.hide(item("prodigytech:coal_dust"))
 
 // Iron Dust
-ore("dustTinyIron").remove(item("prodigytech:iron_dust_tiny"))
-crafting.remove("prodigytech:storage/iron_dust_tiny")
-mods.prodigytech.rotary_grinder.removeByInput(ore("nuggetIron"))
-GatewayHelpers.hide(item("prodigytech:iron_dust_tiny"))
-
 def ironDusts = [
     item("prodigytech:iron_dust"), item("appliedenergistics2:material", 49), item("actuallyadditions:item_dust"),
     item("bloodmagic:component", 19), item("enderio:item_material", 24),
@@ -89,15 +75,7 @@ for (def it in ironDusts) {
     GatewayHelpers.hide(it)
 }
 
-// Gold Dust - keeping the Tiny Dust for Solderer purposes
-crafting.remove("prodigytech:storage/gold_dust_tiny_combine")
-crafting.shapedBuilder()
-        .name("unify/gold_dust_tiny")
-        .output(item("thermalfoundation:material", 1))
-        .matrix("ggg", "ggg", "ggg")
-        .key("g", ore("dustTinyGold"))
-        .register()
-
+// Gold Dust
 def goldDusts = [
     item("prodigytech:gold_dust"), item("appliedenergistics2:material", 51), item("actuallyadditions:item_dust", 1),
     item("bloodmagic:component", 20), item("enderio:item_material", 25),
@@ -108,17 +86,12 @@ for (def it in goldDusts) {
 }
 
 // Quartz Dust
-mods.prodigytech.rotary_grinder.removeByInput(ore("gemQuartz"))
-mods.prodigytech.rotary_grinder.removeByInput(ore("blockQuartz"))
-mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:quartz_stairs"))
-mods.prodigytech.rotary_grinder.removeByInput(item("minecraft:stone_slab", 7))
-
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("gemQuartz"))
     .output(item("nuclearcraft:gem_dust", 2))
     .register()
 
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("blockQuartz"))
     .output(item("nuclearcraft:gem_dust", 2) * 4)
     .register()
@@ -132,10 +105,7 @@ for (def it in quartzDusts) {
 }
 
 // Diamond Dust
-mods.prodigytech.rotary_grinder.removeByInput(ore("gemDiamond"))
-mods.prodigytech.rotary_grinder.removeByInput(ore("blockDiamond"))
-
-CrusherHelper.builder()
+CrushingHelper.builder()
     .input(ore("gemDiamond"))
     .output(item("nuclearcraft:gem_dust"))
     .register()
@@ -157,8 +127,6 @@ ore("dustLapis").remove(item("enderio:item_material", 32))
 GatewayHelpers.hide(item("enderio:item_material", 32))
 
 // Coal Dust
-mods.actuallyadditions.crusher.removeByInput(item("minecraft:coal"))
-
 def coalDusts = [
     item("nuclearcraft:gem_dust", 7), item("actuallyadditions:item_dust", 6),
     item("bloodmagic:component", 21), item("enderio:item_material", 23),

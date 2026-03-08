@@ -1,5 +1,3 @@
-// priority: -100
-
 import classes.AlloyHelper
 
 // Remove 1-to-1 smelting in Arc Furnace

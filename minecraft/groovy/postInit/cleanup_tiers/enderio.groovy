@@ -75,7 +75,7 @@ advancedItems.add(mitem("block_alloy", 8))
 advancedItems.add(mitem("item_alloy_ingot", 8))
 advancedItems.add(mitem("item_alloy_nugget", 8))
 advancedItems.add(mitem("item_alloy_ball", 8))
-for (def i in 1..6) {
+for (def i in 1..3) {
     advancedItems.add(mitem("item_alloy_endergy_ingot", i))
     advancedItems.add(mitem("item_alloy_endergy_ball", i))
     advancedItems.add(mitem("item_alloy_endergy_nugget", i))
@@ -117,24 +117,37 @@ for (def b in 0..4) removeRecipes.add(mitem("block_decoration3", b))
 ore("blockConstructionAlloy").remove(mitem("block_alloy", 9))
 ore("ingotConstructionAlloy").remove(mitem("item_alloy_ingot", 9))
 ore("nuggetConstructionAlloy").remove(mitem("item_alloy_nugget", 9))
-ore("blockCrudeSteel").remove(mitem("block_alloy_endergy"))
-ore("ingotCrudeSteel").remove(mitem("item_alloy_endergy_ingot"))
-ore("nuggetCrudeSteel").remove(mitem("item_alloy_endergy_nugget"))
 ore("nuggetEnderPearl").remove(mitem("item_material", 28))
 
+def endergyMaterialsGone = [
+    [0, "CrudeSteel"],
+    [4, "CrystallinePinkSlime"],
+    [5, "EnergeticSilver"],
+    [6, "VividAlloy"],
+]
+for (def i in endergyMaterialsGone) {
+    ore("block${i[1]}").remove(mitem("block_alloy_endergy", i[0]))
+    ore("ingot${i[1]}").remove(mitem("item_alloy_endergy_ingot", i[0]))
+    ore("nugget${i[1]}").remove(mitem("item_alloy_endergy_nugget", i[0]))
+}
+
 def removeSagMill = [mitem("item_material", 28), mitem("block_holier_fog")]
-def removeSagMillInputs = [item("minecraft:ender_pearl"), item("appliedenergistics2:material", 46), mitem("item_material", 76)]
 def removeAlloy = [mitem("block_death_pouch")]
 for (def i in [39, 72, 76, 75]) removeAlloy.add(mitem("item_material", i))
 def removeTank = [mitem("item_material", 8)]
 
 def hideFromJei = [
-    mitem("item_alloy_ball", 9), mitem("item_alloy_endergy_ball"), mitem("item_material", 5), mitem("block_holy_fog"), mitem("block_creative_spawner"),
+    mitem("item_alloy_ball", 9), mitem("item_material", 5), mitem("block_holy_fog"), mitem("block_creative_spawner"),
     mitem("block_dark_paper_anvil", 1), mitem("block_dark_paper_anvil", 2), mitem("item_dark_steel_treetap"),
     mitem("item_owl_egg"), mitem("item_enderface"),
-    mitem("block_alloy_endergy"), mitem("item_alloy_endergy_ingot"), mitem("item_alloy_endergy_ingot"),
 ] + removeRecipes + removeSagMill + removeAlloy + removeTank
 for (def i in [61, 62, 63, 9, 10]) hideFromJei.add(mitem("item_material", i))
+for (def i in [0, 4, 5, 6]) {
+    hideFromJei.add(mitem("item_alloy_endergy_ball", i))
+    hideFromJei.add(mitem("item_alloy_endergy_ingot", i))
+    hideFromJei.add(mitem("block_alloy_endergy", i))
+    hideFromJei.add(mitem("item_alloy_endergy_nugget", i))
+}
 
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
@@ -146,7 +159,6 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 TooltipEvents.setTier(item("enderio:item_material", 30), 6)
 TooltipEvents.setTier(item("enderio:item_material", 31), 6)
 
-// for (def it in removeSagMillInputs) mods.enderio.sag_mill.removeByInput(it)
 for (def it in removeAlloy) mods.enderio.alloy_smelter.remove(it)
 mods.enderio.tank.removeFill(fluid("nutrient_distillation"), mitem("item_material", 8))
 mods.tconstruct.melting.removeByOutput(fluid("construction_alloy"))

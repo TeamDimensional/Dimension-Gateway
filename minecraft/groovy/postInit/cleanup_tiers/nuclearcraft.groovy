@@ -122,7 +122,7 @@ def hideFromJei = [
     mitem("fluid_steel"), mitem("fluid_enderium"), mitem("fluid_lead_platinum"), mitem("fluid_ethanol"), mitem("fluid_milk"),
     mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("compound", 7), mitem("compound", 8), mitem("part", 15),
     mitem("fluid_radaway"), mitem("fluid_radaway_slow"), mitem("fluid_redstone_ethanol"),
-    mitem("fluid_borax_solution"), mitem("fluid_irradiated_borax_solution"),
+    mitem("fluid_borax_solution"), mitem("fluid_irradiated_borax_solution"), mitem("gem"),
 ] + removeRecipes
 
 TooltipEvents.setTooltip(mitem("fission_dust", 5), "Byproduct from the TBU, U-233 and Pu-based fuels.")

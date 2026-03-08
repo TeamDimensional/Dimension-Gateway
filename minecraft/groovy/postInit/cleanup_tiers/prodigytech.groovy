@@ -13,7 +13,7 @@ baseItems = [
 
 gearItems = [
     mitem("ferramic_gear"), mitem("sawdust"), mitem("enriched_fuel"), mitem("rotary_grinder"), mitem("particle_board"), mitem("particle_board_planks"),
-    mitem("meat_ground"), mitem("quartz_dust"), mitem("ferramic_dust"), mitem("ferramic_dust_tiny"), mitem("funnelling_extractor"),
+    mitem("meat_ground"), mitem("quartz_dust"), mitem("ferramic_dust"), mitem("funnelling_extractor"),
     mitem("dispersing_extractor"), mitem("food_purifier"), mitem("meat_patty"), mitem("carbon_plate_block"), mitem("ferramic_handbow"),
     mitem("purified_food"), mitem("heat_sawmill"), mitem("carbon_plate"),
     mitem("fuel_pellet_1"), mitem("fuel_pellet_4"), mitem("fuel_pellet_16"), mitem("fuel_pellet_64"), mitem("solid_fuel_aeroheater"),
@@ -41,7 +41,7 @@ zorrasteelItems = [
 ]
 
 def removeRecipes = [
-    mitem("magnetic_reassembler"),
+    mitem("magnetic_reassembler"), mitem("ferramic_dust_tiny"), mitem("gold_dust_tiny"), mitem("iron_dust_tiny"),
 ]
 
 def hideFromJei = removeRecipes
@@ -55,3 +55,7 @@ for (def it in energionItems) TooltipEvents.setTier(it, 7)
 for (def it in zorrasteelItems) TooltipEvents.setTier(it, 7)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
+for (def res in ["iron", "gold", "ferramic"]) {
+    crafting.remove("prodigytech:storage/${res}_dust_tiny_combine")
+    furnace.removeByInput(item("prodigytech:${res}_dust_tiny"))
+}

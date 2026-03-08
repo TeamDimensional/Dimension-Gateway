@@ -5,6 +5,9 @@ ore("ingotThaumium").remove(item("essentialcraft:genitem", 5))
 mods.essentialcraft.magician_table.removeByOutput(item("essentialcraft:genitem", 5))
 GatewayHelpers.hide(item("essentialcraft:genitem", 5))
 
+// Remove reinforced stone from being stone
+ore("stone").remove(item("essentialcraft:fortifiedstone"))
+
 // Remove Magical Plate, I would rather remove the TC's plate but some recipes are hardcoded to use that one
 ore("plateMagic").remove(item("essentialcraft:genitem", 34))
 ore("plateThaumium").remove(item("essentialcraft:genitem", 34))

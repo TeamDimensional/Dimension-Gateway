@@ -105,26 +105,6 @@ for (int i in [30, 31, 32, 33, 34, 35, 36, 37, 39, 40]) {
     GatewayHelpers.hide(item("immersiveengineering:metal", i))
 }
 
-// Nitrate and Sulfur
-mods.immersiveengineering.crusher.removeByInput(item("minecraft:sandstone"))
-mods.immersiveengineering.crusher.recipeBuilder()
-    .input(item("minecraft:sandstone:*"))
-    .output(item("minecraft:sand") * 2)
-    .secondaryOutput(item("thermalfoundation:material", 772), 0.5)
-    .register()
-mods.immersiveengineering.crusher.recipeBuilder()
-    .input(item("minecraft:red_sandstone:*"))
-    .output(item("minecraft:sand", 1) * 2)
-    .secondaryOutput(item("thermalfoundation:material", 772), 0.5)
-    .register()
-
-mods.immersiveengineering.crusher.removeByInput(item("minecraft:blaze_rod"))
-mods.immersiveengineering.crusher.recipeBuilder()
-    .input(item("minecraft:blaze_rod"))
-    .output(item("minecraft:blaze_powder") * 4)
-    .secondaryOutput(item("thermalfoundation:material", 771), 0.5)
-    .register()
-
 GatewayHelpers.hide(item("immersiveengineering:material", 24))
 GatewayHelpers.hide(item("immersiveengineering:material", 25))
 

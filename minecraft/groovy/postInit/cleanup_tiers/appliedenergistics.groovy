@@ -64,7 +64,7 @@ def creativeItems = [
 ]
 
 def removeRecipes = [
-    mitem("sky_compass"), mitem("charged_staff"), mitem("portable_cell"), item("nae2:reconstruction_chamber"),
+    mitem("sky_compass"), mitem("charged_staff"), mitem("portable_cell"), item("nae2:reconstruction_chamber"), mitem("material", 46),
 ]
 
 def hideFromJei = [

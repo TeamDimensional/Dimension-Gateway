@@ -1,11 +1,12 @@
 import com.dimensional.gatewaycore.events.TooltipEvents
+import classes.GatewayHelpers
 
 def fluid_materials = [
     "aluminum": 1,
-    "ardite": 7,
+    "ardite": 6,
     "boron": 9,
     "coal": 1,
-    "cobalt": 7,
+    "cobalt": 6,
     "copper": 2,
     "diamond": 4,
     "emerald": 4,
@@ -70,3 +71,6 @@ for (def m in fluid_materials) {
         TooltipEvents.setTier(fluid("${p.key}_${m.key}"), Math.max(m.value, p.value))
     }
 }
+
+GatewayHelpers.hide(item("jaopca:dust.aquamarine"))
+GatewayHelpers.hide(item("jaopca:dust.liquified_coralium"))

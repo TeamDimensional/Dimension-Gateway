@@ -99,7 +99,7 @@ crafting.shapedBuilder()
         .name("tier4/blast_brick")
         .output(item("immersiveengineering:stone_decoration", 2) * 4)
         .matrix("SBS", "BHB", "SBS")
-        .key("S", ore("plateSteel")).key("B", item("immersiveengineering:stone_decoration", 1)).key("H", item("immersiveengineering:material", 19))
+        .key("S", ore("plateSteel")).key("B", item("immersiveengineering:stone_decoration", 1)).key("H", item("nuclearcraft:ingot", 8))
         .register()
 
 // HV things

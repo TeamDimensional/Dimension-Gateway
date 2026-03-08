@@ -6,11 +6,6 @@ Byproduct 4 - tier 7
 Byproduct 5 - tier 13
 */
 
-// Remove registries that have to be removed now
-mods.prodigytech.rotary_grinder.removeAll()
-mods.prodigytech.ore_refinery.removeAll()
-mods.enderio.sag_mill.removeAll()
-
 // TODO: figure out why Technetium (Resonating) does not have recipes added FOR THE ORE,
 // only for the native cluster
 

@@ -54,7 +54,6 @@ def arcTier = [
     mitem("stone_decoration", 2), mitem("metal_device1"), mitem("graphite_electrode"), mitem("fluorescent_tube"),
     mitem("metal_multiblock", 13), mitem("stone_device", 2),
 ]
-for (int i in [18, 19]) arcTier.add(mitem("material", i))
 
 def hvTier = [
     mitem("metal_device1", 7), mitem("wirecoil", 2), mitem("metal_multiblock", 10),
@@ -73,7 +72,7 @@ for (int i in 0..13) metallurgyTier.add(mitem("toolupgrade", i))
 for (def i in ["chest", "head", "legs", "feet"]) metallurgyTier.add(mitem("faraday_suit_${i}"))
 
 def removeRecipes = [pitem("metal_device", 1), mitem("wooden_device1"), mitem("material", 10)] + slabs + uraniumItems
-def hideFromJei = [mitem("coresample")] + removeRecipes
+def hideFromJei = [mitem("coresample"), mitem("material", 18), mitem("material", 19)] + removeRecipes
 def creativeItems = [mitem("metal_device0", 3)]
 
 for (def it in metallurgyTier) TooltipEvents.setTier(it, 3)
@@ -88,3 +87,12 @@ crafting.remove("immersiveengineering:stone_decoration/blastbrick_reinforced_sla
 crafting.remove("immersiveengineering:stone_decoration/alloybrick_slab_back")
 crafting.remove("immersiveengineering:stone_decoration/cokebrick_slab_back")
 crafting.remove("immersiveengineering:stone_decoration/blastbrick_slab_back")
+
+mods.immersiveengineering.squeezer.removeByOutput(item("immersiveengineering:material", 18))
+mods.immersiveengineering.metal_press.removeByInput(item("immersiveengineering:material", 19) * 4)
+mods.immersiveengineering.blueprint_crafting.removeByOutput("electrode", item("immersiveengineering:graphite_electrode"))
+mods.immersiveengineering.blueprint_crafting.recipeBuilder()
+    .input(item("nuclearcraft:ingot", 8), item("nuclearcraft:ingot", 8), item("nuclearcraft:ingot", 8), item("nuclearcraft:ingot", 8))
+    .output(item("immersiveengineering:graphite_electrode"))
+    .category("electrode")
+    .register()
