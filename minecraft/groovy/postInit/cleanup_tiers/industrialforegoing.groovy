@@ -54,7 +54,7 @@ def hideFromJei = [
 
 for (def it in basicItems) TooltipEvents.setTier(it, 3)
 for (def it in devices) TooltipEvents.setTier(it, 7)
-for (def it in advDevices) TooltipEvents.setTier(it, 9)
-for (def it in items) TooltipEvents.setTier(it, 9)
+for (def it in advDevices) TooltipEvents.setTier(it, 7)
+for (def it in items) TooltipEvents.setTier(it, 7)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeCrafting) crafting.removeByOutput(it)

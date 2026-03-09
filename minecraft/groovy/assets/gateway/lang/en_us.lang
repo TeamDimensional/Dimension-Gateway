@@ -5,12 +5,14 @@ item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.incomplete_runic_plate.name=Incomplete Runic Plate
 item.gateway.runic_plate.name=Runic Plate
 item.gateway.moonlight_powder.name=Moonlight Powder
+item.gateway.compression_core.name=Compression Core
 
 tile.gateway.metallic_substrate.name=Metallic Substrate
 tile.gateway.light_metal_substrate.name=Light Metal Substrate
 tile.gateway.heavy_metal_substrate.name=Heavy Metal Substrate
 tile.gateway.mundane_substrate.name=Mundane Material Substrate
 tile.gateway.gemstone_substrate.name=Gemstone Substrate
+tile.gateway.crystalline_aerogel.name=Crystalline Aerogel
 
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution

@@ -1,0 +1,36 @@
+{
+    "name": "Basic Metals",
+    "icon": "minecraft:iron_ingot",
+    "category": "patchouli:resources",
+    "sortnum": 101,
+    "pages": [
+        {
+            "type": "items",
+            "items": [
+                "item:embers:seed_iron",
+                "item:embers:seed_copper",
+                "item:embers:seed_lead",
+                "item:embers:ember_injector",
+                "item:embers:seed_dawnstone"
+            ],
+            "text": "The earliest way to passive basic metals is Embers' seeds in Tier 4. They're not very fast, but the only thing they consume is Ember. They can also be used to produce Dawnstone."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:minecraft:gold_ingot",
+                "item:extrautils2:ingredients:10"
+            ],
+            "text": "Gold can also be produced with a Zombie Pigman farm in the Nether. This requires spawning methods of some kind, i.e. Drop of Evil or Powered Spawner, as Zombie Pigmen don't spawn naturally."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:gateway:metallic_substrate",
+                "item:gateway:light_metal_substrate",
+                "item:gateway:heavy_metal_substrate"
+            ],
+            "text": "In Tier 7, Metallic Substrate reshaping is unlocked, with additional metals in Tier 10. All of these cost less than the ores made from these yield, but highly effective ore processing is required to go infinite."
+        }
+    ]
+}

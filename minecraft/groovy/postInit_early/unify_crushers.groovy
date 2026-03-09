@@ -96,6 +96,7 @@ def recipes = [
     [item("prodigytech:energion_crystal_seed"), item("prodigytech:energion_dust")],
     [item("libvulpes:productgem"), item("libvulpes:productdust")],
     [item("actuallyadditions:item_misc", 5), item("actuallyadditions:item_dust", 7)],
+    [item("minecraft:dye", 4), item("actuallyadditions:item_dust", 4)],
     // Blocks
     [item("minecraft:obsidian"), item("thermalfoundation:material", 770)],
     [item("minecraft:end_stone"), item("nuclearcraft:gem_dust", 11)],

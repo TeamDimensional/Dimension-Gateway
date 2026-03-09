@@ -1,0 +1,46 @@
+{
+    "name": "Miscellanous Items",
+    "icon": "minecraft:glowstone_dust",
+    "category": "patchouli:resources",
+    "sortnum": 103,
+    "pages": [
+        {
+            "type": "items",
+            "items": [
+                "item:extrautils2:ingredients:10",
+                "item:minecraft:redstone",
+                "item:minecraft:glowstone_dust"
+            ],
+            "text": "Among other things (I hope you know about mob drops), Redstone and Glowstone can be obtained from a mob farm spawning Witches. Witches do not spawn naturally, so Drop of Evil or a spawner is necessary."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:gateway:mundane_substrate",
+                "item:minecraft:redstone"
+            ],
+            "text": "Of course, Mundane Substrate can also be used to make Redstone, which is also much faster."
+        },
+        {
+            "type": "text",
+            "text": "Clay can be automated through adding natural matter to sand. At first this is useful to make Earth Drops, but there are some other usecases later on."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "ptreshaper",
+                    "outputs": [
+                        "item:minecraft:dirt"
+                    ]
+                },
+                {
+                    "category": "ptreshaper",
+                    "outputs": [
+                        "item:minecraft:clay"
+                    ]
+                }
+            ]
+        }
+    ]
+}

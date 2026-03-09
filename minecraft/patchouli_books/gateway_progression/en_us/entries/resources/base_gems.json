@@ -1,0 +1,126 @@
+{
+    "name": "Gemstones",
+    "icon": "minecraft:diamond",
+    "category": "patchouli:resources",
+    "sortnum": 102,
+    "pages": [
+        {
+            "type": "items",
+            "items": [
+                "item:extrautils2:ingredients:10",
+                "item:essentialcraft:gem_elemental",
+                "item:essentialcraft:gem_elemental:1",
+                "item:essentialcraft:gem_elemental:2",
+                "item:essentialcraft:gem_elemental:3",
+                "item:gateway:mundane_substrate"
+            ],
+            "text": "All of the Drops (except for Elemental Drops) can be produced with a multiblock structure with a mob farm. They can also be made from Mundane Substrate in Tier 5."
+        },
+        {
+            "type": "items",
+            "items": [
+                "item:minecraft:coal",
+                "item:extrautils2:ingredients:10",
+                "item:gateway:mundane_substrate"
+            ],
+            "text": "Coal can be produced as a drop from Ancient Golems or Wither Skeletons. This production method is not very fast, so make sure to use weapons with maximum Looting to get more Coal. Alternatively, Mundane Substrate can also be used to make Coal."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "naturesaura.altar",
+                    "outputs": [
+                        "item:minecraft:coal"
+                    ]
+                }
+            ],
+            "text": "Coal can also be produced from Charcoal using Nature's Aura. Though, there's no good way to passive Wood for a while, so this method isn't incredibly useful."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "essentialcraft:radiatingChamber",
+                    "outputs": [
+                        "item:actuallyadditions:item_dust:4"
+                    ]
+                }
+            ],
+            "text": "Lapis can be fully passived in Tier 5 through a complicated chain of recipes leading to this recipe in Radiating Chamber in the end. Alternatively, Mundane Substrate can also be used."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "essentialcraft:magicianTable",
+                    "inputs": [
+                        "item:minecraft:coal_block"
+                    ]
+                }
+            ],
+            "text": "Diamonds can be fully passived in Tier 6 by compressing Coal and Graphite. This costs a lot of coal, so hopefully you can produce that at decent speed already. Either Coal or Charcoal can be used for the recipe."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "essentialcraft:magicianTable",
+                    "outputs": [
+                        "item:minecraft:quartz"
+                    ]
+                }
+            ],
+            "text": "Nether Quartz can be automated in Tier 6 via a similar method, though the inputs are much cheaper."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "THAUMCRAFT_CRUCIBLE",
+                    "outputs": [
+                        "item:minecraft:diamond"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "theaurorian.moonlightforge",
+                    "outputs": [
+                        "item:gateway:crystalline_aerogel"
+                    ]
+                }
+            ],
+            "text": "Both Diamonds and Lapis can be automated through the Pale Gem line in Tier 7, it is decently fast and requires minimal external input, though it's pretty tricky to operate. These two recipes are parts of the process."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "ftelectroplater",
+                    "outputs": [
+                        "item:minecraft:quartz"
+                    ],
+                    "removeBackground": false
+                }
+            ],
+            "text": "Nether Quartz production can be made even cheaper in Tier 8 using an Electroplater."
+        },
+        {
+            "type": "jei",
+            "recipes": [
+                {
+                    "category": "ftagitator",
+                    "outputs": [
+                        "item:gateway:gemstone_substrate"
+                    ],
+                    "removeBackground": false
+                }
+            ],
+            "text": "Finally, Tier 8 unlocks Gemstone Substrate, which can be used to create every gemstone ore in the game."
+        }
+    ]
+}

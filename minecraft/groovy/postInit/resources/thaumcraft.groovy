@@ -12,5 +12,5 @@ mods.roots.fey_crafter.recipeBuilder()
 
 CrushingHelper.builder()
     .input(item("theaurorian:moongem"))
-    .output(item("gateway:moonlight_powder"))
+    .output(item("gateway:moonlight_powder") * 2)
     .register()
