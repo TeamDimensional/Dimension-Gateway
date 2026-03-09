@@ -1,0 +1,417 @@
+{
+  "name": "moonlight_fabricator",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "9b3c916a-66e1-4d47-8bf6-31d85e633871",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"roots:moonglow_leaf\",Count:2,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"actuallyadditions:item_crystal\",Count:1,Damage:1s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 50
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:crystal\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "pos_y",
+          "condition": {
+            "min": 150,
+            "max": 255
+          }
+        }
+      ]
+    },
+    {
+      "uid": "fc7d0d0e-75c9-4d4d-9e24-a8cf12820bb0",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"roots:moonglow_leaf\",Count:2,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thermalfoundation:material\",Count:1,Damage:131s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 50
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:moonstoneingot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "pos_y",
+          "condition": {
+            "min": 150,
+            "max": 255
+          }
+        }
+      ]
+    },
+    {
+      "uid": "f36b459b-23d3-40f6-8c08-c96eb86cee46",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:crystallineingot\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"embers:ingot_dawnstone\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:crystal\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 200
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:crystallineingot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "dimension",
+          "condition": {
+            "dim": "theaurorian"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "d2b25499-30a2-47bb-84ff-9b6e8160d16e",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"roots:moonglow_leaf\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thermalfoundation:material\",Count:1,Damage:132s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 50
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:ceruleaningot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "pos_y",
+          "condition": {
+            "min": 150,
+            "max": 255
+          }
+        }
+      ]
+    },
+    {
+      "uid": "cd9df8f4-7090-463d-83c3-52749af60ed4",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:umbraingot\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"actuallyadditions:item_crystal\",Count:1,Damage:3s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:ceruleaningot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 200
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:umbraingot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "dimension",
+          "condition": {
+            "dim": "theaurorian"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "eeed0404-98eb-43e5-802f-6ea4c73b2c6e",
+      "duration": 400,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:moongem\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"essentialcraft:compressed\",Count:1,Damage:4s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"tconstruct:clear_stained_glass\",Count:1,Damage:10s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 1000
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"theaurorian:moongem\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "dimension",
+          "condition": {
+            "dim": "theaurorian"
+          }
+        }
+      ]
+    },
+    {
+      "uid": "ee30436b-cf67-457c-921c-73caf0c87022",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:aurorianiteingot\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"prodigytech:emerald_dust\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:moonstoneingot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "natures_aura": [
+          {
+            "chance": 1.0,
+            "content": 200
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"theaurorian:aurorianiteingot\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "dimension",
+          "condition": {
+            "dim": "theaurorian"
+          }
+        }
+      ]
+    }
+  ]
+}

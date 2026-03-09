@@ -4,6 +4,7 @@ item.gateway.impure_resonating_gem.name=Impure Radioinfused Tanzanite
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.incomplete_runic_plate.name=Incomplete Runic Plate
 item.gateway.runic_plate.name=Runic Plate
+item.gateway.moonlight_powder.name=Moonlight Powder
 
 tile.gateway.metallic_substrate.name=Metallic Substrate
 tile.gateway.light_metal_substrate.name=Light Metal Substrate
@@ -35,6 +36,11 @@ resonant_caster.name=Resonant Caster
 tile.gateway.resonant_caster.name=Resonant Caster
 multiblocked.recipe_map.resonant_caster=Resonant Caster
 gateway.resonant_caster.description=Coats items with high-quality RCL
+
+moonlight_fabricator.name=Moonlight Fabricator
+tile.gateway.moonlight_fabricator.name=Moonlight Fabricator
+multiblocked.recipe_map.moonlight_fabricator=Moonlight Fabricator
+gateway.moonlight_fabricator.description=Concentrates Aura in mundane items and exposes them to Aurorian's moonshine
 
 fluid.jaopca.solution=%s Ore Solution
 item.jaopca.ore_cluster=Native %s Cluster
