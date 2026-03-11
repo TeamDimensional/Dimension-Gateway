@@ -1,0 +1,17 @@
+filename = 'Animus-1.12-2.1.8.jar'
+name = 'Animus'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Animus-1.12-2.1.8.jar'
+
+[download]
+hash = 'bc7aaa5bb2c839503178414c6bfb06c9b9c3554e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3496560
+project-id = 229664
