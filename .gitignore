@@ -53,3 +53,4 @@ minecraft/config/loliasm
 minecraft/config/ProjectE/**/*.json
 !minecraft/config/ProjectE/custom_emc.json
 extracted_dump
+minecraft/local/crash_assistant

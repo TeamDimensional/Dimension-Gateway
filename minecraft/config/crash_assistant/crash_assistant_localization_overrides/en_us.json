@@ -1,0 +1,6 @@
+{
+    "custom.different_heap_sizes": "You have allocated <strong>$XMS$</strong> as the Starting heap size, but <strong>$XMX$</strong> as the Maximum heap size. This is likely to decrease the game's stability, and it's highly recommended to set these to the same value.",
+    "custom.java_too_old": "You are using a very old build of Java (<strong>$VERSION$</strong>). This is likely to cause various elusive bugs. Please update your Java or install Cleanroom Relauncher to upgrade to Cleanroom automatically.",
+    "custom.cleanroom_recommended": "You are using Java <strong>$VERSION$</strong>. While this is supported, it is recommended to use Cleanroom and Java 25 for performance boosts.",
+    "custom.essential_incompatible": "Essential is not compatible with the pack. Consider installing E4MC-Retro or using a dedicated server!"
+}
