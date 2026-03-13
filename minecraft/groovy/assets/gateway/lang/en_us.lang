@@ -108,6 +108,8 @@ fluid.h2so4=Sulfuric Acid
 fluid.ftglowstone=Energized Glowstone
 fluid.bare_acid=Enderic Acid
 tile.AdvancedPowerCube.name=Power Cube
+tile.retro_sophisticated_backpacks.backpack_iron.name=Steel Backpack
+tile.retro_sophisticated_backpacks.backpack_obsidian.name=Resonant Backpack
 
 tile.nuclearcraft.decay_generator.name=Decay Apparatus
 tile.nuclearcraft.decay_generator.desc=Irradiates blocks with primordial energy, causing their decay.
