@@ -114,13 +114,6 @@
     "curseForgeHash": 3900301727,
     "modrinthHash": "15aaa39a13e18ab2f29456b25fd9732da1949329"
   },
-  "Animus-1.12-2.1.8.jar": {
-    "jarName": "Animus-1.12-2.1.8.jar",
-    "modId": "animus",
-    "version": "2.1.8",
-    "curseForgeHash": 2395911925,
-    "modrinthHash": "bc7aaa5bb2c839503178414c6bfb06c9b9c3554e"
-  },
   "AquaAcrobatics-1.15.4.jar": {
     "jarName": "AquaAcrobatics-1.15.4.jar",
     "modId": "aquaacrobatics",
@@ -328,6 +321,13 @@
     "version": "1.12.2-3.0.18-b278",
     "curseForgeHash": 2656999452,
     "modrinthHash": "aca4d439b8a7c480217c43ebda60772ef6eb392e"
+  },
+  "CongregaMystica-1.12.2-1.0.9.jar": {
+    "jarName": "CongregaMystica-1.12.2-1.0.9.jar",
+    "modId": "congregamystica",
+    "version": "1.0.9",
+    "curseForgeHash": 619517314,
+    "modrinthHash": "a9304f02913df235042e4e79e2ac70419d4ef505"
   },
   "CTM-MC1.12.2-1.0.2.31.jar": {
     "jarName": "CTM-MC1.12.2-1.0.2.31.jar",
@@ -868,6 +868,13 @@
     "curseForgeHash": 1401717971,
     "modrinthHash": "2ca2484af6e1298615572b10db57b0a2c94b53ef"
   },
+  "New-Crimson-Revelations-1.12.2-1.5.2.jar": {
+    "jarName": "New-Crimson-Revelations-1.12.2-1.5.2.jar",
+    "modId": "crimsonrevelations",
+    "version": "1.5.2",
+    "curseForgeHash": 365861742,
+    "modrinthHash": "b89ca6d423ce7916e66331156c5d846fd2a019bb"
+  },
   "NoWorldgen5You-1.12.2-1.0.8.jar": {
     "jarName": "NoWorldgen5You-1.12.2-1.0.8.jar",
     "modId": "noworldgen5you",
@@ -1178,6 +1185,13 @@
     "version": "1.2.4",
     "curseForgeHash": 4052654224,
     "modrinthHash": "fe9c80355ea3db885a909900975683ab191e8eca"
+  },
+  "thaumicwonders-2.2.4.jar": {
+    "jarName": "thaumicwonders-2.2.4.jar",
+    "modId": "thaumicwonders",
+    "version": "2.2.4",
+    "curseForgeHash": 2509867258,
+    "modrinthHash": "62592a643dfaf76ce69e151c66c452d28029fca2"
   },
   "theaurorian-1.12.2-1.2.jar": {
     "jarName": "theaurorian-1.12.2-1.2.jar",

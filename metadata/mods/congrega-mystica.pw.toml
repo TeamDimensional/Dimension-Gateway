@@ -1,0 +1,17 @@
+filename = 'CongregaMystica-1.12.2-1.0.9.jar'
+name = 'Congrega Mystica'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.9'
+
+[download]
+hash = 'a9304f02913df235042e4e79e2ac70419d4ef505'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7521955
+project-id = 1341792

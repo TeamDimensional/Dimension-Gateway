@@ -16,7 +16,7 @@ def tier3Items = [
 for (def i in [1, 3, 4, 5, 6, 7]) tier3Items.add(item("engineersworkshop:upgrade", i))
 
 def tier4Items = [
-    item("omniwand:wand"), item("engineersworkshop:upgrade", 8), item("simplevoidworld:portal"),
+    item("omniwand:wand"), item("engineersworkshop:upgrade", 8), item("simplevoidworld:portal"), item("microblockcbe:saw_diamond"),
 ]
 
 def basicXnet = [

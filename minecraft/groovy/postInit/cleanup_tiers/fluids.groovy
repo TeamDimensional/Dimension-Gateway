@@ -42,7 +42,7 @@ def tier6 = [
     // The End
     fluid("ender"),
     // Astral Sorcery
-    fluid("astral_starmetal"), fluid("aquamarine"), fluid("astralsorcery.liquidstarlight"),
+    fluid("astral_starmetal"), fluid("aquamarine"), fluid("astralsorcery.liquidstarlight"), fluid("fluid_quicksilver"),
     // Ore level
     fluid("cobalt"), fluid("ardite"), fluid("manyullyn"),
 ]
@@ -117,7 +117,7 @@ def tier11 = [
     fluid("nutrient_distillation"), fluid("hootch"), fluid("rocket_fuel"), fluid("fire_water"),
     fluid("liquid_sunshine"), fluid("cloud_seed"), fluid("cloud_seed_concentrated"), fluid("electrical_steel"), fluid("energetic_alloy"),
     fluid("vibrant_alloy"), fluid("redstone_alloy"), fluid("conductive_iron"), fluid("pulsating_iron"), fluid("dark_steel"), fluid("soularium"),
-    fluid("end_steel"), fluid("ender_distillation"), fluid("vapor_of_levity"),
+    fluid("end_steel"), fluid("ender_distillation"), fluid("vapor_of_levity"), fluid("crystalline_alloy"), fluid("melodic_alloy"),
     // Blood Magic
     fluid("lifeessence"), 
     // NCO Fission
@@ -146,6 +146,8 @@ def tier13 = [
     fluid("nak_hot"), fluid("nak"), fluid("flibe"),
 ]
 
+def tier14 = [fluid("stellar_alloy")]
+
 def tier15 = [
     // QMD
     fluid("tritium"), fluid("plasma"), fluid("sodium_tungstate_solution"), fluid("lead_tungstate_solution"),
@@ -165,6 +167,7 @@ def removeFluids = [
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
     "boiling_potato_juice", "boiling_wormwood", "boiling_beetroot_soup", "vodka", "umber_ale", "absinthe", "snowpoff",
     "aquamarine", "solution_aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
+    "crude_steel", "crystalline_pink_slime", "energetic_silver", "vivid_alloy",
 ]
 
 def ncIsotopes = [
@@ -219,6 +222,7 @@ for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in tier11) TooltipEvents.setTier(it, 11)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
 for (def it in tier13) TooltipEvents.setTier(it, 13)
+for (def it in tier14) TooltipEvents.setTier(it, 14)
 for (def it in tier15) TooltipEvents.setTier(it, 15)
 
 for (def it in removeFluids) {

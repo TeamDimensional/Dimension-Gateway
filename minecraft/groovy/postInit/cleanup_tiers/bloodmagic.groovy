@@ -71,7 +71,7 @@ def removeHellfire = [
     mitem("node_router"), mitem("sentient_armour_gem"),
 ]
 for (int i in [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 30, 31, 32])
-    removeHellfire.add(mitem("component", i))
+    bloodItems.add(mitem("component", i))
 
 def removeArray = [mitem("sigil_claw")]
 // TODO: fix this recipe removal not working (GS bug)

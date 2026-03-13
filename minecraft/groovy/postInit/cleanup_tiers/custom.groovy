@@ -31,6 +31,7 @@ TooltipEvents.setTooltip(citem("runic_plate"), "Use Terraformer to create the co
 TooltipEvents.setTier(citem("moonlight_powder"), 4)
 TooltipEvents.setTier(citem("crystalline_aerogel"), 7)
 TooltipEvents.setTier(citem("compression_core"), 6)
+TooltipEvents.setTier(citem("moonlight_fabricator"), 4)
 
 TooltipEvents.setTier(mitem("entity"), 15)
 TooltipEvents.setTier(citem("demon_factory"), 15)

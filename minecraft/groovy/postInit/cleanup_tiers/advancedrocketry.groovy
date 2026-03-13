@@ -35,6 +35,7 @@ def part1Items = [
     item("libvulpes:enhancedmotor"), item("libvulpes:productdust"), item("libvulpes:productgem"), item("libvulpes:ore0"),
     item("libvulpes:coil0", 2), item("libvulpes:coil0", 4), item("libvulpes:coil0", 7), item("libvulpes:coil0", 9),
     item("libvulpes:linker"), item("libvulpes:holoprojector"), item("libvulpes:structuremachine"),
+    mitem("misc"), mitem("servicemonitor"), mitem("invhatch"), mitem("servicestation"), mitem("orbitalregistry"),
 ]
 for (def i in 0..3) part1Items.add(mitem("pressuretank", i))
 for (def i in 0..5) part1Items.add(mitem("itemupgrade", i))
@@ -56,6 +57,7 @@ def part2Items = [
     mitem("productsheet", 1), mitem("productgear", 1), mitem("metal0", 1), item("libvulpes:productrod", 10),
     mitem("dataunit"), mitem("satellitepowersource"), mitem("satellitepowersource", 1), mitem("orescanner"),
     mitem("carbonscrubbercartridge"), mitem("satellite"), item("libvulpes:advstructuremachine"), item("libvulpes:elitemotor"),
+    mitem("databusbig"),
 ]
 for (def i in 0..5) part2Items.add(mitem("crystal", i))
 for (def it in ["satelliteid", "asteroid", "elevator", "spacestation"]) part2Items.add(mitem("${it}chip"))

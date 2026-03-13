@@ -57,7 +57,6 @@ for (def it in ["not", "or", "and", "nor", "nand", "xor", "xnor", "toggle", "cou
     items.add(mitem("item_redstone_${it}_filter"))
 for (def it in ["tiny", "small", "medium", "big", "large"]) items.add(mitem("block_inventory_chest_${it}"))
 for (def i in [0, 1, 4, 5]) items.add(mitem("block_electric_light", i))
-for (def i in 0..3) items.add(mitem("block_solar_panel", i))
 
 def advancedItems = [
     mitem("item_cold_fire_igniter"), mitem("block_end_iron_bars"), mitem("item_travel_staff"), mitem("item_rod_of_return"),
@@ -68,6 +67,8 @@ def advancedItems = [
     mitem("block_enhanced_sag_mill"), mitem("block_soul_binder"), mitem("block_powered_spawner"), mitem("block_enhanced_vat"),
     mitem("block_enhanced_wired_charger"), mitem("block_enhanced_wireless_charger"), mitem("block_wireless_charger_extension"),
     mitem("block_transceiver"), mitem("block_simple_crafter"), mitem("block_crafter"), mitem("item_soul_vial"),
+    mitem("item_capacitor_crystalline"), mitem("item_capacitor_melodic"), mitem("item_capacitor_totemic"),
+    mitem("item_endergy_conduit", 8), mitem("item_endergy_conduit", 10),
 ]
 for (def i in [16, 17, 18, 19, 34, 35, 36, 37, 42, 44, 54, 55, 56, 64, 68, 71, 78, 79, 80])
     advancedItems.add(mitem("item_material", i))
@@ -75,11 +76,19 @@ advancedItems.add(mitem("block_alloy", 8))
 advancedItems.add(mitem("item_alloy_ingot", 8))
 advancedItems.add(mitem("item_alloy_nugget", 8))
 advancedItems.add(mitem("item_alloy_ball", 8))
+
+def stellarEquipment = [
+    mitem("item_capacitor_stellar"), mitem("item_stellar_alloy_sword"), mitem("item_stellar_alloy_pickaxe"), mitem("item_stellar_alloy_axe"),
+    mitem("item_stellar_alloy_helmet"), mitem("item_stellar_alloy_boots"), mitem("item_stellar_alloy_chestplate"),
+    mitem("item_stellar_alloy_leggings"), mitem("item_endergy_conduit", 11),
+]
+
 for (def i in 1..3) {
-    advancedItems.add(mitem("item_alloy_endergy_ingot", i))
-    advancedItems.add(mitem("item_alloy_endergy_ball", i))
-    advancedItems.add(mitem("item_alloy_endergy_nugget", i))
-    advancedItems.add(mitem("block_alloy_endergy", i))
+    def arr = i == 3 ? stellarEquipment : advancedItems
+    arr.add(mitem("item_alloy_endergy_ingot", i))
+    arr.add(mitem("item_alloy_endergy_ball", i))
+    arr.add(mitem("item_alloy_endergy_nugget", i))
+    arr.add(mitem("block_alloy_endergy", i))
 }
 for (def it in ["huge", "enormous", "warehouse", "warehouse13"]) advancedItems.add(mitem("block_inventory_chest_${it}"))
 for (def i in 0..2) advancedItems.add(mitem("item_inventory_remote", i))
@@ -110,8 +119,11 @@ def removeRecipes = [
     mitem("block_stirling_generator"), mitem("block_lava_generator"), mitem("block_simple_sag_mill"),
     mitem("block_simple_wired_charger"), mitem("block_dark_paper_anvil"),
     mitem("block_confusion_charge"), mitem("block_concussion_charge"),
+    mitem("item_capacitor_grainy"), mitem("item_capacitor_silver"),
 ]
+for (def i in 1..7) removeRecipes.add(mitem("item_endergy_conduit", i))
 for (def i in [0, 22, 38, 51, 52, 66, 67, 69, 77, 81]) removeRecipes.add(mitem("item_material", i))
+for (def i in 0..6) removeRecipes.add(mitem("block_solar_panel", i))
 for (def b in 0..15) for (def a in [1, 2]) removeRecipes.add(mitem("block_decoration${a}", b))
 for (def b in 0..4) removeRecipes.add(mitem("block_decoration3", b))
 ore("blockConstructionAlloy").remove(mitem("block_alloy", 9))
@@ -140,6 +152,8 @@ def hideFromJei = [
     mitem("item_alloy_ball", 9), mitem("item_material", 5), mitem("block_holy_fog"), mitem("block_creative_spawner"),
     mitem("block_dark_paper_anvil", 1), mitem("block_dark_paper_anvil", 2), mitem("item_dark_steel_treetap"),
     mitem("item_owl_egg"), mitem("item_enderface"),
+    mitem("item_endergy_conduit"), mitem("item_capacitor_energetic_silver"), mitem("item_capacitor_vivid"),
+    mitem("item_endergy_conduit", 9),
 ] + removeRecipes + removeSagMill + removeAlloy + removeTank
 for (def i in [61, 62, 63, 9, 10]) hideFromJei.add(mitem("item_material", i))
 for (def i in [0, 4, 5, 6]) {
@@ -153,6 +167,7 @@ for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in items) TooltipEvents.setTier(it, 11)
 for (def it in advancedItems) TooltipEvents.setTier(it, 11)
+for (def it in stellarEquipment) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
@@ -162,6 +177,7 @@ TooltipEvents.setTier(item("enderio:item_material", 31), 6)
 for (def it in removeAlloy) mods.enderio.alloy_smelter.remove(it)
 mods.enderio.tank.removeFill(fluid("nutrient_distillation"), mitem("item_material", 8))
 mods.tconstruct.melting.removeByOutput(fluid("construction_alloy"))
+crafting.remove("enderio:capacitor_crystalline_alt")
 
 // Rewrite Hootch recipe because it causes client crashes due to items being removed from dustWheat.
 mods.enderio.vat.remove(fluid("hootch"))

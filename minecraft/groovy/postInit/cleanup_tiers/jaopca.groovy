@@ -74,3 +74,9 @@ for (def m in fluid_materials) {
 
 GatewayHelpers.hide(item("jaopca:dust.aquamarine"))
 GatewayHelpers.hide(item("jaopca:dust.liquified_coralium"))
+GatewayHelpers.hide(item("jaopca:block.aquamarine"))
+GatewayHelpers.hide(item("jaopca:block.astral_starmetal"))
+GatewayHelpers.hide(item("jaopca:nugget.astral_starmetal"))
+GatewayHelpers.hide(item("jaopca:thaumcraft_cluster.astral_starmetal"))
+TooltipEvents.setTier(item("jaopca:dust.cerulean"), 3)
+TooltipEvents.setTier(item("jaopca:dust.moonstone"), 3)
