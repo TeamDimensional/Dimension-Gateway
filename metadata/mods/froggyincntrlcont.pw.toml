@@ -1,0 +1,17 @@
+filename = 'incontrol-1.12-3.10.0.jar'
+name = "Froggy's InControlContinuation"
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'incontrol-1.12-3.10.0.jar'
+
+[download]
+hash = '80d9f0bbf3bea44a75d04c5402c16f931fb37156'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7750223
+project-id = 1484881

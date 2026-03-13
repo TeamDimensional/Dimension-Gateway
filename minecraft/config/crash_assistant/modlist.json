@@ -595,12 +595,12 @@
     "curseForgeHash": 4029569122,
     "modrinthHash": "dd0ec378fef19acc7cf649be13ced76aa72e42ac"
   },
-  "incontrol-1.12-3.9.18.jar": {
-    "jarName": "incontrol-1.12-3.9.18.jar",
+  "incontrol-1.12-3.10.0.jar": {
+    "jarName": "incontrol-1.12-3.10.0.jar",
     "modId": "incontrol",
-    "version": "1.12-3.9.18",
-    "curseForgeHash": 622213382,
-    "modrinthHash": "a9a3b82dc6c8d9a9107f5e03eaa79b5854c2eed2"
+    "version": "1.12-3.10.0",
+    "curseForgeHash": 3358228883,
+    "modrinthHash": "80d9f0bbf3bea44a75d04c5402c16f931fb37156"
   },
   "industrialforegoing-1.12.2-1.12.13-237.jar": {
     "jarName": "industrialforegoing-1.12.2-1.12.13-237.jar",
