@@ -54,3 +54,5 @@ minecraft/config/ProjectE/**/*.json
 !minecraft/config/ProjectE/custom_emc.json
 extracted_dump
 minecraft/local/crash_assistant
+minecraft/visualores
+minecraft/config/astralsorcery/amulet_enchantments.cfg
