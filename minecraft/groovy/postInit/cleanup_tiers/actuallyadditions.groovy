@@ -32,7 +32,7 @@ def mainItems = [
     mitem("item_drill_upgrade_speed"), mitem("item_drill_upgrade_speed_ii"), mitem("item_drill_upgrade_three_by_three"),
     mitem("item_drill_upgrade_block_placing"), mitem("item_coffee"), mitem("item_leaf_blower"), mitem("item_leaf_blower_advanced"),
     mitem("item_chest_to_crate_upgrade"), mitem("item_damage_lens"), mitem("item_explosion_lens"), mitem("item_color_lens"),
-    mitem("item_more_damage_lens"), mitem("block_bio_reactor"),
+    mitem("item_more_damage_lens"), mitem("block_bio_reactor"), mitem("block_ranged_collector"),
 ]
 for (def i in [6, 7, 8, 14, 16, 18, 23])
     mainItems.add(mitem("item_misc", i))
@@ -58,7 +58,7 @@ def laserItems = [
 ]
 
 def obsidianItems = [
-    mitem("block_ranged_collector"), mitem("item_void_bag"), mitem("item_misc", 19),
+    mitem("item_void_bag"), mitem("item_misc", 19),
 ]
 for (def i in 0..9) obsidianItems.add(mitem("item_potion_ring_advanced", i))
 // I wanted Drill in tier 4, but it has a mining level of 5 (Obsidian) and Tool Progression can't change it, so we put it in tier 6.

@@ -1,17 +1,17 @@
-filename = 'cell-terminal-1.4.0.jar'
+filename = 'cell-terminal-1.5.0.jar'
 name = 'Cell Terminal'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Cell Terminal 1.4.0'
+x-prismlauncher-version-number = 'Cell Terminal 1.5.0'
 
 [download]
-hash = '55de768d1b6440012073c18254df5703c4a8ff37'
+hash = '0ee65546c29dd0c746e99f7445b563cfb3efdac4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7710884
+file-id = 7749590
 project-id = 1443615
