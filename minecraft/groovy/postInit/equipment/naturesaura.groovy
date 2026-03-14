@@ -1,0 +1,11 @@
+// Cave Finder
+crafting.remove("naturesaura:cave_finder")
+crafting.shapedBuilder()
+    .name("tier3/natures_aura/cave_finder")
+    .mirrored()
+    .matrix(" ST", "SWS", "WS ")
+    .key("T", item("naturesaura:token_fear"))
+    .key("W", item("naturesaura:ancient_stick"))
+    .key("S", ore("stone"))
+    .output(item("naturesaura:cave_finder"))
+    .register()

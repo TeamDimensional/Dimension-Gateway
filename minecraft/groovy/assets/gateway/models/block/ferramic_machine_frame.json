@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "gateway:blocks/ferramic_machine_frame_top",
+    "front": "gateway:blocks/ferramic_machine_frame_side",
+    "side": "gateway:blocks/ferramic_machine_frame_side"
+  }
+}

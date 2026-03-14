@@ -12,13 +12,13 @@ def tier3Items = [
     mitem("elevator_button_module"), mitem("redstone_module"), mitem("counter_module"), mitem("machine_base"), mitem("screen"),
     mitem("screen_controller"), mitem("sequencer_block"), mitem("counter_block"), mitem("logic_block"),
     mitem("invchecker_block"), mitem("sensor_block"), mitem("analog_block"), mitem("digit_block"), mitem("wire_block"), mitem("timer_block"),
-    mitem("relay"), mitem("liquid_monitor"), mitem("item_filter"), mitem("elevator"), mitem("level_emitter"),
+    mitem("relay"), mitem("liquid_monitor"), mitem("item_filter"), mitem("elevator"),
 ]
 def tier4Items = [mitem("storage_module"), mitem("storage_module", 1), mitem("generic_module"), mitem("filter_module"), mitem("modular_storage")]
 def tier5Items = [mitem("storage_module_tablet"), mitem("storage_module", 2)]
 def tier6Items = [
     mitem("energyplus_module"), mitem("inventoryplus_module"), mitem("fluidplus_module"), mitem("counterplus_module"),
-    mitem("redstone_transmitter_block"), mitem("redstone_receiver_block"), mitem("button_module"), mitem("simple_dialer"),
+    mitem("redstone_transmitter_block"), mitem("redstone_receiver_block"), mitem("button_module"), mitem("simple_dialer"), mitem("level_emitter"),
 ]
 
 def oreItems = [

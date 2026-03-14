@@ -18,7 +18,7 @@ for (int i in [128, 129, 163, 192, 193, 227]) tinItems.add(mitem("material", i))
 
 def metallurgyItems = [
     mitem("ore", 2), mitem("ore", 3), mitem("ore", 5), mitem("storage", 2), mitem("storage", 3), mitem("storage", 5),
-    mitem("tome_lexicon"), mitem("fertilizer"), mitem("bait"),
+    mitem("tome_lexicon"), mitem("fertilizer"), mitem("bait"), mitem("glass", 3),
 ] + invarArmor
 for (int i in [0, 1, 2, 4]) metallurgyItems.add(mitem("storage_alloy", i))
 for (int i in [0, 1, 24, 25, 32, 33, 64, 65, 66, 67, 68, 69, 96, 97, 98, 99, 100, 130, 131, 133, 160, 161, 162, 164,
@@ -36,7 +36,7 @@ def techTierItems = [
     mitem("storage", 6), mitem("security"), mitem("fertilizer", 1), mitem("fertilizer", 2), mitem("bait", 1), mitem("bait", 2), mitem("meter"),
 ]
 for (int i in [5, 6, 7]) techTierItems.add(mitem("storage_alloy", i))
-for (int i in 0..6) techTierItems.add(mitem("glass", i))
+for (int i in 0..6) if (i != 3) techTierItems.add(mitem("glass", i))
 for (int i in 0..7) techTierItems.add(mitem("glass_alloy", i))
 for (int i in [0, 1, 33]) techTierItems.add(mitem("upgrade", i))
 for (int i in 0..15) techTierItems.add(mitem("dye", i))

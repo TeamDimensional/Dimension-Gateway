@@ -37,3 +37,12 @@ mods.naturesaura.ritual.recipeBuilder()
     .time(250)
     .sapling(item("minecraft:sapling", 1))
     .register()
+
+// Hopper Enhancement
+crafting.remove("naturesaura:hopper_upgrade")
+crafting.shapedBuilder()
+    .name("tier3/natures_aura/hopper_upgrade")
+    .output(item("naturesaura:hopper_upgrade"))
+    .matrix("SIS", "I I", "SHS")
+    .key("S", ore("ingotIron")).key("I", item("naturesaura:infused_iron")).key("H", item("minecraft:hopper"))
+    .register()

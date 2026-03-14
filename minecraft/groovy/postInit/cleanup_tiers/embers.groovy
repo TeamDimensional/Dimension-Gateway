@@ -8,11 +8,11 @@ def mitem(name, k=0) {
 def ashItems = [
     mitem("ashen_stone_slab"), mitem("ashen_brick_slab"), mitem("ashen_tile_slab"), mitem("ashen_brick"), mitem("ashen_stone"), mitem("ashen_tile"),
     mitem("stairs_ashen_brick"), mitem("stairs_ashen_stone"), mitem("stairs_ashen_tile"), mitem("wall_ashen_brick"), mitem("wall_ashen_stone"),
-    mitem("wall_ashen_tile"), 
+    mitem("wall_ashen_tile"), mitem("ashen_amulet"),
 ]
 
 def earlyItems = [
-    mitem("tinker_hammer"), mitem("tinker_lens"), mitem("ashen_amulet"), mitem("block_tank"), mitem("fluid_dropper"), mitem("fluid_gauge"),
+    mitem("tinker_hammer"), mitem("tinker_lens"), mitem("block_tank"), mitem("fluid_dropper"), mitem("fluid_gauge"),
     mitem("fluid_transfer"), mitem("item_dropper"), mitem("item_pipe"), mitem("item_pump"), mitem("item_transfer"), mitem("large_tank"),
     mitem("pipe"), mitem("pump"), mitem("stone_edge"), mitem("stone_valve"), mitem("vacuum"),
 ]

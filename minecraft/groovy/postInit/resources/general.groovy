@@ -27,3 +27,12 @@ crafting.remove("thermalfoundation:dust_signalum")
 crafting.remove("thermalfoundation:dust_lumium")
 crafting.remove("thermalfoundation:dust_enderium")
 // TODO: readd these recipes
+
+// Diamond, Emerald dusts
+mods.prodigytech.magnetic_reassembler.removeByInput(item("nuclearcraft:gem_dust"))
+mods.prodigytech.magnetic_reassembler.removeByInput(item("prodigytech:emerald_dust"))
+
+// Tiny piles
+mods.prodigytech.magnetic_reassembler.removeByInput(item("prodigytech:iron_dust_tiny"))
+mods.prodigytech.magnetic_reassembler.removeByInput(item("prodigytech:gold_dust_tiny"))
+mods.prodigytech.magnetic_reassembler.removeByInput(item("prodigytech:ferramic_dust_tiny"))

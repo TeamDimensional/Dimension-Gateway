@@ -26,8 +26,9 @@ def metallurgyTier = [
     mitem("toolbox"), mitem("drill"), mitem("drillhead"), mitem("drillhead", 1), mitem("jerrycan"),
     mitem("powerpack"), mitem("shield"), mitem("maintenance_kit"), mitem("skyhook"), mitem("metal_multiblock", 15),
     mitem("stone_device", 1), pitem("metal_multiblock", 1), pitem("metal_multiblock", 3), pitem("metal_device"),
-    pitem("stone_decoration"), pitem("material"), mitem("metal_decoration2", 4), pitem("schematic"), pitem("speedboat"), pitem("oil_can"),
-    mitem("wooden_device1", 1),
+    pitem("stone_decoration"), pitem("material"), pitem("schematic"), pitem("speedboat"), pitem("oil_can"),
+    mitem("wooden_device1", 1), mitem("metal_ladder"), mitem("cloth_device", 2), mitem("earmuffs"),
+    mitem("metal_decoration2", 3), mitem("metal_decoration1", 5), mitem("metal_decoration1", 4), mitem("blueprint"),
 ] + steelTools + steelArmor
 for (int i in [2, 3, 5, 6, 7]) metallurgyTier.add(mitem("wooden_device0", i))
 for (int i in 0..4) metallurgyTier.add(pitem("upgrades", i))
@@ -45,7 +46,7 @@ for (int i in [0, 1, 2]) metallurgyTier.add(mitem("steel_scaffolding_stairs${i}"
 for (int i in [0, 1, 2, 3, 6, 7, 9, 10, 11, 12, 13]) metallurgyTier.add(mitem("connector", i))
 for (int i in [0, 1, 2, 4, 5, 6]) metallurgyTier.add(mitem("metal_device0", i))
 for (int i in [1, 2, 3, 4, 5, 6, 8, 9]) metallurgyTier.add(mitem("metal_device1", i))
-for (int i in [2, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25, 26, 27]) metallurgyTier.add(mitem("material", i))
+for (int i in [1, 2, 3, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20, 21, 22, 23, 24, 25, 26, 27]) metallurgyTier.add(mitem("material", i))
 for (int i in [0, 1, 3, 4, 5, 6, 7]) metallurgyTier.add(mitem("wirecoil", i))
 for (int i in 0..7) metallurgyTier.add(mitem("mold", i))
 for (int i in 0..9) metallurgyTier.add(mitem("metal_multiblock", i))

@@ -18,7 +18,7 @@ altarItems = [
     mitem("placer"), mitem("infused_iron_block"), mitem("pickup_stopper"), mitem("grated_chute"), mitem("moss_generator"), mitem("powder_placer"),
     mitem("infused_iron"), mitem("aura_cache"), mitem("farming_stencil"), mitem("birth_spirit"), 
     mitem("cave_finder"), mitem("hopper_upgrade"), mitem("aura_detector"), mitem("nature_altar"), mitem("range_visualizer"),
-    mitem("infused_slab_double"), mitem("infused_brick_slab_double"),
+    mitem("infused_slab_double"), mitem("infused_brick_slab_double"), mitem("oak_generator"),
 ]
 
 // the botanist's tools are not disabled due to their custom abilities
@@ -38,7 +38,7 @@ enderItems = [
 ]
 
 removedItems = [
-    mitem("oak_generator"), mitem("auto_crafter"), mitem("rf_converter"),
+    mitem("auto_crafter"), mitem("rf_converter"),
     mitem("dimension_rail_overworld"), mitem("dimension_rail_nether"), mitem("dimension_rail_end"),
 ]
 hiddenItems = [mitem("multiblock_maker"), mitem("ancient_slab_double")] + removedItems
@@ -64,6 +64,8 @@ for (def it in automationItems) TooltipEvents.setTier(it, 7)
 for (def it in unobtainableItems) TooltipEvents.setTier(it, 0)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hiddenItems) GatewayHelpers.hide(it)
+
+TooltipEvents.setTooltip(mitem("birth_spirit"), "Dropped when mobs are bred in a surplus of Aura in the chunk.")
 
 setBottleTier("overworld", 2)
 setBottleTier("nether", 2)

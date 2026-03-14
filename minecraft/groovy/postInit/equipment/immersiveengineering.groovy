@@ -1,4 +1,3 @@
-
 // Mining Drill (requiring plates because otherwise there is an useless crafting component)
 crafting.remove("immersiveengineering:tool/drillhead_iron")
 crafting.remove("immersiveengineering:tool/drillhead_steel")
@@ -51,3 +50,23 @@ crafting.shapedBuilder()
         .key("P", item("immersiveengineering:metal_device0", 1)).key("C", item("immersiveengineering:wirecoil", 1))
         .register()
 
+// Wire Cutter
+crafting.remove("immersiveengineering:tool/wirecutters")
+crafting.shapedBuilder()
+        .name("tier3/ie/wirecutters")
+        .output(item("immersiveengineering:tool", 1))
+        .matrix("SI", " S")
+        .mirrored()
+        .key("S", ore("stickWood")).key("I", ore("ingotSteel"))
+        .register()
+
+// Projector
+crafting.remove("immersivepetroleum:tool/projector")
+crafting.shapedBuilder()
+        .name("tier3/ip/projector")
+        .mirrored()
+        .output(item("immersivepetroleum:schematic"))
+        .matrix("G  ", "IL ", " IT")
+        .mirrored()
+        .key("I", item("minecraft:iron_ingot")).key("G", ore("blockGlassColorless")).key("T", ore("plankTreatedWood")).key("L", item("immersiveengineering:metal_device1", 4))
+        .register()

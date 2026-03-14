@@ -247,11 +247,14 @@ crafting.shapedBuilder()
     .register()
 
 crafting.remove("abyssalcraft:charm")
+crafting.remove("abyssalcraft:charm_0")
 crafting.shapedBuilder()
+    .name("tier15/abyssalcraft_charm")
     .output(item("abyssalcraft:charm"))
-    .matrix("GGG", "GAG", "GGG")
+    .matrix("GEG", "GAG", "GEG")
     .key("G", item("minecraft:gold_ingot"))
     .key("A", item("prodigytech:aeternus_crystal"))
+    .key("E", item("abyssalcraft:ethaxiumingot"))
     .register()
 
 // Various adjustments to remove the gated items from recipes

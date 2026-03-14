@@ -20,28 +20,28 @@ gearItems = [
 ]
 
 redstoneItems = [
-    mitem("capacitor_aeroheater"), mitem("solderer"), mitem("fuel_processor"), mitem("food_enricher"),
-    mitem("inferno_fuel"), mitem("inferno_crystal"), mitem("circuit_plate"), mitem("circuit_crude"), mitem("circuit_refined"),
+    mitem("capacitor_aeroheater"), mitem("solderer"), mitem("fuel_processor"), mitem("magnetic_reassembler"), mitem("ore_refinery"),
+    mitem("inferno_fuel"), mitem("inferno_crystal"), mitem("circuit_plate"), mitem("circuit_crude"),
     mitem("sugar_cube"), mitem("gold_dust_tiny"), mitem("pattern_circuit_perfected"), mitem("capacitor_charger"),
     mitem("pattern_circuit_crude"), mitem("pattern_circuit_refined"), mitem("heat_capacitor_0", 32767), mitem("heat_capacitor_1", 32767),
 ]
 
-gemstoneItems = [mitem("diamond_dust"), mitem("emerald_dust"), mitem("ore_refinery")]
+gemstoneItems = [mitem("diamond_dust"), mitem("emerald_dust")]
 enderItems = [mitem("wormhole_funnel"), mitem("wormhole_linker")]
 energionItems = [
     mitem("energion_aeroheater"), mitem("automatic_crystal_cutter"), mitem("primordialis_reactor"), mitem("atomic_reshaper"),
-    mitem("crystal_cutter"), mitem("primordium"), mitem("aeternus_crystal"), mitem("circuit_perfected"),
+    mitem("crystal_cutter"), mitem("primordium"), mitem("aeternus_crystal"), mitem("circuit_refined"), mitem("food_enricher"),
     mitem("energion_crystal_seed"), mitem("energion_dust"), mitem("heat_capacitor_2", 32767), mitem("heat_capacitor_3", 32767),
 ]
 
 zorrasteelItems = [
     mitem("tartaric_aeroheater"), mitem("zorra_altar"), mitem("zorra_log"), mitem("zorra_planks"), mitem("zorra_leaves"), mitem("zorra_sapling"),
     mitem("zorrasteel_block"), mitem("zorra_leaf"), mitem("zorrasteel_raw"), mitem("zorrasteel_ingot"), mitem("tartaric_stoker"), mitem("zorrasteel_sword"),
-    mitem("zorrasteel_handbow"),
+    mitem("zorrasteel_handbow"), mitem("circuit_perfected"),
 ]
 
 def removeRecipes = [
-    mitem("magnetic_reassembler"), mitem("ferramic_dust_tiny"), mitem("gold_dust_tiny"), mitem("iron_dust_tiny"),
+    mitem("ferramic_dust_tiny"), mitem("gold_dust_tiny"), mitem("iron_dust_tiny"),
 ]
 
 def hideFromJei = removeRecipes

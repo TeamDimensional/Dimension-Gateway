@@ -3,13 +3,16 @@ import classes.CrushingHelper
 
 mods.actuallyadditions.crusher.removeAll()
 mods.factorytech.ore_drill.removeAll()
+mods.prodigytech.rotary_grinder.removeAll()
 // IE crusher can be used for either recipes or ore processing
 mods.immersiveengineering.crusher.removeAll()
 // These are used only for ore processing
-mods.prodigytech.rotary_grinder.removeAll()
 mods.thermalexpansion.pulverizer.removeAll()
 mods.prodigytech.ore_refinery.removeAll()
 mods.enderio.sag_mill.removeAll()
+
+// Also remove Redstone Furnace while we're at it
+mods.thermalexpansion.furnace.removeAll()
 
 // Restore missing recipes
 mods.factorytech.grindstone.recipeBuilder()
@@ -50,6 +53,7 @@ CrushingHelper.builder()
     .register()
 
 // Add recipes
+def anyMeat = item("minecraft:porkchop") | item("minecraft:beef") | item("minecraft:mutton") | item("minecraft:chicken")
 def recipes = [
     [item("minecraft:bone"), item("minecraft:dye", 15) * 6],
     [item("minecraft:reeds"), item("minecraft:sugar") * 3],
@@ -81,6 +85,8 @@ def recipes = [
     [item("theaurorian:ceruleaningot"), item("jaopca:dust.cerulean")],
     [item("theaurorian:moonstoneingot"), item("jaopca:dust.moonstone")],
     [item("libvulpes:productingot", 7), item("libvulpes:productdust", 7)],
+    [item("prodigytech:ferramic_ingot"), item("prodigytech:ferramic_dust")],
+    [anyMeat, item("prodigytech:meat_ground")],
     // Gems
     [item("minecraft:coal"), item("thermalfoundation:material", 768)],
     [item("minecraft:coal", 1), item("thermalfoundation:material", 769)],

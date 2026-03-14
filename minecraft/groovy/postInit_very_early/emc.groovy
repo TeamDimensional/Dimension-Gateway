@@ -420,3 +420,6 @@ for (def it in stairs) {
 for (def it in walls) {
     configureCraftable(item("quark:${it}_wall"))
 }
+
+// Immersive Engineering
+configureItem(item("immersiveengineering:metal_decoration2", 4), "Lighting")

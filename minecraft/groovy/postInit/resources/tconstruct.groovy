@@ -1,3 +1,5 @@
+import classes.AlloyHelper
+
 // Seared Brick
 furnace.removeByOutput(item("tconstruct:materials"))
 mods.roots.pyre.recipeBuilder()
@@ -22,4 +24,11 @@ crafting.shapedBuilder()
         .output(item("tconstruct:materials", 13))
         .matrix(" P ", "GSG", " P ")
         .key("P", item("minecraft:piston")).key("G", item("actuallyadditions:block_crystal", 1)).key("S", item("tconstruct:edible", 2))
+        .register()
+
+// Alumite
+AlloyHelper.builder()
+        .input(ore("ingotSteel"), ore("ingotAluminum"))
+        .output(item("tconstruct:ingots", 6) * 2)
+        .time(160)
         .register()

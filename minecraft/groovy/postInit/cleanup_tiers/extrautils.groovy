@@ -7,12 +7,13 @@ def mitem(name, k=0) {
 
 def tier3Items = [
     mitem("soundmuffler"), mitem("trashcanenergy"), mitem("redstoneclock"), mitem("wrench"), mitem("filter"), mitem("filterfluids"),
-    mitem("redstonelantern"), mitem("trashchest"), mitem("flattransfernode"), mitem("flattransfernode", 1),
+    mitem("redstonelantern"), mitem("trashchest"), mitem("flattransfernode"), mitem("flattransfernode", 1), mitem("pipe"),
+    mitem("ingredients", 11), mitem("simpledecorative", 1),
 ]
 for (def i in [0, 1, 2, 5, 6]) tier3Items.add(mitem("grocket", i))
 
 def tier4Items = [
-    mitem("itembuilderswand"), mitem("itemdestructionwand"), mitem("sickle_diamond"), mitem("pipe"), 
+    mitem("itembuilderswand"), mitem("itemdestructionwand"), mitem("sickle_diamond"),
 ]
 
 def tier5Items = [

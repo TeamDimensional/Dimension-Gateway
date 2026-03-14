@@ -145,3 +145,6 @@ crafting.shapedBuilder()
         .matrix("GTG", "G G", "PLP")
         .key("G", item("calculator:flawlessglass")).key("T", item("calculator:circuitboard", 8)).key("P", ore("plankTreatedWood")).key("L", item("immersiveengineering:material", 8))
         .register()
+
+// Distillation Tower catalyst
+mods.jei.catalyst.add("immersivepetroleum.distillation", item("immersivepetroleum:metal_multiblock", 1))

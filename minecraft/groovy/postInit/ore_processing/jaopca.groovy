@@ -161,17 +161,10 @@ def addOre(key, byproducts, addFluidOps) {
     // TODO: Refining modifier
 
     // Stage 2: Native Cluster -> Crystal
-    mods.prodigytech.rotary_grinder.recipeBuilder()
-        .input(itemOre | itemCluster)
-        .output(itemCrystal * 2)
-        .time(200)
-        .register()
-    
     mods.immersiveengineering.crusher.recipeBuilder()
         .input(itemOre | itemCluster)
-        .output(itemCrystal)
-        .secondaryOutput(itemCrystal, 0.8)
-        .secondaryOutput(outputs[byproducts[0]][0], 0.3)
+        .output(itemCrystal * 2)
+        .secondaryOutput(outputs[byproducts[0]][0], 0.2)
         .energy(4000)
         .register()
 

@@ -20,7 +20,7 @@
         {
             "title": "Step 2: Ore Crystals",
             "type": "text",
-            "text": "The second step is making Ore Crystals. The Ore Refinery gives a byproduct, while the Atomic Calculator gives more yield but requires Petrotheum. This can also be done earlier, needing only a Grinder instead of Ore Refinery."
+            "text": "The second step is making Ore Crystals. The Ore Refinery gives a byproduct, while the Atomic Calculator gives more yield but requires Petrotheum. This can also be done with a Immersive Engineering Crusher, which sometimes gives a different byproduct."
         },
         {
             "type": "jei",

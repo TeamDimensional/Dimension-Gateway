@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "gateway:ferramic_machine_frame"
+    }
+  }
+}

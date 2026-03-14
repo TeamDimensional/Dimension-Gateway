@@ -21,12 +21,14 @@ class CrushingHelper {
             this.immersiveBuilder = mods.immersiveengineering.crusher.recipeBuilder()
             this.factoryTechBuilder = mods.factorytech.ore_drill.recipeBuilder()
             this.aaBuilder = mods.actuallyadditions.crusher.recipeBuilder()
+            this.rotaryGrinderBuilder = mods.prodigytech.rotary_grinder.recipeBuilder()
         }
 
         CrushingHelperBuilder input(IIngredient item) {
             this.immersiveBuilder.input(item)
             this.factoryTechBuilder.input(item)
             this.aaBuilder.input(item)
+            this.rotaryGrinderBuilder.input(item)
             return this
         }
 
@@ -38,6 +40,7 @@ class CrushingHelper {
             this.immersiveBuilder.output(item)
             this.factoryTechBuilder.output(item)
             this.aaBuilder.output(item)
+            this.rotaryGrinderBuilder.output(item)
             return this
         }
 
@@ -53,6 +56,7 @@ class CrushingHelper {
             this.aaBuilder.register()
             if (!this.hasChancedOutput) {
                 this.factoryTechBuilder.register()
+                this.rotaryGrinderBuilder.register()
             }
         }
     }
