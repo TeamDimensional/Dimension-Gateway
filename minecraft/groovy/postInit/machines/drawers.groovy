@@ -50,7 +50,7 @@ crafting.shapedBuilder()
         .name("tier7/drawer/ender_drawer")
         .output(item("functionalstoragelegacy:ender_drawer"))
         .matrix("SSS", "DED", "SSS")
-        .key("S", ore("plankWood")).key("E", item("enderstorage:ender_storage")).key("D", anyDrawer)
+        .key("S", item("calculator:amethystplanks")).key("E", item("enderstorage:ender_storage")).key("D", anyDrawer)
         .register()
 
 // Armory Cabinet

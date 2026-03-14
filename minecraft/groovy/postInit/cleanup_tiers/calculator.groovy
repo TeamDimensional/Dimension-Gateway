@@ -34,6 +34,7 @@ def atomicItems = [
     mitem("pearleaves"), mitem("pearsapling"), mitem("pear"), mitem("rottenpear"), mitem("fabricationchamber"),
     // Circuits part 1 needed for powergens and upgrades
     mitem("precisionchamber"), mitem("processingchamber"), mitem("storagechamber"), mitem("analysingchamber"),
+    mitem("algorithmassimilator"),
 ]
 for (int i in [1, 5, 6, 7]) atomicItems.add(mitem("material", i))
 for (int i in 0..13) {
@@ -49,7 +50,7 @@ def hungerItems = [
 
 def healthItems = [
     mitem("tanzanitelog"), mitem("tanzaniteplanks"), mitem("tanzanitestairs"), mitem("tanzanitefence"), mitem("tanzaniteleaves"),
-    mitem("tanzanitesapling"), mitem("algorithmassimilator"), mitem("healthprocessor"), mitem("healthmodule"), mitem("nutritionmodule"),
+    mitem("tanzanitesapling"), mitem("healthprocessor"), mitem("healthmodule"), mitem("nutritionmodule"),
 ]
 
 def starsteelItems = [
