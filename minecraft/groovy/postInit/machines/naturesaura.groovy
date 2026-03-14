@@ -1,10 +1,3 @@
-// Gold Fiber
-crafting.remove("naturesaura:gold_fiber")
-mods.theaurorian.scrapper.recipeBuilder()
-    .input(item("thermalfoundation:material", 163))
-    .output(item("naturesaura:gold_fiber"))
-    .register()
-
 // Bottle and cork
 crafting.remove("naturesaura:bottle_two_the_rebottling")
 crafting.shapelessBuilder()
@@ -22,23 +15,6 @@ mods.naturesaura.ritual.recipeBuilder()
     .time(250)
     .sapling(item("theaurorian:weepingwillowsapling"))
     .register()
-
-// Token of Anger (required Ender pearls)
-mods.naturesaura.ritual.removeByOutput(item("naturesaura:token_anger"))
-mods.naturesaura.ritual.recipeBuilder()
-    .name("tier2/anger")
-    .input(item("naturesaura:aura_bottle").withNbt(["stored_type": "naturesaura:nether"]),
-           item("naturesaura:gold_leaf"), item("minecraft:blaze_powder"), item("minecraft:magma"),
-           item("minecraft:gunpowder"), item("theaurorian:soullessflesh"))
-    .output(item("naturesaura:token_anger") * 2)
-    .time(200)
-    .sapling(item("minecraft:sapling"))
-    .register()
-
-// Gold Leaf info
-mods.jei.description.add(item("naturesaura:golden_leaves"),
-                         ["Spreads to the nearby Leaves blocks when grown.", "Only fully grown Leaves can drop Gold Leaf!"])
-mods.jei.description.add(item("naturesaura:gold_leaf"), ["Only fully grown Leaves can drop Gold Leaf!"])
 
 // Natural Altar
 mods.naturesaura.ritual.removeByOutput(item("naturesaura:nature_altar"))

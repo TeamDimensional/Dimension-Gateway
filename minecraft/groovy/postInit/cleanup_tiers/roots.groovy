@@ -18,7 +18,7 @@ def rootsPlants = [
 
 def spells = [
     mitem("gramary"), mitem("imbuer"), mitem("imposer"), mitem("spell_icon"), mitem("spell_modifier"), mitem("fey_pouch"), mitem("herb_pouch"),
-    mitem("component_pouch"), mitem("apothecary_pouch"), mitem("spell_dust"), mitem("staff"),
+    mitem("component_pouch"), mitem("apothecary_pouch"), mitem("spell_dust"), mitem("staff"), mitem("apothecary_pouch"),
 ]
 
 def feyCrafting = [
@@ -33,7 +33,7 @@ for (variant in ["", "_brick", "_brick_alt"])
         feyCrafting.add(mitem("runestone${variant}${itemType}"))
 for (ritual in ["heavy_storms", "divine_protection", "fire_storm", "spreading_forest", "windwall",
                 "warding_protection", "germination", "purity", "frost_lands", "animal_harvest",
-                "summon_creatures", "wildroot_growth", "transmutation", "gathering", "grove_supplication"])
+                "wildroot_growth", "transmutation", "gathering", "grove_supplication"])
     feyCrafting.add(mitem("ritual_${ritual}"))
 
 def goldItems = [
@@ -43,10 +43,9 @@ def goldItems = [
 def gemstoneItems = [
     mitem("terrastone_pickaxe"), mitem("terrastone_axe"), mitem("terrastone_shovel"), mitem("terrastone_hoe"), mitem("terrastone_sword"),
     mitem("living_pickaxe"), mitem("living_axe"), mitem("living_shovel"), mitem("living_sword"), mitem("living_hoe"),
-    mitem("living_arrow"), mitem("apothecary_pouch"), mitem("wildwood_quiver"), mitem("wildwood_bow"),
+    mitem("living_arrow"), mitem("wildwood_quiver"), mitem("wildwood_bow"), mitem("diamond_knife"),
     mitem("sylvan_helmet"), mitem("sylvan_chestplate"), mitem("sylvan_leggings"), mitem("sylvan_boots"),
     mitem("wildwood_helmet"), mitem("wildwood_chestplate"), mitem("wildwood_leggings"), mitem("wildwood_boots"),
-    mitem("diamond_knife"),
 ]
 
 def obsidianItems = [
@@ -85,3 +84,19 @@ mods.jei.category.remove("roots.loot")
 mods.jei.catalyst.remove("roots.pyre_light", mitem("fire_starter"))
 
 // NOTE: remove firestarter catalyst
+
+def setSpellTier(name, tier) {
+    def dust = mitem("spell_dust").withNbt(["spell_storage": ["s": "roots:spell_${name}" as String]])
+    def icon = mitem("spell_icon").withNbt(["spell_storage": ["s": "roots:spell_${name}" as String]])
+    def predicate = stack -> {
+        return stack in dust || stack in icon
+    }
+    TooltipEvents.addTierPredicate("spell:${name}", predicate, tier)
+}
+
+setSpellTier("time_stop", 6)
+setSpellTier("chrysopoeia", 4)
+setSpellTier("disarm", 4)
+setSpellTier("extension", 3)
+// Has infinite harvest level.
+setSpellTier("shatter", 6)

@@ -6,7 +6,7 @@ def mitem(name, k=0) {
 }
 
 baseItems = [
-    mitem("explosion_furnace"), mitem("magmatic_aeroheater"), mitem("incinerator"), mitem("blower_furnace"), mitem("capacitor_charger"),
+    mitem("explosion_furnace"), mitem("magmatic_aeroheater"), mitem("incinerator"), mitem("blower_furnace"),
     mitem("ash_bricks"), mitem("ash"), mitem("air_funnel"), mitem("linear_extractor"), mitem("ferramic_block"),
     mitem("charred_cobblestone"), mitem("charred_stone"), mitem("charred_stonebricks"), mitem("ferramic_ingot"), mitem("ferramic_nugget"),
 ]
@@ -22,7 +22,7 @@ gearItems = [
 redstoneItems = [
     mitem("capacitor_aeroheater"), mitem("solderer"), mitem("fuel_processor"), mitem("food_enricher"),
     mitem("inferno_fuel"), mitem("inferno_crystal"), mitem("circuit_plate"), mitem("circuit_crude"), mitem("circuit_refined"),
-    mitem("sugar_cube"), mitem("gold_dust_tiny"), mitem("pattern_circuit_perfected"),
+    mitem("sugar_cube"), mitem("gold_dust_tiny"), mitem("pattern_circuit_perfected"), mitem("capacitor_charger"),
     mitem("pattern_circuit_crude"), mitem("pattern_circuit_refined"), mitem("heat_capacitor_0", 32767), mitem("heat_capacitor_1", 32767),
 ]
 

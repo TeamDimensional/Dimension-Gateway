@@ -147,3 +147,8 @@ for (def it in hoannaBuildingLoot) TooltipEvents.setTooltip(it, "Found in city r
 TooltipEvents.setTooltip(mitem("research_book"), "Warning! This can't be upgraded after being removed from Akashic Tome.")
 for (def it in 0..15) TooltipEvents.setTooltip(mitem("essence", it), "Produced by the Crystal Extractor.")
 TooltipEvents.setTooltip(mitem("elementalsword"), "Made in Ember Forge.")
+
+ore("cacti").remove(mitem("cacti"))
+ore("cactus").remove(mitem("cacti"))
+ore("blockCacti").remove(mitem("cacti"))
+ore("blockCactus").remove(mitem("cacti"))
