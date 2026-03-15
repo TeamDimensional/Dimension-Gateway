@@ -86,6 +86,13 @@
     "curseForgeHash": 2199621341,
     "modrinthHash": "972169ccbb3c214108f7775fc9ffe9edea66a118"
   },
+  "AE2CT-Legacy-0.1.2.jar": {
+    "jarName": "AE2CT-Legacy-0.1.2.jar",
+    "modId": "ae2ctl",
+    "version": "0.1.0",
+    "curseForgeHash": 1277871034,
+    "modrinthHash": "c2757db9c8b124c6def1f384e6b412e4ce70a5b5"
+  },
   "aether-1.12.2-v1.5.4.1.jar": {
     "jarName": "aether-1.12.2-v1.5.4.1.jar",
     "modId": "aether_legacy",
@@ -469,6 +476,13 @@
     "jarName": "flare-0.7.0.jar",
     "curseForgeHash": 3292257935,
     "modrinthHash": "73c99e9a1c530880f4dd6d2646a5e8cd08eaf6c0"
+  },
+  "Fluid Craft for AE2-2.6.6-r.jar": {
+    "jarName": "Fluid Craft for AE2-2.6.6-r.jar",
+    "modId": "ae2fc",
+    "version": "2.6.6-r",
+    "curseForgeHash": 998943625,
+    "modrinthHash": "7b6a06c6396428a94e83a0adce263d1731dc090c"
   },
   "Forgelin-Continuous-2.3.10.0.jar": {
     "jarName": "Forgelin-Continuous-2.3.10.0.jar",

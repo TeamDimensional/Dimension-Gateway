@@ -51,7 +51,7 @@
             }
           },
           {
-            "chance": 0.12,
+            "chance": 0.1,
             "content": {
               "amount": 1,
               "matches": [
@@ -60,7 +60,7 @@
             }
           },
           {
-            "chance": 0.15,
+            "chance": 0.08,
             "content": {
               "amount": 1,
               "matches": [
@@ -69,7 +69,7 @@
             }
           },
           {
-            "chance": 0.32,
+            "chance": 0.14,
             "content": {
               "amount": 1,
               "matches": [
@@ -138,7 +138,7 @@
             }
           },
           {
-            "chance": 0.085,
+            "chance": 0.03,
             "content": {
               "amount": 1,
               "matches": [
@@ -147,7 +147,7 @@
             }
           },
           {
-            "chance": 0.035,
+            "chance": 0.05,
             "content": {
               "amount": 1,
               "matches": [
@@ -189,7 +189,7 @@
             }
           },
           {
-            "chance": 0.1,
+            "chance": 0.04,
             "content": {
               "amount": 1,
               "matches": [
@@ -198,7 +198,7 @@
             }
           },
           {
-            "chance": 0.07,
+            "chance": 0.04,
             "content": {
               "amount": 1,
               "matches": [
@@ -207,16 +207,16 @@
             }
           },
           {
-            "chance": 0.045,
+            "chance": 0.03,
             "content": {
               "amount": 1,
               "matches": [
-                "{id:\"advancedrocketry:productgear\",Count:1,Damage:0s}"
+                "{id:\"thermaldynamics:duct_0\",Count:1,Damage:5s}"
               ]
             }
           },
           {
-            "chance": 0.17,
+            "chance": 0.13,
             "content": {
               "amount": 1,
               "matches": [
@@ -238,7 +238,23 @@
         "forge_energy": [
           {
             "chance": 1.0,
-            "content": 500000000
+            "content": 100000000
+          },
+          {
+            "chance": 1.0,
+            "content": 100000000
+          },
+          {
+            "chance": 1.0,
+            "content": 100000000
+          },
+          {
+            "chance": 1.0,
+            "content": 100000000
+          },
+          {
+            "chance": 1.0,
+            "content": 100000000
           }
         ]
       }

@@ -40,7 +40,7 @@
         "y": 31,
         "autoIO": true,
         "valid": [
-          "\"{id:\\\"advancedrocketry:productgear\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"thermaldynamics:duct_0\\\",Count:1,Damage:5s}\"",
           "\"{id:\\\"thermalfoundation:material\\\",Count:1,Damage:295s}\"",
           "\"{id:\\\"embers:aspectus_dawnstone\\\",Count:1,Damage:0s}\""
         ]

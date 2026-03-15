@@ -9,7 +9,7 @@ mods.extrautils2.enchanter.recipeBuilder()
     .input(item("gateway:mundane_substrate") * 3, item("tconstruct:ingots"))
     .output(item("gateway:metallic_substrate") * 3)
     .energy(84000)
-    .time(1200)
+    .time(400)
     .register()
 mods.prodigytech.atomic_reshaper.recipeBuilder()
     .input(item("gateway:metallic_substrate"))
@@ -20,8 +20,8 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("thermalfoundation:ore", 5), 5)   // nickel
     .output(item("minecraft:iron_ore"), 15)
     .output(item("tconstruct:ore"), 4)  // cobalt
-    .primordium(25)
-    .time(200)
+    .primordium(10)
+    .time(60)
     .register()
 
 // Processing Boron and Lithium through the most advanced tier 11 technology
@@ -33,7 +33,7 @@ mods.advancedrocketry.crystallizer.recipeBuilder()
     .input(item("gateway:metallic_substrate"), item("minecraft:stone") * 3, item("nuclearcraft:ingot", 5) * 4, item("nuclearcraft:ingot", 6) * 4)
     .output(item("gateway:light_metal_substrate") * 4)
     .power(500)
-    .time(800)
+    .time(200)
     .register()
 mods.prodigytech.atomic_reshaper.recipeBuilder()
     .input(item("gateway:light_metal_substrate"))
@@ -44,17 +44,17 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("nuclearcraft:ore", 7), 12)      // magnesium
     .output(item("thermalfoundation:ore", 4), 8)  // aluminium
     .output(item("libvulpes:ore0", 8), 6)         // rutile
-    .primordium(40)
-    .time(300)
+    .primordium(30)
+    .time(100)
     .register()
 
 // Similar math to the previous one using Thorium and Uranium. Though these margins are much less tight.
 TooltipEvents.setTier(item("gateway:heavy_metal_substrate"), 10)
 mods.advancedrocketry.crystallizer.recipeBuilder()
-    .input(item("gateway:metallic_substrate"), item("minecraft:stone") * 3, item("nuclearcraft:ingot", 4) * 3, item("nuclearcraft:ingot", 3) * 2)
+    .input(item("gateway:metallic_substrate"), item("minecraft:stone") * 3, item("nuclearcraft:ingot", 3) * 2, item("thermalfoundation:material", 131) * 6)
     .output(item("gateway:heavy_metal_substrate") * 4)
     .power(500)
-    .time(800)
+    .time(200)
     .register()
 mods.prodigytech.atomic_reshaper.recipeBuilder()
     .input(item("gateway:heavy_metal_substrate"))
@@ -64,8 +64,8 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("thermalfoundation:ore", 3), 12)   // lead
     .output(item("nuclearcraft:ore", 3), 9)         // thorium
     .output(item("nuclearcraft:ore", 4), 12)        // uranium
-    .primordium(40)
-    .time(300)
+    .primordium(30)
+    .time(100)
     .register()
 
 // This is intentionally cheap. Free redstone
@@ -91,8 +91,8 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("essentialcraft:oredrops", 7), 5)  // water
     .output(item("essentialcraft:oredrops", 8), 5)  // earth
     .output(item("essentialcraft:oredrops", 9), 5)  // air
-    .primordium(10)
-    .time(100)
+    .primordium(5)
+    .time(40)
     .register()
 
 // Cheap, but needs infra
@@ -113,6 +113,6 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("minecraft:diamond_ore"), 5)
     .output(item("minecraft:emerald_ore"), 5)
     .output(item("minecraft:quartz_ore"), 13)
-    .primordium(25)
-    .time(200)
+    .primordium(10)
+    .time(60)
     .register()
