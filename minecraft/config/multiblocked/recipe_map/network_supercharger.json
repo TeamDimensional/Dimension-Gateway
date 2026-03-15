@@ -1,0 +1,247 @@
+{
+  "name": "network_supercharger",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "121ee030-0a0d-407a-b3f2-a84da90c09ba",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"prodigytech:circuit_crude\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 250
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 5000000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "62ffaab8-cc5d-403a-acde-f2ae3f5db832",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"prodigytech:circuit_refined\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.12,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"prodigytech:aeternus_crystal\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.15,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"embers:aspectus_dawnstone\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.32,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thaumcraft:salis_mundus\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.04,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"immersiveengineering:metal_decoration0\",Count:1,Damage:2s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 1250
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "4fad75c4-0cc9-40a6-be04-c48cdd8d1143",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"calculator:circuitboard\",Count:1,Damage:9s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.06,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thermalfoundation:material\",Count:1,Damage:295s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.05,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"factorytech:machinepart\",Count:1,Damage:170s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.085,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"naturesaura:token_euphoria\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.035,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"calculator:electricdiamond\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 5000
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 100000000
+          }
+        ]
+      }
+    },
+    {
+      "uid": "73bdc601-4c82-4b1c-bb07-e1ac60c0398c",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"prodigytech:circuit_perfected\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.1,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"botania:rune\",Count:1,Damage:8s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.07,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"essentialcraft:genitem\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.045,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"advancedrocketry:productgear\",Count:1,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.17,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gateway:resonating_gem\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 25000
+          }
+        ]
+      },
+      "tickOutputs": {
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 500000000
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -28,7 +28,7 @@
         },
         {
             "type": "text",
-            "text": "In this pack, AE2 networks are hard capped on how much power they can take. The default restriction is 100 RF/t, so if your network uses more (which is easy with even small crafting processors), it will constantly black out. However, this can be upgraded using an Electro-Matter Modulator. This machine requires Factory parts to run. The better the parts, the higher the power cap, but there's still a ceiling that is pretty hard to beat."
+            "text": "In this pack, AE2 networks consume 20000 times more power than usual. That's right, a single ME controller consumes 120k RF/t. You probably don't want to use that for power, ha! Instead, you can use Network Superchargers to boost your power production to match AE2's consumption levels. There are several recipes to supercharge ever-increasing quantities of power, with the base recipe only consuming power, but other recipes need several tricky components to convert even more power."
         }
     ]
 }

@@ -1,0 +1,277 @@
+{
+  "version": 2,
+  "location": "gateway:network_supercharger",
+  "traits": {
+    "item": [
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "magic",
+        "x": 93,
+        "y": 57,
+        "autoIO": true,
+        "valid": [
+          "\"{id:\\\"botania:rune\\\",Count:1,Damage:8s}\"",
+          "\"{id:\\\"naturesaura:token_euphoria\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"thaumcraft:salis_mundus\\\",Count:3,Damage:0s}\""
+        ]
+      },
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "capstone",
+        "x": 39,
+        "y": 57,
+        "autoIO": true,
+        "valid": [
+          "\"{id:\\\"immersiveengineering:metal_decoration0\\\",Count:1,Damage:2s}\"",
+          "\"{id:\\\"essentialcraft:genitem\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"factorytech:machinepart\\\",Count:1,Damage:170s}\""
+        ]
+      },
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "mechanical",
+        "x": 79,
+        "y": 31,
+        "autoIO": true,
+        "valid": [
+          "\"{id:\\\"advancedrocketry:productgear\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"thermalfoundation:material\\\",Count:1,Damage:295s}\"",
+          "\"{id:\\\"embers:aspectus_dawnstone\\\",Count:1,Damage:0s}\""
+        ]
+      },
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "energetic",
+        "x": 53,
+        "y": 31,
+        "autoIO": true,
+        "valid": [
+          "\"{id:\\\"prodigytech:aeternus_crystal\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"gateway:resonating_gem\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"calculator:electricdiamond\\\",Count:1,Damage:0s}\""
+        ]
+      },
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "slotName": "config",
+        "x": 66,
+        "y": 57,
+        "autoIO": false,
+        "valid": [
+          "\"{id:\\\"prodigytech:circuit_crude\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"prodigytech:circuit_refined\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"prodigytech:circuit_perfected\\\",Count:1,Damage:0s}\"",
+          "\"{id:\\\"calculator:circuitboard\\\",Count:1,Damage:9s}\""
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "minecraft:bedrock",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "lightEmissive": 8,
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 15,
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "network_supercharger",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        " A A ",
+        " A A ",
+        " A A ",
+        " A A ",
+        " B B "
+      ],
+      [
+        "ACCCA",
+        "DEFED",
+        "D F D",
+        "D F D",
+        "DBFBD"
+      ],
+      [
+        "@CCCG",
+        "DEEED",
+        "D   D",
+        "D   D",
+        "DBBBD"
+      ],
+      [
+        "ACCCA",
+        "DEFED",
+        "D F D",
+        "D F D",
+        "DBFBD"
+      ],
+      [
+        " A A ",
+        " A A ",
+        " A A ",
+        " A A ",
+        " B B "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "lost_aether:gale_stone",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gateway:network_supercharger",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "appliedenergistics2:controller",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "io": "OUT"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "actuallyadditions:block_crystal",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "thermalfoundation:glass_alloy",
+            "meta": 6
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "integrateddynamics:block_liquid_chorus",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "thermalfoundation:storage",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "power_input": {
+        "capability": "forge_energy",
+        "type": "capability",
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "power_input"
+      ]
+    }
+  }
+}

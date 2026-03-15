@@ -44,10 +44,11 @@ crafting.shapedBuilder()
     .matrix("EAE", "CDC", "EAE")
     .key("D", item("integrateddynamics:logic_director"))
     .key("E", item("thermalfoundation:material", 359))
-    .key("A", item("appliedenergistics2:energy_acceptor"))
+    .key("A", item("factorytech:machinepart", 170))
     .key("C", item("appliedenergistics2:material", 24))
     .output(item("appliedenergistics2:controller"))
     .register()
+TooltipEvents.setTooltip(item("appliedenergistics2:controller"), "Networks consume much more energy than usual! Check out Network Supercharger to satisfy new AE2's needs.")
 
 // Quantum Link Card
 mods.nuclearcraft.assembler.builder()

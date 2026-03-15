@@ -23,7 +23,8 @@ fluid.gateway.blaze_superfuel.name=Blaze Superfuel
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
 
-tile.multiblocked.item.any.name=Any Item Hatch
+tile.multiblocked.item.any.name=Any Item Storage
+tile.multiblocked.forge_energy.any.name=Any RF Storage
 
 demon_factory.name=Industrial Demon Factory
 tile.gateway.demon_factory.name=Industrial Demon Factory
@@ -44,6 +45,11 @@ moonlight_fabricator.name=Moonlight Fabricator
 tile.gateway.moonlight_fabricator.name=Moonlight Fabricator
 multiblocked.recipe_map.moonlight_fabricator=Moonlight Fabricator
 gateway.moonlight_fabricator.description=Concentrates Aura in mundane items and exposes them to Aurorian's moonshine
+
+network_supercharger.name=Network Supercharger
+tile.gateway.network_supercharger.name=Network Supercharger
+multiblocked.recipe_map.network_supercharger=Network Supercharger
+gateway.network_supercharger.description=Boosts power using catalysts to match AE2's voltage levels
 
 fluid.jaopca.solution=%s Ore Solution
 item.jaopca.ore_cluster=Native %s Cluster
