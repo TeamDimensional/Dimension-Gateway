@@ -100,22 +100,20 @@
         "type": "states"
       },
       "C": {
-        "states": [
+        "blocks": [
           {
-            "id": "minecraft:leaves",
-            "meta": 4
+            "id": "minecraft:leaves"
           }
         ],
-        "type": "states"
+        "type": "blocks"
       },
       "D": {
-        "states": [
+        "blocks": [
           {
-            "id": "minecraft:log",
-            "meta": 0
+            "id": "minecraft:log"
           }
         ],
-        "type": "states"
+        "type": "blocks"
       },
       "E": {
         "states": [

@@ -190,13 +190,12 @@
         "type": "component"
       },
       "B": {
-        "states": [
+        "blocks": [
           {
-            "id": "appliedenergistics2:controller",
-            "meta": 0
+            "id": "appliedenergistics2:controller"
           }
         ],
-        "type": "states",
+        "type": "blocks",
         "io": "OUT"
       },
       "C": {
