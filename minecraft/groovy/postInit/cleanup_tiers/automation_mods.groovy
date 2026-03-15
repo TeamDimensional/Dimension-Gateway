@@ -15,6 +15,8 @@ TooltipEvents.setModTier("integrateddynamics", 7)
 TooltipEvents.setModTier("integratedterminals", 7)
 TooltipEvents.setModTier("integratedtunnels", 7)
 
+def enderItems = [item("modularrouters:module", 7), item("modularrouters:module", 13)]
+
 def advancedItems = [
     mitem("part_connector_omni_directional_item"), mitem("logic_director"),
     item("integratednbt:nbt_extractor"), item("integratednbt:nbt_extractor_remote"),
