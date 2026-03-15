@@ -35,13 +35,13 @@ energionItems = [
 ]
 
 zorrasteelItems = [
-    mitem("tartaric_aeroheater"), mitem("zorra_altar"), mitem("zorra_log"), mitem("zorra_planks"), mitem("zorra_leaves"), mitem("zorra_sapling"),
+    mitem("tartaric_aeroheater"), mitem("zorra_log"), mitem("zorra_planks"), mitem("zorra_leaves"), mitem("zorra_sapling"),
     mitem("zorrasteel_block"), mitem("zorra_leaf"), mitem("zorrasteel_raw"), mitem("zorrasteel_ingot"), mitem("tartaric_stoker"), mitem("zorrasteel_sword"),
     mitem("zorrasteel_handbow"), mitem("circuit_perfected"),
 ]
 
 def removeRecipes = [
-    mitem("ferramic_dust_tiny"), mitem("gold_dust_tiny"), mitem("iron_dust_tiny"),
+    mitem("ferramic_dust_tiny"), mitem("gold_dust_tiny"), mitem("iron_dust_tiny"), mitem("zorra_altar"),
 ]
 
 def hideFromJei = removeRecipes
@@ -52,7 +52,7 @@ for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
 for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in energionItems) TooltipEvents.setTier(it, 5)
-for (def it in zorrasteelItems) TooltipEvents.setTier(it, 7)
+for (def it in zorrasteelItems) TooltipEvents.setTier(it, 5)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def res in ["iron", "gold", "ferramic"]) {

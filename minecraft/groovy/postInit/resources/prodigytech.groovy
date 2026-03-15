@@ -4,9 +4,9 @@ import classes.MetalworksHelper
 // Zorrasteel
 crafting.remove("prodigytech:materials/zorrasteel_raw")
 AlloyHelper.builder()
-    .name("tier7/zorrasteel")
+    .name("tier5/zorrasteel")
     .output(item("prodigytech:zorrasteel_raw") * 2)
-    .input(item("gateway:starsteel_ingot"), item("naturesaura:sky_ingot"), item("prodigytech:zorra_leaf") * 12)
+    .input(item("thermalfoundation:material", 160), item("thaumcraft:ingot"), item("prodigytech:zorra_leaf") * 8)
     .time(300)
     .register()
 
@@ -17,14 +17,6 @@ crafting.shapelessBuilder()
         .output(item("prodigytech:pattern_circuit_crude"))
         .input(ore("plateIron"), item("minecraft:paper"))
         .register()
-
-// Zorra Sapling
-mods.prodigytech.atomic_reshaper.removeByInput(ore("treeSapling"))
-mods.naturesaura.offering.recipeBuilder()
-    .input(item("calculator:diamondsapling"))
-    .catalyst(item("prodigytech:aeternus_crystal"))
-    .output(item("prodigytech:zorra_sapling"))
-    .register()
 
 // Circuit Plate
 crafting.remove("prodigytech:materials/circuit_plate")

@@ -51,7 +51,7 @@ crafting.shapedBuilder()
 // Tartaric Aeroheater
 crafting.remove("prodigytech:machine/tartaric_aeroheater")
 crafting.shapedBuilder()
-        .name("tier7/tartaric_aeroheater")
+        .name("tier5/tartaric_aeroheater")
         .output(item("prodigytech:tartaric_aeroheater"))
         .matrix(" E ", "FCF", "RGR")
         .key("C", item("gateway:ferramic_machine_frame")).key("F", item("minecraft:furnace"))
