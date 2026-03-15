@@ -9,6 +9,7 @@ def titem(name, k=0) {
     return item("integratedtunnels:${name}", k)
 }
 
+TooltipEvents.setModTier("modularrouters", 4)
 TooltipEvents.setModTier("integratedcrafting", 7)
 TooltipEvents.setModTier("integrateddynamics", 7)
 TooltipEvents.setModTier("integratedterminals", 7)
@@ -33,10 +34,14 @@ def removeRecipes = [
     titem("part_exporter_world_energy_item"),
 ]
 
-def hideFromJei = [mitem("creative_energy_battery")] + removeRecipes
+def hideFromJei = [
+    mitem("creative_energy_battery"), item("modularrouters:template_frame"), item("modularrouters:override_card")
+] + removeRecipes
 
+for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in advancedItems) TooltipEvents.setTier(it, 8)
 TooltipEvents.setTier(titem("part_player_simulator_item"), 8)
 TooltipEvents.setTier(mitem("on_the_dynamics_of_integration"), 1)
+TooltipEvents.setTier(item("guideapi:modularrouters-guidebook"), 1)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

@@ -9,7 +9,7 @@ TooltipEvents.setTierName(3, "Early Metallurgy")
 TooltipEvents.setUnlock(item("tconstruct:materials"), 3)
 
 TooltipEvents.setTierName(4, "Blazing Performance")
-TooltipEvents.setUnlock(item("embers:ember_bore"), 4)
+TooltipEvents.setUnlock(item("embers:mech_core"), 4)
 
 TooltipEvents.setTierName(5, "Basics of Magic")
 TooltipEvents.setUnlock(item("thaumcraft:salis_mundus"), 5)

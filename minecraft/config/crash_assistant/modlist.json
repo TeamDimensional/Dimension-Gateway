@@ -749,6 +749,13 @@
     "curseForgeHash": 196249466,
     "modrinthHash": "75d25024ba41f978aa02f152d2d6b2994b1da6a5"
   },
+  "modular-routers-1.12.2-3.3.0-33.jar": {
+    "jarName": "modular-routers-1.12.2-3.3.0-33.jar",
+    "modId": "modularrouters",
+    "version": "1.12.2-3.3.0-33",
+    "curseForgeHash": 3987416114,
+    "modrinthHash": "6c163c588258b8d0cf0b3488fc501203ff3b26f6"
+  },
   "modularui-3.1.4.jar": {
     "jarName": "modularui-3.1.4.jar",
     "modId": "modularui",

@@ -12,16 +12,18 @@ def aetheriumPrismParts = [
 def geodes = []
 for (int i in 0..5) geodes.add(mitem("item_geode", i))
 
+def forgeBaseItems = []
+
 def ourItems = [
     mitem("aether_ore"), mitem("block_aether"), mitem("item_pickaxe_aether"), mitem("item_pickaxe_ember"),
     mitem("item_shovel_redstone"), mitem("item_shovel_slime"), mitem("item_crown"), mitem("item_crossbow_quartz"),
     mitem("item_crossbow_magma"), mitem("item_potion_gem"),
     mitem("aetherium_ashen_cloak_head"), mitem("aetherium_ashen_cloak_chest"), mitem("aetherium_ashen_cloak_legs"),
-    mitem("aetherium_ashen_cloak_boots"), mitem("heat_dial"),
+    mitem("aetherium_ashen_cloak_boots"), mitem("heat_dial"), mitem("forge_component", 5),
 ] + aetheriumPrismParts + geodes
 for (int i in 0..14) ourItems.add(mitem("item_resource", i))
 for (int i in 17..29) ourItems.add(mitem("item_resource", i))
-for (int i in 0..5) ourItems.add(mitem("forge_component", i))
+for (int i in 0..4) forgeBaseItems.add(mitem("forge_component", i))
 
 def potionGems = []
 for (int i in 1..140) potionGems.add(mitem("item_potion_gem", i))
@@ -53,6 +55,7 @@ TooltipEvents.setTooltip(fluid("aetherworks.impure_aetherium_gas"), "Produced by
 TooltipEvents.setTooltip(mitem("item_potion_gem"), "Craft with a potion to attune.")
 for (def it in potionGems) TooltipEvents.setTooltip(it, "Craft with the Aetherium Crown to apply the effect.")
 
+for (def it in forgeBaseItems) TooltipEvents.setTier(it, 4)
 for (def it in ourItems) TooltipEvents.setTier(it, 7)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
