@@ -1,3 +1,5 @@
+import com.dimensional.gatewaycore.events.TooltipEvents
+
 //// Tier 10
 
 // Quantum Ring
