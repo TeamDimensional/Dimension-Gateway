@@ -29,7 +29,7 @@ def advItems = [
     mitem("infused_enderpearl"), mitem("advanced_charged_porter"), mitem("matter_booster"), mitem("machine_infuser"),
     mitem("locator"), mitem("remote_scanner"), mitem("powercell_advanced"), mitem("shield_block4"),
 ]
-for (int i in [2, 3, 4, 5, 6, 7]) advItems.add(mitem("shape_card", i))
+for (int i in [3, 4, 6, 7]) advItems.add(mitem("shape_card", i))
 
 def eliteItems = [
     mitem("infused_diamond"), mitem("regeneration_module"), mitem("regenerationplus_module"), mitem("speed_module"), mitem("speedplus_module"),
@@ -67,9 +67,9 @@ for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier5Items) TooltipEvents.setTier(it, 5)
 for (def it in tier6Items + oreItems) TooltipEvents.setTier(it, 6)
-for (def it in advItems) TooltipEvents.setTier(it, 13)
-for (def it in eliteItems) TooltipEvents.setTier(it, 13)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in advItems) TooltipEvents.setTier(it, 10)
+for (def it in eliteItems) TooltipEvents.setTier(it, 10)
+for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeCrafting) crafting.removeByOutput(it)

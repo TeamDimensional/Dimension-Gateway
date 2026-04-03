@@ -76,7 +76,7 @@ def hoannaBuildingLoot = [
 ]
 
 def hoannaTier = [
-    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"),
+    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"), mitem("windtablet"),
     mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("mithrilinecrystal", 6), mitem("chest", 1), mitem("magicalfurnace"),
     mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
@@ -86,8 +86,7 @@ def inqDrops = [mitem("robocalypse"), mitem("orbitalremote"), mitem("dividergun"
 for (int i in [70, 71, 72, 73]) inqDrops.add(mitem("genitem", i))
 
 def demonTier = [
-    mitem("mithrilinecrystal", 9), mitem("demonicplating"), mitem("demonicpentacle"), mitem("holopad"), mitem("soulscriber"),
-    mitem("computerboard"), mitem("soul"),
+    mitem("mithrilinecrystal", 9), mitem("demonicplating"), mitem("holopad"), mitem("soulscriber"), mitem("computerboard"), mitem("soul"),
 ] + inqDrops
 for (int i in [52, 53, 54, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67,
                68, 69, 74, 75]) demonTier.add(mitem("genitem", i))
@@ -135,9 +134,9 @@ for (int i in 0..13) hideFromJei.add(mitem("entityegg", i))
 for (def it in magicalTier) TooltipEvents.setTier(it, 5)
 for (def it in windTier) TooltipEvents.setTier(it, 10)
 for (def it in industrialTier) TooltipEvents.setTier(it, 10)
-for (def it in hoannaTier) TooltipEvents.setTier(it, 15)
-for (def it in demonTier) TooltipEvents.setTier(it, 15)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in hoannaTier) TooltipEvents.setTier(it, 13)
+for (def it in demonTier) TooltipEvents.setTier(it, 14)
+for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in unknownItems) TooltipEvents.setTier(it, -1)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)

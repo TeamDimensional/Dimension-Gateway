@@ -113,8 +113,8 @@ for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in tier1Items) TooltipEvents.setTier(it, 10)
 for (def it in industrialTier) TooltipEvents.setTier(it, 10)
 for (def it in tier2Items) TooltipEvents.setTier(it, 10)
-for (def it in tier3Items) TooltipEvents.setTier(it, 14)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in tier3Items) TooltipEvents.setTier(it, 13)
+for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
@@ -169,5 +169,5 @@ def setFloatingFlowerTier(name, tier) {
 
 for (def it in tier1Flowers) setFlowerTier(it, 10)
 for (def it in tier2Flowers) setFlowerTier(it, 10)
-for (def it in tier3Flowers) setFlowerTier(it, 14)
+for (def it in tier3Flowers) setFlowerTier(it, 13)
 setFloatingFlowerTier("puredaisy", 10)

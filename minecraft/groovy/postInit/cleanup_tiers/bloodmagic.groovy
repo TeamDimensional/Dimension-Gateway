@@ -92,8 +92,8 @@ for (int i in 0..9) hideFromJei.add(mitem("inversion_pillar_end", i))
 def creativeItems = [mitem("activation_crystal", 2), mitem("sacrificial_dagger", 1), mitem("altar_maker")]
 
 for (def it in bloodItems) TooltipEvents.setTier(it, 11)
-for (def it in sentientItems) TooltipEvents.setTier(it, 14)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in sentientItems) TooltipEvents.setTier(it, 13)
+for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeArray) mods.bloodmagic.alchemy_array.removeByOutput(it)

@@ -135,20 +135,18 @@ def tier12 = [
     // Advanced Rocketry part 2
     fluid("iridium"), fluid("mana"), fluid("enrichedlava"),
     fluid("yttrium"), fluid("yag"), fluid("nd_yag"),
-]
-
-def tier13 = [
+    fluid("stellar_alloy"),
     // Abyssalcraft
-    fluid("liquidcoralium"), fluid("liquidantimatter"),
+    fluid("liquidcoralium"),
     // Heat Exchangers
     fluid("low_pressure_steam"),
     // Molten Salt Reactors
     fluid("nak_hot"), fluid("nak"), fluid("flibe"),
 ]
 
-def tier14 = [fluid("stellar_alloy")]
-
-def tier15 = [
+def tier14 = [
+    // Omothol
+    fluid("liquidantimatter"),
     // QMD
     fluid("tritium"), fluid("plasma"), fluid("sodium_tungstate_solution"), fluid("lead_tungstate_solution"),
     fluid("iodine"), fluid("yag"), fluid("nd_yag"), fluid("tungsten"), fluid("niobium"), fluid("chromium"), fluid("hafnium"),
@@ -188,13 +186,13 @@ for (def f in ncIsotopes) {
         for (def fuel in ncFuels) {
             tier11.add(fluid("${p}${fuel}"))
             tier11.add(fluid("${p}${fuel}_fluoride"))
-            tier13.add(fluid("${p}${fuel}_fluoride_flibe"))
+            tier12.add(fluid("${p}${fuel}_fluoride_flibe"))
         }
         for (def x in f[2]) {
             for (def d in ["le", "he"]) {
                 tier11.add(fluid("${p}${d}${f[1]}_${x}"))
                 tier11.add(fluid("${p}${d}${f[1]}_${x}_fluoride"))
-                tier13.add(fluid("${p}${d}${f[1]}_${x}_fluoride_flibe"))
+                tier12.add(fluid("${p}${d}${f[1]}_${x}_fluoride_flibe"))
             }
         }
     }
@@ -206,8 +204,8 @@ def ncCoolants = [
     "manganese", "aluminum", "silver", "fluorite", "villiaumite", "carobbiite", "arsenic", "liquid_nitrogen", "liquid_helium", "enderium", "cryotheum"
 ]
 for (def c in ncCoolants) {
-    tier13.add(fluid("${c}_nak"))
-    tier13.add(fluid("${c}_nak_hot"))
+    tier12.add(fluid("${c}_nak"))
+    tier12.add(fluid("${c}_nak_hot"))
 }
 
 for (def it in tier2) TooltipEvents.setTier(it, 2)
@@ -221,9 +219,7 @@ for (def it in tier9) TooltipEvents.setTier(it, 9)
 for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in tier11) TooltipEvents.setTier(it, 11)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
-for (def it in tier13) TooltipEvents.setTier(it, 13)
 for (def it in tier14) TooltipEvents.setTier(it, 14)
-for (def it in tier15) TooltipEvents.setTier(it, 15)
 
 for (def it in removeFluids) {
     mods.jei.ingredient.hide(fluid(it))

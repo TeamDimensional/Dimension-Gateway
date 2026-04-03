@@ -64,6 +64,6 @@ def hideFromJei = [
 for (def it in t2Items) TooltipEvents.setTier(it, 2)
 for (def it in magicItems) TooltipEvents.setTier(it, 5)
 for (def it in midgameItems) TooltipEvents.setTier(it, 10)
-for (def it in endgameItems) TooltipEvents.setTier(it, 15)
+for (def it in endgameItems) TooltipEvents.setTier(it, 14)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

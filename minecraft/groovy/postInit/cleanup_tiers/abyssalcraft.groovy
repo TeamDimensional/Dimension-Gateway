@@ -11,6 +11,7 @@ for (def g in gods) statues.add(mitem("${g}statue"))
 for (def g in gods) statues.add(mitem("decorative${g}statue"))
 
 def abyssalItems = [
+    mitem("shadowgem"),
     mitem("darkstone"), mitem("dsbutton"), mitem("dspplate"), mitem("darkstone_cobble"), mitem("darkstone_brick"), mitem("chiseled_darkstone_brick"),
     mitem("cracked_darkstone_brick"), mitem("dsglow"), mitem("darkbrickslab1"), mitem("darkcobbleslab1"), mitem("dbstairs"), mitem("dcstairs"),
     mitem("dscwall"), mitem("darkstoneslab1"), mitem("dsbfence"), mitem("darkbrickslab2"), mitem("darkcobbleslab2"), mitem("darkstoneslab2"),
@@ -159,16 +160,16 @@ for (def it in ["altar", "pedestal"]) {
     omotholItems.add(mitem("ritual_${it}_dark_ethaxium"))
 }
 
-for (def it in abyssalItems) TooltipEvents.setTier(it, 13)
-for (def it in omotholItems) TooltipEvents.setTier(it, 15)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in abyssalItems) TooltipEvents.setTier(it, 12)
+for (def it in omotholItems) TooltipEvents.setTier(it, 14)
+for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in unobtainable) TooltipEvents.setTier(it, 0)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in removeFurnace) furnace.removeByOutput(it)
 for (def it in removeRitual) mods.abyssaltweaker.ritual.removeByOutput(it)
 for (def it in removeCrystallizer) mods.abyssaltweaker.crystallizer.removeByOutput(it)
-for (def it in statues) TooltipEvents.setTooltip(it, "Can be looted in Omothol in tier 15.")
+for (def it in statues) TooltipEvents.setTooltip(it, "Found in Omothol Temples.")
 for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Can be looted in Omothol before Crystallizer is available.")
 TooltipEvents.setTooltip(item("abyssalcraft:odb"), "Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.")
 for (int i in 0..27) crafting.remove("abyssalcraft:crystalshard_${i}_alt")

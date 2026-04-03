@@ -98,7 +98,7 @@ for (def it in flawlessItems) TooltipEvents.setTier(it, 6)
 for (def it in hungerItems) TooltipEvents.setTier(it, 7)
 for (def it in healthItems) TooltipEvents.setTier(it, 10)
 for (def it in locatorItems) TooltipEvents.setTier(it, 12)
-for (def it in creativeItems) TooltipEvents.setTier(it, 15)
+for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 

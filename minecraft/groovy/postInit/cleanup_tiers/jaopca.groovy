@@ -15,7 +15,7 @@ def fluid_materials = [
     "iron": 1,
     "lapis": 2,
     "lead": 3,
-    "liquified_coralium": 13,
+    "liquified_coralium": 12,
     "lithium": 9,
     "magnesium": 9,
     "nickel": 3,
@@ -23,7 +23,7 @@ def fluid_materials = [
     "redstone": 3,
     "silver": 3,
     "tin": 2,
-    "thorium": 10,
+    "thorium": 10,  // TODO: this needs a fix?
     "titanium": 9,
     "uranium": 10,
     "cerulean": 2,
