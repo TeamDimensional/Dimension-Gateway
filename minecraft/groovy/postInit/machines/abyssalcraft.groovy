@@ -170,9 +170,9 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .input(
         item("essentialcraft:genitem", 36),
         item("openblocks:tank").withNbt(["tank": ["FluidName": "liquidantimatter", "Amount": 16000]]),
-        item("thaumadditions:adaminite_ingot"), item("thaumadditions:adaminite_ingot"),
+        item("gateway:transcendental_demon_alloy"), item("gateway:transcendental_demon_alloy"),
         item("essentialcraft:genitem", 37),
-        item("thaumadditions:adaminite_ingot"), item("thaumadditions:adaminite_ingot"),
+        item("gateway:transcendental_demon_alloy"), item("gateway:transcendental_demon_alloy"),
         item("openblocks:tank").withNbt(["tank": ["FluidName": "liquidcoralium", "Amount": 16000]]))
     .requiresSacrifice()
     .register()

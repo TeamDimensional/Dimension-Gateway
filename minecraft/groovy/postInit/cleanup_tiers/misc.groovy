@@ -39,7 +39,7 @@ for (def i in 0..3) {
 }
 
 def removeRecipes = [
-    item("hammercore:manual"), item("engineersworkshop:upgrade", 9), item("microblockcbe:stone_rod"),
+    item("engineersworkshop:upgrade", 9), item("microblockcbe:stone_rod"),
     item("chisel:chisel_iron"), item("chisel:chisel_diamond"), item("chisel:chisel_hitech"), item("chisel:auto_chisel"),
     item("betterbuilderswandsfix:break_core"), item("betterbuilderswands:wandstone"), item("betterbuilderswands:wandiron"),
 ]
@@ -47,7 +47,6 @@ def removeRecipes = [
 def hideFromJei = [
     item("champions:champion_egg")
 ] + removeRecipes
-for (def it in ["iron", "gold", "diamond", "emerald", "quartz"]) hideFromJei.add(item("hammercore:${it}_bordered_cobblestone"))
 
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in tier2Items) TooltipEvents.setTier(it, 2)

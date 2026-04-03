@@ -4,9 +4,6 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 def mitem(name, k=0) {
     return item("thaumcraft:${name}", k)
 }
-def aitem(name, k=0) {
-    return item("thaumadditions:${name}", k)
-}
 def gitem(name, k=0) {
     return item("thaumicaugmentation:${name}", k)
 }
@@ -36,16 +33,11 @@ def tier1Items = [
 for (def i in ["aer", "aqua", "ignis", "terra", "ordo", "perditio"]) tier1Items.add(mitem("crystal_${i}"))
 
 def mainItems = [
-    aitem("odour_powder"), aitem("fragnant_pendant"), aitem("traveller_belt"), aitem("bone_eye"), aitem("vis_scribing_tools", 32767),
-    aitem("knowledge_tome"), aitem("disenchant_fabric"), aitem("dawn_totem"), aitem("twilight_totem"), aitem("seal_globe"), aitem("seal"),
-    aitem("thaumic_lectern"), aitem("essentia_sink"), aitem("jar_brass"), aitem("jar_thaumium"), aitem("crystal_block"),
-    aitem("flux_concentrator"), aitem("taintkin"), aitem("taintkin_lit"), aitem("taintwood_planks"), aitem("chiseled_amber_block"),
-    aitem("brass_plated_silverwood"), aitem("amber_lamp"), aitem("crystal_lamp"), mitem("sapling_greatwood"),
-    mitem("log_greatwood"), mitem("leaves_greatwood"), mitem("shimmerleaf"),
+    mitem("sapling_greatwood"), mitem("log_greatwood"), mitem("leaves_greatwood"), mitem("shimmerleaf"),
     mitem("cinderpearl"), mitem("vishroom"), mitem("plank_greatwood"), mitem("stairs_greatwood"),
     mitem("slab_greatwood"), mitem("flesh_block"),
     citem("mimic_fork"), citem("fence_greatwood"), citem("fence_gate_greatwood"), citem("caster_clockwork"), citem("caster_aura"),
-    citem("drill_head_thaumium"), citem("upgrade_refining"), aitem("iron_framed_greatwood"), aitem("chiseled_greatwood"),
+    citem("drill_head_thaumium"), citem("upgrade_refining"),
     witem("hexamite"), witem("alkahest_vat"), witem("oblivion_essentia_jar"), witem("inspiration_engine"),
     witem("disjunction_cloth"), witem("panacea", 1), witem("panacea"), witem("lethe_water"), witem("warp_ring"),
 ]
@@ -58,15 +50,12 @@ def astralItems = [
     witem("alchemist_stone"), witem("transmuter_stone"), witem("alienist_stone"), witem("catalyzation_chamber"), ritem("purifying_shovel"),
 ]
 
-def mithrilliumItems = [
-    aitem("mithrillium_nugget"), aitem("mithrillium_ingot"), aitem("mithrillium_plate"), aitem("the_beheader"), aitem("mithrillium_smelter"),
-    aitem("jar_mithrillium"), aitem("mithrillium_block"), mitem("metal_alchemical_advanced"), mitem("thaumonomicon", 1), mitem("focus_2"),\
-    eitem("essentia_cell_64k"), eitem("essentia_component_64k"), witem("cleansing_charm"),
+def transcendentalItems = [
+    mitem("metal_alchemical_advanced"), mitem("thaumonomicon", 1), mitem("focus_2"), witem("cleansing_charm"),
 ]
 
 def infusionItems = [
-    eitem("upgrade_arcane"), eitem("infusion_provider"),
-    gitem("autocaster_placer"), aitem("seal_symbol"), mitem("matrix_speed"), mitem("matrix_cost"),
+    gitem("autocaster_placer"), mitem("matrix_speed"), mitem("matrix_cost"),
     mitem("jar_brain"), mitem("infusion_matrix"), mitem("mirror"), mitem("mirror_essentia"), mitem("mind", 1), mitem("turret", 1),
     mitem("hand_mirror"), mitem("verdant_charm"), mitem("charm_undying"), item("gadothaumy:infusion_claw"),
     item("gadothaumy:essentia_compressor"), item("gadothaumy:item_element"), 
@@ -84,8 +73,8 @@ def crimsonItems = [
 ]
 
 def hoannaItems = [
-    gitem("rift_monitor"), gitem("stairs_eldritch_tile"), gitem("starfield_glass", 1), gitem("elytra_harness"), aitem("void_anvil"),
-    aitem("jar_eldritch"), mitem("stone_eldritch_tile"), mitem("slab_eldritch"), mitem("pedestal_eldritch"),
+    gitem("rift_monitor"), gitem("stairs_eldritch_tile"), gitem("starfield_glass", 1), gitem("elytra_harness"),
+    mitem("stone_eldritch_tile"), mitem("slab_eldritch"), mitem("pedestal_eldritch"),
     witem("coalescence_matrix"), witem("coalescence_matrix_precursor"),
 ]
 
@@ -112,7 +101,6 @@ def voidItems = [
     gitem("gauntlet", 1), gitem("void_boots"), gitem("rift_seed", 1), gitem("augment_caster_rift_energy_storage"), gitem("fracture_locator"),
     gitem("primal_cutter"), gitem("impetus_mirror"), gitem("impetus_linker"), gitem("elytra_harness_augment"), gitem("impulse_cannon"),
     gitem("impulse_cannon_augment"), gitem("impulse_cannon_augment", 1), gitem("focus_ancient"), gitem("research_notes"),
-    aitem("void_thaumometer"), aitem("wormhole_mirror"), aitem("void_seed"), aitem("chester"), aitem("void_fruit"),
     mitem("stone_ancient"), mitem("stone_ancient_tile"), mitem("stone_ancient_rock"), mitem("stone_ancient_glyphed"),
     mitem("stone_ancient_doorway"), mitem("stairs_ancient"), mitem("slab_ancient"), mitem("pedestal_ancient"),
     mitem("metal_void"), mitem("void_siphon"), mitem("primordial_pearl", 32767), mitem("ingot", 1), mitem("nugget", 7), mitem("plate", 3),
@@ -133,7 +121,6 @@ for (int i in 0..11) voidItems.add(gitem("stone", i))
 for (int i in 0..2) voidItems.add(gitem("urn", i))
 for (int i in [3, 5]) voidItems.add(gitem("material", i))
 for (int i in 0..3) voidItems.add(gitem("eldritch_lock_key", i))
-for (def t in ["pickaxe", "axe", "shovel", "hoe"]) voidItems.add(aitem("void_elemental_${t}"))
 
 def creativeItems = [
     gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge"), eitem("essentia_cell_creative"),
@@ -150,7 +137,7 @@ def removeArcaneCrafting = [
 
 def hideFromJei = [
     gitem("crab_vent"), gitem("eldritch_lock_impetus"), gitem("material", 2), gitem("autocaster_placer", 1),
-    aitem("recharge_charm"), mitem("ore_cinnabar"), mitem("grass_ambient"),
+    mitem("ore_cinnabar"), mitem("grass_ambient"),
     mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
     mitem("enchanted_placeholder"), titem("enchantment_pillar"),
@@ -165,9 +152,8 @@ for (def a in ["rare", "uncommon", "common"]) for (def b in ["crate", "urn"]) hi
 
 TooltipEvents.setModTier("thaumcraft", 5)
 TooltipEvents.setModTier("thaumictinkerer", 5)
-TooltipEvents.setModTier("thaumadditions", 11)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
-TooltipEvents.setModTier("thaumicenergistics", 8)
+TooltipEvents.setModTier("thaumicenergistics", 9)
 TooltipEvents.setModTier("crimsonrevelations", 5)
 ore("quartzDark").remove(titem("black_quartz"))
 ore("blockQuartzDark").remove(titem("black_quartz_block"))
@@ -181,12 +167,12 @@ TooltipEvents.addTierPredicate("emptiness", predicateBook, 14)
 for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in mainItems) TooltipEvents.setTier(it, 5)
 for (def it in astralItems) TooltipEvents.setTier(it, 6)
-for (def it in mithrilliumItems) TooltipEvents.setTier(it, 11)
+for (def it in transcendentalItems) TooltipEvents.setTier(it, 9)
 for (def it in infusionItems) TooltipEvents.setTier(it, 5)
 for (def it in crimsonItems) TooltipEvents.setTier(it, 7)
 for (def it in ichorItems) TooltipEvents.setTier(it, 11)
 for (def it in hoannaItems) TooltipEvents.setTier(it, 15)
-for (def it in voidItems) TooltipEvents.setTier(it, 14)
+for (def it in voidItems) TooltipEvents.setTier(it, 9)
 for (def it in creativeItems) TooltipEvents.setTier(it, 15)
 for (def it in removeCrafting) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

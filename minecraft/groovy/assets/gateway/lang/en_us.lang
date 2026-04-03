@@ -6,6 +6,8 @@ item.gateway.incomplete_runic_plate.name=Incomplete Runic Plate
 item.gateway.runic_plate.name=Runic Plate
 item.gateway.moonlight_powder.name=Moonlight Powder
 item.gateway.compression_core.name=Compression Core
+item.gateway.transcendental_matrix.name=Transcendental Matrix
+item.gateway.transcendental_demon_alloy.name=Transcendental Demon Alloy
 
 tile.gateway.metallic_substrate.name=Metallic Substrate
 tile.gateway.light_metal_substrate.name=Light Metal Substrate

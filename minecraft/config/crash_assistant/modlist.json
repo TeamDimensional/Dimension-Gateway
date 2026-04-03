@@ -67,6 +67,13 @@
     "curseForgeHash": 1923394747,
     "modrinthHash": "6e5f7deda0d3cf196b38f57eb60ef18a85b0ca2d"
   },
+  "Advanced Essentia Smelter-1.2.0.jar": {
+    "jarName": "Advanced Essentia Smelter-1.2.0.jar",
+    "modId": "advanced_smelter",
+    "version": "1.2.0",
+    "curseForgeHash": 4128642090,
+    "modrinthHash": "b6a7348001eb65d2c145b9121709632d7ce15675"
+  },
   "advancedrocketry-2.2.4.jar": {
     "jarName": "advancedrocketry-2.2.4.jar",
     "modId": "advancedrocketry",
@@ -581,12 +588,6 @@
     "version": "4.29.15",
     "curseForgeHash": 3758786409,
     "modrinthHash": "fd9311a4bf189b6f9c99183d9a2dae8485b80dc7"
-  },
-  "HammerLib-1.12.2-12.2.58.jar": {
-    "jarName": "HammerLib-1.12.2-12.2.58.jar",
-    "modId": "hammercore",
-    "curseForgeHash": 1631106799,
-    "modrinthHash": "d693d897584c3d3d629a7fda02502e362a250b78"
   },
   "Hwyla-1.8.26-B41_1.12.2.jar": {
     "jarName": "Hwyla-1.8.26-B41_1.12.2.jar",
@@ -1150,13 +1151,6 @@
     "version": "2.3.5",
     "curseForgeHash": 3065714170,
     "modrinthHash": "0440d038e7a0f68281ffb5ce51689fbda773fc84"
-  },
-  "ThaumicAdditions-1.12.2-12.7.9.jar": {
-    "jarName": "ThaumicAdditions-1.12.2-12.7.9.jar",
-    "modId": "thaumicadditions",
-    "version": "12.7.9",
-    "curseForgeHash": 1139449304,
-    "modrinthHash": "a906cea172ebd55dc7e41af2272f4c8a19e797d3"
   },
   "ThaumicAugmentation-1.12.2-2.1.14.jar": {
     "jarName": "ThaumicAugmentation-1.12.2-2.1.14.jar",

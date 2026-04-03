@@ -35,7 +35,7 @@ def tier5 = [
     // Ore level
     fluid("obsidian"),
     // Thaumcraft
-    fluid("brass"), fluid("crystal_water"), fluid("flux_goo"), fluid("liquid_death"), fluid("purifying_fluid"),
+    fluid("brass"), fluid("flux_goo"), fluid("liquid_death"), fluid("purifying_fluid"),
 ]
 
 def tier6 = [
