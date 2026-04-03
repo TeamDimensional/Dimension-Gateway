@@ -1,6 +1,6 @@
 setIcon(<tconstruct:materials>)
 setTitle("Early Metallurgy")
-setDescription("Create Seared Bricks and begin your first technology with Immersive Engineering")
+setDescription("Produce Seared Bricks")
 addParent("triumph:gateway/progression/tier2")
 setPos(-110,0)
 

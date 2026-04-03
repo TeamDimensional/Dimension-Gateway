@@ -1,3 +1,3 @@
 gamestage silentadd @p tier14
 summon minecraft:fireworks_rocket ~ ~ ~
-give @p simple_trophies:trophy 1 0 {TrophyName:"Archmage Trophy",TrophyVariant:"classic",TrophyItem:{id:"extrautils2:decorativesolid",Count:1b,Damage:8s},TrophyColorRed:193,TrophyColorGreen:58,TrophyColorBlue:247}
+give @p simple_trophies:trophy 1 0 {TrophyName:"Voidseer Trophy",TrophyVariant:"classic",TrophyItem:{id:"essentialcraft:demonicpentacle",Count:1b,Damage:0s},TrophyColorRed:59,TrophyColorGreen:198,TrophyColorBlue:161}

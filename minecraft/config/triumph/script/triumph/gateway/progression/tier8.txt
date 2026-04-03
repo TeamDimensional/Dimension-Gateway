@@ -1,6 +1,6 @@
 setIcon(<thermalexpansion:frame>)
 setTitle("Electrical Engineering")
-setDescription("Begin Thermal Expansion and unlock perfect automation with Applied Energistics and Factory Tech")
+setDescription("Manufacture a Thermal Machine Frame")
 addParent("triumph:gateway/progression/tier7")
 setPos(-10,52)
 

@@ -1,10 +1,10 @@
-setIcon(<embers:ember_bore>)
-setTitle("Blazing Performance")
-setDescription("Create an Ember Bore and study fuel refinement with Embers, Actually Additions and Immersive Petroleum")
+setIcon(<embers:mech_core>)
+setTitle("Mantle Drilling")
+setDescription("Craft a Mechanical Core")
 addParent("triumph:gateway/progression/tier3")
 setPos(-90,52)
 
 criteria = addCriteria("tier4", "minecraft:inventory_changed")
-criteria.setItem("embers:ember_bore")
+criteria.setItem("embers:mech_core")
 
 addRewardFunction("triumph:tier4")

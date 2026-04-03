@@ -1,10 +1,10 @@
-setIcon(<abyssalcraft:shadowgem>)
-setTitle("Constructing Fallout")
-setDescription("Venture into the Abyss and recolor the world with Molten Salt Reactors")
+setIcon(<extrautils2:decorativesolid:8>)
+setTitle("Fabled Convergence")
+setDescription("Synthesize Rainbow Stone")
 addParent("triumph:gateway/progression/tier12")
-setPos(90,0)
+setPos(110,52)
 
 criteria = addCriteria("tier13", "minecraft:inventory_changed")
-criteria.setItem("abyssalcraft:shadowgem")
+criteria.setItem("extrautils2:decorativesolid", 8)
 
 addRewardFunction("triumph:tier13")

@@ -1,6 +1,6 @@
 setIcon(<libvulpes:productingot:7>)
-setTitle("Lunar Industry")
-setDescription("Fly to the Moon and unlock elemental magic with Botania")
+setTitle("Lunar Wizardry")
+setDescription("Purify a Titanium Ingot")
 addParent("triumph:gateway/progression/tier9")
 setPos(30,52)
 

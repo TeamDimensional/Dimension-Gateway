@@ -1,0 +1,10 @@
+setIcon(<extrautils2:creativechest>)
+setTitle("Beyond Creativity")
+setDescription("Achieve the Godhood")
+addParent("triumph:gateway/progression/tier14")
+setPos(130,0)
+
+criteria = addCriteria("finish", "minecraft:inventory_changed")
+criteria.setItem("extrautils2:creativechest")
+
+addRewardFunction("triumph:finish")

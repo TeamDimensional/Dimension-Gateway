@@ -1,6 +1,6 @@
 setIcon(<actuallyadditions:block_empowerer>)
 setTitle("Chemical Mayhem")
-setDescription("Finish Actually Additions and study polymer chemistry with Nuclearcraft")
+setDescription("Assemble an Empowerer")
 addParent("triumph:gateway/progression/tier8")
 setPos(10,0)
 

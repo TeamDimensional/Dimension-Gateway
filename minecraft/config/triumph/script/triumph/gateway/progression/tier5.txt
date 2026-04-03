@@ -1,6 +1,6 @@
 setIcon(<thaumcraft:salis_mundus>)
 setTitle("Basics of Magic")
-setDescription("Obtain Salis Mundus to dive into Thaumcraft and Essentialcraft")
+setDescription("Obtain Salis Mundus")
 addParent("triumph:gateway/progression/tier4")
 setPos(-70,0)
 

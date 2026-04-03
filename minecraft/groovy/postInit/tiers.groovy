@@ -43,7 +43,7 @@ TooltipEvents.setTierName(11, "Bloody Becoming")
 TooltipEvents.setUnlock(item("enderio:item_material", 1), 11)
 
 // Advanced Rocketry part 2, Abyssalcraft part 1, Salt Reactors
-TooltipEvents.setTierName(12, "Stellar Culmination")
+TooltipEvents.setTierName(12, "Interstellar Mastery")
 TooltipEvents.setUnlock(item("advancedrocketry:satellitebuilder"), 12)
 
 // Hoanna, Elven, Gaia, Sentient

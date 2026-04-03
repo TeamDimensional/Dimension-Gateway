@@ -1,6 +1,6 @@
 setIcon(<theaurorian:aurorianportalframebricks>)
 setTitle("Temple Run")
-setDescription("Enter Aurorian to expand your grasp on natural sciences with Roots and Nature's Aura")
+setDescription("Enter Aurorian")
 addParent("triumph:gateway/root")
 setPos(-130,52)
 

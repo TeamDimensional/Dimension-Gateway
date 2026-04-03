@@ -1,10 +1,10 @@
-setIcon(<extrautils2:decorativesolid:8>)
-setTitle("Fabled Convergence")
-setDescription("Finish magic progression with the power of rainbows")
+setIcon(<essentialcraft:demonicpentacle>)
+setTitle("The Final Stretch")
+setDescription("Create a Demonic Pentacle")
 addParent("triumph:gateway/progression/tier13")
-setPos(110,52)
+setPos(130,0)
 
-criteria = addCriteria("tier14", "minecraft:inventory_changed")
-criteria.setItem("extrautils2:decorativesolid", 8)
+criteria = addCriteria("tier12", "minecraft:inventory_changed")
+criteria.setItem("essentialcraft:demonicpentacle")
 
 addRewardFunction("triumph:tier14")

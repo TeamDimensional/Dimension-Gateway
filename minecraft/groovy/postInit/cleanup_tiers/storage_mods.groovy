@@ -34,7 +34,7 @@ def tier7Items = [
 
 def tier10Items = [bitem("stack_upgrade_tier_4"), bitem("inception_upgrade"), bitem("backpack_obsidian")]
 
-def tier12Items = [bitem("exponential_stack_upgrade")]
+def tier11Items = [bitem("exponential_stack_upgrade")]
 
 def creativeItems = [mitem("creative_vending_upgrade")]
 
@@ -45,5 +45,5 @@ for (def it in tier5Items) TooltipEvents.setTier(it, 5)
 for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in tier10Items) TooltipEvents.setTier(it, 10)
-for (def it in tier12Items) TooltipEvents.setTier(it, 12)
+for (def it in tier12Items) TooltipEvents.setTier(it, 11)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)

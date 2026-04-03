@@ -1,3 +1,0 @@
-gamestage silentadd @p tier16
-summon minecraft:fireworks_rocket ~ ~ ~
-give @p simple_trophies:trophy 1 0 {TrophyName:"Cheater Trophy",TrophyVariant:"classic",TrophyItem:{id:"storagedrawers:upgrade_creative",Count:1b,Damage:0s},TrophyColorRed:240,TrophyColorGreen:240,TrophyColorBlue:240}

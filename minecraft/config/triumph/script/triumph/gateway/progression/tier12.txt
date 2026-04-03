@@ -1,6 +1,6 @@
 setIcon(<advancedrocketry:satellitebuilder>)
-setTitle("Stellar Culmination")
-setDescription("Harvest resources from Asteroids and find patterns in even the rarest constellations")
+setTitle("Interstellar Mastery")
+setDescription("Build a Satellite Builder")
 addParent("triumph:gateway/progression/tier11")
 setPos(70,52)
 
