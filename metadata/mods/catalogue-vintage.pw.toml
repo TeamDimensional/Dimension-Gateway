@@ -1,0 +1,17 @@
+filename = 'catalogue-1.0.3-1.12.2.jar'
+name = 'Catalogue Vintage'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.3-1.12.2'
+
+[download]
+hash = 'dc0306834b34e416cb19b368c0972eaa938a9668'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7872629
+project-id = 1465746

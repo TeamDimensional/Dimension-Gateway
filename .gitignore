@@ -57,6 +57,7 @@ minecraft/local/crash_assistant
 minecraft/visualores
 minecraft/config/astralsorcery/amulet_enchantments.cfg
 minecraft/groovy/sideOnlyGenerated.json
+minecraft/config/catalogue_favourites.txt
 
 minecraft/OpenComputers*.so
 minecraft/OpenComputers*.dll

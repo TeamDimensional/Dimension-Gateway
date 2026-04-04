@@ -319,6 +319,14 @@
     "curseForgeHash": 1249823540,
     "modrinthHash": "d68f70c4922095d9a1edc9b30add4244ea2e43ec"
   },
+  "catalogue-1.0.3-1.12.2.jar": {
+    "jarName": "catalogue-1.0.3-1.12.2.jar",
+    "modId": "catalogue",
+    "name": "Catalogue",
+    "version": "1.0.3-1.12.2",
+    "curseForgeHash": 3050433020,
+    "modrinthHash": "dc0306834b34e416cb19b368c0972eaa938a9668"
+  },
   "cell-terminal-1.5.3.jar": {
     "jarName": "cell-terminal-1.5.3.jar",
     "modId": "cellterminal",
