@@ -56,6 +56,7 @@ extracted_dump
 minecraft/local/crash_assistant
 minecraft/visualores
 minecraft/config/astralsorcery/amulet_enchantments.cfg
+minecraft/groovy/sideOnlyGenerated.json
 
 minecraft/OpenComputers*.so
 minecraft/OpenComputers*.dll

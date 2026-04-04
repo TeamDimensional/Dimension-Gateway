@@ -15,6 +15,7 @@ def tier2Items = [
 def tier3Items = [
     mitem("gold_upgrade"), mitem("redstone_upgrade"), mitem("fluid_1"), mitem("fluid_2"), mitem("fluid_4"), bitem("feeding_upgrade"),
     bitem("backpack_iron"), bitem("pickup_upgrade"), bitem("filter_upgrade"), bitem("restock_upgrade"), bitem("deposit_upgrade"),
+    mitem("stone_generation_upgrade_t1"), mitem("stone_generation_upgrade_t2"),
 ]
 
 def tier4Items = [
@@ -22,11 +23,12 @@ def tier4Items = [
     mitem("storage_controller"), mitem("controller_extension"), bitem("stack_upgrade_tier_1"),
     bitem("advanced_pickup_upgrade"), bitem("advanced_feeding_upgrade"),
     bitem("advanced_deposit_upgrade"), bitem("advanced_restock_upgrade"), bitem("advanced_filter_upgrade"),
+    mitem("stone_generation_upgrade_t3"),
 ]
 
-def tier5Items = [mitem("netherite_upgrade"), bitem("backpack_gold")]
+def tier5Items = [mitem("netherite_upgrade"), bitem("backpack_gold"), mitem("stone_generation_upgrade_t4")]
 
-def tier6Items = [bitem("stack_upgrade_tier_2")]
+def tier6Items = [bitem("stack_upgrade_tier_2"), mitem("wireless_pulling_update"), mitem("wireless_pushing_upgrade")]
 
 def tier7Items = [
     bitem("backpack_diamond"), mitem("ender_drawer"), mitem("armory_cabinet"), bitem("stack_upgrade_tier_3"),
