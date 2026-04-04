@@ -1,0 +1,17 @@
+filename = 'cells-0.5.12-alpha2.jar'
+name = 'C.E.L.L.S'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = 'C.E.L.L.S 0.5.12-alpha2'
+
+[download]
+hash = '6aeb2dbd6cdc6c56d80f5c8ad36a651158de3d6f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7859362
+project-id = 1470965

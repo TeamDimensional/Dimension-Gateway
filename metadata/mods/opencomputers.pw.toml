@@ -1,0 +1,17 @@
+filename = 'OpenComputers-MC1.12.2-1.8.9a+8ca336f.jar'
+name = 'OpenComputers'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'OpenComputers-MC1.12.2-1.8.9a+8ca336f.jar'
+
+[download]
+hash = 'a6e7a567d112da7e3316bfe387d0ae48811c6fa5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6608365
+project-id = 223008

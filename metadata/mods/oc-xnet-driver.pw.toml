@@ -1,0 +1,17 @@
+filename = 'ocxnetdriver-1.0.3-b17.jar'
+name = 'OC XNet Driver'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ocxnetdriver-1.0.3-b17.jar'
+
+[download]
+hash = 'c0168aa96831aa717f6c9339c991cba17ece7373'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2634368
+project-id = 285385
