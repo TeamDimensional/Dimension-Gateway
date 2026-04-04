@@ -1,0 +1,225 @@
+{
+  "version": 2,
+  "location": "gateway:lithographic_etcher",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "minecraft:bedrock",
+          "meta": 0
+        },
+        "type": "blockstate"
+      }
+    },
+    "idle": {
+      "lightEmissive": 8,
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 15,
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "lithographic_etcher",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "  A  ",
+        " BBB ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "  A  ",
+        "BBCBB",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "AADAA",
+        "@CCCB",
+        "O   E",
+        "    E",
+        "  FEA",
+        "  GA "
+      ],
+      [
+        "  A  ",
+        "BBCBB",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "  A  ",
+        " BBB ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "immersiveengineering:storage",
+            "meta": 8
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gateway:lithographic_etcher",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "actuallyadditions:block_misc",
+            "meta": 7
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "thermalfoundation:glass_alloy",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "actuallyadditions:block_display_stand",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "immersiveengineering:metal_decoration1",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "embers:beam_cannon",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "G": {
+        "states": [
+          {
+            "id": "embers:copper_cell",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "output": {
+        "capability": "item",
+        "type": "capability",
+        "io": "OUT"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ],
+      "-": [
+        "air"
+      ],
+      "O": [
+        "output"
+      ]
+    }
+  }
+}

@@ -17,7 +17,7 @@ for (def c in GatewayHelpers.qmdChemiFluids) chemistryItems.add(mitem("fluid_${c
 
 def fissionItems = [
     mitem("dust2", 1), mitem("ingot2", 1), mitem("fluid_polonium"), mitem("fluid_radium"), mitem("fluid_bismuth"),
-    mitem("fluid_neodymium"),
+    mitem("fluid_neodymium"), mitem("dust", 15), mitem("ingot", 15),
 ]
 for (def i in [2, 3, 4, 6, 8]) fissionItems.add(mitem("isotope", i))
 def tier12Items = [mitem("dust", 8), mitem("ingot", 8)]
@@ -49,7 +49,7 @@ def hideFromJei = [
 ] + removeRecipes
 for (def c in ["green", "blue", "orange"]) hideFromJei.add(mitem("block_${c}_luminous_paint"))
 
-TooltipEvents.setModTier("qmd", 15)
+TooltipEvents.setModTier("qmd", 14)
 for (def it in embersItems) TooltipEvents.setTier(it, 4)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
 for (def it in chemistryItems) TooltipEvents.setTier(it, 9)

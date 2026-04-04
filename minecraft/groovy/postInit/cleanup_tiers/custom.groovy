@@ -20,8 +20,14 @@ def hideFromJei = [
 ]
 
 for (def it in hideFromJei) GatewayHelpers.hide(it)
+
+TooltipEvents.setTier(citem("demon_factory"), 14)
 TooltipEvents.setTier(citem("natural_infuser"), 4)
 TooltipEvents.setTier(citem("resonant_caster"), 10)
+TooltipEvents.setTier(citem("moonlight_fabricator"), 4)
+TooltipEvents.setTier(citem("network_supercharger"), 8)
+TooltipEvents.setTier(citem("lithographic_etcher"), 8)
+
 TooltipEvents.setTier(citem("resonating_gem"), 10)
 TooltipEvents.setTier(citem("impure_resonating_gem"), 10)
 TooltipEvents.setTier(citem("starsteel_ingot"), 6)
@@ -31,10 +37,7 @@ TooltipEvents.setTooltip(citem("runic_plate"), "Use Terraformer to create the co
 TooltipEvents.setTier(citem("moonlight_powder"), 4)
 TooltipEvents.setTier(citem("crystalline_aerogel"), 7)
 TooltipEvents.setTier(citem("compression_core"), 6)
-TooltipEvents.setTier(citem("moonlight_fabricator"), 4)
 TooltipEvents.setTier(citem("ferramic_machine_frame"), 3)
 TooltipEvents.setTier(mitem("entity"), 14)
-TooltipEvents.setTier(citem("demon_factory"), 14)
-TooltipEvents.setTier(citem("network_supercharger"), 8)
 TooltipEvents.setTier(citem("transcendental_matrix"), 9)
 TooltipEvents.setTier(citem("transcendental_demon_alloy"), 14)

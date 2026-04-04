@@ -100,6 +100,13 @@
     "curseForgeHash": 1277871034,
     "modrinthHash": "c2757db9c8b124c6def1f384e6b412e4ce70a5b5"
   },
+  "ae2powertools-1.5.1.jar": {
+    "jarName": "ae2powertools-1.5.1.jar",
+    "modId": "ae2powertools",
+    "version": "1.5.1",
+    "curseForgeHash": 135727150,
+    "modrinthHash": "c5e2c062fe7ca8906189f3154a1aa30efa659b2c"
+  },
   "aether-1.12.2-v1.5.4.1.jar": {
     "jarName": "aether-1.12.2-v1.5.4.1.jar",
     "modId": "aether_legacy",
@@ -279,6 +286,13 @@
     "version": "1.5.0",
     "curseForgeHash": 4235636738,
     "modrinthHash": "0ee65546c29dd0c746e99f7445b563cfb3efdac4"
+  },
+  "cells-0.5.12-alpha2.jar": {
+    "jarName": "cells-0.5.12-alpha2.jar",
+    "modId": "cells",
+    "version": "0.5.12-alpha2",
+    "curseForgeHash": 3293758122,
+    "modrinthHash": "6aeb2dbd6cdc6c56d80f5c8ad36a651158de3d6f"
   },
   "champions-1.12.2-1.0.11.10.jar": {
     "jarName": "champions-1.12.2-1.0.11.10.jar",
@@ -904,6 +918,13 @@
     "curseForgeHash": 4285067408,
     "modrinthHash": "9ac730b20fd502bf2d2e966b2100fa334930e069"
   },
+  "ocxnetdriver-1.0.3-b17.jar": {
+    "jarName": "ocxnetdriver-1.0.3-b17.jar",
+    "modId": "ocxnetdriver",
+    "version": "1.0.3-b17",
+    "curseForgeHash": 3356938327,
+    "modrinthHash": "c0168aa96831aa717f6c9339c991cba17ece7373"
+  },
   "oeintegration-2.3.4.jar": {
     "jarName": "oeintegration-2.3.4.jar",
     "modId": "oeintegration",
@@ -924,6 +945,13 @@
     "version": "0.12.3",
     "curseForgeHash": 2570592600,
     "modrinthHash": "d26e0ee0a0b9cf7f0ee0c49e4b10801d14d587b8"
+  },
+  "OpenComputers-MC1.12.2-1.8.9a+8ca336f.jar": {
+    "jarName": "OpenComputers-MC1.12.2-1.8.9a+8ca336f.jar",
+    "modId": "opencomputers",
+    "version": "1.8.9a",
+    "curseForgeHash": 422589412,
+    "modrinthHash": "a6e7a567d112da7e3316bfe387d0ae48811c6fa5"
   },
   "OreExcavation-1.4.150.jar": {
     "jarName": "OreExcavation-1.4.150.jar",

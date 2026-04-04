@@ -56,3 +56,9 @@ extracted_dump
 minecraft/local/crash_assistant
 minecraft/visualores
 minecraft/config/astralsorcery/amulet_enchantments.cfg
+
+minecraft/OpenComputers*.so
+minecraft/OpenComputers*.dll
+minecraft/OpenComputers*.dylib
+minecraft/config/opencomputers/*.recipes
+!minecraft/config/opencomputers/user.recipes

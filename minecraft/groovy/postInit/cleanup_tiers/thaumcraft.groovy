@@ -7,9 +7,6 @@ def mitem(name, k=0) {
 def gitem(name, k=0) {
     return item("thaumicaugmentation:${name}", k)
 }
-def eitem(name, k=0) {
-    return item("thaumicenergistics:${name}", k)
-}
 def titem(name, k=0) {
     return item("thaumictinkerer:${name}", k)
 }
@@ -123,8 +120,7 @@ for (int i in [3, 5]) voidItems.add(gitem("material", i))
 for (int i in 0..3) voidItems.add(gitem("eldritch_lock_key", i))
 
 def creativeItems = [
-    gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge"), eitem("essentia_cell_creative"),
-    witem("creative_essentia_jar"),
+    gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge"), witem("creative_essentia_jar"),
 ]
 
 def removeCrafting = [
@@ -153,8 +149,8 @@ for (def a in ["rare", "uncommon", "common"]) for (def b in ["crate", "urn"]) hi
 TooltipEvents.setModTier("thaumcraft", 5)
 TooltipEvents.setModTier("thaumictinkerer", 5)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
-TooltipEvents.setModTier("thaumicenergistics", 9)
 TooltipEvents.setModTier("crimsonrevelations", 5)
+TooltipEvents.setModTier("advanced_smelter", 9)
 ore("quartzDark").remove(titem("black_quartz"))
 ore("blockQuartzDark").remove(titem("black_quartz_block"))
 TooltipEvents.setTooltip(titem("bedrock_portal"), "Created by breaking Bedrock with Awakened Ichorium Pickaxe.")

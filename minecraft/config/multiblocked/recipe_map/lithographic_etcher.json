@@ -1,0 +1,124 @@
+{
+  "name": "lithographic_etcher",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "4952a761-2e50-4b19-9251-b635070375b3",
+      "duration": 10,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"calculator:circuitboard\",Count:1,Damage:12s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"opencomputers:material\",Count:8,Damage:6s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "ember": [
+          {
+            "chance": 1.0,
+            "content": 20.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "caa6df44-6eae-4d9c-8277-b74789085382",
+      "duration": 15,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"immersiveengineering:material\",Count:1,Damage:27s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"opencomputers:material\",Count:1,Damage:4s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "ember": [
+          {
+            "chance": 1.0,
+            "content": 20.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "67f92605-6c5e-4523-bfe2-8ce1b2130510",
+      "duration": 5,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"factorytech:circuit_intermediate\",Count:1,Damage:8s}"
+              ]
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"factorytech:circuit_intermediate\",Count:1,Damage:0s}",
+                "{id:\"factorytech:circuit_intermediate\",Count:1,Damage:1s}",
+                "{id:\"factorytech:circuit_intermediate\",Count:1,Damage:2s}",
+                "{id:\"factorytech:circuit_intermediate\",Count:1,Damage:3s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "ember": [
+          {
+            "chance": 1.0,
+            "content": 20.0
+          }
+        ]
+      }
+    }
+  ]
+}

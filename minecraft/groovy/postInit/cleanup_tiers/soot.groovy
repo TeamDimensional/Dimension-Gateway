@@ -19,7 +19,7 @@ def metallurgyDecor = [
 ]
 
 def removeStamping = [mitem("sulfur")]
-def hideFromJei = [mitem("sulfur_ore"), mitem("sulfur_clump"), mitem("mug")] + removeStamping
+def hideFromJei = [mitem("sulfur_ore"), mitem("sulfur_clump")] + removeStamping
 
 def mugs = [
     "boiling_wort", "snowpoff"

@@ -11,6 +11,11 @@ mods.factorytech.agitator.recipeBuilder()
     .fluidInput(fluid("redstone") * 200, fluid("propane") * 200)
     .output(item("appliedenergistics2:material", 7))
     .register()
+mods.factorytech.agitator.recipeBuilder()
+    .input(item("appliedenergistics2:material", 2))
+    .fluidInput(fluid("redstone") * 200, fluid("propane") * 200)
+    .output(item("appliedenergistics2:material", 8))
+    .register()
 mods.extrautils2.resonator.recipeBuilder()
     .input(item("appliedenergistics2:material", 8))
     .output(item("appliedenergistics2:material", 7))
@@ -112,39 +117,53 @@ def components = [
     //// (lower level, higher level, processor, corners, center)
     // 4k
     [item("appliedenergistics2:material", 35), item("appliedenergistics2:material", 36), item("appliedenergistics2:material", 22),
-     item("calculator:redstoneingot"), item("appliedenergistics2:quartz_glass"), "4k"],
+     item("actuallyadditions:item_crystal"), item("appliedenergistics2:quartz_glass"), "4k"],
     [item("appliedenergistics2:material", 54), item("appliedenergistics2:material", 55), item("appliedenergistics2:material", 22),
      item("actuallyadditions:item_crystal", 1), item("appliedenergistics2:quartz_glass"), "4k_fluid"],
+    [item("cells:compacting_component"), item("cells:compacting_component", 1), item("cells:overclocked_processor", 2),
+     item("actuallyadditions:item_crystal", 5), item("appliedenergistics2:quartz_glass"), "4k_compacting"],
     // 16k
     [item("appliedenergistics2:material", 36), item("appliedenergistics2:material", 37), item("appliedenergistics2:material", 23),
-     item("calculator:redstoneingot"), item("thermalfoundation:glass", 3), "16k"],
+     item("actuallyadditions:item_crystal"), item("thermalfoundation:glass", 5), "16k"],
     [item("appliedenergistics2:material", 55), item("appliedenergistics2:material", 56), item("appliedenergistics2:material", 23),
      item("actuallyadditions:item_crystal", 1), item("thermalfoundation:glass", 2), "16k_fluid"],
+    [item("cells:compacting_component", 1), item("cells:compacting_component", 2), item("cells:overclocked_processor"),
+     item("actuallyadditions:item_crystal", 5), item("thermalfoundation:glass_alloy", 5), "16k_compacting"],
     // 64k
     [item("appliedenergistics2:material", 37), item("appliedenergistics2:material", 38), item("appliedenergistics2:material", 23),
      item("thermalfoundation:material", 166), item("botania:managlass"), "64k"],
     [item("appliedenergistics2:material", 56), item("appliedenergistics2:material", 57), item("appliedenergistics2:material", 23),
      item("actuallyadditions:item_crystal_empowered", 1), item("botania:managlass"), "64k_fluid"],
+    [item("cells:compacting_component", 2), item("cells:compacting_component", 3), item("cells:overclocked_processor"),
+     item("actuallyadditions:item_crystal_empowered", 5), item("botania:managlass"), "64k_compacting"],
     // 256k
     [item("appliedenergistics2:material", 38), item("nae2:material", 1), item("appliedenergistics2:material", 24),
      item("thermalfoundation:material", 166), item("enderio:block_fused_quartz"), "256k"],
     [item("appliedenergistics2:material", 57), item("nae2:material", 5), item("appliedenergistics2:material", 24),
      item("actuallyadditions:item_crystal_empowered", 1), item("enderio:block_fused_quartz"), "256k_fluid"],
+    [item("cells:compacting_component", 3), item("cells:compacting_component", 4), item("cells:overclocked_processor", 1),
+     item("actuallyadditions:item_crystal_empowered", 5), item("enderio:block_fused_quartz"), "256k_compacting"],
     // 1024k
     [item("nae2:material", 1), item("nae2:material", 2), item("appliedenergistics2:material", 24),
      item("thermalfoundation:material", 167), item("enderio:block_fused_quartz"), "1024k"],
     [item("nae2:material", 5), item("nae2:material", 6), item("appliedenergistics2:material", 24),
      item("actuallyadditions:item_crystal_empowered", 2), item("enderio:block_fused_quartz"), "1024k_fluid"],
+    [item("cells:compacting_component", 4), item("cells:compacting_component", 5), item("cells:overclocked_processor", 1),
+     item("actuallyadditions:item_crystal_empowered", 4), item("enderio:block_fused_quartz"), "1024k_compacting"],
     // 4096k
     [item("nae2:material", 2), item("nae2:material", 3), item("appliedenergistics2:material", 24),
      item("thermalfoundation:material", 167), item("essentialcraft:genitem", 32), "4096k"],
     [item("nae2:material", 6), item("nae2:material", 7), item("appliedenergistics2:material", 24),
      item("actuallyadditions:item_crystal_empowered", 2), item("essentialcraft:genitem", 32), "4096k_fluid"],
+    [item("cells:compacting_component", 5), item("cells:compacting_component", 6), item("cells:overclocked_processor", 1),
+     item("actuallyadditions:item_crystal_empowered", 4), item("essentialcraft:genitem", 32), "4096k_compacting"],
     // 16384k
     [item("nae2:material", 3), item("nae2:material", 4), item("appliedenergistics2:material", 24),
      item("nuclearcraft:ingot2", 1), item("essentialcraft:genitem", 32), "16384k"],
     [item("nae2:material", 7), item("nae2:material", 8), item("appliedenergistics2:material", 24),
      item("qmd:ingot", 15), item("essentialcraft:genitem", 32), "16384k_fluid"],
+    [item("cells:compacting_component", 6), item("cells:compacting_component", 7), item("cells:overclocked_processor", 1),
+     item("qmd:ingot2", 1), item("essentialcraft:genitem", 32), "16384k_compacting"],
 ]
 
 for (def xs in components) {
@@ -159,3 +178,31 @@ for (def xs in components) {
         .output(xs[1])
         .register()
 }
+
+// Overclocked processors
+mods.actuallyadditions.empowerer.recipeBuilder()
+    .mainInput(item("appliedenergistics2:material", 23))
+    .input(item("calculator:advancedassembly"), item("thaumcraft:ingot", 1), item("essentialcraft:genitem", 8), item("gateway:starsteel_ingot"))
+    .output(item("cells:overclocked_processor"))
+    .color(0x8db7dc)
+    .time(100)
+    .energy(50000)
+    .register()
+
+mods.actuallyadditions.empowerer.recipeBuilder()
+    .mainInput(item("appliedenergistics2:material", 22))
+    .input(item("calculator:advancedassembly"), item("theaurorian:auroriansteel"), item("essentialcraft:genitem", 79), item("gateway:starsteel_ingot"))
+    .output(item("cells:overclocked_processor", 2))
+    .color(0xffd400)
+    .time(100)
+    .energy(50000)
+    .register()
+
+mods.actuallyadditions.empowerer.recipeBuilder()
+    .mainInput(item("appliedenergistics2:material", 24))
+    .input(item("calculator:advancedassembly"), item("enderio:item_alloy_endergy_ingot", 1), item("essentialcraft:genitem"), item("gateway:starsteel_ingot"))
+    .output(item("cells:overclocked_processor", 1))
+    .color(0x2ccdb1)
+    .time(100)
+    .energy(50000)
+    .register()
