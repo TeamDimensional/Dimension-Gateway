@@ -28,7 +28,7 @@ def tier4Items = [
 
 def tier5Items = [mitem("netherite_upgrade"), bitem("backpack_gold"), mitem("stone_generation_upgrade_t4")]
 
-def tier6Items = [bitem("stack_upgrade_tier_2"), mitem("wireless_pulling_update"), mitem("wireless_pushing_upgrade")]
+def tier6Items = [bitem("stack_upgrade_tier_2"), mitem("wireless_pulling_upgrade"), mitem("wireless_pushing_upgrade")]
 
 def tier7Items = [
     bitem("backpack_diamond"), mitem("ender_drawer"), mitem("armory_cabinet"), bitem("stack_upgrade_tier_3"),
