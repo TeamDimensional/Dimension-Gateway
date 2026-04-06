@@ -44,3 +44,17 @@ mods.advancedrocketry.precision_assembler.recipeBuilder()
     .power(500)
     .time(200)
     .register()
+
+// Baby Grenade
+mods.calculator.calculator.removeByOutput(item("calculator:babygrenade"))
+mods.calculator.calculator.recipeBuilder()
+    .input(item("calculator:reinforcedironingot"), item("minecraft:tnt"))
+    .output(item("calculator:babygrenade"))
+    .register()
+
+// Energy Module
+mods.calculator.scientific_calculator.removeByOutput(item("calculator:energymodule"))
+mods.calculator.scientific_calculator.recipeBuilder()
+    .input(item("calculator:advancedpowercube"), item("calculator:purifiedcoal"))
+    .output(item("calculator:energymodule"))
+    .register()

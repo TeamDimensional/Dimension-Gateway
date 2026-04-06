@@ -14,7 +14,7 @@ def basicItems = [
     mitem("basicgreenhouse"), mitem("starchextractor"), mitem("redstoneextractor"), mitem("rainsensor"),
     mitem("gaslanternoff"), mitem("scarecrow"), mitem("craftingcalculator"),
     mitem("scientificcalculator"), mitem("terrainmodule"), mitem("advancedterrainmodule"),
-    mitem("energymodule"), mitem("smallstone"), mitem("calculatorscreen"), mitem("calculatorassembly"), mitem("advancedassembly"),
+    mitem("energymodule"), mitem("calculatorscreen"), mitem("calculatorassembly"), mitem("advancedassembly"),
     mitem("wrench"), mitem("sickle"), mitem("enrichedgold"), mitem("enrichedgoldingot"), mitem("reinforcedironingot"),
     mitem("redstoneingot"), mitem("weakeneddiamond"), mitem("largeamethyst"), mitem("smallamethyst"), mitem("shardamethyst"),
     mitem("broccoliseeds"), mitem("broccoli"), mitem("cookedbroccoli"), mitem("lantern"),
@@ -27,7 +27,7 @@ def atomicItems = [
     mitem("atomiccalculator"), mitem("dynamiccalculator"), mitem("algorithmseparator"),
     mitem("advancedgreenhouse"), mitem("conductormast"), mitem("weatherstation"), mitem("transmitter"),
     mitem("glowstoneextractor"), mitem("weathercontroller"), mitem("warpmodule"), mitem("jumpmodule"),
-    mitem("soil"), mitem("speedupgrade"), mitem("energyupgrade"), mitem("voidupgrade"), mitem("transferupgrade"),
+    mitem("speedupgrade"), mitem("energyupgrade"), mitem("voidupgrade"), mitem("transferupgrade"),
     mitem("atomicmodule"), mitem("atomicassembly"), mitem("atomicbinder"), mitem("flawlessdiamond"), mitem("firediamond"),
     mitem("electricdiamond"), mitem("largetanzanite"), mitem("smalltanzanite"), mitem("shardtanzanite"), mitem("prunaeseeds"),
     mitem("storagemodule"), mitem("pearlog"), mitem("pearplanks"), mitem("pearstairs"), mitem("pearfence"),
@@ -40,7 +40,8 @@ for (int i in [1, 5, 6, 7]) atomicItems.add(mitem("material", i))
 for (int i in 0..13) {
     atomicItems.add(mitem("circuitboard", i))
     atomicItems.add(mitem("circuitdamaged", i))
-    atomicItems.add(mitem("circuitdirty", i))
+    // atomicItems.add(mitem("circuitdirty", i))
+    // dirty circuits are configured from resources/calculator
 }
 
 def hungerItems = [
@@ -80,7 +81,7 @@ def creativeItems = [
 def hideFromJei = [
     mitem("amethystpiping"), mitem("tanzanitepiping"), mitem("magneticflux"), mitem("conductormastblock"), mitem("weatherstationblock"),
     mitem("transmitterblock"), mitem("gaslanternon"), mitem("scarecrowblock"), mitem("calculatorscreenblock"),
-    mitem("cropbroccoli"), mitem("cropprunae"), mitem("cropfiddledew"),
+    mitem("cropbroccoli"), mitem("cropprunae"), mitem("cropfiddledew"),  mitem("smallstone"), mitem("soil"),
 ] + removeRecipes
 
 def tools = ["sword", "pickaxe", "axe", "shovel", "hoe"]
@@ -103,4 +104,5 @@ for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
 TooltipEvents.setTooltip(mitem("jumpmodule"), "Warning! Don't use this without a good Feather Falling armor or equivalent.", textformat("RED"))
+TooltipEvents.setTooltip(mitem("coaldust"), "Produced from Prunae seeds.")
 TooltipEvents.setModTier("sonarcore", 6)

@@ -20,7 +20,7 @@ def advancedItems = [
     mitem("blockbore"), mitem("blockattunementaltar"), mitem("blockstarlightinfuser"), mitem("blockrituallink"),
     mitem("blockmapdrawingtable"), mitem("blockobservatory"),
     mitem("blockborehead"), mitem("blockborehead", 1), mitem("blockritualpedestal"), mitem("blockaltar", 2), mitem("blockaltar", 3),
-    mitem("blockcelestialcollectorcrystal"), mitem("blockinfusedwood", 6),
+    mitem("blockcelestialcollectorcrystal"), mitem("blockinfusedwood", 6), mitem("blockprism"),
 ]
 
 def removeAstralRecipes = [mitem("blockmachine", 1)]

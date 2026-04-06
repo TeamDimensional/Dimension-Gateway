@@ -1,0 +1,1 @@
+mods.calculator.fabrication_chamber.removeAll()

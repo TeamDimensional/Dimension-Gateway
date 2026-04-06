@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "gateway:cleanroom_machine_frame"
+    }
+  }
+}

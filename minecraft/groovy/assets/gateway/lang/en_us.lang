@@ -127,3 +127,51 @@ tile.retro_sophisticated_backpacks.backpack_obsidian.name=Resonant Backpack
 
 tile.nuclearcraft.decay_generator.name=Decay Apparatus
 tile.nuclearcraft.decay_generator.desc=Irradiates blocks with primordial energy, causing their decay.
+
+//circuits
+item.CircuitBoard.0.name=Heating Circuit
+item.CircuitBoard.1.name=Prospecting Circuit
+item.CircuitBoard.2.name=Upgrade Circuit
+item.CircuitBoard.3.name=Atomic Circuit
+item.CircuitBoard.4.name=Speed Circuit
+item.CircuitBoard.5.name=Efficiency Circuit
+item.CircuitBoard.6.name=Algorithm Circuit
+item.CircuitBoard.7.name=Transport Circuit
+item.CircuitBoard.8.name=Growth Circuit
+item.CircuitBoard.9.name=Energy Flow Circuit
+item.CircuitBoard.10.name=Circuit 11
+item.CircuitBoard.11.name=Circuit 12
+item.CircuitBoard.12.name=Binary Logic Circuit
+item.CircuitBoard.13.name=Compression Circuit
+
+//damaged circuits
+item.CircuitDamaged.0.name=Damaged Heating Circuit
+item.CircuitDamaged.1.name=Damaged Prospecting Circuit
+item.CircuitDamaged.2.name=Damaged Upgrade Circuit
+item.CircuitDamaged.3.name=Damaged Atomic Circuit
+item.CircuitDamaged.4.name=Damaged Speed Circuit
+item.CircuitDamaged.5.name=Damaged Efficiency Circuit
+item.CircuitDamaged.6.name=Damaged Algorithm Circuit
+item.CircuitDamaged.7.name=Damaged Transport Circuit
+item.CircuitDamaged.8.name=Damaged Growth Circuit
+item.CircuitDamaged.9.name=Damaged Energy Flow Circuit
+item.CircuitDamaged.10.name=Damaged Circuit 11
+item.CircuitDamaged.11.name=Damaged Circuit 12
+item.CircuitDamaged.12.name=Damaged Binary Logic Circuit
+item.CircuitDamaged.13.name=Damaged Compression Circuit
+
+//dirty circuits
+item.CircuitDirty.0.name=Dirty Heating Circuit
+item.CircuitDirty.1.name=Dirty Prospecting Circuit
+item.CircuitDirty.2.name=Dirty Upgrade Circuit
+item.CircuitDirty.3.name=Dirty Atomic Circuit
+item.CircuitDirty.4.name=Dirty Speed Circuit
+item.CircuitDirty.5.name=Dirty Efficiency Circuit
+item.CircuitDirty.6.name=Dirty Algorithm Circuit
+item.CircuitDirty.7.name=Dirty Transport Circuit
+item.CircuitDirty.8.name=Dirty Growth Circuit
+item.CircuitDirty.9.name=Dirty Energy Flow Circuit
+item.CircuitDirty.10.name=Dirty Circuit 11
+item.CircuitDirty.11.name=Dirty Circuit 12
+item.CircuitDirty.12.name=Dirty Binary Logic Circuit
+item.CircuitDirty.13.name=Dirty Compression Circuit
