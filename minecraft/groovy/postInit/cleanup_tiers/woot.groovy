@@ -10,13 +10,13 @@ def advItems = [
     mitem("factorycore", 3), mitem("cell", 2),
 ]
 for (def i in [1, 4, 7, 10, 13]) advItems.add(mitem("upgrade", i))
-for (def i in [1, 3, 4, 6, 7, 10]) advItems.add(mitem("upgradeb", i))
+for (def i in [1, 3, 4, 6, 7]) advItems.add(mitem("upgradeb", i))
 
 def eliteItems = [
     mitem("factorycore", 4), mitem("structure", 4), mitem("structure", 9),
 ]
 for (def i in [2, 5, 8, 11, 14]) eliteItems.add(mitem("upgrade", i))
-for (def i in [2, 5, 8, 11, 12, 13, 14]) eliteItems.add(mitem("upgradeb", i))
+for (def i in [2, 5, 8, 12, 13, 14]) eliteItems.add(mitem("upgradeb", i))
 
 def removeAnvil = [
     mitem("die"), mitem("die", 1), mitem("soulsanddust"),

@@ -99,6 +99,13 @@ mods.nuclearcraft.assembler.builder()
     .output(item("appliedenergistics2:part", 341))
     .register()
 
+// Extended Fluid Pattern Terminal
+crafting.remove("ae2fc:part_fluid_pattern_ex_terminal")
+mods.nuclearcraft.assembler.builder()
+    .input(item("ae2fc:part_fluid_pattern_terminal") * 2, item("botania:rune", 11), item("botania:rune", 11), item("appliedenergistics2:material", 24) * 4)
+    .output(item("ae2fc:part_fluid_pattern_ex_terminal"))
+    .register()
+
 // Powertools Autocrafter
 crafting.remove("ae2powertools:auto_crafter")
 crafting.shapedBuilder()
@@ -149,4 +156,18 @@ crafting.shapedBuilder()
     .key("S", item("immersiveengineering:material", 2))
     .key("F", item("appliedenergistics2:material", 7))
     .output(item("ae2powertools:priority_tuner"))
+    .register()
+
+// Discretizer
+crafting.remove("ae2fc:fluid_discretizer")
+crafting.shapedBuilder()
+    .mirrored()
+    .name("machines/ae2/fluid_discretizer")
+    .matrix("IEI", "FCS", "IEI")
+    .key("I", item("minecraft:iron_ingot"))
+    .key("E", item("appliedenergistics2:material", 24))
+    .key("F", item("appliedenergistics2:part", 221))
+    .key("S", item("appliedenergistics2:part", 220))
+    .key("C", item("industrialforegoing:fluid_crafter"))
+    .output(item("ae2fc:fluid_discretizer"))
     .register()

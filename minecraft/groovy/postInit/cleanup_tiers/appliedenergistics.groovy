@@ -29,6 +29,9 @@ def modItems = [
     mitem("io_port"), mitem("fluid_interface"), mitem("entropy_manipulator"), mitem("matter_cannon"),
     citem("import_interface"), citem("import_fluid_interface"), citem("export_interface"), citem("export_fluid_interface"),
     item("ae2powertools:network_health_scanner"), item("ae2powertools:priority_tuner"), item("ae2powertools:cards_distributor"),
+    item("ae2fc:fluid_discretizer"), item("ae2fc:fluid_pattern_encoder"), item("ae2fc:fluid_packet_decoder"),
+    item("ae2fc:ingredient_buffer"), item("ae2fc:large_ingredient_buffer"), item("ae2fc:burette"), item("ae2fc:dual_interface"),
+    item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
 ]
 for (def i in [0, 2, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 35, 36, 37, 39, 43, 44, 45, 46, 52, 53, 60, 61])
     modItems.add(mitem("material", i))
@@ -55,7 +58,8 @@ def advancedItems = [
     mitem("wireless_crafting_terminal"), mitem("wireless_pattern_terminal"), mitem("wireless_fluid_terminal"),
     item("nae2:coprocessor_64x"), item("nae2:upgrade"), item("nae2:exposer"), item("nae2:part", 2), mitem("part", 341),
     citem("overflow_card"), citem("trash_unselected_card"), citem("compression_tier_card"), citem("decompression_tier_card"),
-    citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"),
+    citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"), item("ae2fc:ultimate_encoder"),
+    item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
 ]
 for (def i in 0..35) advancedItems.add(mitem("paint_ball", i))
 for (def i in [6, 9, 28, 29, 30, 31, 32, 33, 34, 38, 41, 42, 47, 48, 54, 55, 56, 57, 58])
@@ -94,7 +98,7 @@ def creativeItems = [
 def removeRecipes = [
     mitem("sky_compass"), mitem("charged_staff"), mitem("portable_cell"), item("nae2:reconstruction_chamber"), mitem("material", 46),
     item("appliedenergistics2:energy_acceptor"), citem("oredict_card"), citem("equal_distribution_card", 7),
-    item("ae2powertools:better_level_maintainer"),
+    item("ae2powertools:better_level_maintainer"), item("ae2fc:fluid_level_maintainer"),
 ]
 for (def tier in 8..11) {
     removeRecipes.add(citem("compacting_cell", tier))

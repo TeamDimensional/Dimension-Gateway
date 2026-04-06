@@ -40,7 +40,7 @@ def tier5 = [
 
 def tier6 = [
     // The End
-    fluid("ender"),
+    fluid("ender"), fluid("bare_acid"),
     // Astral Sorcery
     fluid("astral_starmetal"), fluid("aquamarine"), fluid("astralsorcery.liquidstarlight"), fluid("fluid_quicksilver"),
     // Ore level

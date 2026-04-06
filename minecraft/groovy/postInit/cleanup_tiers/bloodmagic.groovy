@@ -38,6 +38,7 @@ def sentientItems = [
     mitem("demon_stairs_3"), mitem("teleposer"), mitem("sigil_haste"), mitem("sigil_teleposition"), mitem("sigil_transposition"),
     mitem("blood_shard", 1), mitem("sentient_sword"), mitem("sentient_bow"), mitem("sentient_axe"),
     mitem("sentient_pickaxe"), mitem("sentient_shovel"), mitem("demon_will_gauge"), mitem("soul_snare"),
+    mitem("decorative_brick", 2), mitem("decorative_brick", 3), mitem("inscription_tool", 6),
 ]
 def coloredThings = [
     ["demon_crystal", 0],
