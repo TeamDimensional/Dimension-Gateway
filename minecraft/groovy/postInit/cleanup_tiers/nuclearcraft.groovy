@@ -61,8 +61,10 @@ def tier4Items = [
 ]
 
 def tier6Items = [
-    mitem("gem", 6), mitem("gem_dust", 11), mitem("alloy", 13),
+    mitem("gem_dust", 11), mitem("alloy", 13),
 ]
+
+def tier7Items = [mitem("gem", 6)]
 
 def thermalItems = [
     mitem("graham_cracker"), mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"),
@@ -161,6 +163,7 @@ for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
 for (def it in tier6Items) TooltipEvents.setTier(it, 6)
+for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
 for (def it in uraniumItems) TooltipEvents.setTier(it, 8)  // from thermal
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)

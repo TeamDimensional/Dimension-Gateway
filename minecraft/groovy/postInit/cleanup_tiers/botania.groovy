@@ -123,7 +123,6 @@ for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "Dropped by the 2nd tie
 for (def it in diceItems) TooltipEvents.setTooltip(it, "Reward from the Dice of Fate.")
 TooltipEvents.setTooltip(mitem("lexicon"), "Warning! Throwing this through an Elven Portal if it's in an Akashic Tome deletes all other books.")
 TooltipEvents.setTooltip(mitem("gaiahead"), "Dropped by the Guardian of Gaia when killed with an Elementium Axe.")
-TooltipEvents.setTooltip(mitem("manaresource", 4), "Made with Terrestrial Agglomeration Plate.")
 TooltipEvents.setTooltip(mitem("manaresource", 15), "Obtained by right-clicking with an Empty Bottle in the End.")
 
 def tier1Flowers = [

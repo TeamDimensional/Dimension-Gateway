@@ -31,13 +31,17 @@ enderItems = [mitem("wormhole_funnel"), mitem("wormhole_linker")]
 energionItems = [
     mitem("energion_aeroheater"), mitem("automatic_crystal_cutter"), mitem("primordialis_reactor"), mitem("atomic_reshaper"),
     mitem("crystal_cutter"), mitem("primordium"), mitem("aeternus_crystal"), mitem("circuit_refined"), mitem("food_enricher"),
-    mitem("energion_crystal_seed"), mitem("energion_dust"), mitem("heat_capacitor_2", 32767), mitem("heat_capacitor_3", 32767),
+    mitem("energion_crystal_seed"), mitem("energion_dust"), mitem("heat_capacitor_2", 32767),
 ]
 
 zorrasteelItems = [
     mitem("tartaric_aeroheater"), mitem("zorra_log"), mitem("zorra_planks"), mitem("zorra_leaves"), mitem("zorra_sapling"),
     mitem("zorrasteel_block"), mitem("zorra_leaf"), mitem("zorrasteel_raw"), mitem("zorrasteel_ingot"), mitem("tartaric_stoker"), mitem("zorrasteel_sword"),
-    mitem("zorrasteel_handbow"), mitem("circuit_perfected"),
+    mitem("zorrasteel_handbow"),
+]
+
+def perfectedItems = [
+    mitem("heat_capacitor_3", 32767), mitem("circuit_perfected"),
 ]
 
 def removeRecipes = [
@@ -53,6 +57,7 @@ for (def it in gemstoneItems) TooltipEvents.setTier(it, 4)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in energionItems) TooltipEvents.setTier(it, 5)
 for (def it in zorrasteelItems) TooltipEvents.setTier(it, 5)
+for (def it in perfectedItems) TooltipEvents.setTier(it, 7)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def res in ["iron", "gold", "ferramic"]) {

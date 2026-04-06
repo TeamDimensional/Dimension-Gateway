@@ -55,7 +55,7 @@ crafting.shapedBuilder()
         .output(item("prodigytech:tartaric_aeroheater"))
         .matrix(" E ", "FCF", "RGR")
         .key("C", item("gateway:ferramic_machine_frame")).key("F", item("minecraft:furnace"))
-        .key("G", item("prodigytech:circuit_perfected")).key("R", ore("ingotZorrasteel")).key("E", item("prodigytech:aeternus_crystal"))
+        .key("G", item("prodigytech:circuit_refined")).key("R", ore("ingotZorrasteel")).key("E", item("prodigytech:aeternus_crystal"))
         .register()
 
 // Capacitor Aeroheater
