@@ -1,17 +1,17 @@
-filename = 'FunctionalStorageLegacy-1.0.1-beta.jar'
+filename = 'FunctionalStorageLegacy-1.0.2-beta.jar'
 name = 'Functional Storage Legacy'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'FunctionalStorageLegacy-1.0.1-beta.jar'
+x-prismlauncher-version-number = 'FunctionalStorageLegacy-1.0.2-beta.jar'
 
 [download]
-hash = '319a346524791860fa173b6370effdefea68bacb'
+hash = '9dc974b7eae2952b7a9680e10a360e6e39c5c6dd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7765117
+file-id = 7889756
 project-id = 1481727

@@ -20,7 +20,7 @@ def titaniumMetal = [
 
 def part1Items = [
     mitem("blocklens"), mitem("solarpanel"), mitem("solararraypanel"), mitem("forcefieldprojector"),
-    mitem("blockpump"), mitem("suitworkstation"), mitem("liquidtank"), mitem("wirelesstransciever"),
+    mitem("blockpump"), mitem("suitworkstation"), mitem("liquidtank"), mitem("wirelesstransceiver"),
     mitem("arcfurnace"), mitem("crystallizer"), mitem("precisionassemblingmachine"), mitem("chemicalreactor"),
     mitem("solararray"), mitem("launchpad"), mitem("landingpad"), mitem("seat"), mitem("rocketmotor"),
     mitem("fueltank"), mitem("guidancecomputer"), mitem("intake"), mitem("rocketbuilder"),

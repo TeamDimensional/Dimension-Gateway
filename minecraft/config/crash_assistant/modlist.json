@@ -5,13 +5,13 @@
     "name": "forge",
     "version": "universal.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.11.6.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.6.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.11.8.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.8.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.6",
-    "curseForgeHash": 851394990,
-    "modrinthHash": "b851657ccc881542013a6f94d83826cdb68f2bd3"
+    "version": "1.11.8",
+    "curseForgeHash": 2305784281,
+    "modrinthHash": "6a90ca55bff45580a2d5455899e6fc21f9f3a2a4"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
@@ -45,13 +45,13 @@
     "curseForgeHash": 2660540505,
     "modrinthHash": "d272efd0c807908138edbac8e6cb2d90127ac01a"
   },
-  "+Fugue-0.23.3.jar": {
-    "jarName": "+Fugue-0.23.3.jar",
+  "+Fugue-0.23.4.jar": {
+    "jarName": "+Fugue-0.23.4.jar",
     "modId": "fugue",
     "name": "Fugue",
-    "version": "0.23.3",
-    "curseForgeHash": 2455151293,
-    "modrinthHash": "988a18c12c24fe501b9d2bf3291d7242a0ce6530"
+    "version": "0.23.4",
+    "curseForgeHash": 3396816010,
+    "modrinthHash": "7ed08cd84a22e2f3fbf81d6bf263cd409c88a674"
   },
   "AbyssalCraft-1.12.2-2.0.0-BETA-6.jar": {
     "jarName": "AbyssalCraft-1.12.2-2.0.0-BETA-6.jar",
@@ -85,13 +85,13 @@
     "curseForgeHash": 4128642090,
     "modrinthHash": "b6a7348001eb65d2c145b9121709632d7ce15675"
   },
-  "advancedrocketry-2.2.4.jar": {
-    "jarName": "advancedrocketry-2.2.4.jar",
+  "advancedrocketry-2.2.5hotfix.jar": {
+    "jarName": "advancedrocketry-2.2.5hotfix.jar",
     "modId": "advancedrocketry",
     "name": "Advanced Rocketry",
-    "version": "2.2.4",
-    "curseForgeHash": 1152209755,
-    "modrinthHash": "65e77eb861efc77d99d11b03373be3f571e2079e"
+    "version": "2.2.5hotfix",
+    "curseForgeHash": 349343919,
+    "modrinthHash": "9a880b638ca4d6eddbdc99a165a2f5b00f9ca9ab"
   },
   "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar": {
     "jarName": "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar",
@@ -114,13 +114,13 @@
     "curseForgeHash": 1277871034,
     "modrinthHash": "c2757db9c8b124c6def1f384e6b412e4ce70a5b5"
   },
-  "ae2powertools-1.5.1.jar": {
-    "jarName": "ae2powertools-1.5.1.jar",
+  "ae2powertools-1.5.2.jar": {
+    "jarName": "ae2powertools-1.5.2.jar",
     "modId": "ae2powertools",
     "name": "AE2 PowerTools",
-    "version": "1.5.1",
-    "curseForgeHash": 135727150,
-    "modrinthHash": "c5e2c062fe7ca8906189f3154a1aa30efa659b2c"
+    "version": "1.5.2",
+    "curseForgeHash": 2728197179,
+    "modrinthHash": "ca3ea991dfed4a22001592de01fb0d6bf4b4ba37"
   },
   "aether-1.12.2-v1.5.4.1.jar": {
     "jarName": "aether-1.12.2-v1.5.4.1.jar",
@@ -161,14 +161,6 @@
     "version": "1.15.4",
     "curseForgeHash": 2860985311,
     "modrinthHash": "098882484be6966b47af3615d43efb9a0f0adef5"
-  },
-  "ARLib-17-09-2024.jar": {
-    "jarName": "ARLib-17-09-2024.jar",
-    "modId": "libVulpes",
-    "name": "libVulpes",
-    "version": "0.4.3",
-    "curseForgeHash": 2549179357,
-    "modrinthHash": "84f5e8253db03319bc1086e64cbfd331a9d93542"
   },
   "astralsorcery-1.12.2-1.10.27.jar": {
     "jarName": "astralsorcery-1.12.2-1.10.27.jar",
@@ -327,21 +319,21 @@
     "curseForgeHash": 3050433020,
     "modrinthHash": "dc0306834b34e416cb19b368c0972eaa938a9668"
   },
-  "cell-terminal-1.5.3.jar": {
-    "jarName": "cell-terminal-1.5.3.jar",
+  "cell-terminal-1.5.4.jar": {
+    "jarName": "cell-terminal-1.5.4.jar",
     "modId": "cellterminal",
     "name": "Cell Terminal",
-    "version": "1.5.3",
-    "curseForgeHash": 4151466092,
-    "modrinthHash": "4cdc2cf9a1d7eb59507ae687e903f6e5fda8e70b"
+    "version": "1.5.4",
+    "curseForgeHash": 696948058,
+    "modrinthHash": "61b193ac80f2f3dacbf50c57a3de5238599de4e1"
   },
-  "cells-0.5.12-alpha2.jar": {
-    "jarName": "cells-0.5.12-alpha2.jar",
+  "cells-0.5.14-beta2.jar": {
+    "jarName": "cells-0.5.14-beta2.jar",
     "modId": "cells",
     "name": "C.E.L.L.S",
-    "version": "0.5.12-alpha2",
-    "curseForgeHash": 3293758122,
-    "modrinthHash": "6aeb2dbd6cdc6c56d80f5c8ad36a651158de3d6f"
+    "version": "0.5.14-beta2",
+    "curseForgeHash": 3494611956,
+    "modrinthHash": "46d43b77e5700c32ed3b687c8eb70ed30e9b1c07"
   },
   "champions-1.12.2-1.0.11.10.jar": {
     "jarName": "champions-1.12.2-1.0.11.10.jar",
@@ -569,10 +561,10 @@
     "curseForgeHash": 3530130556,
     "modrinthHash": "62e9ab48dae0b6f864f81a400bdef49964a1bf03"
   },
-  "flare-0.7.0.jar": {
-    "jarName": "flare-0.7.0.jar",
-    "curseForgeHash": 3292257935,
-    "modrinthHash": "73c99e9a1c530880f4dd6d2646a5e8cd08eaf6c0"
+  "flare-0.8.0.jar": {
+    "jarName": "flare-0.8.0.jar",
+    "curseForgeHash": 3765866402,
+    "modrinthHash": "13d7a4bc80805f7a92fd8d41c90e7dfd53df2ddb"
   },
   "Fluid Craft for AE2-2.6.6-r.jar": {
     "jarName": "Fluid Craft for AE2-2.6.6-r.jar",
@@ -582,13 +574,13 @@
     "curseForgeHash": 998943625,
     "modrinthHash": "7b6a06c6396428a94e83a0adce263d1731dc090c"
   },
-  "Forgelin-Continuous-2.3.10.0.jar": {
-    "jarName": "Forgelin-Continuous-2.3.10.0.jar",
+  "Forgelin-Continuous-2.3.20.0.jar": {
+    "jarName": "Forgelin-Continuous-2.3.20.0.jar",
     "modId": "forgelin_continuous",
     "name": "Forgelin-Continuous",
     "version": "2.3.10.0",
-    "curseForgeHash": 845864044,
-    "modrinthHash": "705ec14d492d72235bc331970f143d710d97e0cc"
+    "curseForgeHash": 1069092308,
+    "modrinthHash": "60a0086110cc0854917d359a9ea7153e6a866437"
   },
   "ForgeMultipart-1.12.2-2.6.2.83-universal.jar": {
     "jarName": "ForgeMultipart-1.12.2-2.6.2.83-universal.jar",
@@ -630,13 +622,13 @@
     "curseForgeHash": 679359278,
     "modrinthHash": "d1f6545ac58ad895f2c8bcd0d4963d92f14b1938"
   },
-  "FunctionalStorageLegacy-1.0.1-beta.jar": {
-    "jarName": "FunctionalStorageLegacy-1.0.1-beta.jar",
+  "FunctionalStorageLegacy-1.0.2-beta.jar": {
+    "jarName": "FunctionalStorageLegacy-1.0.2-beta.jar",
     "modId": "functionalstoragelegacy",
     "name": "Functional Storage Legacy",
-    "version": "1.0.1-beta",
-    "curseForgeHash": 520017452,
-    "modrinthHash": "319a346524791860fa173b6370effdefea68bacb"
+    "version": "1.0.2-beta",
+    "curseForgeHash": 2103904276,
+    "modrinthHash": "9dc974b7eae2952b7a9680e10a360e6e39c5c6dd"
   },
   "Gadothaumy-1.1.3.jar": {
     "jarName": "Gadothaumy-1.1.3.jar",
@@ -686,13 +678,13 @@
     "curseForgeHash": 1899009469,
     "modrinthHash": "095b3b85d05118602c7678beb1e56d26930fd0e7"
   },
-  "HadEnoughItems_1.12.2-4.29.15.jar": {
-    "jarName": "HadEnoughItems_1.12.2-4.29.15.jar",
+  "HadEnoughItems_1.12.2-4.30.2.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.30.2.jar",
     "modId": "jei",
     "name": "Had Enough Items",
-    "version": "4.29.15",
-    "curseForgeHash": 3758786409,
-    "modrinthHash": "fd9311a4bf189b6f9c99183d9a2dae8485b80dc7"
+    "version": "4.30.2",
+    "curseForgeHash": 2029641242,
+    "modrinthHash": "1e7beceae089e074eb073e9a72e39e408d982a6b"
   },
   "Hwyla-1.8.26-B41_1.12.2.jar": {
     "jarName": "Hwyla-1.8.26-B41_1.12.2.jar",
@@ -806,14 +798,6 @@
     "curseForgeHash": 4076770386,
     "modrinthHash": "9fd474cfcb520d3bb98cd47c88815da4fa52ba36"
   },
-  "JEI-Utilities-1.12.2-0.2.13.jar": {
-    "jarName": "JEI-Utilities-1.12.2-0.2.13.jar",
-    "modId": "jeiutilities",
-    "name": "JEI Utilities",
-    "version": "0.2.13",
-    "curseForgeHash": 4213826967,
-    "modrinthHash": "453b3e717bc1c522b1d1d1d5385125b73ea239e1"
-  },
   "jei_area_fixer-2.3.0.jar": {
     "jarName": "jei_area_fixer-2.3.0.jar",
     "modId": "jei_area_fixer",
@@ -853,6 +837,14 @@
     "version": "4.0.0",
     "curseForgeHash": 3242005743,
     "modrinthHash": "a3445db181f0837da44d0434f4bef31ac34bd098"
+  },
+  "libvulpes-0.5.1.jar": {
+    "jarName": "libvulpes-0.5.1.jar",
+    "modId": "libVulpes",
+    "name": "libVulpes",
+    "version": "0.4.3",
+    "curseForgeHash": 3068764503,
+    "modrinthHash": "e72a623f57c310845ab5dc68b6828a437877597e"
   },
   "loliasm-5.31.jar": {
     "jarName": "loliasm-5.31.jar",
