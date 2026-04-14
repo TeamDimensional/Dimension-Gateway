@@ -111,9 +111,7 @@ def hxItems = [
 ]
 
 def removeRecipes = [
-    mitem("manufactory"), mitem("alloy_furnace"), mitem("pressurizer"), mitem("electric_furnace"), mitem("melter"),
-    mitem("rtg_uranium"), 
-    mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
+    mitem("rtg_uranium"), mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
     mitem("glowing_mushroom"), mitem("compound", 2), mitem("compound", 9), mitem("part", 11),
     mitem("fission_power_port"),
 ]

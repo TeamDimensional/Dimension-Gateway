@@ -102,6 +102,8 @@ def tier9 = [
     fluid("difluorobenzene"), fluid("dfdps"), fluid("polymethylsilylene_methylene"),
     fluid("ferroboron"), fluid("tough"), fluid("diborane"), fluid("boric_acid"), fluid("boron_nitride_solution"),
     fluid("bas"), fluid("boron"),
+    // Voidmetal stuff
+    fluid("liquid_enlightenment"), fluid("condensed_thoughts"),
 ]
 for (def c in GatewayHelpers.qmdChemiFluids) tier9.add(fluid(c))
 

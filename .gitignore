@@ -53,6 +53,7 @@ minecraft/config/loliasm
 minecraft/config/ProjectE/**/*.json
 !minecraft/config/ProjectE/custom_emc.json
 extracted_dump
+extracted_assets
 minecraft/local/crash_assistant
 minecraft/visualores
 minecraft/config/astralsorcery/amulet_enchantments.cfg

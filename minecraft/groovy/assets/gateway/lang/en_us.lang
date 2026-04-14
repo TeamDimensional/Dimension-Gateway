@@ -8,6 +8,9 @@ item.gateway.moonlight_powder.name=Moonlight Powder
 item.gateway.compression_core.name=Compression Core
 item.gateway.transcendental_matrix.name=Transcendental Matrix
 item.gateway.transcendental_demon_alloy.name=Transcendental Demon Alloy
+item.gateway.purified_brain.name=Purified Brain
+item.gateway.crystallized_enlightenment.name=Crystallized Enlightenment
+item.gateway.voidmetal_mesh.name=Voidmetal Mesh
 
 tile.gateway.metallic_substrate.name=Metallic Substrate
 tile.gateway.light_metal_substrate.name=Light Metal Substrate
@@ -16,12 +19,16 @@ tile.gateway.mundane_substrate.name=Mundane Material Substrate
 tile.gateway.gemstone_substrate.name=Gemstone Substrate
 tile.gateway.crystalline_aerogel.name=Crystalline Aerogel
 tile.gateway.ferramic_machine_frame.name=Ferramic Machine Frame
+tile.gateway.cleanroom_machine_frame.name=Cleanroom Machine Frame
+tile.gateway.mindful_sand.name=Mindful Sand
 
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution
 fluid.gateway.uranium_titanide_mixture.name=Uranium Titanide Mixture
 fluid.gateway.pyro_cinnabar_mixture.name=Pyrotheum-Cinnabar Mixture
 fluid.gateway.blaze_superfuel.name=Blaze Superfuel
+fluid.gateway.liquid_enlightenment.name=Liquid Enlightenment
+fluid.gateway.condensed_thoughts.name=Condensed Thoughts
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
 

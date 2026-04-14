@@ -77,3 +77,65 @@ mods.extrautils2.resonator.recipeBuilder()
     .requirementText("Must be in a Magical Forest, outside of Overworld")
     .energy(2000)
     .register()
+
+// Transcendent Matrix line
+mods.nuclearcraft.infuser.builder()
+    .input(item("thaumcraft:brain"))
+    .fluidInput(fluid("difluorobenzene") * 125)
+    .output(item("gateway:purified_brain"))
+    .register()
+
+mods.actuallyadditions.empowerer.recipeBuilder()
+    .mainInput(item("forge:bucketfilled").withNbt([FluidName:"purifying_fluid",Amount:1000]))
+    .input(item("thermalfoundation:material", 102), item("prodigytech:aeternus_crystal"), item("gateway:starsteel_ingot"), item("gateway:purified_brain"))
+    .output(item("forge:bucketfilled").withNbt([FluidName:"liquid_enlightenment",Amount:1000]))
+    .color(0xe6ef7d)
+    .time(200)
+    .energy(20000)
+    .register()
+
+mods.nuclearcraft.crystallizer.builder()
+    .fluidInput(fluid("liquid_enlightenment") * 80)
+    .output(item("gateway:crystallized_enlightenment"))
+    .register()
+
+mods.factorytech.agitator.recipeBuilder()
+    .input(item("appliedenergistics2:material", 8))
+    .fluidInput(fluid("essence") * 250, fluid("milk_chocolate") * 288)
+    .fluidOutput(fluid("condensed_thoughts") * 5)
+    .register()
+
+def sandLearning(world, blockPos) {
+    def shifts = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1]]
+    for (def x in shifts) {
+        def shifted = blockPos.add(x[0], x[1], x[2])
+        if (world.getBlockState(shifted).getBlock().getRegistryName() == resource("minecraft:sand")) {
+            world.setBlockState(shifted, blockstate("gateway:mindful_sand"))
+        }
+    }
+    return false
+}
+
+in_world_crafting.fluid_to_block.recipeBuilder()
+    .fluidInput(fluid("condensed_thoughts"))
+    .input(item("gateway:crystallized_enlightenment"))
+    .output(block("minecraft:air"))
+    .afterRecipe((world, blockPos) -> sandLearning(world, blockPos))
+    .register()
+
+mods.nuclearcraft.manufactory.builder()
+    .input(item("thaumcraft:plate", 3))
+    .output(item("gateway:voidmetal_mesh"))
+    .register()
+
+mods.nuclearcraft.multiblock_infiltrator.builder()
+    .input(item("gateway:voidmetal_mesh"))
+    .fluidInput(fluid("diamond") * 111)
+    .fluidInput(fluid("condensed_thoughts") * 250)
+    .output(item("gateway:transcendental_matrix"))
+    .heatingFactor(2.0)
+    .register()
+
+TooltipEvents.setTooltip(fluid("condensed_thoughts"), "Duplicate this with Sand Learning Process!")
+TooltipEvents.setTooltip(fluid("liquid_enlightenment"), "Craft the bucket first!")
+TooltipEvents.setTooltip(item("gateway:mindful_sand"), "Has a chance to transform into Condensed Thoughts upon receiving a block update.")
