@@ -1,0 +1,17 @@
+filename = 'ae2cellrender-2.3.jar'
+name = 'AE2 Cell Render'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ae2cellrender-2.3.jar'
+
+[download]
+hash = '9fdf508ed3e9081b1c075b7ea8f251c6be5a41b5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7799254
+project-id = 1493498

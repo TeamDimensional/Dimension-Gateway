@@ -1,0 +1,17 @@
+filename = 'XNetAdditions-0.1.2.jar'
+name = 'XNet: Additions'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'XNetAdditions-0.1.2.jar'
+
+[download]
+hash = '1b41f1a448f1e268a60a06922cb0986242b04b3b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7922772
+project-id = 1504502

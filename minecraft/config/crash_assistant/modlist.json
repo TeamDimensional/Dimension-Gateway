@@ -111,6 +111,14 @@
     "curseForgeHash": 2199621341,
     "modrinthHash": "972169ccbb3c214108f7775fc9ffe9edea66a118"
   },
+  "ae2cellrender-2.3.jar": {
+    "jarName": "ae2cellrender-2.3.jar",
+    "modId": "ae2cellrender",
+    "name": "AE2 Cell Render",
+    "version": "2.3",
+    "curseForgeHash": 2884126535,
+    "modrinthHash": "9fdf508ed3e9081b1c075b7ea8f251c6be5a41b5"
+  },
   "AE2CT-Legacy-0.1.2.jar": {
     "jarName": "AE2CT-Legacy-0.1.2.jar",
     "modId": "ae2ctl",
@@ -1535,12 +1543,20 @@
     "curseForgeHash": 1072171054,
     "modrinthHash": "29f89705011794531150e5e00a73d62cc0134888"
   },
-  "xnet-1.12-1.8.4-ynet.jar": {
-    "jarName": "xnet-1.12-1.8.4-ynet.jar",
+  "XNet-1.8.18.jar": {
+    "jarName": "XNet-1.8.18.jar",
     "modId": "xnet",
     "name": "XNet",
-    "version": "1.12-1.8.4-ynet",
-    "curseForgeHash": 2659182050,
-    "modrinthHash": "d5886bc1e309a5d31fd251fa37c4c622e50dd715"
+    "version": "1.8.18",
+    "curseForgeHash": 1883577094,
+    "modrinthHash": "b744d4d07ee5845af2e0dd9a786dc48ba9b31ef9"
+  },
+  "XNetAdditions-0.1.2.jar": {
+    "jarName": "XNetAdditions-0.1.2.jar",
+    "modId": "xnetadditions",
+    "name": "XNet: Additions",
+    "version": "0.1.2",
+    "curseForgeHash": 3622113507,
+    "modrinthHash": "1b41f1a448f1e268a60a06922cb0986242b04b3b"
   }
 }

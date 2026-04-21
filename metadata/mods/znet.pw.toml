@@ -1,16 +1,17 @@
-filename = 'xnet-1.12-1.8.4-ynet.jar'
-name = 'XNet'
-side = 'both'
+filename = 'XNet-1.8.18.jar'
+name = 'ZNet'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'XNet-1.8.18'
 
 [download]
-hash = 'd5886bc1e309a5d31fd251fa37c4c622e50dd715'
+hash = 'b744d4d07ee5845af2e0dd9a786dc48ba9b31ef9'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5665405
-project-id = 999559
+file-id = 7864055
+project-id = 1335763
