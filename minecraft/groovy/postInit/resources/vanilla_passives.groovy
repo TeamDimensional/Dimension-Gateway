@@ -38,9 +38,9 @@ mods.astralsorcery.light_transmutation.recipeBuilder()
 
 // Lapis (Flower line, tier 5)
 mods.essentialcraft.radiating_chamber.recipeBuilder()
-    .input(item("botania:dye", 11) * 16, item("gateway:moonlight_powder"))
-    .output(item("actuallyadditions:item_dust", 4) * 12)
-    .time(200)
+    .input(item("botania:dye", 11), item("gateway:moonlight_powder"))
+    .output(item("actuallyadditions:item_dust", 4) * 8)
+    .time(160)
     .mruPerTick(10.0f)
     .register()
 

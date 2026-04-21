@@ -90,13 +90,13 @@
     "curseForgeHash": 4128642090,
     "modrinthHash": "b6a7348001eb65d2c145b9121709632d7ce15675"
   },
-  "advancedrocketry-2.2.5hotfix.jar": {
-    "jarName": "advancedrocketry-2.2.5hotfix.jar",
+  "advancedrocketry-2.2.6.jar": {
+    "jarName": "advancedrocketry-2.2.6.jar",
     "modId": "advancedrocketry",
     "name": "Advanced Rocketry",
-    "version": "2.2.5hotfix",
-    "curseForgeHash": 349343919,
-    "modrinthHash": "9a880b638ca4d6eddbdc99a165a2f5b00f9ca9ab"
+    "version": "2.2.6",
+    "curseForgeHash": 236388594,
+    "modrinthHash": "56a7bca21220c9a8c2726944fdc24be1cfdc2662"
   },
   "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar": {
     "jarName": "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar",
@@ -127,13 +127,13 @@
     "curseForgeHash": 1277871034,
     "modrinthHash": "c2757db9c8b124c6def1f384e6b412e4ce70a5b5"
   },
-  "ae2powertools-1.5.2.jar": {
-    "jarName": "ae2powertools-1.5.2.jar",
+  "ae2powertools-1.5.3.jar": {
+    "jarName": "ae2powertools-1.5.3.jar",
     "modId": "ae2powertools",
     "name": "AE2 PowerTools",
-    "version": "1.5.2",
-    "curseForgeHash": 2728197179,
-    "modrinthHash": "ca3ea991dfed4a22001592de01fb0d6bf4b4ba37"
+    "version": "1.5.3",
+    "curseForgeHash": 1000000964,
+    "modrinthHash": "dd50128ee7d9744d8b62f0617bf9cf8fc1861f7b"
   },
   "aether-1.12.2-v1.5.4.1.jar": {
     "jarName": "aether-1.12.2-v1.5.4.1.jar",
@@ -268,13 +268,13 @@
     "curseForgeHash": 2546524333,
     "modrinthHash": "83a1864dd78f48102609849dd36866d6cf32b907"
   },
-  "Botania r1.10-371.jar": {
-    "jarName": "Botania r1.10-371.jar",
+  "botania-r1.10-372.jar": {
+    "jarName": "botania-r1.10-372.jar",
     "modId": "botania",
-    "name": "Botania",
-    "version": "r1.10-371",
-    "curseForgeHash": 3825344153,
-    "modrinthHash": "37f9cbb5eedbc1706ae38e30f634ca2937e1fb33"
+    "name": "Botania CEu",
+    "version": "r1.10-372",
+    "curseForgeHash": 3415584238,
+    "modrinthHash": "98bfad8a161266df8cce803d6d700b79ba9034ed"
   },
   "BrandonsCore-1.12.2-2.4.20.162-universal.jar": {
     "jarName": "BrandonsCore-1.12.2-2.4.20.162-universal.jar",
@@ -324,13 +324,13 @@
     "curseForgeHash": 696948058,
     "modrinthHash": "61b193ac80f2f3dacbf50c57a3de5238599de4e1"
   },
-  "cells-0.5.14-beta2.jar": {
-    "jarName": "cells-0.5.14-beta2.jar",
+  "cells-0.5.15-beta.jar": {
+    "jarName": "cells-0.5.15-beta.jar",
     "modId": "cells",
     "name": "C.E.L.L.S",
-    "version": "0.5.14-beta2",
-    "curseForgeHash": 3494611956,
-    "modrinthHash": "46d43b77e5700c32ed3b687c8eb70ed30e9b1c07"
+    "version": "0.5.15-beta",
+    "curseForgeHash": 2775944909,
+    "modrinthHash": "88fa8e18279383fbf3fe0849bd589ae44df0358d"
   },
   "champions-1.12.2-1.0.11.10.jar": {
     "jarName": "champions-1.12.2-1.0.11.10.jar",
@@ -659,13 +659,13 @@
     "curseForgeHash": 2558337832,
     "modrinthHash": "abab17e7e19cba9ab575425a32419eb9db9cb876"
   },
-  "groovyscript-1.4.2.jar": {
-    "jarName": "groovyscript-1.4.2.jar",
+  "groovyscript-1.4.3.jar": {
+    "jarName": "groovyscript-1.4.3.jar",
     "modId": "groovyscript",
     "name": "GroovyScript",
-    "version": "1.4.2",
-    "curseForgeHash": 978514508,
-    "modrinthHash": "82a50580a86fec6d62c9b23511a536e1db7eb974"
+    "version": "1.4.3",
+    "curseForgeHash": 3607554496,
+    "modrinthHash": "48ffe55af9173b3f9ee764f678b6b58d70dab90c"
   },
   "Guide-API-1.12-2.1.8-63.jar": {
     "jarName": "Guide-API-1.12-2.1.8-63.jar",
@@ -675,13 +675,13 @@
     "curseForgeHash": 1899009469,
     "modrinthHash": "095b3b85d05118602c7678beb1e56d26930fd0e7"
   },
-  "HadEnoughItems_1.12.2-4.30.2.jar": {
-    "jarName": "HadEnoughItems_1.12.2-4.30.2.jar",
+  "HadEnoughItems_1.12.2-4.30.3.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.30.3.jar",
     "modId": "jei",
     "name": "Had Enough Items",
-    "version": "4.30.2",
-    "curseForgeHash": 2029641242,
-    "modrinthHash": "1e7beceae089e074eb073e9a72e39e408d982a6b"
+    "version": "4.30.3",
+    "curseForgeHash": 2935036237,
+    "modrinthHash": "4e92162129aa85280ef0c9a05cb1b1c11e2c02ab"
   },
   "Hwyla-1.8.26-B41_1.12.2.jar": {
     "jarName": "Hwyla-1.8.26-B41_1.12.2.jar",
@@ -891,13 +891,13 @@
     "curseForgeHash": 3987416114,
     "modrinthHash": "6c163c588258b8d0cf0b3488fc501203ff3b26f6"
   },
-  "modularui-3.1.5.jar": {
-    "jarName": "modularui-3.1.5.jar",
+  "modularui-3.1.6.jar": {
+    "jarName": "modularui-3.1.6.jar",
     "modId": "modularui",
     "name": "ModularUI",
-    "version": "3.1.5",
-    "curseForgeHash": 3897925040,
-    "modrinthHash": "f03ffc6b97a6bcf4e3de920894db2142d48c63a9"
+    "version": "3.1.6",
+    "curseForgeHash": 2061132058,
+    "modrinthHash": "be2d067fe4e8815c5c025416019f9a8037d26be0"
   },
   "moreoverlays-1.15.1-mc1.12.2.jar": {
     "jarName": "moreoverlays-1.15.1-mc1.12.2.jar",
@@ -1490,13 +1490,13 @@
     "curseForgeHash": 2570982046,
     "modrinthHash": "875b2192e4897267d524202805d2dbb1b1877ff7"
   },
-  "vintagefix-0.6.2.jar": {
-    "jarName": "vintagefix-0.6.2.jar",
+  "vintagefix-0.7.0.jar": {
+    "jarName": "vintagefix-0.7.0.jar",
     "modId": "vintagefix",
     "name": "VintageFix",
-    "version": "0.6.2",
-    "curseForgeHash": 1319026169,
-    "modrinthHash": "eb820c6e58a4d091b80311a28650c7a1b99a1b14"
+    "version": "0.7.0",
+    "curseForgeHash": 1803611387,
+    "modrinthHash": "a753529902a23e17da091f15b6dee6690f75b217"
   },
   "visualores-0.2.7.jar": {
     "jarName": "visualores-0.2.7.jar",
