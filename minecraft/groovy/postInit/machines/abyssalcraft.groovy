@@ -85,7 +85,7 @@ mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:shubniggurathstatue
 
 mods.calculator.flawless_calculator.recipeBuilder()
     .output(item("abyssalcraft:monolithstone") * 16)
-    .input(item("industrialforegoing:artificial_dye", 15), item("bloodmagic:blood_rune", 4), item("bloodmagic:blood_rune", 4),  item("industrialforegoing:artificial_dye", 15))
+    .input(item("industrialforegoing:artificial_dye", 15), item("minecraft:stone"), ore("ingotPlutonium242All"), item("enderio:item_material", 20))
     .register()
 
 def gods = ["cthulhu", "hastur", "jzahar", "azathoth", "nyarlathotep", "yogsothoth", "shubniggurath"]
@@ -105,10 +105,10 @@ for (def g in gods) {
 // New crafting chains for various energy collectors and condensers to remove the tiers 1 and 4
 def items = [
     ["energy_pedestal", item("enderio:item_material", 43)],
-    ["sacrificial_altar", item("bloodmagic:blood_rune", 3)],
+    ["sacrificial_altar", item("enderio:block_killer_joe")],
     ["energy_collector", item("deepresonance:energy_collector")],
-    ["energy_relay", item("bloodmagic:blood_rune", 5)], 
-    ["energy_container", item("bloodmagic:blood_rune", 7)],
+    ["energy_relay", item("astralsorcery:blockattunementrelay")],
+    ["energy_container", item("enderio:block_cap_bank", 3)],
 ]
 for (def pair in items) {
     def it = pair[0]

@@ -112,6 +112,8 @@ def tier10 = [
     fluid("rocketfuel"), fluid("titanium_aluminum_nitride"), fluid("titanium_aluminide"), fluid("pyro_cinnabar_mixture"),
     // Moon
     fluid("uranium"), fluid("uranium_titanide_mixture"), fluid("thorium"), 
+    // Thaumcraft part 1.5
+    fluid("molten_ichorium"),
 ]
 
 def tier11 = [
@@ -120,8 +122,6 @@ def tier11 = [
     fluid("liquid_sunshine"), fluid("cloud_seed"), fluid("cloud_seed_concentrated"), fluid("electrical_steel"), fluid("energetic_alloy"),
     fluid("vibrant_alloy"), fluid("redstone_alloy"), fluid("conductive_iron"), fluid("pulsating_iron"), fluid("dark_steel"), fluid("soularium"),
     fluid("end_steel"), fluid("ender_distillation"), fluid("vapor_of_levity"), fluid("crystalline_alloy"), fluid("melodic_alloy"),
-    // Blood Magic
-    fluid("lifeessence"), 
     // NCO Fission
     fluid("boron_10"), fluid("boron_11"), fluid("lithium_6"), fluid("lithium_7"), fluid("corium"),
     fluid("high_pressure_steam"), fluid("condensate_water"),
@@ -129,8 +129,8 @@ def tier11 = [
     fluid("strontium_90"), fluid("molybdenum"), fluid("ruthenium_106"), fluid("caesium_137"), fluid("promethium_147"), fluid("europium_155"),
     fluid("neodymium"), fluid("bismuth"), fluid("polonium"), fluid("radium"), fluid("hot_mercury"), fluid("exhaust_mercury"),
     fluid("high_pressure_mercury"),
-    // Thaumcraft part 1.5
-    fluid("molten_ichorium"),
+    // Abyssalcraft
+    fluid("liquidcoralium"),
 ]
 
 def tier12 = [
@@ -138,12 +138,17 @@ def tier12 = [
     fluid("iridium"), fluid("mana"), fluid("enrichedlava"),
     fluid("yttrium"), fluid("yag"), fluid("nd_yag"),
     fluid("stellar_alloy"),
-    // Abyssalcraft
-    fluid("liquidcoralium"),
     // Heat Exchangers
     fluid("low_pressure_steam"),
     // Molten Salt Reactors
     fluid("nak_hot"), fluid("nak"), fluid("flibe"),
+    // Witchery
+    fluid("witchery.liquid_brew"), fluid("witchery.brew"), fluid("witchery.disease"),
+]
+
+def tier13 = [
+    // Witchery part 2
+    fluid("witchery.flowing_spirit"), fluid("witchery.hollow_tears"),
 ]
 
 def tier14 = [
@@ -221,6 +226,7 @@ for (def it in tier9) TooltipEvents.setTier(it, 9)
 for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in tier11) TooltipEvents.setTier(it, 11)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
+for (def it in tier12) TooltipEvents.setTier(it, 13)
 for (def it in tier14) TooltipEvents.setTier(it, 14)
 
 for (def it in removeFluids) {

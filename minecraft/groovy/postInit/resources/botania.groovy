@@ -57,7 +57,7 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
 mods.botania.elven_trade.removeByOutputs(item("botania:quartz", 5))
 mods.botania.elven_trade.recipeBuilder()
     .input(item("botania:quartz", 3))
-    .input(item("bloodmagic:item_demon_crystal", 1))
+    .input(item("witchery:ender_dew"))
     .input(item("nuclearcraft:uranium"))  // U-233
     .output(item("botania:quartz", 5))
     .register()

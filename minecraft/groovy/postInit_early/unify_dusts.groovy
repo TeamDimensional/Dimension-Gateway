@@ -67,8 +67,7 @@ GatewayHelpers.hide(item("prodigytech:coal_dust"))
 
 // Iron Dust
 def ironDusts = [
-    item("prodigytech:iron_dust"), item("appliedenergistics2:material", 49), item("actuallyadditions:item_dust"),
-    item("bloodmagic:component", 19), item("enderio:item_material", 24),
+    item("prodigytech:iron_dust"), item("appliedenergistics2:material", 49), item("actuallyadditions:item_dust"), item("enderio:item_material", 24),
 ]
 for (def it in ironDusts) {
     ore("dustIron").remove(it)
@@ -77,8 +76,7 @@ for (def it in ironDusts) {
 
 // Gold Dust
 def goldDusts = [
-    item("prodigytech:gold_dust"), item("appliedenergistics2:material", 51), item("actuallyadditions:item_dust", 1),
-    item("bloodmagic:component", 20), item("enderio:item_material", 25),
+    item("prodigytech:gold_dust"), item("appliedenergistics2:material", 51), item("actuallyadditions:item_dust", 1), item("enderio:item_material", 25),
 ]
 for (def it in goldDusts) {
     ore("dustGold").remove(it)
@@ -128,8 +126,7 @@ GatewayHelpers.hide(item("enderio:item_material", 32))
 
 // Coal Dust
 def coalDusts = [
-    item("nuclearcraft:gem_dust", 7), item("actuallyadditions:item_dust", 6),
-    item("bloodmagic:component", 21), item("enderio:item_material", 23),
+    item("nuclearcraft:gem_dust", 7), item("actuallyadditions:item_dust", 6), item("enderio:item_material", 23),
 ]
 for (def it in coalDusts) {
     ore("dustCoal").remove(it)
@@ -137,24 +134,18 @@ for (def it in coalDusts) {
 }
 
 // Sulfur Dust
-mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 23) * 8)
 // mods.abyssalcraft.transmutation.removeByOutput(item("abyssalcraft:sulfur"))
 
-def sulfurDusts = [
-    item("nuclearcraft:gem_dust", 6), item("bloodmagic:component", 23), item("abyssalcraft:sulfur")
-]
+def sulfurDusts = [item("nuclearcraft:gem_dust", 6), item("abyssalcraft:sulfur")]
 for (def it in sulfurDusts) {
     ore("dustSulfur").remove(it)
     GatewayHelpers.hide(it)
 }
 
 // Saltpeter Dust
-mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 24) * 4)
 furnace.removeByOutput(item("abyssalcraft:nitre"))
 
-def saltpeterDusts = [
-    item("qmd:chemical_dust", 2), item("bloodmagic:component", 24), item("abyssalcraft:nitre")
-]
+def saltpeterDusts = [item("qmd:chemical_dust", 2), item("abyssalcraft:nitre")]
 for (def it in saltpeterDusts) {
     ore("dustSaltpeter").remove(it)
     GatewayHelpers.hide(it)

@@ -34,22 +34,5 @@ mods.thermalexpansion.crucible.removeByInput(item("tconstruct:ore", 1))
 for (def i in 0..8) mods.thermalexpansion.crucible.removeByInput(item("thermalfoundation:ore", i))
 for (def i in 0..4) mods.thermalexpansion.crucible.removeByInput(item("thermalfoundation:ore_fluid", i))
 
-// Alchemy Table
-mods.bloodmagic.alchemy_table.removeByOutput(item("minecraft:redstone") * 8)
-mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 19) * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("bloodmagic:component", 20) * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("essentialcraft:genitem", 51) * 2)
-for (def i in 3..7) mods.bloodmagic.alchemy_table.removeByOutput(item("nuclearcraft:dust", i) * 2)
-for (def i in 64..72) mods.bloodmagic.alchemy_table.removeByOutput(item("thermalfoundation:material", i) * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("thermalfoundation:material", 772) * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("appliedenergistics2:material", 2) * 2)
-for (def i in [0, 2]) mods.bloodmagic.alchemy_table.removeByOutput(item("nuclearcraft:gem_dust", i) * 2)
-for (def i in [3, 4]) mods.bloodmagic.alchemy_table.removeByOutput(item("qmd:dust", i) * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("libvulpes:productdust") * 2)
-for (def i in [4, 7]) mods.bloodmagic.alchemy_table.removeByOutput(item("actuallyadditions:item_dust", i) * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("prodigytech:emerald_dust") * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("jaopca:dust.aquamarine") * 2)
-mods.bloodmagic.alchemy_table.removeByOutput(item("astralsorcery:itemcraftingcomponent", 2) * 2)
-
 // TODO - ore leacher
 // TODO - mass spectrometer

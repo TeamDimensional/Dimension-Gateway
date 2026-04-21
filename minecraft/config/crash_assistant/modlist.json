@@ -37,6 +37,11 @@
     "curseForgeHash": 2621803774,
     "modrinthHash": "3fdfffe4fd446461ea9c3cb044484588997b9dbc"
   },
+  "!mod-director-launchwrapper-1.9.1.jar": {
+    "jarName": "!mod-director-launchwrapper-1.9.1.jar",
+    "curseForgeHash": 2239322327,
+    "modrinthHash": "13d7c102ae616f8fa74b4ce5f2d8cc26fc397026"
+  },
   "!Red-Core-MC-1.8-1.12-0.7.1.jar": {
     "jarName": "!Red-Core-MC-1.8-1.12-0.7.1.jar",
     "modId": "redcore",
@@ -233,22 +238,6 @@
     "version": "1.12.2-1.4.0",
     "curseForgeHash": 2072195003,
     "modrinthHash": "b47558862e4bb042ec8e851334b564b04388d35e"
-  },
-  "BloodMagic-1.12.2-2.4.3-105.jar": {
-    "jarName": "BloodMagic-1.12.2-2.4.3-105.jar",
-    "modId": "bloodmagic",
-    "name": "Blood Magic: Alchemical Wizardry",
-    "version": "1.12.2-2.4.3-105",
-    "curseForgeHash": 4036556600,
-    "modrinthHash": "541b63338663dbeb5fc818608a70ad3fff129177"
-  },
-  "bmj-1.0.2.jar": {
-    "jarName": "bmj-1.0.2.jar",
-    "modId": "bmj",
-    "name": "BMJ",
-    "version": "1.0.2",
-    "curseForgeHash": 2442551817,
-    "modrinthHash": "6d42f5c2343268769b6e3752d1ce27cbed96b497"
   },
   "BNBGamingCore-1.12.2-0.12.0.jar": {
     "jarName": "BNBGamingCore-1.12.2-0.12.0.jar",
@@ -1508,6 +1497,22 @@
     "version": "0.2.7",
     "curseForgeHash": 3649550098,
     "modrinthHash": "46a27e52e387a17308e8812ea368a34777afc63d"
+  },
+  "witcherycompanion-0.36.1-beta.jar": {
+    "jarName": "witcherycompanion-0.36.1-beta.jar",
+    "modId": "witcherycompanion",
+    "name": "Witchery: Companion",
+    "version": "0.36.1-beta",
+    "curseForgeHash": 2026184208,
+    "modrinthHash": "af3f98b87108bba94bd365a47c6b94a1546ab33d"
+  },
+  "WitcheryResurrected-1.12.2-0.5.2.4-forge-all.jar": {
+    "jarName": "WitcheryResurrected-1.12.2-0.5.2.4-forge-all.jar",
+    "modId": "witchery",
+    "name": "Witchery: Resurrected",
+    "version": "0.5.2.4-forge",
+    "curseForgeHash": 2371104269,
+    "modrinthHash": "f5e9e423a5393c9beaa43e801e73b3bb3b36a2c6"
   },
   "woot-1.12.2-1.4.11.jar": {
     "jarName": "woot-1.12.2-1.4.11.jar",
