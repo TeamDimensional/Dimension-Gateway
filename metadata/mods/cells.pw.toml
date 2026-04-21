@@ -1,17 +1,17 @@
-filename = 'cells-0.5.14-beta2.jar'
+filename = 'cells-0.5.15-beta.jar'
 name = 'C.E.L.L.S'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'C.E.L.L.S 0.5.14-beta2'
+x-prismlauncher-version-number = 'C.E.L.L.S 0.5.15-beta'
 
 [download]
-hash = '46d43b77e5700c32ed3b687c8eb70ed30e9b1c07'
+hash = '88fa8e18279383fbf3fe0849bd589ae44df0358d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7921511
+file-id = 7932831
 project-id = 1470965

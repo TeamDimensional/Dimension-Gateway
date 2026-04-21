@@ -1,17 +1,17 @@
-filename = 'Botania r1.10-371.jar'
-name = 'Botania CEu'
+filename = 'botania-r1.10-372.jar'
+name = 'Botania'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'r1.10-371a'
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Botania CEu r1.10-372'
 
 [download]
-hash = '37f9cbb5eedbc1706ae38e30f634ca2937e1fb33'
+hash = '98bfad8a161266df8cce803d6d700b79ba9034ed'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7805030
+file-id = 7925896
 project-id = 1179448
