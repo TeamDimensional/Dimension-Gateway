@@ -643,13 +643,13 @@
     "curseForgeHash": 4227961345,
     "modrinthHash": "83b6e36d415f6679495b2c04ffe453817d43419e"
   },
-  "gatewaycore-1.6.4.jar": {
-    "jarName": "gatewaycore-1.6.4.jar",
+  "gatewaycore-1.6.5.jar": {
+    "jarName": "gatewaycore-1.6.5.jar",
     "modId": "gatewaycore",
     "name": "Gateway Core",
-    "version": "1.6.4",
-    "curseForgeHash": 1233380750,
-    "modrinthHash": "5d57f7aa8df941beabc739f4f3c10c36b4f30e0b"
+    "version": "1.6.5",
+    "curseForgeHash": 2778212107,
+    "modrinthHash": "aa84f754e16d19e175a3e4b1096538563dbab3af"
   },
   "geckolib-forge-1.12.2-3.0.31.jar": {
     "jarName": "geckolib-forge-1.12.2-3.0.31.jar",
