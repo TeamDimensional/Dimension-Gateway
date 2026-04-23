@@ -1,5 +1,5 @@
 setIcon(<enderio:item_material:1>)
-setTitle("Bloody Becoming")
+setTitle("Horror Stories")
 setDescription("Construct an Industrial Machine Chassis")
 addParent("triumph:gateway/progression/tier10")
 setPos(50,0)

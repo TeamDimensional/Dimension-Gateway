@@ -38,15 +38,15 @@ TooltipEvents.setUnlock(item("actuallyadditions:block_empowerer"), 9)
 TooltipEvents.setTierName(10, "Lunar Wizardry")
 TooltipEvents.setUnlock(item("libvulpes:productingot", 7), 10)
 
-// Blood Magic, EnderIO, Woot, Fission Reactors
-TooltipEvents.setTierName(11, "Bloody Becoming")
+// EnderIO, Woot, Fission Reactors, Abyssalcraft part 1
+TooltipEvents.setTierName(11, "Horror Stories")
 TooltipEvents.setUnlock(item("enderio:item_material", 1), 11)
 
-// Advanced Rocketry part 2, Abyssalcraft part 1, Salt Reactors
-TooltipEvents.setTierName(12, "Interstellar Mastery")
-TooltipEvents.setUnlock(item("advancedrocketry:satellitebuilder"), 12)
+// Witchery, Advanced Rocketry part 2, Salt Reactors
+TooltipEvents.setTierName(12, "Galactic Domination")
+TooltipEvents.setUnlock(item("witchery:witches_oven"), 12)
 
-// Hoanna, Elven, Gaia, Sentient
+// Hoanna, Elven, Gaia, Sentient, Witchery part 2
 TooltipEvents.setTierName(13, "Sorcery from Beyond")
 TooltipEvents.setUnlock(item("extrautils2:decorativesolid", 8), 13)
 

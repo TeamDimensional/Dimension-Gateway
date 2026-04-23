@@ -34,7 +34,7 @@ def dreamItems = [
     mitem("substitution_brew"), mitem("sleeping_brew"), mitem("sleeping_apple"), mitem("congealed_spirit"),
     mitem("infused_soaring_brew"), mitem("infused_grave_brew"), mitem("symbology_book"), mitem("ent_twig"),
     mitem("disturbed_cotton"), mitem("fanciful_thread"), mitem("tormented_twine"), mitem("subdued_spirit"), mitem("subdued_village_spirit"),
-    mitem("mystic_branch"), mitem("bark_belt"), mitem("fanciful_thinking_charm"),
+    mitem("mystic_branch"), mitem("bark_belt"), mitem("fanciful_thinking_charm"), mitem("wispy_cotton"),
 ]
 
 def books = [

@@ -160,7 +160,7 @@ for (def it in ["altar", "pedestal"]) {
     omotholItems.add(mitem("ritual_${it}_dark_ethaxium"))
 }
 
-for (def it in abyssalItems) TooltipEvents.setTier(it, 12)
+for (def it in abyssalItems) TooltipEvents.setTier(it, 11)
 for (def it in omotholItems) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
@@ -170,7 +170,7 @@ for (def it in removeFurnace) furnace.removeByOutput(it)
 for (def it in removeRitual) mods.abyssaltweaker.ritual.removeByOutput(it)
 for (def it in removeCrystallizer) mods.abyssaltweaker.crystallizer.removeByOutput(it)
 for (def it in statues) TooltipEvents.setTooltip(it, "Found in Omothol Temples.")
-for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Can be looted in Omothol before Crystallizer is available.")
+for (def it in crystalClusters) TooltipEvents.setTooltip(it, "Found in Omothol Villages.")
 TooltipEvents.setTooltip(item("abyssalcraft:odb"), "Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.")
 for (int i in 0..27) crafting.remove("abyssalcraft:crystalshard_${i}_alt")
 

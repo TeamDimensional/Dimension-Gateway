@@ -85,7 +85,7 @@ mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:shubniggurathstatue
 
 mods.calculator.flawless_calculator.recipeBuilder()
     .output(item("abyssalcraft:monolithstone") * 16)
-    .input(item("industrialforegoing:artificial_dye", 15), item("minecraft:stone"), ore("ingotPlutonium242All"), item("enderio:item_material", 20))
+    .input(item("thaumicaugmentation:stone", 11), item("extrautils2:compressedcobblestone", 3), ore("ingotPlutonium242All"), item("enderio:item_material", 20))
     .register()
 
 def gods = ["cthulhu", "hastur", "jzahar", "azathoth", "nyarlathotep", "yogsothoth", "shubniggurath"]
@@ -127,9 +127,9 @@ for (def pair in items) {
         .energy(400)
         .centerItem(pair[1])
         .input(
-            item("calculator:enddiamond"), item("advancedrocketry:productplate", 1), item("botania:manaresource"),
-            item("minecraft:stone"), item("astralsorcery:itemcraftingcomponent", 4), item("minecraft:stone"), item("minecraft:ender_eye"),
-            item("advancedrocketry:productplate", 1))
+            item("calculator:enddiamond"), item("gateway:transcendental_matrix"), item("botania:manaresource"),
+            item("abyssalcraft:monolithstone"), item("astralsorcery:itemcraftingcomponent", 4), item("abyssalcraft:monolithstone"), item("minecraft:ender_eye"),
+            item("gateway:transcendental_matrix"))
         .register()
 
     mods.abyssaltweaker.ritual.recipeBuilder()

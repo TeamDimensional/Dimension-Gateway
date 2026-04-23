@@ -1,10 +1,10 @@
-setIcon(<advancedrocketry:satellitebuilder>)
-setTitle("Interstellar Mastery")
-setDescription("Build a Satellite Builder")
+setIcon(<witchery:witches_oven>)
+setTitle("Galactic Domination")
+setDescription("Build a Witches' Oven")
 addParent("triumph:gateway/progression/tier11")
 setPos(70,52)
 
 criteria = addCriteria("tier12", "minecraft:inventory_changed")
-criteria.setItem("advancedrocketry:satellitebuilder")
+criteria.setItem("witchery:witches_oven")
 
 addRewardFunction("triumph:tier12")

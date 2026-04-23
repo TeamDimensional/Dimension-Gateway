@@ -42,7 +42,7 @@ for (def i in 0..5) part1Items.add(mitem("itemupgrade", i))
 for (def i in 0..3) part1Items.add(item("libvulpes:hatch", i))
 
 def part2Items = [
-    mitem("vacuumlaser"), mitem("precisionlaseretcher"), mitem("observatory"), mitem("planetanalyser"),
+    mitem("satellitebuilder"), mitem("vacuumlaser"), mitem("precisionlaseretcher"), mitem("observatory"), mitem("planetanalyser"),
     mitem("blackholegenerator"), mitem("microwavereciever"), mitem("warpcore"), mitem("biomescanner"),
     mitem("spaceelevatorcontroller"), mitem("gravitymachine"), mitem("spacelaser"), mitem("stationmarker"),
     mitem("advrocketmotor"), mitem("nuclearrocketmotor"), mitem("nuclearfueltank"), mitem("nuclearcore"),
