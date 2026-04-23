@@ -1301,6 +1301,14 @@
     "curseForgeHash": 3823734376,
     "modrinthHash": "4041607128a3cea77d72d0bc7dcea90df6836c7f"
   },
+  "supermobtracker-1.2.5.jar": {
+    "jarName": "supermobtracker-1.2.5.jar",
+    "modId": "supermobtracker",
+    "name": "Super Mob Tracker",
+    "version": "1.2.5",
+    "curseForgeHash": 2706844251,
+    "modrinthHash": "d7c91210db3a562c9dd5e6b713beba800d41abd9"
+  },
   "supersoundmuffler-revived_1.12.2_1.0.2.10.jar": {
     "jarName": "supersoundmuffler-revived_1.12.2_1.0.2.10.jar",
     "modId": "supersoundmuffler",

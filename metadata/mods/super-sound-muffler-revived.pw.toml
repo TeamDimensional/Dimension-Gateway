@@ -1,9 +1,10 @@
 filename = 'supersoundmuffler-revived_1.12.2_1.0.2.10.jar'
 name = 'Super Sound Muffler: Revived'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = []
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Super Sound Muffler: Revived v1.0.2.10'
 
 [download]
 hash = 'dbd647ab54a365b6f1a67d569fca20ee33fb958a'
