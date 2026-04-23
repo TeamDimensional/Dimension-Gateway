@@ -1,55 +1,55 @@
 import com.dimensional.gatewaycore.events.TooltipEvents
 
-TooltipEvents.setTierName(1, "Beginnings")
+TooltipEvents.setTierName(1, "tooltip.gateway.tier1")
 
 // Aurorian, Roots, Nature's Aura part 0
-TooltipEvents.setTierName(2, "Temple Run")
+TooltipEvents.setTierName(2, "tooltip.gateway.tier2")
 TooltipEvents.setUnlock(item("theaurorian:aurorianportalframebricks"), 2)
 
 // Smeltery, Immersive Engineering, Prodigy Tech part 1, Nature's Aura part 1
-TooltipEvents.setTierName(3, "Early Metallurgy")
+TooltipEvents.setTierName(3, "tooltip.gateway.tier3")
 TooltipEvents.setUnlock(item("tconstruct:materials"), 3)
 
 // Actually Additions part 1, Embers, Immersive Petroleum
-TooltipEvents.setTierName(4, "Mantle Drilling")
+TooltipEvents.setTierName(4, "tooltip.gateway.tier4")
 TooltipEvents.setUnlock(item("embers:mech_core"), 4)
 
 // Thaumcraft part 1, Essentialcraft part 1, Prodigy Tech part 2
-TooltipEvents.setTierName(5, "Basics of Magic")
+TooltipEvents.setTierName(5, "tooltip.gateway.tier5")
 TooltipEvents.setUnlock(item("thaumcraft:salis_mundus"), 5)
 
 // End, Astral Sorcery part 1, Calculator
-TooltipEvents.setTierName(6, "Sky Exploration")
+TooltipEvents.setTierName(6, "tooltip.gateway.tier6")
 TooltipEvents.setUnlock(item("minecraft:ender_eye"), 6)
 
 // Aether, Aetherworks, Offering to the Gods, RFTools, Extra Utils
-TooltipEvents.setTierName(7, "Heavenly Research")
+TooltipEvents.setTierName(7, "tooltip.gateway.tier7")
 TooltipEvents.setUnlock(item("aether_legacy:aether_portal_frame"), 7)
 
 // Thermal Expansion, Factory Tech, Applied Energistics, Deep Resonance
-TooltipEvents.setTierName(8, "Electrical Engineering")
+TooltipEvents.setTierName(8, "tooltip.gateway.tier8")
 TooltipEvents.setUnlock(item("thermalexpansion:frame"), 8)
 
 // Empowering, Nuclearcraft, Thaumcraft Part 2
-TooltipEvents.setTierName(9, "Chemical Mayhem")
+TooltipEvents.setTierName(9, "tooltip.gateway.tier9")
 TooltipEvents.setUnlock(item("actuallyadditions:block_empowerer"), 9)
 
 // Advanced Rocketry part 1, Botania, Essentialcraft part 2, Astral Sorcery constellation stuff
-TooltipEvents.setTierName(10, "Lunar Wizardry")
+TooltipEvents.setTierName(10, "tooltip.gateway.tier10")
 TooltipEvents.setUnlock(item("libvulpes:productingot", 7), 10)
 
 // EnderIO, Woot, Fission Reactors, Abyssalcraft part 1
-TooltipEvents.setTierName(11, "Horror Stories")
+TooltipEvents.setTierName(11, "tooltip.gateway.tier11")
 TooltipEvents.setUnlock(item("enderio:item_material", 1), 11)
 
 // Witchery, Advanced Rocketry part 2, Salt Reactors
-TooltipEvents.setTierName(12, "Galactic Domination")
+TooltipEvents.setTierName(12, "tooltip.gateway.tier12")
 TooltipEvents.setUnlock(item("witchery:witches_oven"), 12)
 
 // Hoanna, Elven, Gaia, Sentient, Witchery part 2
-TooltipEvents.setTierName(13, "Sorcery from Beyond")
+TooltipEvents.setTierName(13, "tooltip.gateway.tier13")
 TooltipEvents.setUnlock(item("extrautils2:decorativesolid", 8), 13)
 
 // Demons, Abyssalcraft part 2, QMD, Creative
-TooltipEvents.setTierName(14, "The Final Stretch")
+TooltipEvents.setTierName(14, "tooltip.gateway.tier14")
 TooltipEvents.setUnlock(item("essentialcraft:demonicpentacle"), 14)

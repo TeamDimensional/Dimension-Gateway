@@ -65,7 +65,7 @@ for (def it in unobtainableItems) TooltipEvents.setTier(it, 0)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hiddenItems) GatewayHelpers.hide(it)
 
-TooltipEvents.setTooltip(mitem("birth_spirit"), "Dropped when mobs are bred in a surplus of Aura in the chunk.")
+TooltipEvents.setTooltip(mitem("birth_spirit"), "tooltip.gateway.obtain.birth_spirit")
 
 setBottleTier("overworld", 2)
 setBottleTier("nether", 2)

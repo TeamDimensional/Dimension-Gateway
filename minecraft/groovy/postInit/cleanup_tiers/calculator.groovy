@@ -103,6 +103,6 @@ for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
-TooltipEvents.setTooltip(mitem("jumpmodule"), "Warning! Don't use this without a good Feather Falling armor or equivalent.", textformat("RED"))
-TooltipEvents.setTooltip(mitem("coaldust"), "Produced from Prunae seeds.")
+TooltipEvents.setTooltip(mitem("jumpmodule"), "tooltip.gateway.warn.jump_module", textformat("RED"))
+TooltipEvents.setTooltip(mitem("coaldust"), "tooltip.gateway.obtain.calc_coal_dust")
 TooltipEvents.setModTier("sonarcore", 6)

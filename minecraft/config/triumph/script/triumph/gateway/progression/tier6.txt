@@ -1,6 +1,6 @@
 setIcon(<minecraft:ender_eye>)
-setTitle("Sky Exploration")
-setDescription("Visit The End")
+setTitle("tooltip.gateway.tier6")
+setDescription("tooltip.gateway.tier6.desc")
 addParent("triumph:gateway/progression/tier5")
 setPos(-50,52)
 

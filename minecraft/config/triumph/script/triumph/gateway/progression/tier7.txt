@@ -1,6 +1,6 @@
 setIcon(<aether_legacy:aether_portal_frame>)
-setTitle("Heavenly Research")
-setDescription("Enter The Aether")
+setTitle("tooltip.gateway.tier7")
+setDescription("tooltip.gateway.tier7.desc")
 addParent("triumph:gateway/progression/tier6")
 setPos(-30,0)
 

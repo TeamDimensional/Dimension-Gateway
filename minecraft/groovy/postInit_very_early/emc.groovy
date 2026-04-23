@@ -34,7 +34,7 @@ def configureItem(it, category = "Building", removeRecipe = true) {
 }
 
 def configureCraftable(it) {
-    TooltipEvents.setTooltip(it, "§eCraftable from EMC items§r")
+    TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.emc_craftable")
     TooltipEvents.setTier(it, 0)
 }
 

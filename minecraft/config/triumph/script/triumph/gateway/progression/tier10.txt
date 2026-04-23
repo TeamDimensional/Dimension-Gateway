@@ -1,6 +1,6 @@
 setIcon(<libvulpes:productingot:7>)
-setTitle("Lunar Wizardry")
-setDescription("Purify a Titanium Ingot")
+setTitle("tooltip.gateway.tier10")
+setDescription("tooltip.gateway.tier10.desc")
 addParent("triumph:gateway/progression/tier9")
 setPos(30,52)
 

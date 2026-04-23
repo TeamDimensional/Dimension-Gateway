@@ -1,6 +1,6 @@
 setIcon(<essentialcraft:demonicpentacle>)
-setTitle("The Final Stretch")
-setDescription("Create a Demonic Pentacle")
+setTitle("tooltip.gateway.tier14")
+setDescription("tooltip.gateway.tier14.desc")
 addParent("triumph:gateway/progression/tier13")
 setPos(130,0)
 

@@ -1,6 +1,6 @@
 setIcon(<enderio:item_material:1>)
-setTitle("Horror Stories")
-setDescription("Construct an Industrial Machine Chassis")
+setTitle("tooltip.gateway.tier11")
+setDescription("tooltip.gateway.tier11.desc")
 addParent("triumph:gateway/progression/tier10")
 setPos(50,0)
 

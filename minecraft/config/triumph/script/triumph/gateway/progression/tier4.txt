@@ -1,6 +1,6 @@
 setIcon(<embers:mech_core>)
-setTitle("Mantle Drilling")
-setDescription("Craft a Mechanical Core")
+setTitle("tooltip.gateway.tier4")
+setDescription("tooltip.gateway.tier4.desc")
 addParent("triumph:gateway/progression/tier3")
 setPos(-90,52)
 

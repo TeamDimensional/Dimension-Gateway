@@ -69,10 +69,10 @@ for (def it in dreamItems) TooltipEvents.setTier(it, 13)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 
-TooltipEvents.setTooltip(fluid("witchery.hollow_tears"), "Obtained by throwing Brew of Hollow Tears.")
-TooltipEvents.setTooltip(fluid("witchery.flowing_spirit"), "Obtained by throwing Brew of Flowing Spirit.")
+TooltipEvents.setTooltip(fluid("witchery.hollow_tears"), "tooltip.gateway.obtain.hollow_tears")
+TooltipEvents.setTooltip(fluid("witchery.flowing_spirit"), "tooltip.gateway.obtain.flowing_spirit")
 for (def it in books) {
-    TooltipEvents.setTooltip(it, "The Witchery Companion contains all information in this book!")
+    TooltipEvents.setTooltip(it, "tooltip.gateway.hint.witchery_book")
 }
 
 // TODO: remove Spectral Dust from Zombie and Skeleton loot tables.

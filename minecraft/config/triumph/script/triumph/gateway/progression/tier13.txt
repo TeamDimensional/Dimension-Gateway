@@ -1,6 +1,6 @@
 setIcon(<extrautils2:decorativesolid:8>)
-setTitle("Fabled Convergence")
-setDescription("Synthesize Rainbow Stone")
+setTitle("tooltip.gateway.tier13")
+setDescription("tooltip.gateway.tier13.desc")
 addParent("triumph:gateway/progression/tier12")
 setPos(110,52)
 

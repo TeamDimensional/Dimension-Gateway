@@ -1,6 +1,6 @@
 setIcon(<thermalexpansion:frame>)
-setTitle("Electrical Engineering")
-setDescription("Manufacture a Thermal Machine Frame")
+setTitle("tooltip.gateway.tier8")
+setDescription("tooltip.gateway.tier8.desc")
 addParent("triumph:gateway/progression/tier7")
 setPos(-10,52)
 

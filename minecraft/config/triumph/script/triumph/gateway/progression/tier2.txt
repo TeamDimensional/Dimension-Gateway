@@ -1,6 +1,6 @@
 setIcon(<theaurorian:aurorianportalframebricks>)
-setTitle("Temple Run")
-setDescription("Enter Aurorian")
+setTitle("tooltip.gateway.tier2")
+setDescription("tooltip.gateway.tier2.desc")
 addParent("triumph:gateway/root")
 setPos(-130,52)
 

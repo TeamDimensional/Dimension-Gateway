@@ -11,10 +11,10 @@ crafting.shapedBuilder()
     .key("W", ore("wool"))
     .register()
 
-TooltipEvents.setTooltip(item("roots:herb_pouch"), "Has 9 slots for herbs.")
-TooltipEvents.setTooltip(item("roots:component_pouch"), "Has 6 slots for herbs and 12 slots for items.")
-TooltipEvents.setTooltip(item("roots:fey_pouch"), "Has 12 slots for herbs and 6 slots for items.")
-TooltipEvents.setTooltip(item("roots:apothecary_pouch"), "Has 9 slots for herbs and 18 slots for items.")
+TooltipEvents.setTooltip(item("roots:herb_pouch"), "tooltip.gateway.use.roots_pouch")
+TooltipEvents.setTooltip(item("roots:component_pouch"), "tooltip.gateway.use.roots_pouch_component")
+TooltipEvents.setTooltip(item("roots:fey_pouch"), "tooltip.gateway.use.roots_pouch_fey")
+TooltipEvents.setTooltip(item("roots:apothecary_pouch"), "tooltip.gateway.use.roots_pouch_apothecary")
 
 // Gramary
 crafting.remove("roots:gramary")

@@ -1,6 +1,6 @@
 setIcon(<witchery:witches_oven>)
-setTitle("Galactic Domination")
-setDescription("Build a Witches' Oven")
+setTitle("tooltip.gateway.tier12")
+setDescription("tooltip.gateway.tier12.desc")
 addParent("triumph:gateway/progression/tier11")
 setPos(70,52)
 

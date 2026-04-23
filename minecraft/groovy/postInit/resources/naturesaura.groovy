@@ -16,8 +16,8 @@ mods.theaurorian.scrapper.recipeBuilder()
 
 // Gold Leaf info
 mods.jei.description.add(item("naturesaura:golden_leaves"),
-                         ["Spreads to the nearby Leaves blocks when grown.", "Only fully grown Leaves can drop Gold Leaf!"])
-mods.jei.description.add(item("naturesaura:gold_leaf"), ["Only fully grown Leaves can drop Gold Leaf!"])
+                         ["tooltip.gateway.use.golden_leaf1", "tooltip.gateway.use.golden_leaf2"])
+mods.jei.description.add(item("naturesaura:gold_leaf"), ["tooltip.gateway.use.golden_leaf2"])
 
 // Tokens
 mods.naturesaura.ritual.removeByOutput(item("naturesaura:token_anger"))

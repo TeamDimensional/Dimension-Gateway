@@ -22,7 +22,7 @@ class GatewayHelpers {
         itemStack.getItem().setHarvestLevel("pickaxe", -1)
         if (itemStack.getItem() instanceof ItemTool)
             ToolUtils.deleteToolType(itemStack)
-        TooltipEvents.setTooltip(itemStack, "This item is disabled! Use Tinker's Construct tools or other materials instead.", textformat("RED"))
+        TooltipEvents.setTooltip(itemStack, "tooltip.gateway.disabled_tool", textformat("RED"))
     }
 
     static void run() {}

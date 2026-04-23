@@ -51,15 +51,15 @@ def platinumDungeonLoot = [
     alitem("jeb_shield"), alitem("platinum_key"),
 ]
 
-for (def it in bronzeDungeonLoot) TooltipEvents.setTooltip(it, "Found in the Bronze Dungeon in Aether.")
-for (def it in silverDungeonLoot) TooltipEvents.setTooltip(it, "Found in the Silver Dungeon in Aether.")
-for (def it in goldenDungeonLoot) TooltipEvents.setTooltip(it, "Found in the Gold Dungeon in Aether.")
-for (def it in platinumDungeonLoot) TooltipEvents.setTooltip(it, "Found in the Platinum Dungeon in Aether.")
-for (def it in anyDungeonLoot) TooltipEvents.setTooltip(it, "Found in the Bronze and Silver dungeons in Aether.")
-TooltipEvents.setTooltip(aitem("repulsion_shield"), "Found in the Bronze and Platinum dungeons in Aether.")
-TooltipEvents.setTooltip(aitem("cloud_staff"), "Found in the Bronze and Platinum dungeons in Aether.")
-TooltipEvents.setTooltip(aitem("life_shard"), "Found in the Gold and Platinum dungeons in Aether.")
-TooltipEvents.setTooltip(aitem("aether_portal_frame"), "Can only be created with a Skyroot Water Bucket.")
+for (def it in bronzeDungeonLoot) TooltipEvents.setTooltip(it, "tooltip.gateway.loot.aether_bronze")
+for (def it in silverDungeonLoot) TooltipEvents.setTooltip(it, "tooltip.gateway.loot.aether_silver")
+for (def it in goldenDungeonLoot) TooltipEvents.setTooltip(it, "tooltip.gateway.loot.aether_gold")
+for (def it in platinumDungeonLoot) TooltipEvents.setTooltip(it, "tooltip.gateway.loot.aether_platinum")
+for (def it in anyDungeonLoot) TooltipEvents.setTooltip(it, "tooltip.gateway.loot.aether_bronze_silver")
+TooltipEvents.setTooltip(aitem("repulsion_shield"), "tooltip.gateway.loot.aether_bronze_platinum")
+TooltipEvents.setTooltip(aitem("cloud_staff"), "tooltip.gateway.loot.aether_bronze_platinum")
+TooltipEvents.setTooltip(aitem("life_shard"), "tooltip.gateway.loot.aether_gold_platinum")
+TooltipEvents.setTooltip(aitem("aether_portal_frame"), "tooltip.gateway.obtain.aether_portal")
 
 // I think this loot should exist, but for some reason it doesn't.
 // TODO: readd this to loot tables

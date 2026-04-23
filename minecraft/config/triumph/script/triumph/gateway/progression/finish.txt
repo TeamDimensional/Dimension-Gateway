@@ -1,6 +1,6 @@
 setIcon(<extrautils2:creativechest>)
-setTitle("Beyond Creativity")
-setDescription("Achieve the Godhood")
+setTitle("tooltip.gateway.tier15")
+setDescription("tooltip.gateway.tier15.desc")
 addParent("triumph:gateway/progression/tier14")
 setPos(130,0)
 

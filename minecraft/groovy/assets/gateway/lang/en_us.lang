@@ -182,3 +182,111 @@ item.CircuitDirty.10.name=Dirty Circuit 11
 item.CircuitDirty.11.name=Dirty Circuit 12
 item.CircuitDirty.12.name=Dirty Binary Logic Circuit
 item.CircuitDirty.13.name=Dirty Compression Circuit
+
+
+
+// tooltips
+tooltip.gateway.disabled_tool=This item is disabled! Use Tinker's Construct tools or other materials instead.
+
+tooltip.gateway.loot.omothol_temple=Found in temples in Omothol.
+tooltip.gateway.loot.omothol_village=Found in village houses in Omothol.
+tooltip.gateway.loot.hoanna_dungeon=Found in dungeons in Hoanna.
+tooltip.gateway.loot.hoanna_ruins=Found in city ruins in Hoanna.
+tooltip.gateway.loot.aether_bronze=Found in the Bronze Dungeon in Aether.
+tooltip.gateway.loot.aether_silver=Found in the Silver Dungeon in Aether.
+tooltip.gateway.loot.aether_gold=Found in the Gold Dungeon in Aether.
+tooltip.gateway.loot.aether_platinum=Found in the Platinum Dungeon in Aether.
+tooltip.gateway.loot.aether_bronze_silver=Found in the Bronze and Silver Dungeons in Aether.
+tooltip.gateway.loot.aether_bronze_platinum=Found in the Bronze and Platinum Dungeons in Aether.
+tooltip.gateway.loot.aether_gold_platinum=Found in the Gold and Platinum Dungeons in Aether.
+tooltip.gateway.loot.aurorian_runestone=Found in the Runestone Temple in Aurorian.
+tooltip.gateway.loot.aurorian_darkstone=Found in the Darkstone Temple in Aurorian.
+tooltip.gateway.loot.aurorian_moon=Found in the Moon Temple in Aurorian.
+
+tooltip.gateway.obtain.aether_portal=Can only be created with a Skyroot Water Bucket.
+tooltip.gateway.obtain.aetherium_geode=Dropped when using Pickaxe of the Molten Depths.
+tooltip.gateway.obtain.impure_aetherium=Produced by the Aetherium Prism.
+tooltip.gateway.obtain.gaia=Dropped by the Guardian of Gaia.
+tooltip.gateway.obtain.gaia2=Dropped by the Guardian of Gaia II.
+tooltip.gateway.obtain.gaia_head=Dropped by the Guardian of Gaia when killed with an Elementium Axe.
+tooltip.gateway.obtain.dice=Reward from the Dice of Fate.
+tooltip.gateway.obtain.end_bottle=Obtained by right-clicking with an Empty Bottle in the End.
+tooltip.gateway.obtain.calc_coal_dust=Produced from Prunae seeds.
+tooltip.gateway.obtain.runic_plate=Use Terraformer to create the correct conditions for this recipe!
+tooltip.gateway.obtain.inquisitorium=Dropped by the Holographic Projection.
+tooltip.gateway.obtain.crystal_essence=Produced by the Crystal Extractor.
+tooltip.gateway.obtain.ec4_ember_sword=Made in Ember Forge.
+tooltip.gateway.obtain.birth_spirit=Dropped when mobs are bred in a surplus of Aura in the chunk.
+tooltip.gateway.obtain.bedrock_portal=Created by breaking Bedrock with Awakened Ichorium Pickaxe.
+tooltip.gateway.obtain.hollow_tears=Obtained by throwing Brew of Hollow Tears.
+tooltip.gateway.obtain.flowing_spirit=Obtained by throwing Brew of Flowing Spirit.
+tooltip.gateway.obtain.emc_craftable=§eCraftable from EMC items§r
+
+tooltip.gateway.obtain.fission_sr=Byproduct from the TBU, U-233 and Pu-based fuels.
+tooltip.gateway.obtain.fission_mo=Byproduct from the U-235, Np-236, Am-242 and Cm-based fuels.
+tooltip.gateway.obtain.fission_ru=Byproduct from the Bk-248 and Cf-based fuels.
+tooltip.gateway.obtain.fission_cs=Byproduct from the TBU, U-based and Np-236 fuels.
+tooltip.gateway.obtain.fission_pm=Byproduct from the Pu-based and heavier fuels.
+tooltip.gateway.obtain.fission_eu=Byproduct from the Cm-based and Cf-251 fuels.
+
+tooltip.gateway.obtain.condensed_thoughts=Duplicate this with Sand Learning Process!
+tooltip.gateway.obtain.liquid_enlightenment=Craft the bucket first!
+tooltip.gateway.use.mindful_sand=Has a chance to transform into Condensed Thoughts upon receiving a block update.
+tooltip.gateway.use.golden_leaf1=Spreads to the nearby Leaves blocks when grown.
+tooltip.gateway.use.golden_leaf2=Only fully grown Leaves can drop Gold Leaf!
+
+tooltip.gateway.use.nuclear_wasteland=Turns Abyssal Wasteland into Nuclear Wasteland when used, which unlocks QMD.
+tooltip.gateway.use.aetherium_prism=Used in the construction of Aetherium Prism.
+tooltip.gateway.use.potion_gem=Craft with a potion to attune.
+tooltip.gateway.use.attuned_potion_gem=Craft with the Aetherium Crown to apply the effect.
+tooltip.gateway.use.aetherium_pick_aether=Right-click breaks large veins of the same block automatically.
+tooltip.gateway.use.aetherium_pick_ember=Has a small chance to drop Geodes when breaking blocks.
+tooltip.gateway.use.aetherium_shovel_redstone=Right-click to place a 3x3 patch of a selected block.
+tooltip.gateway.use.aetherium_shovel_slime=Right-click to exchange blocks in the world with ones in the inventory.
+tooltip.gateway.use.aetherium_crossbow_quartz=Affected by Power enchantment twice as much. Damage bypasses armor.
+tooltip.gateway.use.aetherium_crossbow_magma=Launches a spray of magma on use.
+tooltip.gateway.use.aetherium_crown=Constantly applies the status effect supplied via a Potion Gem when worn.
+
+tooltip.gateway.use.roots_pouch=Has 9 slots for herbs.
+tooltip.gateway.use.roots_pouch_component=Has 6 slots for herbs and 12 slots for items.
+tooltip.gateway.use.roots_pouch_fey=Has 12 slots for herbs and 6 slots for items.
+tooltip.gateway.use.roots_pouch_apothecary=Has 9 slots for herbs and 18 slots for items.
+
+tooltip.gateway.hint.leaf_generator=Gets disabled with a Redstone signal. Use this to your advantage!
+tooltip.gateway.hint.witchery_book=The Witchery Companion contains all information in this book!
+tooltip.gateway.hint.backpack_recipe=The actual recipe may show up on the last page of JEI!
+
+tooltip.gateway.warn.akashic_botania=Warning! Throwing this through an Elven Portal if it's in an Akashic Tome deletes all other books.
+tooltip.gateway.warn.akashic_ec4=Warning! This can't be upgraded after being removed from Akashic Tome.
+tooltip.gateway.warn.jump_module=Warning! Don't use this without a good Feather Falling armor or equivalent.
+tooltip.gateway.warn.relay_sequencer=Does not properly work with RFTools Sequencers! Use Project Red utilities instead.
+
+tooltip.gateway.tier1=Beginnings
+tooltip.gateway.tier2=Temple Run
+tooltip.gateway.tier2.desc=Enter The Aurorian
+tooltip.gateway.tier3=Early Metallurgy
+tooltip.gateway.tier3.desc=Obtain Seared Bricks
+tooltip.gateway.tier4=Mantle Drilling
+tooltip.gateway.tier4.desc=Craft a Mechanical Core
+tooltip.gateway.tier5=Basics of Magic
+tooltip.gateway.tier5.desc=Obtain Salis Mundus
+tooltip.gateway.tier6=Sky Exploration
+tooltip.gateway.tier6.desc=Visit The End
+tooltip.gateway.tier7=Heavenly Research
+tooltip.gateway.tier7.desc=Enter The Aether
+tooltip.gateway.tier8=Electrical Engineering
+tooltip.gateway.tier8.desc=Manufacture a Thermal Machine Frame
+tooltip.gateway.tier9=Chemical Mayhem
+tooltip.gateway.tier9.desc=Assemble an Empowerer
+tooltip.gateway.tier10=Lunar Wizardry
+tooltip.gateway.tier10.desc=Purify a Titanium Ingot
+tooltip.gateway.tier11=Horror Stories
+tooltip.gateway.tier11.desc=Create an Industrial Machine Chassis
+tooltip.gateway.tier12=Galactic Domination
+tooltip.gateway.tier12.desc=Build a Witches' Oven
+tooltip.gateway.tier13=Shadow Sorcery
+tooltip.gateway.tier13.desc=Synthesize Rainbow Stone
+tooltip.gateway.tier14=The Final Stretch
+tooltip.gateway.tier14.desc=Create a Demonic Pentacle
+tooltip.gateway.tier15=Beyond Creativity
+tooltip.gateway.tier15.desc=Achieve the Godhood

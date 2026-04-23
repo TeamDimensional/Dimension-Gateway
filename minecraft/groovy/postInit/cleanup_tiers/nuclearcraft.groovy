@@ -125,12 +125,12 @@ def hideFromJei = [
     mitem("fluid_borax_solution"), mitem("fluid_irradiated_borax_solution"), mitem("gem"),
 ] + removeRecipes
 
-TooltipEvents.setTooltip(mitem("fission_dust", 5), "Byproduct from the TBU, U-233 and Pu-based fuels.")
-TooltipEvents.setTooltip(mitem("fission_dust", 6), "Byproduct from the U-235, Np-236, Am-242 and Cm-based fuels.")
-TooltipEvents.setTooltip(mitem("fission_dust", 7), "Byproduct from the Bk-248 and Cf-based fuels.")
-TooltipEvents.setTooltip(mitem("fission_dust", 8), "Byproduct from the TBU, U-based and Np-236 fuels.")
-TooltipEvents.setTooltip(mitem("fission_dust", 9), "Byproduct from the Pu-based and more powerful fuels.")
-TooltipEvents.setTooltip(mitem("fission_dust", 10), "Byproduct from the Cm-based and Cf-251 fuels.")
+TooltipEvents.setTooltip(mitem("fission_dust", 5), "tooltip.gateway.obtain.fission_sr")
+TooltipEvents.setTooltip(mitem("fission_dust", 6), "tooltip.gateway.obtain.fission_mo")
+TooltipEvents.setTooltip(mitem("fission_dust", 7), "tooltip.gateway.obtain.fission_ru")
+TooltipEvents.setTooltip(mitem("fission_dust", 8), "tooltip.gateway.obtain.fission_cs")
+TooltipEvents.setTooltip(mitem("fission_dust", 9), "tooltip.gateway.obtain.fission_pm")
+TooltipEvents.setTooltip(mitem("fission_dust", 10), "tooltip.gateway.obtain.fission_eu")
 
 for (def f in isotopes) {
     fissionItems.add(mitem(f[0], f[1] * 5 + 0))

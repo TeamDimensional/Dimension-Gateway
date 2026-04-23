@@ -153,7 +153,7 @@ TooltipEvents.setModTier("crimsonrevelations", 5)
 TooltipEvents.setModTier("advanced_smelter", 9)
 ore("quartzDark").remove(titem("black_quartz"))
 ore("blockQuartzDark").remove(titem("black_quartz_block"))
-TooltipEvents.setTooltip(titem("bedrock_portal"), "Created by breaking Bedrock with Awakened Ichorium Pickaxe.")
+TooltipEvents.setTooltip(titem("bedrock_portal"), "tooltip.gateway.obtain.bedrock_portal")
 
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])

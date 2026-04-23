@@ -1,6 +1,6 @@
 setIcon(<actuallyadditions:block_empowerer>)
-setTitle("Chemical Mayhem")
-setDescription("Assemble an Empowerer")
+setTitle("tooltip.gateway.tier9")
+setDescription("tooltip.gateway.tier9.desc")
 addParent("triumph:gateway/progression/tier8")
 setPos(10,0)
 

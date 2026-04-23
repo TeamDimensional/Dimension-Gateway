@@ -1,6 +1,6 @@
 setIcon(<tconstruct:materials>)
-setTitle("Early Metallurgy")
-setDescription("Produce Seared Bricks")
+setTitle("tooltip.gateway.tier3")
+setDescription("tooltip.gateway.tier3.desc")
 addParent("triumph:gateway/progression/tier2")
 setPos(-110,0)
 

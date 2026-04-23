@@ -118,12 +118,12 @@ for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
-for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "Dropped by the Guardian of Gaia.")
-for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "Dropped by the 2nd tier Guardian of Gaia.")
-for (def it in diceItems) TooltipEvents.setTooltip(it, "Reward from the Dice of Fate.")
-TooltipEvents.setTooltip(mitem("lexicon"), "Warning! Throwing this through an Elven Portal if it's in an Akashic Tome deletes all other books.")
-TooltipEvents.setTooltip(mitem("gaiahead"), "Dropped by the Guardian of Gaia when killed with an Elementium Axe.")
-TooltipEvents.setTooltip(mitem("manaresource", 15), "Obtained by right-clicking with an Empty Bottle in the End.")
+for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia")
+for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia2")
+for (def it in diceItems) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.dice")
+TooltipEvents.setTooltip(mitem("lexicon"), "tooltip.gateway.warn.akashic_botania")
+TooltipEvents.setTooltip(mitem("gaiahead"), "tooltip.gateway.obtain.gaia_head")
+TooltipEvents.setTooltip(mitem("manaresource", 15), "tooltip.gateway.obtain.end_bottle")
 
 def tier1Flowers = [
     // generating
