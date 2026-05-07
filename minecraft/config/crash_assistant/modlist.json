@@ -648,13 +648,13 @@
     "curseForgeHash": 4227961345,
     "modrinthHash": "83b6e36d415f6679495b2c04ffe453817d43419e"
   },
-  "gatewaycore-1.6.6.jar": {
-    "jarName": "gatewaycore-1.6.6.jar",
+  "gatewaycore-1.7.jar": {
+    "jarName": "gatewaycore-1.7.jar",
     "modId": "gatewaycore",
     "name": "Gateway Core",
-    "version": "1.6.6",
-    "curseForgeHash": 2958782286,
-    "modrinthHash": "2f138dec72dafc1f63e5f4a9c3d51eac30958613"
+    "version": "1.7",
+    "curseForgeHash": 2084173346,
+    "modrinthHash": "6fc2ac1710bccfd4d9ac2a71bcfce0888deae34b"
   },
   "geckolib-forge-1.12.2-3.0.31.jar": {
     "jarName": "geckolib-forge-1.12.2-3.0.31.jar",
@@ -1361,14 +1361,6 @@
     "version": "1.12.2-2.1.14",
     "curseForgeHash": 965509518,
     "modrinthHash": "376843864b9b7c117d4aa98c24c227a76b2d4fde"
-  },
-  "ThaumicInventoryScanning_1.12.2-2.0.10.jar": {
-    "jarName": "ThaumicInventoryScanning_1.12.2-2.0.10.jar",
-    "modId": "tcinventoryscan",
-    "name": "Thaumcrafft Inventory Scanning",
-    "version": "2.0.10",
-    "curseForgeHash": 1964344708,
-    "modrinthHash": "639253ac9c8aa30efaadeb9893ebb77d1b96a64c"
   },
   "ThaumicJEI-1.12.2-1.7.0.jar": {
     "jarName": "ThaumicJEI-1.12.2-1.7.0.jar",
