@@ -356,6 +356,14 @@
     "curseForgeHash": 2429064344,
     "modrinthHash": "d378cee9195841ea78bb9800f543d718ef2c60ef"
   },
+  "circulation_networks-1.12.2-1.0.3.jar": {
+    "jarName": "circulation_networks-1.12.2-1.0.3.jar",
+    "modId": "circulation_networks",
+    "name": "Circulation Flow Networks",
+    "version": "1.0.3",
+    "curseForgeHash": 886830744,
+    "modrinthHash": "5bc541fbce588cc89329cfe3d5481c1c0fe38343"
+  },
   "CodeChickenLib-1.12.2-3.2.3.358-universal.jar": {
     "jarName": "CodeChickenLib-1.12.2-3.2.3.358-universal.jar",
     "modId": "codechickenlib",

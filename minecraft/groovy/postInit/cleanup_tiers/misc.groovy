@@ -4,6 +4,7 @@ import classes.GatewayHelpers
 TooltipEvents.setModTier("compactmachines3", 7)
 TooltipEvents.setModTier("buildinggadgets", 4)
 TooltipEvents.setModTier("betterbuilderswands", 2)
+TooltipEvents.setModTier("circulation_networks", 6)
 
 def tier2Items = [
     item("chisel:offsettool"),

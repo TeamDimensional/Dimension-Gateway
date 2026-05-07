@@ -66,3 +66,4 @@ minecraft/OpenComputers*.dll
 minecraft/OpenComputers*.dylib
 minecraft/config/opencomputers/*.recipes
 !minecraft/config/opencomputers/user.recipes
+minecraft/config/circulation_networks/atlas*
