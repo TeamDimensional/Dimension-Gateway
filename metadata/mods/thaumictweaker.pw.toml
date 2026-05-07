@@ -1,17 +1,41 @@
-filename = 'thaumictweaker-1.2.4.jar'
+filename = 'thaumictweaker-1.3.0.jar'
 name = 'ThaumicTweaker'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.2.4'
+x-prismlauncher-version-number = '1.3.0'
 
 [download]
-hash = 'fe9c80355ea3db885a909900975683ab191e8eca'
+hash = 'b1536e59875a5d819f62a1f5822fa7d9d03a17b6'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7523519
+file-id = 8040922
 project-id = 1341797
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '220954'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '870276'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '687577'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'

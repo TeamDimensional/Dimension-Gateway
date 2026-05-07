@@ -1,18 +1,18 @@
-filename = 'XNet-1.8.19.jar'
-name = 'XNet'
+filename = 'BiblioCraftReshelved-1.12.2-2.4.7.jar'
+name = 'BiblioCraft Reshelved'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'XNet-1.8.19'
+x-prismlauncher-version-number = '2.4.7'
 
 [download]
-hash = '4549265335ae5a198f95bf4cbc8ab13c23565f2c'
+hash = '602ee21b068a3b8af40ade40a71aefaba3978ced'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8044561
-project-id = 1335763
+file-id = 7984476
+project-id = 1523934

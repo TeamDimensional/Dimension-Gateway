@@ -34,7 +34,7 @@ def mainItems = [
     mitem("cinderpearl"), mitem("vishroom"), mitem("plank_greatwood"), mitem("stairs_greatwood"),
     mitem("slab_greatwood"), mitem("flesh_block"),
     citem("mimic_fork"), citem("fence_greatwood"), citem("fence_gate_greatwood"), citem("caster_clockwork"), citem("caster_aura"),
-    citem("drill_head_thaumium"), citem("upgrade_refining"),
+    citem("drill_head_thaumium"), citem("upgrade_refining"), citem("arcane_crafter"),
     witem("hexamite"), witem("alkahest_vat"), witem("oblivion_essentia_jar"), witem("inspiration_engine"),
     witem("disjunction_cloth"), witem("panacea", 1), witem("panacea"), witem("lethe_water"), witem("warp_ring"),
 ]

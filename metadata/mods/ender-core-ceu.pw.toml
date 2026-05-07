@@ -1,18 +1,18 @@
-filename = 'XNetAdditions-0.1.4.jar'
-name = 'XNet: Additions'
+filename = 'endercore-1.12.2-0.5.80.jar'
+name = 'Ender Core CEu'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'XNetAdditions-0.1.4.jar'
+x-prismlauncher-version-number = 'endercore-1.12.2-0.5.80.jar'
 
 [download]
-hash = '4450b27d00f3f2ada9d09bda46683a94bff48dd0'
+hash = '755bfc380d3e75c36a351ce4eb785bd2a4a032fe'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8001924
-project-id = 1504502
+file-id = 8025612
+project-id = 1530852

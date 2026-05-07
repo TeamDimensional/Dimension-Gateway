@@ -1,17 +1,37 @@
-filename = 'cells-0.5.15-beta.jar'
+filename = 'cells-0.6.0-alpha2.jar'
 name = 'C.E.L.L.S'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
-x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'C.E.L.L.S 0.5.15-beta'
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = 'C.E.L.L.S 0.6.0-alpha2'
 
 [download]
-hash = '88fa8e18279383fbf3fe0849bd589ae44df0358d'
+hash = 'a2c219818f5b4691ac36f4da2b111df37e6470fa'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7932831
+file-id = 8040456
 project-id = 1470965
+
+[[x-prismlauncher-dependencies]]
+addonId = '570458'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1027681'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223666'
+type = 'OPTIONAL'

@@ -1,21 +1,21 @@
-filename = 'advancedrocketry-2.2.7.jar'
-name = 'Advanced Rocketry'
+filename = 'EnderIO-CEu-5.4.0.jar'
+name = 'EnderIO CEu'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'advancedrocketry-2.2.7.jar'
+x-prismlauncher-version-number = 'EnderIO-CEu-5.4.0.jar'
 
 [download]
-hash = 'e15e800e2f9da395c7bf5d9e8e48a986786d47b2'
+hash = 'a45f13ae5c0138a9ea01d36ba9f93ac73abb70fb'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8043719
-project-id = 1024225
+file-id = 8025615
+project-id = 1530854
 
 [[x-prismlauncher-dependencies]]
-addonId = '1038780'
+addonId = '1530852'
 type = 'REQUIRED'

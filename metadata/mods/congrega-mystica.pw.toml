@@ -1,17 +1,65 @@
-filename = 'CongregaMystica-1.12.2-1.0.9.jar'
+filename = 'CongregaMystica-1.1.0.jar'
 name = 'Congrega Mystica'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.0.9'
+x-prismlauncher-version-number = '1.1.0'
 
 [download]
-hash = 'a9304f02913df235042e4e79e2ac70419d4ef505'
+hash = '5328712fc04c75e04110f26ad5be23b4e32196c0'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7521955
+file-id = 8040794
 project-id = 1341792
+
+[[x-prismlauncher-dependencies]]
+addonId = '1307741'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1163747'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '231951'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '224791'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '245211'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '256141'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1069346'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '225643'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '344344'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '306626'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '300777'
+type = 'OPTIONAL'
