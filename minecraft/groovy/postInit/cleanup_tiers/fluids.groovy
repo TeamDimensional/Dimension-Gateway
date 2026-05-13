@@ -149,6 +149,9 @@ def tier12 = [
 def tier13 = [
     // Witchery part 2
     fluid("witchery.flowing_spirit"), fluid("witchery.hollow_tears"),
+    // Nightmare Fuels
+    fluid("nightmare_fuel"), fluid("nightmare_fuel_f4"), fluid("nightmare_fuel_flibe"),
+    fluid("nightmare_depleted_fuel"), fluid("nightmare_depleted_fuel_f4"), fluid("nightmare_depleted_fuel_flibe"),
 ]
 
 def tier14 = [
@@ -184,6 +187,7 @@ def ncIsotopes = [
     ["berkelium", "b", [248], [247]],
     ["californium", "cf", [249, 251], [250, 252]],
 ]
+def magicFuels = ["natural", "arcane", "lunar", "skybound", "botanical", "crystalline"]
 
 def ncFuels = ["tbu", "mix_239", "mix_241"]
 
@@ -201,6 +205,11 @@ for (def f in ncIsotopes) {
                 tier11.add(fluid("${p}${d}${f[1]}_${x}_fluoride"))
                 tier12.add(fluid("${p}${d}${f[1]}_${x}_fluoride_flibe"))
             }
+        }
+        for (def fuel in magicFuels) {
+            tier11.add(fluid("${fuel}_${p}fuel"))
+            tier11.add(fluid("${fuel}_${p}fuel_f4"))
+            tier12.add(fluid("${fuel}_${p}fuel_flibe"))
         }
     }
 }
@@ -226,7 +235,7 @@ for (def it in tier9) TooltipEvents.setTier(it, 9)
 for (def it in tier10) TooltipEvents.setTier(it, 10)
 for (def it in tier11) TooltipEvents.setTier(it, 11)
 for (def it in tier12) TooltipEvents.setTier(it, 12)
-for (def it in tier12) TooltipEvents.setTier(it, 13)
+for (def it in tier13) TooltipEvents.setTier(it, 13)
 for (def it in tier14) TooltipEvents.setTier(it, 14)
 
 for (def it in removeFluids) {

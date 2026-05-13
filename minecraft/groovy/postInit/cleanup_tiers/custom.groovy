@@ -46,3 +46,23 @@ TooltipEvents.setTier(citem("purified_brain"), 9)
 TooltipEvents.setTier(citem("crystallized_enlightenment"), 9)
 TooltipEvents.setTier(citem("voidmetal_mesh"), 9)
 TooltipEvents.setTier(citem("mindful_sand"), 9)
+
+def magicFuels = [
+    ["natural", 11],
+    ["arcane", 11],
+    ["lunar", 11],
+    ["skybound", 11],
+    ["botanical", 11],
+    ["crystalline", 11],
+    ["nightmare", 13],
+]
+for (def it in magicFuels) {
+    def name = it[0]
+    def tier = it[1]
+    TooltipEvents.setTier(citem("${name}_fuel_unprepared"), tier)
+    TooltipEvents.setTier(citem("${name}_fuel"), tier)
+    TooltipEvents.setTier(citem("${name}_fuel_ox"), tier)
+    TooltipEvents.setTier(citem("${name}_depleted_fuel_ox"), tier)
+}
+
+TooltipEvents.setTooltip(item("gateway:nightmare_fuel_unprepared"), "Made in Kettle. If you're trying to make this item and see this message, report a bug.")
