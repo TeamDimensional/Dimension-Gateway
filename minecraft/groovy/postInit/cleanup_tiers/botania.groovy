@@ -132,12 +132,13 @@ def tier1Flowers = [
     "dreadthorn", "tangleberrie", "bellethorn", "manastar", "tigerseye", "jadedAmaranthus",
     "exoflame", "hopperhock", "jiyuulia", "medumone", "clayconia", "solegnolia",
     "daffomill", "rannuncarpus", "agricarnation", "hyacidus", "bergamute", "fallenKanade",
+    "primal_bloom", "primagalium",
 ]
 def tier2Flowers = [
     // generating
     "arcanerose", "rafflowsia", "narslimmus", "dandelifeon",
     // functional
-    "pollidisiac", "marimorphosis", "vinculotus",
+    "pollidisiac", "marimorphosis", "vinculotus", "taintthistle", "whisperweed_cm",
 ]
 def tier3Flowers = [
     // generating

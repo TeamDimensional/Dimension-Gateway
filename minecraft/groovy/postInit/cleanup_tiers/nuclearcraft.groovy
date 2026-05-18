@@ -84,7 +84,7 @@ def fissionItems = [
     mitem("solid_fission_controller"), mitem("solid_fission_cell"), mitem("solid_fission_sink", 32767), mitem("solid_fission_sink2", 32767),
     mitem("turbine_controller"), mitem("turbine_casing"), mitem("turbine_glass"), mitem("turbine_rotor_shaft"), mitem("turbine_rotor_stator"),
     mitem("turbine_rotor_bearing"), mitem("turbine_dynamo_coil", 32767), mitem("turbine_coil_connector"), mitem("turbine_inlet"),
-    mitem("turbine_inlet"), mitem("turbine_outlet"), mitem("fission_conductor"), mitem("part", 12), mitem("part", 14),
+    mitem("turbine_inlet"), mitem("turbine_outlet"), mitem("fission_conductor"), mitem("part", 12), mitem("part", 14), mitem("part", 15),
     mitem("fission_dust", 32767), mitem("boron", 0), mitem("boron", 1), mitem("lithium", 0), mitem("lithium", 1),
     mitem("record_end_of_the_world"), mitem("centrifuge"), mitem("separator"), item("reactorbuilder:reactorbuilder"),
     mitem("ingot2", 1), mitem("dust2", 1), mitem("ingot_block2", 1),
@@ -92,6 +92,7 @@ def fissionItems = [
     mitem("alloy", 16), mitem("material_block"),
     mitem("condenser_controller"),
     mitem("rtg_plutonium"), mitem("rtg_americium"), mitem("rtg_californium"),
+    mitem("fission_chamber_port"), mitem("pebble_fission_controller"), mitem("pebble_fission_chamber"), mitem("part", 23), mitem("part", 24),
 ]
 for (def m in ["steel", "extreme", "sic_sic_cmc"]) fissionItems.add(mitem("turbine_rotor_blade_${m}"))
 
@@ -99,7 +100,6 @@ def moltenSaltItems = [
     mitem("fission_heater_port", 32767), mitem("fission_heater_port2", 32767), mitem("salt_fission_controller"), mitem("fission_vessel_port"),
     mitem("salt_fission_vessel"), mitem("salt_fission_heater", 32767), mitem("salt_fission_heater2", 32767),
     mitem("ingot2", 6), mitem("dust2", 6), mitem("ingot_block2", 6),
-    // mitem("assembler"), mitem("part", 15),
 ]
 
 def qmdItems = [
@@ -119,7 +119,7 @@ for (def m in ["copper", "hard_carbon", "thermoconducting"]) hxItems.add(mitem("
 def hideFromJei = [
     mitem("glowing_mushroom_block"), mitem("wasteland_earth"), mitem("wasteland_portal"), mitem("solidified_corium"),
     mitem("fluid_steel"), mitem("fluid_enderium"), mitem("fluid_lead_platinum"), mitem("fluid_milk"),
-    mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("part", 15), mitem("gem"), mitem("fluid_ethanol"),
+    mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("gem"), mitem("fluid_ethanol"),
 ] + removeRecipes
 
 TooltipEvents.setTooltip(mitem("fission_dust", 5), "tooltip.gateway.obtain.fission_sr")
@@ -141,15 +141,20 @@ for (def f in fuelCounts) {
     def max = f[1] - 1
     for (def i in 0..max) {
         for (def d in ["depleted_", ""]) {
-            hideFromJei.add(mitem("${d}fuel_${f[0]}", i * 4))
-            // tier12Items.add(mitem("${d}fuel_${f[0]}", i * 4))
+            fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4))
             fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 1))
             fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 2))
             fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 3))
+
+            if (d == "") {
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4), "For use in Pebble Bed Reactors.")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 1), "For use in Solid Fission Reactors. Mainline fuel.")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 2), "For use in Solid Fission Reactors. Colder fuel with a longer lifetime.")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 3), "For use in Solid Fission Reactors. Hotter fuel with a shorter lifetime.")
+            }
         }
         fissionItems.add(mitem("pellet_${f[0]}", i * 2))
-        hideFromJei.add(mitem("pellet_${f[0]}", i * 2 + 1))
-        // TooltipEvents.setTooltip(mitem("pellet_${f[0]}", i * 2 + 1), "Only usable in Pebble Bed Reactors (tier 12).")
+        fissionItems.add(mitem("pellet_${f[0]}", i * 2 + 1))
     }
 }
 

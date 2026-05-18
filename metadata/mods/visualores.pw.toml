@@ -1,17 +1,57 @@
-filename = 'visualores-0.2.7.jar'
+filename = 'visualores-0.2.8.jar'
 name = 'VisualOres'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'VisualOres − 0.2.7'
+x-prismlauncher-version-number = 'VisualOres − 0.2.8'
 
 [download]
-hash = '46a27e52e387a17308e8812ea368a34777afc63d'
+hash = '50c1274c93511597f6b3214712c86d7d6bbbed4e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6495943
+file-id = 8095603
 project-id = 895539
+
+[[x-prismlauncher-dependencies]]
+addonId = '32274'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '242818'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '557242'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '241721'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '231951'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '317780'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '268250'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '263420'
+type = 'OPTIONAL'

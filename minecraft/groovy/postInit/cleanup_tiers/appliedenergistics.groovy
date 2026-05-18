@@ -32,6 +32,9 @@ def modItems = [
     item("ae2fc:fluid_discretizer"), item("ae2fc:fluid_pattern_encoder"), item("ae2fc:fluid_packet_decoder"),
     item("ae2fc:ingredient_buffer"), item("ae2fc:large_ingredient_buffer"), item("ae2fc:burette"), item("ae2fc:dual_interface"),
     item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
+    item("ae2powertools:network_component_locator"), item("ae2powertools:storage_level_emitter_part"), item("ae2powertools:storage_display_part"),
+    item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"), citem("io_item_interface"),
+    citem("io_fluid_interface"), citem("part", 6), citem("part", 7),
 ]
 for (def i in [0, 2, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 35, 36, 37, 39, 43, 44, 45, 46, 52, 53, 60, 61])
     modItems.add(mitem("material", i))
@@ -46,7 +49,8 @@ for (def i in 0..3)
 
 def thaumicItems = [
     citem("import_essentia_interface"), citem("export_essentia_interface"), citem("essentia_part", 0), citem("essentia_part", 1),
-    citem("configurable_cell"), citem("overclocked_processor"), citem("overclocked_processor", 2),
+    citem("essentia_part", 2),
+    citem("configurable_cell"), citem("overclocked_processor"), citem("overclocked_processor", 2), citem("io_essentia_interface"),
 ]
 for (def tier in 0..6)
     thaumicItems.add(citem("equal_distribution_card", tier))
@@ -60,6 +64,8 @@ def advancedItems = [
     citem("overflow_card"), citem("trash_unselected_card"), citem("compression_tier_card"), citem("decompression_tier_card"),
     citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"), item("ae2fc:ultimate_encoder"),
     item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
+    citem("import_combined_interface"), citem("export_combined_interface"), citem("insertion_card"),
+    citem("part", 8), citem("part", 9), citem("part", 4), citem("part", 5),
 ]
 for (def i in 0..35) advancedItems.add(mitem("paint_ball", i))
 for (def i in [6, 9, 28, 29, 30, 31, 32, 33, 34, 38, 41, 42, 47, 48, 54, 55, 56, 57, 58])

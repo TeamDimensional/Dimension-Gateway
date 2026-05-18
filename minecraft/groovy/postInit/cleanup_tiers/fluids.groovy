@@ -103,6 +103,7 @@ def tier9 = [
     fluid("ferroboron"), fluid("tough"), fluid("diborane"), fluid("boric_acid"), fluid("boron_nitride_solution"),
     fluid("bas"), fluid("boron"),
     fluid("radaway"), fluid("radaway_slow"), fluid("redstone_ethanol"), fluid("borax_solution"), fluid("irradiated_borax_solution"),
+    fluid("methane"), fluid("sulfur_hexafluoride"),
     // Voidmetal stuff
     fluid("liquid_enlightenment"), fluid("condensed_thoughts"),
 ]
@@ -130,6 +131,15 @@ def tier11 = [
     fluid("strontium_90"), fluid("molybdenum"), fluid("ruthenium_106"), fluid("caesium_137"), fluid("promethium_147"), fluid("europium_155"),
     fluid("neodymium"), fluid("bismuth"), fluid("polonium"), fluid("radium"), fluid("hot_mercury"), fluid("exhaust_mercury"),
     fluid("high_pressure_mercury"),
+    // NCO PBRs
+    fluid("oxygen_hot"), fluid("oxygen_exhaust"), fluid("hydrogen_hot"), fluid("hydrogen_exhaust"),
+    fluid("helium_hot"), fluid("helium_exhaust"), fluid("nitrogen_hot"), fluid("nitrogen_exhaust"),
+    fluid("fluorine_hot"), fluid("fluorine_exhaust"), fluid("methane_hot"), fluid("methane_exhaust"),
+    fluid("carbon_dioxide_hot"), fluid("carbon_dioxide_exhaust"), fluid("carbon_monoxide_hot"), fluid("carbon_monoxide_exhaust"),
+    fluid("ethene_hot"), fluid("ethene_exhaust"), fluid("ethyne_hot"), fluid("ethyne_exhaust"),
+    fluid("fluoromethane_hot"), fluid("fluoromethane_exhaust"), fluid("ammonia_hot"), fluid("ammonia_exhaust"),
+    fluid("diborane_hot"), fluid("diborane_exhaust"), fluid("sulfur_dioxide_hot"), fluid("sulfur_dioxide_exhaust"),
+    fluid("sulfur_trioxide_hot"), fluid("sulfur_trioxide_exhaust"), fluid("sulfur_hexafluoride_hot"), fluid("sulfur_hexafluoride_exhaust"),
     // Abyssalcraft
     fluid("liquidcoralium"),
 ]
