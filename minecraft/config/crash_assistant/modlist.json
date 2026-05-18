@@ -1437,6 +1437,14 @@
     "curseForgeHash": 2677120016,
     "modrinthHash": "75700a3cbe20500d42b631a63fb94a900660fde1"
   },
+  "TinkersPlannerAntique-1.12.2-1.0.3.jar": {
+    "jarName": "TinkersPlannerAntique-1.12.2-1.0.3.jar",
+    "modId": "tinkersplannerantique",
+    "name": "Tinkers Planner Antique",
+    "version": "1.0.3",
+    "curseForgeHash": 3847441518,
+    "modrinthHash": "be22ccbd8cce141cab631fcad5c61ada0282c70c"
+  },
   "toolprogression-1.12.2-1.6.12.jar": {
     "jarName": "toolprogression-1.12.2-1.6.12.jar",
     "modId": "toolprogression",
