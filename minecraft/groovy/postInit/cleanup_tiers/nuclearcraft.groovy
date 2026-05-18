@@ -50,7 +50,7 @@ def fuelCounts = [
     ["californium", 4],  // 249, 251
 ]
 
-def tier1Items = [mitem("dominos")]
+def tier1Items = [mitem("dominos"), mitem("glowing_mushroom")]
 
 def earlyItems = [
     mitem("gem_dust", 2), mitem("record_money_for_nothing"),
@@ -111,18 +111,15 @@ def hxItems = [
 ]
 
 def removeRecipes = [
-    mitem("rtg_uranium"), mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
-    mitem("glowing_mushroom"), mitem("compound", 2), mitem("compound", 9), mitem("part", 11),
+    mitem("rtg_uranium"), mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"), mitem("compound", 2), mitem("compound", 9),
     mitem("fission_power_port"),
 ]
 for (def m in ["copper", "hard_carbon", "thermoconducting"]) hxItems.add(mitem("heat_exchanger_tube_${m}"))
 
 def hideFromJei = [
     mitem("glowing_mushroom_block"), mitem("wasteland_earth"), mitem("wasteland_portal"), mitem("solidified_corium"),
-    mitem("fluid_steel"), mitem("fluid_enderium"), mitem("fluid_lead_platinum"), mitem("fluid_ethanol"), mitem("fluid_milk"),
-    mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("compound", 7), mitem("compound", 8), mitem("part", 15),
-    mitem("fluid_radaway"), mitem("fluid_radaway_slow"), mitem("fluid_redstone_ethanol"),
-    mitem("fluid_borax_solution"), mitem("fluid_irradiated_borax_solution"), mitem("gem"),
+    mitem("fluid_steel"), mitem("fluid_enderium"), mitem("fluid_lead_platinum"), mitem("fluid_milk"),
+    mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("part", 15), mitem("gem"), mitem("fluid_ethanol"),
 ] + removeRecipes
 
 TooltipEvents.setTooltip(mitem("fission_dust", 5), "tooltip.gateway.obtain.fission_sr")

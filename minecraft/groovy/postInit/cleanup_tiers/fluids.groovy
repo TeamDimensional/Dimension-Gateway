@@ -102,6 +102,7 @@ def tier9 = [
     fluid("difluorobenzene"), fluid("dfdps"), fluid("polymethylsilylene_methylene"),
     fluid("ferroboron"), fluid("tough"), fluid("diborane"), fluid("boric_acid"), fluid("boron_nitride_solution"),
     fluid("bas"), fluid("boron"),
+    fluid("radaway"), fluid("radaway_slow"), fluid("redstone_ethanol"), fluid("borax_solution"), fluid("irradiated_borax_solution"),
     // Voidmetal stuff
     fluid("liquid_enlightenment"), fluid("condensed_thoughts"),
 ]
@@ -167,10 +168,8 @@ def tier14 = [
 ]
 
 def removeFluids = [
-    "construction_alloy", "if.protein", "crude_oil", "lead_platinum", "radaway",
-    "radaway_slow", "redstone_ethanol", "borax_solution", "irradiated_borax_solution",
-    "solution_resonating",
-    "solution_aether", "mushroom_stew", "solution_zanite", "solution_aurorian_coal",
+    "construction_alloy", "if.protein", "crude_oil", "lead_platinum",
+    "solution_resonating", "solution_aether", "mushroom_stew", "solution_zanite", "solution_aurorian_coal",
     "ftglowstone", "solution_ambrosium", "solution_aurorian_geode",
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
     "boiling_potato_juice", "boiling_wormwood", "boiling_beetroot_soup", "vodka", "umber_ale", "absinthe", "snowpoff",
