@@ -10,6 +10,7 @@ def titem(name, k=0) {
 }
 
 TooltipEvents.setModTier("modularrouters", 4)
+TooltipEvents.setModTier("packagedauto", 6)
 TooltipEvents.setModTier("integratedcrafting", 7)
 TooltipEvents.setModTier("integrateddynamics", 7)
 TooltipEvents.setModTier("integratedterminals", 7)
@@ -29,6 +30,8 @@ def advancedItems = [
     titem("part_interface_energy_item"), titem("part_importer_energy_item"), titem("part_exporter_energy_item"),
     item("integratedterminals:chorus_glass"), mitem("crystalized_chorus_chunk"), mitem("crystalized_chorus_brick_stairs"),
     mitem("crystalized_chorus_block_stairs"), mitem("crystalized_chorus_brick"), mitem("crystalized_chorus_block"),
+    titem("part_player_simulator_item"),
+    item("packagedauto:distributor_marker"), item("packagedauto:proxy_marker"), item("packagedauto:crafting_proxy"), item("packagedauto:distributor"),
 ]
 
 def removeRecipes = [
@@ -50,7 +53,7 @@ def hideFromJei = [
 
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in advancedItems) TooltipEvents.setTier(it, 8)
-TooltipEvents.setTier(titem("part_player_simulator_item"), 8)
+TooltipEvents.setTier(item("packagingprovider:packaging_provider"), 10)
 TooltipEvents.setTier(mitem("on_the_dynamics_of_integration"), 1)
 TooltipEvents.setTier(item("guideapi:modularrouters-guidebook"), 1)
 TooltipEvents.setTier(item("opencomputers:tool", 4), 1)

@@ -1,0 +1,29 @@
+filename = 'PackagingProvider-1.12.2-1.0.0.2.jar'
+name = 'PackagingProvider'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.12.2-1.0.0.2'
+
+[download]
+hash = '86a9966d0039a6a316418a3d90bee2dfddc861b1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7329789
+project-id = 1334934
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223794'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '308380'
+type = 'REQUIRED'

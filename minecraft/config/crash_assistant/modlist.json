@@ -1096,6 +1096,30 @@
     "curseForgeHash": 424401967,
     "modrinthHash": "d5e32554a78d95e40ecb85c32138531cb433f19f"
   },
+  "PackagedAuto-1.12.2-1.0.24.73.jar": {
+    "jarName": "PackagedAuto-1.12.2-1.0.24.73.jar",
+    "modId": "packagedauto",
+    "name": "PackagedAuto",
+    "version": "1.0.24.73",
+    "curseForgeHash": 2596751255,
+    "modrinthHash": "cdc6f2edeb816d0496a799780118e8c9cdfa0416"
+  },
+  "PackagedFluidCrafting-1.12.2-1.0.0.3.jar": {
+    "jarName": "PackagedFluidCrafting-1.12.2-1.0.0.3.jar",
+    "modId": "packagedfluidcrafting",
+    "name": "PackagedFluidCrafting",
+    "version": "1.0.0.3",
+    "curseForgeHash": 1124054638,
+    "modrinthHash": "516e4475753420ae6ac7014febb6b7a2465c81c6"
+  },
+  "PackagingProvider-1.12.2-1.0.0.2.jar": {
+    "jarName": "PackagingProvider-1.12.2-1.0.0.2.jar",
+    "modId": "packagingprovider",
+    "name": "PackagingProvider",
+    "version": "1.0.0.2",
+    "curseForgeHash": 3165438855,
+    "modrinthHash": "86a9966d0039a6a316418a3d90bee2dfddc861b1"
+  },
   "particleculling-1.12.2-v1.4.3.jar": {
     "jarName": "particleculling-1.12.2-v1.4.3.jar",
     "modId": "particleculling",
