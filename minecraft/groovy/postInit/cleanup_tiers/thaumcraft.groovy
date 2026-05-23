@@ -37,6 +37,13 @@ def mainItems = [
     citem("drill_head_thaumium"), citem("upgrade_refining"), citem("arcane_crafter"),
     witem("hexamite"), witem("alkahest_vat"), witem("oblivion_essentia_jar"), witem("inspiration_engine"),
     witem("disjunction_cloth"), witem("panacea", 1), witem("panacea"), witem("lethe_water"), witem("warp_ring"),
+    witem("essentia_enchanter"),
+    gitem("autocaster_placer"), mitem("matrix_speed"), mitem("matrix_cost"),
+    mitem("jar_brain"), mitem("infusion_matrix"), mitem("mirror"), mitem("mirror_essentia"), mitem("mind", 1), mitem("turret", 1),
+    mitem("hand_mirror"), mitem("verdant_charm"), mitem("charm_undying"),
+    witem("everburning_urn"), witem("ore_diviner"),
+    witem("bone_bow"), witem("flying_carpet"), witem("timewinder"), witem("shimmerleaf_seed"), witem("cinderpearl_seed"), witem("vishroom_spore"),
+    witem("night_vision_goggles"), witem("sharing_tome"),
 ]
 
 def astralItems = [
@@ -46,21 +53,11 @@ def astralItems = [
     witem("portal_generator"), witem("portal_anchor"), witem("portal_linker"), witem("structure_diviner"),
     witem("alchemist_stone"), witem("transmuter_stone"), witem("alienist_stone"), witem("catalyzation_chamber"), ritem("purifying_shovel"),
     titem("transvector_dislocator"), mitem("mirror"), mitem("hand_mirror"), titem("ender_mirror"), mitem("mirror_essentia"),
-    titem("transvector_interface"), titem("transvector_binder"), titem("escape_sigil"), titem("recall_stopwatch"),
+    titem("transvector_interface"), titem("transvector_binder"), titem("escape_sigil"), titem("recall_stopwatch"), witem("meteorb"),
 ]
 
 def transcendentalItems = [
     mitem("metal_alchemical_advanced"), mitem("thaumonomicon", 1), mitem("focus_2"), witem("cleansing_charm"),
-]
-
-def infusionItems = [
-    gitem("autocaster_placer"), mitem("matrix_speed"), mitem("matrix_cost"),
-    mitem("jar_brain"), mitem("infusion_matrix"), mitem("mirror"), mitem("mirror_essentia"), mitem("mind", 1), mitem("turret", 1),
-    mitem("hand_mirror"), mitem("verdant_charm"), mitem("charm_undying"), item("gadothaumy:infusion_claw"),
-    item("gadothaumy:essentia_compressor"), item("gadothaumy:item_element"), 
-    witem("meteorb"), witem("everburning_urn"), witem("ore_diviner"),
-    witem("bone_bow"), witem("flying_carpet"), witem("timewinder"), witem("shimmerleaf_seed"), witem("cinderpearl_seed"), witem("vishroom_spore"),
-    witem("night_vision_goggles"), witem("sharing_tome"),
 ]
 
 def crimsonItems = [
@@ -68,7 +65,7 @@ def crimsonItems = [
     ritem("crimson_archer_helmet"), ritem("crimson_archer_chestplate"), ritem("crimson_archer_leggings"),
     mitem("crimson_blade"), mitem("crimson_plate_helm"), mitem("crimson_plate_chest"), mitem("crimson_plate_legs"), mitem("crimson_boots"),
     mitem("crimson_robe_helm"), mitem("crimson_robe_chest"), mitem("crimson_robe_legs"), mitem("crimson_praetor_helm"),
-    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"),
+    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"), witem("thaumicwonders:infusion_claw"),
 ]
 
 def hoannaItems = [
@@ -120,7 +117,7 @@ def hideFromJei = [
     mitem("ore_cinnabar"), mitem("grass_ambient"),
     mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
-    mitem("enchanted_placeholder"),
+    mitem("enchanted_placeholder"), witem("arcane_pillar"), witem("placeholder_arcane_stone"), witem("placeholder_obsidian"),
 ] + removeCrafting + removeArcaneCrafting
 for (int i in 0..3) hideFromJei.add(gitem("capstone", i))
 for (int i in 0..3) hideFromJei.add(gitem("eldritch_lock", i))

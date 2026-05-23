@@ -58,6 +58,14 @@
     "curseForgeHash": 3396816010,
     "modrinthHash": "7ed08cd84a22e2f3fbf81d6bf263cd409c88a674"
   },
+  "`FermiumBooter-1.4.1.jar": {
+    "jarName": "`FermiumBooter-1.4.1.jar",
+    "modId": "fermiumbooter",
+    "name": "FermiumBooter",
+    "version": "1.4.1",
+    "curseForgeHash": 2016822378,
+    "modrinthHash": "89547fd24ac5a22b4268b61c73b8e67da45d2753"
+  },
   "AbyssalCraft-1.12.2-2.0.0-BETA-6.jar": {
     "jarName": "AbyssalCraft-1.12.2-2.0.0-BETA-6.jar",
     "modId": "abyssalcraft",
@@ -90,13 +98,13 @@
     "curseForgeHash": 4128642090,
     "modrinthHash": "b6a7348001eb65d2c145b9121709632d7ce15675"
   },
-  "advancedrocketry-2.2.8.jar": {
-    "jarName": "advancedrocketry-2.2.8.jar",
+  "advancedrocketry-2.2.9.jar": {
+    "jarName": "advancedrocketry-2.2.9.jar",
     "modId": "advancedrocketry",
     "name": "Advanced Rocketry",
-    "version": "2.2.8",
-    "curseForgeHash": 1436590212,
-    "modrinthHash": "4c89faa523a5eeac511fd5e3da659dc0dea94188"
+    "version": "2.2.9",
+    "curseForgeHash": 2337284796,
+    "modrinthHash": "b50e77f641bfc2f3339dcd32a27c3da2f3b80c69"
   },
   "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar": {
     "jarName": "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar",
@@ -332,13 +340,13 @@
     "curseForgeHash": 2458126195,
     "modrinthHash": "b4834c59599b7344e12f57bdd6a16056bc0f7012"
   },
-  "cells-0.6.1-alpha3.jar": {
-    "jarName": "cells-0.6.1-alpha3.jar",
+  "cells-0.6.1-alpha4.jar": {
+    "jarName": "cells-0.6.1-alpha4.jar",
     "modId": "cells",
     "name": "C.E.L.L.S",
-    "version": "0.6.1-alpha3",
-    "curseForgeHash": 2687238335,
-    "modrinthHash": "fa3d27d80a50605419bccb7413bdf5a611379db6"
+    "version": "0.6.1-alpha4",
+    "curseForgeHash": 2070196416,
+    "modrinthHash": "7639029d8d93204a466dd5fa06637609f6e39220"
   },
   "champions-1.12.2-1.0.11.10.jar": {
     "jarName": "champions-1.12.2-1.0.11.10.jar",
@@ -632,14 +640,6 @@
     "curseForgeHash": 2785731822,
     "modrinthHash": "1916592c530f5780add753b76f6313c8bac3ad5c"
   },
-  "Gadothaumy-1.1.3.jar": {
-    "jarName": "Gadothaumy-1.1.3.jar",
-    "modId": "gadothaumy",
-    "name": "Gadothaumy",
-    "version": "1.1.3",
-    "curseForgeHash": 2420995971,
-    "modrinthHash": "df201ee1c12f0e2cff3652d32ca37d7dfa46eaec"
-  },
   "GameStages-1.12.2-2.0.123.jar": {
     "jarName": "GameStages-1.12.2-2.0.123.jar",
     "modId": "gamestages",
@@ -712,13 +712,13 @@
     "curseForgeHash": 4029569122,
     "modrinthHash": "dd0ec378fef19acc7cf649be13ced76aa72e42ac"
   },
-  "incontrol-1.12-3.10.0.jar": {
-    "jarName": "incontrol-1.12-3.10.0.jar",
+  "incontrol-1.12-3.10.2.jar": {
+    "jarName": "incontrol-1.12-3.10.2.jar",
     "modId": "incontrol",
     "name": "InControlContinuation",
-    "version": "1.12-3.10.0",
-    "curseForgeHash": 3358228883,
-    "modrinthHash": "80d9f0bbf3bea44a75d04c5402c16f931fb37156"
+    "version": "1.12-3.10.2",
+    "curseForgeHash": 351087708,
+    "modrinthHash": "9f6e3bf6e0176c47c41a697880be3b64e417ed72"
   },
   "industrialforegoing-1.12.2-1.12.13-237.jar": {
     "jarName": "industrialforegoing-1.12.2-1.12.13-237.jar",
@@ -848,13 +848,13 @@
     "curseForgeHash": 3242005743,
     "modrinthHash": "a3445db181f0837da44d0434f4bef31ac34bd098"
   },
-  "LessSimpleVoidWorld-1.3.0.jar": {
-    "jarName": "LessSimpleVoidWorld-1.3.0.jar",
+  "LessSimpleVoidWorld-1.5.1.jar": {
+    "jarName": "LessSimpleVoidWorld-1.5.1.jar",
     "modId": "simplevoidworld",
     "name": "Less Simple Void World",
-    "version": "1.3.0",
-    "curseForgeHash": 80070679,
-    "modrinthHash": "9074b357a441846a71afc3d40a74ebf500e66277"
+    "version": "1.5.1",
+    "curseForgeHash": 2512236486,
+    "modrinthHash": "e4afdca69d002c2cde66f6e8d0bf1946b8f23a20"
   },
   "libvulpes-0.5.3.jar": {
     "jarName": "libvulpes-0.5.3.jar",
@@ -984,13 +984,13 @@
     "curseForgeHash": 2324987361,
     "modrinthHash": "02018e1e520d478b2b82a63ddb679452957bd415"
   },
-  "natura-legacy-1.12.2-4.6.0.jar": {
-    "jarName": "natura-legacy-1.12.2-4.6.0.jar",
+  "natura-legacy-1.12.2-4.6.1.jar": {
+    "jarName": "natura-legacy-1.12.2-4.6.1.jar",
     "modId": "natura",
     "name": "Natura Legacy",
-    "version": "4.6.0",
-    "curseForgeHash": 2043857450,
-    "modrinthHash": "88b9822a6fe994b746e6da7483eaf4780a3cc338"
+    "version": "4.6.1",
+    "curseForgeHash": 1786394415,
+    "modrinthHash": "ffc3d242c91920601aeb39a8b1270d3ae507b6a2"
   },
   "NaturesAura-r22.jar": {
     "jarName": "NaturesAura-r22.jar",
@@ -1056,13 +1056,13 @@
     "curseForgeHash": 756502209,
     "modrinthHash": "de109b3247a4a19fef7515983b25fc77c17645ad"
   },
-  "nuclearcraft-1.12.2-2o.9.4.jar": {
-    "jarName": "nuclearcraft-1.12.2-2o.9.4.jar",
+  "nuclearcraft-1.12.2-2o.9.6.jar": {
+    "jarName": "nuclearcraft-1.12.2-2o.9.6.jar",
     "modId": "nuclearcraft",
     "name": "NuclearCraft",
-    "version": "2o.9.4",
-    "curseForgeHash": 2226543437,
-    "modrinthHash": "93229ff77c9d863d13408b3b14c9f3b7cef172de"
+    "version": "2o.9.6",
+    "curseForgeHash": 98619572,
+    "modrinthHash": "be21a0d21f4096d4f07e870b0d078451c5d26780"
   },
   "ocxnetdriver-1.0.3-b17.jar": {
     "jarName": "ocxnetdriver-1.0.3-b17.jar",
@@ -1437,13 +1437,13 @@
     "curseForgeHash": 2438907322,
     "modrinthHash": "b1536e59875a5d819f62a1f5822fa7d9d03a17b6"
   },
-  "thaumicwonders-2.2.4.jar": {
-    "jarName": "thaumicwonders-2.2.4.jar",
+  "thaumicwonders-2.3.0.jar": {
+    "jarName": "thaumicwonders-2.3.0.jar",
     "modId": "thaumicwonders",
     "name": "Thaumic Wonders Unofficial",
-    "version": "2.2.4",
-    "curseForgeHash": 2509867258,
-    "modrinthHash": "62592a643dfaf76ce69e151c66c452d28029fca2"
+    "version": "2.3.0",
+    "curseForgeHash": 68839011,
+    "modrinthHash": "0b61a6dbe3160e06ec13f4930800ba2cc57b1bc1"
   },
   "theaurorian-1.12.2-1.2.jar": {
     "jarName": "theaurorian-1.12.2-1.2.jar",
