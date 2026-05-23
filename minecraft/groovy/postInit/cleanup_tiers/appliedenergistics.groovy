@@ -27,14 +27,12 @@ def modItems = [
     item("nae2:part", 1), item("nae2:upgrade", 1), item("cellterminal:cell_terminal"), item("cellterminal:wireless_cell_terminal"),
     item("aenetvistool:net_visualizer"), mitem("crafting_accelerator"), item("nae2:coprocessor_4x"), item("nae2:coprocessor_16x"),
     mitem("io_port"), mitem("fluid_interface"), mitem("entropy_manipulator"), mitem("matter_cannon"),
-    citem("import_interface"), citem("import_fluid_interface"), citem("export_interface"), citem("export_fluid_interface"),
     item("ae2powertools:network_health_scanner"), item("ae2powertools:priority_tuner"), item("ae2powertools:cards_distributor"),
     item("ae2fc:fluid_discretizer"), item("ae2fc:fluid_pattern_encoder"), item("ae2fc:fluid_packet_decoder"),
     item("ae2fc:ingredient_buffer"), item("ae2fc:large_ingredient_buffer"), item("ae2fc:burette"), item("ae2fc:dual_interface"),
     item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
     item("ae2powertools:network_component_locator"), item("ae2powertools:storage_level_emitter_part"), item("ae2powertools:storage_display_part"),
-    item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"), citem("io_item_interface"),
-    citem("io_fluid_interface"), citem("part", 6), citem("part", 7),
+    item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"),
 ]
 for (def i in [0, 2, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 35, 36, 37, 39, 43, 44, 45, 46, 52, 53, 60, 61])
     modItems.add(mitem("material", i))
@@ -44,8 +42,6 @@ for (def a in 0..16)
 for (def i in [80, 100, 120, 140, 160, 180, 200, 220, 221, 222, 240, 241, 260, 261, 280, 281,
                300, 302, 320, 321, 340, 360, 380, 400, 420, 440, 441, 460, 480, 520, 521, 522])
     modItems.add(mitem("part", i))
-for (def i in 0..3)
-    modItems.add(citem("part", i))
 
 def thaumicItems = [
     citem("import_essentia_interface"), citem("export_essentia_interface"), citem("essentia_part", 0), citem("essentia_part", 1),
@@ -65,12 +61,16 @@ def advancedItems = [
     citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"), item("ae2fc:ultimate_encoder"),
     item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
     citem("import_combined_interface"), citem("export_combined_interface"), citem("insertion_card"),
-    citem("part", 8), citem("part", 9), citem("part", 4), citem("part", 5),
+    citem("part", 8), citem("part", 9),
+    citem("import_interface"), citem("import_fluid_interface"), citem("export_interface"), citem("export_fluid_interface"),
+    citem("io_item_interface"), citem("io_fluid_interface"),
 ]
 for (def i in 0..35) advancedItems.add(mitem("paint_ball", i))
 for (def i in [6, 9, 28, 29, 30, 31, 32, 33, 34, 38, 41, 42, 47, 48, 54, 55, 56, 57, 58])
     advancedItems.add(mitem("material", i))
 for (def tier in 0..3) advancedItems.add(item("ae2powertools:crafter_speed_upgrade", tier))
+for (def i in 0..7)
+    advancedItems.add(citem("part", i))
 
 def eliteItems = [mitem("material", 59), citem("overclocked_processor", 1)]
 for (def i in 1..8) eliteItems.add(item("nae2:material", i))
