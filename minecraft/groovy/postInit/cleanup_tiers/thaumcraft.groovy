@@ -22,7 +22,7 @@ def ritem(name, k=0) {
 
 def tier1Items = [
     gitem("item_grate"), mitem("stone_arcane"), mitem("stone_arcane_brick"),
-    mitem("slab_arcane_stone"), mitem("slab_arcane_brick"), titem("kamiresource", 1),
+    mitem("slab_arcane_stone"), mitem("slab_arcane_brick"),
     mitem("log_silverwood"), mitem("leaves_silverwood"), mitem("sapling_silverwood"),
     mitem("slab_silverwood"), mitem("plank_silverwood"), mitem("stairs_silverwood"),
     citem("fence_silverwood"), citem("fence_gate_silverwood"),
@@ -41,10 +41,12 @@ def mainItems = [
 
 def astralItems = [
     gitem("starfield_glass"), gitem("starfield_glass", 2), mitem("quicksilver"), mitem("nugget", 5), mitem("mirrored_glass"),
-    mitem("sanity_checker"), titem("kamiresource"), citem("mimic_fork_ranged"),
+    mitem("sanity_checker"), citem("mimic_fork_ranged"),
     witem("flux_capacitor"), witem("vis_capacitor"), witem("flux_distiller"),
     witem("portal_generator"), witem("portal_anchor"), witem("portal_linker"), witem("structure_diviner"),
     witem("alchemist_stone"), witem("transmuter_stone"), witem("alienist_stone"), witem("catalyzation_chamber"), ritem("purifying_shovel"),
+    titem("transvector_dislocator"), mitem("mirror"), mitem("hand_mirror"), titem("ender_mirror"), mitem("mirror_essentia"),
+    titem("transvector_interface"), titem("transvector_binder"), titem("escape_sigil"), titem("recall_stopwatch"),
 ]
 
 def transcendentalItems = [
@@ -66,7 +68,7 @@ def crimsonItems = [
     ritem("crimson_archer_helmet"), ritem("crimson_archer_chestplate"), ritem("crimson_archer_leggings"),
     mitem("crimson_blade"), mitem("crimson_plate_helm"), mitem("crimson_plate_chest"), mitem("crimson_plate_legs"), mitem("crimson_boots"),
     mitem("crimson_robe_helm"), mitem("crimson_robe_chest"), mitem("crimson_robe_legs"), mitem("crimson_praetor_helm"),
-    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"), 
+    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"),
 ]
 
 def hoannaItems = [
@@ -74,22 +76,6 @@ def hoannaItems = [
     mitem("stone_eldritch_tile"), mitem("slab_eldritch"), mitem("pedestal_eldritch"),
     witem("coalescence_matrix"), witem("coalescence_matrix_precursor"),
 ]
-
-def ichorItems = [
-    titem("sky_pearl"), titem("warp_gate"), titem("bedrock_portal"), titem("ichor_block"),
-]
-for (def i in ["pick", "axe", "shovel", "sword"]) {
-    for (def j in ["", "_adv"]) {
-        ichorItems.add(titem("ichorium_${i}${j}"))
-    }
-}
-for (def i in ["ichor", "kami"]) {
-    for (def j in ["helm", "chest", "legs", "boots"]) {
-        ichorItems.add(titem("${i}_${j}"))
-    }
-}
-
-for (def i in 2..5) ichorItems.add(titem("kamiresource", i))
 
 def voidItems = [
     gitem("impetus_drainer"), gitem("impetus_relay"), gitem("impetus_diffuser"), gitem("impetus_matrix"), gitem("impetus_matrix_base"),
@@ -123,9 +109,7 @@ def creativeItems = [
     gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge"), witem("creative_essentia_jar"),
 ]
 
-def removeCrafting = [
-    mitem("table_stone"), titem("black_quartz"), titem("black_quartz_block")
-]
+def removeCrafting = [mitem("table_stone")]
 
 def removeArcaneCrafting = [
     mitem("smelter_void")
@@ -136,7 +120,7 @@ def hideFromJei = [
     mitem("ore_cinnabar"), mitem("grass_ambient"),
     mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
-    mitem("enchanted_placeholder"), titem("enchantment_pillar"),
+    mitem("enchanted_placeholder"),
 ] + removeCrafting + removeArcaneCrafting
 for (int i in 0..3) hideFromJei.add(gitem("capstone", i))
 for (int i in 0..3) hideFromJei.add(gitem("eldritch_lock", i))
@@ -150,9 +134,7 @@ TooltipEvents.setModTier("thaumictinkerer", 5)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
 TooltipEvents.setModTier("crimsonrevelations", 5)
 TooltipEvents.setModTier("advanced_smelter", 9)
-ore("quartzDark").remove(titem("black_quartz"))
-ore("blockQuartzDark").remove(titem("black_quartz_block"))
-TooltipEvents.setTooltip(titem("bedrock_portal"), "tooltip.gateway.obtain.bedrock_portal")
+TooltipEvents.setModTier("kami", 10)
 
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])
@@ -165,7 +147,6 @@ for (def it in astralItems) TooltipEvents.setTier(it, 6)
 for (def it in transcendentalItems) TooltipEvents.setTier(it, 9)
 for (def it in infusionItems) TooltipEvents.setTier(it, 5)
 for (def it in crimsonItems) TooltipEvents.setTier(it, 7)
-for (def it in ichorItems) TooltipEvents.setTier(it, 10)
 for (def it in hoannaItems) TooltipEvents.setTier(it, 13)
 for (def it in voidItems) TooltipEvents.setTier(it, 9)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)

@@ -115,7 +115,7 @@ def tier10 = [
     // Moon
     fluid("uranium"), fluid("uranium_titanide_mixture"), fluid("thorium"), 
     // Thaumcraft part 1.5
-    fluid("molten_ichorium"),
+    fluid("ichorium"),
 ]
 
 def tier11 = [
