@@ -12,7 +12,7 @@ def tier3 = [
     fluid("copper"), fluid("tin"), fluid("bronze"), fluid("lead"), fluid("nickel"), fluid("silver"), fluid("electrum"),
     fluid("steel"), fluid("aluminum"), fluid("alumite"),
     fluid("cerulean"), fluid("moonstone"), fluid("xu_demonic_metal"),
-    fluid("coal"), fluid("redstone"), fluid("glowstone"), fluid("quartz"), fluid("lapis"),
+    fluid("coal"), fluid("redstone"), fluid("glowstone"), fluid("quartz"), fluid("lapis"), fluid("sulfur"),
     // Tinker's Construct
     fluid("knightslime"), fluid("pigiron"), fluid("stone"), fluid("clay"), fluid("dirt"), fluid("glass"), fluid("blood"),
     fluid("greenslime"), fluid("purpleslime"), fluid("blazing_blood"), fluid("blueslime"), fluid("venom"), fluid("notmilk"), fluid("sugar"),
@@ -65,7 +65,7 @@ def tier8 = [
     fluid("resin"), fluid("tree_oil"), fluid("seed_oil"), fluid("biocrude"), fluid("refined_biofuel"),
     fluid("potion_splash"), fluid("potion_lingering"), fluid("platinum"), fluid("signalum"), fluid("lumium"), fluid("enderium"),
     fluid("pyrotheum"), fluid("aerotheum"), fluid("petrotheum"), fluid("cryotheum"), fluid("experience"),
-    fluid("nether_brick"), fluid("slime"), fluid("prismarine"), fluid("end_stone"), fluid("purpur"), fluid("sulfur"),
+    fluid("nether_brick"), fluid("slime"), fluid("end_stone"), fluid("purpur"),
     // Factory Tech
     fluid("sulphur"), fluid("h2so4"), fluid("propane"), fluid("energite"), fluid("silicon"),
     // Deep Resonance
@@ -106,7 +106,7 @@ def tier9 = [
     fluid("methane"), fluid("sulfur_hexafluoride"), fluid("barium_sulfide"), fluid("barium"), fluid("holmium"),
     fluid("aluminum_sulfide"), fluid("nickel_sulfide"), fluid("dysprosium"), fluid("hodybef_vapor"), fluid("hodybeso_solution"),
     fluid("baalo"), fluid("barium_oxide"), fluid("fso_vapor"), fluid("dysprholminite_water"), fluid("orthosilicic_acid"),
-    fluid("nickel_oxide"), fluid("soul"),
+    fluid("nickel_oxide"), fluid("soul"), fluid("prismarine"),
     // Voidmetal stuff
     fluid("liquid_enlightenment"), fluid("condensed_thoughts"),
 ]
