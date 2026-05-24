@@ -21,15 +21,6 @@ def metallurgyDecor = [
 def removeStamping = [mitem("sulfur")]
 def hideFromJei = [mitem("sulfur_ore"), mitem("sulfur_clump")] + removeStamping
 
-def mugs = [
-    "boiling_wort", "snowpoff"
-]
-
-for (def it in mugs) {
-    def mug = item("soot:mug").withNbt(["Fluid": ["Amount": 250, "FluidName": it]])
-    mods.jei.ingredient.hide(mug)
-}
-
 TooltipEvents.setModTier("soot", 4)
 for (def it in decor) TooltipEvents.setTier(it, 1)
 for (def it in metallurgyDecor) TooltipEvents.setTier(it, 3)

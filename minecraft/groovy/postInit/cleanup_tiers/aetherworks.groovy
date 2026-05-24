@@ -26,7 +26,7 @@ for (int i in 17..29) ourItems.add(mitem("item_resource", i))
 for (int i in 0..4) forgeBaseItems.add(mitem("forge_component", i))
 
 def potionGems = []
-for (int i in 1..140) potionGems.add(mitem("item_potion_gem", i))
+for (int i in 1..142) potionGems.add(mitem("item_potion_gem", i))
 
 // Removing some Aetherium tools because they're terrible for when they're obtained LMAO.
 def removeRecipes = [mitem("item_axe_prismarine"), mitem("item_axe_ender")]
@@ -37,7 +37,7 @@ def hideFromJei = [
 // Unobtainable tools => probably unfinished
     mitem("staff_aetherium"), mitem("aetheriumclockworkaxe"), mitem("aetheriumclockworkpickaxe"), mitem("aetheriumclockworkgrandhammer"),
     mitem("aetheriumblazingray"),
-] + removeRecipes + removeAlchemy + potionGems
+] + removeRecipes + removeAlchemy
 
 // Many tooltips
 TooltipEvents.setTooltip(mitem("item_pickaxe_aether"), "tooltip.gateway.use.aetherium_pick_aether")

@@ -32,7 +32,7 @@ def modItems = [
     item("ae2fc:ingredient_buffer"), item("ae2fc:large_ingredient_buffer"), item("ae2fc:burette"), item("ae2fc:dual_interface"),
     item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
     item("ae2powertools:network_component_locator"), item("ae2powertools:storage_level_emitter_part"), item("ae2powertools:storage_display_part"),
-    item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"),
+    item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"), mitem("facade"),
 ]
 for (def i in [0, 2, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 35, 36, 37, 39, 43, 44, 45, 46, 52, 53, 60, 61])
     modItems.add(mitem("material", i))
@@ -121,7 +121,7 @@ for (def tier in 0..3) {
 }
 
 def hideFromJei = [
-    mitem("facade"), mitem("material", 1), mitem("material", 5), mitem("material", 19), mitem("material", 21), mitem("part", 301), citem("recovery_container"),
+    mitem("material", 1), mitem("material", 5), mitem("material", 19), mitem("material", 21), mitem("part", 301), citem("recovery_container"),
     citem("creative_cell"), citem("creative_essentia_cell"),
 ] + removeRecipes
 for (def kind in 0..2) hideFromJei.add(citem("singularity_processor", kind))
