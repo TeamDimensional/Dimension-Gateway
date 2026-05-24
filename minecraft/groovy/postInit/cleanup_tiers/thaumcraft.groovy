@@ -29,6 +29,8 @@ def tier1Items = [
 ]
 for (def i in ["aer", "aqua", "ignis", "terra", "ordo", "perditio"]) tier1Items.add(mitem("crystal_${i}"))
 
+def tier2Items = [mitem("nugget", 9)]
+
 def mainItems = [
     mitem("sapling_greatwood"), mitem("log_greatwood"), mitem("leaves_greatwood"), mitem("shimmerleaf"),
     mitem("cinderpearl"), mitem("vishroom"), mitem("plank_greatwood"), mitem("stairs_greatwood"),
@@ -43,7 +45,7 @@ def mainItems = [
     mitem("hand_mirror"), mitem("verdant_charm"), mitem("charm_undying"),
     witem("everburning_urn"), witem("ore_diviner"),
     witem("bone_bow"), witem("flying_carpet"), witem("timewinder"), witem("shimmerleaf_seed"), witem("cinderpearl_seed"), witem("vishroom_spore"),
-    witem("night_vision_goggles"), witem("sharing_tome"),
+    witem("night_vision_goggles"), witem("sharing_tome"), citem("crafter_placeholder"),
 ]
 
 def astralItems = [
@@ -65,7 +67,7 @@ def crimsonItems = [
     ritem("crimson_archer_helmet"), ritem("crimson_archer_chestplate"), ritem("crimson_archer_leggings"),
     mitem("crimson_blade"), mitem("crimson_plate_helm"), mitem("crimson_plate_chest"), mitem("crimson_plate_legs"), mitem("crimson_boots"),
     mitem("crimson_robe_helm"), mitem("crimson_robe_chest"), mitem("crimson_robe_legs"), mitem("crimson_praetor_helm"),
-    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"), witem("thaumicwonders:infusion_claw"),
+    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"), witem("infusion_claw"),
 ]
 
 def hoannaItems = [
@@ -139,10 +141,10 @@ def predicateBook = stack -> {
 TooltipEvents.addTierPredicate("emptiness", predicateBook, 14)
 
 for (def it in tier1Items) TooltipEvents.setTier(it, 1)
+for (def it in tier2Items) TooltipEvents.setTier(it, 2)
 for (def it in mainItems) TooltipEvents.setTier(it, 5)
 for (def it in astralItems) TooltipEvents.setTier(it, 6)
 for (def it in transcendentalItems) TooltipEvents.setTier(it, 9)
-for (def it in infusionItems) TooltipEvents.setTier(it, 5)
 for (def it in crimsonItems) TooltipEvents.setTier(it, 7)
 for (def it in hoannaItems) TooltipEvents.setTier(it, 13)
 for (def it in voidItems) TooltipEvents.setTier(it, 9)

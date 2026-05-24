@@ -68,5 +68,6 @@ minecraft/OpenComputers*.dylib
 minecraft/config/opencomputers/*.recipes
 !minecraft/config/opencomputers/user.recipes
 minecraft/config/circulation_networks/atlas*
+minecraft/config/thaumicjei_itemstack_aspects.json
 
 __pycache__

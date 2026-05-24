@@ -1,29 +1,33 @@
-filename = 'thaumictinkerer-1.0.0.jar'
+filename = 'thaumictinkerer-1.0.1.jar'
 name = 'Thaumic Tinkerer: Reborn'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.0.0'
+x-prismlauncher-version-number = '1.0.1'
 
 [download]
-hash = '2541157688961a5ece6eb800b97afcaa2a0708fa'
+hash = '7e6f12372284c8f4e38bf16132e611b7f5941ee0'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8121534
+file-id = 8135558
 project-id = 1549287
-
-[[x-prismlauncher-dependencies]]
-addonId = '1396395'
-type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
 addonId = '223628'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
+addonId = '1396395'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
 addonId = '1533287'
 type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1064613'
+type = 'OPTIONAL'

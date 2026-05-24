@@ -1,31 +1,27 @@
-filename = 'kami-1.0.0.jar'
+filename = 'kami-1.0.1.jar'
 name = 'KAMI: Reborn'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.0.0'
+x-prismlauncher-version-number = '1.0.1-B'
 
 [download]
-hash = 'bea7c26a848b0c7f6e0c0a39b4515ce25a11c39e'
+hash = '6d8dad1684856259f7cb9a1791c9638eb57c5ffd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8121489
+file-id = 8135698
 project-id = 1549296
 
 [[x-prismlauncher-dependencies]]
-addonId = '223628'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '1394222'
+addonId = '319441'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '1242239'
+addonId = '1394222'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -33,5 +29,9 @@ addonId = '1533287'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '319441'
+addonId = '223628'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1242239'
 type = 'OPTIONAL'

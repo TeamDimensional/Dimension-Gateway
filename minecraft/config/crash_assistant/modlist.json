@@ -832,13 +832,13 @@
     "curseForgeHash": 3070081443,
     "modrinthHash": "cabcc7f31532215a6dd7c884ae281b59e0a53e2c"
   },
-  "kami-1.0.0.jar": {
-    "jarName": "kami-1.0.0.jar",
+  "kami-1.0.1.jar": {
+    "jarName": "kami-1.0.1.jar",
     "modId": "kami",
     "name": "KAMI: Reborn",
-    "version": "1.0.0",
-    "curseForgeHash": 3511882891,
-    "modrinthHash": "bea7c26a848b0c7f6e0c0a39b4515ce25a11c39e"
+    "version": "1.0.1",
+    "curseForgeHash": 3660300408,
+    "modrinthHash": "6d8dad1684856259f7cb9a1791c9638eb57c5ffd"
   },
   "lemonskin-4.0.0.jar": {
     "jarName": "lemonskin-4.0.0.jar",
@@ -1152,11 +1152,6 @@
     "curseForgeHash": 3667517947,
     "modrinthHash": "28debe44cc06685ca9274cd38441c933ed53836e"
   },
-  "persistency-1.2.0.jar": {
-    "jarName": "persistency-1.2.0.jar",
-    "curseForgeHash": 2868681591,
-    "modrinthHash": "8d3f8c0b8edaaac1f78bcaafb0d416bbeb042e1f"
-  },
   "prodigytech-1.12.2-1.3.4.jar": {
     "jarName": "prodigytech-1.12.2-1.3.4.jar",
     "modId": "prodigytech",
@@ -1413,21 +1408,13 @@
     "curseForgeHash": 4243220107,
     "modrinthHash": "859b30c956a1cc6e5985b22cfdd7af138c747562"
   },
-  "thaumicspeedup-4.0.jar": {
-    "jarName": "thaumicspeedup-4.0.jar",
-    "modId": "thaumicspeedup",
-    "name": "Thaumic Speedup",
-    "version": "${version}",
-    "curseForgeHash": 3609578985,
-    "modrinthHash": "05b3b804f45a038329fc13e854dda03a0343a7f9"
-  },
-  "thaumictinkerer-1.0.0.jar": {
-    "jarName": "thaumictinkerer-1.0.0.jar",
+  "thaumictinkerer-1.0.1.jar": {
+    "jarName": "thaumictinkerer-1.0.1.jar",
     "modId": "thaumictinkerer",
     "name": "Thaumic Tinkerer: Reborn",
-    "version": "1.0.0",
-    "curseForgeHash": 3777653373,
-    "modrinthHash": "2541157688961a5ece6eb800b97afcaa2a0708fa"
+    "version": "1.0.1",
+    "curseForgeHash": 2954165930,
+    "modrinthHash": "7e6f12372284c8f4e38bf16132e611b7f5941ee0"
   },
   "thaumictweaker-1.3.0.jar": {
     "jarName": "thaumictweaker-1.3.0.jar",
