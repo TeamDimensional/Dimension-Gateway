@@ -38,7 +38,7 @@ def plates = [
 ]
 
 // Clean up involved categories
-// TODO // mods.nuclearcraft.pressurizer.removeAll()
+mods.nuclearcraft.pressurizer.removeAllRecipes()
 mods.thermalexpansion.compactor.removeAll()
 mods.advancedrocketry.small_plate_presser.removeAll()
 mods.advancedrocketry.rolling_machine.removeAll()
@@ -69,19 +69,16 @@ crafting.remove("embers:ingotdawnstone_plate")
 crafting.remove("prodigytech:materials/carbon_plate")
 def removeMagician = [7, 35, 41, 49, 54]
 for (def it in removeMagician) mods.essentialcraft.magician_table.removeByOutput(item("essentialcraft:genitem", it))
-mods.embers.stamper.streamRecipes()
-    .filter(recipe -> item("embers:stamp_plate") in recipe.stamp)
-    .removeAll()
-
-def aspects = ["copper", "lead", "dawnstone", "iron", "silver"]
-for (def x in aspects) {
-    mods.embers.stamper.recipeBuilder()
-        .stamp(item("embers:stamp_round"))
-        .fluidInput(fluid(x) * 144)
-        .input(item("embers:shard_ember"))
-        .output(item("embers:aspectus_${x}"))
-        .register()
+def removeStamping = [item("embers:plate_dawnstone")]
+for (def it in [32, 33, 323, 322, 320, 324, 355, 353, 325, 321]) {
+    removeStamping.add(item("thermalfoundation:material", it))
 }
+for (def x in removeStamping) {
+    mods.embers.stamper.removeByOutput(x)
+}
+mods.tconstruct.casting_table.removeByOutput(item("tconstruct:cast_custom", 3))
+mods.tconstruct.casting_table.removeByCast(item("tconstruct:cast_custom", 3))
+ore("cast").remove(item("tconstruct:cast_custom", 3))
 
 mods.advancedrocketry.rolling_machine.recipeBuilder()
     .input(item("advancedrocketry:productplate"))
