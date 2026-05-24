@@ -55,7 +55,7 @@ def part2Items = [
     mitem("planks"),
     // Titanium Iridium
     mitem("productdust", 1), mitem("productingot", 1), mitem("productnugget", 1), mitem("productplate", 1), mitem("productrod", 1),
-    mitem("productsheet", 1), mitem("productgear", 1), mitem("metal0", 1), item("libvulpes:productrod", 10),
+    mitem("productgear", 1), mitem("metal0", 1), item("libvulpes:productrod", 10),
     mitem("dataunit"), mitem("satellitepowersource"), mitem("satellitepowersource", 1), mitem("orescanner"),
     mitem("carbonscrubbercartridge"), mitem("satellite"), item("libvulpes:advstructuremachine"), item("libvulpes:elitemotor"),
     mitem("databusbig"),
@@ -67,7 +67,7 @@ for (def i in 0..6) part2Items.add(mitem("satelliteprimaryfunction", i))
 def creativeItems = [item("libvulpes:creativepowerbattery")]
 
 def removeRecipes = [
-    mitem("solargenerator"), mitem("rollingmachine"), mitem("lathe"), mitem("electrolyser"), mitem("centrifuge"),
+    mitem("solargenerator"), mitem("lathe"), mitem("electrolyser"), mitem("centrifuge"),
     mitem("beacon"), mitem("railgun"), mitem("bipropellantrocketmotor"), mitem("advbipropellantrocketmotor"),
     mitem("bipropellantfueltank"), mitem("oxidizerfueltank"), mitem("terraformingterminal"), mitem("ic", 3), mitem("ic", 4), mitem("ic", 5),
     mitem("misc", 1), mitem("sawblade"), mitem("sawbladeiron"), item("libvulpes:coalgenerator"), item("libvulpes:productfan", 6),
@@ -87,7 +87,7 @@ def removeCrystallizer = [
 
 def hideFromJei = [
     mitem("landingfloat"), mitem("basiclasergun"), mitem("unlittorch"), item("libvulpes:ore0", 10),
-    item("libvulpes:blockphantom"), item("libvulpes:placeholder"),
+    item("libvulpes:blockphantom"), item("libvulpes:placeholder"), mitem("productsheet", 1),
 ] + removeRecipes + removeCutting + removeAssembler + removeCrystallizer
 
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)

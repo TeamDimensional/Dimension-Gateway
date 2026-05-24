@@ -49,5 +49,3 @@ mods.extrautils2.resonator.recipeBuilder()
 
 // Void Plate
 ore("plateVoid").remove(item("essentialcraft:genitem", 35))
-mods.thermalexpansion.compactor.removeByOutput(item("essentialcraft:genitem", 35))
-mods.immersiveengineering.metal_press.removeByOutput(item("essentialcraft:genitem", 35))

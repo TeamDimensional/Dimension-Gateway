@@ -53,13 +53,3 @@ mods.prodigytech.solderer.recipeBuilder()
     .time(300)
     .gold(18)
     .register()
-
-// Carbon Plate
-crafting.remove("prodigytech:materials/carbon_plate")
-mods.immersiveengineering.metal_press.removeByOutput(item("prodigytech:carbon_plate"))
-mods.thermalexpansion.compactor.removeByOutput(item("prodigytech:carbon_plate"))
-MetalworksHelper.builder()
-    .plate()
-    .input(item("immersiveengineering:material", 17) * 4)
-    .output(item("prodigytech:carbon_plate"))
-    .register()
