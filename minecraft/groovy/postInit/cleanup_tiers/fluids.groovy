@@ -103,7 +103,10 @@ def tier9 = [
     fluid("ferroboron"), fluid("tough"), fluid("diborane"), fluid("boric_acid"), fluid("boron_nitride_solution"),
     fluid("bas"), fluid("boron"),
     fluid("radaway"), fluid("radaway_slow"), fluid("redstone_ethanol"), fluid("borax_solution"), fluid("irradiated_borax_solution"),
-    fluid("methane"), fluid("sulfur_hexafluoride"),
+    fluid("methane"), fluid("sulfur_hexafluoride"), fluid("barium_sulfide"), fluid("barium"), fluid("holmium"),
+    fluid("aluminum_sulfide"), fluid("nickel_sulfide"), fluid("dysprosium"), fluid("hodybef_vapor"), fluid("hodybeso_solution"),
+    fluid("baalo"), fluid("barium_oxide"), fluid("fso_vapor"), fluid("dysprholminite_water"), fluid("orthosilicic_acid"),
+    fluid("nickel_oxide"), fluid("soul"),
     // Voidmetal stuff
     fluid("liquid_enlightenment"), fluid("condensed_thoughts"),
 ]
@@ -140,6 +143,7 @@ def tier11 = [
     fluid("fluoromethane_hot"), fluid("fluoromethane_exhaust"), fluid("ammonia_hot"), fluid("ammonia_exhaust"),
     fluid("diborane_hot"), fluid("diborane_exhaust"), fluid("sulfur_dioxide_hot"), fluid("sulfur_dioxide_exhaust"),
     fluid("sulfur_trioxide_hot"), fluid("sulfur_trioxide_exhaust"), fluid("sulfur_hexafluoride_hot"), fluid("sulfur_hexafluoride_exhaust"),
+    fluid("mysterious_soul"),
     // Abyssalcraft
     fluid("liquidcoralium"),
 ]
@@ -175,6 +179,7 @@ def tier14 = [
     fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
     fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
     fluid("samarium"), fluid("erbium"), fluid("terbium"), fluid("ytterbium"),
+    fluid("bacro"), fluid("bacro_nio"), fluid("hastelloy"), fluid("nichrome"),
 ]
 
 def removeFluids = [

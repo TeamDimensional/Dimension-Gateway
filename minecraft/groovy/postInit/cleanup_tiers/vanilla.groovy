@@ -20,7 +20,7 @@ def goldItems = [
 def redstoneItems = [
     mitem("redstone_ore"), mitem("redstone"), mitem("repeater"), mitem("redstone_torch"), mitem("comparator"), mitem("redstone_lamp"),
     mitem("redstone_block"),  mitem("observer"), mitem("noteblock"), mitem("dropper"), mitem("dispenser"),
-    mitem("clock"), mitem("compass"),
+    mitem("clock"), mitem("compass"), mitem("map"), mitem("filled_map"),
 ]
 // Pistons are moved into Tier 2 even though they require redstone to support certain crafting methods
 def pistons = [mitem("piston"), mitem("sticky_piston")]
@@ -49,7 +49,7 @@ def potionItems = [mitem("brewing_stand"), mitem("potion"), mitem("splash_potion
 
 def hideFromJei = [
     mitem("mob_spawner"), mitem("command_block"), mitem("barrier"), mitem("knowledge_book"), mitem("repeating_command_block"),
-    mitem("chain_command_block"), mitem("structure_void"), mitem("structure_block"), mitem("filled_map"), mitem("command_block_minecart"),
+    mitem("chain_command_block"), mitem("structure_void"), mitem("structure_block"), mitem("command_block_minecart"),
     mitem("written_book"), mitem("end_portal_frame")
 ]
 for (int i in 0..5) hideFromJei.add(mitem("monster_egg", i))

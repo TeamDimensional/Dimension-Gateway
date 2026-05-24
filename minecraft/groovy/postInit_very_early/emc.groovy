@@ -423,3 +423,7 @@ for (def it in walls) {
 
 // Immersive Engineering
 configureItem(item("immersiveengineering:metal_decoration2", 4), "Lighting")
+
+// EnderIO
+configureItem(item("enderio:block_electric_light", 2), "Lighting")
+configureItem(item("enderio:block_electric_light", 3), "Lighting")

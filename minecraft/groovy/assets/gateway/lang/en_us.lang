@@ -256,7 +256,6 @@ tooltip.gateway.hint.leaf_generator=Gets disabled with a Redstone signal. Use th
 tooltip.gateway.hint.witchery_book=The Witchery Companion contains all information in this book!
 tooltip.gateway.hint.backpack_recipe=The actual recipe may show up on the last page of JEI!
 
-tooltip.gateway.warn.akashic_botania=Warning! Throwing this through an Elven Portal if it's in an Akashic Tome deletes all other books.
 tooltip.gateway.warn.akashic_ec4=Warning! This can't be upgraded after being removed from Akashic Tome.
 tooltip.gateway.warn.jump_module=Warning! Don't use this without a good Feather Falling armor or equivalent.
 tooltip.gateway.warn.relay_sequencer=Does not properly work with RFTools Sequencers! Use Project Red utilities instead.

@@ -6,7 +6,8 @@ def mitem(name, k=0) {
 }
 
 def goldItems = [
-    mitem("compass"), mitem("plumbline"), mitem("bibliodrill"), mitem("biblioglasses", 2), mitem("biblioredbook")
+    mitem("compass"), mitem("plumbline"), mitem("bibliodrill"), mitem("biblioglasses", 2), mitem("biblioredbook"),
+    mitem("atlasbook"), mitem("atlasplate"),
 ]
 
 def bookPrinting = [

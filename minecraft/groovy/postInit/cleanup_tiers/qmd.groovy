@@ -10,14 +10,14 @@ def embersItems = [mitem("fluid_mercury")]
 def thermalItems = [mitem("fluid_silicon")]
 
 def chemistryItems = [
-    mitem("ore_leacher"), mitem("atmosphere_collector"), mitem("dust", 11), mitem("ingot", 11), mitem("liquid_collector"),
+    mitem("ore_leacher"), mitem("atmosphere_collector"), mitem("dust", 11), mitem("ingot", 11), mitem("liquid_collector"), mitem("ingot", 15),
 ]
 for (def i in [3, 4]) chemistryItems.add(mitem("chemical_dust", i))
 for (def c in GatewayHelpers.qmdChemiFluids) chemistryItems.add(mitem("fluid_${c}"))
 
 def fissionItems = [
     mitem("dust2", 1), mitem("ingot2", 1), mitem("fluid_polonium"), mitem("fluid_radium"), mitem("fluid_bismuth"),
-    mitem("fluid_neodymium"), mitem("dust", 15), mitem("ingot", 15),
+    mitem("fluid_neodymium"), mitem("dust", 15),
 ]
 for (def i in [2, 3, 4, 6, 8]) fissionItems.add(mitem("isotope", i))
 def tier12Items = [mitem("dust", 8), mitem("ingot", 8)]

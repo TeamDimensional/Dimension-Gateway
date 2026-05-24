@@ -121,7 +121,6 @@ for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia")
 for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia2")
 for (def it in diceItems) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.dice")
-TooltipEvents.setTooltip(mitem("lexicon"), "tooltip.gateway.warn.akashic_botania")
 TooltipEvents.setTooltip(mitem("gaiahead"), "tooltip.gateway.obtain.gaia_head")
 TooltipEvents.setTooltip(mitem("manaresource", 15), "tooltip.gateway.obtain.end_bottle")
 

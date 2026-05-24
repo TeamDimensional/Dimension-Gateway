@@ -59,10 +59,10 @@ def creativeItems = [
 def removedMachines = [
     "generator_culinary", "generator", "generator_death", "generator_ender", "generator_potion", "crusher", "generator_overclock",
     "generator_netherstar", "generator_redstone", "generator_ice", "generator_dragonsbreath", "generator_survival", "generator_slime",
-    "furnace", "generator_pink", "generator_enchant", "generator_tnt", "generator_lava",
+    "generator_pink", "generator_enchant", "generator_tnt", "generator_lava",
 ]
 
-def removeRecipes = [mitem("machine"), mitem("glasscutter"), mitem("endershard")]
+def removeRecipes = [mitem("glasscutter"), mitem("endershard"), mitem("sickle_wood"), mitem("sickle_stone")]
 def hideFromJei = [mitem("ingredients", 14)] + removeRecipes
 
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)
@@ -74,6 +74,7 @@ for (def it in terraformingItems) TooltipEvents.setTier(it, 7)
 for (def it in advancedItems) TooltipEvents.setTier(it, 10)
 for (def it in antimatterItems) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
+for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removedMachines) {
     def a = mitem("machine").withNbt(["Type": "extrautils2:${it}".toString()])

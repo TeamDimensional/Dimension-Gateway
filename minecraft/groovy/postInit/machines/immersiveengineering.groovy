@@ -148,3 +148,11 @@ crafting.shapedBuilder()
 
 // Distillation Tower catalyst
 mods.jei.catalyst.add("immersivepetroleum.distillation", item("immersivepetroleum:metal_multiblock", 1))
+
+// Steel Scaffolding
+crafting.shapedBuilder()
+        .name("tier3/steel_scaffolding")
+        .output(item("immersiveengineering:metal_decoration1", 1))
+        .matrix("ISI")
+        .key("I", item("thermalfoundation:material", 160)).key("S", item("factorytech:scaffold"))
+        .register()

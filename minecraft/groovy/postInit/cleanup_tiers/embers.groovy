@@ -14,7 +14,7 @@ def ashItems = [
 def earlyItems = [
     mitem("tinker_hammer"), mitem("tinker_lens"), mitem("block_tank"), mitem("fluid_dropper"), mitem("fluid_gauge"),
     mitem("fluid_transfer"), mitem("item_dropper"), mitem("item_pipe"), mitem("item_pump"), mitem("item_transfer"), mitem("large_tank"),
-    mitem("pipe"), mitem("pump"), mitem("stone_edge"), mitem("stone_valve"), mitem("vacuum"),
+    mitem("pipe"), mitem("pump"), mitem("stone_edge"), mitem("stone_valve"), mitem("vacuum"), mitem("bin"),
 ]
 
 def items = [

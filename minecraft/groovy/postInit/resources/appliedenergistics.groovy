@@ -161,7 +161,7 @@ def components = [
     [item("nae2:material", 3), item("nae2:material", 4), item("appliedenergistics2:material", 24),
      item("nuclearcraft:ingot2", 1), item("essentialcraft:genitem", 32), "16384k"],
     [item("nae2:material", 7), item("nae2:material", 8), item("appliedenergistics2:material", 24),
-     item("qmd:ingot", 15), item("essentialcraft:genitem", 32), "16384k_fluid"],
+     item("nuclearcraft:alloy", 16), item("essentialcraft:genitem", 32), "16384k_fluid"],
     [item("cells:compacting_component", 6), item("cells:compacting_component", 7), item("cells:overclocked_processor", 1),
      item("qmd:ingot2", 1), item("essentialcraft:genitem", 32), "16384k_compacting"],
 ]

@@ -33,7 +33,7 @@ def items = [
     mitem("block_travel_anchor"), mitem("block_tele_pad"), mitem("block_dialing_device"), mitem("block_impulse_hopper"),
     mitem("block_cap_bank", 1), mitem("block_cap_bank", 2), mitem("block_cap_bank", 3), mitem("block_gauge"),
     mitem("block_power_monitor"), mitem("block_advanced_power_monitor"), mitem("item_coord_selector"),
-    item("enderio-conduit-replacer:conduit_replacer"),
+    item("enderio-conduit-replacer:conduit_replacer"), mitem("item_opencomputers_conduit"),
 ]
 for (def i in 0..3) items.add(mitem("item_conduit_facade", i))
 for (def i in 0..2) items.add(mitem("item_basic_capacitor", i))

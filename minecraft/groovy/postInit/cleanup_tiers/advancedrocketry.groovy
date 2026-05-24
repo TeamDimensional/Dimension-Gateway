@@ -7,6 +7,7 @@ def mitem(name, k=0) {
 
 def earlyItems = [
     mitem("thermitetorch"), mitem("circlelight"), mitem("thermite"), mitem("smallairlockdoor"), item("libvulpes:productrod", 4),
+    mitem("platepress"),
 ]
 
 def titaniumOre = [
@@ -66,8 +67,7 @@ for (def i in 0..6) part2Items.add(mitem("satelliteprimaryfunction", i))
 def creativeItems = [item("libvulpes:creativepowerbattery")]
 
 def removeRecipes = [
-    mitem("platepress"), mitem("solargenerator"),
-    mitem("rollingmachine"), mitem("lathe"), mitem("electrolyser"), mitem("centrifuge"),
+    mitem("solargenerator"), mitem("rollingmachine"), mitem("lathe"), mitem("electrolyser"), mitem("centrifuge"),
     mitem("beacon"), mitem("railgun"), mitem("bipropellantrocketmotor"), mitem("advbipropellantrocketmotor"),
     mitem("bipropellantfueltank"), mitem("oxidizerfueltank"), mitem("terraformingterminal"), mitem("ic", 3), mitem("ic", 4), mitem("ic", 5),
     mitem("misc", 1), mitem("sawblade"), mitem("sawbladeiron"), item("libvulpes:coalgenerator"), item("libvulpes:productfan", 6),
