@@ -1,6 +1,14 @@
 import classes.AlloyHelper
 
 //// Quartzline
+// Mana Quartz
+mods.botania.mana_infusion.removeByOutput(item("botania:quartz", 1))
+mods.botania.mana_infusion.recipeBuilder()
+    .input(item("thaumictinkerer:arcane_quartz"))
+    .output(item("botania:quartz", 1))
+    .mana(1500)
+    .register()
+
 // Smokey Quartz
 crafting.remove("botania:quartz_0")
 mods.naturesaura.offering.recipeBuilder()
@@ -13,7 +21,7 @@ mods.naturesaura.offering.recipeBuilder()
 // Blaze Quartz
 crafting.remove("botania:quartz_2")
 mods.factorytech.agitator.recipeBuilder()
-    .input(item("botania:quartz", 1))
+    .input(item("botania:quartz"))
     .output(item("botania:quartz", 2))
     .fluidInput(fluid("pyro_cinnabar_mixture") * 100)
     .register()
