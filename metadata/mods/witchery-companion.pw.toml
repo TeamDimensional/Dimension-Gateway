@@ -1,17 +1,53 @@
-filename = 'witcherycompanion-0.36.1-beta.jar'
+filename = 'witcherycompanion-0.36.2-beta.jar'
 name = 'Witchery: Companion'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'witcherycompanion-0.36.1-beta.jar'
+x-prismlauncher-version-number = 'witcherycompanion-0.36.2-beta.jar'
 
 [download]
-hash = 'af3f98b87108bba94bd365a47c6b94a1546ab33d'
+hash = '0ca3d075b1ebc00ddd3f3c7f76f108ccc812246d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6602047
+file-id = 8237896
 project-id = 1020447
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '243121'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '306770'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '240630'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '222378'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '74072'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '245211'
+type = 'OPTIONAL'

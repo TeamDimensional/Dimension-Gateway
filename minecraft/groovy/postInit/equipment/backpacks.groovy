@@ -18,7 +18,6 @@ ShapedCraftingHelper.builder()
     .key("B", item("retro_sophisticated_backpacks:backpack_leather"))
     .ctor(backpackUpgrade())
     .register()
-TooltipEvents.setTooltip(item("retro_sophisticated_backpacks:backpack_iron"), "tooltip.gateway.hint.backpack_recipe")
 
 crafting.remove("retro_sophisticated_backpacks:backpack_gold")
 ShapedCraftingHelper.builder()
@@ -30,7 +29,6 @@ ShapedCraftingHelper.builder()
     .key("B", item("retro_sophisticated_backpacks:backpack_iron"))
     .ctor(backpackUpgrade())
     .register()
-TooltipEvents.setTooltip(item("retro_sophisticated_backpacks:backpack_gold"), "tooltip.gateway.hint.backpack_recipe")
 
 crafting.remove("retro_sophisticated_backpacks:backpack_diamond")
 ShapedCraftingHelper.builder()
@@ -42,7 +40,6 @@ ShapedCraftingHelper.builder()
     .key("B", item("retro_sophisticated_backpacks:backpack_gold"))
     .ctor(backpackUpgrade())
     .register()
-TooltipEvents.setTooltip(item("retro_sophisticated_backpacks:backpack_diamond"), "tooltip.gateway.hint.backpack_recipe")
 
 crafting.remove("retro_sophisticated_backpacks:backpack_obsidian")
 ShapedCraftingHelper.builder()
@@ -54,7 +51,6 @@ ShapedCraftingHelper.builder()
     .key("B", item("retro_sophisticated_backpacks:backpack_diamond"))
     .ctor(backpackUpgrade())
     .register()
-TooltipEvents.setTooltip(item("retro_sophisticated_backpacks:backpack_obsidian"), "tooltip.gateway.hint.backpack_recipe")
 
 
 // Upgrades

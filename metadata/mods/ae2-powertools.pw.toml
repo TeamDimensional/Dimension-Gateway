@@ -1,31 +1,31 @@
-filename = 'ae2powertools-1.6.0-alpha3.jar'
+filename = 'ae2powertools-1.6.5.jar'
 name = 'AE2 PowerTools'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
-x-prismlauncher-release-type = 'alpha'
-x-prismlauncher-version-number = 'AE2 PowerTools 1.6.0-alpha3'
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'AE2 PowerTools 1.6.5'
 
 [download]
-hash = '50ea7a9a0c67d63ae164a7301967d97f993816bc'
+hash = 'ce1ae44d60111dbb9e96c669c452fb2bb3d35164'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8105942
+file-id = 8433221
 project-id = 1444328
+
+[[x-prismlauncher-dependencies]]
+addonId = '1027681'
+type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '238222'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '570458'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '1027681'
+addonId = '884359'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -33,5 +33,5 @@ addonId = '223666'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '884359'
-type = 'OPTIONAL'
+addonId = '570458'
+type = 'REQUIRED'

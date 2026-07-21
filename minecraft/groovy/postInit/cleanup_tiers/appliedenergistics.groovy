@@ -33,6 +33,8 @@ def modItems = [
     item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
     item("ae2powertools:network_component_locator"), item("ae2powertools:storage_level_emitter_part"), item("ae2powertools:storage_display_part"),
     item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"), mitem("facade"),
+    item("ae2powertools:remote_storage_monitor"), item("ae2powertools:level_monitor_alarm_locator"), item("ae2powertools:level_monitor_alarm"),
+    item("ae2powertools:storage_display_part_smaller"), item("ae2powertools:storage_display_part_smallerer"),
 ]
 for (def i in [0, 2, 7, 8, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 35, 36, 37, 39, 43, 44, 45, 46, 52, 53, 60, 61])
     modItems.add(mitem("material", i))
@@ -63,7 +65,7 @@ def advancedItems = [
     citem("import_combined_interface"), citem("export_combined_interface"), citem("insertion_card"),
     citem("part", 8), citem("part", 9),
     citem("import_interface"), citem("import_fluid_interface"), citem("export_interface"), citem("export_fluid_interface"),
-    citem("io_item_interface"), citem("io_fluid_interface"),
+    citem("io_item_interface"), citem("io_fluid_interface"), citem("compacting_pattern_exposer"), item("thaumicenergistics:wireless_essentia_terminal"),
 ]
 for (def i in 0..35) advancedItems.add(mitem("paint_ball", i))
 for (def i in [6, 9, 28, 29, 30, 31, 32, 33, 34, 38, 41, 42, 47, 48, 54, 55, 56, 57, 58])

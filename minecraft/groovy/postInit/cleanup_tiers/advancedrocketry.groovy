@@ -35,7 +35,7 @@ def part1Items = [
     item("libvulpes:forgepowerinput"), item("libvulpes:forgepoweroutput"), item("libvulpes:motor"), item("libvulpes:advancedmotor"),
     item("libvulpes:enhancedmotor"), item("libvulpes:productdust"), item("libvulpes:productgem"), item("libvulpes:ore0"),
     item("libvulpes:coil0", 2), item("libvulpes:coil0", 4), item("libvulpes:coil0", 7), item("libvulpes:coil0", 9),
-    item("libvulpes:linker"), item("libvulpes:holoprojector"), item("libvulpes:structuremachine"),
+    item("libvulpes:linker"), item("libvulpes:holoprojector"), item("libvulpes:structuremachine"), mitem("rollingmachine"),
     mitem("misc"), mitem("servicemonitor"), mitem("invhatch"), mitem("servicestation"), mitem("orbitalregistry"),
 ]
 for (def i in 0..3) part1Items.add(mitem("pressuretank", i))

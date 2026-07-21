@@ -146,7 +146,7 @@ def hideFromJei = [
     mitem("dreadlands_muck"), mitem("elysian_stone_brick_slab2"), mitem("ritual_altar_elysian_stone"), mitem("ritual_pedestal_elysian_stone"),
     mitem("elysiancobblestoneslab2"), mitem("dreadwood_slab2"), mitem("elysian_cobblestone"), mitem("altar"),
     mitem("crystallizer_on"), mitem("transmutator_on"), mitem("engraver_on"), mitem("multiblock"),
-    mitem("shoggoth_projectile"),
+    mitem("shoggoth_projectile"), mitem("summoning_statue"),
 ] + removeRecipes + removeFurnace + removeRitual + removeCrystallizer
 
 for (def it in ["stone", "abyssal_stone", "coralium_stone", "darkstone", "dreadstone", "elysian_stone", "ethaxium", "monolith_stone", "omothol_stone"]) {

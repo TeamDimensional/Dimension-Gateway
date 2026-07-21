@@ -93,6 +93,7 @@ def fissionItems = [
     mitem("condenser_controller"),
     mitem("rtg_plutonium"), mitem("rtg_americium"), mitem("rtg_californium"),
     mitem("fission_chamber_port"), mitem("pebble_fission_controller"), mitem("pebble_fission_chamber"), mitem("part", 23), mitem("part", 24),
+    mitem("fission_shield", 1), mitem("alloy", 18), mitem("dust2", 9), mitem("ingot2", 9), mitem("ingot_block2", 9),
 ]
 for (def m in ["steel", "extreme", "sic_sic_cmc"]) fissionItems.add(mitem("turbine_rotor_blade_${m}"))
 

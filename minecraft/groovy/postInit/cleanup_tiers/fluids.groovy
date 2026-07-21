@@ -143,7 +143,7 @@ def tier11 = [
     fluid("fluoromethane_hot"), fluid("fluoromethane_exhaust"), fluid("ammonia_hot"), fluid("ammonia_exhaust"),
     fluid("diborane_hot"), fluid("diborane_exhaust"), fluid("sulfur_dioxide_hot"), fluid("sulfur_dioxide_exhaust"),
     fluid("sulfur_trioxide_hot"), fluid("sulfur_trioxide_exhaust"), fluid("sulfur_hexafluoride_hot"), fluid("sulfur_hexafluoride_exhaust"),
-    fluid("mysterious_soul"),
+    fluid("mysterious_soul"), fluid("samarium"), fluid("gadolinium"),
     // Abyssalcraft
     fluid("liquidcoralium"),
 ]
@@ -178,7 +178,7 @@ def tier14 = [
     fluid("zinc"), fluid("osmium"), fluid("calcium"), fluid("strontium"),
     fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
     fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
-    fluid("samarium"), fluid("erbium"), fluid("terbium"), fluid("ytterbium"),
+    fluid("erbium"), fluid("terbium"), fluid("ytterbium"),
     fluid("bacro"), fluid("bacro_nio"), fluid("hastelloy"), fluid("nichrome"),
 ]
 

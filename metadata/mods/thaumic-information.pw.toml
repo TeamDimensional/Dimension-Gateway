@@ -1,41 +1,49 @@
-filename = 'StellarCore-1.6.0.jar'
-name = 'Stellar Core'
+filename = 'thaumicinfo-1.2.0.jar'
+name = 'Thaumic Roid'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'StellarCore-1.6.0.jar'
+x-prismlauncher-version-number = 'thaumicinfo-1.2.0'
 
 [download]
-hash = 'e5de9e6543fcf4aa7bf8d864a0c6d335becb3cb6'
+hash = '39a945bee75e8d424c49654d83d1397955ad011e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8406201
-project-id = 1064321
-
-[[x-prismlauncher-dependencies]]
-addonId = '870276'
-type = 'REQUIRED'
+file-id = 8455569
+project-id = 1590952
 
 [[x-prismlauncher-dependencies]]
 addonId = '419286'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '1081696'
+addonId = '895539'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '460609'
+addonId = '1533287'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '240630'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '971247'
-type = 'OPTIONAL'
+addonId = '557549'
+type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '871198'
+addonId = '870276'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '253449'
 type = 'OPTIONAL'

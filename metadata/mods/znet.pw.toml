@@ -1,18 +1,18 @@
-filename = 'XNet-1.8.20.jar'
+filename = 'XNet-1.8.21.jar'
 name = 'XNet'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'XNet-1.8.20'
+x-prismlauncher-version-number = 'XNet-1.8.21'
 
 [download]
-hash = 'a0275a9d1c582f9df5d4a504d3c2e538284e8944'
+hash = '10494bf010ad4a1ce8ca522618c234b6169b40c8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8083909
+file-id = 8438514
 project-id = 1335763

@@ -254,7 +254,6 @@ tooltip.gateway.use.roots_pouch_apothecary=Has 9 slots for herbs and 18 slots fo
 
 tooltip.gateway.hint.leaf_generator=Gets disabled with a Redstone signal. Use this to your advantage!
 tooltip.gateway.hint.witchery_book=The Witchery Companion contains all information in this book!
-tooltip.gateway.hint.backpack_recipe=The actual recipe may show up on the last page of JEI!
 
 tooltip.gateway.warn.akashic_ec4=Warning! This can't be upgraded after being removed from Akashic Tome.
 tooltip.gateway.warn.jump_module=Warning! Don't use this without a good Feather Falling armor or equivalent.
