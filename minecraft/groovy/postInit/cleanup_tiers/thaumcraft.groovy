@@ -25,9 +25,8 @@ def tier1Items = [
     mitem("slab_arcane_stone"), mitem("slab_arcane_brick"),
     mitem("log_silverwood"), mitem("leaves_silverwood"), mitem("sapling_silverwood"),
     mitem("slab_silverwood"), mitem("plank_silverwood"), mitem("stairs_silverwood"),
-    citem("fence_silverwood"), citem("fence_gate_silverwood"),
+    citem("fence_silverwood"), citem("fence_gate_silverwood"), mitem("crystal_essence"),
 ]
-for (def i in ["aer", "aqua", "ignis", "terra", "ordo", "perditio"]) tier1Items.add(mitem("crystal_${i}"))
 
 def tier2Items = [mitem("nugget", 9)]
 
