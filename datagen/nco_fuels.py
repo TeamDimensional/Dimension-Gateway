@@ -1,4 +1,6 @@
+import functools
 from dataclasses import dataclass
+from typing import Any
 
 from datagen.base import (
     Color,
@@ -6,6 +8,8 @@ from datagen.base import (
     Desaturate,
     MultiplyColor,
     NoOp,
+    Overlay,
+    build_model,
     build_texture,
 )
 
@@ -20,6 +24,11 @@ class Fuel:
 class Operator:
     name: str
     modifier: ColorModifier
+    make_triso: bool = False
+
+
+def make_triso_model(name: str, data: dict[str, Any]):
+    data["textures"] = {"layer0": f"gateway:items/{name}"}
 
 
 def generate(fuels: list[Fuel], operators: list[Operator]):
@@ -31,6 +40,29 @@ def generate(fuels: list[Fuel], operators: list[Operator]):
                 target_filename,
                 MultiplyColor(operator.modifier.apply(fuel.color)),
             )
+
+            if operator.make_triso:
+                triso_filename = operator.name.replace("carbide", "triso")
+                target_filename = f"items/{fuel.name}_{triso_filename}.png"
+                build_texture(
+                    "triso_fuel_base.png",
+                    target_filename,
+                    Overlay(
+                        "triso_fuel_core.png",
+                        MultiplyColor(operator.modifier.apply(fuel.color)),
+                    ),
+                )
+
+        build_model(
+            "triso_model.json",
+            f"item/{fuel.name}_fuel_triso.json",
+            functools.partial(make_triso_model, f"{fuel.name}_fuel_triso"),
+        )
+        build_model(
+            "triso_model.json",
+            f"item/{fuel.name}_depleted_fuel_triso.json",
+            functools.partial(make_triso_model, f"{fuel.name}_depleted_fuel_triso"),
+        )
 
 
 fuels = [
@@ -48,6 +80,7 @@ operators = [
     Operator("fuel", NoOp()),
     Operator("fuel_ox", Desaturate(0.32, Color.fromHex(0x6666FF))),
     Operator("depleted_fuel_ox", Desaturate(0.45, Color.fromHex(0xAAAAFF))),
+    Operator("fuel_carbide", Desaturate(0.6, Color.fromHex(0xAA7543)), make_triso=True),
 ]
 
 

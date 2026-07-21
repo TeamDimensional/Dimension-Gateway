@@ -8,6 +8,9 @@
       "preInit/",
       "classes/"
     ],
+    "init": [
+      "init/"
+    ],
     "postInit": [
       "postInit_very_early/",
       "postInit_early/",

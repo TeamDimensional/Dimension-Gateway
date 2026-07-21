@@ -34,10 +34,12 @@ def desaturate(color, factor) {
 def registerNcoFuel(name, color) {
     content.createItem("${name}_fuel_unprepared").register()
     content.createItem("${name}_fuel").register()
+    content.createItem("${name}_fuel_carbide").register()
     for (def subname in ["", "_depleted"]) {
         // content.createItem("${subname}_fuel_za").register()
         content.createItem("${name}${subname}_fuel_ox").register()
         // content.createItem("${subname}_fuel_ni").register()
+        content.createItem("${name}${subname}_fuel_triso").register()
         def desatFactor = subname == "" ? 0 : 0.55
         content.createFluid("${name}${subname}_fuel")
             .setLavaMaterial()

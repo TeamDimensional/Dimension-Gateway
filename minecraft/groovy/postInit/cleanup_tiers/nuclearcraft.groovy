@@ -131,11 +131,10 @@ TooltipEvents.setTooltip(mitem("fission_dust", 10), "tooltip.gateway.obtain.fiss
 
 for (def f in isotopes) {
     fissionItems.add(mitem(f[0], f[1] * 5 + 0))
-    hideFromJei.add(mitem(f[0], f[1] * 5 + 1))  // Carbide fuel
+    fissionItems.add(mitem(f[0], f[1] * 5 + 1))  // Carbide fuel
     fissionItems.add(mitem(f[0], f[1] * 5 + 2))
     fissionItems.add(mitem(f[0], f[1] * 5 + 3))
     fissionItems.add(mitem(f[0], f[1] * 5 + 4))
-    // TooltipEvents.setTooltip(mitem(f[0], f[1] * 5 + 1), "Only usable in Pebble Bed Reactors (tier 12).")
 }
 for (def f in fuelCounts) {
     def max = f[1] - 1

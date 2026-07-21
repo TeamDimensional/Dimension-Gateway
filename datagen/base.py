@@ -1,11 +1,13 @@
 import abc
+import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable, override
+from typing import Any, Callable, override
 
 from PIL import Image
 from PIL.Image import Image as ImageFile
-from PIL.ImageChops import multiply, overlay
+from PIL.Image import alpha_composite
+from PIL.ImageChops import multiply
 
 
 @dataclass(frozen=True)
@@ -84,6 +86,15 @@ def build_texture(
     modified.save(f"minecraft/groovy/assets/gateway/textures/{target}")
 
 
+def build_model(
+    source: Path | str, target: Path | str, operator: Callable[[dict[str, Any]], None]
+):
+    file: dict[str, Any] = json.loads((Path("datagen/sources") / source).read_text())
+    operator(file)
+    target = Path(f"minecraft/groovy/assets/gateway/models/{target}")
+    _ = target.write_text(json.dumps(file))
+
+
 class ImageOperator(abc.ABC):
     def andThen(self, other: "ImageOperator"):
         return OpSequence(self, other)
@@ -116,7 +127,11 @@ class MultiplyColor(ImageOperator):
 @dataclass
 class Overlay(ImageOperator):
     file: str
+    inner: ImageOperator | None = None
 
     @override
     def __call__(self, image: ImageFile):
-        return overlay(image, Image.open(f"datagen/sources/{self.file}"))
+        overlay_image = Image.open(f"datagen/sources/{self.file}")
+        if self.inner:
+            overlay_image = self.inner(overlay_image)
+        return alpha_composite(image, overlay_image)

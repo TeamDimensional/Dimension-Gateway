@@ -64,5 +64,3 @@ for (def it in magicFuels) {
     TooltipEvents.setTier(citem("${name}_fuel_ox"), tier)
     TooltipEvents.setTier(citem("${name}_depleted_fuel_ox"), tier)
 }
-
-TooltipEvents.setTooltip(item("gateway:nightmare_fuel_unprepared"), "Made in Kettle. If you're trying to make this item and see this message, report a bug.")

@@ -220,11 +220,13 @@ for (def f in ncIsotopes) {
                 tier12.add(fluid("${p}${d}${f[1]}_${x}_fluoride_flibe"))
             }
         }
-        for (def fuel in magicFuels) {
-            tier11.add(fluid("${fuel}_${p}fuel"))
-            tier11.add(fluid("${fuel}_${p}fuel_f4"))
-            tier12.add(fluid("${fuel}_${p}fuel_flibe"))
-        }
+    }
+}
+for (def p in ["", "depleted_"]) {
+    for (def fuel in magicFuels) {
+        tier11.add(fluid("${fuel}_${p}fuel"))
+        tier11.add(fluid("${fuel}_${p}fuel_f4"))
+        tier12.add(fluid("${fuel}_${p}fuel_flibe"))
     }
 }
 

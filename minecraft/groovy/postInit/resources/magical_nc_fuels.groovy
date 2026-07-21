@@ -15,6 +15,21 @@ def defineDefaultNcOperations(name) {
         }
         
         if (subname == "") {
+            mods.nuclearcraft.alloy_furnace.builder()
+                .input(item("gateway:${name}${subname}_fuel"), item("nuclearcraft:dust", 8) | item("nuclearcraft:ingot", 8))
+                .output(item("gateway:${name}${subname}_fuel_carbide"))
+                .register()
+            mods.nuclearcraft.separator.builder()
+                .input(item("gateway:${name}${subname}_fuel_carbide"))
+                .output(item("gateway:${name}${subname}_fuel"), item("nuclearcraft:dust", 8))
+                .register()
+            mods.nuclearcraft.assembler.builder()
+                .input(item("gateway:${name}${subname}_fuel_carbide") * 8, item("nuclearcraft:dust", 8), item("nuclearcraft:part", 15), item("nuclearcraft:alloy", 13))
+                .output(item("gateway:${name}${subname}_fuel_triso") * 8)
+                .register()
+        }
+        
+        if (subname == "") {
             mods.nuclearcraft.melter.builder()
                 .input(item("gateway:${name}${subname}_fuel"))
                 .fluidOutput(fluid("${name}${subname}_fuel") * 144)
@@ -97,6 +112,10 @@ def registerFuel(name, criticality, efficiency, radiation, time, heat, selfPrimi
         .fluidInput(fluid("${name}_fuel_flibe"))
         .fluidOutput(fluid("${name}_depleted_fuel_flibe"))
         .criticality(criticality).efficiency(efficiency).radiation(radiation).time((int) (time * 1.3 / 144)).heat(heat).selfPriming(selfPriming).register()
+    mods.nuclearcraft.pebble_fission.builder()
+        .input(item("gateway:${name}_fuel_triso"))
+        .output(item("gateway:${name}_depleted_fuel_triso"))
+        .criticality(criticality).efficiency(efficiency).radiation(radiation).time(time).heat(heat).selfPriming(selfPriming).intrinsicFlux(10).register()
 }
 
 registerFuel("natural", 55, 1.3, 48 * urad, 4400, 160)
@@ -149,23 +168,10 @@ KettleApi.registerRecipe(resource("gateway:unprepared_nightmare_fuel"),
     null,
     false,
     // Fertile isotopes (4, because cauldron only supports 6 inputs)
-    item("nuclearcraft:neptunium", 5).toMcIngredient(), item("nuclearcraft:curium", 10).toMcIngredient(),
-    item("nuclearcraft:berkelium").toMcIngredient(), item("nuclearcraft:californium", 15).toMcIngredient(),
+    ore("ingotNeptunium237All").toMcIngredient(), ore("ingotCurium246All").toMcIngredient(),
+    ore("ingotBerkelium247All").toMcIngredient(), ore("ingotCalifornium252All").toMcIngredient(),
     // Fissile isotopes (2)
-    item("nuclearcraft:plutonium", 5).toMcIngredient(), item("nuclearcraft:americium", 5).toMcIngredient())
-
-KettleApi.registerRecipe(resource("gateway:unprepared_nightmare_fuel_ox"),
-    item("gateway:nightmare_fuel_unprepared") * 6,
-    1200.0f,
-    2,
-    null,
-    null,
-    false,
-    // Fertile isotopes (4, because cauldron only supports 6 inputs)
-    item("nuclearcraft:neptunium", 7).toMcIngredient(), item("nuclearcraft:curium", 12).toMcIngredient(),
-    item("nuclearcraft:berkelium", 2).toMcIngredient(), item("nuclearcraft:californium", 17).toMcIngredient(),
-    // Fissile isotopes (2)
-    item("nuclearcraft:plutonium", 7).toMcIngredient(), item("nuclearcraft:americium", 7).toMcIngredient())
+    ore("ingotPlutonium239All").toMcIngredient(), ore("ingotAmericium242All").toMcIngredient())
 
 // Preparing fuels
 mods.naturesaura.altar.recipeBuilder()
@@ -212,13 +218,6 @@ mods.essentialcraft.wind_rune.recipeBuilder()
     .output(item("gateway:crystalline_fuel"))
     .espe(300)
     .register()
-
-// TODO: fix mixin so this recipe can render.
-import com.smokeythebandicoot.witcherycompanion.api.DistilleryApi
-
-DistilleryApi.registerRecipe(resource("gateway:nightmare_fuel"),
-    item("gateway:nightmare_fuel_unprepared").toMcIngredient(), item("witchery:disturbed_cotton").toMcIngredient(), 3,
-    item("gateway:nightmare_fuel"), item("witchery:foul_fume"), item("witchery:foul_fume"), item("witchery:vitriol_oil"))
 
 
 // Reprocessing
