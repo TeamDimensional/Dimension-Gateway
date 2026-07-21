@@ -37,6 +37,7 @@ def part1Items = [
     item("libvulpes:coil0", 2), item("libvulpes:coil0", 4), item("libvulpes:coil0", 7), item("libvulpes:coil0", 9),
     item("libvulpes:linker"), item("libvulpes:holoprojector"), item("libvulpes:structuremachine"), mitem("rollingmachine"),
     mitem("misc"), mitem("servicemonitor"), mitem("invhatch"), mitem("servicestation"), mitem("orbitalregistry"),
+    item("holoassemblerar:holo_assembler"),
 ]
 for (def i in 0..3) part1Items.add(mitem("pressuretank", i))
 for (def i in 0..5) part1Items.add(mitem("itemupgrade", i))
