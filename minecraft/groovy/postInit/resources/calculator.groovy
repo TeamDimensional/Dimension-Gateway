@@ -162,7 +162,7 @@ def items = [
     // Efficiency
     [item("embers:ashen_cloth"), item("thermalfoundation:material", 1025), 8],
     // Algorithm
-    [item("calculator:weakeneddiamond"), item("opencomputers:material", 9), 8],
+    [item("calculator:weakeneddiamond"), item("cells:overclocked_processor"), 9],
     // Transport
     [item("xnet:connector"), item("integrateddynamics:logic_director"), 8],
     // Growth
