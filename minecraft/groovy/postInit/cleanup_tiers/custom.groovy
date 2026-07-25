@@ -62,5 +62,8 @@ for (def it in magicFuels) {
     TooltipEvents.setTier(citem("${name}_fuel_unprepared"), tier)
     TooltipEvents.setTier(citem("${name}_fuel"), tier)
     TooltipEvents.setTier(citem("${name}_fuel_ox"), tier)
+    TooltipEvents.setTier(citem("${name}_fuel_carbide"), tier)
+    TooltipEvents.setTier(citem("${name}_fuel_triso"), tier)
+    TooltipEvents.setTier(citem("${name}_depleted_fuel_triso"), tier)
     TooltipEvents.setTier(citem("${name}_depleted_fuel_ox"), tier)
 }
