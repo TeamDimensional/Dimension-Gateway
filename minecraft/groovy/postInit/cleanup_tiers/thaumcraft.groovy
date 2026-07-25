@@ -103,9 +103,7 @@ for (int i in 0..2) voidItems.add(gitem("urn", i))
 for (int i in [3, 5]) voidItems.add(gitem("material", i))
 for (int i in 0..3) voidItems.add(gitem("eldritch_lock_key", i))
 
-def creativeItems = [
-    gitem("impetus_creative"), gitem("impetus_creative", 1), gitem("rift_seed"), mitem("creative_flux_sponge"), witem("creative_essentia_jar"),
-]
+def creativeItems = [gitem("rift_seed"), mitem("creative_flux_sponge"), witem("creative_essentia_jar")]
 
 def removeCrafting = [mitem("table_stone")]
 
@@ -118,7 +116,7 @@ def hideFromJei = [
     mitem("ore_cinnabar"), mitem("grass_ambient"),
     mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
-    mitem("enchanted_placeholder"), witem("arcane_pillar"), witem("placeholder_arcane_stone"), witem("placeholder_obsidian"),
+    mitem("enchanted_placeholder"), witem("arcane_pillar"), witem("placeholder_arcane_stone"), witem("placeholder_obsidian"), gitem("impetus_creative", 1),
 ] + removeCrafting + removeArcaneCrafting
 for (int i in 0..3) hideFromJei.add(gitem("capstone", i))
 for (int i in 0..3) hideFromJei.add(gitem("eldritch_lock", i))
@@ -151,6 +149,7 @@ for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeCrafting) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
-TooltipEvents.setTier(citem("caster_elementium"), 14)
+TooltipEvents.setTier(citem("caster_elementium"), 13)
+TooltipEvents.setTier(gitem("impetus_creative"), 10)
 
 // TODO: remove Catalyzation Chamber recipes.

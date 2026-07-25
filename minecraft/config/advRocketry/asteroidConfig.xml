@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Asteroids>
+	<asteroid name="Light Asteroid" distance="20" mass="500" massVariability="0.5" minLevel="0" probability="10" richness="0.7" richnessVariability="0.2">
+		<ore itemStack="nuclearcraft:ore;6" chance="20" />
+		<ore itemStack="nuclearcraft:ore;7" chance="20" />
+		<ore itemStack="libvulpes:ore0;8" chance="35" />
+		<ore itemStack="minecraft:quartz_block" chance="10" />
+	</asteroid>
+	<asteroid name="Gamma-Irradiated Asteroid" distance="50" mass="500" massVariability="0.5" minLevel="0" probability="5" richness="0.7" richnessVariability="0.2">
+		<ore itemStack="deepresonance:resonating_ore;2" chance="50" />
+		<ore itemStack="nuclearcraft:ore;3" chance="20" />
+		<ore itemStack="nuclearcraft:ore;4" chance="20" />
+	</asteroid>
+	<asteroid name="Strange Asteroid" distance="70" mass="500" massVariability="0.5" minLevel="0" probability="3" richness="0.7" richnessVariability="0.2">
+		<ore itemStack="libvulpes:ore0;0" chance="40" />
+		<ore itemStack="minecraft:emerald_ore" chance="20" />
+		<ore itemStack="thermalfoundation:ore;6" chance="30" />
+	</asteroid>
+	<asteroid name="Mystical Asteroid" distance="70" mass="250" massVariability="0.5" minLevel="0" probability="3" richness="0.7" richnessVariability="0.2">
+		<ore itemStack="astralsorcery:blockcustomore;1" chance="30" />
+		<ore itemStack="ee:amber_ore" chance="30" />
+		<ore itemStack="ee:star_shard_ore" chance="30" />
+	</asteroid>
+	<asteroid name="Distorted Asteroid" distance="90" mass="150" massVariability="0.5" minLevel="0" probability="2" richness="0.7" richnessVariability="0.2">
+		<ore itemStack="projecte:matter_block" chance="3" />
+		<ore itemStack="deepresonance:resonating_ore;2" chance="25" />
+		<ore itemStack="essentialcraft;oremithriline" chance="17" />
+	</asteroid>
+</Asteroids>

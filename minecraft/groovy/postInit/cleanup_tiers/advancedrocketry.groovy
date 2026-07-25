@@ -38,34 +38,36 @@ def part1Items = [
     mitem("misc"), mitem("servicemonitor"), mitem("invhatch"), mitem("servicestation"), mitem("orbitalregistry"),
     item("holoassemblerar:holo_assembler"),
     mitem("satellitebuilder"), mitem("warpcore"), mitem("spacelaser"), mitem("drill"), mitem("stationbuilder"),
-    mitem("deployablerocketbuilder"), mitem("monitoringstation"), mitem("gravitycontroller"),
+    mitem("deployablerocketbuilder"), mitem("monitoringstation"), mitem("gravitycontroller"), mitem("observatory"),
     mitem("orientationcontroller"), mitem("altitudecontroller"), mitem("oxygenscrubber"), mitem("oxygenvent"),
+    mitem("satellite"), mitem("satellitepowersource"), mitem("dataunit"), mitem("satellitecontrolcenter"), mitem("planetanalyser"),
 ]
 for (def i in 0..3) part1Items.add(mitem("pressuretank", i))
 for (def i in 0..5) part1Items.add(mitem("itemupgrade", i))
 for (def i in 0..3) part1Items.add(item("libvulpes:hatch", i))
 for (def i in 0..6) part1Items.add(mitem("loader", i))
 for (def it in ["satelliteid", "asteroid", "planetid"]) part1Items.add(mitem("${it}chip"))
+for (def i in 0..4) part1Items.add(mitem("satelliteprimaryfunction", i))
 
 def part2Items = [
-    mitem("vacuumlaser"), mitem("precisionlaseretcher"), mitem("observatory"), mitem("planetanalyser"),
+    mitem("vacuumlaser"), mitem("precisionlaseretcher"),
     mitem("blackholegenerator"), mitem("microwavereciever"), mitem("biomescanner"),
     mitem("spaceelevatorcontroller"), mitem("gravitymachine"), mitem("stationmarker"),
     mitem("advrocketmotor"), mitem("nuclearrocketmotor"), mitem("nuclearfueltank"), mitem("nuclearcore"),
-    mitem("satellitecontrolcenter"), mitem("warpmonitor"), mitem("planetselector"), mitem("planetholoselector"),
+    mitem("warpmonitor"), mitem("planetselector"), mitem("planetholoselector"),
     mitem("hotturf"), mitem("basalt"), mitem("geode"), mitem("vitrifiedsand"),
     mitem("charcoallog"), mitem("electricmushroom"), mitem("alienwood"), mitem("alienleaves"), mitem("aliensapling"),
     mitem("planks"),
     // Titanium Iridium
     mitem("productdust", 1), mitem("productingot", 1), mitem("productnugget", 1), mitem("productplate", 1), mitem("productrod", 1),
     mitem("productgear", 1), mitem("metal0", 1), item("libvulpes:productrod", 10),
-    mitem("dataunit"), mitem("satellitepowersource"), mitem("satellitepowersource", 1), mitem("orescanner"),
-    mitem("carbonscrubbercartridge"), mitem("satellite"), item("libvulpes:advstructuremachine"), item("libvulpes:elitemotor"),
+    mitem("satellitepowersource", 1), mitem("orescanner"),
+    mitem("carbonscrubbercartridge"), item("libvulpes:advstructuremachine"), item("libvulpes:elitemotor"),
     mitem("databusbig"),
 ]
 for (def i in 0..5) part2Items.add(mitem("crystal", i))
 for (def it in ["elevator", "spacestation"]) part2Items.add(mitem("${it}chip"))
-for (def i in 0..6) part2Items.add(mitem("satelliteprimaryfunction", i))
+for (def i in 5..6) part2Items.add(mitem("satelliteprimaryfunction", i))
 
 def creativeItems = [item("libvulpes:creativepowerbattery")]
 

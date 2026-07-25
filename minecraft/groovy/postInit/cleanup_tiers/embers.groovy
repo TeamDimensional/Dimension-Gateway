@@ -43,8 +43,6 @@ def items = [
 
 def breakerItems = [mitem("breaker")]
 
-def creativeItems = [mitem("creative_ember_source")]
-
 def stamps = ["bar", "flat", "gear", "plate", "rod", "round"]
 def removeRecipes = [
     mitem("archaic_circuit"), mitem("cinder_plinth"), mitem("field_chart"), mitem("mechanical_pump"),
@@ -64,6 +62,6 @@ for (def it in ashItems) TooltipEvents.setTier(it, 2)
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in items) TooltipEvents.setTier(it, 4)
 for (def it in breakerItems) TooltipEvents.setTier(it, 6)
-for (def it in creativeItems) TooltipEvents.setTier(it, 14)
+TooltipEvents.setTier(mitem("creative_ember_source"), 10)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

@@ -1,0 +1,10 @@
+// Creative Ember Source
+mods.embers.alchemy.recipeBuilder()
+    .input(item("embers:block_dawnstone"), item("projecte:matter_block"), item("botania:rune", 14), item("actuallyadditions:block_crystal_empowered"), item("actuallyadditions:block_crystal_empowered", 1))
+    .output(item("embers:creative_ember_source"))
+    .setAspect("copper", 64, 128)
+    .setAspect("dawnstone", 64, 128)
+    .setAspect("iron", 64, 128)
+    .setAspect("lead", 64, 128)
+    .setAspect("silver", 64, 128)
+    .register()

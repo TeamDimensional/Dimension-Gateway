@@ -42,6 +42,7 @@ minecraft/scripts/nc_script_addons
 minecraft/config/enderio/recipes/examples
 minecraft/config/enderio/recipes/*.xml
 minecraft/config/advRocketry/*.xml
+!minecraft/config/advRocketry/asteroidConfig.xml
 minecraft/config/AppliedEnergistics2/items.csv
 minecraft/config/enderio/recipes/user/recipes.xsd
 minecraft/config/teamreborn/configData.nbt

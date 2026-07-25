@@ -1,0 +1,12 @@
+// Creative Impetus Source
+mods.thaumcraft.arcane_workbench.shapedBuilder()
+    .researchKey("IMPETUS")
+    .output(item("thaumicaugmentation:impetus_creative"))
+    .matrix("D D", "TCT", "DMD")
+    .key("D", item("projecte:item.pe_matter"))
+    .key("T", item("gateway:transcendental_matrix"))
+    .key("C", item("thaumicaugmentation:material", 3))
+    .key("M", item("thaumicaugmentation:impetus_mirror"))
+    .aspect("aqua", 64).aspect("ignis", 64).aspect("perditio", 64).aspect("ordo", 64).aspect("aer", 64).aspect("terra", 64)
+    .vis(200)
+    .register()

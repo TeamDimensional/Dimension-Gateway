@@ -21,6 +21,7 @@ def removeRecipes = [
     fitem("fuel"), fitem("fuel", 1), fitem("fuel", 2),
     fitem("covalence_dust"), fitem("covalence_dust", 1), fitem("covalence_dust", 2),
     fitem("divining_rod_1"), fitem("divining_rod_2"), fitem("divining_rod_3"), fitem("gem_density"), fitem("void_ring"), fitem("volcanite_amulet"),
+    fitem("mercurial_eye"),
 ]
 
 for (def it in 0..15) removeRecipes.add(fitem("alchemical_bag", it))
@@ -35,26 +36,24 @@ def midgameItems = [
     fitem("ring_iron_band"), fitem("black_hole"), fitem("archangel_smite"),
     fitem("harvest_god"), fitem("ignition"), fitem("zero_ring"),
     fitem("body_stone"), fitem("soul_stone"), fitem("mind_stone"), fitem("life_stone"),
+    mitem("matter_block"), fitem("matter"), fitem("time_watch"),
 ]
 
 def endgameItems = [
     mitem("dm_pedestal"), fitem("philosophers_stone"),
-    mitem("matter_block"), mitem("matter_block", 1),
-    fitem("matter"), fitem("matter", 1),
-    fitem("rm_katar"), fitem("rm_morning_star"), fitem("swrg"),
-    fitem("time_watch"), fitem("mercurial_eye"), fitem("arcana_ring"),
+    mitem("matter_block", 1), fitem("matter", 1),
+    fitem("rm_katar"), fitem("rm_morning_star"), fitem("swrg"), fitem("arcana_ring"),
     fitem("destruction_catalyst"), fitem("hyperkinetic_lens"), fitem("catalitic_lens"),
 ]
 
-for (def mat in ["rm", "dm"]) {
-    for (def tool in ["pick", "axe", "shovel", "sword", "hoe", "shears", "hammer"]) {
-        endgameItems.add(fitem("${mat}_${tool}"))
-    }
+for (def tool in ["pick", "axe", "shovel", "sword", "hoe", "shears", "hammer"]) {
+    midgameItems.add(fitem("dm_${tool}"))
+    endgameItems.add(fitem("rm_${tool}"))
 }
-for (def mat in ["rm", "dm", "gem"]) {
-    for (def i in 0..3) {
-        endgameItems.add(fitem("${mat}_armor_${i}"))
-    }
+for (def i in 0..3) {
+    midgameItems.add(fitem("dm_armor_${i}"))
+    endgameItems.add(fitem("rm_armor_${i}"))
+    endgameItems.add(fitem("gem_armor_${i}"))
 }
 
 def hideFromJei = [
