@@ -1227,6 +1227,14 @@
     "curseForgeHash": 2063838964,
     "modrinthHash": "e0c35a06abe86b0923850e59aa1a4aa150c6e714"
   },
+  "Reliquary-1.12.2-1.3.4.796.jar": {
+    "jarName": "Reliquary-1.12.2-1.3.4.796.jar",
+    "modId": "xreliquary",
+    "name": "Reliquary",
+    "version": "1.12.2-1.3.4.796",
+    "curseForgeHash": 2309391079,
+    "modrinthHash": "70782d1b9bfa4e5ffc62827daf4d82fcb5e4fddf"
+  },
   "Retro-Sophisticated-Backpacks-1.1.4.jar": {
     "jarName": "Retro-Sophisticated-Backpacks-1.1.4.jar",
     "modId": "retro_sophisticated_backpacks",

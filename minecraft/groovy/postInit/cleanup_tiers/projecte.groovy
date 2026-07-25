@@ -17,7 +17,7 @@ def removeRecipes = [
     mitem("relay_mk1"), mitem("relay_mk2"), mitem("relay_mk3"),
     mitem("dm_furnace"), mitem("rm_furnace"),
     mitem("fuel_block"), mitem("fuel_block", 1), mitem("fuel_block", 2),
-    mitem("nova_catalyst"), mitem("nova_cataclysm"),
+    mitem("nova_catalyst"), mitem("nova_cataclysm"), mitem("interdiction_torch"),
     fitem("fuel"), fitem("fuel", 1), fitem("fuel", 2),
     fitem("covalence_dust"), fitem("covalence_dust", 1), fitem("covalence_dust", 2),
     fitem("divining_rod_1"), fitem("divining_rod_2"), fitem("divining_rod_3"), fitem("gem_density"), fitem("void_ring"), fitem("volcanite_amulet"),
@@ -31,7 +31,7 @@ def magicItems = [
 ]
 
 def midgameItems = [
-    mitem("interdiction_torch"), fitem("repair_talisman"),
+    fitem("repair_talisman"),
     fitem("ring_iron_band"), fitem("black_hole"), fitem("archangel_smite"),
     fitem("harvest_god"), fitem("ignition"), fitem("zero_ring"),
     fitem("body_stone"), fitem("soul_stone"), fitem("mind_stone"), fitem("life_stone"),

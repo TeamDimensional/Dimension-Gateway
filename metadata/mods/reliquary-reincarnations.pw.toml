@@ -1,0 +1,18 @@
+filename = 'Reliquary-1.12.2-1.3.4.796.jar'
+name = 'Reliquary Reincarnations'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Reliquary-1.12.2-1.3.4.796.jar'
+
+[download]
+hash = '70782d1b9bfa4e5ffc62827daf4d82fcb5e4fddf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2761319
+project-id = 241319

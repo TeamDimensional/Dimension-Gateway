@@ -57,14 +57,12 @@ def laserItems = [
     mitem("item_laser_wrench"),
 ]
 
-def obsidianItems = [
-    mitem("item_void_bag"), mitem("item_misc", 19),
-]
-for (def i in 0..9) obsidianItems.add(mitem("item_potion_ring_advanced", i))
+def obsidianItems = [mitem("item_void_bag")]
 // I wanted Drill in tier 4, but it has a mining level of 5 (Obsidian) and Tool Progression can't change it, so we put it in tier 6.
 for (def i in 0..15) obsidianItems.add(mitem("item_drill", i))
 
-def enderItems = [mitem("block_misc", 6)]
+def enderItems = [mitem("block_misc", 6), mitem("item_misc", 19)]
+for (def i in 0..9) enderItems.add(mitem("item_potion_ring_advanced", i))
 
 // The Breakers have a mining level of 7 (Cobalt) for some reason, and it actually seems infinite, not 7
 // So they have to be moved to the highest harvest level tier, i.e. 7
@@ -100,7 +98,7 @@ def removeRecipes = [mitem("block_coal_generator"), mitem("item_resonant_rice"),
 for (def i in 0..5) removeRecipes.add(mitem("item_crystal_shard", i))
 
 def hideFromJei = [
-    mitem("block_treasure_chest"), mitem("item_worm"),
+    mitem("block_treasure_chest"), mitem("item_worm"), mitem("item_misc", 15)
 ] + removeRecipes
 for (def r in resources) hideFromJei.add(mitem("block_crystal_cluster_${r}"))
 for (def i in 0..6) hideFromJei.add(mitem("item_jam", i))
