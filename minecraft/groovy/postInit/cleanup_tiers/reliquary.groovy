@@ -59,8 +59,8 @@ for (def it in removeRecipes) {
 for (def it in removeJeiDescriptions) mods.jei.description.remove(it)
 
 def potion = mitem("potion")
-def lingeringPotion = mitem("potion").withNbt(["lingering": 1])
-def predicate = stack -> stack in lingeringPotion
-TooltipEvents.addTierPredicate("xreliquary:lingering", predicate, 6)
-def predicate = stack -> stack in potion && stack not in lingeringPotion
-TooltipEvents.addTierPredicate("xreliquary:lingering", predicate, 5)
+def lingeringPotion = mitem("potion").withNbt(["lingering": (byte) 1])
+def predicate_lingering = stack -> stack in lingeringPotion
+TooltipEvents.addTierPredicate("xreliquary:lingering_pot", predicate_lingering, 6)
+def predicate_potion = stack -> stack in potion && !(stack in lingeringPotion)
+TooltipEvents.addTierPredicate("xreliquary:normal_pot", predicate_potion, 5)
