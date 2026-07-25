@@ -21,7 +21,7 @@
       "emc": 256
     },
     {
-      "item": "projecte:item.pe_tome",
+      "item": "projecte:item.pe_tome|0",
       "emc": 1024
     }
   ]
