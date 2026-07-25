@@ -49,7 +49,7 @@ def oresNonMetallic = [
     "FireElemental": ["FireElemental", "Blaze", "FireElemental", "FireElemental"],
     "WaterElemental": ["WaterElemental", "Lapis", "WaterElemental", "WaterElemental"],
     "AirElemental": ["AirElemental", "Quartz", "AirElemental", "AirElemental"],
-    "EarthElemental": ["EarthElemental", "Graphite", "EarthElemental", "EarthElemental"],
+    "EarthElemental": ["EarthElemental", "Coal", "EarthElemental", "EarthElemental"],
     "Mithriline": ["Mithriline", "Cobalt", "Mithriline", "Mithriline"],
     "DimensionalShard": ["Diamond", "DimensionalShard", "DimensionalShard", "Emerald"],
     "Ambrosium": ["Zanite", "Quartz", "CertusQuartz", "Lapis"],

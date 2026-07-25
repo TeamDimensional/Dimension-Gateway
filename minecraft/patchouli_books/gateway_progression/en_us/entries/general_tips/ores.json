@@ -79,14 +79,13 @@
             "type": "items",
             "title": "Tier 6 Ores",
             "items": [
-                "item:gateway:starsteel_ingot",
                 "item:calculator:electricpickaxe",
                 "item:deepresonance:resonating_ore:2",
                 "item:rftools:dimensional_shard_ore:2",
                 "item:tconstruct:ore",
                 "item:tconstruct:ore:1"
             ],
-            "text": "The first tier 6 material is Starsteel (if you're not a fan of Tinkers, you can use Electric Diamond). It unlocks the remaining ores."
+            "text": "The first tier 6 material is Electric Diamond. It unlocks the remaining ores."
         },
         {
             "type": "items",
@@ -98,7 +97,7 @@
                 "item:integratedtunnels:part_importer_world_block_item",
                 "item:actuallyadditions:block_breaker"
             ],
-            "text": "Starsteel is also used to make End diamonds, which can be used to make the hardest drill tips, necessary for most of the block breakers in the pack."
+            "text": "Electric Diamonds are also used to make End Diamonds, which can be used to make the hardest drill tips, necessary for most of the block breakers in the pack."
         }
     ]
 }

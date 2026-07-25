@@ -35,17 +35,6 @@
             "text": "The basic metals can be automated in Tier 4 using Embers' Crystal Growth. Though, it's not the fastest method ever, and takes a while to get decent yield from it. And you can't get byproducts of any kind. But hey, at least it's infinite."
         },
         {
-            "title": "Burst Methods",
-            "type": "items",
-            "items": [
-                "item:immersiveengineering:metal_multiblock:11",
-                "item:actuallyadditions:block_miner",
-                "item:bloodmagic:activation_crystal:1",
-                "item:rftools:shape_card:2"
-            ],
-            "text": "The first of these is Excavator in Tier 6. They make ores very quickly, but also run out pretty quickly. I would not recommend making your whole infra hinge on these working."
-        },
-        {
             "title": "Substrates",
             "type": "items",
             "items": [
@@ -55,17 +44,41 @@
                 "item:gateway:light_metal_substrate",
                 "item:gateway:heavy_metal_substrate"
             ],
-            "text": "The Substrates are unlocked in Tier 7 together with Atomic Reshaper and can be used to automate almost every ore in the game. They can go fully infinite at decent rates, but have nontrivial costs and so require support from ore processing."
+            "text": "The Substrates are unlocked in Tier 5 together with Atomic Reshaper and can be used to automate almost every ore in the game. They can go fully infinite at decent rates, but have nontrivial costs and so require support from ore processing."
         },
         {
-            "title": "Space Mining",
+            "title": "Magical Methods",
             "type": "items",
             "items": [
-                "item:advancedrocketry:observatory",
-                "item:advancedrocketry:spacelaser",
-                "item:thermalfoundation:material:135"
+                "item:immersiveengineering:metal_multiblock:11",
+                {
+                    "type": "item",
+                    "item": "botania:specialflower",
+                    "nbt": "{type:\"orechid\"}"
+                },
+                {
+                    "type": "item",
+                    "item": "botania:specialflower",
+                    "nbt": "{type:\"orechidIgnem\"}"
+                },
+                {
+                    "type": "item",
+                    "item": "astralsorcery:itemtunedcelestialcrystal",
+                    "nbt": "{astralsorcery:{crystalProperties:{size:900,sizeOverride:-1,purity:100,collectiveCapability:100,fract:0},constellationName:\"astralsorcery.constellation.mineralis\"}}"
+                },
+                "item:advancedrocketry:spacelaser"
             ],
-            "text": "The final method is using Orbital Laser Drills to obtain infinite resources from meteorites. It is the only source of Iridium. It is also quite tricky to set up and comes late in Tier 12."
+            "text": "The first of these is Excavator in Tier 6. They make ores fairly quickly and infinitely, but sometimes require complicated setups."
+        },
+        {
+            "title": "Magical Fluid Methods",
+            "type": "items",
+            "items": [
+                "item:immersivepetroleum:metal_multiblock:3",
+                "item:astralsorcery:blockborehead",
+                "item:advancedrocketry:loader:4"
+            ],
+            "text": "The first of these is Pumpjack in Tier 3. These are often useful to obtain various fluids infinitely - and for cheaper than their crafting methods, but again, not easy to set up."
         }
     ]
 }

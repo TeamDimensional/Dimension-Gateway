@@ -24,7 +24,7 @@ def modItems = [
     mitem("quartz_slab"), mitem("quartz_pillar_slab"), mitem("chiseled_quartz_slab"), mitem("fluix_slab"),
     mitem("biometric_card"), mitem("memory_card"), mitem("network_tool"), mitem("view_cell"), mitem("encoded_pattern"),
     item("nae2:material"), item("nae2:pattern_multiplier"), item("nae2:storage_cell_void"), item("nae2:fluid_storage_cell_void"),
-    item("nae2:part", 1), item("nae2:upgrade", 1), item("cellterminal:cell_terminal"), item("cellterminal:wireless_cell_terminal"),
+    item("nae2:part", 1), item("nae2:upgrade", 1), item("cellterminal:cell_terminal"),
     item("aenetvistool:net_visualizer"), mitem("crafting_accelerator"), item("nae2:coprocessor_4x"), item("nae2:coprocessor_16x"),
     mitem("io_port"), mitem("fluid_interface"), mitem("entropy_manipulator"), mitem("matter_cannon"),
     item("ae2powertools:network_health_scanner"), item("ae2powertools:priority_tuner"), item("ae2powertools:cards_distributor"),
@@ -63,7 +63,7 @@ def advancedItems = [
     citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"), item("ae2fc:ultimate_encoder"),
     item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
     citem("import_combined_interface"), citem("export_combined_interface"), citem("insertion_card"),
-    citem("part", 8), citem("part", 9),
+    citem("part", 8), citem("part", 9), item("cellterminal:wireless_cell_terminal"),
     citem("import_interface"), citem("import_fluid_interface"), citem("export_interface"), citem("export_fluid_interface"),
     citem("io_item_interface"), citem("io_fluid_interface"), citem("compacting_pattern_exposer"), item("thaumicenergistics:wireless_essentia_terminal"),
 ]

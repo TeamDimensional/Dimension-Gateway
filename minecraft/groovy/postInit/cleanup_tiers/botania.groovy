@@ -137,13 +137,13 @@ def tier2Flowers = [
     // generating
     "arcanerose", "rafflowsia", "narslimmus", "dandelifeon",
     // functional
-    "pollidisiac", "marimorphosis", "vinculotus", "taintthistle", "whisperweed_cm",
+    "pollidisiac", "marimorphosis", "vinculotus", "taintthistle", "whisperweed_cm", "orechid", "orechidIgnem",
 ]
 def tier3Flowers = [
     // generating
     "entropinnyum", "spectrolus", "shulk_me_not",
     // functional
-    "bubbell", "loonium", "heiseiDream", "spectranthemum", "orechid", "orechidIgnem",
+    "bubbell", "loonium", "heiseiDream", "spectranthemum",
 ]
 
 def setFlowerTier(name, tier) {

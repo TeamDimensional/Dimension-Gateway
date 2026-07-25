@@ -9,7 +9,7 @@ mods.calculator.scientific_calculator.recipeBuilder()
 
 mods.calculator.atomic_calculator.removeByOutput(item("calculator:enddiamond"))
 mods.calculator.atomic_calculator.recipeBuilder()
-    .input(item("actuallyadditions:block_misc", 6), item("calculator:enddiamond"), item("tconstruct:ingots"))
+    .input(item("actuallyadditions:block_misc", 6), item("calculator:electricdiamond"), item("tconstruct:ingots"))
     .output(item("calculator:enddiamond"))
     .register()
 

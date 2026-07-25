@@ -77,9 +77,9 @@
             "type": "jei",
             "recipes": [
                 {
-                    "category": "THAUMCRAFT_CRUCIBLE",
-                    "outputs": [
-                        "item:minecraft:diamond"
+                    "category": "thaumicinfo.crucible",
+                    "inputs": [
+                        "item:essentialcraft:genitem:40"
                     ]
                 }
             ]

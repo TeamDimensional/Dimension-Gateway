@@ -13,7 +13,7 @@ def tier3Items = [
 for (def i in [0, 1, 2, 5, 6]) tier3Items.add(mitem("grocket", i))
 
 def tier4Items = [
-    mitem("itembuilderswand"), mitem("itemdestructionwand"), mitem("sickle_diamond"),
+    mitem("itembuilderswand"), mitem("itemdestructionwand"), mitem("sickle_diamond"), mitem("ingredients", 10),
 ]
 
 def tier5Items = [
@@ -34,7 +34,7 @@ def items = [
     mitem("decorativesolidwood"), mitem("decorativesolidwood", 1),
 ]
 for (def i in [0, 1, 2, 3, 4, 5, 7, 8]) items.add(mitem("passivegenerator", i))
-for (def i in 0..17) if (i != 14) items.add(mitem("ingredients", i))
+for (def i in 0..17) if (!(i in [10, 11, 14])) items.add(mitem("ingredients", i))
 for (def i in 0..3) items.add(mitem("ineffableglass", i))
 for (def i in 1..3) items.add(mitem("drum", i))
 for (def i in 0..2) items.add(mitem("simpledecorative", i))

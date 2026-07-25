@@ -2,14 +2,11 @@ import com.dimensional.gatewaycore.events.TooltipEvents
 
 mods.prodigytech.atomic_reshaper.removeByInput(ore("stone"))
 
-// Processing Cobalt and Nickel through the most advanced tier 7 technology
-// (Essentia Infuser -> Atomic Calculator -> Natural Altar -> Embers) yields a bit below 0.37 Cobalt ingots per substrate
-TooltipEvents.setTier(item("gateway:metallic_substrate"), 7)
-mods.extrautils2.enchanter.recipeBuilder()
-    .input(item("gateway:mundane_substrate") * 3, item("tconstruct:ingots"))
-    .output(item("gateway:metallic_substrate") * 3)
-    .energy(84000)
-    .time(400)
+TooltipEvents.setTier(item("gateway:metallic_substrate"), 5)
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(item("thermalfoundation:material", 133), item("gateway:mundane_substrate"), item("gateway:mundane_substrate"), item("gateway:mundane_substrate"), item("gateway:mundane_substrate"))
+    .output(item("gateway:metallic_substrate") * 4)
+    .mru(300)
     .register()
 mods.prodigytech.atomic_reshaper.recipeBuilder()
     .input(item("gateway:metallic_substrate"))
@@ -19,7 +16,6 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("thermalfoundation:ore", 4), 5)   // aluminium
     .output(item("thermalfoundation:ore", 5), 5)   // nickel
     .output(item("minecraft:iron_ore"), 15)
-    .output(item("tconstruct:ore"), 4)  // cobalt
     .primordium(10)
     .time(60)
     .register()
@@ -41,9 +37,10 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("theaurorian:moonstoneore"), 5)
     .output(item("nuclearcraft:ore", 5), 7)       // boron
     .output(item("nuclearcraft:ore", 6), 7)       // lithium
-    .output(item("nuclearcraft:ore", 7), 12)      // magnesium
-    .output(item("thermalfoundation:ore", 4), 8)  // aluminium
+    .output(item("nuclearcraft:ore", 7), 10)      // magnesium
+    .output(item("thermalfoundation:ore", 4), 4)  // aluminium
     .output(item("libvulpes:ore0", 8), 6)         // rutile
+    .output(item("tconstruct:ore"), 6)            // cobalt
     .primordium(30)
     .time(100)
     .register()
