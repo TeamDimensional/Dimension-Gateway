@@ -747,14 +747,6 @@
     "curseForgeHash": 4071690926,
     "modrinthHash": "4f44934b392d7bf1713707a93b29006e98bd7cff"
   },
-  "IntegratedCrafting-1.12.2-1.0.10.jar": {
-    "jarName": "IntegratedCrafting-1.12.2-1.0.10.jar",
-    "modId": "integratedcrafting",
-    "name": "Integrated Crafting",
-    "version": "1.12.2-1.0.10",
-    "curseForgeHash": 444449149,
-    "modrinthHash": "6ab247bd91f99ebfc0f7f97ca39ca77c3ed2c125"
-  },
   "integratedderivative-1.1.2.jar": {
     "jarName": "integratedderivative-1.1.2.jar",
     "modId": "integratedderivative",
@@ -778,14 +770,6 @@
     "version": "1.2.2",
     "curseForgeHash": 2134134003,
     "modrinthHash": "7b2dfdfa0e26bfa5b00769e1110eb0512d5c3f52"
-  },
-  "IntegratedTerminals-1.12.2-1.0.14.jar": {
-    "jarName": "IntegratedTerminals-1.12.2-1.0.14.jar",
-    "modId": "integratedterminals",
-    "name": "Integrated Terminals",
-    "version": "1.12.2-1.0.14",
-    "curseForgeHash": 1235788854,
-    "modrinthHash": "716c6643907e2ef2d0721e26c388b526319987bf"
   },
   "IntegratedTunnels-1.12.2-1.6.14.jar": {
     "jarName": "IntegratedTunnels-1.12.2-1.6.14.jar",
