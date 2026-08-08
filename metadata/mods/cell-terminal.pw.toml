@@ -1,23 +1,35 @@
-filename = 'cell-terminal-1.6.6-beta.jar'
+filename = 'cell-terminal-1.6.7.jar'
 name = 'Cell Terminal'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
-x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'Cell Terminal 1.6.6-beta'
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Cell Terminal 1.6.7'
 
 [download]
-hash = '95765446589d51f4a5227d261348e8cd888d0129'
+hash = 'faf29c2a521a2bc0f3dbd7240ede7f1451c550da'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8354339
+file-id = 8536875
 project-id = 1443615
 
 [[x-prismlauncher-dependencies]]
 addonId = '1027681'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223666'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1111042'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -27,15 +39,3 @@ type = 'OPTIONAL'
 [[x-prismlauncher-dependencies]]
 addonId = '570458'
 type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '238222'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '1111042'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '223666'
-type = 'OPTIONAL'

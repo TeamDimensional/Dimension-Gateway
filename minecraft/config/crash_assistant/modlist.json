@@ -29,13 +29,13 @@
     "curseForgeHash": 3387867157,
     "modrinthHash": "91876176e33c24c68ce187e376002a2749b3a239"
   },
-  "!mixinbooter-11.5.jar": {
-    "jarName": "!mixinbooter-11.5.jar",
+  "!mixinbooter-11.13.jar": {
+    "jarName": "!mixinbooter-11.13.jar",
     "modId": "mixinbooter",
     "name": "MixinBooter",
-    "version": "11.5",
-    "curseForgeHash": 49745504,
-    "modrinthHash": "a6b8904ca478f106497391d4617b342a5969b7f1"
+    "version": "11.13",
+    "curseForgeHash": 3305368153,
+    "modrinthHash": "4e4cfebf779fb687ee0fcb03f31ffce0da8a4321"
   },
   "!mod-director-launchwrapper-1.9.1.jar": {
     "jarName": "!mod-director-launchwrapper-1.9.1.jar",
@@ -98,13 +98,13 @@
     "curseForgeHash": 4128642090,
     "modrinthHash": "b6a7348001eb65d2c145b9121709632d7ce15675"
   },
-  "advancedrocketry-2.2.11.jar": {
-    "jarName": "advancedrocketry-2.2.11.jar",
+  "advancedrocketry-2.2.12.jar": {
+    "jarName": "advancedrocketry-2.2.12.jar",
     "modId": "advancedrocketry",
     "name": "Advanced Rocketry",
-    "version": "2.2.11",
-    "curseForgeHash": 3676488746,
-    "modrinthHash": "0081cd83b3bdc22b9abdbdf621b10128ccff8f45"
+    "version": "2.2.12",
+    "curseForgeHash": 1056381677,
+    "modrinthHash": "7c46c47fbef267c1f092e2c49ed3e756c084cc2e"
   },
   "advancedrocketry-holoassembler-1.12.2-0.5.1.jar": {
     "jarName": "advancedrocketry-holoassembler-1.12.2-0.5.1.jar",
@@ -151,13 +151,13 @@
     "curseForgeHash": 2158002271,
     "modrinthHash": "ff7ca3f2ff3fb16aa80963020b7daab1e4509329"
   },
-  "ae2powertools-1.6.5.jar": {
-    "jarName": "ae2powertools-1.6.5.jar",
+  "ae2powertools-1.6.6.jar": {
+    "jarName": "ae2powertools-1.6.6.jar",
     "modId": "ae2powertools",
     "name": "AE2 PowerTools",
-    "version": "1.6.5",
-    "curseForgeHash": 1634754266,
-    "modrinthHash": "ce1ae44d60111dbb9e96c669c452fb2bb3d35164"
+    "version": "1.6.6",
+    "curseForgeHash": 3096292252,
+    "modrinthHash": "27755ac14b4451e6139958fd3d46569653769152"
   },
   "aether-1.12.2-v1.5.4.1.jar": {
     "jarName": "aether-1.12.2-v1.5.4.1.jar",
@@ -340,21 +340,21 @@
     "curseForgeHash": 1547671761,
     "modrinthHash": "d5adab7e5831a88c159121a0c31f1a39678aacc4"
   },
-  "cell-terminal-1.6.6-beta.jar": {
-    "jarName": "cell-terminal-1.6.6-beta.jar",
+  "cell-terminal-1.6.7.jar": {
+    "jarName": "cell-terminal-1.6.7.jar",
     "modId": "cellterminal",
     "name": "Cell Terminal",
-    "version": "1.6.6-beta",
-    "curseForgeHash": 820549438,
-    "modrinthHash": "95765446589d51f4a5227d261348e8cd888d0129"
+    "version": "1.6.7",
+    "curseForgeHash": 3477681991,
+    "modrinthHash": "faf29c2a521a2bc0f3dbd7240ede7f1451c550da"
   },
-  "cells-0.6.6-beta.jar": {
-    "jarName": "cells-0.6.6-beta.jar",
+  "cells-0.6.6-beta3.jar": {
+    "jarName": "cells-0.6.6-beta3.jar",
     "modId": "cells",
     "name": "C.E.L.L.S",
-    "version": "0.6.6-beta",
-    "curseForgeHash": 144191352,
-    "modrinthHash": "ca3bd65bc0fa7ff3920979307b1e294cc4c95d9a"
+    "version": "0.6.6-beta3",
+    "curseForgeHash": 1415651121,
+    "modrinthHash": "1cc44cd27f7ca61062c4eedb382b9d5614026b6a"
   },
   "champions-1.12.2-1.0.11.10.jar": {
     "jarName": "champions-1.12.2-1.0.11.10.jar",
@@ -699,13 +699,13 @@
     "curseForgeHash": 1899009469,
     "modrinthHash": "095b3b85d05118602c7678beb1e56d26930fd0e7"
   },
-  "HadEnoughItems_1.12.2-4.32.0.jar": {
-    "jarName": "HadEnoughItems_1.12.2-4.32.0.jar",
+  "HadEnoughItems_1.12.2-4.34.0.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.34.0.jar",
     "modId": "jei",
     "name": "Had Enough Items",
-    "version": "4.32.0",
-    "curseForgeHash": 2711222086,
-    "modrinthHash": "666d562a804c9e55261bf2e504168138ea07f832"
+    "version": "4.34.0",
+    "curseForgeHash": 1090450595,
+    "modrinthHash": "68c7b255be2c5fa7a4aee8a0ae50d94ebd3db848"
   },
   "Hwyla-1.8.26-B41_1.12.2.jar": {
     "jarName": "Hwyla-1.8.26-B41_1.12.2.jar",
@@ -851,13 +851,13 @@
     "curseForgeHash": 3288454243,
     "modrinthHash": "7873cd7d9735569505efc59279a10984e4381c45"
   },
-  "libvulpes-0.5.5.jar": {
-    "jarName": "libvulpes-0.5.5.jar",
-    "modId": "libVulpes",
-    "name": "libVulpes",
-    "version": "0.4.3",
-    "curseForgeHash": 2754068436,
-    "modrinthHash": "4a3d2f280f2e20e98d7e4efdf3c469f3e1459ce8"
+  "libvulpes-0.5.7.jar": {
+    "jarName": "libvulpes-0.5.7.jar",
+    "modId": "libvulpes",
+    "name": "LibVulpes",
+    "version": "0.5.7",
+    "curseForgeHash": 2725742194,
+    "modrinthHash": "ab8524fe03f8c6c1bdcf0628ea5b4e2fd74ac202"
   },
   "loliasm-5.33.jar": {
     "jarName": "loliasm-5.33.jar",
@@ -891,13 +891,13 @@
     "curseForgeHash": 285741512,
     "modrinthHash": "8f3e381c4aea651f55ed1cd35fd69613fcd7f9da"
   },
-  "MmmMmmMmmMmm-1.12-2.0.6.jar": {
-    "jarName": "MmmMmmMmmMmm-1.12-2.0.6.jar",
+  "MmmMmmMmmMmm-1.12-2.0.7.jar": {
+    "jarName": "MmmMmmMmmMmm-1.12-2.0.7.jar",
     "modId": "testdummy",
     "name": "TestDummy",
     "version": "2.0.0",
-    "curseForgeHash": 196249466,
-    "modrinthHash": "75d25024ba41f978aa02f152d2d6b2994b1da6a5"
+    "curseForgeHash": 1330257839,
+    "modrinthHash": "f489d246765b7a9a6735f82677fdb41d5c6f265f"
   },
   "modular-routers-1.12.2-3.3.0-33.jar": {
     "jarName": "modular-routers-1.12.2-3.3.0-33.jar",
@@ -1203,13 +1203,13 @@
     "curseForgeHash": 1893256567,
     "modrinthHash": "7835c1dcc006e5d4a406a6b0615012b825e25044"
   },
-  "reim-0.3.jar": {
-    "jarName": "reim-0.3.jar",
+  "reim-0.4.jar": {
+    "jarName": "reim-0.4.jar",
     "modId": "examplemod",
     "name": "Example Mod",
     "version": "${version}",
-    "curseForgeHash": 2063838964,
-    "modrinthHash": "e0c35a06abe86b0923850e59aa1a4aa150c6e714"
+    "curseForgeHash": 857536067,
+    "modrinthHash": "2d518f1f77a5f1765ec8ed007b9d13fd56aa96a3"
   },
   "Reliquary-1.12.2-1.3.4.796.jar": {
     "jarName": "Reliquary-1.12.2-1.3.4.796.jar",
@@ -1371,13 +1371,13 @@
     "curseForgeHash": 3092104191,
     "modrinthHash": "1e4bfc3ff156841e25c05d781bed0b8478ffc7ac"
   },
-  "thaumicapi-1.1.3.jar": {
-    "jarName": "thaumicapi-1.1.3.jar",
+  "thaumicapi-1.1.4.jar": {
+    "jarName": "thaumicapi-1.1.4.jar",
     "modId": "thaumicapi",
     "name": "ThaumicAPI",
-    "version": "1.1.3",
-    "curseForgeHash": 2340357673,
-    "modrinthHash": "efa0d2de0b41f18238dda373ee075b4eb3fc7020"
+    "version": "1.1.4",
+    "curseForgeHash": 1150477891,
+    "modrinthHash": "928f6960709f63ce57944f608d3189ed3b43b784"
   },
   "ThaumicAugmentation-1.12.2-2.1.14.jar": {
     "jarName": "ThaumicAugmentation-1.12.2-2.1.14.jar",
@@ -1387,13 +1387,13 @@
     "curseForgeHash": 965509518,
     "modrinthHash": "376843864b9b7c117d4aa98c24c227a76b2d4fde"
   },
-  "thaumicinfo-1.2.0.jar": {
-    "jarName": "thaumicinfo-1.2.0.jar",
+  "thaumicinfo-1.2.1.jar": {
+    "jarName": "thaumicinfo-1.2.1.jar",
     "modId": "thaumicinfo",
     "name": "Thaumic Information",
-    "version": "1.2.0",
-    "curseForgeHash": 2264639305,
-    "modrinthHash": "39a945bee75e8d424c49654d83d1397955ad011e"
+    "version": "1.2.1",
+    "curseForgeHash": 611644631,
+    "modrinthHash": "43d7cbe25c8462305033b57c55d1f14abab127e7"
   },
   "thaumictinkerer-1.0.6.jar": {
     "jarName": "thaumictinkerer-1.0.6.jar",
@@ -1459,13 +1459,13 @@
     "curseForgeHash": 2581843324,
     "modrinthHash": "ea1b196364519ab8d5d338b244757a0b3b754b70"
   },
-  "TinkersPlannerAntique-1.12.2-1.0.3.jar": {
-    "jarName": "TinkersPlannerAntique-1.12.2-1.0.3.jar",
+  "TinkersPlannerAntique-1.12.2-1.2.0.jar": {
+    "jarName": "TinkersPlannerAntique-1.12.2-1.2.0.jar",
     "modId": "tinkersplannerantique",
     "name": "Tinkers Planner Antique",
-    "version": "1.0.3",
-    "curseForgeHash": 3847441518,
-    "modrinthHash": "be22ccbd8cce141cab631fcad5c61ada0282c70c"
+    "version": "1.2.0",
+    "curseForgeHash": 1871572698,
+    "modrinthHash": "25a77594033dadbe1b0a29d3dbcca243713b263e"
   },
   "toolprogression-1.12.2-1.6.12.jar": {
     "jarName": "toolprogression-1.12.2-1.6.12.jar",

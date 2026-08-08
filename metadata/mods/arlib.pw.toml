@@ -1,18 +1,18 @@
-filename = 'libvulpes-0.5.5.jar'
+filename = 'libvulpes-0.5.7.jar'
 name = 'libVulpes'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'libvulpes-0.5.5.jar'
+x-prismlauncher-version-number = 'libvulpes-0.5.7.jar'
 
 [download]
-hash = '4a3d2f280f2e20e98d7e4efdf3c469f3e1459ce8'
+hash = 'ab8524fe03f8c6c1bdcf0628ea5b4e2fd74ac202'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8339713
+file-id = 8590915
 project-id = 1038780

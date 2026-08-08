@@ -1,17 +1,18 @@
-filename = 'MmmMmmMmmMmm-1.12-2.0.6.jar'
-name = 'MmmMmmMmmMmm'
+filename = 'MmmMmmMmmMmm-1.12-2.0.7.jar'
+name = 'TestDummy'
 side = ''
+x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.12.1', '1.12.2' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'MmmMmmMmmMmm-1.12-2.0.6.jar'
+x-prismlauncher-version-number = 'MmmMmmMmmMmm-1.12-2.0.7.jar'
 
 [download]
-hash = '75d25024ba41f978aa02f152d2d6b2994b1da6a5'
+hash = 'f489d246765b7a9a6735f82677fdb41d5c6f265f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7454196
+file-id = 8514387
 project-id = 225738
