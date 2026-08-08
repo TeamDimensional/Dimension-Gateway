@@ -1,10 +1,10 @@
-setIcon(<aether_legacy:aether_portal_frame>)
-setTitle("tooltip.gateway.tier7")
-setDescription("tooltip.gateway.tier7.desc")
+setIcon(<aetherworks:item_resource>)
+setTranslatedTitle("tooltip.gateway.tier7")
+setTranslatedDescription("tooltip.gateway.tier7.desc")
 addParent("triumph:gateway/progression/tier6")
 setPos(-30,0)
 
-criteria = addCriteria("tier7", "minecraft:location")
-criteria.setDimID(4)
+criteria = addCriteria("tier8", "minecraft:inventory_changed")
+criteria.setItem("aetherworks:item_resource")
 
 addRewardFunction("triumph:tier7")

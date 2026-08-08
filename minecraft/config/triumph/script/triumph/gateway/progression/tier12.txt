@@ -1,6 +1,6 @@
 setIcon(<witchery:witches_oven>)
-setTitle("tooltip.gateway.tier12")
-setDescription("tooltip.gateway.tier12.desc")
+setTranslatedTitle("tooltip.gateway.tier12")
+setTranslatedDescription("tooltip.gateway.tier12.desc")
 addParent("triumph:gateway/progression/tier11")
 setPos(70,52)
 

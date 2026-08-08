@@ -1,6 +1,6 @@
 setIcon(<thaumcraft:salis_mundus>)
-setTitle("tooltip.gateway.tier5")
-setDescription("tooltip.gateway.tier5.desc")
+setTranslatedTitle("tooltip.gateway.tier5")
+setTranslatedDescription("tooltip.gateway.tier5.desc")
 addParent("triumph:gateway/progression/tier4")
 setPos(-70,0)
 

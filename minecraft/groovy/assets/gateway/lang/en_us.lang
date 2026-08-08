@@ -260,6 +260,8 @@ tooltip.gateway.warn.jump_module=Warning! Don't use this without a good Feather 
 tooltip.gateway.warn.relay_sequencer=Does not properly work with RFTools Sequencers! Use Project Red utilities instead.
 
 tooltip.gateway.tier1=Beginnings
+tooltip.gateway.root=The Pack Progression
+tooltip.gateway.root.desc=Welcome to Dimension Gateway!
 tooltip.gateway.tier2=Temple Run
 tooltip.gateway.tier2.desc=Enter The Aurorian
 tooltip.gateway.tier3=Early Metallurgy

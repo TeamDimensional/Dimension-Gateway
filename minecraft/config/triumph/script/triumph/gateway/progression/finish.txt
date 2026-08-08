@@ -1,6 +1,6 @@
 setIcon(<extrautils2:creativechest>)
-setTitle("tooltip.gateway.tier15")
-setDescription("tooltip.gateway.tier15.desc")
+setTranslatedTitle("tooltip.gateway.tier15")
+setTranslatedDescription("tooltip.gateway.tier15.desc")
 addParent("triumph:gateway/progression/tier14")
 setPos(130,0)
 

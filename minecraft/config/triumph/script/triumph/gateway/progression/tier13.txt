@@ -1,8 +1,8 @@
 setIcon(<extrautils2:decorativesolid:8>)
-setTitle("tooltip.gateway.tier13")
-setDescription("tooltip.gateway.tier13.desc")
+setTranslatedTitle("tooltip.gateway.tier13")
+setTranslatedDescription("tooltip.gateway.tier13.desc")
 addParent("triumph:gateway/progression/tier12")
-setPos(110,52)
+setPos(90,0)
 
 criteria = addCriteria("tier13", "minecraft:inventory_changed")
 criteria.setItem("extrautils2:decorativesolid", 8)

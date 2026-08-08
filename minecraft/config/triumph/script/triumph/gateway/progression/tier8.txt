@@ -1,6 +1,6 @@
 setIcon(<thermalexpansion:frame>)
-setTitle("tooltip.gateway.tier8")
-setDescription("tooltip.gateway.tier8.desc")
+setTranslatedTitle("tooltip.gateway.tier8")
+setTranslatedDescription("tooltip.gateway.tier8.desc")
 addParent("triumph:gateway/progression/tier7")
 setPos(-10,52)
 

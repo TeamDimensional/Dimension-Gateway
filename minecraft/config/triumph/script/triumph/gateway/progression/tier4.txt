@@ -1,6 +1,6 @@
 setIcon(<embers:mech_core>)
-setTitle("tooltip.gateway.tier4")
-setDescription("tooltip.gateway.tier4.desc")
+setTranslatedTitle("tooltip.gateway.tier4")
+setTranslatedDescription("tooltip.gateway.tier4.desc")
 addParent("triumph:gateway/progression/tier3")
 setPos(-90,52)
 

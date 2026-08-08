@@ -1,6 +1,6 @@
 setIcon(<tconstruct:materials>)
-setTitle("tooltip.gateway.tier3")
-setDescription("tooltip.gateway.tier3.desc")
+setTranslatedTitle("tooltip.gateway.tier3")
+setTranslatedDescription("tooltip.gateway.tier3.desc")
 addParent("triumph:gateway/progression/tier2")
 setPos(-110,0)
 

@@ -1,8 +1,8 @@
 setIcon(<essentialcraft:demonicpentacle>)
-setTitle("tooltip.gateway.tier14")
-setDescription("tooltip.gateway.tier14.desc")
+setTranslatedTitle("tooltip.gateway.tier14")
+setTranslatedDescription("tooltip.gateway.tier14.desc")
 addParent("triumph:gateway/progression/tier13")
-setPos(130,0)
+setPos(110,52)
 
 criteria = addCriteria("tier12", "minecraft:inventory_changed")
 criteria.setItem("essentialcraft:demonicpentacle")

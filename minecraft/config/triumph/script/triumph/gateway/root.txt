@@ -1,8 +1,8 @@
 //This is a root advancement. It is the base advancement for a page. As such, it has no parent and has to set a background.
 
 setIcon(<minecraft:map>)
-setTitle("The Pack Progression")
-setDescription("Welcome to Dimension Gateway!")
+setTranslatedTitle("tooltip.gateway.root")
+setTranslatedDescription("tooltip.gateway.root.desc")
 setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
 setShowToast(false)
 setAnnounceToChat(false)

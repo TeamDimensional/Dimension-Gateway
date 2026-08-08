@@ -1,6 +1,6 @@
 setIcon(<actuallyadditions:block_empowerer>)
-setTitle("tooltip.gateway.tier9")
-setDescription("tooltip.gateway.tier9.desc")
+setTranslatedTitle("tooltip.gateway.tier9")
+setTranslatedDescription("tooltip.gateway.tier9.desc")
 addParent("triumph:gateway/progression/tier8")
 setPos(10,0)
 

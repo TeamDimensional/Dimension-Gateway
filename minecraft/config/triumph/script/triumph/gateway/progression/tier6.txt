@@ -1,6 +1,6 @@
 setIcon(<minecraft:ender_eye>)
-setTitle("tooltip.gateway.tier6")
-setDescription("tooltip.gateway.tier6.desc")
+setTranslatedTitle("tooltip.gateway.tier6")
+setTranslatedDescription("tooltip.gateway.tier6.desc")
 addParent("triumph:gateway/progression/tier5")
 setPos(-50,52)
 
