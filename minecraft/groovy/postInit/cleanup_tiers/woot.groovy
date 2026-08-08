@@ -7,16 +7,15 @@ def mitem(name, k=0) {
 
 TooltipEvents.setModTier("woot", 11)
 def advItems = [
-    mitem("factorycore", 3), mitem("cell", 2),
+    mitem("factorycore", 3), mitem("cell", 2), mitem("upgradeb", 1),
 ]
 for (def i in [1, 4, 7, 10, 13]) advItems.add(mitem("upgrade", i))
 for (def i in [1, 3, 4, 6, 7]) advItems.add(mitem("upgradeb", i))
 
 def eliteItems = [
-    mitem("factorycore", 4), mitem("structure", 4), mitem("structure", 9),
+    mitem("factorycore", 4), mitem("structure", 4), mitem("structure", 9), mitem("upgradeb", 2),
 ]
 for (def i in [2, 5, 8, 11, 14]) eliteItems.add(mitem("upgrade", i))
-for (def i in [2, 5, 8, 12, 13, 14]) eliteItems.add(mitem("upgradeb", i))
 
 def removeAnvil = [
     mitem("die"), mitem("die", 1), mitem("soulsanddust"),
@@ -28,6 +27,7 @@ def removeRecipes = [
 ]
 
 def hideFromJei = [mitem("shard", 4), mitem("shard", 5), mitem("shard", 6)] + removeAnvil + removeRecipes
+for (def i in 3..14) hideFromJei.add(mitem("upgradeb", i))
 
 TooltipEvents.setTier(item("guideapi:woot-guide"), 1)
 for (def it in advItems) TooltipEvents.setTier(it, 12)
