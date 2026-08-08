@@ -473,6 +473,14 @@
     "curseForgeHash": 4276519539,
     "modrinthHash": "279499fec7b1ea593669c7fc09959b2266aabe78"
   },
+  "easiervillagertrading-1.12-forge14.21.1.2387-1.3.jar": {
+    "jarName": "easiervillagertrading-1.12-forge14.21.1.2387-1.3.jar",
+    "modId": "easiervillagertrading",
+    "name": "Easier Villager Trading",
+    "version": "1.12-forge14.21.1.2387-1.3",
+    "curseForgeHash": 3781135299,
+    "modrinthHash": "1fb59ce2ebdbd1dcb06316bd393305679be02c40"
+  },
   "ElecCore-1.12.2-1.9.453.jar": {
     "jarName": "ElecCore-1.12.2-1.9.453.jar",
     "modId": "eleccore",
@@ -1059,6 +1067,14 @@
     "curseForgeHash": 2402055738,
     "modrinthHash": "e40401891aec2dd98e4ed705e80393719d403e13"
   },
+  "OldResearchReborn-1.0.0-release.jar": {
+    "jarName": "OldResearchReborn-1.0.0-release.jar",
+    "modId": "oldresearch",
+    "name": "TC4 Research Port: Reborn",
+    "version": "1.0.0-release",
+    "curseForgeHash": 2534329276,
+    "modrinthHash": "ea082d59d9ae8850dd76a1c1162a0620627a1f60"
+  },
   "omniwand-1.12.2-2.0.4.jar": {
     "jarName": "omniwand-1.12.2-2.0.4.jar",
     "modId": "omniwand",
@@ -1475,6 +1491,14 @@
     "curseForgeHash": 2408014167,
     "modrinthHash": "6a53b7e2728655c9c62541db3257c123e74f31b6"
   },
+  "TradeStages Legacy-1.1.1.jar": {
+    "jarName": "TradeStages Legacy-1.1.1.jar",
+    "modId": "tradestages",
+    "name": "TradeStages Legacy",
+    "version": "1.1.1",
+    "curseForgeHash": 469963069,
+    "modrinthHash": "dc6262d4f727dbda7bd368acb5021652575efdf2"
+  },
   "Translocators-1.12.2-2.5.2.81-universal.jar": {
     "jarName": "Translocators-1.12.2-2.5.2.81-universal.jar",
     "modId": "translocators",
@@ -1514,11 +1538,6 @@
     "version": "1.20.1",
     "curseForgeHash": 1630183384,
     "modrinthHash": "61ecdb9c053afcd6b032f5fb471b54d534f74489"
-  },
-  "VillagerTradingBan-2.0.0.6-universal.jar": {
-    "jarName": "VillagerTradingBan-2.0.0.6-universal.jar",
-    "curseForgeHash": 2570982046,
-    "modrinthHash": "875b2192e4897267d524202805d2dbb1b1877ff7"
   },
   "vintagefix-0.7.0.jar": {
     "jarName": "vintagefix-0.7.0.jar",
