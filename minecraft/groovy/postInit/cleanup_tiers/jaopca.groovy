@@ -44,7 +44,7 @@ def all_materials = fluid_materials + [
     "zanite": 7,
     "ambrosium": 7,
     "resonating": 8,
-    "aether": 7,
+    "aether": 6,
     "aurorian_coal": 2,
     "aurorian_geode": 2,
 ]

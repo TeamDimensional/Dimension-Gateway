@@ -73,7 +73,7 @@ def removeRecipes = [
     aitem("gravitite_leggings"), aitem("gravitite_boots"), aitem("gravitite_gloves")
 ]
 
-def justHide = [aitem("gravitite_ore"), aitem("enchanted_gravitite")]
+def justHide = [aitem("gravitite_ore"), aitem("enchanted_gravitite"), aitem("aether_portal")]
 
 for (def it in brokenLoot + removeRecipes + justHide) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)

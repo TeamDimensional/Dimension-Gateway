@@ -24,7 +24,7 @@ TooltipEvents.setUnlock(item("minecraft:ender_eye"), 6)
 
 // Aether, Aetherworks, Offering to the Gods, RFTools, Extra Utils
 TooltipEvents.setTierName(7, "tooltip.gateway.tier7")
-TooltipEvents.setUnlock(item("aether_legacy:aether_portal_frame"), 7)
+TooltipEvents.setUnlock(item("aetherworks:item_resource"), 7)
 
 // Thermal Expansion, Factory Tech, Applied Energistics, Deep Resonance
 TooltipEvents.setTierName(8, "tooltip.gateway.tier8")

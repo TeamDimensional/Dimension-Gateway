@@ -15,7 +15,7 @@ for (int i in 0..5) geodes.add(mitem("item_geode", i))
 def forgeBaseItems = []
 
 def ourItems = [
-    mitem("aether_ore"), mitem("block_aether"), mitem("item_pickaxe_aether"), mitem("item_pickaxe_ember"),
+    mitem("block_aether"), mitem("item_pickaxe_aether"), mitem("item_pickaxe_ember"),
     mitem("item_shovel_redstone"), mitem("item_shovel_slime"), mitem("item_crown"), mitem("item_crossbow_quartz"),
     mitem("item_crossbow_magma"), mitem("item_potion_gem"),
     mitem("aetherium_ashen_cloak_head"), mitem("aetherium_ashen_cloak_chest"), mitem("aetherium_ashen_cloak_legs"),
@@ -56,6 +56,7 @@ TooltipEvents.setTooltip(mitem("item_potion_gem"), "tooltip.gateway.use.potion_g
 for (def it in potionGems) TooltipEvents.setTooltip(it, "tooltip.gateway.use.attuned_potion_gem")
 
 for (def it in forgeBaseItems) TooltipEvents.setTier(it, 4)
+TooltipEvents.setTier(mitem("aether_ore"), 6)
 for (def it in ourItems) TooltipEvents.setTier(it, 7)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
