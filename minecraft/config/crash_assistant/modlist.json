@@ -1,9 +1,9 @@
 {
-  "universal.jar (modloader)": {
-    "jarName": "universal.jar (modloader)",
+  "cleanroom-0.5.17-alpha.jar (modloader)": {
+    "jarName": "cleanroom-0.5.17-alpha.jar (modloader)",
     "modId": "forge",
     "name": "forge",
-    "version": "universal.jar"
+    "version": "cleanroom-0.5.17-alpha.jar"
   },
   "!!!CrashAssistant-forge-1.12.2-1.11.11.jar": {
     "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.11.jar",
@@ -13,6 +13,14 @@
     "curseForgeHash": 607453096,
     "modrinthHash": "10774ce18987cd93b5b41ae4a3f1558f66743567"
   },
+  "!cleanroom-relauncher-1.0.2.jar": {
+    "jarName": "!cleanroom-relauncher-1.0.2.jar",
+    "modId": "cleanroom-relauncher",
+    "name": "Cleanroom Relauncher",
+    "version": "1.0.2",
+    "curseForgeHash": 2626278863,
+    "modrinthHash": "91383063e423a345ca5e7bc0134f94c0063f3c29"
+  },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
     "modId": "configanytime",
@@ -20,14 +28,6 @@
     "version": "3.0",
     "curseForgeHash": 3732531395,
     "modrinthHash": "b6d8a10219d3802e04de6b1e815a5853e50adbcc"
-  },
-  "!improved-relauncher-0.3.8.jar": {
-    "jarName": "!improved-relauncher-0.3.8.jar",
-    "modId": "improved-relauncher",
-    "name": "Improved Relauncher",
-    "version": "0.3.8",
-    "curseForgeHash": 3387867157,
-    "modrinthHash": "91876176e33c24c68ce187e376002a2749b3a239"
   },
   "!mixinbooter-11.13.jar": {
     "jarName": "!mixinbooter-11.13.jar",
@@ -50,13 +50,13 @@
     "curseForgeHash": 2660540505,
     "modrinthHash": "d272efd0c807908138edbac8e6cb2d90127ac01a"
   },
-  "+Fugue-0.23.4.jar": {
-    "jarName": "+Fugue-0.23.4.jar",
+  "+Fugue-0.23.7.jar": {
+    "jarName": "+Fugue-0.23.7.jar",
     "modId": "fugue",
     "name": "Fugue",
-    "version": "0.23.4",
-    "curseForgeHash": 3396816010,
-    "modrinthHash": "7ed08cd84a22e2f3fbf81d6bf263cd409c88a674"
+    "version": "0.23.7",
+    "curseForgeHash": 2578964421,
+    "modrinthHash": "d753d4108ed0136dcf0eabf25fd515e12378a5b9"
   },
   "`FermiumBooter-1.4.1.jar": {
     "jarName": "`FermiumBooter-1.4.1.jar",
@@ -182,14 +182,6 @@
     "version": "1.2-12",
     "curseForgeHash": 3030749418,
     "modrinthHash": "b11bf9d93f4bd7a2eeb8cfe49c1b30ce1a2f5a37"
-  },
-  "Alfheim-1.6.jar": {
-    "jarName": "Alfheim-1.6.jar",
-    "modId": "alfheim",
-    "name": "Alfheim",
-    "version": "1.6",
-    "curseForgeHash": 3900301727,
-    "modrinthHash": "15aaa39a13e18ab2f29456b25fd9732da1949329"
   },
   "AquaAcrobatics-1.15.4.jar": {
     "jarName": "AquaAcrobatics-1.15.4.jar",
@@ -1170,6 +1162,14 @@
     "version": "4.9.4.120",
     "curseForgeHash": 1782350993,
     "modrinthHash": "f05cda479b14d41e02120295b4bcbb0ab25738d2"
+  },
+  "pulsar-0.2.4.jar": {
+    "jarName": "pulsar-0.2.4.jar",
+    "modId": "pulsar",
+    "name": "Pulsar Lighting Engine",
+    "version": "0.2.4",
+    "curseForgeHash": 1159519525,
+    "modrinthHash": "0c74b5042faff6772bef46ba17acb00fa5364a2b"
   },
   "QMD-1.5.1-1.12.2.jar": {
     "jarName": "QMD-1.5.1-1.12.2.jar",
