@@ -1,29 +1,29 @@
-filename = 'PackagedFluidCrafting-1.12.2-1.0.0.3.jar'
-name = 'PackagedFluidCrafting'
+filename = 'ae2-quick-calculation-1.12.2-1.0.0.jar'
+name = 'AE2 Quick Calculation'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = '1.12.2-1.0.0.3'
+x-prismlauncher-version-number = 'ae2-quick-calculation-1.12.2-1.0.0.jar'
 
 [download]
-hash = '516e4475753420ae6ac7014febb6b7a2465c81c6'
+hash = '9c4636f7858f1ad827ea0f2bb12218ef8f9339f2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7007922
-project-id = 1334937
+file-id = 8594804
+project-id = 1643136
 
 [[x-prismlauncher-dependencies]]
-addonId = '308380'
+addonId = '623955'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '570458'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
 addonId = '419286'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '623955'
 type = 'REQUIRED'

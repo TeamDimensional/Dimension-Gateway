@@ -100,11 +100,13 @@ mods.nuclearcraft.assembler.builder()
     .register()
 
 // Extended Fluid Pattern Terminal
+/*
 crafting.remove("ae2fc:part_fluid_pattern_ex_terminal")
 mods.nuclearcraft.assembler.builder()
     .input(item("ae2fc:part_fluid_pattern_terminal") * 2, item("botania:rune", 11), item("botania:rune", 11), item("appliedenergistics2:material", 24) * 4)
     .output(item("ae2fc:part_fluid_pattern_ex_terminal"))
     .register()
+*/
 
 // Powertools Autocrafter
 crafting.remove("ae2powertools:auto_crafter")
@@ -147,6 +149,7 @@ crafting.shapedBuilder()
     .register()
 
 // Discretizer
+/*
 crafting.remove("ae2fc:fluid_discretizer")
 crafting.shapedBuilder()
     .mirrored()
@@ -159,6 +162,7 @@ crafting.shapedBuilder()
     .key("C", item("industrialforegoing:fluid_crafter"))
     .output(item("ae2fc:fluid_discretizer"))
     .register()
+*/
 
 // Compacting Exposer
 crafting.shapedBuilder()
@@ -170,4 +174,55 @@ crafting.shapedBuilder()
     .key("P", item("appliedenergistics2:material", 9))
     .key("D", item("functionalstoragelegacy:compacting_drawer"))
     .output(item("cells:compacting_pattern_exposer"))
+    .register()
+
+// Network Health Scanner
+crafting.remove("ae2powertools:network_health_scanner")
+crafting.shapedBuilder()
+    .name("tools/ae2/healthscanner")
+    .matrix("ETE", "PDP", "EPE")
+    .key("P", item("appliedenergistics2:material", 23))
+    .key("E", item("appliedenergistics2:smooth_sky_stone_block"))
+    .key("D", ore("itemIlluminatedPanel"))
+    .key("T", item("thaumcraft:mind"))
+    .output(item("ae2powertools:network_health_scanner"))
+    .register()
+
+// Visualization Tool
+crafting.remove("aenetvistool:net_visualizer")
+crafting.shapedBuilder()
+    .name("tools/ae2/net_visualizer")
+    .matrix("EFE", "PTV", "EAE")
+    .mirrored()
+    .key("F", item("appliedenergistics2:material", 44))
+    .key("A", item("appliedenergistics2:material", 43))
+    .key("E", item("minecraft:iron_ingot"))
+    .key("T", item("thaumcraft:mind"))
+    .key("V", item("minecraft:ender_eye"))
+    .key("P", item("appliedenergistics2:network_tool"))
+    .output(item("aenetvistool:net_visualizer"))
+    .register()
+
+// Remote Storage Monitor
+crafting.remove("ae2powertools:remote_storage_monitor")
+crafting.shapedBuilder()
+    .name("tools/ae2/rsm")
+    .matrix("ETE", "PDP", "EPE")
+    .key("P", item("appliedenergistics2:material", 22))
+    .key("E", item("appliedenergistics2:smooth_sky_stone_block"))
+    .key("D", ore("itemIlluminatedPanel"))
+    .key("T", item("thaumcraft:mind"))
+    .output(item("ae2powertools:remote_storage_monitor"))
+    .register()
+
+// Network Component Locator
+crafting.remove("ae2powertools:network_component_locator")
+crafting.shapedBuilder()
+    .name("tools/ae2/nacl")
+    .matrix("ETE", "PDP", "EPE")
+    .key("P", item("appliedenergistics2:material", 24))
+    .key("E", item("appliedenergistics2:smooth_sky_stone_block"))
+    .key("D", ore("itemIlluminatedPanel"))
+    .key("T", item("thaumcraft:mind"))
+    .output(item("ae2powertools:network_component_locator"))
     .register()

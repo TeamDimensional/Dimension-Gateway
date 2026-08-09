@@ -119,13 +119,21 @@
     "curseForgeHash": 2521729992,
     "modrinthHash": "bac9c21d2a1c12d46b97b115e5d1376901776ca5"
   },
-  "ae2-uel-v0.56.7.jar": {
-    "jarName": "ae2-uel-v0.56.7.jar",
+  "ae2-quick-calculation-1.12.2-1.0.0.jar": {
+    "jarName": "ae2-quick-calculation-1.12.2-1.0.0.jar",
+    "modId": "ae2_quick_calculation",
+    "name": "AE2 Quick Calculation",
+    "version": "1.0.0",
+    "curseForgeHash": 1081079065,
+    "modrinthHash": "9c4636f7858f1ad827ea0f2bb12218ef8f9339f2"
+  },
+  "ae2-uel-v0.56.5.jar": {
+    "jarName": "ae2-uel-v0.56.5.jar",
     "modId": "appliedenergistics2",
     "name": "AE2 Unofficial Extended Life",
-    "version": "v0.56.7",
-    "curseForgeHash": 2199621341,
-    "modrinthHash": "972169ccbb3c214108f7775fc9ffe9edea66a118"
+    "version": "v0.56.5",
+    "curseForgeHash": 1135491659,
+    "modrinthHash": "6eb5fb7611ef073b5fb58e1cf41c2374f608797f"
   },
   "ae2cellrender-2.4.jar": {
     "jarName": "ae2cellrender-2.4.jar",
@@ -142,14 +150,6 @@
     "version": "0.1.0",
     "curseForgeHash": 1277871034,
     "modrinthHash": "c2757db9c8b124c6def1f384e6b412e4ce70a5b5"
-  },
-  "ae2fc-2.7.10-unofficial.jar": {
-    "jarName": "ae2fc-2.7.10-unofficial.jar",
-    "modId": "ae2fc",
-    "name": "AE2 Fluid Crafting",
-    "version": "2.7.10-unofficial",
-    "curseForgeHash": 2158002271,
-    "modrinthHash": "ff7ca3f2ff3fb16aa80963020b7daab1e4509329"
   },
   "ae2powertools-1.6.6.jar": {
     "jarName": "ae2powertools-1.6.6.jar",
@@ -473,6 +473,14 @@
     "curseForgeHash": 4276519539,
     "modrinthHash": "279499fec7b1ea593669c7fc09959b2266aabe78"
   },
+  "dynamistics-1.0.2.jar": {
+    "jarName": "dynamistics-1.0.2.jar",
+    "modId": "dynamistics",
+    "name": "Dynamistics",
+    "version": "1.0.2",
+    "curseForgeHash": 1466065554,
+    "modrinthHash": "f956193b77dc770ea30e3de33e7c9706e75e762e"
+  },
   "easiervillagertrading-1.12-forge14.21.1.2387-1.3.jar": {
     "jarName": "easiervillagertrading-1.12-forge14.21.1.2387-1.3.jar",
     "modId": "easiervillagertrading",
@@ -699,13 +707,13 @@
     "curseForgeHash": 1899009469,
     "modrinthHash": "095b3b85d05118602c7678beb1e56d26930fd0e7"
   },
-  "HadEnoughItems_1.12.2-4.34.0.jar": {
-    "jarName": "HadEnoughItems_1.12.2-4.34.0.jar",
+  "HadEnoughItems_1.12.2-4.34.1.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.34.1.jar",
     "modId": "jei",
     "name": "Had Enough Items",
-    "version": "4.34.0",
-    "curseForgeHash": 1090450595,
-    "modrinthHash": "68c7b255be2c5fa7a4aee8a0ae50d94ebd3db848"
+    "version": "4.34.1",
+    "curseForgeHash": 1030622605,
+    "modrinthHash": "3d9c9e5efac4183f1acc368e41df738b038d09e1"
   },
   "Hwyla-1.8.26-B41_1.12.2.jar": {
     "jarName": "Hwyla-1.8.26-B41_1.12.2.jar",
@@ -1106,14 +1114,6 @@
     "version": "1.0.24.73",
     "curseForgeHash": 2596751255,
     "modrinthHash": "cdc6f2edeb816d0496a799780118e8c9cdfa0416"
-  },
-  "PackagedFluidCrafting-1.12.2-1.0.0.3.jar": {
-    "jarName": "PackagedFluidCrafting-1.12.2-1.0.0.3.jar",
-    "modId": "packagedfluidcrafting",
-    "name": "PackagedFluidCrafting",
-    "version": "1.0.0.3",
-    "curseForgeHash": 1124054638,
-    "modrinthHash": "516e4475753420ae6ac7014febb6b7a2465c81c6"
   },
   "PackagingProvider-1.12.2-1.0.0.2.jar": {
     "jarName": "PackagingProvider-1.12.2-1.0.0.2.jar",

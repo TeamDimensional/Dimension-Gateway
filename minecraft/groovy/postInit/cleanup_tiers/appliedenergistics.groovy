@@ -28,9 +28,9 @@ def modItems = [
     item("aenetvistool:net_visualizer"), mitem("crafting_accelerator"), item("nae2:coprocessor_4x"), item("nae2:coprocessor_16x"),
     mitem("io_port"), mitem("fluid_interface"), mitem("entropy_manipulator"), mitem("matter_cannon"),
     item("ae2powertools:network_health_scanner"), item("ae2powertools:priority_tuner"), item("ae2powertools:cards_distributor"),
-    item("ae2fc:fluid_discretizer"), item("ae2fc:fluid_pattern_encoder"), item("ae2fc:fluid_packet_decoder"),
-    item("ae2fc:ingredient_buffer"), item("ae2fc:large_ingredient_buffer"), item("ae2fc:burette"), item("ae2fc:dual_interface"),
-    item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
+    // item("ae2fc:fluid_discretizer"), item("ae2fc:fluid_pattern_encoder"), item("ae2fc:fluid_packet_decoder"),
+    // item("ae2fc:ingredient_buffer"), item("ae2fc:large_ingredient_buffer"), item("ae2fc:burette"), item("ae2fc:dual_interface"),
+    // item("ae2fc:fluid_assembler"), item("ae2fc:fluid_drop"), item("ae2fc:part_dual_interface"), item("ae2fc:part_fluid_pattern_terminal"),
     item("ae2powertools:network_component_locator"), item("ae2powertools:storage_level_emitter_part"), item("ae2powertools:storage_display_part"),
     item("ae2powertools:storage_level_emitter"), item("ae2powertools:storage_display"), mitem("facade"),
     item("ae2powertools:remote_storage_monitor"), item("ae2powertools:level_monitor_alarm_locator"), item("ae2powertools:level_monitor_alarm"),
@@ -56,12 +56,12 @@ for (def tier in 0..6)
 def advancedItems = [
     mitem("wireless_access_point"), mitem("quantum_ring"), mitem("quantum_link"), mitem("spatial_pylon"),
     mitem("spatial_io_port"), mitem("condenser"), mitem("wireless_terminal"),
-    item("nae2:part"), mitem("wireless_interface_terminal"),
+    item("nae2:part"),   // mitem("wireless_interface_terminal"),
     mitem("wireless_crafting_terminal"), mitem("wireless_pattern_terminal"), mitem("wireless_fluid_terminal"),
     item("nae2:coprocessor_64x"), item("nae2:upgrade"), item("nae2:exposer"), item("nae2:part", 2), mitem("part", 341),
     citem("overflow_card"), citem("trash_unselected_card"), citem("compression_tier_card"), citem("decompression_tier_card"),
-    citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"), item("ae2fc:ultimate_encoder"),
-    item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
+    citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"),  // item("ae2fc:ultimate_encoder"),
+    // item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
     citem("import_combined_interface"), citem("export_combined_interface"), citem("insertion_card"),
     citem("part", 8), citem("part", 9), item("cellterminal:wireless_cell_terminal"),
     citem("import_interface"), citem("import_fluid_interface"), citem("export_interface"), citem("export_fluid_interface"),
@@ -106,7 +106,7 @@ def creativeItems = [
 def removeRecipes = [
     mitem("sky_compass"), mitem("charged_staff"), mitem("portable_cell"), item("nae2:reconstruction_chamber"), mitem("material", 46),
     item("appliedenergistics2:energy_acceptor"), citem("oredict_card"), citem("equal_distribution_card", 7),
-    item("ae2powertools:better_level_maintainer"), item("ae2fc:fluid_level_maintainer"),
+    item("ae2powertools:better_level_maintainer"),  // item("ae2fc:fluid_level_maintainer"),
 ]
 for (def tier in 8..11) {
     removeRecipes.add(citem("compacting_cell", tier))
