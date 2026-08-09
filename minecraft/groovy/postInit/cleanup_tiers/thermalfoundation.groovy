@@ -39,9 +39,8 @@ for (int i in [5, 6, 7]) techTierItems.add(mitem("storage_alloy", i))
 for (int i in 0..6) if (i != 3) techTierItems.add(mitem("glass", i))
 for (int i in 0..7) techTierItems.add(mitem("glass_alloy", i))
 for (int i in [0, 1, 33]) techTierItems.add(mitem("upgrade", i))
-for (int i in 0..15) techTierItems.add(mitem("dye", i))
 for (int i in [70, 101, 102, 103, 134, 165, 166, 167, 198, 229, 230, 231, 262, 293, 294, 295,
-               326, 357, 358, 359, 513, 514, 515, 801, 816, 817, 818, 819, 832, 833, 865, 866, 893, 894, 895])
+               326, 357, 358, 359, 513, 514, 515, 801, 816, 817, 818, 819, 832, 833, 865, 893, 894, 895])
     techTierItems.add(mitem("material", i))
 
 def elementalDrops = []
@@ -64,8 +63,10 @@ for (int i in [22, 23, 640, 656, 657]) removedItems.add(mitem("material", i))
 def hideFromJei = [
     mitem("geode"), mitem("material", 892), mitem("fluid_crude_oil")
 ] + removedItems
+for (int i in 0..15) hideFromJei.add(mitem("dye", i))
 for (int i in 0..5) hideFromJei.add(mitem("ore_fluid", i))
 for (int i in [0, 1, 64, 65, 66, 67, 68, 69, 70, 71, 72, 96, 97, 98, 99, 100, 101, 102, 103]) hideFromJei.add(mitem("coin", i))
+for (int i in [866]) hideFromJei.add(mitem("material", i))
 
 for (def it in tinItems) TooltipEvents.setTier(it, 2)
 for (def it in metallurgyItems) TooltipEvents.setTier(it, 3)
