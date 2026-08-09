@@ -29,7 +29,7 @@ def tier1Items = [
     mitem("managlasspane"), mitem("spreader"), mitem("spreader", 1), mitem("pylon"), mitem("pistonrelay"), mitem("distributor"), mitem("manavoid"),
     mitem("manadetector"), mitem("turntable"), mitem("tinyplanetblock"), mitem("foresteye"), mitem("storage"), mitem("storage", 3),
     mitem("forestdrum"), mitem("forestdrum", 2), mitem("platform"), mitem("tinypotato"), mitem("brewery"), mitem("managlass"), mitem("pump"),
-    mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"), mitem("altar"),
+    mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"), mitem("altar"), mitem("alchemycatalyst"),
 ] + getQuartzList("dark") + getQuartzList("mana") + getQuartzList("blaze")
 for (int i in [0, 1, 2, 3, 6, 11, 16, 17, 22, 23]) tier1Items.add(mitem("manaresource", i))
 for (int i in [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 15, 16, 17, 22]) tier1Items.add(mitem("lens", i))
@@ -46,7 +46,7 @@ for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manawea
 def tier2Items = [
     mitem("terraformrod"), mitem("manamirror", 32767), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
     mitem("terraaxe"), mitem("quartz", 6), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
-    mitem("alchemycatalyst"), mitem("storage", 1), mitem("terraplate"), mitem("cellblock"),
+    mitem("storage", 1), mitem("terraplate"), mitem("cellblock"),
 ] + getQuartzList("sunny")
 for (int i in [4, 18]) tier2Items.add(mitem("manaresource", i))
 for (int i in [8, 11]) tier2Items.add(mitem("lens", i))
