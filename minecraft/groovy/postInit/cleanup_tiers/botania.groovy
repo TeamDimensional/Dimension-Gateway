@@ -44,7 +44,7 @@ for (def it in equipmentItems + mainTools) tier1Items.add(mitem("manasteel${it}"
 for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manaweave${it}"))
 
 def tier2Items = [
-    mitem("terraformrod"), mitem("manamirror"), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
+    mitem("terraformrod"), mitem("manamirror", 32767), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
     mitem("terraaxe"), mitem("quartz", 6), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
     mitem("alchemycatalyst"), mitem("storage", 1), mitem("terraplate"), mitem("cellblock"),
 ] + getQuartzList("sunny")
@@ -112,7 +112,7 @@ for (def it in firstMagicItems) TooltipEvents.setTier(it, 5)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in tier1Items) TooltipEvents.setTier(it, 10)
 for (def it in industrialTier) TooltipEvents.setTier(it, 10)
-for (def it in tier2Items) TooltipEvents.setTier(it, 10)
+for (def it in tier2Items) TooltipEvents.setTier(it, 11)
 for (def it in tier3Items) TooltipEvents.setTier(it, 13)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeThese) crafting.removeByOutput(it)
@@ -167,6 +167,6 @@ def setFloatingFlowerTier(name, tier) {
 }
 
 for (def it in tier1Flowers) setFlowerTier(it, 10)
-for (def it in tier2Flowers) setFlowerTier(it, 10)
+for (def it in tier2Flowers) setFlowerTier(it, 11)
 for (def it in tier3Flowers) setFlowerTier(it, 13)
 setFloatingFlowerTier("puredaisy", 10)

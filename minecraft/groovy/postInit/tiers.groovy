@@ -40,7 +40,7 @@ TooltipEvents.setUnlock(item("libvulpes:productingot", 7), 10)
 
 // EnderIO, Woot, Fission Reactors, Abyssalcraft part 1
 TooltipEvents.setTierName(11, "tooltip.gateway.tier11")
-TooltipEvents.setUnlock(item("enderio:item_material", 1), 11)
+TooltipEvents.setUnlock(item("botania:manaresource", 4), 11)
 
 // Witchery, Advanced Rocketry part 2, Salt Reactors
 TooltipEvents.setTierName(12, "tooltip.gateway.tier12")

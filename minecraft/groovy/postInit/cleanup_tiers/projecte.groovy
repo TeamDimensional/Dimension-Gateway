@@ -32,7 +32,6 @@ def magicItems = [
 ]
 
 def midgameItems = [
-    fitem("repair_talisman"),
     fitem("ring_iron_band"), fitem("black_hole"), fitem("archangel_smite"),
     fitem("harvest_god"), fitem("ignition"), fitem("zero_ring"),
     fitem("body_stone"), fitem("soul_stone"), fitem("mind_stone"), fitem("life_stone"),
@@ -63,6 +62,7 @@ def hideFromJei = [
 for (def it in t2Items) TooltipEvents.setTier(it, 2)
 for (def it in magicItems) TooltipEvents.setTier(it, 5)
 for (def it in midgameItems) TooltipEvents.setTier(it, 10)
+TooltipEvents.setTier(fitem("repair_talisman"), 11)
 for (def it in endgameItems) TooltipEvents.setTier(it, 14)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

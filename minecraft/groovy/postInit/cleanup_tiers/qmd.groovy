@@ -10,14 +10,17 @@ def embersItems = [mitem("fluid_mercury")]
 def thermalItems = [mitem("fluid_silicon")]
 
 def chemistryItems = [
-    mitem("ore_leacher"), mitem("atmosphere_collector"), mitem("dust", 11), mitem("ingot", 11), mitem("liquid_collector"), mitem("ingot", 15),
+    mitem("ore_leacher"), mitem("atmosphere_collector"), mitem("dust", 11), mitem("ingot", 11), mitem("liquid_collector"),
 ]
 for (def i in [3, 4]) chemistryItems.add(mitem("chemical_dust", i))
 for (def c in GatewayHelpers.qmdChemiFluids) chemistryItems.add(mitem("fluid_${c}"))
 
+def metamorphicCrushing = [
+    mitem("dust", 15), mitem("ingot", 15), mitem("dust", 2), mitem("ingot", 2), mitem("ingot_alloy", 5),
+]
+
 def fissionItems = [
-    mitem("dust2", 1), mitem("ingot2", 1), mitem("fluid_polonium"), mitem("fluid_radium"), mitem("fluid_bismuth"),
-    mitem("fluid_neodymium"), mitem("dust", 15), mitem("dust2", 3), mitem("part", 13),
+    mitem("fluid_polonium"), mitem("fluid_radium"), mitem("fluid_bismuth"), mitem("fluid_neodymium"), mitem("dust2", 3), mitem("part", 13),
 ]
 for (def i in [2, 3, 4, 6, 8]) fissionItems.add(mitem("isotope", i))
 def tier12Items = [mitem("dust", 8), mitem("ingot", 8)]
@@ -53,6 +56,7 @@ TooltipEvents.setModTier("qmd", 14)
 for (def it in embersItems) TooltipEvents.setTier(it, 4)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
 for (def it in chemistryItems) TooltipEvents.setTier(it, 9)
+for (def it in metamorphicCrushing) TooltipEvents.setTier(it, 11)
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)
 for (def it in tier12Items) TooltipEvents.setTier(it, 12)
 for (def it in antimatterItems) TooltipEvents.setTier(it, 14)

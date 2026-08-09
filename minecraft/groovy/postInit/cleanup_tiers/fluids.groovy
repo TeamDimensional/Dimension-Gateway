@@ -103,10 +103,7 @@ def tier9 = [
     fluid("ferroboron"), fluid("tough"), fluid("diborane"), fluid("boric_acid"), fluid("boron_nitride_solution"),
     fluid("bas"), fluid("boron"),
     fluid("radaway"), fluid("radaway_slow"), fluid("redstone_ethanol"), fluid("borax_solution"), fluid("irradiated_borax_solution"),
-    fluid("methane"), fluid("sulfur_hexafluoride"), fluid("barium_sulfide"), fluid("barium"), fluid("holmium"),
-    fluid("aluminum_sulfide"), fluid("nickel_sulfide"), fluid("dysprosium"), fluid("hodybef_vapor"), fluid("hodybeso_solution"),
-    fluid("baalo"), fluid("barium_oxide"), fluid("fso_vapor"), fluid("dysprholminite_water"), fluid("orthosilicic_acid"),
-    fluid("nickel_oxide"), fluid("soul"), fluid("prismarine"),
+    fluid("methane"), fluid("sulfur_hexafluoride"), fluid("aluminum_sulfide"), fluid("nickel_sulfide"), fluid("nickel_oxide"), fluid("prismarine"),
     // Voidmetal stuff
     fluid("liquid_enlightenment"), fluid("condensed_thoughts"),
 ]
@@ -132,7 +129,7 @@ def tier11 = [
     fluid("high_pressure_steam"), fluid("condensate_water"),
     fluid("exhaust_steam"), fluid("low_quality_steam"), fluid("emergency_coolant_heated"),
     fluid("strontium_90"), fluid("molybdenum"), fluid("ruthenium_106"), fluid("caesium_137"), fluid("promethium_147"), fluid("europium_155"),
-    fluid("neodymium"), fluid("bismuth"), fluid("polonium"), fluid("radium"), fluid("hot_mercury"), fluid("exhaust_mercury"),
+    fluid("bismuth"), fluid("polonium"), fluid("radium"), fluid("hot_mercury"), fluid("exhaust_mercury"),
     fluid("high_pressure_mercury"),
     // NCO PBRs
     fluid("oxygen_hot"), fluid("oxygen_exhaust"), fluid("hydrogen_hot"), fluid("hydrogen_exhaust"),
@@ -146,6 +143,11 @@ def tier11 = [
     fluid("mysterious_soul"), fluid("samarium"), fluid("gadolinium"),
     // Abyssalcraft
     fluid("liquidcoralium"),
+    // Metamorphic Crushing
+    fluid("dysprosium"), fluid("hodybef_vapor"), fluid("hodybeso_solution"),
+    fluid("baalo"), fluid("barium_oxide"), fluid("fso_vapor"), fluid("dysprholminite_water"), fluid("orthosilicic_acid"),
+    fluid("bacro"), fluid("bacro_nio"), fluid("hastelloy"), fluid("nichrome"), fluid("chromium"),
+    fluid("barium_sulfide"), fluid("barium"), fluid("holmium"),
 ]
 
 def tier12 = [
@@ -174,12 +176,11 @@ def tier14 = [
     fluid("liquidantimatter"),
     // QMD
     fluid("tritium"), fluid("plasma"), fluid("sodium_tungstate_solution"), fluid("lead_tungstate_solution"),
-    fluid("iodine"), fluid("yag"), fluid("nd_yag"), fluid("tungsten"), fluid("niobium"), fluid("chromium"), fluid("hafnium"),
+    fluid("iodine"), fluid("yag"), fluid("nd_yag"), fluid("tungsten"), fluid("niobium"), fluid("hafnium"),
     fluid("zinc"), fluid("osmium"), fluid("calcium"), fluid("strontium"),
     fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
     fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
-    fluid("erbium"), fluid("terbium"), fluid("ytterbium"),
-    fluid("bacro"), fluid("bacro_nio"), fluid("hastelloy"), fluid("nichrome"),
+    fluid("erbium"), fluid("terbium"), fluid("ytterbium"), fluid("neodymium"),
 ]
 
 def removeFluids = [
@@ -187,9 +188,8 @@ def removeFluids = [
     "solution_resonating", "solution_aether", "mushroom_stew", "solution_zanite", "solution_aurorian_coal",
     "ftglowstone", "solution_ambrosium", "solution_aurorian_geode",
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
-    "boiling_potato_juice", "boiling_wormwood", "boiling_beetroot_soup", "vodka", "umber_ale", "absinthe", "snowpoff",
     "aquamarine", "solution_aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
-    "crude_steel", "crystalline_pink_slime", "energetic_silver", "vivid_alloy",
+    "crude_steel", "crystalline_pink_slime", "energetic_silver", "vivid_alloy", "soul",
 ]
 
 def ncIsotopes = [

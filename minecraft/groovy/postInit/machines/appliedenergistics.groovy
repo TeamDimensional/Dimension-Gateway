@@ -80,8 +80,12 @@ crafting.shapedBuilder()
 // Wireless Booster Card
 crafting.removeByOutput(item("appliedenergistics2:material", 42))
 mods.nuclearcraft.assembler.builder()
-    .input(item("thermalfoundation:material", 295), item("botania:rune", 14), item("botania:rune", 14), item("appliedenergistics2:material", 37))
+    .input(item("thermalfoundation:material", 295), item("essentialcraft:afocus"), item("appliedenergistics2:material", 37))
     .output(item("appliedenergistics2:material", 42))
+    .register()
+mods.nuclearcraft.assembler.builder()
+    .input(item("thermalfoundation:material", 295), item("botania:rune", 14), item("appliedenergistics2:material", 37))
+    .output(item("appliedenergistics2:material", 42) * 4)
     .register()
 
 // Job Autocomplete Card

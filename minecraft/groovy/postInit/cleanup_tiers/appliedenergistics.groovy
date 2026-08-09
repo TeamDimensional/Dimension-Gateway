@@ -58,7 +58,7 @@ def advancedItems = [
     mitem("spatial_io_port"), mitem("condenser"), mitem("wireless_terminal"),
     item("nae2:part"),   // mitem("wireless_interface_terminal"),
     mitem("wireless_crafting_terminal"), mitem("wireless_pattern_terminal"), mitem("wireless_fluid_terminal"),
-    item("nae2:coprocessor_64x"), item("nae2:upgrade"), item("nae2:exposer"), item("nae2:part", 2), mitem("part", 341),
+    item("nae2:coprocessor_64x"), item("nae2:upgrade"), item("nae2:exposer"), item("nae2:part", 2),
     citem("overflow_card"), citem("trash_unselected_card"), citem("compression_tier_card"), citem("decompression_tier_card"),
     citem("pull_card"), citem("push_card"), item("ae2powertools:auto_crafter"),  // item("ae2fc:ultimate_encoder"),
     // item("ae2fc:part_fluid_pattern_ex_terminal"), item("ae2fc:wireless_fluid_pattern_terminal"),
@@ -74,7 +74,7 @@ for (def tier in 0..3) advancedItems.add(item("ae2powertools:crafter_speed_upgra
 for (def i in 0..7)
     advancedItems.add(citem("part", i))
 
-def eliteItems = [mitem("material", 59), citem("overclocked_processor", 1)]
+def eliteItems = [mitem("material", 59), citem("overclocked_processor", 1), mitem("part", 341)]
 for (def i in 1..8) eliteItems.add(item("nae2:material", i))
 for (def i in [256, 1024, 4096, 16384]) {
     eliteItems.add(item("nae2:storage_cell_${i}k"))

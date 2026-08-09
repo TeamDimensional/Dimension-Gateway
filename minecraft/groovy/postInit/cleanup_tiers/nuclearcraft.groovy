@@ -76,6 +76,13 @@ def uraniumItems = [
     mitem("ore", 4), mitem("ingot_block", 4), mitem("ingot", 4), mitem("dust", 4),
 ]
 
+def metamorphicCrushing = [
+    mitem("gem_dust", 12), mitem("gem_dust", 13), mitem("gem_dust", 14), mitem("compound", 18),
+    mitem("ingot_block2", 7), mitem("ingot2", 7), mitem("dust2", 7),
+    mitem("ingot_block2", 8), mitem("ingot2", 8), mitem("dust2", 8),
+    mitem("machine_sieve_assembly", 2), mitem("alloy", 17),
+]
+
 def fissionItems = [
     mitem("fertile_isotope", 32767), mitem("heavy_water_moderator"), mitem("decay_hastener"), mitem("fuel_reprocessor"),
     mitem("fission_casing"), mitem("fission_glass"), mitem("fission_monitor"), mitem("fission_reflector", 32767),
@@ -104,7 +111,7 @@ def moltenSaltItems = [
 ]
 
 def qmdItems = [
-    mitem("decay_generator"), mitem("tritium_lamp"), mitem("alloy", 17),
+    mitem("decay_generator"), mitem("tritium_lamp"),
 ]
 
 def hxItems = [
@@ -112,15 +119,15 @@ def hxItems = [
 ]
 
 def removeRecipes = [
-    mitem("rtg_uranium"), mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"), mitem("compound", 2), mitem("compound", 9),
-    mitem("fission_power_port"),
+    mitem("rtg_uranium"), mitem("solar_panel_basic"), mitem("solar_panel_advanced"), mitem("solar_panel_du"), mitem("solar_panel_elite"),
+    mitem("compound", 2), mitem("compound", 9), mitem("fission_power_port"), mitem("material_block", 6),
 ]
 for (def m in ["copper", "hard_carbon", "thermoconducting"]) hxItems.add(mitem("heat_exchanger_tube_${m}"))
 
 def hideFromJei = [
     mitem("glowing_mushroom_block"), mitem("wasteland_earth"), mitem("wasteland_portal"), mitem("solidified_corium"),
     mitem("fluid_steel"), mitem("fluid_enderium"), mitem("fluid_lead_platinum"), mitem("fluid_milk"),
-    mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("gem"), mitem("fluid_ethanol"),
+    mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("gem"), mitem("fluid_ethanol"), mitem("material_block", 5),
 ] + removeRecipes
 
 TooltipEvents.setTooltip(mitem("fission_dust", 5), "tooltip.gateway.obtain.fission_sr")
@@ -166,6 +173,7 @@ for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
 for (def it in uraniumItems) TooltipEvents.setTier(it, 8)  // from thermal
+for (def it in metamorphicCrushing) TooltipEvents.setTier(it, 11)
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)
 for (def it in moltenSaltItems) TooltipEvents.setTier(it, 12)
 for (def it in hxItems) TooltipEvents.setTier(it, 12)
@@ -173,3 +181,7 @@ for (def it in qmdItems) TooltipEvents.setTier(it, 14)
 TooltipEvents.setTier(item("reactorbuilder:creativereactorbuilder"), 14)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
+
+mods.nuclearcraft.extractor.removeRecipeWithInput(item("minecraft:soul_sand"))
+mods.nuclearcraft.enricher.removeRecipeWithOutput(fluid("mysterious_soul"))
+mods.nuclearcraft.rock_crusher.removeRecipeWithInput(mitem("material_block", 6))
