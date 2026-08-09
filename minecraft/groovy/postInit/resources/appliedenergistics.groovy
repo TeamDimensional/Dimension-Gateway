@@ -206,3 +206,10 @@ mods.actuallyadditions.empowerer.recipeBuilder()
     .time(100)
     .energy(50000)
     .register()
+
+// Sky Stone
+mods.factorytech.agitator.recipeBuilder()
+    .input(item("roots:runed_obsidian"))
+    .fluidInput(fluid("aetherworks.aetherium_gas") * 100, fluid("enderium") * 16)
+    .output(item("appliedenergistics2:sky_stone_block"))
+    .register()

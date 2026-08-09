@@ -301,5 +301,8 @@ class EMCData {
         // EnderIO
         manager.configureItem(item("enderio:block_electric_light", 2), "Lighting")
         manager.configureItem(item("enderio:block_electric_light", 3), "Lighting")
+
+        // AE2
+        manager.configureItem(item("appliedenergistics2:quartz_fixture"), "Lighting")
     }
 }

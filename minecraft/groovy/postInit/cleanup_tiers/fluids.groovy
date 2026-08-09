@@ -65,7 +65,7 @@ def tier8 = [
     fluid("resin"), fluid("tree_oil"), fluid("seed_oil"), fluid("biocrude"), fluid("refined_biofuel"),
     fluid("potion_splash"), fluid("potion_lingering"), fluid("platinum"), fluid("signalum"), fluid("lumium"), fluid("enderium"),
     fluid("pyrotheum"), fluid("aerotheum"), fluid("petrotheum"), fluid("cryotheum"), fluid("experience"),
-    fluid("nether_brick"), fluid("slime"), fluid("end_stone"), fluid("purpur"),
+    fluid("nether_brick"), fluid("slime"), fluid("end_stone"), fluid("purpur"), fluid("uranium"),
     // Factory Tech
     fluid("sulphur"), fluid("h2so4"), fluid("propane"), fluid("energite"), fluid("silicon"),
     // Deep Resonance
@@ -116,7 +116,7 @@ def tier10 = [
     // Advanced Rocketry
     fluid("rocketfuel"), fluid("titanium_aluminum_nitride"), fluid("titanium_aluminide"), fluid("pyro_cinnabar_mixture"),
     // Moon
-    fluid("uranium"), fluid("uranium_titanide_mixture"), fluid("thorium"), 
+    fluid("uranium_titanide_mixture"), fluid("thorium"), 
     // Thaumcraft part 1.5
     fluid("ichorium"),
 ]
