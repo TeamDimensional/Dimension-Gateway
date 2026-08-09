@@ -51,3 +51,6 @@ mods.jei.category.remove("thermalexpansion.insolator_tree")
 mods.jei.category.remove("thermalexpansion.compactor_mint")
 mods.jei.category.remove("thermalexpansion.crucible_lava")
 mods.jei.category.remove("thermalexpansion.refinery_potion")
+
+// Leave centrifuge only for Enstabulation Apparatus
+mods.thermalexpansion.centrifuge.removeAll()
