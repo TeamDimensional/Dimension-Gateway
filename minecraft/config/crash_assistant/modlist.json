@@ -119,14 +119,6 @@
     "curseForgeHash": 2521729992,
     "modrinthHash": "bac9c21d2a1c12d46b97b115e5d1376901776ca5"
   },
-  "ae2-quick-calculation-1.12.2-1.0.0.jar": {
-    "jarName": "ae2-quick-calculation-1.12.2-1.0.0.jar",
-    "modId": "ae2_quick_calculation",
-    "name": "AE2 Quick Calculation",
-    "version": "1.0.0",
-    "curseForgeHash": 1081079065,
-    "modrinthHash": "9c4636f7858f1ad827ea0f2bb12218ef8f9339f2"
-  },
   "ae2-uel-v0.56.5.jar": {
     "jarName": "ae2-uel-v0.56.5.jar",
     "modId": "appliedenergistics2",
