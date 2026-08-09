@@ -1,7 +1,6 @@
 tile.gateway.wilted_daisy.name=Wilted Daisy
 item.gateway.resonating_gem.name=Radioinfused Tanzanite
 item.gateway.impure_resonating_gem.name=Impure Radioinfused Tanzanite
-item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.incomplete_runic_plate.name=Incomplete Runic Plate
 item.gateway.runic_plate.name=Runic Plate
 item.gateway.moonlight_powder.name=Moonlight Powder
@@ -11,6 +10,13 @@ item.gateway.transcendental_demon_alloy.name=Transcendental Demon Alloy
 item.gateway.purified_brain.name=Purified Brain
 item.gateway.crystallized_enlightenment.name=Crystallized Enlightenment
 item.gateway.voidmetal_mesh.name=Voidmetal Mesh
+
+item.gateway.starsteel_ingot.name=Starsteel Ingot
+item.gateway.energetic_alloy_dust.name=Energetic Alloy Dust
+item.gateway.vibrant_alloy_dust.name=Vibrant Alloy Dust
+item.gateway.redstone_alloy_dust.name=Redstone Alloy Dust
+item.gateway.dark_steel_dust.name=Dark Steel Dust
+item.gateway.pulsating_iron_dust.name=Pulsating Iron Dust
 
 tile.gateway.metallic_substrate.name=Metallic Substrate
 tile.gateway.light_metal_substrate.name=Light Metal Substrate

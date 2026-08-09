@@ -39,7 +39,7 @@ def plates = [
 
 // Clean up involved categories
 mods.nuclearcraft.pressurizer.removeAllRecipes()
-mods.thermalexpansion.compactor.removeAll()
+mods.thermalexpansion.compactor.removeByMode(compactorMode("plate"))
 mods.advancedrocketry.small_plate_presser.removeAll()
 mods.advancedrocketry.rolling_machine.removeAll()
 mods.immersiveengineering.metal_press.removeByMold(item("immersiveengineering:mold"))
@@ -157,3 +157,7 @@ for (def x in plates) {
         builder.register()
     }
 }
+
+// Gears
+crafting.remove("advancedrocketry:geartitaniumaluminide")
+crafting.remove("advancedrocketry:geartitaniumiridium")

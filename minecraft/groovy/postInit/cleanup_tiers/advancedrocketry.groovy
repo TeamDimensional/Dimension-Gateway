@@ -20,7 +20,7 @@ def titaniumMetal = [
 ]
 
 def part1Items = [
-    mitem("blocklens"), mitem("solarpanel"), mitem("solararraypanel"), mitem("forcefieldprojector"),
+    mitem("blocklens"), mitem("solarpanel"), mitem("solararraypanel"), mitem("forcefieldprojector"), mitem("lathe"),
     mitem("blockpump"), mitem("suitworkstation"), mitem("liquidtank"), mitem("wirelesstransceiver"),
     mitem("arcfurnace"), mitem("crystallizer"), mitem("precisionassemblingmachine"), mitem("chemicalreactor"),
     mitem("solararray"), mitem("launchpad"), mitem("landingpad"), mitem("seat"), mitem("rocketmotor"),
@@ -72,7 +72,7 @@ for (def i in 5..6) part2Items.add(mitem("satelliteprimaryfunction", i))
 def creativeItems = [item("libvulpes:creativepowerbattery")]
 
 def removeRecipes = [
-    mitem("solargenerator"), mitem("lathe"), mitem("electrolyser"), mitem("centrifuge"),
+    mitem("solargenerator"), mitem("electrolyser"), mitem("centrifuge"),
     mitem("beacon"), mitem("railgun"), mitem("bipropellantrocketmotor"), mitem("advbipropellantrocketmotor"),
     mitem("bipropellantfueltank"), mitem("oxidizerfueltank"), mitem("terraformingterminal"), mitem("ic", 3), mitem("ic", 4), mitem("ic", 5),
     mitem("misc", 1), mitem("sawblade"), mitem("sawbladeiron"), item("libvulpes:coalgenerator"), item("libvulpes:productfan", 6),

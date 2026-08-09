@@ -10,6 +10,11 @@ content.createItem("transcendental_demon_alloy").register()
 content.createItem("purified_brain").register()
 content.createItem("crystallized_enlightenment").register()
 content.createItem("voidmetal_mesh").register()
+content.createItem("dark_steel_dust").register()
+content.createItem("energetic_alloy_dust").register()
+content.createItem("pulsating_iron_dust").register()
+content.createItem("vibrant_alloy_dust").register()
+content.createItem("redstone_alloy_dust").register()
 
 def lighten(color, factor) {
     def r = color >> 16,

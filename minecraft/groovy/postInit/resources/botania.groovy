@@ -11,16 +11,16 @@ mods.botania.mana_infusion.recipeBuilder()
 
 // Smokey Quartz
 crafting.remove("botania:quartz_0")
-mods.naturesaura.offering.recipeBuilder()
-    .name("offered_quartz")
-    .input(item("botania:quartz", 1))
-    .catalyst(item("roots:runic_dust"))
+mods.essentialcraft.radiating_chamber.recipeBuilder()
+    .input(item("botania:quartz", 1), item("actuallyadditions:item_misc", 22))
     .output(item("botania:quartz"))
+    .time(50)
+    .mruPerTick(4.0f)
     .register()
 
 // Blaze Quartz
 crafting.remove("botania:quartz_2")
-mods.factorytech.agitator.recipeBuilder()
+mods.nuclearcraft.infuser.builder()
     .input(item("botania:quartz"))
     .output(item("botania:quartz", 2))
     .fluidInput(fluid("pyro_cinnabar_mixture") * 100)

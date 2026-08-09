@@ -46,6 +46,11 @@ TooltipEvents.setTier(citem("purified_brain"), 9)
 TooltipEvents.setTier(citem("crystallized_enlightenment"), 9)
 TooltipEvents.setTier(citem("voidmetal_mesh"), 9)
 TooltipEvents.setTier(citem("mindful_sand"), 9)
+TooltipEvents.setTier(citem("pulsating_iron_dust"), 11)
+TooltipEvents.setTier(citem("redstone_alloy_dust"), 11)
+TooltipEvents.setTier(citem("dark_steel_dust"), 11)
+TooltipEvents.setTier(citem("energetic_alloy_dust"), 11)
+TooltipEvents.setTier(citem("vibrant_alloy_dust"), 11)
 
 def magicFuels = [
     ["natural", 11],
