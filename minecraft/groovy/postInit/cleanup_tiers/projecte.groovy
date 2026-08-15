@@ -39,7 +39,7 @@ def midgameItems = [
 ]
 
 def endgameItems = [
-    mitem("dm_pedestal"), fitem("philosophers_stone"),
+    mitem("dm_pedestal"),
     mitem("matter_block", 1), fitem("matter", 1),
     fitem("rm_katar"), fitem("rm_morning_star"), fitem("swrg"), fitem("arcana_ring"),
     fitem("destruction_catalyst"), fitem("hyperkinetic_lens"), fitem("catalitic_lens"),
@@ -62,7 +62,8 @@ def hideFromJei = [
 for (def it in t2Items) TooltipEvents.setTier(it, 2)
 for (def it in magicItems) TooltipEvents.setTier(it, 5)
 for (def it in midgameItems) TooltipEvents.setTier(it, 10)
-TooltipEvents.setTier(fitem("repair_talisman"), 11)
-for (def it in endgameItems) TooltipEvents.setTier(it, 14)
+TooltipEvents.setTier(fitem("repair_talisman"), 10)
+for (def it in endgameItems) TooltipEvents.setTier(it, 10)
+TooltipEvents.setTier(fitem("philosophers_stone"), 14)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

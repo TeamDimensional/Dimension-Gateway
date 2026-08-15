@@ -29,13 +29,13 @@
     "curseForgeHash": 3732531395,
     "modrinthHash": "b6d8a10219d3802e04de6b1e815a5853e50adbcc"
   },
-  "!mixinbooter-11.13.jar": {
-    "jarName": "!mixinbooter-11.13.jar",
+  "!mixinbooter-10.7.jar": {
+    "jarName": "!mixinbooter-10.7.jar",
     "modId": "mixinbooter",
     "name": "MixinBooter",
-    "version": "11.13",
-    "curseForgeHash": 3305368153,
-    "modrinthHash": "4e4cfebf779fb687ee0fcb03f31ffce0da8a4321"
+    "version": "10.7",
+    "curseForgeHash": 2621803774,
+    "modrinthHash": "3fdfffe4fd446461ea9c3cb044484588997b9dbc"
   },
   "!mod-director-launchwrapper-1.9.1.jar": {
     "jarName": "!mod-director-launchwrapper-1.9.1.jar",
@@ -412,6 +412,14 @@
     "curseForgeHash": 1032568183,
     "modrinthHash": "b7efc70e71c898d61ad9fb1b07e1b83b4cd4a9c2"
   },
+  "CraftTweaker2-1.12-4.1.20.715.jar": {
+    "jarName": "CraftTweaker2-1.12-4.1.20.715.jar",
+    "modId": "crafttweaker",
+    "name": "CraftTweaker2",
+    "version": "1.12-4.1.20.715",
+    "curseForgeHash": 2155788166,
+    "modrinthHash": "cdfbe5389ce16dc6e6bf9d95367d80a7d7305ac9"
+  },
   "CTM-MC1.12.2-1.0.2.31.jar": {
     "jarName": "CTM-MC1.12.2-1.0.2.31.jar",
     "modId": "ctm",
@@ -667,13 +675,13 @@
     "curseForgeHash": 4227961345,
     "modrinthHash": "83b6e36d415f6679495b2c04ffe453817d43419e"
   },
-  "gatewaycore-1.7a.jar": {
-    "jarName": "gatewaycore-1.7a.jar",
+  "gatewaycore-1.8.1.jar": {
+    "jarName": "gatewaycore-1.8.1.jar",
     "modId": "gatewaycore",
     "name": "Gateway Core",
-    "version": "1.7",
-    "curseForgeHash": 1969407399,
-    "modrinthHash": "5f4a1b48e9ba5988227d7c751e0e946cf597082a"
+    "version": "1.8",
+    "curseForgeHash": 1003457497,
+    "modrinthHash": "b75c12b13709e114d454a9178af53c0dc25fec54"
   },
   "geckolib-forge-1.12.2-3.0.31.jar": {
     "jarName": "geckolib-forge-1.12.2-3.0.31.jar",
@@ -907,6 +915,22 @@
     "curseForgeHash": 3987416114,
     "modrinthHash": "6c163c588258b8d0cf0b3488fc501203ff3b26f6"
   },
+  "ModularMachinery-Addons-2.0.3.jar": {
+    "jarName": "ModularMachinery-Addons-2.0.3.jar",
+    "modId": "modularmachineryaddons",
+    "name": "Modular Machinery Addons",
+    "version": "2.0.3",
+    "curseForgeHash": 194211909,
+    "modrinthHash": "1b8ba99c909e19e82c37271210c0f57f1a19c0e1"
+  },
+  "ModularMachinery-CE-2.3.2.jar": {
+    "jarName": "ModularMachinery-CE-2.3.2.jar",
+    "modId": "modularmachinery",
+    "name": "Modular Machinery: Community Edition",
+    "version": "2.3.2",
+    "curseForgeHash": 158306440,
+    "modrinthHash": "4325256dd466cc519f8abe8ac885715516a46b18"
+  },
   "modularui-3.1.6.jar": {
     "jarName": "modularui-3.1.6.jar",
     "modId": "modularui",
@@ -938,22 +962,6 @@
     "version": "2.1.4.43",
     "curseForgeHash": 4068050300,
     "modrinthHash": "981382e6c623e8fe68cee07c8ee1f6f2c77b94dd"
-  },
-  "multiblocked-0.8.11.jar": {
-    "jarName": "multiblocked-0.8.11.jar",
-    "modId": "multiblocked",
-    "name": "Multiblock\u0027d",
-    "version": "0.8.11",
-    "curseForgeHash": 922148533,
-    "modrinthHash": "503b03d2878eb1fdd5b75babd289e8554f08f2a7"
-  },
-  "multiblockednbt-1.1.0.jar": {
-    "jarName": "multiblockednbt-1.1.0.jar",
-    "modId": "multiblockednbt",
-    "name": "Multiblocked NBT",
-    "version": "1.1.0",
-    "curseForgeHash": 2680927680,
-    "modrinthHash": "0697f612b7bbff30f574e7e2f5acbd9ccfa1d26a"
   },
   "mysticallib-1.12.2-1.13.0.jar": {
     "jarName": "mysticallib-1.12.2-1.13.0.jar",
@@ -1283,14 +1291,6 @@
     "curseForgeHash": 825361291,
     "modrinthHash": "81d5842dbaeb7402add957daf91e5ad1a84942bf"
   },
-  "Sledgehammer-1.12.2-2.0.26.jar": {
-    "jarName": "Sledgehammer-1.12.2-2.0.26.jar",
-    "modId": "sledgehammer",
-    "name": "Sledgehammer",
-    "version": "1.12.2-2.0.26",
-    "curseForgeHash": 4227479363,
-    "modrinthHash": "bdd413df8203a1af255231d2026907fe62700e25"
-  },
   "sonarcore-1.12.2-5.0.19-20.jar": {
     "jarName": "sonarcore-1.12.2-5.0.19-20.jar",
     "modId": "sonarcore",
@@ -1599,5 +1599,13 @@
     "version": "0.1.6",
     "curseForgeHash": 2840180940,
     "modrinthHash": "d3932cc2e1ca160cc78c5d6d83c9912b7649cfad"
+  },
+  "zenutils-1.27.5.jar": {
+    "jarName": "zenutils-1.27.5.jar",
+    "modId": "zenutils",
+    "name": "ZenUtils",
+    "version": "1.27.5",
+    "curseForgeHash": 1872348175,
+    "modrinthHash": "28d1104be0ef24cfc908a4c7bb75cc47e61c2b0f"
   }
 }

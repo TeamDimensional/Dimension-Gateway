@@ -27,7 +27,7 @@ def tier4 = [
     // Actually Additions
     fluid("canolaoil"), fluid("refinedcanolaoil"), fluid("crystaloil"), fluid("blaze_superfuel"),
     // Embers
-    fluid("oil_soul"), fluid("oil_dwarf"), fluid("gas_dwarf"), fluid("dawnstone"), fluid("alchemical_redstone"), fluid("steam"), fluid("mercury"),
+    fluid("oil_soul"), fluid("oil_dwarf"), fluid("gas_dwarf"), fluid("dawnstone"), fluid("steam"), fluid("mercury"),
     fluid("boiling_wort"), fluid("antimony"), fluid("dwarven_ale"), fluid("inner_fire"),
 ]
 
@@ -152,9 +152,7 @@ def tier11 = [
 
 def tier12 = [
     // Advanced Rocketry part 2
-    fluid("iridium"), fluid("mana"), fluid("enrichedlava"),
-    fluid("yttrium"), fluid("yag"), fluid("nd_yag"),
-    fluid("stellar_alloy"),
+    fluid("iridium"), fluid("mana"), fluid("enrichedlava"), fluid("stellar_alloy"),
     // Heat Exchangers
     fluid("low_pressure_steam"),
     // Molten Salt Reactors
@@ -190,6 +188,7 @@ def removeFluids = [
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
     "aquamarine", "solution_aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
     "crude_steel", "crystalline_pink_slime", "energetic_silver", "vivid_alloy", "soul",
+    "alchemical_redstone",
 ]
 
 def ncIsotopes = [

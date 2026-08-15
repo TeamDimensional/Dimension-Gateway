@@ -1,0 +1,50 @@
+{
+    "item_input": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmepatternprovider"
+    ],
+    "item_output": [
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmeitemoutputbus"
+    ],
+    "item_io": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmepatternprovider",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmeitemoutputbus"
+    ],
+    "fluid_input": [
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockmefluidinputbus",
+        "modularmachinery:blockmepatternprovider"
+    ],
+    "essentia_input": [
+        "modularmachineryaddons:blockmeessentiainputbus",
+        "modularmachinery:blockaspectproviderinput"
+    ],
+    "energy_input": [
+        "modularmachinery:blockenergyinputhatch"
+    ],
+    "item_energy_input": [
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmepatternprovider"
+    ],
+    "fluid_input_item_io": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmepatternprovider",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockmefluidinputbus"
+    ],
+    "starlight_laser_hatch": [
+        "modularmachinery:blockinputbus@1",
+        "modularmachinery:blockoutputbus@1",
+        "modularmachinery:blockenergyinputhatch"
+    ]
+}

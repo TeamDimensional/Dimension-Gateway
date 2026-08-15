@@ -15,6 +15,11 @@ content.createItem("energetic_alloy_dust").register()
 content.createItem("pulsating_iron_dust").register()
 content.createItem("vibrant_alloy_dust").register()
 content.createItem("redstone_alloy_dust").register()
+content.createItem("starlight_fragment_midnight").register()
+content.createItem("starlight_fragment_dawn").register()
+content.createItem("starlight_fragment_noon").register()
+content.createItem("starlight_fragment_dusk").register()
+content.createItem("catalyzed_starlight").register()
 
 def lighten(color, factor) {
     def r = color >> 16,

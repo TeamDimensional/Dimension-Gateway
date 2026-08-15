@@ -10,6 +10,11 @@ item.gateway.transcendental_demon_alloy.name=Transcendental Demon Alloy
 item.gateway.purified_brain.name=Purified Brain
 item.gateway.crystallized_enlightenment.name=Crystallized Enlightenment
 item.gateway.voidmetal_mesh.name=Voidmetal Mesh
+item.gateway.starlight_fragment_midnight.name=Starlight Fragment: Midnight
+item.gateway.starlight_fragment_dawn.name=Starlight Fragment: Dawn
+item.gateway.starlight_fragment_noon.name=Starlight Fragment: Noon
+item.gateway.starlight_fragment_dusk.name=Starlight Fragment: Dusk
+item.gateway.catalyzed_starlight.name=Catalyzed Starlight
 
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.energetic_alloy_dust.name=Energetic Alloy Dust
@@ -37,39 +42,6 @@ fluid.gateway.liquid_enlightenment.name=Liquid Enlightenment
 fluid.gateway.condensed_thoughts.name=Condensed Thoughts
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
-
-tile.multiblocked.item.any.name=Any Item Storage
-tile.multiblocked.forge_energy.any.name=Any RF Storage
-
-demon_factory.name=Industrial Demon Factory
-tile.gateway.demon_factory.name=Industrial Demon Factory
-multiblocked.recipe_map.demon_factory=Industrial Demon Factory
-gateway.demon_factory.description=Uses intricate technology to extract Ackronite from Demons without trading with them
-
-natural_infuser.name=Natural Infuser
-tile.gateway.natural_infuser.name=Natural Infuser
-multiblocked.recipe_map.natural_infuser=Natural Infuser
-gateway.natural_infuser.description=Burns leaves to infuse natural matter with their heat
-
-resonant_caster.name=Resonant Caster
-tile.gateway.resonant_caster.name=Resonant Caster
-multiblocked.recipe_map.resonant_caster=Resonant Caster
-gateway.resonant_caster.description=Coats items with high-quality RCL
-
-moonlight_fabricator.name=Moonlight Fabricator
-tile.gateway.moonlight_fabricator.name=Moonlight Fabricator
-multiblocked.recipe_map.moonlight_fabricator=Moonlight Fabricator
-gateway.moonlight_fabricator.description=Concentrates Aura in mundane items and exposes them to Aurorian's moonshine
-
-network_supercharger.name=Network Supercharger
-tile.gateway.network_supercharger.name=Network Supercharger
-multiblocked.recipe_map.network_supercharger=Network Supercharger
-gateway.network_supercharger.description=Boosts power using catalysts to match AE2's voltage levels
-
-lithographic_etcher.name=Lithographic Etcher
-tile.gateway.lithographic_etcher.name=Lithographic Etcher
-multiblocked.recipe_map.lithographic_etcher=Lithographic Etcher
-gateway.lithographic_etcher.description=Uses a high-power Ember laser to engrave advanced circuits
 
 fluid.jaopca.solution=%s Ore Solution
 item.jaopca.ore_cluster=Native %s Cluster
@@ -408,3 +380,15 @@ item.gateway.nightmare_fuel_carbide.name=§cNightmare Fissile Fuel Carbide
 item.gateway.nightmare_depleted_fuel_carbide.name=§cDepleted Nightmare Fissile Fuel Carbide
 item.gateway.nightmare_fuel_triso.name=§cNightmare Fissile TRISO Fuel Pebble
 item.gateway.nightmare_depleted_fuel_triso.name=§cDepleted Nightmare Fissile TRISO Fuel Pebble
+
+tile.modularmachinery.network_supercharger.desc.seconds=Fully charges the ME Controller blocks every %d seconds
+tile.modularmachinery.network_supercharger.desc.ticks=Fully charges the ME Controller blocks every %d ticks
+tile.modularmachinery.resonant_caster.desc1=Requires RCL with at least %d%% Purity,
+tile.modularmachinery.resonant_caster.desc2=%d%% Strength, and %d%% Efficiency
+tile.modularmachinery.starlight_laser.desc.current_state=Current state must be %s
+tile.modularmachinery.starlight_laser.desc.next_state=Result state will be %s
+tile.modularmachinery.starlight_laser.desc.next_state_random=Outputs a random fragment and gains its phase
+tile.modularmachinery.starlight_laser.desc.dawn=Dawn
+tile.modularmachinery.starlight_laser.desc.noon=Noon
+tile.modularmachinery.starlight_laser.desc.dusk=Dusk
+tile.modularmachinery.starlight_laser.desc.midnight=Midnight

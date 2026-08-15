@@ -81,6 +81,15 @@ defineDefaultNcOperations("botanical")
 defineDefaultNcOperations("crystalline")
 defineDefaultNcOperations("nightmare")
 
+mods.nuclearcraft.melter.builder()
+    .input(item("gateway:nightmare_depleted_fuel_ox"))
+    .fluidOutput(fluid("nightmare_depleted_fuel") * 144)
+    .register()
+mods.nuclearcraft.melter.builder()
+    .input(item("gateway:nightmare_depleted_fuel_triso"))
+    .fluidOutput(fluid("nightmare_depleted_fuel") * 144)
+    .register()
+
 /*
 Fuel        Mod             Crit    Life    Rads    Effi    Heat    SP
 Natural     Nature's Aura   55      220 s   HEU-235 1.3x    LEP-239 
