@@ -48,9 +48,10 @@ MMEvents.onControllerGUIRender("starlight_laser", function(event as ControllerGU
 });
 
 static laserPositions as int[string][string] = {
-    midnight: {x: 0, y: 3, z: 0},
+    midnight: {x: 0, y: 3, z: 6},
+    // I don't know why left and right are swapped incorrectly, maybe a bug in AA code or MMCE code
     dawn: {x: -3, y: 3, z: 3},
-    noon: {x: 0, y: 3, z: 6},
+    noon: {x: 0, y: 3, z: 0},
     dusk: {x: 3, y: 3, z: 3},
 };
 
