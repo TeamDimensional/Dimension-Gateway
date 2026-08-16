@@ -5,7 +5,7 @@ def mitem(name, k=0) {
     return item("qmd:${name}", k)
 }
 
-def embersItems = [mitem("fluid_mercury")]
+def embersItems = [] // mitem("fluid_mercury")]
 
 def thermalItems = [mitem("fluid_silicon")]
 
@@ -46,11 +46,8 @@ def stellarItems = [
 ]
 
 def hideFromJei = [
-    mitem("ingot2", 2), mitem("potassium_iodine_tablet"),
-    mitem("copernicium", 1), mitem("pellet_copernicium", 1), mitem("fuel_copernicium"), mitem("depleted_fuel_copernicium"),
     mitem("fluid_cobalt"), mitem("fluid_nickel"), mitem("fluid_iridium"), mitem("fluid_platinum"), mitem("fluid_zinc"),
 ] + removeRecipes
-for (def c in ["green", "blue", "orange"]) hideFromJei.add(mitem("block_${c}_luminous_paint"))
 
 TooltipEvents.setModTier("qmd", 14)
 for (def it in embersItems) TooltipEvents.setTier(it, 4)
