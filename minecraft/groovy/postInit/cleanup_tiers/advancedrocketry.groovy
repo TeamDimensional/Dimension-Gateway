@@ -97,7 +97,7 @@ def hideFromJei = [
 
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in titaniumMetal) TooltipEvents.setTier(it, 10)
-for (def it in titaniumOre) TooltipEvents.setTier(it, 6)
+for (def it in titaniumOre) TooltipEvents.setTier(it, 9)
 for (def it in part1Items) TooltipEvents.setTier(it, 10)
 for (def it in part2Items) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)

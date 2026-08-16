@@ -61,6 +61,7 @@ template = """RecipeBuilder.newBuilder("%(NAME)s_%(EXTRA)s", "dawnstone_refinery
     .addItemOutput(<item:jaopca:ore_cluster.%(CLUSTER)s>).setChance(%(CHANCE)s)
     .addItemInput(<%(PICKAXE)s:*>).consumeDurability(1)
     .%(ASPECT_INPUT)s("%(ASPECT)s", 2)
+    .setLoadJEI(%(LOAD_JEI)s)
     .addFluidInput(<fluid:%(FLUID)s> * 10)
     .build();"""
 
@@ -69,23 +70,26 @@ snake_case_regex = re.compile("([a-z])([A-Z])")
 
 def generate_all():
     for ore, (aspect, fluid) in ores.items():
-        for i, aspectInput in enumerate(["addAspectInput", "addEssentiaInput"]):
+        for i, (aspectInput, loadJEI) in enumerate(
+            [("addAspectInput", False), ("addEssentiaInput", True)]
+        ):
             for j, (pick, efficiency) in enumerate(
                 [
                     ("thaumcraft:elemental_pick", 0.4),
                     ("theaurorian:crystallinepickaxe", 0.2),
                 ]
             ):
-                data = dict(
-                    NAME=ore,
-                    EXTRA=i + j * 10,
-                    CLUSTER=snake_case_regex.sub(r"\1_\2", ore).lower(),
-                    CHANCE=efficiency,
-                    PICKAXE=pick,
-                    ASPECT_INPUT=aspectInput,
-                    ASPECT=aspect,
-                    FLUID=fluid,
-                )
+                data = {
+                    "NAME": ore,
+                    "EXTRA": i + j * 10,
+                    "CLUSTER": snake_case_regex.sub(r"\1_\2", ore).lower(),
+                    "CHANCE": efficiency,
+                    "PICKAXE": pick,
+                    "ASPECT_INPUT": aspectInput,
+                    "ASPECT": aspect,
+                    "FLUID": fluid,
+                    "LOAD_JEI": str(loadJEI).lower(),
+                }
                 output.append(template % data)
 
     target = "minecraft/scripts/modularmachinery/dawnstone_refinery.zs"

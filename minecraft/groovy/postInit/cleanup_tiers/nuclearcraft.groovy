@@ -73,8 +73,10 @@ def thermalItems = [
 ]
 
 def uraniumItems = [
-    mitem("ore", 4), mitem("ingot_block", 4), mitem("ingot", 4), mitem("dust", 4),
+    mitem("ingot_block", 4), mitem("ingot", 4), mitem("dust", 4),
 ]
+
+def lunaItems = [mitem("ore", 4), mitem("ore", 3)]
 
 def metamorphicCrushing = [
     mitem("gem_dust", 12), mitem("gem_dust", 13), mitem("gem_dust", 14), mitem("compound", 18),
@@ -173,6 +175,7 @@ for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
 for (def it in uraniumItems) TooltipEvents.setTier(it, 8)  // from thermal
+for (def it in lunaItems) TooltipEvents.setTier(it, 10)
 for (def it in metamorphicCrushing) TooltipEvents.setTier(it, 11)
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)
 for (def it in moltenSaltItems) TooltipEvents.setTier(it, 12)

@@ -15,7 +15,7 @@ def fluid_materials = [
     "iron": 1,
     "lapis": 2,
     "lead": 3,
-    "liquified_coralium": 12,
+    "liquified_coralium": 11,
     "lithium": 9,
     "magnesium": 9,
     "nickel": 3,
@@ -24,11 +24,11 @@ def fluid_materials = [
     "silver": 3,
     "tin": 2,
     "thorium": 10,  // TODO: this needs a fix?
-    "titanium": 9,
+    "titanium": 9,  // TODO: this should not yield pure Titanium
     "uranium": 10,
     "cerulean": 2,
     "moonstone": 2,
-    "aquamarine": 6,
+    "aquamarine": 6,  // TODO: figure out what to do with these
     "astral_starmetal": 6,
 ]
 
@@ -36,14 +36,14 @@ def all_materials = fluid_materials + [
     "air_elemental": 1,
     "amber": 5,
     "dilithium": 10,
-    "dimensional_shard": 7,
+    "dimensional_shard": 6,
     "earth_elemental": 1,
     "fire_elemental": 1,
     "mithriline": 10,
     "water_elemental": 1,
     "zanite": 7,
     "ambrosium": 7,
-    "resonating": 8,
+    "resonating": 6,
     "aether": 6,
     "aurorian_coal": 2,
     "aurorian_geode": 2,
