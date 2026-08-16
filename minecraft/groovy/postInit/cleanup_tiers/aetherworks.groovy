@@ -17,7 +17,7 @@ def forgeBaseItems = []
 def ourItems = [
     mitem("block_aether"), mitem("item_pickaxe_aether"), mitem("item_pickaxe_ember"),
     mitem("item_shovel_redstone"), mitem("item_shovel_slime"), mitem("item_crown"), mitem("item_crossbow_quartz"),
-    mitem("item_crossbow_magma"), mitem("item_potion_gem"),
+    mitem("item_crossbow_magma"), mitem("item_potion_gem", 32767),
     mitem("aetherium_ashen_cloak_head"), mitem("aetherium_ashen_cloak_chest"), mitem("aetherium_ashen_cloak_legs"),
     mitem("aetherium_ashen_cloak_boots"), mitem("heat_dial"), mitem("forge_component", 5),
 ] + aetheriumPrismParts + geodes

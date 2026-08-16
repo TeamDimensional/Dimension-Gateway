@@ -23,7 +23,7 @@ crafting.remove("prodigytech:materials/circuit_plate")
 mods.roots.pyre.recipeBuilder()
     .name("tier3/circuit_plate")
     .input(item("immersiveengineering:material", 27), item("minecraft:paper"), ore("dyeGreen"), ore("dyeGreen"), item("minecraft:paper"))
-    .output(item("prodigytech:circuit_plate", 3) * 2)
+    .output(item("prodigytech:circuit_plate") * 2)
     .time(150)
     .register()
 

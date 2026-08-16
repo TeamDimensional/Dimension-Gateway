@@ -1,0 +1,41 @@
+filename = 'Unconfusion-0.2.2.jar'
+name = 'Unconfusion'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Unconfusion 0.2.2'
+
+[download]
+hash = '680ccea92567987a7cc3fbae76125f7d5929f070'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8485219
+project-id = 1521542
+
+[[x-prismlauncher-dependencies]]
+addonId = '557549'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '61811'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '64578'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '401178'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '242638'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'REQUIRED'

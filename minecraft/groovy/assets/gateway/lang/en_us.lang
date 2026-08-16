@@ -410,3 +410,14 @@ tile.modularmachinery.starlight_laser.desc.current=Current state: %s
 tile.modularmachinery.starlight_laser.desc.next=Next state: %s
 tile.modularmachinery.starlight_laser.desc.currently_attuning=Attuning to %s...
 tile.modularmachinery.starlight_laser.desc.not_attuned=Not attuned
+
+ponder.chapter1.nether.name=Entering Nether
+ponder.chapter1.nether.tooltip=\n§oYour first venture to other worlds!§r
+ponder.chapter1.nether.desc=Entering Nether early - before you can get Obsidian - is necessary in this pack.\nHere's a small example of how the portal can be built without access to Obsidian.\nIt's also possible to light up portals without Flint and Steel, but that method is somewhat torturous and is not needed here.
+ponder.chapter1.nether.tooltip1=Lava Buckets can be placed inside Water to cool them down automatically!
+ponder.chapter1.nether.tooltip2=Once you've built a portal, remove the water, and use Flint and Steel!
+
+ponder.chapter1.pyre.name=Pyre Automation
+ponder.chapter1.pyre.tooltip=\n§oPrimitive chemical plant§r
+ponder.chapter1.pyre.desc=Pyre rituals - as well as Pyre crafting rituals - can be easily automated with a setup like this.\nPyre requires a heat source, which can be provided by an adjacent fire. Netherrack does not burn out, so the Pyre will always be hot.\nItems can be inserted into the inventory below, and crafting results can be collected by a Ranged Collector, or Ritual of Gathering.
+ponder.chapter1.pyre.tooltip1=The recipe must be selected first by putting the items into the Pyre!
