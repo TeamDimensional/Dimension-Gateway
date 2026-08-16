@@ -1,20 +1,20 @@
-filename = 'OldResearchReborn-1.0.1-release.jar'
-name = 'TC4 Research Port: Reborn'
+filename = 'thaumcraftaspectannotations-1.0.0.jar'
+name = 'Thaumcraft Aspect Annotations'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'OldResearchReborn-1.0.1-release.jar'
+x-prismlauncher-version-number = 'Thaumcraft Aspect Annotations 1.0.0'
 
 [download]
-hash = '3499013e3678661efd2eb027658bfb518eb84b39'
+hash = '3f0926b27f9aed8c3c58d64cda2e48a72b6d7b66'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8642028
-project-id = 1632015
+file-id = 8643630
+project-id = 1651568
 
 [[x-prismlauncher-dependencies]]
 addonId = '223628'

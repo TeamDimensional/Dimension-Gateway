@@ -1,18 +1,18 @@
-filename = '!cleanroom-relauncher-1.0.2.jar'
+filename = '-cleanroom-relauncher-1.0.5.jar'
 name = 'Cleanroom Relauncher'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Cleanroom Relauncher 1.0.2'
+x-prismlauncher-version-number = 'Cleanroom Relauncher 1.0.5'
 
 [download]
-hash = '91383063e423a345ca5e7bc0134f94c0063f3c29'
+hash = '9e97d52f15c49563a6f1422837c166521ceef837'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8576556
+file-id = 8647291
 project-id = 1214490

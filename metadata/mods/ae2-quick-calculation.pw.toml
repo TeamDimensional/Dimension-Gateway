@@ -1,0 +1,29 @@
+filename = 'ae2-quick-calculation-1.12.2-1.0.2.jar'
+name = 'AE2 Quick Calculation'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ae2-quick-calculation-1.12.2-1.0.2.jar'
+
+[download]
+hash = '43039934c1b6667971f4b1dcbea4b22782fafb86'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8636365
+project-id = 1643136
+
+[[x-prismlauncher-dependencies]]
+addonId = '570458'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '623955'
+type = 'OPTIONAL'
