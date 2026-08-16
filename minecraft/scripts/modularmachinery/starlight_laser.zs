@@ -167,7 +167,10 @@ function chooseNextState(event as RecipeCheckEvent, currentState as string, next
         }
         val state = event.controller.customData.state as string;
         if state != currentState {
-            event.setFailed(ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.error.bad_state", [currentState, state]).formattedText);
+            event.setFailed(
+                ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.error.bad_state1").formattedText
+              ~ ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.error.bad_state2", [currentState]).formattedText
+              ~ ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.error.bad_state3", [state]).formattedText);
             return;
         }
     }
