@@ -39,9 +39,7 @@ RecipeBuilder.newBuilder("red_matter", "resonant_caster", 900)
 
 function checkRCL(event as RecipeCheckEvent, minPurity as int, minStrength as int, minEfficiency as int) as void {
     var activeRecipe = event.activeRecipe;
-    print("checkRCL " ~ minPurity);
     if isNull(activeRecipe) {
-        print("null");
         return;
     }
 
@@ -65,20 +63,25 @@ function checkRCL(event as RecipeCheckEvent, minPurity as int, minStrength as in
 
                             var errorStatus = "";
                             if (purity < minPurity) {
-                                errorStatus = errorStatus ~ "RCL is not pure enough\n(required " ~ minPurity ~ ", got " ~ purity ~ ")\n";
+                                errorStatus = errorStatus
+                                    ~ ITextComponent.fromTranslation("tile.modularmachinery.resonant_caster.error.bad_purity", [minPurity, purity]).formattedText
+                                    ~ "\n";
                             }
                             
                             if (strength < minStrength) {
-                                errorStatus = errorStatus ~ "RCL is not strong enough\n(required " ~ minStrength ~ ", got " ~ strength ~ ")\n";
+                                errorStatus = errorStatus
+                                    ~ ITextComponent.fromTranslation("tile.modularmachinery.resonant_caster.error.bad_strength", [minStrength, strength]).formattedText
+                                    ~ "\n";
                             }
                             
                             if (efficiency < minEfficiency) {
-                                errorStatus = errorStatus ~ "RCL is not efficient enough\n(required " ~ minEfficiency ~ ", got " ~ efficiency ~ ")\n";
+                                errorStatus = errorStatus
+                                    ~ ITextComponent.fromTranslation("tile.modularmachinery.resonant_caster.error.bad_efficiency", [minEfficiency, efficiency]).formattedText
+                                    ~ "\n";
                             }
 
                             if (errorStatus != "") {
                                 event.setFailed(errorStatus);
-                                print(errorStatus);
                             }
                         }
                     }

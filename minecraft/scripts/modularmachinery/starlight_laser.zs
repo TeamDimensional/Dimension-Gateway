@@ -13,23 +13,26 @@ import native.hellfirepvp.modularmachinery.common.crafting.helper.RequirementCom
 import native.hellfirepvp.modularmachinery.common.crafting.requirement.RequirementItem;
 import native.hellfirepvp.modularmachinery.common.machine.IOType;
 import native.net.minecraft.item.ItemStack;
+import mods.modularmachinery.MMEvents;
 
 RecipeBuilder.newBuilder("priming", "starlight_laser", 1200)
+    .addItemInput(<essentialcraft:blockpale> * 16)
     .addItemInput(<theaurorian:aurorianiteingot> * 16)
     .addItemInput(<theaurorian:crystallineingot> * 16)
     .addItemInput(<theaurorian:umbraingot> * 16)
-    .addItemInput(<essentialcraft:blockpale> * 16)
     .addStarlightInput(400)
     .addEnergyPerTickInput(4000)
     .addItemOutput(<item:gateway:starlight_fragment_midnight>)
-    .addRecipeTooltip(
-        ITextComponent.fromTranslation(
-            "tile.modularmachinery.starlight_laser.desc.next_state",
-            [ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.desc.midnight").formattedText]).formattedText)
-    .addFinishHandler(function(event as RecipeFinishEvent) { setState(event, "midnight"); })
+    .addItemOutput(<item:gateway:starlight_fragment_dawn>)
+    .addItemOutput(<item:gateway:starlight_fragment_noon>)
+    .addItemOutput(<item:gateway:starlight_fragment_dusk>)
+    .addRecipeTooltip(ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.desc.next_state_random").formattedText)
+    .addPostCheckHandler(function(event as RecipeCheckEvent) { chooseNextState(event, null, ["midnight", "dawn", "noon", "dusk"]); })
+    .addFinishHandler(function(event as RecipeFinishEvent) { setActiveState(event); })
+    .addPostTickHandler(function(event as RecipeTickEvent) { removeWrongFragments(event); })
     .build();
 
-RecipeBuilder.newBuilder("night", "starlight_laser", 20)
+RecipeBuilder.newBuilder("midnight", "starlight_laser", 20)
     .addItemInput(<essentialcraft:genitem:39>)
     .addStarlightInput(5)
     .addEnergyPerTickInput(1000)
@@ -106,13 +109,9 @@ RecipeBuilder.newBuilder("dusk", "starlight_laser", 20)
     .build();
 
 
-function setState(event as RecipeEvent, state as string) as void {
-    event.controller.customData = {"state": state};
-}
-
 function setActiveState(event as RecipeFinishEvent) as void {
-    if (isNull(event.controller.customData) || isNull(event.controller.customData.nextState)) {
-        logger.logError("Starlight Laser is not attuned! This should not happen, report a bug.");
+    if isNull(event.controller.customData) || isNull(event.controller.customData.nextState) {
+        logger.logError("Starlight Laser does not have the next state defined! This should not happen, report a bug.");
         return;
     }
 
@@ -128,8 +127,12 @@ static nameToItem as IItemStack[string] = {
 static stateNames as string[] = ["midnight", "noon", "dawn", "dusk"];
 
 function shouldRemoveItem(rc as RequirementComponents, chosenState as string) as bool {
-    if (rc.requirement().actionType != IOType.OUTPUT) return false;
-    if (!(rc.requirement() instanceof RequirementItem)) return false;
+    if rc.requirement().actionType != IOType.OUTPUT {
+        return false;
+    }
+    if !(rc.requirement() instanceof RequirementItem) {
+        return false;
+    }
     val ri = rc.requirement() as RequirementItem;
     val stack = ri.required;
     for state in stateNames {
@@ -157,17 +160,19 @@ function removeWrongFragments(event as RecipeEvent) {
 }
 
 function chooseNextState(event as RecipeCheckEvent, currentState as string, nextStates as string[]) as void {
-    if (isNull(event.controller.customData) || isNull(event.controller.customData.state)) {
-        event.setFailed("Starlight Laser is not attuned!");
-        return;
-    }
-    val state = event.controller.customData.state as string;
-    if (state != currentState) {
-        event.setFailed("Current state does not match!\nExpected " ~ currentState ~ ", got " ~ state);
-        return;
+    if !isNull(currentState) {
+        if isNull(event.controller.customData) || isNull(event.controller.customData.state) {
+            event.setFailed(ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.error.no_attunement").formattedText);
+            return;
+        }
+        val state = event.controller.customData.state as string;
+        if state != currentState {
+            event.setFailed(ITextComponent.fromTranslation("tile.modularmachinery.starlight_laser.error.bad_state", [currentState, state]).formattedText);
+            return;
+        }
     }
 
     val next = nextStates[event.controller.world.random.nextInt(nextStates.length)];
-    event.controller.customData = {"state": currentState, "nextState": next};
+    event.controller.customData = isNull(currentState) ? {"nextState": next} : {"state": currentState, "nextState": next};
     removeWrongFragments(event);
 }
