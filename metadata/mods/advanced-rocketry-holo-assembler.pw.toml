@@ -1,18 +1,18 @@
-filename = 'advancedrocketry-holoassembler-1.12.2-0.5.1.jar'
+filename = 'advancedrocketry-holoassembler-1.12.2-0.5.2.jar'
 name = 'Holo-Assembler for Advanced Rocketry'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'advancedrocketry-holoassembler-1.12.2-0.5.1.jar'
+x-prismlauncher-version-number = 'advancedrocketry-holoassembler-1.12.2-0.5.2.jar'
 
 [download]
-hash = 'dd9e100de6cf83a4fc669ce30dccaa9c7d706266'
+hash = '355e6e08ed7509d2b2b7d8fdc59c88b3fd523d5e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8358404
+file-id = 8725497
 project-id = 1549421

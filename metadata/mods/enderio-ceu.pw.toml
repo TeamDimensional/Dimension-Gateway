@@ -1,19 +1,19 @@
-filename = 'EnderIO-CEu-5.4.2.jar'
+filename = 'EnderIO-CEu-5.5.0.jar'
 name = 'Ender IO CEu'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'EnderIO-CEu-5.4.2.jar'
+x-prismlauncher-version-number = 'EnderIO-CEu-5.5.0.jar'
 
 [download]
-hash = '3cf9c6ef953bcb9c4b283a51091ec2bdc70a6091'
+hash = '4ccce4cfd07c6ea238bd4c0854041a7b5ba544eb'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8175097
+file-id = 8707396
 project-id = 1530854
 
 [[x-prismlauncher-dependencies]]

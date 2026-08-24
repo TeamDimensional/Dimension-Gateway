@@ -1,18 +1,18 @@
-filename = 'circulation_networks-1.12.2-1.1.0.jar'
+filename = 'circulation_networks-1.12.2-1.2.0.jar'
 name = 'Circulation Flow Networks'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'circulation_networks-1.12.2-1.1.0.jar'
+x-prismlauncher-version-number = 'circulation_networks-1.12.2-1.2.0.jar'
 
 [download]
-hash = '1088a78a0d90a0258d69fa2b9ca0832781f3547a'
+hash = 'fd9ee45f4158443977ac7946aa2c88e296f7d6bf'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8270576
+file-id = 8699343
 project-id = 1519385

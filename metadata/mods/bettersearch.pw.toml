@@ -1,18 +1,18 @@
-filename = '-cleanroom-relauncher-1.1.1.jar'
-name = 'Cleanroom Relauncher'
+filename = 'bettersearch-forge-1.12.2-1.3.0.jar'
+name = 'Better Search'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Cleanroom Relauncher 1.1.1'
+x-prismlauncher-version-number = 'v1.3.0'
 
 [download]
-hash = 'fe41b1dabc2947eb35b38ef3ebba34defc2aa547'
+hash = '3cdc0e1714bb3a338d97428b331b895d76e0bac2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8692662
-project-id = 1214490
+file-id = 8671252
+project-id = 1640741

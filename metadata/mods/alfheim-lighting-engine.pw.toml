@@ -1,29 +1,29 @@
-filename = 'botania-r1.10-375.jar'
-name = 'Botania CEu'
+filename = 'Alfheim-1.6.jar'
+name = 'Alfheim Lighting Engine'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Botania CEu r1.10-375'
+x-prismlauncher-version-number = 'Alfheim 1.6'
 
 [download]
-hash = 'ba2663bb3511a65d5ec65ad21a009bf14cbbb596'
+hash = '15aaa39a13e18ab2f29456b25fd9732da1949329'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8706250
-project-id = 1179448
+file-id = 6687458
+project-id = 910715
 
 [[x-prismlauncher-dependencies]]
-addonId = '557549'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '687577'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '995393'
+addonId = '873867'
 type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227874'
+type = 'OPTIONAL'

@@ -1,19 +1,19 @@
-filename = 'OldResearchReborn-1.0.1-release.jar'
+filename = 'OldResearchReborn-1.0.2-release.jar'
 name = 'TC4 Research Port: Reborn'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'OldResearchReborn-1.0.1-release.jar'
+x-prismlauncher-version-number = 'OldResearchReborn-1.0.2-release.jar'
 
 [download]
-hash = '3499013e3678661efd2eb027658bfb518eb84b39'
+hash = 'eb718c2d98eebf8fef4dac67a165bf3142c0e106'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8642028
+file-id = 8698966
 project-id = 1632015
 
 [[x-prismlauncher-dependencies]]

@@ -131,6 +131,7 @@ TooltipEvents.setModTier("thaumicaugmentation", 5)
 TooltipEvents.setModTier("crimsonrevelations", 5)
 TooltipEvents.setModTier("advanced_smelter", 9)
 TooltipEvents.setModTier("kami", 10)
+TooltipEvents.setModTier("kamitesque", 10)
 
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])
