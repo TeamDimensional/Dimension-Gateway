@@ -189,3 +189,54 @@ for (def i in 0..13) {
         .register()
     TooltipEvents.setTier(item("calculator:circuitdirty", i), items[i][2])
 }
+
+// Separator Gems
+mods.calculator.algorithm_separator.removeByInput(item("minecraft:lapis_block"))
+mods.calculator.algorithm_separator.removeByInput(item("minecraft:dye", 4))
+mods.calculator.algorithm_separator.removeByInput(item("calculator:tanzaniteleaves"))
+mods.calculator.algorithm_separator.removeByInput(item("calculator:tanzanitelog"))
+
+mods.calculator.algorithm_separator.recipeBuilder()
+    .input(item("astralsorcery:itemcraftingcomponent"))
+    .output(item("calculator:shardtanzanite"), item("calculator:shardtanzanite"))
+    .register()
+
+mods.calculator.algorithm_separator.recipeBuilder()
+    .input(item("gateway:dense_aquamarine_ore"))
+    .output(item("calculator:smalltanzanite") * 4, item("calculator:smalltanzanite") * 4)
+    .register()
+
+mods.calculator.stone_separator.removeByInput(item("minecraft:lapis_block"))
+mods.calculator.stone_separator.removeByInput(item("minecraft:dye", 4))
+mods.calculator.stone_separator.removeByInput(item("calculator:amethystleaves"))
+mods.calculator.stone_separator.removeByInput(item("calculator:amethystlog"))
+
+mods.calculator.stone_separator.recipeBuilder()
+    .input(item("actuallyadditions:item_crystal", 1))
+    .output(item("calculator:shardamethyst"), item("calculator:shardamethyst"))
+    .register()
+
+mods.calculator.stone_separator.recipeBuilder()
+    .input(item("actuallyadditions:item_crystal_empowered", 1))
+    .output(item("calculator:smallamethyst"), item("calculator:smallamethyst"))
+    .register()
+
+mods.calculator.stone_separator.recipeBuilder()
+    .input(item("actuallyadditions:block_crystal", 1))
+    .output(item("calculator:smallamethyst"), item("calculator:smallamethyst"))
+    .register()
+
+mods.calculator.stone_separator.recipeBuilder()
+    .input(item("actuallyadditions:block_crystal_empowered", 1))
+    .output(item("calculator:largeamethyst"), item("calculator:largeamethyst"))
+    .register()
+
+crafting.shapelessBuilder()
+    .name("uncrafting/tanzanite")
+    .input(item("calculator:largetanzanite")).output(item("calculator:smalltanzanite") * 9)
+    .register()
+
+crafting.shapelessBuilder()
+    .name("uncrafting/amethyst")
+    .input(item("calculator:largeamethyst")).output(item("calculator:smallamethyst") * 9)
+    .register()

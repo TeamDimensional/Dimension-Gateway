@@ -24,6 +24,7 @@ content.createBlock("gemstone_substrate").register()
 content.createBlock("crystalline_aerogel").register()
 content.createBlock("ferramic_machine_frame").register()
 content.createBlock("cleanroom_machine_frame").register()
+content.createBlock("dense_aquamarine_ore").register()
 
 class BlockMindfulSand extends BlockFalling {
     public BlockMindfulSand() {

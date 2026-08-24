@@ -17,7 +17,7 @@ mods.prodigytech.magnetic_reassembler.recipeBuilder()
 mods.roots.mortar.recipeBuilder()
     .name("fine_magical_sand")
     .input(item("astralsorcery:itemcraftingcomponent"), item("gateway:resonating_gem"), item("essentialcraft:genitem", 47),
-           item("astralsorcery:itemperkgem", 1), item("aether_legacy:zanite_gemstone"))
+           item("astralsorcery:itemperkgem"), item("aether_legacy:zanite_gemstone"))
     .output(item("gateway:magical_crystal_mixture") * 3)
     .color(0.3, 0.7, 1, 1, 0.7, 0.3)
     .register()

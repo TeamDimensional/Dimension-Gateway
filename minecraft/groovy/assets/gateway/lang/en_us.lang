@@ -34,6 +34,7 @@ tile.gateway.crystalline_aerogel.name=Crystalline Aerogel
 tile.gateway.ferramic_machine_frame.name=Ferramic Machine Frame
 tile.gateway.cleanroom_machine_frame.name=Cleanroom Machine Frame
 tile.gateway.mindful_sand.name=Mindful Sand
+tile.gateway.dense_aquamarine_ore.name=Dense Aquamarine Ore
 
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution
