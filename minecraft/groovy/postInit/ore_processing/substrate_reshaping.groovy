@@ -105,7 +105,6 @@ mods.prodigytech.atomic_reshaper.recipeBuilder()
     .output(item("thaumcraft:ore_amber"), 10)
     .output(item("aether_legacy:ambrosium_ore"), 8)
     .output(item("aether_legacy:zanite_ore"), 8)
-    .output(item("astralsorcery:blockcustomsandore"), 10)  // aquamarine
     .output(item("theaurorian:geodeore"), 6)
     .output(item("minecraft:diamond_ore"), 5)
     .output(item("minecraft:emerald_ore"), 5)

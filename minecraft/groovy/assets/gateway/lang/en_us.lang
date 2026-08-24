@@ -15,6 +15,8 @@ item.gateway.starlight_fragment_dawn.name=Starlight Fragment: Dawn
 item.gateway.starlight_fragment_noon.name=Starlight Fragment: Noon
 item.gateway.starlight_fragment_dusk.name=Starlight Fragment: Dusk
 item.gateway.catalyzed_starlight.name=Catalyzed Starlight
+item.gateway.magical_crystal_mixture.name=Fine Magical Powder
+item.gateway.dormant_magical_crystal.name=Dormant Magical Crystal
 
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.energetic_alloy_dust.name=Energetic Alloy Dust

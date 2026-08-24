@@ -1,0 +1,100 @@
+import hellfirepvp.astralsorcery.common.crafting.helper.ShapeMap
+import hellfirepvp.astralsorcery.common.crafting.helper.ShapedRecipeSlot
+import hellfirepvp.astralsorcery.common.crafting.ShapedLightProximityRecipe
+import hellfirepvp.astralsorcery.common.crafting.ItemHandle
+
+// Resonating Wand
+crafting.remove("astralsorcery:shaped/tool_basicwand")
+crafting.add(new ShapedLightProximityRecipe(resource("tools/resonating_wand"), item("astralsorcery:itemwand"), (() -> {
+    def map = new ShapeMap()
+    map.put(ShapedRecipeSlot.UPPER_CENTER, new ItemHandle(item("minecraft:diamond")))
+    map.put(ShapedRecipeSlot.RIGHT, new ItemHandle(item("minecraft:emerald")))
+    map.put(ShapedRecipeSlot.LOWER_LEFT, new ItemHandle("stoneMarble"))
+    map.put(ShapedRecipeSlot.CENTER, new ItemHandle("stoneMarble"))
+    map.put(ShapedRecipeSlot.UPPER_RIGHT, new ItemHandle(item("minecraft:ender_pearl")))
+    return map.bake()
+})()))
+
+// Alternate recipes for Wands
+mods.thaumcraft.infusion_crafting.recipeBuilder()
+    .researchKey("INFUSION")
+    .mainInput(item("astralsorcery:itemwand"))
+    .output(item("astralsorcery:itemwand").withNbt(["astralsorcery": ["AugmentName": "astralsorcery.constellation.aevitas"]]))
+    .aspect(aspect("victus") * 20, aspect("volatus") * 20, aspect("ordo") * 20)
+    .input(item("astralsorcery:itemusabledust"))
+    .input(item("minecraft:prismarine_crystals"))
+    .input(item("calculator:pearsapling"))
+    .input(item("naturesaura:infused_stone"))
+    .input(item("roots:pereskia"))
+    .instability(7)
+    .register()
+
+mods.thaumcraft.infusion_crafting.recipeBuilder()
+    .researchKey("INFUSION")
+    .mainInput(item("astralsorcery:itemwand"))
+    .output(item("astralsorcery:itemwand").withNbt(["astralsorcery": ["AugmentName": "astralsorcery.constellation.armara"]]))
+    .aspect(aspect("metallum") * 20, aspect("praemunio") * 20, aspect("permutatio") * 20)
+    .input(item("prodigytech:zorrasteel_ingot"))
+    .input(item("theaurorian:crystallineshield"))
+    .input(item("gateway:starsteel_ingot"))
+    .input(item("calculator:purifiedobsidian"))
+    .input(item("roots:fey_leather"))
+    .instability(7)
+    .register()
+
+mods.thaumcraft.infusion_crafting.recipeBuilder()
+    .researchKey("INFUSION")
+    .mainInput(item("astralsorcery:itemwand"))
+    .output(item("astralsorcery:itemwand").withNbt(["astralsorcery": ["AugmentName": "astralsorcery.constellation.discidia"]]))
+    .aspect(aspect("ignis") * 20, aspect("aversio") * 20, aspect("machina") * 20)
+    .input(item("minecraft:blaze_rod"))
+    .input(item("ee:sword"))
+    .input(item("thaumcraft:elemental_sword"))
+    .input(item("calculator:grenade"))
+    .input(item("roots:infernal_bulb"))
+    .instability(7)
+    .register()
+
+mods.thaumcraft.infusion_crafting.recipeBuilder()
+    .researchKey("INFUSION")
+    .mainInput(item("astralsorcery:itemwand"))
+    .output(item("astralsorcery:itemwand").withNbt(["astralsorcery": ["AugmentName": "astralsorcery.constellation.evorsio"]]))
+    .aspect(aspect("instrumentum") * 20, aspect("perditio") * 20, aspect("potentia") * 20)
+    .input(item("minecraft:tnt"))
+    .input(item("calculator:endforgedpickaxe"))
+    .input(item("actuallyadditions:item_misc", 5))
+    .input(item("minecraft:fire_charge"))
+    .input(item("roots:stalicripe"))
+    .instability(7)
+    .register()
+
+mods.thaumcraft.infusion_crafting.recipeBuilder()
+    .researchKey("INFUSION")
+    .mainInput(item("astralsorcery:itemwand"))
+    .output(item("astralsorcery:itemwand").withNbt(["astralsorcery": ["AugmentName": "astralsorcery.constellation.vicio"]]))
+    .aspect(aspect("motus") * 20, aspect("lux") * 20, aspect("aer") * 20)
+    .input(item("minecraft:fireworks"))
+    .input(item("astralsorcery:itemcraftingcomponent"))
+    .input(item("gateway:moonlight_powder"))
+    .input(item("xreliquary:mob_ingredient", 5))
+    .input(item("roots:mystic_feather"))
+    .instability(7)
+    .register()
+
+// Shifting Star
+mods.astralsorcery.starlight_altar.removeByOutput(item("astralsorcery:itemshiftingstar"))
+mods.astralsorcery.starlight_altar.attunementRecipeBuilder()
+    .output(item("astralsorcery:itemshiftingstar"))
+    .matrix("R   R",
+            " MSM ",
+            " ILI ",
+            " MSM ",
+            "R   R")
+    .key("S", item("astralsorcery:itemcraftingcomponent", 2))
+    .key("R", item("gateway:dormant_magical_crystal"))
+    .key("M", item("astralsorcery:blockmarble", 6))
+    .key("I", item("astralsorcery:itemusabledust"))
+    .key("L", fluid("astralsorcery.liquidstarlight") * 1000)
+    .craftTime(400)
+    .starlight(1500)
+    .register()

@@ -28,7 +28,7 @@ def fluid_materials = [
     "uranium": 10,
     "cerulean": 2,
     "moonstone": 2,
-    "aquamarine": 6,  // TODO: figure out what to do with these
+    "aquamarine": 6,
     "astral_starmetal": 6,
 ]
 

@@ -20,6 +20,8 @@ content.createItem("starlight_fragment_dawn").register()
 content.createItem("starlight_fragment_noon").register()
 content.createItem("starlight_fragment_dusk").register()
 content.createItem("catalyzed_starlight").register()
+content.createItem("magical_crystal_mixture").register()
+content.createItem("dormant_magical_crystal").register()
 
 def lighten(color, factor) {
     def r = color >> 16,

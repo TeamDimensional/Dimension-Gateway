@@ -38,6 +38,8 @@ TooltipEvents.setTier(citem("starlight_fragment_dawn"), 6)
 TooltipEvents.setTier(citem("starlight_fragment_noon"), 6)
 TooltipEvents.setTier(citem("starlight_fragment_dusk"), 6)
 TooltipEvents.setTier(citem("catalyzed_starlight"), 6)
+TooltipEvents.setTier(citem("magical_crystal_mixture"), 10)
+TooltipEvents.setTier(citem("dormant_magical_crystal"), 10)
 
 def magicFuels = [
     ["natural", 11],
