@@ -421,3 +421,13 @@ ponder.chapter1.pyre.name=Pyre Automation
 ponder.chapter1.pyre.tooltip=\n§oPrimitive chemical plant§r
 ponder.chapter1.pyre.desc=Pyre rituals - as well as Pyre crafting rituals - can be easily automated with a setup like this.\nPyre requires a heat source, which can be provided by an adjacent fire. Netherrack does not burn out, so the Pyre will always be hot.\nItems can be inserted into the inventory below, and crafting results can be collected by a Ranged Collector, or Ritual of Gathering.
 ponder.chapter1.pyre.tooltip1=The recipe must be selected first by putting the items into the Pyre!
+
+ponder.chapter1.mortar.name=Mortar Automation
+ponder.chapter1.mortar.tooltip=\n§oGrinding by hand§r
+ponder.chapter1.mortar.desc=Roots Mortar may be quite tricky to automate, here's some tips.\nThe Mortar can have items input from the top, and a Dispenser or Mechanical User can be used to use Pestle on it.\nAdditionally, Comparator can be used on the Mortar to determine how full it is.\nIf there is no available recipe, Pestle will be inserted into the mechanical user rather than crafting the item, so be careful.\nCrafting results can be collected by a Ranged Collector, or Ritual of Gathering.
+ponder.chapter1.mortar.tooltip1=Of course, Pestle should be in the Mechanical User!
+
+ponder.chapter2.fey_crafting.name=Fey Crafting Automation
+ponder.chapter2.fey_crafting.tooltip=\n§oElven Portal it is not§r
+ponder.chapter2.fey_crafting.desc=To automate fey crafting, a Runic Crafter is necessary, which will be available a bit later.\nRunic Crafter must be configured by putting the recipe output inside.\nSimilar to a Pyre, the inputs for Runic Crafter can be provided from the bottom of the device, and\ncrafting results can be collected by a Ranged Collector, or Ritual of Gathering.
+ponder.chapter2.fey_crafting.tooltip1=Similar to the manual Fey crafting, a knife should be in the Mechanical User!
