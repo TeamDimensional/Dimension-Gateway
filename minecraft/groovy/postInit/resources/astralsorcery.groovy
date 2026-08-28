@@ -16,8 +16,23 @@ mods.prodigytech.magnetic_reassembler.recipeBuilder()
 
 mods.roots.mortar.recipeBuilder()
     .name("fine_magical_sand")
-    .input(item("astralsorcery:itemcraftingcomponent"), item("gateway:resonating_gem"), item("essentialcraft:genitem", 47),
-           item("astralsorcery:itemperkgem"), item("aether_legacy:zanite_gemstone"))
-    .output(item("gateway:magical_crystal_mixture") * 3)
+    .input(item("appliedenergistics2:material", 7), item("gateway:resonating_gem"), item("essentialcraft:genitem", 47),
+           item("gateway:ourium_shard"), item("aether_legacy:zanite_gemstone"))
+    .output(item("gateway:magical_crystal_mixture"))
     .color(0.3, 0.7, 1, 1, 0.7, 0.3)
+    .register()
+
+
+// Dynamism Shards
+mods.calculator.algorithm_separator.recipeBuilder()
+    .input(item("astralsorcery:itemperkgem"))
+    .output(item("gateway:ourium_shard") * 4, item("astralsorcery:itemcraftingcomponent", 2))
+    .register()
+mods.calculator.algorithm_separator.recipeBuilder()
+    .input(item("astralsorcery:itemperkgem", 1))
+    .output(item("gateway:ilium_shard") * 4, item("astralsorcery:itemcraftingcomponent", 2))
+    .register()
+mods.calculator.algorithm_separator.recipeBuilder()
+    .input(item("astralsorcery:itemperkgem", 2))
+    .output(item("gateway:fengarum_shard") * 4, item("astralsorcery:itemcraftingcomponent", 2))
     .register()

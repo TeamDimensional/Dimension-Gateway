@@ -62,7 +62,7 @@ mods.actuallyadditions.empowerer.recipeBuilder()
 
 mods.actuallyadditions.empowerer.recipeBuilder()
     .mainInput(item("actuallyadditions:item_crystal", 5))
-    .input(item("industrialforegoing:artificial_dye"), item("extrautils2:ingredients", 5), item("industrialforegoing:plastic"), item("astralsorcery:itemperkgem", 2))
+    .input(item("industrialforegoing:artificial_dye"), item("extrautils2:ingredients", 5), item("industrialforegoing:plastic"), item("gateway:fengarum_shard"))
     .output(item("actuallyadditions:item_crystal_empowered", 5))
     .color(0xf5f0ff)
     .time(60)
