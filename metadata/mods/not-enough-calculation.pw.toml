@@ -1,0 +1,18 @@
+filename = 'Not-Enough-Calculation-1.12.1-0.2.5.jar'
+name = 'Not Enough Calculation'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Not-Enough-Calculation-1.12.1-0.2.5.jar'
+
+[download]
+hash = '5e50da89fd5305242aaebdd4011d988b5a2ba9d3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8682440
+project-id = 1603795

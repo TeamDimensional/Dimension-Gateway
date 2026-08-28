@@ -62,6 +62,8 @@ minecraft/groovy/sideOnlyGenerated.json
 minecraft/config/catalogue_favourites.txt
 minecraft/config/cleanroom_load_timings.dat
 minecraft/tinkersplannerantique
+minecraft/config/necalc
+minecraft/hei_favorites.ini
 
 minecraft/OpenComputers*.so
 minecraft/OpenComputers*.dll
