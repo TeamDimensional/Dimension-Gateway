@@ -1,18 +1,18 @@
-filename = 'endercore-1.12.2-0.5.82.jar'
+filename = 'endercore-1.12.2-0.5.83.jar'
 name = 'Ender Core'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'endercore-1.12.2-0.5.82.jar'
+x-prismlauncher-version-number = 'endercore-1.12.2-0.5.83.jar'
 
 [download]
-hash = 'a8c79c6350dd466ef920dcd199de7645e54050cb'
+hash = '34d746bcd7d5e6248827448c565077112ab8acae'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8707400
+file-id = 8734025
 project-id = 1530852
