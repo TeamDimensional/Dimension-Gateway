@@ -135,14 +135,11 @@ AlloyHelper.builder()
 //// Runes
 def manaPowder = item("botania:manaresource", 23)
 def manaSteel = item("botania:manaresource")
-def manaGlass = item("botania:managlass")
 def terrasteel = item("botania:manaresource", 4)
 
 def t1Cost = 5000
 def t2Cost = 10000
 def t3Cost = 15000
-
-mods.botania.rune_altar.removeAll()
 
 // Water
 mods.botania.rune_altar.recipeBuilder()
@@ -171,32 +168,32 @@ mods.botania.rune_altar.recipeBuilder()
 
 // Spring
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaGlass, item("botania:rune", 0), item("botania:rune", 1), item("naturesaura:token_euphoria"), item("aether_legacy:golden_oak_sapling"), item("natura:overworld_sapling2", 3), item("calculator:circuitboard", 8))
+    .input(item("botania:rune", 0), item("botania:rune", 1), item("naturesaura:token_euphoria"), item("aether_legacy:golden_oak_sapling"), item("natura:overworld_sapling2", 3), item("calculator:circuitboard", 8))
     .output(item("botania:rune", 4) * 2)
     .mana(t2Cost)
     .register()
 // Summer
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaGlass, item("botania:rune", 2), item("botania:rune", 3), item("naturesaura:token_rage"), item("minecraft:melon"), item("calculator:fiddledewfruit"), item("calculator:circuitboard"))
+    .input(item("botania:rune", 2), item("botania:rune", 3), item("naturesaura:token_rage"), item("minecraft:melon"), item("calculator:fiddledewfruit"), item("calculator:circuitboard"))
     .output(item("botania:rune", 5) * 2)
     .mana(t2Cost)
     .register()
 // Autumn
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaGlass, item("botania:rune", 1), item("botania:rune", 3), item("naturesaura:token_terror"), item("minecraft:spider_eye"), item("thaumcraft:quicksilver"), item("calculator:circuitboard", 7))
+    .input(item("botania:rune", 1), item("botania:rune", 3), item("naturesaura:token_terror"), item("minecraft:spider_eye"), item("thaumcraft:quicksilver"), item("calculator:circuitboard", 7))
     .output(item("botania:rune", 6) * 2)
     .mana(t2Cost)
     .register()
 // Winter
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaGlass, item("botania:rune", 0), item("botania:rune", 2), item("naturesaura:token_grief"), item("minecraft:cake"), item("minecraft:packed_ice"), item("calculator:circuitboard", 5))
+    .input(item("botania:rune", 0), item("botania:rune", 2), item("naturesaura:token_grief"), item("minecraft:cake"), item("minecraft:packed_ice"), item("calculator:circuitboard", 5))
     .output(item("botania:rune", 7) * 2)
     .mana(t2Cost)
     .register()
 
 // Mana
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaGlass, manaSteel, manaSteel, item("botania:manaresource", 2), item("botania:manaresource", 1), item("naturesaura:sky_ingot"))
+    .input(item("botania:managlass"), manaSteel, manaSteel, item("botania:manaresource", 2), item("botania:manaresource", 1), item("naturesaura:sky_ingot"))
     .output(item("botania:rune", 8))
     .mana(30000)
     .register()
