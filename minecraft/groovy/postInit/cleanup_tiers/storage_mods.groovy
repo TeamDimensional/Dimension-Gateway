@@ -32,12 +32,12 @@ def tier5Items = [mitem("netherite_upgrade"), bitem("backpack_gold"), mitem("sto
 def tier6Items = [bitem("stack_upgrade_tier_2"), mitem("wireless_pulling_upgrade"), mitem("wireless_pushing_upgrade")]
 
 def tier7Items = [
-    bitem("backpack_diamond"), mitem("ender_drawer"), mitem("armory_cabinet"), bitem("stack_upgrade_tier_3"), mitem("max_storage_upgrade"),
+    bitem("backpack_diamond"), mitem("ender_drawer"), mitem("armory_cabinet"), bitem("stack_upgrade_tier_3"),
 ]
 
 def tier10Items = [bitem("stack_upgrade_tier_4"), bitem("inception_upgrade"), bitem("backpack_obsidian")]
 
-def tier11Items = [bitem("exponential_stack_upgrade")]
+def tier11Items = [bitem("exponential_stack_upgrade"), mitem("max_storage_upgrade")]
 
 def removeRecipes = [mitem("ore_dictionary_upgrade")]
 def hideFromJei = [mitem("creative_vending_upgrade")] + removeRecipes
