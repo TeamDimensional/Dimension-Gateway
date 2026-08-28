@@ -162,3 +162,159 @@ for (def it in meBusses) {
         .output(it[2])
         .register()
 }
+
+///// Special Hatches
+// Starlight Hatch
+mods.astralsorcery.starlight_altar.discoveryRecipeBuilder()
+    .output(item("modularmachinery:blockstarlightproviderinput"))
+    .matrix("F F", "OCO", "ISI")
+    .key("C", item("modularmachinery:blockcasing"))
+    .key("I", item("gateway:ilium_shard"))
+    .key("O", item("gateway:ourium_shard"))
+    .key("F", item("gateway:fengarum_shard"))
+    .key("S", item("gateway:starsteel_ingot"))
+    .craftTime(100)
+    .starlight(500)
+    .register()
+
+// Mana Hatch
+crafting.shapedBuilder()
+    .name("modular/input_mana")
+    .matrix("MHM", " V ", "M M")
+    .key("M", item("botania:manaresource"))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("H", item("botania:rune", 8))
+    .output(item("modularmachinery:blockmanaproviderinput"))
+    .register()
+
+// Essentia Input Hatch
+crafting.shapedBuilder()
+    .name("modular/input_essentia")
+    .matrix("MHM", " V ", "M M")
+    .key("M", item("thaumcraft:plate", 2))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("H", item("thaumcraft:metal_alchemical"))
+    .output(item("modularmachinery:blockaspectproviderinput"))
+    .register()
+
+// Essentia Output Hatch
+crafting.shapedBuilder()
+    .name("modular/output_essentia")
+    .matrix("M M", " V ", "MHM")
+    .key("M", item("thaumcraft:plate", 3))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("H", item("thaumcraft:metal_alchemical_advanced"))
+    .output(item("modularmachinery:blockaspectprovideroutput"))
+    .register()
+
+// Aura Output Hatch
+crafting.shapedBuilder()
+    .name("modular/input_aura")
+    .matrix("MHM", " V ", "M M")
+    .key("M", item("naturesaura:infused_stone"))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("H", item("naturesaura:grated_chute"))
+    .output(item("modularmachinery:blockauraproviderinput"))
+    .register()
+
+///// Controllers
+// Moonlight Fabricator
+crafting.shapedBuilder()
+    .name("modular/moonlight_fabricator")
+    .output(item("modularmachinery:moonlight_fabricator_controller"))
+    .matrix("M M", "PCP", "IPI")
+    .key("M", item("theaurorian:moongem"))
+    .key("C", item("modularmachinery:blockcasing"))
+    .key("I", item("naturesaura:infused_stone"))
+    .key("P", item("tconstruct:large_plate").withNbt(["Material": "gateway_crystal"]))
+    .register()
+
+// Dawnstone Refinery
+mods.thaumcraft.arcane_workbench.shapedBuilder()
+    .researchKey("ELEMENTALTOOLS")
+    .output(item("modularmachinery:dawnstone_refinery_controller"))
+    .matrix(" P ", "DCD", "BDB")
+    .key("P", item("prodigytech:circuit_refined"))
+    .key("D", item("embers:plate_dawnstone"))
+    .key("B", item("embers:ember_bore"))
+    .key("C", item("modularmachinery:blockcasing"))
+    .aspect("aqua", 2).aspect("ignis", 10).aspect("terra", 5)
+    .vis(25)
+    .register()
+
+// Starlight Laser
+mods.astralsorcery.starlight_altar.attunementRecipeBuilder()
+    .output(item("modularmachinery:starlight_laser_controller"))
+    .matrix("c   c",
+            " FDF ",
+            " OCO ",
+            " IRI ",
+            "S   S")
+    .key("S", item("theaurorian:auroriansteelblock"))
+    .key("c", item("minecraft:clock"))
+    .key("C", item("modularmachinery:blockcasing"))
+    .key("I", item("gateway:ilium_shard"))
+    .key("O", item("gateway:ourium_shard"))
+    .key("F", item("gateway:fengarum_shard"))
+    .key("R", item("prodigytech:circuit_refined"))
+    .key("D", item("ee:infused_crystal"))
+    .craftTime(200)
+    .starlight(1500)
+    .register()
+
+// Natural Infuser
+crafting.shapedBuilder()
+    .name("modular/natural_infuser")
+    .output(item("modularmachinery:natural_infuser_controller"))
+    .matrix(" T ", "gCg", "GRG")
+    .key("C", item("modularmachinery:blockcasing"))
+    .key("T", item("astralsorcery:blocktreebeacon"))
+    .key("G", item("ee:green_crystal_item"))
+    .key("g", item("ee:green_chunk"))
+    .key("R", item("prodigytech:circuit_refined"))
+    .register()
+
+// Network Supercharger
+crafting.shapedBuilder()
+    .mirrored()
+    .name("modular/network_supercharger")
+    .output(item("modularmachinery:network_supercharger_controller"))
+    .matrix("S  ", " CF", "FEF")
+    .key("C", item("modularmachinery:blockcasing"))
+    .key("S", item("aether_legacy:lightning_sword") | item("aether_legacy:lightning_knife"))
+    .key("F", item("appliedenergistics2:fluix_block"))
+    .key("E", item("calculator:circuitboard", 9))
+    .register()
+
+// Resonant Caster
+mods.astralsorcery.starlight_altar.attunementRecipeBuilder()
+    .output(item("modularmachinery:resonant_caster_controller"))
+    .matrix("S   s",
+            "  R  ",
+            " ECE ",
+            " EPE ",
+            "W   A")
+    .key("C", item("modularmachinery:blockcasing", 4))
+    .key("P", item("prodigytech:circuit_perfected"))
+    .key("R", item("deepresonance:resonating_crystal"))
+    .key("S", item("botania:rune", 4))
+    .key("s", item("botania:rune", 5))
+    .key("A", item("botania:rune", 6))
+    .key("W", item("botania:rune", 7))
+    .key("E", item("actuallyadditions:block_misc", 8))
+    .craftTime(200)
+    .starlight(1500)
+    .register()
+
+// Thaumic Centrifuge
+mods.thaumcraft.arcane_workbench.shapedBuilder()
+    .researchKey("ELEMENTALTOOLS")
+    .output(item("modularmachinery:thaumic_centrifuge_controller"))
+    .matrix(" E ", "VCV", "RVR")
+    .key("C", item("modularmachinery:blockcasing", 4))
+    .key("R", item("astralsorcery:itemcraftingcomponent", 4))
+    .key("E", item("thaumcraft:centrifuge"))
+    .key("V", item("thaumcraft:plate", 3))
+    .aspect("aqua", 10).aspect("perditio", 10)
+    .vis(60)
+    .register()

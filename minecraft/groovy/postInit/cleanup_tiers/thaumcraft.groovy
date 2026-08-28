@@ -95,7 +95,7 @@ def voidItems = [
     ritem("ancient_crimson_helmet"), ritem("ancient_crimson_chestplate"), ritem("ancient_crimson_leggings"),
     ritem("crimson_ranger_helmet"), ritem("crimson_ranger_chestplate"), ritem("crimson_ranger_leggings"),
     ritem("crimson_paladin_helmet"), ritem("crimson_paladin_chestplate"), ritem("crimson_paladin_leggings"),
-    ritem("primordial_scribing_tools"),
+    ritem("primordial_scribing_tools"), mitem("smelter_void"),
 ]
 for (int i in 0..2) voidItems.add(mitem("loot_bag", i))
 for (int i in 0..11) voidItems.add(gitem("stone", i))
@@ -107,17 +107,13 @@ def creativeItems = [gitem("rift_seed"), mitem("creative_flux_sponge"), witem("c
 
 def removeCrafting = [mitem("table_stone")]
 
-def removeArcaneCrafting = [
-    mitem("smelter_void")
-]
-
 def hideFromJei = [
     gitem("crab_vent"), gitem("eldritch_lock_impetus"), gitem("material", 2), gitem("autocaster_placer", 1),
     mitem("ore_cinnabar"), mitem("grass_ambient"),
     mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
     mitem("enchanted_placeholder"), witem("arcane_pillar"), witem("placeholder_arcane_stone"), witem("placeholder_obsidian"), gitem("impetus_creative", 1),
-] + removeCrafting + removeArcaneCrafting
+] + removeCrafting
 for (int i in 0..3) hideFromJei.add(gitem("capstone", i))
 for (int i in 0..3) hideFromJei.add(gitem("eldritch_lock", i))
 for (int i in 0..1) hideFromJei.add(gitem("obelisk_placer", i))
@@ -144,7 +140,7 @@ for (def it in mainItems) TooltipEvents.setTier(it, 5)
 for (def it in astralItems) TooltipEvents.setTier(it, 6)
 for (def it in transcendentalItems) TooltipEvents.setTier(it, 9)
 for (def it in crimsonItems) TooltipEvents.setTier(it, 7)
-for (def it in hoannaItems) TooltipEvents.setTier(it, 13)
+for (def it in hoannaItems) TooltipEvents.setTier(it, 9)
 for (def it in voidItems) TooltipEvents.setTier(it, 9)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeCrafting) crafting.removeByOutput(it)

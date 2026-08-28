@@ -12,7 +12,7 @@ def removed = [
     aitem("blockradiationprovideroutput"), aitem("blockmeessentiaoutputbus"), aitem("blockvisprovideroutput"), aitem("blockpotentialenergyprovideroutput"),
     aitem("blockdimensionproviderinput"), aitem("inactiveradiationsponge"), /* mitem("itemblueprint"), mitem("blockcontroller"), */
     mitem("blockfactorycontroller"), mitem("blocksmartinterface"), mitem("blockmefluidoutputbus"),
-    mitem("blockmepatternprovider"), mitem("blockmepatternmirrorimage"), mitem("blockaspectprovideroutput"), mitem("blockimpetusprovideroutput"),
+    mitem("blockmepatternprovider"), mitem("blockmepatternmirrorimage"), mitem("blockimpetusprovideroutput"),
     mitem("blockgridproviderinput"), mitem("blockgridprovideroutput"), mitem("blockrainbowprovider"), mitem("blockstarlightprovideroutput"),
     mitem("blockauraprovideroutput"), mitem("blockmanaprovideroutput"), mitem("crushing_wheels"), mitem("blockconstellationprovider"),
     mitem("itemmodularium"),
@@ -42,6 +42,7 @@ def devTools = [
 def corruptionAltar = [aitem("blockfluxproviderinput"), aitem("blockpotentialenergyproviderinput")]
 def rainbowColoringStation = [aitem("blockradiationproviderinput"), aitem("radiationsponge")]
 def largeScrubber = [aitem("blockscrubberproviderinput"), mitem("blockmanaproviderinput")]
+def thaumicCentrifuge = [mitem("blockmanaproviderinput"), mitem("blockaspectprovideroutput")]
 def resonantCaster = []
 def riftEmpowerer = [aitem("blockfluxprovideroutput"), aitem("blockbiomeproviderinput"), mitem("blockimpetusproviderinput")]
 def networkSupercharger = []
@@ -105,6 +106,7 @@ for (def it in devTools) TooltipEvents.setTier(it, 0)
 for (def it in corruptionAltar) TooltipEvents.setTier(it, 13)
 for (def it in rainbowColoringStation) TooltipEvents.setTier(it, 12)
 for (def it in largeScrubber) TooltipEvents.setTier(it, 11)
+for (def it in thaumicCentrifuge) TooltipEvents.setTier(it, 10)
 for (def it in resonantCaster) TooltipEvents.setTier(it, 10)
 for (def it in riftEmpowerer) TooltipEvents.setTier(it, 9)
 for (def it in networkSupercharger) TooltipEvents.setTier(it, 8)

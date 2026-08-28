@@ -37,23 +37,27 @@
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockmefluidinputbus"
     ],
-    "reinforced_fluid_input_item_io": [
+    "reinforced_fluid_input": [
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockmefluidinputbus"
+    ],
+    "reinforced_item_input": [
         "modularmachinery:blockinputbus@3",
         "modularmachinery:blockinputbus@4",
         "modularmachinery:blockinputbus@5",
         "modularmachinery:blockinputbus@6",
-        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmeiteminputbus"
+    ],
+    "reinforced_item_output": [
         "modularmachinery:blockoutputbus@3",
         "modularmachinery:blockoutputbus@4",
         "modularmachinery:blockoutputbus@5",
         "modularmachinery:blockoutputbus@6",
-        "modularmachinery:blockmeitemoutputbus",
-        "modularmachinery:blockfluidinputhatch@3",
-        "modularmachinery:blockfluidinputhatch@4",
-        "modularmachinery:blockfluidinputhatch@5",
-        "modularmachinery:blockfluidinputhatch@6",
-        "modularmachinery:blockfluidinputhatch@7",
-        "modularmachinery:blockmefluidinputbus"
+        "modularmachinery:blockmeitemoutputbus"
     ],
     "starlight_laser_hatch": [
         "modularmachinery:blockinputbus@1",

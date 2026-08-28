@@ -390,6 +390,7 @@ modularmachinery.network_supercharger=Network Supercharger
 modularmachinery.moonlight_fabricator=Moonlight Fabricator
 modularmachinery.resonant_caster=Resonant Caster
 modularmachinery.starlight_laser=Starlight Laser
+modularmachinery.thaumic_centrifuge=Thaumic Centrifuge
 
 tile.modularmachinery.network_supercharger.desc.seconds=Fully charges the ME Controller blocks every %d seconds
 tile.modularmachinery.network_supercharger.desc.ticks=Fully charges the ME Controller blocks every %d ticks

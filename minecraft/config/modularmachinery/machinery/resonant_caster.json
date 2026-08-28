@@ -8,7 +8,9 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "reinforced_fluid_input_item_io"
+                "reinforced_item_input",
+                "reinforced_item_output",
+                "reinforced_fluid_input"
             ]
         },
         {
@@ -88,7 +90,9 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "reinforced_fluid_input_item_io"
+                "reinforced_item_input",
+                "reinforced_item_output",
+                "reinforced_fluid_input"
             ]
         },
         {
@@ -104,7 +108,9 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "reinforced_fluid_input_item_io"
+                "reinforced_item_input",
+                "reinforced_item_output",
+                "reinforced_fluid_input"
             ]
         },
         {
