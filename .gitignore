@@ -74,5 +74,6 @@ minecraft/config/circulation_networks/atlas*
 minecraft/config/thaumicjei_itemstack_aspects.json
 minecraft/emi.json
 minecraft/config/bettersearch.json
+minecraft/config/cleanroom_mod_list_favourites.txt
 
 __pycache__

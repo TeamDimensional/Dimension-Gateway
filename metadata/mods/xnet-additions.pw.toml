@@ -1,18 +1,18 @@
-filename = 'XNetAdditions-0.3.0.jar'
+filename = 'XNetAdditions-0.3.1.jar'
 name = 'XNet: Additions'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'alpha'
-x-prismlauncher-version-number = 'XNetAdditions-0.3.0.jar'
+x-prismlauncher-version-number = 'XNetAdditions-0.3.1.jar'
 
 [download]
-hash = '9f9a51616144a6e1d5e0d6f5755408d8ed205ab8'
+hash = 'c7fccf063838d84ed81a9e412fa0f52c78baf77a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8750392
+file-id = 8763212
 project-id = 1504502

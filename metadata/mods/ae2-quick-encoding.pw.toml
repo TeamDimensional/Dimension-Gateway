@@ -1,32 +1,32 @@
-filename = 'ae2_quick_encoding-1.0.1.jar'
+filename = 'ae2_quick_encoding-1.0.2.jar'
 name = 'AE2 Quick Encoding'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'ae2_quick_encoding-1.0.1.jar'
+x-prismlauncher-version-number = 'ae2_quick_encoding-1.0.2.jar'
 
 [download]
-hash = '8e6d8b85d8be124610e6444f95b319066c66739a'
+hash = '058049e0e9e4e272fdb75dd9992246b9c5ad4156'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8644701
+file-id = 8768240
 project-id = 1645150
 
 [[x-prismlauncher-dependencies]]
-addonId = '1198138'
-type = 'OPTIONAL'
+addonId = '570458'
+type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
 addonId = '623955'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '570458'
-type = 'REQUIRED'
+addonId = '1198138'
+type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '557549'

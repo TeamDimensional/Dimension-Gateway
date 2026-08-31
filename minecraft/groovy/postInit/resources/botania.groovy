@@ -55,7 +55,7 @@ mods.thaumcraft.infusion_crafting.recipeBuilder()
 
 // Lavender Quartz
 crafting.remove("botania:quartz_3")
-mods.prodigytech.atomic_reshaper.recipeBuilder()
+mods.prodigytech.atomic_reshaper.builder()
     .input(item("botania:quartz", 6))
     .output(item("botania:quartz", 3))
     .primordium(7)
