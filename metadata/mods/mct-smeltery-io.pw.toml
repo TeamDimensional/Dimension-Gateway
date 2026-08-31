@@ -1,0 +1,25 @@
+filename = 'MCT-SmelteryIO-1.12.2-1.3.72-release.jar'
+name = 'Smeltery IO'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'MCT-SmelteryIO-1.12.2-1.3.72-release.jar'
+
+[download]
+hash = 'eeac837f5154ca57266fced3883baa8b2870f4e5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8740135
+project-id = 326155
+
+[[x-prismlauncher-dependencies]]
+addonId = '74072'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1242239'
+type = 'OPTIONAL'

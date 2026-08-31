@@ -25,6 +25,8 @@ def requiresSmeltery = [
     mitem("firewood_slab"), mitem("firewood_slab", 1), mitem("clear_glass"), mitem("fancy_frame", 6), mitem("seared"),
     mitem("seared", 1), mitem("seared_slab"), mitem("seared_slab", 1), mitem("seared_stairs_stone"), mitem("seared_stairs_cobble"),
     mitem("ingots", 6), mitem("metal", 7),
+    item("smelteryio:upgrade"), item("smelteryio:upgrade", 1), item("smelteryio:upgrade", 2), item("smelteryio:upgrade", 3), item("smelteryio:upgrade", 7),
+    item("smelteryio:powdered_fuel"), item("smelteryio:machine", 1), item("smelteryio:machine", 2), item("smelteryio:machine", 3),
 ]
 for (int i in 0..15) requiresSmeltery.add(mitem("clear_stained_glass", i))
 for (int i in 0..3) requiresSmeltery.add(mitem("cast_custom", i))
@@ -34,10 +36,10 @@ def requiresFey = [mitem("materials", 18), mitem("materials", 19)]
 
 def requiresGemstones = [mitem("materials", 15), mitem("materials", 16), mitem("metal", 6)]
 
-def requiresAA = []
+def requiresAA = [item("smelteryio:upgrade", 4), item("smelteryio:upgrade", 6)]
 for (int i in 0..4) requiresAA.add(mitem("slimesling", i))
 
-def requiresObsidian = [mitem("fancy_frame", 0), mitem("fancy_frame", 1), mitem("fancy_frame", 5), mitem("materials", 14)]
+def requiresObsidian = [mitem("fancy_frame", 0), mitem("fancy_frame", 1), mitem("fancy_frame", 5), mitem("materials", 14), item("smelteryio:upgrade", 5)]
 def requiresAoE = [mitem("materials", 12), mitem("materials", 13)]
 def cobaltArditeItems = [
     mitem("fancy_frame", 2), mitem("fancy_frame", 3), mitem("fancy_frame", 4), mitem("ore"), mitem("ore", 1),
@@ -47,6 +49,7 @@ def cobaltArditeItems = [
 
 def removeThese = [
     mitem("wooden_hopper"), mitem("throwball", 1), mitem("wood_rail"), mitem("wood_rail_trapdoor"), mitem("piggybackpack"), mitem("soil"),
+    item("smelteryio:iceball"), item("smelteryio:machine"),
 ]
 
 def hideFromJei = [mitem("cast_custom", 4)] + removeThese
