@@ -137,6 +137,3 @@ for (def it in eliteItems) TooltipEvents.setTier(it, 11)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeRecipes) crafting.removeByOutput(it)
-
-mods.jei.category.remove("appliedenergistics2.inscriber")
-mods.jei.category.remove("nae2:cell_view")

@@ -80,7 +80,6 @@ for (def it in removeFromFey) mods.roots.fey_crafter.removeByOutput(it)
 for (def it in removeFromShearing) mods.roots.runic_shear_entity.removeByOutput(it)
 
 mods.jei.description.remove(mitem("wildwood_sapling"))
-mods.jei.category.remove("roots.loot")
 mods.jei.catalyst.remove("roots.pyre_light", mitem("fire_starter"))
 
 // NOTE: remove firestarter catalyst

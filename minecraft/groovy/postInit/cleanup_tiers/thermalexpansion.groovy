@@ -42,15 +42,5 @@ for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeRecipes) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 
-// Remove augments from JEI
-// Normally this is done automatically as the ingredient is hidden, but JEI adds both the machine and the augment into the left panel
-mods.jei.category.remove("thermalexpansion.pulverizer_petrotheum")
-mods.jei.category.remove("thermalexpansion.furnace_ore")
-mods.jei.category.remove("thermalexpansion.smelter_pyrotheum")
-mods.jei.category.remove("thermalexpansion.insolator_tree")
-mods.jei.category.remove("thermalexpansion.compactor_mint")
-mods.jei.category.remove("thermalexpansion.crucible_lava")
-mods.jei.category.remove("thermalexpansion.refinery_potion")
-
 // Leave centrifuge only for Enstabulation Apparatus
 mods.thermalexpansion.centrifuge.removeAll()
