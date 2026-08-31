@@ -1,4 +1,6 @@
 import classes.FuelReprocessing
+import com.smokeythebandicoot.witcherycompanion.api.DistilleryApi
+import com.smokeythebandicoot.witcherycompanion.api.KettleApi
 
 def defineDefaultNcOperations(name) {
     for (def subname in ["", "_depleted"]) {
@@ -165,10 +167,10 @@ for (def it in items) {
         .register()
 }
 
-// TODO: groovyscript support.
-// TODO: fix mixin so this recipe can render.
-import com.smokeythebandicoot.witcherycompanion.api.KettleApi
-
+// Nightmare Fuel
+DistilleryApi.registerRecipe(resource("gateway:nightmare_fuel"),
+    item("gateway:nightmare_fuel_unprepared").toMcIngredient(), item("witchery:disturbed_cotton").toMcIngredient(), 3,
+    item("gateway:nightmare_fuel"), item("witchery:foul_fume"), item("witchery:foul_fume"), item("witchery:vitriol_oil"))
 KettleApi.registerRecipe(resource("gateway:unprepared_nightmare_fuel"),
     item("gateway:nightmare_fuel_unprepared") * 6,
     1200.0f,

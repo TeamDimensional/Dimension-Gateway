@@ -1,8 +1,5 @@
 import com.smokeythebandicoot.witcherycompanion.api.DistilleryApi
-
-DistilleryApi.registerRecipe(resource("gateway:nightmare_fuel"),
-    item("gateway:nightmare_fuel_unprepared").toMcIngredient(), item("witchery:disturbed_cotton").toMcIngredient(), 3,
-    item("gateway:nightmare_fuel"), item("witchery:foul_fume"), item("witchery:foul_fume"), item("witchery:vitriol_oil"))
+import com.smokeythebandicoot.witcherycompanion.api.KettleApi
 
 DistilleryApi.removeRecipe(resource("witchery:distillery/ender_dew"))
 DistilleryApi.registerRecipe(resource("witchery:ender_dew"),
@@ -18,3 +15,16 @@ DistilleryApi.removeRecipe(resource("witchery:distillery/diamong_vapor"))  // si
 DistilleryApi.registerRecipe(resource("witchery:diamond_vapor"),
     item("rftools:infused_diamond").toMcIngredient(), item("botania:rune", 11).toMcIngredient(), 4,
     item("witchery:diamond_vapor"), item("witchery:diamond_vapor"), item("witchery:purity_odor"), item("witchery:purity_odor"))
+
+
+KettleApi.removeRecipe(resource("witchery:kettle/redstone_soup"))
+KettleApi.registerRecipe(resource("witchery:redstone_soup"),
+    item("witchery:redstone_soup"),
+    2500.0f,
+    0,
+    null,
+    null,
+    false,
+    item("enderio:block_alloy", 3).toMcIngredient(), item("extrautils2:ingredients", 2).toMcIngredient(),
+    item("witchery:luck_drop").toMcIngredient(), item("witchery:belladonna_flower").toMcIngredient(),
+    item("witchery:dog_tongue").toMcIngredient(), item("botania:rune", 10).toMcIngredient())
