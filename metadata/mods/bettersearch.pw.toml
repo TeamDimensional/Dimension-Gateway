@@ -1,18 +1,18 @@
-filename = 'bettersearch-forge-1.12.2-1.4.0.jar'
+filename = 'bettersearch-forge-1.12.2-1.4.2.jar'
 name = 'Better Search'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'v1.4.0'
+x-prismlauncher-version-number = 'v1.4.2'
 
 [download]
-hash = 'bf1d2993ad76fe0b32f49879a4b3b687ce3d5c8e'
+hash = '4894409462226f4571ffafc5bbab589a152b1248'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8728869
+file-id = 8784708
 project-id = 1640741

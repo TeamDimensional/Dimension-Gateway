@@ -1,19 +1,19 @@
-filename = 'advancedrocketry-2.2.12.jar'
+filename = 'advancedrocketry-2.2.13.jar'
 name = 'Advanced Rocketry'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'advancedrocketry-2.2.12.jar'
+x-prismlauncher-version-number = 'advancedrocketry-2.2.13.jar'
 
 [download]
-hash = '7c46c47fbef267c1f092e2c49ed3e756c084cc2e'
+hash = '7d820d393a6da68c49c82d72584ca84596815f53'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8591048
+file-id = 8785543
 project-id = 1024225
 
 [[x-prismlauncher-dependencies]]
