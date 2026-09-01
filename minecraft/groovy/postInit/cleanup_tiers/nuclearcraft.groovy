@@ -60,12 +60,7 @@ def tier4Items = [
     mitem("ingot_block", 8), mitem("ingot", 8), mitem("dust", 8), mitem("gem_dust"),
 ]
 
-def tier6Items = [
-    mitem("gem_dust", 11), mitem("alloy", 13),
-]
-
 def tier7Items = [mitem("gem", 6)]
-
 def thermalItems = [
     mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"),
     // emerald oreproc for early beryllium
@@ -103,6 +98,7 @@ def fissionItems = [
     mitem("rtg_plutonium"), mitem("rtg_americium"), mitem("rtg_californium"),
     mitem("fission_chamber_port"), mitem("pebble_fission_controller"), mitem("pebble_fission_chamber"), mitem("part", 23), mitem("part", 24),
     mitem("fission_shield", 1), mitem("alloy", 18), mitem("dust2", 9), mitem("ingot2", 9), mitem("ingot_block2", 9),
+    mitem("alloy", 15), mitem("turbine_redstone_port"),
 ]
 for (def m in ["steel", "extreme", "sic_sic_cmc"]) fissionItems.add(mitem("turbine_rotor_blade_${m}"))
 
@@ -171,7 +167,6 @@ TooltipEvents.setModTier("nuclearcraft", 9)
 for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in tier4Items) TooltipEvents.setTier(it, 4)
-for (def it in tier6Items) TooltipEvents.setTier(it, 6)
 for (def it in tier7Items) TooltipEvents.setTier(it, 7)
 for (def it in thermalItems) TooltipEvents.setTier(it, 8)
 for (def it in uraniumItems) TooltipEvents.setTier(it, 8)  // from thermal
@@ -179,7 +174,7 @@ for (def it in lunaItems) TooltipEvents.setTier(it, 10)
 for (def it in metamorphicCrushing) TooltipEvents.setTier(it, 11)
 for (def it in fissionItems) TooltipEvents.setTier(it, 11)
 for (def it in moltenSaltItems) TooltipEvents.setTier(it, 12)
-for (def it in hxItems) TooltipEvents.setTier(it, 12)
+for (def it in hxItems) TooltipEvents.setTier(it, 9)
 for (def it in qmdItems) TooltipEvents.setTier(it, 14)
 TooltipEvents.setTier(item("reactorbuilder:creativereactorbuilder"), 14)
 for (def it in removeRecipes) crafting.removeByOutput(it)

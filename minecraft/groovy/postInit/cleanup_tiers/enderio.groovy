@@ -13,6 +13,11 @@ for (def a in [5, 10, 30, 60, 300])
     for (def b in ["", "i"])
         earlyItems.add(mitem("block_self_resetting_lever${a}${b}"))
 
+def glassItems = [
+    mitem("block_fused_glass", 32767), mitem("block_dark_fused_glass", 32767), mitem("block_enlightened_fused_glass", 32767),
+    mitem("block_fused_quartz", 32767), mitem("block_dark_fused_quartz", 32767), mitem("block_enlightened_fused_quartz", 32767),
+]
+
 def enderItems = [mitem("block_enderman_skull")]
 
 def items = [
@@ -33,7 +38,7 @@ def items = [
     mitem("block_travel_anchor"), mitem("block_tele_pad"), mitem("block_dialing_device"), mitem("block_impulse_hopper"),
     mitem("block_cap_bank", 1), mitem("block_cap_bank", 2), mitem("block_cap_bank", 3), mitem("block_gauge"),
     mitem("block_power_monitor"), mitem("block_advanced_power_monitor"), mitem("item_coord_selector"),
-    mitem("item_conduit_swapper"),
+    mitem("item_conduit_swapper"), mitem("item_material", 1),
 ]
 for (def i in 0..3) items.add(mitem("item_conduit_facade", i))
 for (def i in 0..2) items.add(mitem("item_basic_capacitor", i))
@@ -145,7 +150,7 @@ for (def i in endergyMaterialsGone) {
 
 def removeSagMill = [mitem("item_material", 28), mitem("block_holier_fog")]
 def removeAlloy = [mitem("block_death_pouch")]
-for (def i in [39, 72, 76, 75]) removeAlloy.add(mitem("item_material", i))
+for (def i in [3, 39, 48, 49, 50, 72, 76, 75]) removeAlloy.add(mitem("item_material", i))
 def removeTank = [mitem("item_material", 8)]
 
 def hideFromJei = [
@@ -164,6 +169,7 @@ for (def i in [0, 4, 5, 6]) {
 }
 
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
+for (def it in glassItems) TooltipEvents.setTier(it, 4)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
 for (def it in items) TooltipEvents.setTier(it, 11)
 for (def it in advancedItems) TooltipEvents.setTier(it, 11)
@@ -174,7 +180,6 @@ for (def it in removeRecipes) crafting.removeByOutput(it)
 TooltipEvents.setTier(item("enderio:item_material", 30), 6)
 TooltipEvents.setTier(item("enderio:item_material", 31), 6)
 
-for (def it in removeAlloy) mods.enderio.alloy_smelter.remove(it)
 mods.enderio.tank.removeFill(fluid("nutrient_distillation"), mitem("item_material", 8))
 mods.tconstruct.melting.removeByOutput(fluid("construction_alloy"))
 crafting.remove("enderio:capacitor_crystalline_alt")

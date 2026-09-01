@@ -11,13 +11,12 @@ ore("ingotStarsteel").add(citem("starsteel_ingot"))
 AlloyHelper.builder()
     .input(ore("ingotZorrasteel"), ore("ingotAstralStarmetal"), ore("dustDiamond"))
     .output(citem("starsteel_ingot") * 2)
-    .time(160)
     .register()
 
 AlloyHelper.builder()
     .input(ore("ingotManasteel"), ore("ingotAstralStarmetal"), item("naturesaura:sky_ingot"))
     .output(citem("starsteel_ingot") * 5)
-    .time(320)
+    .timeMultiplier(1.5)
     .register()
 
 // Radioinfused Tanzanite line

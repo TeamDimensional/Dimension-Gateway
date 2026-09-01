@@ -43,8 +43,6 @@ crafting.shapedBuilder()
 
 crafting.remove("openblocks:line_0")
 AlloyHelper.builder()
-    .name("tier3/qol/openblocks_line")
     .output(item("openblocks:generic", 5))
     .input(item("minecraft:string"), item("roots:runic_dust") * 2)
-    .time(200)
     .register()

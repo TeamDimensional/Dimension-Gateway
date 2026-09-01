@@ -44,8 +44,6 @@ for (int i in 0..7) {
     furnace.removeByOutput(item("immersiveengineering:metal", i))
     GatewayHelpers.hide(item("immersiveengineering:metal", i))
 }
-mods.immersiveengineering.alloy_kiln.removeByOutput(item("immersiveengineering:metal", 6))
-mods.immersiveengineering.alloy_kiln.removeByOutput(item("immersiveengineering:metal", 7))
 
 ore("ingotCopper").remove(item("immersiveengineering:metal"))
 ore("ingotAluminum").remove(item("immersiveengineering:metal", 1))
@@ -109,9 +107,6 @@ GatewayHelpers.hide(item("immersiveengineering:material", 24))
 GatewayHelpers.hide(item("immersiveengineering:material", 25))
 
 // Slag (most work is done in the Steel file)
-mods.immersiveengineering.arc_furnace.streamRecipes()
-    .filter(recipe -> recipe.slag in item("immersiveengineering:material", 7))
-    .removeAll()
 ore("crystalSlag").remove(item("immersiveengineering:material", 7))
 ore("itemSlag").remove(item("immersiveengineering:material", 7))
 GatewayHelpers.hide(item("immersiveengineering:material", 7))

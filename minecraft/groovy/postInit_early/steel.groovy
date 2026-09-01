@@ -33,7 +33,6 @@ mods.immersiveengineering.blast_furnace.recipeBuilder()
     .slag(item("thermalfoundation:material", 864) * 9)
     .register()
 
-// mods.immersiveengineering.arc_furnace.removeByOutput(item("immersiveengineering:metal", 8))
 mods.immersiveengineering.arc_furnace.recipeBuilder()
     .input(item("minecraft:iron_ingot"), item("immersiveengineering:material", 17))
     .output(item("thermalfoundation:material", 160) * 2)

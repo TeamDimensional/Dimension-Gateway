@@ -1,3 +1,11 @@
 mods.calculator.fabrication_chamber.removeAll()
 mods.actuallyadditions.empowerer.removeAll()
 mods.botania.rune_altar.removeAll()
+
+mods.nuclearcraft.alloy_furnace.removeAllRecipes()
+mods.immersiveengineering.arc_furnace.removeAll()
+mods.immersiveengineering.alloy_kiln.removeAll()
+mods.enderio.alloy_smelter.removeAll()
+mods.thermalexpansion.smelter.removeAll()
+mods.advancedrocketry.electric_arc_furnace.removeAll()
+mods.tconstruct.alloying.removeAll()

@@ -32,7 +32,6 @@ AlloyHelper.builder()
     .minTier(2)
     .input(item("botania:quartz", 2), item("essentialcraft:elementalfuel"))
     .output(item("botania:quartz", 4))
-    .time(200)
     .register()
 
 // Sunny Quartz
@@ -126,10 +125,10 @@ mods.botania.mana_infusion.recipeBuilder()
 // Gaia Ingot
 crafting.removeByOutput(item("botania:manaresource", 14))
 AlloyHelper.builder()
-    .minTier(3)
+    .minTier(4)
     .input(item("kami:ichorium_ingot"), item("botania:manaresource", 5) * 4, item("thaumcraft:ingot", 1) * 2)
     .output(item("botania:manaresource", 14))
-    .time(500)
+    .timeMultiplier(4)
     .register()
 
 //// Runes

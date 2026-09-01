@@ -4,10 +4,9 @@ import classes.MetalworksHelper
 // Zorrasteel
 crafting.remove("prodigytech:materials/zorrasteel_raw")
 AlloyHelper.builder()
-    .name("tier5/zorrasteel")
     .output(item("prodigytech:zorrasteel_raw") * 2)
     .input(item("thermalfoundation:material", 160), item("thaumcraft:ingot"), item("prodigytech:zorra_leaf") * 8)
-    .time(300)
+    .timeMultiplier(1.5)
     .register()
 
 // Circuit Pattern
