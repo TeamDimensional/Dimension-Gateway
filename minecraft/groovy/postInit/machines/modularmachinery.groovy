@@ -24,104 +24,76 @@ crafting.remove("modularmachinery:energy_input_small")
 crafting.remove("modularmachinery:fluid_input_small")
 
 def busses = [
-    ["blockoutputbus", item("minecraft:chest"), 7, 5, item("ironchest:iron_chest", 6)],
-    ["blockinputbus", item("minecraft:chest"), 7, 5, item("ironchest:iron_chest", 6)],
-    ["blockfluidinputhatch", item("minecraft:bucket"), 8, 1, item("minecraft:bucket")],
-    ["blockenergyinputhatch", item("actuallyadditions:block_laser_relay"), 8, 0, item("actuallyadditions:block_laser_relay_extreme")],
+    ["itemId": "modularmachinery:blockinputbus",
+     "upgrade": item("minecraft:chest"),
+     "highTierUpgrade": item("ironchest:iron_chest", 6),
+     "crystalIndex": 5, "progression": ["small", "normal", "reinforced", "large", "huge", "ludicrous"]],
+    ["itemId": "modularmachinery:blockoutputbus",
+     "upgrade": item("minecraft:chest"),
+     "highTierUpgrade": item("ironchest:iron_chest", 6),
+     "crystalIndex": 5, "progression": ["small", "normal", "reinforced", "large", "huge", "ludicrous"]],
+    ["itemId": "modularmachinery:blockfluidinputhatch",
+     "upgrade": item("thermaldynamics:duct_16", 2),
+     "highTierUpgrade": item("thermaldynamics:duct_16", 7),
+     "crystalIndex": 1, "progression": ["small", "normal", "reinforced", "large", "huge", "ludicrous", "ultimate"]],
+    ["itemId": "modularmachinery:blockenergyinputhatch",
+     "upgrade": item("actuallyadditions:block_laser_relay"),
+     "highTierUpgrade": item("actuallyadditions:block_laser_relay_extreme"),
+     "crystalIndex": 0, "progression": ["small", "normal", "reinforced", "large", "huge", "ludicrous", "ultimate"]],
+    ["itemId": "mmce_complement:input_assembly_hatch",
+     "upgrade": item("minecraft:chest"), "upgrade2": item("thermaldynamics:duct_16", 2),
+     "highTierUpgrade": item("ironchest:iron_chest", 6), "highTierUpgrade2": item("thermaldynamics:duct_16", 7),
+     "crystalIndex": 2, "progression": ["normal", "large", "huge", "ludicrous"]],
+    ["itemId": "mmce_complement:output_assembly_hatch",
+     "upgrade": item("minecraft:chest"), "upgrade2": item("thermaldynamics:duct_16", 2),
+     "highTierUpgrade": item("ironchest:iron_chest", 6), "highTierUpgrade2": item("thermaldynamics:duct_16", 7),
+     "crystalIndex": 2, "progression": ["normal", "large", "huge", "ludicrous"]],
+    ["itemId": "mmce_complement:quad_fluid_input_hatch_tiny",
+     "upgrade": item("thermaldynamics:duct_16", 2),
+     "highTierUpgrade": item("thermaldynamics:duct_16", 7),
+     "crystalIndex": 1, "progression": ["small", "normal", "reinforced", "large", "huge", "ludicrous", "ultimate"]],
+]
+
+def craftMatrices = [
+    "small": ["S", "H", "s"],
+    "normal": [" S ", "PHP", " s "],
+    "reinforced": ["PSP", "cHc", "PsP"],
+    "large": ["PSP", "cHc", "PsP"],
+    "huge": ["PSP", "eHe", "PsP"],
+    "ludicrous": ["PSP", "eHe", "PsP"],
+    "ultimate": ["PSP", "EHE", "PsP"],
+]
+def plateItems = [
+    "small": item("thermalfoundation:material", 32),  // unused
+    "normal": item("thermalfoundation:material", 354),
+    "reinforced": item("thermalfoundation:material", 358),
+    "large": item("thermalfoundation:material", 326),
+    "huge": item("thermalfoundation:material", 359),
+    "ludicrous": item("nuclearcraft:part", 1),
+    "ultimate": item("nuclearcraft:part", 3),
 ]
 
 for (def it in busses) {
-    def type = it[0]
-    def additional = it[1]
-    def max = it[2]
-    def empIndex = it[3]
-    def additional2 = it[4]
+    for (def i in 0..it["progression"].size() - 1) {
+        def inputItem = item(it["itemId"], i)
+        def outputItem = item(it["itemId"], i + 1)
+        def tier = it["progression"][i]
+        def upgradeKey = (tier == "huge" || tier == "ludicrous" || tier == "ultimate") ? "highTierUpgrade" : "upgrade"
+        def item1 = it[upgradeKey]
+        def item2 = it[upgradeKey + "2"] != null ? it[upgradeKey + "2"] : item1
+        def type = it["itemId"].replace(":", "_")
 
-    if (max > 1) {
-        // Small
         crafting.shapedBuilder()
-            .name("modular/${type}_1")
-            .matrix("SPS")
-            .key("P", item("modularmachinery:${type}", 0))
-            .key("S", additional)
-            .output(item("modularmachinery:${type}", 1))
-            .register()
-    }
-
-    if (max > 2) {
-        // Normal
-        crafting.shapedBuilder()
-            .name("modular/${type}_2")
-            .matrix(" S ", "IPI", " S ")
-            .key("I", item("thermalfoundation:material", 354))
-            .key("P", item("modularmachinery:${type}", 1))
-            .key("S", additional)
-            .output(item("modularmachinery:${type}", 2))
-            .register()
-    }
-
-    if (max > 3) {
-        // Reinforced
-        crafting.shapedBuilder()
-            .name("modular/${type}_3")
-            .matrix("ISI", "EPE", "ISI")
-            .key("I", item("thermalfoundation:material", 359))
-            .key("E", item("actuallyadditions:item_crystal", empIndex))
-            .key("P", item("modularmachinery:${type}", 2))
-            .key("S", additional)
-            .output(item("modularmachinery:${type}", 3))
-            .register()
-    }
-
-    if (max > 4) {
-        // Big
-        crafting.shapedBuilder()
-            .name("modular/${type}_4")
-            .matrix("ISI", "EPE", "ISI")
-            .key("I", item("appliedenergistics2:smooth_sky_stone_block"))
-            .key("E", item("actuallyadditions:item_crystal", empIndex))
-            .key("P", item("modularmachinery:${type}", 3))
-            .key("S", additional)
-            .output(item("modularmachinery:${type}", 4))
-            .register()
-    }
-
-    if (max > 5) {
-        // Huge
-        crafting.shapedBuilder()
-            .name("modular/${type}_5")
-            .matrix("ISI", "EPE", "ISI")
-            .key("I", item("appliedenergistics2:smooth_sky_stone_block"))
-            .key("E", item("actuallyadditions:item_crystal_empowered", empIndex))
-            .key("P", item("modularmachinery:${type}", 4))
-            .key("S", additional2)
-            .output(item("modularmachinery:${type}", 5))
-            .register()
-    }
-
-    if (max > 6) {
-        // Ludicrous
-        crafting.shapedBuilder()
-            .name("modular/${type}_6")
-            .matrix("ISI", "EPE", "ISI")
-            .key("I", item("nuclearcraft:part", 1))
-            .key("E", item("actuallyadditions:item_crystal_empowered", empIndex))
-            .key("P", item("modularmachinery:${type}", 5))
-            .key("S", additional2)
-            .output(item("modularmachinery:${type}", 6))
-            .register()
-    }
-
-    if (max > 7) {
-        // Vacuum/Ultimate
-        crafting.shapedBuilder()
-            .name("modular/${type}_7")
-            .matrix("ISI", "EPE", "ISI")
-            .key("I", item("nuclearcraft:part", 3))
-            .key("E", item("actuallyadditions:block_crystal_empowered", empIndex))
-            .key("P", item("modularmachinery:${type}", 6))
-            .key("S", additional2)
-            .output(item("modularmachinery:${type}", 7))
+            .name("modular/${type}_${i}")
+            .matrix(craftMatrices[tier] as String[])
+            .key("P", plateItems[tier])
+            .key("H", inputItem)
+            .key("c", item("actuallyadditions:item_crystal", it["crystalIndex"]))
+            .key("e", item("actuallyadditions:item_crystal_empowered", it["crystalIndex"]))
+            .key("E", item("actuallyadditions:block_crystal_empowered", it["crystalIndex"]))
+            .key("S", item1)
+            .key("s", item2)
+            .output(outputItem)
             .register()
     }
 }
@@ -147,9 +119,9 @@ crafting.shapedBuilder()
     .register()
 
 def meBusses = [
-    ["iteminput", item("modularmachinery:blockinputbus", 3), item("modularmachinery:blockmeiteminputbus")],
-    ["itemoutput", item("modularmachinery:blockoutputbus", 3), item("modularmachinery:blockmeitemoutputbus")],
-    ["fluidinput", item("modularmachinery:blockfluidinputhatch", 3), item("modularmachinery:blockmefluidinputbus")],
+    ["iteminput", item("modularmachinery:blockinputbus", 4), item("modularmachinery:blockmeiteminputbus"), item("mmce_complement:me_item_inventory_input_bus")],
+    ["itemoutput", item("modularmachinery:blockoutputbus", 4), item("modularmachinery:blockmeitemoutputbus"), null],
+    ["fluidinput", item("mmce_complement:quad_fluid_input_hatch_tiny", 4), item("modularmachinery:blockmefluidinputbus"), item("mmce_complement:me_fluid_inventory_input_bus")],
 ]
 for (def it in meBusses) {
     crafting.shapedBuilder()
@@ -161,7 +133,24 @@ for (def it in meBusses) {
         .key("R", it[1])
         .output(it[2])
         .register()
+    if (it[3] != null) {
+        crafting.shapedBuilder()
+            .name("modular/ae2_${it[0]}_adv")
+            .matrix("MDM", "TVT", "MRM")
+            .key("M", item("appliedenergistics2:smooth_sky_stone_block"))
+            .key("T", item("thermalfoundation:material", 357))
+            .key("V", item("appliedenergistics2:material", 24))
+            .key("D", item("integrateddynamics:logic_director"))
+            .key("R", it[1])
+            .output(it[3])
+            .register()
+    }
 }
+
+mods.calculator.atomic_calculator.recipeBuilder()
+    .input(item("mmce_complement:me_item_inventory_input_bus"), item("calculator:atomicbinder"), item("thermalfoundation:tome_lexicon"))
+    .output(item("mmce_complement:me_ore_dict_input_bus"))
+    .register()
 
 ///// Special Hatches
 // Starlight Hatch
@@ -207,7 +196,7 @@ crafting.shapedBuilder()
     .output(item("modularmachinery:blockaspectprovideroutput"))
     .register()
 
-// Aura Output Hatch
+// Aura Input Hatch
 crafting.shapedBuilder()
     .name("modular/input_aura")
     .matrix("MHM", " V ", "M M")
@@ -215,6 +204,58 @@ crafting.shapedBuilder()
     .key("V", item("modularmachinery:blockcasing"))
     .key("H", item("naturesaura:grated_chute"))
     .output(item("modularmachinery:blockauraproviderinput"))
+    .register()
+
+// Redstone Output Hatch
+crafting.shapedBuilder()
+    .name("modular/output_redstone")
+    .matrix("M M", " V ", "MHM")
+    .key("H", item("prodigytech:circuit_crude"))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("M", item("minecraft:comparator"))
+    .output(item("mmce_complement:redstone_signal_output_hatch"))
+    .register()
+
+// Dual Input Hatch
+crafting.shapedBuilder()
+    .name("modular/input_dual")
+    .matrix("MIM", " F ", "MVM")
+    .key("M", item("prodigytech:circuit_crude"))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("I", item("minecraft:hopper"))
+    .key("F", item("minecraft:bucket"))
+    .output(item("mmce_complement:input_assembly_hatch"))
+    .register()
+
+// Dual Output Hatch
+crafting.shapedBuilder()
+    .name("modular/output_dual")
+    .matrix("MVM", " F ", "MIM")
+    .key("M", item("prodigytech:circuit_crude"))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("I", item("minecraft:hopper"))
+    .key("F", item("minecraft:bucket"))
+    .output(item("mmce_complement:output_assembly_hatch"))
+    .register()
+
+// Quadruple Fluid Input Hatch
+crafting.shapedBuilder()
+    .name("modular/input_quad")
+    .matrix("MHM", " V ", "MBM")
+    .key("M", item("immersiveengineering:metal_device1", 6))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("H", item("thaumcraft:tube_valve"))
+    .key("B", item("minecraft:bucket"))
+    .output(item("mmce_complement:quad_fluid_input_hatch_tiny"))
+    .register()
+
+// ME Connection Sharing Hatch
+crafting.shapedBuilder()
+    .name("modular/me_sharing")
+    .matrix("M M", " V ", "M M")
+    .key("M", item("appliedenergistics2:quantum_ring"))
+    .key("V", item("modularmachinery:blockcasing", 4))
+    .output(item("mmce_complement:me_connection_share_hatch"))
     .register()
 
 ///// Controllers

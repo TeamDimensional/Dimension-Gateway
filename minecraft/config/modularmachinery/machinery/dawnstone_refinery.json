@@ -64,7 +64,8 @@
             "y": 1,
             "z": 4,
             "elements": [
-                "thaumictinkerer:arcane_quartz_pillar@0"
+                "thaumictinkerer:arcane_quartz_pillar@0",
+                "mmce_complement:me_connection_share_hatch"
             ]
         },
         {

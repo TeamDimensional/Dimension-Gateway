@@ -88,7 +88,8 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "actuallyadditions:block_crystal@5"
+                "actuallyadditions:block_crystal@5",
+                "mmce_complement:me_connection_share_hatch"
             ]
         },
         {

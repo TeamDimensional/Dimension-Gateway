@@ -230,3 +230,11 @@ crafting.shapedBuilder()
     .key("T", item("thaumcraft:mind"))
     .output(item("ae2powertools:network_component_locator"))
     .register()
+
+// Oredict Storage Bus
+crafting.remove("appliedenergistics2:network/parts/oredict_storage_bus")
+crafting.remove("appliedenergistics2:network/parts/oredict_storage_bus_alt")
+mods.calculator.atomic_calculator.recipeBuilder()
+    .input(item("appliedenergistics2:part", 220), item("calculator:atomicbinder"), item("thermalfoundation:tome_lexicon"))
+    .output(item("appliedenergistics2:part", 221))
+    .register()
