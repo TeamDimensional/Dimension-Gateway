@@ -96,6 +96,8 @@ def voidItems = [
     ritem("crimson_ranger_helmet"), ritem("crimson_ranger_chestplate"), ritem("crimson_ranger_leggings"),
     ritem("crimson_paladin_helmet"), ritem("crimson_paladin_chestplate"), ritem("crimson_paladin_leggings"),
     ritem("primordial_scribing_tools"), mitem("smelter_void"),
+    ritem("obsidian_tile"), ritem("eldritch_totem_pole"), ritem("eldritch_totem_deity"), ritem("eldritch_totem_guardian"),
+    ritem("eldritch_totem_wisdom"), ritem("eldritch_totem_wrath"),
 ]
 for (int i in 0..2) voidItems.add(mitem("loot_bag", i))
 for (int i in 0..11) voidItems.add(gitem("stone", i))

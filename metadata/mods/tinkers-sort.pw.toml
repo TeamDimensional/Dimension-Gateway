@@ -1,18 +1,18 @@
-filename = 'bettersearch-forge-1.12.2-1.4.3.jar'
-name = 'Better Search'
+filename = 'tinkers_sort-1.0.1.jar'
+name = "Tinker's Sort"
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'v1.4.3'
+x-prismlauncher-version-number = 'tinkers_sort-1.0.1.jar'
 
 [download]
-hash = '34aeced703289466030b30bde6926127222ee9b4'
+hash = '25b3fa006720ecb346d18c653261b532141abcdd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8894806
-project-id = 1640741
+file-id = 8869436
+project-id = 1692298

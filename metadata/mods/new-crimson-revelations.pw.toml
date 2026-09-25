@@ -1,23 +1,27 @@
-filename = 'New-Crimson-Revelations-1.12.2-1.5.3.jar'
+filename = 'NewCrimsonRevelations-1.6.0.jar'
 name = 'New Crimson Revelations'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.5.3'
+x-prismlauncher-version-number = '1.6.0'
 
 [download]
-hash = 'df234df3daf3ee39d817e5daf9231d8c5dc0808b'
+hash = '9fb5921e66d2dd4c6336e3d84f3cce894de0fb21'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8139449
+file-id = 8802619
 project-id = 1025633
 
 [[x-prismlauncher-dependencies]]
 addonId = '1069346'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1341797'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -29,15 +33,15 @@ addonId = '1533287'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '870276'
-type = 'REQUIRED'
+addonId = '1064613'
+type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '223628'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '1064613'
+addonId = '240630'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -45,13 +49,9 @@ addonId = '319441'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '1341797'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '240630'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
 addonId = '267602'
 type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '870276'
+type = 'REQUIRED'

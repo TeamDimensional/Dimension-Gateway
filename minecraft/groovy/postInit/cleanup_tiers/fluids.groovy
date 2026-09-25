@@ -178,7 +178,7 @@ def tier14 = [
     fluid("zinc"), fluid("osmium"), fluid("calcium"), fluid("strontium"),
     fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
     fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
-    fluid("erbium"), fluid("terbium"), fluid("ytterbium"), fluid("neodymium"),
+    fluid("erbium"), fluid("ytterbium"), fluid("neodymium"),
 ]
 
 def removeFluids = [

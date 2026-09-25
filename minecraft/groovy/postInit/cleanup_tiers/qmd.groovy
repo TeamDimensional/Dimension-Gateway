@@ -22,7 +22,7 @@ def metamorphicCrushing = [
 def fissionItems = [
     mitem("fluid_polonium"), mitem("fluid_radium"), mitem("fluid_bismuth"), mitem("fluid_neodymium"), mitem("dust2", 3), mitem("part", 13),
 ]
-for (def i in [2, 3, 4, 6, 8]) fissionItems.add(mitem("isotope", i))
+for (def i in [6, 8]) fissionItems.add(mitem("isotope", i))
 def tier12Items = [mitem("dust", 8), mitem("ingot", 8)]
 
 def antimatterItems = [
@@ -45,9 +45,13 @@ def stellarItems = [
     mitem("ingot2"), mitem("dust2"),
 ]
 
+def deprecatedItems = [
+    mitem("isotope", 2), mitem("isotope", 3), mitem("isotope", 4), mitem("dust2", 4), mitem("chemical_dust", 6), mitem("isotope", 5),
+]
+
 def hideFromJei = [
     mitem("fluid_cobalt"), mitem("fluid_nickel"), mitem("fluid_iridium"), mitem("fluid_platinum"), mitem("fluid_zinc"),
-] + removeRecipes
+] + removeRecipes + deprecatedItems
 
 TooltipEvents.setModTier("qmd", 14)
 for (def it in embersItems) TooltipEvents.setTier(it, 4)

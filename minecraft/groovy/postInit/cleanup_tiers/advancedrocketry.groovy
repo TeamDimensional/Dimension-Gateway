@@ -41,6 +41,7 @@ def part1Items = [
     mitem("deployablerocketbuilder"), mitem("monitoringstation"), mitem("gravitycontroller"), mitem("observatory"),
     mitem("orientationcontroller"), mitem("altitudecontroller"), mitem("oxygenscrubber"), mitem("oxygenvent"),
     mitem("satellite"), mitem("satellitepowersource"), mitem("dataunit"), mitem("satellitecontrolcenter"), mitem("planetanalyser"),
+    mitem("rocketprinter"), mitem("rocketblueprint"),
 ]
 for (def i in 0..3) part1Items.add(mitem("pressuretank", i))
 for (def i in 0..5) part1Items.add(mitem("itemupgrade", i))
