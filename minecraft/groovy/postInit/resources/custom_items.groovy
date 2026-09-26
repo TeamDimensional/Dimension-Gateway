@@ -39,13 +39,13 @@ mods.thermalexpansion.crucible.recipeBuilder()
 
 // Blaze Superfuel
 mods.soot.alchemical_mixer.recipeBuilder()
-        .fluidInput(fluid("blazing_blood") * 10, fluid("napalm") * 40, fluid("gas_dwarf") * 20, fluid("crystaloil") * 50)
-        .fluidOutput(fluid("blaze_superfuel") * 120)
+        .fluidInput(fluid("blazing_blood") * 1, fluid("napalm") * 4, fluid("gas_dwarf") * 2, fluid("crystaloil") * 5)
+        .fluidOutput(fluid("blaze_superfuel") * 12)
         .setAspect("copper", 2, 4)
         .register()
 mods.soot.alchemical_mixer.recipeBuilder()
-        .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 40, fluid("empoweredoil") * 100)
-        .fluidOutput(fluid("blaze_superfuel") * 400)
+        .fluidInput(fluid("blazing_blood") * 2, fluid("napalm") * 8, fluid("gas_dwarf") * 4, fluid("empoweredoil") * 10)
+        .fluidOutput(fluid("blaze_superfuel") * 40)
         .setAspect("frenzy", 8, 16)
         .register()
 
