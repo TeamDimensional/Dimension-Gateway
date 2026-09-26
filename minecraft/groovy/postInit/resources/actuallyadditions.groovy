@@ -26,7 +26,7 @@ mods.actuallyadditions.empowerer.recipeBuilder()
 
 mods.actuallyadditions.empowerer.recipeBuilder()
     .mainInput(item("actuallyadditions:item_crystal", 1))
-    .input(item("industrialforegoing:artificial_dye", 11), item("aetherworks:item_geode", 1), item("astralsorcery:itemcraftingcomponent", 1), item("xreliquary:mob_ingredient", 10))
+    .input(item("industrialforegoing:artificial_dye", 11), item("aetherworks:item_geode", 1), item("jaopca:shard.astral_starmetal"), item("xreliquary:mob_ingredient", 10))
     .output(item("actuallyadditions:item_crystal_empowered", 1))
     .color(0x191a8c)
     .time(60)

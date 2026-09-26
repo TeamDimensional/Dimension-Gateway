@@ -1,0 +1,5 @@
+mods.embers.alchemy.addAspect("nether", item("thaumicaugmentation:augment_builder_power").withNbt(["id":"thaumicaugmentation:strength_nether"]))
+mods.embers.alchemy.addAspect("ender", item("thaumicaugmentation:augment_builder_power").withNbt(["id":"thaumicaugmentation:strength_end"]))
+mods.embers.alchemy.addAspect("emptiness", item("thaumicaugmentation:augment_builder_power").withNbt(["id":"thaumicaugmentation:strength_emptiness"]))
+mods.embers.alchemy.addAspect("overworld", item("thaumicaugmentation:augment_builder_power").withNbt(["id":"thaumicaugmentation:strength_overworld"]))
+mods.embers.alchemy.addAspect("frenzy", item("thaumicaugmentation:augment_builder_power").withNbt(["id":"thaumicaugmentation:strength_frenzy"]))

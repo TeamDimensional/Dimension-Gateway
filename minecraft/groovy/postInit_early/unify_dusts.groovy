@@ -1,6 +1,6 @@
 // priority: 100
 
-import classes.CrushingHelper
+import classes.MachineHelper
 import classes.GatewayHelpers
 
 // Flour
@@ -11,7 +11,7 @@ for (def it in flours) {
     ore("dustWheat").remove(it)
 }
 
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(item("minecraft:wheat"))
     .output(item("roots:flour"))
     .register()
@@ -41,23 +41,23 @@ for (def it in fixedSawmillRecipes) {
 ore("dustWood").remove(item("prodigytech:sawdust"))
 GatewayHelpers.hide(item("prodigytech:sawdust"))
 
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("logWood"))
     .output(item("thermalfoundation:material", 800) * 4)
     .register()
 
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("plankWood"))
     .output(item("thermalfoundation:material", 800))
     .register()
 
 // Coal Dust
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("coal"))
     .output(item("thermalfoundation:material", 768))
     .register()
 
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("blockCoal"))
     .output(item("thermalfoundation:material", 768) * 9)
     .register()
@@ -84,12 +84,12 @@ for (def it in goldDusts) {
 }
 
 // Quartz Dust
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("gemQuartz"))
     .output(item("nuclearcraft:gem_dust", 2))
     .register()
 
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("blockQuartz"))
     .output(item("nuclearcraft:gem_dust", 2) * 4)
     .register()
@@ -103,7 +103,7 @@ for (def it in quartzDusts) {
 }
 
 // Diamond Dust
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(ore("gemDiamond"))
     .output(item("nuclearcraft:gem_dust"))
     .register()

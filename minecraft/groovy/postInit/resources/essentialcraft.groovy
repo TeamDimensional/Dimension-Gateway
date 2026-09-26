@@ -139,3 +139,12 @@ crafting.shapedBuilder()
     .key("E", item("essentialcraft:gem_elemental", 4))
     .key("I", item("thaumcraft:plate", 2))
     .register()
+
+// Magical Gold
+mods.essentialcraft.magician_table.removeByOutput(item("essentialcraft:genitem", 10))
+mods.thaumcraft.crucible.recipeBuilder()
+    .researchKey("UNLOCKALCHEMY")
+    .catalyst(item("minecraft:gold_ingot"))
+    .output(item("essentialcraft:genitem", 10))
+    .aspect(aspect("desiderium") * 5, aspect("permutatio") * 5)
+    .register()

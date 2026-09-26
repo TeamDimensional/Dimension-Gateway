@@ -44,6 +44,7 @@ TooltipEvents.setTier(citem("dormant_magical_crystal"), 10)
 TooltipEvents.setTier(citem("fengarum_shard"), 6)
 TooltipEvents.setTier(citem("ourium_shard"), 6)
 TooltipEvents.setTier(citem("ilium_shard"), 6)
+TooltipEvents.setTier(citem("mystical_metal_clump"), 13)
 
 def magicFuels = [
     ["natural", 11],

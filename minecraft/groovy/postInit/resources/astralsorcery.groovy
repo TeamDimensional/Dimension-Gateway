@@ -36,3 +36,9 @@ mods.calculator.algorithm_separator.recipeBuilder()
     .input(item("astralsorcery:itemperkgem", 2))
     .output(item("gateway:fengarum_shard") * 4, item("astralsorcery:itemcraftingcomponent", 2))
     .register()
+
+// Restore unexpectedly missing Starmetal recipe from dust
+furnace.recipeBuilder()
+    .input(item("astralsorcery:itemcraftingcomponent", 2))
+    .output(item("astralsorcery:itemcraftingcomponent", 1))
+    .register()

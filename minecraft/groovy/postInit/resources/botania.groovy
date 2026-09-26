@@ -1,4 +1,4 @@
-import classes.AlloyHelper
+import classes.MachineHelper
 
 //// Quartzline
 // Mana Quartz
@@ -28,7 +28,7 @@ mods.nuclearcraft.infuser.builder()
 
 // Red Quartz
 crafting.remove("botania:quartz_4")
-AlloyHelper.builder()
+MachineHelper.alloy()
     .minTier(2)
     .input(item("botania:quartz", 2), item("essentialcraft:elementalfuel"))
     .output(item("botania:quartz", 4))
@@ -124,7 +124,7 @@ mods.botania.mana_infusion.recipeBuilder()
 
 // Gaia Ingot
 crafting.removeByOutput(item("botania:manaresource", 14))
-AlloyHelper.builder()
+MachineHelper.alloy()
     .minTier(4)
     .input(item("kami:ichorium_ingot"), item("botania:manaresource", 5) * 4, item("thaumcraft:ingot", 1) * 2)
     .output(item("botania:manaresource", 14))

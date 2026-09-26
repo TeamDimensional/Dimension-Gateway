@@ -134,7 +134,7 @@ TooltipEvents.setModTier("kamitesque", 10)
 def predicateBook = stack -> {
     return stack in gitem("augment_builder_power").withNbt(["id": "thaumicaugmentation:strength_emptiness"])
 }
-TooltipEvents.addTierPredicate("emptiness", predicateBook, 14)
+TooltipEvents.addTierPredicate("emptiness", predicateBook, 9)
 
 for (def it in tier1Items) TooltipEvents.setTier(it, 1)
 for (def it in tier2Items) TooltipEvents.setTier(it, 2)

@@ -56,7 +56,7 @@ def devTools = [
 // Per-multiblock
 def theGate = []
 for (def i in 0..5) theGate.add(citem("blockcasing", i))
-def corruptionAltar = [aitem("blockfluxproviderinput"), aitem("blockpotentialenergyproviderinput")]
+def mysticalCombiner = [aitem("blockfluxproviderinput"), aitem("blockpotentialenergyproviderinput"), aitem("blockvisproviderinput")]
 def rainbowColoringStation = [aitem("blockradiationproviderinput"), aitem("radiationsponge")]
 def largeScrubber = [aitem("blockscrubberproviderinput"), mitem("blockmanaproviderinput")]
 def thaumicCentrifuge = [mitem("blockmanaproviderinput"), mitem("blockaspectprovideroutput")]
@@ -136,7 +136,7 @@ crafting.remove("modularmachinery:fluid_output_small")
 // Applying
 for (def it in removed) GatewayHelpers.hide(it)
 for (def it in devTools) TooltipEvents.setTier(it, 0)
-for (def it in corruptionAltar) TooltipEvents.setTier(it, 13)
+for (def it in mysticalCombiner) TooltipEvents.setTier(it, 13)
 for (def it in rainbowColoringStation) TooltipEvents.setTier(it, 12)
 for (def it in largeScrubber) TooltipEvents.setTier(it, 11)
 for (def it in thaumicCentrifuge) TooltipEvents.setTier(it, 10)

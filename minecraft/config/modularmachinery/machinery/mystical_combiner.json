@@ -1,0 +1,759 @@
+{
+    "color": "100816",
+    "registryname": "mystical_combiner",
+    "localizedname": "Mystical Combiner",
+    "parts": [
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "thaumicaugmentation:stone@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "mystical_combiner_input_hatch"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "reinforced_energy_input"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "embers:archaic_light@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "mystical_combiner_env_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "thaumicaugmentation:stone@11"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "mystical_combiner_env_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "kami:ichorium_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "kami:ichorium_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "kami:ichorium_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@4",
+                "mmce_complement:me_connection_share_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "reinforced_item_output"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "thaumicaugmentation:starfield_glass@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "botania:storage@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "essentialcraft:platingpale@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "kami:ichorium_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "embers:archaic_light@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "essentialcraft:magicplating@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "mystical_combiner_env_hatch"
+            ]
+        }
+    ]}

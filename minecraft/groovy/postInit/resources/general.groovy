@@ -161,3 +161,21 @@ for (def it in newAlloys) {
         .energy(2000)
         .register()
 }
+
+mods.actuallyadditions.atomic_reconstructor.recipeBuilder()
+    .input(item("factorytech:ingot", 6))
+    .output(item("thermalfoundation:material", 128))
+    .energy(100)
+    .register()
+
+mods.actuallyadditions.atomic_reconstructor.recipeBuilder()
+    .input(item("factorytech:ingot", 7))
+    .output(item("thermalfoundation:material", 133))
+    .energy(100)
+    .register()
+
+mods.embers.melter.removeByInput(item("minecraft:sugar"))
+mods.embers.melter.recipeBuilder()
+    .input(item("minecraft:sugar"))
+    .fluidOutput(fluid("sugar") * 144)
+    .register()

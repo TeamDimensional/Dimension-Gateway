@@ -2,11 +2,18 @@ package classes
 
 import com.cleanroommc.groovyscript.api.IIngredient
 
-class AlloyHelper {
+class MachineHelper {
     static void run() {}
 
-    public static AlloyHelperBuilder builder() {
+    public static AlloyHelperBuilder alloy() {
         return new AlloyHelperBuilder()
+    }
+    public static CrushingHelperBuilder crushing() {
+        return new CrushingHelperBuilder()
+    }
+
+    public static CrystallizerHelperBuilder crystallization() {
+        return new CrystallizerHelperBuilder()
     }
 
     static class AlloyHelperBuilder {
@@ -93,6 +100,84 @@ class AlloyHelper {
                 this.arArcBuilder.register()
             if (this.minTier <= 5 && this.maxTier >= 5 && this.inputCount <= 3)
                 this.eioBuilder.register()
+        }
+    }
+
+    static class CrushingHelperBuilder {
+        def rotaryGrinderBuilder = null
+        def hasChancedOutput = false
+        
+        def factoryTechBuilder = null
+        def immersiveBuilder = null
+        def aaBuilder = null
+
+        CrushingHelperBuilder() {
+            this.immersiveBuilder = mods.immersiveengineering.crusher.recipeBuilder()
+            this.factoryTechBuilder = mods.factorytech.ore_drill.recipeBuilder()
+            this.aaBuilder = mods.actuallyadditions.crusher.recipeBuilder()
+            this.rotaryGrinderBuilder = mods.prodigytech.rotary_grinder.recipeBuilder()
+        }
+
+        CrushingHelperBuilder input(IIngredient item) {
+            this.immersiveBuilder.input(item)
+            this.factoryTechBuilder.input(item)
+            this.aaBuilder.input(item)
+            this.rotaryGrinderBuilder.input(item)
+            return this
+        }
+
+        CrushingHelperBuilder output(ItemStack item) {
+            this.immersiveBuilder.output(item)
+            this.factoryTechBuilder.output(item)
+            this.aaBuilder.output(item)
+            this.rotaryGrinderBuilder.output(item)
+            return this
+        }
+
+        CrushingHelperBuilder chancedOutput(ItemStack item, float chance) {
+            this.immersiveBuilder.secondaryOutput(item, chance)
+            this.aaBuilder.output(item).chance((int) (chance * 100))
+            this.hasChancedOutput = true
+            return this
+        }
+
+        void register() {
+            this.immersiveBuilder.register()
+            this.aaBuilder.register()
+            if (!this.hasChancedOutput) {
+                this.factoryTechBuilder.register()
+                this.rotaryGrinderBuilder.register()
+            }
+        }
+    }
+
+    static class CrystallizerHelperBuilder {
+        // NC: default time 80 seconds, 10 RF/t (max speed multiplier: 65 -> 25 ticks per recipe @ 700 RF/t)
+        // AR: default time 4 seconds, x4 parallel, 128 RF/t, has no upgrades
+
+        def ncBuilder = null
+        def arBuilder = null
+
+        CrystallizerHelperBuilder() {
+            this.ncBuilder = mods.nuclearcraft.crystallizer.builder()
+            this.arBuilder = mods.advancedrocketry.crystallizer.recipeBuilder().time(80).power(128)
+        }
+
+        CrystallizerHelperBuilder fluidInput(IIngredient item) {
+            this.ncBuilder.fluidInput(item)
+            this.arBuilder.fluidInput(item * (item.getAmount() * 4))
+            return this
+        }
+
+        CrystallizerHelperBuilder output(ItemStack item) {
+            this.ncBuilder.output(item)
+            this.arBuilder.output(item * (item.getAmount() * 4))
+            return this
+        }
+
+        void register() {
+            this.ncBuilder.register()
+            this.arBuilder.register()
         }
     }
 }

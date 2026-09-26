@@ -1,9 +1,8 @@
-import classes.AlloyHelper
-import classes.MetalworksHelper
+import classes.MachineHelper
 
 // Zorrasteel
 crafting.remove("prodigytech:materials/zorrasteel_raw")
-AlloyHelper.builder()
+MachineHelper.alloy()
     .output(item("prodigytech:zorrasteel_raw") * 2)
     .input(item("thermalfoundation:material", 160), item("thaumcraft:ingot"), item("prodigytech:zorra_leaf") * 8)
     .timeMultiplier(1.5)

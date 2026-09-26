@@ -1,4 +1,4 @@
-import classes.AlloyHelper
+import classes.MachineHelper
 
 // Seared Brick
 furnace.removeByOutput(item("tconstruct:materials"))

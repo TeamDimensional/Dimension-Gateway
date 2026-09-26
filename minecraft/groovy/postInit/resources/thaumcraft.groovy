@@ -1,4 +1,4 @@
-import classes.CrushingHelper
+import classes.MachineHelper
 
 // Salis Mundus
 crafting.removeByOutput(item("thaumcraft:salis_mundus"))
@@ -10,7 +10,7 @@ mods.roots.fey_crafter.recipeBuilder()
     .xp(20)
     .register()
 
-CrushingHelper.builder()
+MachineHelper.crushing()
     .input(item("theaurorian:moongem"))
     .output(item("gateway:moonlight_powder") * 2)
     .register()
@@ -41,4 +41,34 @@ mods.advancedrocketry.crystallizer.recipeBuilder()
     .output(item("thaumicaugmentation:strange_crystal") * 2)
     .power(400)
     .time(160)
+    .register()
+
+// Ichor
+mods.thaumcraft.infusion_crafting.removeByOutput(item("kami:ichor"))
+mods.embers.alchemy.recipeBuilder()
+    .input(item("botania:storage", 3), item("thaumcraft:primordial_pearl"), item("essentialcraft:genitem", 23), item("ee:plate"), item("crimsonrevelations:crimson_fabric"))
+    .output(item("kami:ichor_block"))
+    .setAspect("overworld", 16, 24)
+    .setAspect("nether", 16, 24)
+    .setAspect("ender", 16, 24)
+    .setAspect("emptiness", 16, 24)
+    .register()
+
+// cheaper Ichorium
+mods.thaumcraft.infusion_crafting.recipeBuilder()
+    .researchKey("KAMI_ICHORIUM")
+    .mainInput(item("essentialcraft:voidstone"))
+    .output(item("kami:ichorium_block"))
+    .aspect(aspect("aer") * 25, aspect("terra") * 25, aspect("ignis") * 25, aspect("aqua") * 25, aspect("metallum") * 50)
+    .input(item("kami:ichor"))
+    .input(item("kami:ichor"))
+    .input(item("kami:ichor"))
+    .input(item("kami:ichor"))
+    .input(item("thaumcraft:phial", 1).withNbt(["Aspects": [["key": "potentia", "amount": 10]]]))
+    .input(item("thaumcraft:salis_mundus"))
+    .input(item("thaumcraft:salis_mundus"))
+    .input(item("thaumcraft:salis_mundus"))
+    .input(item("thaumcraft:salis_mundus"))
+    .input(item("thaumcraft:phial", 1).withNbt(["Aspects": [["key": "desiderium", "amount": 10]]]))
+    .instability(20)
     .register()

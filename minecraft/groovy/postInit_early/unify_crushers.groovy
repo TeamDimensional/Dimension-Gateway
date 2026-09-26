@@ -1,5 +1,5 @@
 // priority: 101
-import classes.CrushingHelper
+import classes.MachineHelper
 
 mods.actuallyadditions.crusher.removeAll()
 mods.factorytech.ore_drill.removeAll()
@@ -31,22 +31,19 @@ mods.factorytech.ore_drill.recipeBuilder()
     .register()
 
 // Add Niter for alternate source of gunpowder
-CrushingHelper.builder()
-    .name("sandstone_to_niter")
+MachineHelper.crushing()
     .input(item("minecraft:sandstone:*"))
     .output(item("minecraft:sand") * 2)
     .chancedOutput(item("thermalfoundation:material", 772), 0.5)
     .register()
-CrushingHelper.builder()
-    .name("red_sandstone_to_niter")
+MachineHelper.crushing()
     .input(item("minecraft:red_sandstone:*"))
     .output(item("minecraft:sand", 1) * 2)
     .chancedOutput(item("thermalfoundation:material", 772), 0.5)
     .register()
 
 // Add Blaze Rod crushing
-CrushingHelper.builder()
-    .name("blaze_rod")
+MachineHelper.crushing()
     .input(item("minecraft:blaze_rod"))
     .output(item("minecraft:blaze_powder") * 4)
     .chancedOutput(item("thermalfoundation:material", 771), 0.5)
@@ -117,8 +114,7 @@ for (def i in [0, 1, 2, 6, 7, 8, 11, 12, 13, 14, 15]) recipes.add([item("qmd:ing
 for (def i in 0..1) recipes.add([item("qmd:ingot2", i), item("qmd:dust2", i)])
 
 for (def x in recipes) {
-    CrushingHelper.builder()
-        .name(x[0].toString())
+    MachineHelper.crushing()
         .input(x[0])
         .output(x[1])
         .register()

@@ -1,4 +1,4 @@
-import classes.AlloyHelper
+import classes.MachineHelper
 import com.dimensional.gatewaycore.events.TooltipEvents
 
 // Starsteel
@@ -8,12 +8,12 @@ def citem(name, k=0) {
 
 ore("ingotStarsteel").add(citem("starsteel_ingot"))
 
-AlloyHelper.builder()
+MachineHelper.alloy()
     .input(ore("ingotZorrasteel"), ore("ingotAstralStarmetal"), ore("dustDiamond"))
     .output(citem("starsteel_ingot") * 2)
     .register()
 
-AlloyHelper.builder()
+MachineHelper.alloy()
     .input(ore("ingotManasteel"), ore("ingotAstralStarmetal"), item("naturesaura:sky_ingot"))
     .output(citem("starsteel_ingot") * 5)
     .timeMultiplier(1.5)
@@ -43,11 +43,10 @@ mods.soot.alchemical_mixer.recipeBuilder()
         .fluidOutput(fluid("blaze_superfuel") * 120)
         .setAspect("copper", 2, 4)
         .register()
-mods.embers.alchemy.addAspect("destabilized", item("thermalfoundation:material", 893))
 mods.soot.alchemical_mixer.recipeBuilder()
         .fluidInput(fluid("blazing_blood") * 20, fluid("napalm") * 80, fluid("gas_dwarf") * 40, fluid("empoweredoil") * 100)
         .fluidOutput(fluid("blaze_superfuel") * 400)
-        .setAspect("destabilized", 8, 16)
+        .setAspect("frenzy", 8, 16)
         .register()
 
 // Wilted Daisy
@@ -93,7 +92,7 @@ mods.actuallyadditions.empowerer.recipeBuilder()
     .energy(20000)
     .register()
 
-mods.nuclearcraft.crystallizer.builder()
+MachineHelper.crystallization()
     .fluidInput(fluid("liquid_enlightenment") * 80)
     .output(item("gateway:crystallized_enlightenment"))
     .register()

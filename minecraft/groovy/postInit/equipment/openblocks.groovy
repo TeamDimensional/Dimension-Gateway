@@ -1,4 +1,4 @@
-import classes.AlloyHelper
+import classes.MachineHelper
 
 // Hang Glider
 crafting.remove("openblocks:hang_glider_0")
@@ -42,7 +42,7 @@ crafting.shapedBuilder()
         .register()
 
 crafting.remove("openblocks:line_0")
-AlloyHelper.builder()
+MachineHelper.alloy()
     .output(item("openblocks:generic", 5))
     .input(item("minecraft:string"), item("roots:runic_dust") * 2)
     .register()

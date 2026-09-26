@@ -52,6 +52,13 @@
         "modularmachinery:blockinputbus@6",
         "modularmachinery:blockmeiteminputbus"
     ],
+    "reinforced_energy_input": [
+        "modularmachinery:blockenergyinputhatch@3",
+        "modularmachinery:blockenergyinputhatch@4",
+        "modularmachinery:blockenergyinputhatch@5",
+        "modularmachinery:blockenergyinputhatch@6",
+        "modularmachinery:blockenergyinputhatch@7"
+    ],
     "reinforced_item_output": [
         "modularmachinery:blockoutputbus@3",
         "modularmachinery:blockoutputbus@4",
@@ -63,5 +70,14 @@
         "modularmachinery:blockinputbus@1",
         "modularmachinery:blockoutputbus@1",
         "modularmachinery:blockenergyinputhatch"
+    ],
+    "mystical_combiner_env_hatch": [
+        "modularmachineryaddons:blockvisproviderinput",
+        "modularmachineryaddons:blockfluxproviderinput",
+        "modularmachineryaddons:blockpotentialenergyproviderinput"
+    ],
+    "mystical_combiner_input_hatch": [
+        "mmce_complement:input_assembly_hatch@3",
+        "mmce_complement:input_assembly_hatch@4"
     ]
 }
