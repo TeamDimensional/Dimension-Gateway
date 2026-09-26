@@ -5,18 +5,19 @@ import com.cleanroommc.groovyscript.api.IIngredient
 class MachineHelper {
     static void run() {}
 
-    public static AlloyHelperBuilder alloy() {
-        return new AlloyHelperBuilder()
-    }
-    public static CrushingHelperBuilder crushing() {
-        return new CrushingHelperBuilder()
+    public static AlloyBuilder alloy() {
+        return new AlloyBuilder()
     }
 
-    public static CrystallizerHelperBuilder crystallization() {
-        return new CrystallizerHelperBuilder()
+    public static CrusherBuilder crushing() {
+        return new CrusherBuilder()
     }
 
-    static class AlloyHelperBuilder {
+    public static CrystallizerBuilder crystallization() {
+        return new CrystallizerBuilder()
+    }
+
+    static class AlloyBuilder {
         // Kiln: default time 10 seconds
         // Arc: default time 5 seconds, energy 256 RF/t
         // Induction: default energy 4000 RF (consumption 600 RF/t max at x1.9 energy -> 13 ticks per recipe @ 600 RF/t)
@@ -35,7 +36,7 @@ class MachineHelper {
         def minTier = 0
         def maxTier = 5
 
-        AlloyHelperBuilder() {
+        AlloyBuilder() {
             this.kilnBuilder = mods.immersiveengineering.alloy_kiln.recipeBuilder()
             this.ieArcBuilder = mods.immersiveengineering.arc_furnace.recipeBuilder().ores().energyPerTick(256)
             this.eioBuilder = mods.enderio.alloy_smelter.recipeBuilder()
@@ -45,17 +46,17 @@ class MachineHelper {
             timeMultiplier(1.0)
         }
 
-        AlloyHelperBuilder minTier(int minTier) {
+        AlloyBuilder minTier(int minTier) {
             this.minTier = minTier
             return this
         }
 
-        AlloyHelperBuilder maxTier(int maxTier) {
+        AlloyBuilder maxTier(int maxTier) {
             this.maxTier = maxTier
             return this
         }
 
-        AlloyHelperBuilder input(IIngredient... items) {
+        AlloyBuilder input(IIngredient... items) {
             inputCount += items.length
             this.kilnBuilder.input(items)
             this.ieArcBuilder.input(items)
@@ -66,7 +67,7 @@ class MachineHelper {
             return this
         }
 
-        AlloyHelperBuilder timeMultiplier(double multiplier) {
+        AlloyBuilder timeMultiplier(double multiplier) {
             this.kilnBuilder.time((int) (multiplier * 200))
             this.ieArcBuilder.time((int) (multiplier * 100))
             this.eioBuilder.energy((int) (multiplier * 3600))
@@ -76,7 +77,7 @@ class MachineHelper {
             return this
         }
 
-        AlloyHelperBuilder output(ItemStack... items) {
+        AlloyBuilder output(ItemStack... items) {
             this.kilnBuilder.output(items)
             this.ieArcBuilder.output(items)
             this.eioBuilder.output(items)
@@ -103,7 +104,7 @@ class MachineHelper {
         }
     }
 
-    static class CrushingHelperBuilder {
+    static class CrusherBuilder {
         def rotaryGrinderBuilder = null
         def hasChancedOutput = false
         
@@ -111,14 +112,14 @@ class MachineHelper {
         def immersiveBuilder = null
         def aaBuilder = null
 
-        CrushingHelperBuilder() {
+        CrusherBuilder() {
             this.immersiveBuilder = mods.immersiveengineering.crusher.recipeBuilder()
             this.factoryTechBuilder = mods.factorytech.ore_drill.recipeBuilder()
             this.aaBuilder = mods.actuallyadditions.crusher.recipeBuilder()
             this.rotaryGrinderBuilder = mods.prodigytech.rotary_grinder.recipeBuilder()
         }
 
-        CrushingHelperBuilder input(IIngredient item) {
+        CrusherBuilder input(IIngredient item) {
             this.immersiveBuilder.input(item)
             this.factoryTechBuilder.input(item)
             this.aaBuilder.input(item)
@@ -126,7 +127,7 @@ class MachineHelper {
             return this
         }
 
-        CrushingHelperBuilder output(ItemStack item) {
+        CrusherBuilder output(ItemStack item) {
             this.immersiveBuilder.output(item)
             this.factoryTechBuilder.output(item)
             this.aaBuilder.output(item)
@@ -134,7 +135,7 @@ class MachineHelper {
             return this
         }
 
-        CrushingHelperBuilder chancedOutput(ItemStack item, float chance) {
+        CrusherBuilder chancedOutput(ItemStack item, float chance) {
             this.immersiveBuilder.secondaryOutput(item, chance)
             this.aaBuilder.output(item).chance((int) (chance * 100))
             this.hasChancedOutput = true
@@ -151,25 +152,25 @@ class MachineHelper {
         }
     }
 
-    static class CrystallizerHelperBuilder {
+    static class CrystallizerBuilder {
         // NC: default time 80 seconds, 10 RF/t (max speed multiplier: 65 -> 25 ticks per recipe @ 700 RF/t)
         // AR: default time 4 seconds, x4 parallel, 128 RF/t, has no upgrades
 
         def ncBuilder = null
         def arBuilder = null
 
-        CrystallizerHelperBuilder() {
+        CrystallizerBuilder() {
             this.ncBuilder = mods.nuclearcraft.crystallizer.builder()
             this.arBuilder = mods.advancedrocketry.crystallizer.recipeBuilder().time(80).power(128)
         }
 
-        CrystallizerHelperBuilder fluidInput(IIngredient item) {
+        CrystallizerBuilder fluidInput(IIngredient item) {
             this.ncBuilder.fluidInput(item)
             this.arBuilder.fluidInput(item * (item.getAmount() * 4))
             return this
         }
 
-        CrystallizerHelperBuilder output(ItemStack item) {
+        CrystallizerBuilder output(ItemStack item) {
             this.ncBuilder.output(item)
             this.arBuilder.output(item * (item.getAmount() * 4))
             return this
