@@ -181,7 +181,6 @@ TooltipEvents.setTier(item("enderio:item_material", 30), 6)
 TooltipEvents.setTier(item("enderio:item_material", 31), 6)
 
 mods.enderio.tank.removeFill(fluid("nutrient_distillation"), mitem("item_material", 8))
-mods.tconstruct.melting.removeByOutput(fluid("construction_alloy"))
 crafting.remove("enderio:capacitor_crystalline_alt")
 
 // Rewrite Hootch recipe because it causes client crashes due to items being removed from dustWheat.

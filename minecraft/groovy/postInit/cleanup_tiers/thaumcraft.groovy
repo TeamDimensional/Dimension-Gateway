@@ -44,7 +44,7 @@ def mainItems = [
     mitem("hand_mirror"), mitem("verdant_charm"), mitem("charm_undying"),
     witem("everburning_urn"), witem("ore_diviner"),
     witem("bone_bow"), witem("flying_carpet"), witem("timewinder"), witem("shimmerleaf_seed"), witem("cinderpearl_seed"), witem("vishroom_spore"),
-    witem("night_vision_goggles"), witem("sharing_tome"), citem("crafter_placeholder"),
+    witem("night_vision_goggles"), witem("sharing_tome"), citem("crafter_placeholder"), witem("infusion_claw"),
 ]
 
 def astralItems = [
@@ -66,7 +66,7 @@ def crimsonItems = [
     ritem("crimson_archer_helmet"), ritem("crimson_archer_chestplate"), ritem("crimson_archer_leggings"),
     mitem("crimson_blade"), mitem("crimson_plate_helm"), mitem("crimson_plate_chest"), mitem("crimson_plate_legs"), mitem("crimson_boots"),
     mitem("crimson_robe_helm"), mitem("crimson_robe_chest"), mitem("crimson_robe_legs"), mitem("crimson_praetor_helm"),
-    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"), witem("infusion_claw"),
+    mitem("crimson_praetor_chest"), mitem("crimson_praetor_legs"),
 ]
 
 def hoannaItems = [

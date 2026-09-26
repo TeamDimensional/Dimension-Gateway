@@ -1,3 +1,5 @@
+import classes.MachineHelper
+
 /*
 Byproduct 1 - tier 3
 Byproduct 2 - tier 4
@@ -127,6 +129,15 @@ outputFluids = [  // overrides from default fluid(name) * 144
     "Quartz": fluid("quartz") * 666,
 ]
 
+outputFluidsInSmeltery = [  // overrides from default fluid(name) * 160
+    "Redstone": fluid("redstone") * 500,
+    "Coal": fluid("coal") * 120,
+    "Diamond": fluid("diamond") * 888,
+    "Lapis": fluid("lapis") * 4440,
+    "Emerald": fluid("emerald") * 888,
+    "Quartz": fluid("quartz") * 888,
+]
+
 byproductFluidAmounts = [
     "Redstone": 60,
     "Coal": 20,
@@ -136,12 +147,18 @@ byproductFluidAmounts = [
     "Quartz": 148,
 ]
 
-
 def getOutputFluid(name) {
     nameSnakeCase = name.replaceAll(/(?<!^)([A-Z])/, '_$1').toLowerCase()
     if (outputFluids[name])
         return outputFluids[name]
     return fluid(nameSnakeCase) * 144
+}
+
+def getOutputFluidInSmeltery(name) {
+    nameSnakeCase = name.replaceAll(/(?<!^)([A-Z])/, '_$1').toLowerCase()
+    if (outputFluids[name])
+        return outputFluidsInSmeltery[name]
+    return fluid(nameSnakeCase) * 160
 }
 
 mods.essentialcraft.magmatic_smeltery.removeAll()
@@ -251,49 +268,35 @@ def addOre(key, byproducts, addFluidOps) {
         .register()
 
     if (addFluidOps) {
-        // Stage 5: Dirty Dust -> Solution
-        def fluidSolution = fluid("solution_" + snakeCase)
+        // Stage 5 F: Dirty Dust -> Fluid
         def fluidByproduct = getOutputFluid(byproducts[2]) * byproductFluidAmounts.get(byproducts[2], 32)
         def fluidOut = getOutputFluid(key)
 
-        mods.embers.melter.recipeBuilder()
-            .input(itemCluster | itemCrystal | itemShard | itemDirty)
-            .fluidOutput(fluidSolution * 160, fluidByproduct)
+        MachineHelper.melting()
+            .input(itemOre | itemCluster | itemCrystal | itemShard | itemDirty)
+            .fluidOutput(fluidOut)
+            .byproduct(fluidByproduct)
+            .minTier(1)
             .register()
-        
-        // TODO: this is currently bugged in NCO
-        /*
+
+        // Get more from Smeltery
+        MachineHelper.melting()
+            .input(itemOre)
+            .fluidOutput(fluidOut * (fluidOut.getAmount() * 2))
+            .maxTier(0)
+            .register()
+
+        MachineHelper.melting()
+            .input(itemCluster | itemCrystal | itemShard | itemDirty)
+            .fluidOutput(getOutputFluidInSmeltery(key))
+            .maxTier(0)
+            .register()
+
         mods.nuclearcraft.enricher.builder()
             .input(itemOre | itemCluster | itemCrystal | itemShard | itemDirty)
             .fluidInput(fluid("hydrofluoric_acid") * 125)
-            .fluidOutput(fluidSolution * 216)
+            .fluidOutput(fluidOut * (fluidOut.getAmount() * 3 / 2))
             .register()
-        */
-        def ncoInputOre = ore("nuclearcraftInput" + key)
-        for (def x in [itemOre, itemCluster, itemCrystal, itemShard, itemDirty]) {
-            ncoInputOre.add(x)
-        }
-        mods.nuclearcraft.enricher.builder()
-            .input(ncoInputOre)
-            .fluidInput(fluid("hydrofluoric_acid") * 125)
-            .fluidOutput(fluidSolution * 216)
-            .register()
-
-        mods.embers.mixer.recipeBuilder()
-            .fluidInput(fluidSolution * 144, fluid("water") * 1000)
-            .fluidOutput(fluidOut)
-            .register()
-
-        // Stage 6: Dirty Dust/Solution -> Molten
-        for (def it in [itemOre, itemCluster, itemCrystal, itemShard, itemDirty]) {
-            mods.tconstruct.melting.recipeBuilder()
-                .input(it)
-                .fluidOutput(fluidOut)
-                .time(160)
-                .register()
-        }
-        
-        // TODO: industrial centrifuge
     }
 
     // Stage 5: Dirty Dust -> Ingot

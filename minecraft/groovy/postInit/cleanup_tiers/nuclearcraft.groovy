@@ -62,7 +62,6 @@ def tier4Items = [
 
 def tier7Items = [mitem("gem", 6)]
 def thermalItems = [
-    mitem("roasted_cocoa_beans"), mitem("ground_cocoa_nibs"),
     // emerald oreproc for early beryllium
     mitem("dust", 9),
 ]

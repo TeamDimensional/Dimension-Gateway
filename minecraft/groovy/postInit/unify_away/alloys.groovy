@@ -356,12 +356,14 @@ MachineHelper.alloy()  // NbTi
     .timeMultiplier(2)
     .register()
 
-inWorldCrafting.fluidToItem.recipeBuilder()  // OsIr
-        .fluidInput(fluid("plasma"), 0.0f)
-        .input(item("qmd:ingot", 8))
-        .input(item("thermalfoundation:material", 135))
-        .output(item("qmd:ingot_alloy", 4) * 2)
-        .register()
+mods.advancedrocketry.electric_arc_furnace.recipeBuilder()  
+    .power(512)
+    .time(200)
+    .input(item("qmd:ingot", 8) * 4)
+    .input(item("thermalfoundation:material", 135) * 4)
+    .fluidInput(fluid("plasma") * 10)
+    .output(item("qmd:ingot_alloy", 4) * 8)
+    .register()
 
 MachineHelper.alloy()  // Super Alloy
     .input(item("qmd:ingot_alloy", 5), item("qmd:ingot_alloy", 3), item("abyssalcraft:abyingot"))

@@ -1,6 +1,7 @@
 package classes
 
 import com.cleanroommc.groovyscript.api.IIngredient
+import net.minecraftforge.fluids.FluidStack
 
 class MachineHelper {
     static void run() {}
@@ -15,6 +16,10 @@ class MachineHelper {
 
     public static CrystallizerBuilder crystallization() {
         return new CrystallizerBuilder()
+    }
+
+    public static MeltingBuilder melting() {
+        return new MeltingBuilder()
     }
 
     static class AlloyBuilder {
@@ -179,6 +184,92 @@ class MachineHelper {
         void register() {
             this.ncBuilder.register()
             this.arBuilder.register()
+        }
+    }
+
+    static class MeltingBuilder {
+        // Embers melter: 40 ticks without upgrades, 10 ticks with upgrades
+        // FT Crucible: 15 ticks with max upgrades
+        // Magma Crucible: default energy 8000 RF (consumption 1200 RF/t max at x1.9 energy -> 13 ticks per recipe @ 1200 RF/t)
+        // NC: default time 40 seconds, 40 RF/t (max speed multiplier: 65 -> 14 ticks per recipe @ 2800 RF/t)
+
+        def tconstructBuilders = null
+        def embersBuilder = null
+        def ftBuilder = null
+        def thermalBuilder = null
+        def ncBuilder = null
+
+        def minTier = 0
+        def maxTier = 3
+        def timeMultiplier = 1.0
+
+        MeltingBuilder() {
+            this.tconstructBuilders = []
+            this.embersBuilder = mods.embers.melter.recipeBuilder()
+            this.ftBuilder = mods.factorytech.crucible.recipeBuilder()
+            this.thermalBuilder = mods.thermalexpansion.crucible.recipeBuilder().energy(8000)
+            this.ncBuilder = mods.nuclearcraft.melter.builder()
+        }
+
+        MeltingBuilder minTier(int minTier) {
+            this.minTier = minTier
+            return this
+        }
+
+        MeltingBuilder maxTier(int maxTier) {
+            this.maxTier = maxTier
+            return this
+        }
+
+        MeltingBuilder timeMultiplier(double multiplier) {
+            this.timeMultiplier = multiplier
+            this.thermalBuilder.energy((int) (8000 * multiplier))
+            this.ncBuilder.timeMultiplier(multiplier)
+            return this
+        }
+
+        MeltingBuilder input(IIngredient it) {
+            for (def inputItem in it.getMatchingStacks()) {
+                def builder = mods.tconstruct.melting.recipeBuilder()
+                builder.input(inputItem)
+                this.tconstructBuilders.add(builder)
+            }
+            this.embersBuilder.input(it)
+            this.ftBuilder.input(it)
+            this.thermalBuilder.input(it)
+            this.ncBuilder.input(it)
+            return this
+        }
+
+        MeltingBuilder fluidOutput(FluidStack it) {
+            for (def builder in this.tconstructBuilders) {
+                builder.fluidOutput(it)
+                builder.temperature((int) ((it.getAmount() / 1296.0) ** 0.31546487678 * (it.fluid.temperature - 300)) + 300)
+            }
+            this.embersBuilder.fluidOutput(it)
+            this.ftBuilder.fluidOutput(it)
+            this.thermalBuilder.fluidOutput(it)
+            this.ncBuilder.fluidOutput(it)
+            return this
+        }
+
+        MeltingBuilder byproduct(FluidStack it) {
+            this.embersBuilder.fluidOutput(it)
+            return this
+        }
+
+        void register() {
+            if (this.minTier <= 0 && this.maxTier >= 0)
+                for (def builder in this.tconstructBuilders)
+                    builder.register()
+            if (this.minTier <= 1 && this.maxTier >= 1 && this.timeMultiplier <= 2)
+                this.embersBuilder.register()
+            if (this.minTier <= 2 && this.maxTier >= 2 && this.timeMultiplier <= 2)
+                this.ftBuilder.register()
+            if (this.minTier <= 2 && this.maxTier >= 2)
+                this.thermalBuilder.register()
+            if (this.minTier <= 3 && this.maxTier >= 3)
+                this.ncBuilder.register()
         }
     }
 }

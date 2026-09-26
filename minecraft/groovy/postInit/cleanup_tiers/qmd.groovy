@@ -10,7 +10,7 @@ def embersItems = [] // mitem("fluid_mercury")]
 def thermalItems = [mitem("fluid_silicon")]
 
 def chemistryItems = [
-    mitem("ore_leacher"), mitem("atmosphere_collector"), mitem("dust", 11), mitem("ingot", 11), mitem("liquid_collector"),
+    mitem("ore_leacher"), mitem("atmosphere_collector"), mitem("dust", 11), mitem("ingot", 11), mitem("liquid_collector"), mitem("ingot2", 2),
 ]
 for (def i in [3, 4]) chemistryItems.add(mitem("chemical_dust", i))
 for (def c in GatewayHelpers.qmdChemiFluids) chemistryItems.add(mitem("fluid_${c}"))

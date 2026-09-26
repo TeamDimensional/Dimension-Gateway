@@ -27,6 +27,7 @@ def requiresSmeltery = [
     mitem("ingots", 6), mitem("metal", 7),
     item("smelteryio:upgrade"), item("smelteryio:upgrade", 1), item("smelteryio:upgrade", 2), item("smelteryio:upgrade", 3), item("smelteryio:upgrade", 7),
     item("smelteryio:powdered_fuel"), item("smelteryio:machine", 1), item("smelteryio:machine", 2), item("smelteryio:machine", 3),
+    mitem("materials", 1), mitem("deco_ground"), mitem("deco_ground_slab"), mitem("mudbrick_stairs"),
 ]
 for (int i in 0..15) requiresSmeltery.add(mitem("clear_stained_glass", i))
 for (int i in 0..3) requiresSmeltery.add(mitem("cast_custom", i))
