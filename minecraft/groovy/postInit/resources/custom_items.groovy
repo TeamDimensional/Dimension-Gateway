@@ -126,3 +126,11 @@ mods.nuclearcraft.multiblock_infiltrator.builder()
 TooltipEvents.setTooltip(fluid("condensed_thoughts"), "tooltip.gateway.obtain.condensed_thoughts")
 TooltipEvents.setTooltip(fluid("liquid_enlightenment"), "tooltip.gateway.obtain.liquid_enlightenment")
 TooltipEvents.setTooltip(item("gateway:mindful_sand"), "tooltip.gateway.use.mindful_sand")
+
+// Pyro-Cinnabar Mixture
+mods.advancedrocketry.chemical_reactor.recipeBuilder()
+    .input(item("thermalfoundation:material", 866))
+    .fluidInput(fluid("pyrotheum") * 500)
+    .fluidOutput(fluid("pyro_cinnabar_mixture") * 500)
+    .power(128).time(200)
+    .register()

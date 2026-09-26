@@ -45,7 +45,7 @@ for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manawea
 
 def tier2Items = [
     mitem("terraformrod"), mitem("manamirror", 32767), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
-    mitem("terraaxe"), mitem("quartz", 6), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
+    mitem("terraaxe"), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
     mitem("storage", 1), mitem("terraplate"), mitem("cellblock"),
 ]
 for (int i in [4, 18]) tier2Items.add(mitem("manaresource", i))
@@ -65,7 +65,7 @@ for (int i in 0..7) {
 for (def it in equipmentItems) tier2Items.add(mitem("terrasteel${it}"))
 for (int i in 1..8) tier2Items.add(mitem("altar", i))
 
-def industrialTier = [mitem("quartz", 3), mitem("quartz", 4)] + getQuartzList("lavender") + getQuartzList("red") + getQuartzList("sunny")
+def industrialTier = [mitem("quartz", 3), mitem("quartz", 4), mitem("quartz", 6)] + getQuartzList("lavender") + getQuartzList("red") + getQuartzList("sunny")
 
 def gaiaDrops = [
     mitem("recordgaia1"), mitem("recordgaia2"), mitem("manaresource", 5)

@@ -23,7 +23,7 @@ crafting.remove("botania:quartz_2")
 mods.nuclearcraft.infuser.builder()
     .input(item("botania:quartz"))
     .output(item("botania:quartz", 2))
-    .fluidInput(fluid("pyro_cinnabar_mixture") * 100)
+    .fluidInput(fluid("inner_fire") * 100)
     .register()
 
 // Red Quartz

@@ -49,7 +49,7 @@ for (int i in [1024, 1025, 1026, 1027, 2048, 2049, 2050, 2051, 2052, 2053]) elem
 def industrialTierItems = []
 for (int i in [2, 3, 34, 35]) industrialTierItems.add(mitem("upgrade", i))
 
-def rocketryItems = [mitem("ore", 6)]
+def rocketryItems = [mitem("ore", 6), mitem("material", 866)]
 
 def rocketScienceItems = [mitem("storage", 7), mitem("storage", 8), mitem("ore", 7), mitem("ore", 8)]
 for (int i in 7..8) rocketScienceItems.add(mitem("glass", i))
@@ -66,7 +66,6 @@ def hideFromJei = [
 for (int i in 0..15) hideFromJei.add(mitem("dye", i))
 for (int i in 0..5) hideFromJei.add(mitem("ore_fluid", i))
 for (int i in [0, 1, 64, 65, 66, 67, 68, 69, 70, 71, 72, 96, 97, 98, 99, 100, 101, 102, 103]) hideFromJei.add(mitem("coin", i))
-for (int i in [866]) hideFromJei.add(mitem("material", i))
 
 for (def it in tinItems) TooltipEvents.setTier(it, 2)
 for (def it in metallurgyItems) TooltipEvents.setTier(it, 3)
