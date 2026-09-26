@@ -21,7 +21,7 @@ mods.immersiveengineering.blast_furnace.removeByOutput(item("immersiveengineerin
 mods.immersiveengineering.blast_furnace.recipeBuilder()
     .input(item("minecraft:iron_ingot"))
     .output(item("thermalfoundation:material", 160))
-    .time(1200)
+    .time(400)
     .slag(item("thermalfoundation:material", 864))
     .register()
 
@@ -29,7 +29,7 @@ mods.immersiveengineering.blast_furnace.removeByOutput(item("immersiveengineerin
 mods.immersiveengineering.blast_furnace.recipeBuilder()
     .input(item("minecraft:iron_block"))
     .output(item("immersiveengineering:storage", 8))
-    .time(9600)
+    .time(3200)
     .slag(item("thermalfoundation:material", 864) * 9)
     .register()
 
