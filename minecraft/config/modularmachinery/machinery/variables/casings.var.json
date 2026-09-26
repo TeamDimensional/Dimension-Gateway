@@ -39,10 +39,10 @@
     ],
     "reinforced_fluid_input": [
         "modularmachinery:blockfluidinputhatch@3",
-        "modularmachinery:blockfluidinputhatch@3",
-        "modularmachinery:blockfluidinputhatch@3",
-        "modularmachinery:blockfluidinputhatch@3",
-        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@4",
+        "modularmachinery:blockfluidinputhatch@5",
+        "modularmachinery:blockfluidinputhatch@6",
+        "modularmachinery:blockfluidinputhatch@7",
         "modularmachinery:blockmefluidinputbus"
     ],
     "reinforced_item_input": [
