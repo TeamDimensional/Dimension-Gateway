@@ -40,7 +40,6 @@ def oresMetallic = [
     "Nickel": ["Tin", "Iron", "Cobalt", "Platinum"],
     "Cobalt": ["Nickel", "Iron", "Ardite", "Tin"],
     "Ardite": ["Gold", "Cobalt", "Iron", "Platinum"],
-    "Titanium": ["Iron", "Aluminum", "Iron", "Ardite"],
     "Iridium": ["Platinum", "Cobalt", "Platinum", "Osmium"],
     "LiquifiedCoralium": ["Cobalt", "Titanium", "Platinum", "Diamond"],
     "AstralStarmetal": ["AstralStarmetal", "Iron", "Moonstone", "Platinum"],
@@ -62,6 +61,7 @@ def oresNonMetallic = [
     "Resonating": ["Redstone", "Lead", "Redstone", "Uranium"],
     "Amber": ["Amber", "AirElemental", "EarthElemental", "Ambrosium"],
     "Aquamarine": ["Aquamarine", "WaterElemental", "WaterElemental", "Aquamarine"],
+    "Titanium": ["Iron", "Aluminum", "Iron", "Ardite"],
 ]
 
 // First entry is a crusher byproduct (i.e. dust), second entry is a furnace output (i.e. ingot)
@@ -114,7 +114,7 @@ outputs = [
     "LiquifiedCoralium": [item("jaopca:dust.liquified_coralium"), item("abyssalcraft:cingot")],
     "Amber": [item("thaumcraft:amber"), item("thaumcraft:amber")],
     "Quartz": [item("minecraft:quartz"), item("minecraft:quartz")],
-    "Titanium": [item("libvulpes:productdust", 7), item("libvulpes:productingot", 7)],
+    "Titanium": [item("gateway:rutile_crystal"), item("gateway:rutile_crystal")],
     "Iridium": [item("thermalfoundation:material", 71), item("thermalfoundation:material", 135)],
     "Aquamarine": [item("astralsorcery:itemcraftingcomponent") * 2, item("astralsorcery:itemcraftingcomponent") * 2],
     "AstralStarmetal": [item("astralsorcery:itemcraftingcomponent", 2), item("astralsorcery:itemcraftingcomponent", 1)],

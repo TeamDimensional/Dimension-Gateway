@@ -45,6 +45,10 @@ TooltipEvents.setTier(citem("fengarum_shard"), 6)
 TooltipEvents.setTier(citem("ourium_shard"), 6)
 TooltipEvents.setTier(citem("ilium_shard"), 6)
 TooltipEvents.setTier(citem("mystical_metal_clump"), 13)
+TooltipEvents.setTier(citem("rutile_crystal"), 9)
+TooltipEvents.setTier(citem("clean_rutile_dust"), 9)
+TooltipEvents.setTier(citem("sintered_titania"), 9)
+TooltipEvents.setTier(citem("crude_titanium_matrix"), 9)
 
 def magicFuels = [
     ["natural", 11],

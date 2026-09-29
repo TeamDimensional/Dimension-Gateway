@@ -21,6 +21,10 @@ item.gateway.fengarum_shard.name=§6Fengarum Fragment
 item.gateway.ourium_shard.name=§6Ourium Fragment
 item.gateway.ilium_shard.name=§6Ilium Fragment
 item.gateway.mystical_metal_clump.name=Mystical Metal Clump
+item.gateway.rutile_crystal.name=Rutile Crystal
+item.gateway.clean_rutile_dust.name=Refined Rutile Dust
+item.gateway.sintered_titania.name=Sintered Titania
+item.gateway.crude_titanium_matrix.name=Crude Titanium Mesh
 
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.energetic_alloy_dust.name=Energetic Alloy Dust
@@ -58,7 +62,7 @@ item.jaopca.clump=%s Shard Pile
 item.jaopca.dirty_dust=Dirty %s Dust
 
 jaopca.material.Aether=Aetherium
-
+jaopca.material.Titanium=Rutile
 jaopca.material.Resonating=Technetium
 item.deepresonance.resonating_plate.name=Technetium Plate
 tile.deepresonance.resonating_ore.name=Technetium Ore
