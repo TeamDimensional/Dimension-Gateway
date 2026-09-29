@@ -35,6 +35,7 @@ def removeRecipes = [
     mitem("part_inventory_writer_item"),
     titem("part_importer_world_energy_item"),
     titem("part_exporter_world_energy_item"),
+    mitem("squeezer"), mitem("drying_basin"),
 ]
 
 def hideFromJei = [
