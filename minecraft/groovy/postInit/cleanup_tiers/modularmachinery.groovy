@@ -21,6 +21,7 @@ def removed = [
     mitem("itemmodularium"), citem("machine_glass"), citem("filtered_item_output_hatch"), citem("filtered_fluid_output_hatch"),
     citem("attachment_construct_tool"), citem("self_cycle_assembly_hatch"), citem("me_pattern_provider_ii"), citem("me_channel_input_hatch"),
     citem("me_full_exposure_assembly"), citem("redstone_control_hatch"), citem("redstone_signal_input_hatch"), citem("batch_hatch"),
+    citem("configurable_dimension_provider"),
 ]
 for (def i in 0..6) {
     removed.add(aitem("blocksingularityiteminputbus", i))
@@ -61,7 +62,7 @@ def rainbowColoringStation = [aitem("blockradiationproviderinput"), aitem("radia
 def largeScrubber = [aitem("blockscrubberproviderinput"), mitem("blockmanaproviderinput")]
 def thaumicCentrifuge = [mitem("blockmanaproviderinput"), mitem("blockaspectprovideroutput")]
 def resonantCaster = []
-def riftEmpowerer = [aitem("blockfluxprovideroutput"), aitem("blockbiomeproviderinput"), mitem("blockimpetusproviderinput")]
+def riftEmpowerer = [aitem("blockbiomeproviderinput"), mitem("blockimpetusproviderinput")]
 def networkSupercharger = []
 def starlightLaser = [mitem("blockstarlightproviderinput"), aitem("blockvisproviderinput")]
 def dawnstoneRefinery = [mitem("blockaspectproviderinput")]
@@ -124,6 +125,7 @@ def ae2 = [
     citem("me_ore_dict_input_bus"), citem("me_item_inventory_input_bus"), citem("me_fluid_inventory_input_bus"),
 ]
 def advancedAE2 = [citem("me_connection_share_hatch")]
+def biomeProvider = [citem("configurable_biome_provider"), citem("mechanical_binding_tool")]
 
 crafting.remove("modularmachinery:controller") // OP, can be any controller at 0 cost
 crafting.remove("modularmachinery:modularium_ingot")
@@ -153,4 +155,5 @@ for (def it in ae2) TooltipEvents.setTier(it, 8)
 for (def it in huge) TooltipEvents.setTier(it, 9)
 for (def it in thaumicAE2) TooltipEvents.setTier(it, 9)
 for (def it in advancedAE2) TooltipEvents.setTier(it, 10)
+for (def it in biomeProvider) TooltipEvents.setTier(it, 11)
 for (def it in theGate) TooltipEvents.setTier(it, 14)

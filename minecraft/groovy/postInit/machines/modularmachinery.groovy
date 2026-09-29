@@ -258,6 +258,35 @@ crafting.shapedBuilder()
     .output(item("mmce_complement:me_connection_share_hatch"))
     .register()
 
+// Biome Hatch
+crafting.shapedBuilder().mirrored()
+    .name("modular/biome")
+    .matrix("RFL", " V ", "E D")
+    .key("F", item("extrautils2:biomemarker"))
+    .key("V", item("modularmachinery:blockcasing"))
+    .key("R", item("actuallyadditions:item_crystal_empowered"))
+    .key("L", item("actuallyadditions:item_crystal_empowered", 1))
+    .key("D", item("actuallyadditions:item_crystal_empowered", 2))
+    .key("E", item("actuallyadditions:item_crystal_empowered", 4))
+    .output(item("modularmachineryaddons:blockbiomeproviderinput"))
+    .register()
+
+// Configurable Biome Hatch
+crafting.shapedBuilder()
+    .name("modular/configurable_biome")
+    .matrix("M M", " V ", "M M")
+    .key("M", ore("ingotNeptunium236All"))
+    .key("V", item("modularmachineryaddons:blockbiomeproviderinput"))
+    .output(item("mmce_complement:configurable_biome_provider"))
+    .register()
+crafting.shapedBuilder()
+    .name("modular/configurable_biome_tool")
+    .matrix("M M", " V ", "M M")
+    .key("M", ore("ingotAmericium243All"))
+    .key("V", item("minecraft:stick"))
+    .output(item("mmce_complement:mechanical_binding_tool"))
+    .register()
+
 ///// Controllers
 // Moonlight Fabricator
 crafting.shapedBuilder()
