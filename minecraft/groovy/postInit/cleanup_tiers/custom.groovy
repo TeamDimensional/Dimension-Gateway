@@ -4,12 +4,13 @@ def citem(name, k=0) {
     return item("gateway:${name}", k)
 }
 
-TooltipEvents.setTier(item("modularmachinery:natural_infuser_controller"), 6)
-TooltipEvents.setTier(item("modularmachinery:resonant_caster_controller"), 10)
 TooltipEvents.setTier(item("modularmachinery:moonlight_fabricator_controller"), 4)
-TooltipEvents.setTier(item("modularmachinery:network_supercharger_controller"), 8)
 TooltipEvents.setTier(item("modularmachinery:dawnstone_refinery_controller"), 5)
 TooltipEvents.setTier(item("modularmachinery:starlight_laser_controller"), 6)
+TooltipEvents.setTier(item("modularmachinery:natural_infuser_controller"), 6)
+TooltipEvents.setTier(item("modularmachinery:divinity_inverter_controller"), 7)
+TooltipEvents.setTier(item("modularmachinery:network_supercharger_controller"), 8)
+TooltipEvents.setTier(item("modularmachinery:resonant_caster_controller"), 10)
 TooltipEvents.setTier(item("modularmachinery:thaumic_centrifuge_controller"), 10)
 
 TooltipEvents.setTier(citem("resonating_gem"), 10)

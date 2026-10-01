@@ -403,6 +403,7 @@ modularmachinery.moonlight_fabricator=Moonlight Fabricator
 modularmachinery.resonant_caster=Resonant Caster
 modularmachinery.starlight_laser=Starlight Laser
 modularmachinery.thaumic_centrifuge=Thaumic Centrifuge
+modularmachinery.divinity_inverter=Divinity Inverter
 
 tile.modularmachinery.network_supercharger.desc.seconds=Fully charges the ME Controller blocks every %d seconds
 tile.modularmachinery.network_supercharger.desc.ticks=Fully charges the ME Controller blocks every %d ticks
@@ -426,6 +427,9 @@ tile.modularmachinery.starlight_laser.desc.current=Current state: %s
 tile.modularmachinery.starlight_laser.desc.next=Next state: %s
 tile.modularmachinery.starlight_laser.desc.currently_attuning=Attuning to %s...
 tile.modularmachinery.starlight_laser.desc.not_attuned=Not attuned
+tile.modularmachinery.divinity_inverter.desc=Item output is in form of mob drops, up to %d
+tile.modularmachinery.divinity_inverter.desc.demon_input=%s required on the Hell side
+tile.modularmachinery.divinity_inverter.desc.angel_input=%s required on the Heaven side
 
 ponder.chapter1.nether.name=Entering Nether
 ponder.chapter1.nether.tooltip=\n§oYour first venture to other worlds!§r

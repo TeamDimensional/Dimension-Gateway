@@ -1,7 +1,7 @@
 #reloadable
 
-import mods.modularmachinery.RecipeBuilder;
 import crafttweaker.text.ITextComponent;
+import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeCheckEvent;
 
 import native.hellfirepvp.modularmachinery.common.crafting.helper.RecipeCraftingContext;

@@ -79,5 +79,16 @@
     "mystical_combiner_input_hatch": [
         "mmce_complement:input_assembly_hatch@3",
         "mmce_complement:input_assembly_hatch@4"
+    ],
+    "divinity_inverter_hatch": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "modularmachinery:blockfluidinputhatch",
+        "mmce_complement:quad_fluid_input_hatch_tiny",
+        "modularmachinery:blockmefluidinputbus",
+        "mmce_complement:me_fluid_inventory_input_bus",
+        "mmce_complement:input_assembly_hatch",
+        "modularmachinery:blockcasing"
     ]
 }

@@ -1,10 +1,10 @@
 #reloadable
 
-import mods.modularmachinery.RecipeBuilder;
 import crafttweaker.text.ITextComponent;
-import mods.modularmachinery.RecipeTickEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.util.Position3f;
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeTickEvent;
 
 import native.appeng.api.config.PowerUnits;
 import native.appeng.api.config.Actionable;

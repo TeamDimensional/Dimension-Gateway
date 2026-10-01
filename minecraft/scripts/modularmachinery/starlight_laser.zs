@@ -2,18 +2,18 @@
 
 import crafttweaker.text.ITextComponent;
 import crafttweaker.item.IItemStack;
-
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeEvent;
 import mods.modularmachinery.RecipeTickEvent;
+import mods.modularmachinery.MMEvents;
+
 import native.com.dimensional.gatewaycore.mmce.MMCEUtils;
 import native.hellfirepvp.modularmachinery.common.crafting.helper.RequirementComponents;
 import native.hellfirepvp.modularmachinery.common.crafting.requirement.RequirementItem;
 import native.hellfirepvp.modularmachinery.common.machine.IOType;
 import native.net.minecraft.item.ItemStack;
-import mods.modularmachinery.MMEvents;
 
 RecipeBuilder.newBuilder("priming", "starlight_laser", 1200)
     .addItemInput(<essentialcraft:blockpale> * 16)

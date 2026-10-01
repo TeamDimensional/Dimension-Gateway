@@ -1,13 +1,14 @@
 #sideonly client
 #reloadable
 
+import crafttweaker.text.ITextComponent;
+import crafttweaker.util.Position3f;
 import mods.modularmachinery.ControllerGUIRenderEvent;
 import mods.modularmachinery.MMEvents;
-import crafttweaker.text.ITextComponent;
+
 import native.com.dimensional.gatewaycore.mmce.MMCEUtils;
-import native.hellfirepvp.modularmachinery.common.tiles.base.TileMultiblockMachineController;
 import native.de.ellpeck.actuallyadditions.mod.util.AssetUtil;
-import crafttweaker.util.Position3f;
+import native.hellfirepvp.modularmachinery.common.tiles.base.TileMultiblockMachineController;
 
 MMEvents.onControllerGUIRender("starlight_laser", function(event as ControllerGUIRenderEvent) {
     var state = null as string;

@@ -1,0 +1,1030 @@
+{
+    "color": "919191",
+    "registryname": "divinity_inverter",
+    "localizedname": "Divinity Inverter",
+    "parts": [
+        {
+            "x": 4,
+            "y": 8,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@2"
+            ]
+        },
+        {
+            "x": -10,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:carved_stairs@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "aether_legacy:dungeon_block@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "divinity_inverter_hatch"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@2"
+            ]
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@5"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "aether_legacy:hellfire_stairs@5"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "aether_legacy:enchanted_gravitite@0"
+            ]
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "aether_legacy:angelic_stairs@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "z": 3,
+            "elements": [
+                "aether_legacy:dungeon_block@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@3"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@7"
+            ]
+        },
+        {
+            "x": -10,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@3"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "aether_legacy:hellfire_stairs@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@2"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "extrautils2:simpledecorative@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@1"
+            ]
+        },
+        {
+            "x": -10,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@6"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "divinity_inverter_hatch"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@2"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@2"
+            ]
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "aether_legacy:dungeon_block@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:carved_stairs@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "aether_legacy:carved_stairs@3"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "aether_legacy:hellfire_stairs@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "soot:archaic_big_bricks_stairs@0"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@6"
+            ]
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@5"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "z": 2,
+            "elements": [
+                "soot:caminite_tiles_stairs@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "tconstruct:metal@1"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@2"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 9,
+            "z": 2,
+            "elements": [
+                "tconstruct:metal@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@6"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "divinity_inverter_hatch"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "z": 3,
+            "elements": [
+                "aether_legacy:angelic_stairs@3"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@3"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "z": 2,
+            "elements": [
+                "tconstruct:metal@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "aether_legacy:hellfire_stairs@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "soot:archaic_big_bricks_stairs@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "tconstruct:metal@1"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@7"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@6"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "aether_legacy:dungeon_block@4"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "aether_legacy:angelic_stairs@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "aether_legacy:hellfire_stairs@6"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "aether_legacy:angelic_stairs@1"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "aether_legacy:angelic_stairs@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 2,
+            "elements": [
+                "soot:caminite_tiles_stairs@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@6"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@3"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "aether_legacy:hellfire_stairs@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@3"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@4"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@2"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "aether_legacy:hellfire_stairs@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "aether_legacy:angelic_stairs@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 2,
+            "elements": [
+                "thermalfoundation:storage_alloy@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "aether_legacy:carved_stairs@2"
+            ]
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "z": 0,
+            "elements": [
+                "aether_legacy:angelic_stairs@6"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "aether_legacy:hellfire_stairs@3"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "aether_legacy:dungeon_block@4"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "z": 4,
+            "elements": [
+                "aether_legacy:angelic_stairs@3"
+            ]
+        }
+    ]}
