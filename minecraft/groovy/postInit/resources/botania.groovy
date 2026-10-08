@@ -1,4 +1,5 @@
 import classes.MachineHelper
+import com.dimensional.gatewaycore.events.TooltipEvents
 
 //// Quartzline
 // Mana Quartz
@@ -204,11 +205,16 @@ mods.botania.rune_altar.recipeBuilder()
     .mana(t3Cost)
     .register()
 // Gluttony
-mods.botania.rune_altar.recipeBuilder()
-    .input(terrasteel, item("botania:rune", 3), item("botania:rune", 7), item("thermalfoundation:fertilizer", 2), item("botania:manacookie"), item("xreliquary:glowing_bread"))
-    .output(item("botania:rune", 10))
-    .mana(t3Cost)
-    .register()
+def possibleInputs = [[20, 3.8f], [20, 1.8f], [20, 1.2f]]
+for (def it in possibleInputs) {
+    def foodItem = item("prodigytech:purified_food").withNbt(["Food": it[0], "Saturation": it[1]])
+    mods.botania.rune_altar.recipeBuilder()
+        .input(terrasteel, item("botania:rune", 3), item("botania:rune", 7), item("thermalfoundation:fertilizer", 2), item("botania:manacookie"), foodItem)
+        .output(item("botania:rune", 10))
+        .mana(t3Cost)
+        .register()
+}
+TooltipEvents.setTooltip(item("botania:rune", 10), "tooltip.gateway.obtain.gluttony_rune")
 // Greed
 mods.botania.rune_altar.recipeBuilder()
     .input(terrasteel, item("botania:rune", 2), item("botania:rune", 6), item("thermalfoundation:material", 134), item("minecraft:golden_apple", 1), item("ee:star_shard"))

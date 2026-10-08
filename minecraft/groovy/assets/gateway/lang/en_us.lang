@@ -214,6 +214,7 @@ tooltip.gateway.obtain.bedrock_portal=Created by breaking Bedrock with Awakened 
 tooltip.gateway.obtain.hollow_tears=Obtained by throwing Brew of Hollow Tears.
 tooltip.gateway.obtain.flowing_spirit=Obtained by throwing Brew of Flowing Spirit.
 tooltip.gateway.obtain.emc_craftable=§eCraftable from EMC items§r
+tooltip.gateway.obtain.gluttony_rune=§rRecommended items for Purified Food:\n§r- §eMoreS'more DoubleS'mingot§r\n§r- §eGlowing Bread§r (requires 1 refinement)\n§r- §eDomino's Special§r (requires 2 refinements)
 
 tooltip.gateway.obtain.fission_sr=Byproduct from the TBU, U-233 and Pu-based fuels.
 tooltip.gateway.obtain.fission_mo=Byproduct from the U-235, Np-236, Am-242 and Cm-based fuels.

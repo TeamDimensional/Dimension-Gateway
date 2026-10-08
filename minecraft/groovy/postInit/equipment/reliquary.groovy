@@ -345,3 +345,23 @@ crafting.shapedBuilder()
     .key("G", item("thaumicaugmentation:fortified_glass_pane"))
     .output(item("xreliquary:potion") * 4)
     .register()
+
+// Glowing Water
+crafting.remove("xreliquary:items/glowing_water")
+crafting.shapedBuilder()
+    .name("equipment/reliquary/glowing_water")
+    .matrix("GPG", "GEG", "NGD")
+    .key("P", fluid("water") * 1000)
+    .key("G", item("minecraft:glass_pane"))
+    .key("E", item("xreliquary:mob_ingredient", 8))
+    .key("N", item("minecraft:nether_wart"))
+    .key("D", item("minecraft:glowstone_dust"))
+    .output(item("xreliquary:glowing_water") * 8)
+    .register()
+
+// Eye of the Storm
+mods.calculator.conductor_mast.recipeBuilder()
+    .input(item("xreliquary:mob_ingredient", 9))
+    .output(item("xreliquary:mob_ingredient", 8))
+    .value(1000)
+    .register()
