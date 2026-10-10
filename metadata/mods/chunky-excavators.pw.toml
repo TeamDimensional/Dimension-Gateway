@@ -1,0 +1,21 @@
+filename = 'chunkyexcavators-1.0.jar'
+name = 'Chunky Excavators'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'chunkyexcavators-1.0.jar'
+
+[download]
+hash = '327963be52f7cd645a689b812b15b04e9c13c558'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3099579
+project-id = 417114
+
+[[x-prismlauncher-dependencies]]
+addonId = '231951'
+type = 'REQUIRED'
