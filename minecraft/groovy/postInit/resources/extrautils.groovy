@@ -51,3 +51,13 @@ mods.extrautils2.enchanter.recipeBuilder()
     .time(50)
     .register()
 
+// Moonstone
+crafting.remove("extrautils2:moon_stone")
+crafting.remove("extrautils2:moon_stone_adv")
+mods.tconstruct.casting_table.recipeBuilder()
+    .cast(item("aether_legacy:iron_bubble")).consumesCast(true)
+    .fluidInput(fluid("moonstone") * 1296)
+    .output(item("extrautils2:ingredients", 5))
+    .coolingTime(500)
+    .register()
+// Duplication implemented in CT - Moonlight Fabricator script

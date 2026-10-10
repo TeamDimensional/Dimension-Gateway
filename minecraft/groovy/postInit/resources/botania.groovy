@@ -168,7 +168,7 @@ mods.botania.rune_altar.recipeBuilder()
 
 // Spring
 mods.botania.rune_altar.recipeBuilder()
-    .input(item("botania:rune", 0), item("botania:rune", 1), item("naturesaura:token_euphoria"), item("aether_legacy:golden_oak_sapling"), item("natura:overworld_sapling2", 3), item("calculator:circuitboard", 8))
+    .input(item("botania:rune", 0), item("botania:rune", 1), item("naturesaura:token_euphoria"), item("extrautils2:suncrystal"), item("natura:overworld_sapling2", 3), item("calculator:circuitboard", 8))
     .output(item("botania:rune", 4) * 2)
     .mana(t2Cost)
     .register()
@@ -180,7 +180,7 @@ mods.botania.rune_altar.recipeBuilder()
     .register()
 // Autumn
 mods.botania.rune_altar.recipeBuilder()
-    .input(item("botania:rune", 1), item("botania:rune", 3), item("naturesaura:token_terror"), item("minecraft:spider_eye"), item("thaumcraft:quicksilver"), item("calculator:circuitboard", 7))
+    .input(item("botania:rune", 1), item("botania:rune", 3), item("naturesaura:token_terror"), item("minecraft:spider_eye"), item("aether_legacy:healing_stone"), item("calculator:circuitboard", 7))
     .output(item("botania:rune", 6) * 2)
     .mana(t2Cost)
     .register()

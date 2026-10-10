@@ -24,10 +24,10 @@ mods.thaumcraft.crucible.recipeBuilder()
     .aspect(aspect("ordo") * 10, aspect("desiderium") * 10)
     .register()
 
-// 46 Lapis + 1 Diamond => 4 Pale Gem => 4 Diamond => 12 Weakened Diamond + 24 Lapis + 1 Diamond => 8 Crystalline Aerogel => 72 Lapis (gaining +50)
+// 46 Lapis + 1 Diamond => 4 Pale Gem => 4 Diamond => 12 Weakened Diamond + 24 Lapis + 1 Diamond => 12 Crystalline Aerogel => 96 Lapis (gaining +50)
 mods.theaurorian.moonlight_forge.recipeBuilder()
-    .input(item("aether_legacy:aerogel") * 2, item("calculator:weakeneddiamond") * 3)
-    .output(item("gateway:crystalline_aerogel") * 2)
+    .input(item("aether_legacy:aerogel"), item("calculator:weakeneddiamond"))
+    .output(item("gateway:crystalline_aerogel"))
     .register()
 
 mods.astralsorcery.light_transmutation.recipeBuilder()

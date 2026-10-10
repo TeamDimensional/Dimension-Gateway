@@ -72,3 +72,14 @@ mods.thaumcraft.infusion_crafting.recipeBuilder()
     .input(item("thaumcraft:phial", 1).withNbt(["Aspects": [["key": "desiderium", "amount": 10]]]))
     .instability(20)
     .register()
+
+// Quicksilver
+crafting.remove("thaumcraft:shimmerleaftoquicksilver")
+mods.astralsorcery.light_transmutation.recipeBuilder()
+    .input(fluid("silver").fluid.block)
+    .output(fluid("fluid_quicksilver").fluid.block)
+    .cost(5.0)
+    .inputDisplayStack(item("forge:bucketfilled").withNbt(["FluidName": "silver", "Amount": 1000]))
+    .outputDisplayStack(item("forge:bucketfilled").withNbt(["FluidName": "fluid_quicksilver", "Amount": 1000]))
+    .register()
+

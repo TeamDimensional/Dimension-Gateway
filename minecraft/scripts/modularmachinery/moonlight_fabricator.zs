@@ -54,3 +54,13 @@ RecipeBuilder.newBuilder("moongem", "moonlight_fabricator", 400)
     .addAuraInput("other", 2000)
     .addItemOutput(<theaurorian:moongem> * 2)
     .build();
+
+RecipeBuilder.newBuilder("moonstone_xu2", "moonlight_fabricator", 400)
+    .addItemInput(<ore:ingotUnstable>)
+    .addItemInput(<thaumcraft:quicksilver>)
+    .addItemInput(<extrautils2:ingredients:3>)
+    .addItemInput(<roots:moonglow_leaf>)
+    .addItemInput(<extrautils2:ingredients:5>).setChance(0)
+    .addAuraInput("end", 2000)
+    .addItemOutput(<extrautils2:ingredients:5> * 2)
+    .build();

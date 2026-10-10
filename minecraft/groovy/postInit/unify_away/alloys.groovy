@@ -29,11 +29,13 @@ MachineHelper.alloy()  // Electrum
 MachineHelper.alloy()  // Steel
     .input(item("minecraft:iron_ingot"), item("immersiveengineering:material", 17))
     .output(item("thermalfoundation:material", 160))
+    .minTier(1)
     .register()
 MachineHelper.alloy()  // Steel
     .input(item("minecraft:iron_ingot"), item("thermalfoundation:material", 769) * 4)
     .output(item("thermalfoundation:material", 160))
-    .minTier(1)
+    .minTier(2)
+    .timeMultiplier(1.5)
     .register()
 
 // TConstruct
