@@ -21,7 +21,7 @@ def removed = [
     mitem("itemmodularium"), citem("machine_glass"), citem("filtered_item_output_hatch"), citem("filtered_fluid_output_hatch"),
     citem("attachment_construct_tool"), citem("self_cycle_assembly_hatch"), citem("me_pattern_provider_ii"), citem("me_channel_input_hatch"),
     citem("me_full_exposure_assembly"), citem("redstone_control_hatch"), citem("redstone_signal_input_hatch"), citem("batch_hatch"),
-    citem("configurable_dimension_provider"),
+    citem("configurable_dimension_provider"), aitem("blockfluxprovideroutput"),
 ]
 for (def i in 0..6) {
     removed.add(aitem("blocksingularityiteminputbus", i))

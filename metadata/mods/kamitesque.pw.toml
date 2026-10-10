@@ -1,28 +1,32 @@
-filename = 'kamitesque-0.1.4.jar'
+filename = 'kamitesque-0.1.5.jar'
 name = 'Kamitesque'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'kamitesque-0.1.4.jar'
+x-prismlauncher-version-number = 'kamitesque-0.1.5.jar'
 
 [download]
-hash = 'eef1fbfd2c9fbf4bfe1170e568048ea446550f9e'
+hash = 'd976de20acae7794593fea0c5dda78807c9d72f4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8694124
+file-id = 9083183
 project-id = 1652846
 
 [[x-prismlauncher-dependencies]]
-addonId = '1549296'
-type = 'REQUIRED'
+addonId = '965811'
+type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '319441'
 type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1549296'
+type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '1533287'

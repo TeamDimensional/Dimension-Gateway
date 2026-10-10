@@ -41,7 +41,7 @@ def part1Items = [
     mitem("deployablerocketbuilder"), mitem("monitoringstation"), mitem("gravitycontroller"), mitem("observatory"),
     mitem("orientationcontroller"), mitem("altitudecontroller"), mitem("oxygenscrubber"), mitem("oxygenvent"),
     mitem("satellite"), mitem("satellitepowersource"), mitem("dataunit"), mitem("satellitecontrolcenter"), mitem("planetanalyser"),
-    mitem("rocketprinter"), mitem("rocketblueprint"),
+    mitem("rocketprinter"), mitem("rocketblueprint"), mitem("beaconfinder"), mitem("rocketfinder"),
 ]
 for (def i in 0..3) part1Items.add(mitem("pressuretank", i))
 for (def i in 0..5) part1Items.add(mitem("itemupgrade", i))
@@ -85,7 +85,6 @@ def removeCutting = [
 ]
 def removeAssembler = [
     mitem("itemcircuitplate", 1), mitem("itemcircuitplate"), mitem("ic", 1), mitem("ic", 3), mitem("ic", 4), mitem("ic", 5),
-    mitem("beaconfinder"),
 ]
 def removeCrystallizer = [
     item("libvulpes:productboule", 3),

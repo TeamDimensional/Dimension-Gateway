@@ -25,3 +25,7 @@ mods.advancedrocketry.crystallizer.recipeBuilder()
     .power(2048)
     .time(200)
     .register()
+
+// Alloys
+furnace.removeByOutput(item("projectred-core:resource_item", 103))
+furnace.removeByOutput(item("projectred-core:resource_item", 104))
