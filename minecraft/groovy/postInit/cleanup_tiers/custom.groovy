@@ -50,6 +50,7 @@ TooltipEvents.setTier(citem("rutile_crystal"), 9)
 TooltipEvents.setTier(citem("clean_rutile_dust"), 9)
 TooltipEvents.setTier(citem("sintered_titania"), 9)
 TooltipEvents.setTier(citem("crude_titanium_matrix"), 9)
+TooltipEvents.setTier(citem("unholy_symbol"), 7)
 
 def magicFuels = [
     ["natural", 11],

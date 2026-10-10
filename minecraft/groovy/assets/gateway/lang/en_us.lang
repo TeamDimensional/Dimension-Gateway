@@ -25,6 +25,7 @@ item.gateway.rutile_crystal.name=Rutile Crystal
 item.gateway.clean_rutile_dust.name=Refined Rutile Dust
 item.gateway.sintered_titania.name=Sintered Titania
 item.gateway.crude_titanium_matrix.name=Crude Titanium Mesh
+item.gateway.unholy_symbol.name=Unholy Symbol
 
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.energetic_alloy_dust.name=Energetic Alloy Dust
@@ -381,7 +382,9 @@ tile.modularmachinery.starlight_laser.desc.not_attuned=Not attuned
 tile.modularmachinery.divinity_inverter.desc=Item output is in form of mob drops, up to %d
 tile.modularmachinery.divinity_inverter.desc.demon_input=%s required on the Hell side
 tile.modularmachinery.divinity_inverter.desc.angel_input=%s required on the Heaven side
+entity.any_villager.name=Villager
 
+# Ponders
 ponder.chapter1.nether.name=Entering Nether
 ponder.chapter1.nether.tooltip=\n§oYour first venture to other worlds!§r
 ponder.chapter1.nether.desc=Entering Nether early - before you can get Obsidian - is necessary in this pack.\nHere's a small example of how the portal can be built without access to Obsidian.\nIt's also possible to light up portals without Flint and Steel, but that method is somewhat torturous and is not needed here.
@@ -402,3 +405,8 @@ ponder.chapter2.fey_crafting.name=Fey Crafting Automation
 ponder.chapter2.fey_crafting.tooltip=\n§oElven Portal it is not§r
 ponder.chapter2.fey_crafting.desc=To automate fey crafting, a Runic Crafter is necessary, which will be available a bit later.\nRunic Crafter must be configured by putting the recipe output inside.\nSimilar to a Pyre, the inputs for Runic Crafter can be provided from the bottom of the device, and\ncrafting results can be collected by a Ranged Collector, or Ritual of Gathering.
 ponder.chapter2.fey_crafting.tooltip1=Similar to the manual Fey crafting, a knife should be in the Mechanical User!
+
+ponder.chapter7.soul_shard.name=Soul Shards
+ponder.chapter7.soul_shard.tooltip=\n§oArchaic machinations§r
+ponder.chapter7.soul_shard.desc=This ancient process can be used to modify and stabilize mob spawners.\nIt requires thaumaturgical mastery, knowledge of the End,\nand most importantly, Heavens and Hell must be combined together using Divinity Inverter.
+ponder.chapter7.soul_shard.tooltip1=The Glowstone block should be activated with an Unholy Symbol. This process can be automated with a Mechanical User.

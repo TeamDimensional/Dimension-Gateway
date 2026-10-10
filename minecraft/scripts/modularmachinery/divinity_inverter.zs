@@ -9,7 +9,7 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.IMachineController;
 import mods.modularmachinery.RecipeTickEvent;
 
-import native.com.gildedgames.the_aether.entities.bosses.EntityValkyrie;
+import native.net.minecraft.entity.EntityLiving;
 import native.net.minecraft.util.math.AxisAlignedBB;
 import native.net.minecraft.util.DamageSource;
 import native.net.minecraftforge.fml.common.registry.EntityEntry;
@@ -23,7 +23,7 @@ MMCEUtils.registerNoHatchMultiblock("divinity_inverter");
 RecipeBuilder.newBuilder("ackronite", "divinity_inverter", 600)
     .addItemInput(<item:essentialcraft:genitem:53>)
     .addItemOutput(<item:essentialcraft:genitem:52>).setChance(0).setIgnoreOutputCheck(true)
-    .addFluidInput(<fluid:xu_evil_metal> * 576)
+    .addFluidInput(<fluid:xu_demonic_metal> * 2304)
     .addRecipeTooltip(ITextComponent.fromTranslation("tile.modularmachinery.divinity_inverter.desc", [15]).formattedText)
     .addRecipeTooltip(
         ITextComponent.fromTranslation("tile.modularmachinery.divinity_inverter.desc.angel_input",
@@ -33,6 +33,22 @@ RecipeBuilder.newBuilder("ackronite", "divinity_inverter", 600)
                "Herald of Demons", <item:essentialcraft:genitem:52>);
     })
     .build();
+
+RecipeBuilder.newBuilder("unholy_symbol", "divinity_inverter", 600)
+    .addItemInput(<item:gateway:catalyzed_starlight> * 5)
+    .addItemOutput(<item:gateway:unholy_symbol>).setChance(0).setIgnoreOutputCheck(true)
+    .addFluidInput(<fluid:xu_evil_metal> * 576)
+    .addRecipeTooltip(ITextComponent.fromTranslation("tile.modularmachinery.divinity_inverter.desc", [5]).formattedText)
+    .addRecipeTooltip(
+        ITextComponent.fromTranslation("tile.modularmachinery.divinity_inverter.desc.angel_input",
+        [ITextComponent.fromTranslation("entity.any_villager.name").formattedText]).formattedText)
+    .addPostTickHandler(function(event as RecipeTickEvent) {
+        invert(event, 120, true, "minecraft:villager", -1, "minecraft:witch", 50,
+               "The Supernatural", <item:gateway:unholy_symbol>);
+    })
+    .build();
+
+
 
 static demonPos as int[string] = {x: -8, y: 2, z: 2};
 static angelPos as int[string] = {x: 8, y: 5, z: 2};
@@ -54,12 +70,12 @@ function invert(event as RecipeTickEvent, ticks as int, inputAngel as bool, inpu
             val aabb = AxisAlignedBB(
                 inputPos.x + ctrlPos.x - 2.5f, inputPos.y + ctrlPos.y - 0.5f, inputPos.z + ctrlPos.z - 2.5f,
                 inputPos.x + ctrlPos.x + 2.5f, outputPos.y + ctrlPos.y + 4.5f, outputPos.z + ctrlPos.z + 2.5f);
-            val entities = event.controller.world.native.getEntitiesWithinAABB(EntityValkyrie.class, aabb);
+            val entities = event.controller.world.native.getEntitiesWithinAABB(EntityLiving.class, aabb);
 
             for entity in entities {
                 val entityEntry = EntityRegistry.getEntry(entity.getClass());
                 if entityEntry.registryName.toString() == inputMob {
-                    val entityObj = entity as EntityValkyrie;
+                    val entityObj = entity as EntityLiving;
                     if (damageAmount > 0) {
                         entityObj.attackEntityFrom(<damageSource:GENERIC>, damageAmount);
                     } else {

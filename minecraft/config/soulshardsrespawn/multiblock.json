@@ -1,0 +1,32 @@
+{
+  "catalyst": {
+    "item": "gateway:unholy_symbol",
+    "data": 0
+  },
+  "shape": [
+    "OQO",
+    "QGQ",
+    "OQO"
+  ],
+  "origin": {
+    "x": 1,
+    "y": 1
+  },
+  "definition": {
+    "O": {
+      "states": [
+        "ee:ash_brick"
+      ]
+    },
+    "Q": {
+      "states": [
+        "thaumictinkerer:arcane_quartz_block"
+      ]
+    },
+    "G": {
+      "states": [
+        "minecraft:glowstone"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Stygian Iron
+furnace.removeByOutput(item("woot:stygianironingot"))
+mods.immersiveengineering.blast_furnace.recipeBuilder()
+    .input(item("woot:stygianirondust"))
+    .output(item("woot:stygianironingot"))
+    .time(800)
+    .slag(item("thermalfoundation:material", 865))
+    .register()
+
+mods.woot.anvil.removeByOutput(item("woot:stygianirondust"))
+mods.calculator.scientific_calculator.recipeBuilder()
+    .input(item("tconstruct:ore", 1), item("abyssalcraft:shadowgem"))
+    .output(item("woot:stygianirondust") * 3)
+    .register()
+
+// Corrupted Essence
+crafting.remove("soulshardsrespawn:corruptedingot")
+def witherPotion = item("xreliquary:potion").withNbt(["effects": [["name": "minecraft:wither", "duration": 250, "potency": 0]], "hasPotion": true])
+mods.integrateddynamics.mechanical_drying_basin.recipeBuilder()
+    .input(witherPotion)
+    .output(item("quark:black_ash"))
+    .duration(100)
+    .register()
+mods.calculator.atomic_calculator.recipeBuilder()
+    .input(item("thaumcraft:ingot"), item("quark:black_ash"), item("extrautils2:ingredients", 17))
+    .output(item("soulshardsrespawn:materials"))
+    .register()

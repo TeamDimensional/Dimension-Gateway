@@ -11,8 +11,10 @@ def enderItems = [
     mitem("redstone_randomizer"), mitem("gravisand"), mitem("rain_detector"), mitem("enderdragon_scale"),
     mitem("end_bricks_stairs"), mitem("end_bricks_slab"),
 ]
+def tier7Items = [mitem("black_ash")]
 
 for (def it in quartzItems) TooltipEvents.setTier(it, 2)
 for (def it in tier3Items) TooltipEvents.setTier(it, 3)
 for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
+for (def it in tier7Items) TooltipEvents.setTier(it, 7)

@@ -1,0 +1,25 @@
+filename = 'SoulShardsRespawn-1.12.2-1.1.1-13.jar'
+name = 'Soul Shards Respawn'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'SoulShardsRespawn-1.12.2-1.1.1-13.jar'
+
+[download]
+hash = 'c4fef3655c01f47bf2f8c792569a221db22e9554'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2741336
+project-id = 291549
+
+[[x-prismlauncher-dependencies]]
+addonId = '253449'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'

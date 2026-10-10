@@ -27,6 +27,7 @@ content.createItem("rutile_crystal").register()
 content.createItem("clean_rutile_dust").register()
 content.createItem("sintered_titania").register()
 content.createItem("crude_titanium_matrix").register()
+content.createItem("unholy_symbol").register()
 
 content.createItem("fengarum_shard").setMaxStackSize(16).register()
 content.createItem("ilium_shard").setMaxStackSize(16).register()
