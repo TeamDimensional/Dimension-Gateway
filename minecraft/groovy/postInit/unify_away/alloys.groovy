@@ -91,7 +91,7 @@ def hardenedGlass = [
 for (def it in hardenedGlass) {
     MachineHelper.alloy()
         .input(item("thermalfoundation:glass", 3) * 2, it[1])
-        .output(it[0])
+        .output(it[0] * 2)
         .timeMultiplier(0.75)
         .minTier(2)
         .register()

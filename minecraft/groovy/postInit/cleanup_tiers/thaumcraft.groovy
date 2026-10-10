@@ -124,6 +124,7 @@ for (def i in 0..8) hideFromJei.add(witem("eldritch_cluster", i))
 for (def a in ["rare", "uncommon", "common"]) for (def b in ["crate", "urn"]) hideFromJei.add(mitem("loot_${b}_${a}"))
 
 TooltipEvents.setModTier("thaumcraft", 5)
+TooltipEvents.setModTier("oldresearch", 5)
 TooltipEvents.setModTier("thaumictinkerer", 5)
 TooltipEvents.setModTier("thaumicaugmentation", 5)
 TooltipEvents.setModTier("crimsonrevelations", 5)

@@ -143,7 +143,7 @@ def foci = [
     [item("tconstruct:materials", 23), item("minecraft:potion").withNbt(["Potion":"minecraft:fire_resistance"]), "ignis", "aqua"],
     [item("immersiveengineering:wooden_device1", 1), item("minecraft:potion").withNbt(["Potion":"minecraft:strength"]), "ignis", "potentia"],
     [item("minecraft:slime_ball"), item("minecraft:potion").withNbt(["Potion":"minecraft:regeneration"]), "victus", "praecantatio"],
-    [item("immersiveengineering:wooden_device1", 1), item("minecraft:potion").withNbt(["Potion":"minecraft:haste"]), "aqua", "sensus"],
+    [item("immersiveengineering:wooden_device1", 1), item("minecraft:potion").withNbt(["Potion":"quark:haste"]), "aqua", "sensus"],
 ]
 for (def i in 0..8) {
     crafting.removeByOutput(item("essentialcraft:charm", i))

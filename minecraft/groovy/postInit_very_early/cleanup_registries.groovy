@@ -15,3 +15,6 @@ mods.thermalexpansion.crucible.removeAll()
 mods.factorytech.crucible.removeAll()
 mods.tconstruct.melting.removeAll()
 mods.embers.melter.removeAll()
+
+// Remove all Fluid Sieving recipes because sometimes they crash due to gone ores.
+mods.industrialforegoing.ore_sieve.removeAll()
