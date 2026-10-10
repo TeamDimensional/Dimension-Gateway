@@ -52,7 +52,7 @@ for (def i in 0..7) {
     items.add(mitem("item_alloy_nugget", i))
     items.add(mitem("item_alloy_ball", i))
 }
-for (def i in [2, 3, 4, 6, 7, 8, 11, 12, 13, 14, 15, 20, 30, 31, 40, 41, 43, 45, 46, 47, 48, 49, 50, 53, 57, 58, 59, 60, 65, 70, 73, 74, 76])
+for (def i in [2, 3, 4, 6, 7, 8, 11, 12, 13, 14, 15, 20, 30, 31, 40, 41, 43, 45, 48, 49, 50, 53, 57, 58, 59, 60, 65, 70, 73, 74, 76])
     items.add(mitem("item_material", i))
 for (def i in 0..2) items.add(mitem("block_dark_steel_anvil", i))
 for (def i in 8..13) items.add(mitem("block_painted_pressure_plate", i))
@@ -150,7 +150,7 @@ for (def i in endergyMaterialsGone) {
 
 def removeSagMill = [mitem("item_material", 28), mitem("block_holier_fog")]
 def removeAlloy = [mitem("block_death_pouch")]
-for (def i in [3, 39, 48, 49, 50, 72, 76, 75]) removeAlloy.add(mitem("item_material", i))
+for (def i in [3, 39, 46, 47, 48, 49, 50, 72, 76, 75]) removeAlloy.add(mitem("item_material", i))
 def removeTank = [mitem("item_material", 8)]
 
 def hideFromJei = [

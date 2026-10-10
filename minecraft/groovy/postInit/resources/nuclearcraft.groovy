@@ -1,0 +1,12 @@
+// Graphite
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(item("nuclearcraft:dust", 8))
+mods.actuallyadditions.atomic_reconstructor.recipeBuilder()
+    .input(item("immersiveengineering:material", 17))
+    .output(item("nuclearcraft:dust", 8))
+    .energy(250)
+    .register()
+mods.actuallyadditions.atomic_reconstructor.recipeBuilder()
+    .input(item("immersiveengineering:stone_decoration", 3))
+    .output(item("nuclearcraft:ingot_block", 8))
+    .energy(2500)
+    .register()

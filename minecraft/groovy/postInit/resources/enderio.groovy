@@ -23,3 +23,27 @@ mods.botania.mana_infusion.recipeBuilder()
     .mana(15000)
     .catalyst(blockstate("naturesaura:crushing_catalyst"))
     .register()
+
+// Machine Chassis
+mods.nuclearcraft.assembler.builder()
+    .input(item("nuclearcraft:part", 10), item("essentialcraft:genitem", 8),
+           item("projectred-core:resource_item", 342), item("thermalfoundation:glass_alloy", 7) * 2)
+    .output(item("enderio:item_material", 1))
+    .register()
+mods.nuclearcraft.assembler.builder()
+    .input(item("enderio:item_material", 1), item("essentialcraft:genitem"),
+           item("prodigytech:circuit_perfected"), ore("ingotPlutonium238All") * 2)
+    .output(item("enderio:item_material", 54))
+    .register()
+mods.nuclearcraft.assembler.builder()
+    .input(item("enderio:item_material", 1), item("enderio:item_alloy_ingot", 7) * 4, item("ee:soul"))
+    .output(item("enderio:item_material", 53))
+    .register()
+
+// Industrial Insulation
+mods.nuclearcraft.infuser.builder()
+    .input(ore("blockRockwool"))
+    .fluidInput(fluid("phenol") * 250)
+    .timeMultiplier(0.3)
+    .output(item("enderio:block_industrial_insulation"))
+    .register()
