@@ -1,0 +1,52 @@
+// Router Module
+crafting.remove("modularrouters:blank_module")
+crafting.shapedBuilder()
+    .name("utils/modular_router_module")
+    .matrix(" S ", "PPP", "NNN")
+    .key("S", item("projectred-core:resource_item", 320))
+    .key("P", item("minecraft:paper"))
+    .key("N", item("tconstruct:ingots", 5))
+    .output(item("modularrouters:blank_module") * 16)
+    .register()
+
+// Router Upgrade
+crafting.remove("modularrouters:blank_module")
+crafting.shapedBuilder()
+    .mirrored()
+    .name("utils/modular_router_upgrade")
+    .matrix("PPN", "PSN", " PN")
+    .key("S", item("projectred-core:resource_item", 341))
+    .key("P", item("minecraft:paper"))
+    .key("N", item("tconstruct:ingots", 5))
+    .output(item("modularrouters:blank_upgrade") * 10)
+    .register()
+
+// Mechanical Squeezer
+crafting.remove("integrateddynamics:mechanical_squeezer")
+crafting.shapedBuilder()
+    .name("machines/id/squeezer")
+    .matrix(" D ", "AMA", " O ")
+    .key("D", item("minecraft:diamond"))
+    .key("A", item("aetherworks:item_resource", 3))
+    .key("M", item("immersiveengineering:material", 9))
+    .key("O", item("minecraft:obsidian"))
+    .output(item("integrateddynamics:mechanical_squeezer"))
+    .register()
+
+// Mechanical Drying Basin
+crafting.remove("integrateddynamics:mechanical_drying_basin")
+crafting.shapedBuilder()
+    .name("machines/id/drying_basin")
+    .matrix(" D ", "AMA", " O ")
+    .key("D", item("minecraft:diamond"))
+    .key("A", item("aetherworks:item_resource", 3))
+    .key("M", item("tconstruct:casting", 1))
+    .key("O", item("minecraft:obsidian"))
+    .output(item("integrateddynamics:mechanical_drying_basin"))
+    .register()
+
+// First Menril
+mods.integrateddynamics.mechanical_squeezer.recipeBuilder()
+    .input(item("gateway:catalyzed_starlight"))
+    .fluidOutput(fluid("menrilresin"))
+    .register()

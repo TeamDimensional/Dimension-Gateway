@@ -70,6 +70,29 @@ MachineHelper.alloy()  // Red Alloy
     .output(item("projectred-core:resource_item", 103))
     .register()
 
+MachineHelper.alloy()  // Electrotine Alloy
+    .input(item("thermalfoundation:material", 165), item("projectred-core:resource_item", 105) * 4)
+    .output(item("projectred-core:resource_item", 104))
+    .register()
+
+MachineHelper.alloy()  // Infused Silicon
+    .input(item("projectred-core:resource_item", 301), item("minecraft:redstone") * 16)
+    .output(item("projectred-core:resource_item", 320))
+    .register()
+furnace.removeByOutput(item("projectred-core:resource_item", 320))
+
+MachineHelper.alloy()  // Energized Silicon
+    .input(item("projectred-core:resource_item", 301), item("minecraft:glowstone_dust") * 16)
+    .output(item("projectred-core:resource_item", 341))
+    .register()
+furnace.removeByOutput(item("projectred-core:resource_item", 341))
+
+MachineHelper.alloy()  // Electro Silicon
+    .input(item("projectred-core:resource_item", 301), item("projectred-core:resource_item", 105) * 16)
+    .output(item("projectred-core:resource_item", 342))
+    .register()
+furnace.removeByOutput(item("projectred-core:resource_item", 342))
+
 // Colored Hardened Glass
 def hardenedGlass = [
     [item("thermalfoundation:glass"), item("thermalfoundation:material", 64)],
@@ -375,7 +398,6 @@ MachineHelper.alloy()  // Super Alloy
     .register()
 
 // TODO: ZnS
-// TODO: Industrial Insulation
 // TODO: Blank Dark Steel Upgrade
 
 // Glass

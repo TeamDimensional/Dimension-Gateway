@@ -9,6 +9,13 @@ RecipeBuilder.newBuilder("skyroot", "natural_infuser", 480)
     .addEnergyPerTickInput(20)
     .build();
 
+RecipeBuilder.newBuilder("menril", "natural_infuser", 480)
+    .addItemInput(<lost_aether:crystal_sapling>)
+    .addFluidInput(<fluid:menrilresin> * 200)
+    .addItemOutput(<integrateddynamics:menril_sapling>)
+    .addEnergyPerTickInput(20)
+    .build();
+
 RecipeBuilder.newBuilder("disturbed_cotton", "natural_infuser", 25)
     .addItemInput(<witchery:wispy_cotton>)
     .addFluidInput(<fluid:nightmare_depleted_fuel> * 8)

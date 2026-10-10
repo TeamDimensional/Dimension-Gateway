@@ -3,15 +3,15 @@
 import mods.modularmachinery.RecipeBuilder;
 
 RecipeBuilder.newBuilder("clump", "mystical_combiner", 400)
-    .addItemInput(<item:tconstruct:ingots:3>)
     .addItemInput(<item:tconstruct:ingots:2>)
     .addItemInput(<item:extrautils2:ingredients:12>)
     .addItemInput(<item:netherized:netherite_ingot>)
+    .addItemInput(<item:projectred-core:resource_item:104>)
     .addItemInput(<item:factorytech:ingot:6>)
     .addItemInput(<item:factorytech:ingot:7>)
     .addItemInput(<item:soot:ingot_antimony>)
-    .addItemInput(<item:soulshardsrespawn:materials>)
     .addItemInput(<item:aetherworks:item_resource:4>)
+    .addItemInput(<item:soulshardsrespawn:materials>)
     .addItemInput(<item:woot:stygianironingot>)
     .addItemInput(<item:witchery:koboldite_ingot>)
     .addItemInput(<item:abyssalcraft:cingot>)
