@@ -127,13 +127,6 @@ def hideFromJei = [
     mitem("alloy", 7), mitem("alloy", 8), mitem("alloy", 9), mitem("gem"), mitem("fluid_ethanol"), mitem("material_block", 5),
 ] + removeRecipes
 
-TooltipEvents.setTooltip(mitem("fission_dust", 5), "tooltip.gateway.obtain.fission_sr")
-TooltipEvents.setTooltip(mitem("fission_dust", 6), "tooltip.gateway.obtain.fission_mo")
-TooltipEvents.setTooltip(mitem("fission_dust", 7), "tooltip.gateway.obtain.fission_ru")
-TooltipEvents.setTooltip(mitem("fission_dust", 8), "tooltip.gateway.obtain.fission_cs")
-TooltipEvents.setTooltip(mitem("fission_dust", 9), "tooltip.gateway.obtain.fission_pm")
-TooltipEvents.setTooltip(mitem("fission_dust", 10), "tooltip.gateway.obtain.fission_eu")
-
 for (def f in isotopes) {
     fissionItems.add(mitem(f[0], f[1] * 5 + 0))
     fissionItems.add(mitem(f[0], f[1] * 5 + 1))  // Carbide fuel
@@ -151,10 +144,10 @@ for (def f in fuelCounts) {
             fissionItems.add(mitem("${d}fuel_${f[0]}", i * 4 + 3))
 
             if (d == "") {
-                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4), "For use in Pebble Bed Reactors.")
-                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 1), "For use in Solid Fission Reactors. Mainline fuel.")
-                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 2), "For use in Solid Fission Reactors. Colder fuel with a longer lifetime.")
-                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 3), "For use in Solid Fission Reactors. Hotter fuel with a shorter lifetime.")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4), "tooltip.gateway.use.pbr")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 1), "tooltip.gateway.use.sfr_ox")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 2), "tooltip.gateway.use.sfr_ni")
+                TooltipEvents.setTooltip(mitem("${d}fuel_${f[0]}", i * 4 + 3), "tooltip.gateway.use.sfr_za")
             }
         }
         fissionItems.add(mitem("pellet_${f[0]}", i * 2))

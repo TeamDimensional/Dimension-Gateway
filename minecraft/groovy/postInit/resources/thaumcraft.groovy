@@ -83,3 +83,12 @@ mods.astralsorcery.light_transmutation.recipeBuilder()
     .outputDisplayStack(item("forge:bucketfilled").withNbt(["FluidName": "fluid_quicksilver", "Amount": 1000]))
     .register()
 
+// Alternate Thaumium recipe
+mods.thaumcraft.crucible.recipeBuilder()
+    .researchKey("UNLOCKALCHEMY@3")
+    .catalyst(item("nuclearcraft:ingot2", 8))
+    .output(item("thaumcraft:metal_thaumium"))
+    .aspect(aspect("praecantatio") * 10)
+    .aspect(aspect("terra") * 10)
+    .aspect(aspect("auram") * 5)
+    .register()

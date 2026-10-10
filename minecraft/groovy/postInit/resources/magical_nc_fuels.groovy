@@ -179,10 +179,10 @@ KettleApi.registerRecipe(resource("gateway:unprepared_nightmare_fuel"),
     null,
     false,
     // Fertile isotopes (4, because cauldron only supports 6 inputs)
-    ore("ingotNeptunium237All").toMcIngredient(), ore("ingotCurium246All").toMcIngredient(),
-    ore("ingotBerkelium247All").toMcIngredient(), ore("ingotCalifornium252All").toMcIngredient(),
+    ore("ingotNeptunium237All").toMcIngredient(), ore("ingotAmericium243All").toMcIngredient(),
+    ore("ingotCurium246All").toMcIngredient(), ore("ingotBerkelium247All").toMcIngredient(),
     // Fissile isotopes (2)
-    ore("ingotPlutonium239All").toMcIngredient(), ore("ingotAmericium242All").toMcIngredient())
+    ore("ingotPlutonium239All").toMcIngredient(), ore("ingotCalifornium251All").toMcIngredient())
 
 // Preparing fuels
 mods.naturesaura.altar.recipeBuilder()
@@ -233,50 +233,50 @@ mods.essentialcraft.wind_rune.recipeBuilder()
 
 // Reprocessing
 // Np: 236[F] -> Natural, 237[_] -> Lunar*
-// Pu: 238[R] -> Arcane, 239[F] -> Natural*, 241[F] -> Lunar, 242[_] -> Botanical
-// Am: 241[R] -> Skybound, 242[F] -> Botanical*, 243[_] -> Natural
-// Cm: 243[F] -> Crystalline, 245[F] -> Skybound, 246[_] -> Arcane*, 247[F] -> Crystalline
-// Bk: 247[_] -> Crystalline*, 248[F] -> Lunar
-// Cf: 249[F] -> Arcane, 250[R] -> Crystalline, 251[F] -> Botanical, 252[_] -> Skybound*
+// Pu: 238[R] -> Arcane, 239[F] -> Botanical*, 241[F] -> Natural, 242[_] -> Crystalline
+// Am: 241[R] -> Crystalline, 242[F] -> Lunar, 243[_] -> Natural*
+// Cm: 243[F] -> Botanical, 245[F] -> Skybound, 246[_] -> Arcane*, 247[F] -> Botanical
+// Bk: 247[_] -> Skybound*, 248[F] -> Lunar
+// Cf: 249[F] -> Arcane, 250[R] -> Skybound, 251[F] -> Crystalline*, 252[_] -> Botanical
 FuelReprocessing.builder()
     .input("natural", 8)
-    .output("neptunium", 0, 236, 3)   // fissile
-    .output("plutonium", 5, 239, 2)   // fissile, nightmare part
-    .output("americium", 10, 243, 2)  // fertile
+    .output("neptunium", 0, 236, 3)   // fissile; biome hatch
+    .output("plutonium", 10, 241, 2)  // fissile; biome hatch
+    .output("americium", 10, 243, 2)  // fertile; nightmare part
     .register()
 
 FuelReprocessing.builder()
     .input("arcane", 8)
-    .output("plutonium", 0, 238, 3)    // RTG
-    .output("curium", 10, 246, 2)      // fertile, nightmare part
+    .output("plutonium", 0, 238, 3)    // RTG; enhanced machine chassis
+    .output("curium", 10, 246, 2)      // fertile; nightmare part
     .output("californium", 0, 249, 2)  // fissile
     .register()
 
 FuelReprocessing.builder()
     .input("lunar", 8)
-    .output("neptunium", 5, 237, 3)   // fertile, nightmare part
-    .output("plutonium", 10, 241, 2)  // fissile
+    .output("neptunium", 5, 237, 3)   // fertile; nightmare part
+    .output("americium", 5, 242, 2)   // fissile
     .output("berkelium", 5, 248, 2)   // fissile
     .register()
 
 FuelReprocessing.builder()
     .input("skybound", 8)
-    .output("americium", 0, 241, 3)     // rtg
-    .output("curium", 5, 245, 2)        // fissile
-    .output("californium", 15, 252, 2)  // fertile, nightmare part
+    .output("curium", 5, 245, 2)        // fissile; creative storage upgrade
+    .output("berkelium", 0, 247, 2)     // fertile; nightmare part
+    .output("californium", 5, 250, 3)   // RTG; cf rtg
     .register()
 
 FuelReprocessing.builder()
     .input("botanical", 8)
-    .output("plutonium", 15, 242, 2)    // fertile
-    .output("americium", 5, 242, 3)     // fissile, nightmare part
-    .output("californium", 10, 251, 2)  // fertile
+    .output("plutonium", 5, 239, 2)     // fissile; nightmare part
+    .output("curium", 0, 243, 1)        // fissile
+    .output("curium", 15, 247, 1)       // fissile
+    .output("californium", 15, 252, 3)  // fertile; cf neutron source
     .register()
 
 FuelReprocessing.builder()
     .input("crystalline", 8)
-    .output("curium", 0, 243, 2)       // fissile
-    .output("curium", 15, 247, 2)      // fissile
-    .output("berkelium", 0, 247, 2)    // fertile, nightmare part
-    .output("californium", 5, 250, 1)  // rtg
+    .output("plutonium", 15, 242, 2)    // fertile; monolith stone
+    .output("americium", 0, 241, 3)     // rtg; abyssal wasteland pedestals
+    .output("californium", 10, 251, 2)  // fissile; nightmare part
     .register()

@@ -174,6 +174,34 @@ tooltip.gateway.obtain.fission_cs=Byproduct from the TBU, U-based and Np-236 fue
 tooltip.gateway.obtain.fission_pm=Byproduct from the Pu-based and heavier fuels.
 tooltip.gateway.obtain.fission_eu=Byproduct from the Cm-based and Cf-251 fuels.
 
+tooltip.gateway.obtain.nc_isotope.Uranium233=§rObtained from:\n§r- §eTBU§r\n§r- §eProtactinium-233§r (from Irradiator or Glowing Ghouls)\n§rUsed for:\n§r- §eElven Quartz
+tooltip.gateway.obtain.nc_isotope.Neptunium236=§rObtained from:\n§r- §eNatural Fissile Fuel (recommended)§r\n§r- §eTBU§r\n§r- §eHEU-235§r\n§rUsed for:\n§r- §eConfigurable Biome Detector Hatch
+tooltip.gateway.obtain.nc_isotope.Neptunium237=§rObtained from:\n§r- §eLunar Fissile Fuel (recommended)§r\n§r- §eTBU§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
+tooltip.gateway.obtain.nc_isotope.Plutonium238=§rObtained from:\n§r- §eArcane Fissile Fuel (recommended)§r\n§r- §eHEN-236§r\n§rUsed for:\n§r- §eEnhanced Machine Chassis
+tooltip.gateway.obtain.nc_isotope.Plutonium239=§rObtained from:\n§r- §eBotanical Fissile Fuel (recommended)§r\n§r- §eLEU-235§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
+tooltip.gateway.obtain.nc_isotope.Plutonium241=§rObtained from:\n§r- §eNatural Fissile Fuel (recommended)§r\n§r- §eLEU-233§r\n§r- §eLEN-236§r and §eHEN-236§r\n§r- §eHEP-239§r\n§r- §eMIX-239§r\n§rUsed for:\n§r- §eConfigurable Biome Detector Hatch
+tooltip.gateway.obtain.nc_isotope.Plutonium242=§rObtained from:\n§r- §eCrystalline Fissile Fuel (recommended)§r\n§r- §eAll Uranium, Neptunium, and MIX fuels§r\n§rUsed for:\n§r- §eMonolith Stone
+tooltip.gateway.obtain.nc_isotope.Americium241=§rObtained from:\n§r- §eCrystalline Fissile Fuel (recommended)§r\n§r- §eHEP-241§r\n§rUsed for:\n§r- §eAbyssal Wasteland pedestals
+tooltip.gateway.obtain.nc_isotope.Americium242=§rObtained from:\n§r- §eLunar Fissile Fuel (recommended)§r\n§r- §eLEP-239§r and §eHEP-239§r\n§r- §eHEP-241§r\n§rUsed for:\n§r- §eTBD
+tooltip.gateway.obtain.nc_isotope.Americium243=§rObtained from:\n§r- §eNatural Fissile Fuel (recommended)§r\n§r- §eAll Uranium, Plutonium, and MIX fuels§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
+tooltip.gateway.obtain.nc_isotope.Curium243=§rObtained from:\n§r- §eBotanical Fissile Fuel (recommended)§r\n§r- §eHEP-239§r and §eHEA-242§r\n§rUsed for:\n§r- §eTBD
+tooltip.gateway.obtain.nc_isotope.Curium245=§rObtained from:\n§r- §eSkybound Fissile Fuel (recommended)§r\n§r- §eLEA-242§r\n§rUsed for:\n§r- §eCreative Storage Upgrade
+tooltip.gateway.obtain.nc_isotope.Curium246=§rObtained from:\n§r- §eArcane Fissile Fuel (recommended)§r\n§r- §eMost Plutonium and Americium fuels§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
+tooltip.gateway.obtain.nc_isotope.Curium247=§rObtained from:\n§r- §eBotanical Fissile Fuel (recommended)§r\n§r- §eOther Curium fuels§r\n§rUsed for:\n§r- §eTBD
+tooltip.gateway.obtain.nc_isotope.Berkelium247=§rObtained from:\n§r- §eSkybound Fissile Fuel (recommended)§r\n§r- §eLEP-241§r and §eHEA-242§r\n§r- §eAll Curium fuels§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
+tooltip.gateway.obtain.nc_isotope.Berkelium248=§rObtained from:\n§r- §eLunar Fissile Fuel (recommended)§r\n§r- §eLEA-242§r and §eHEA-242§r\n§r- §eLECm-243 and HECm-243§r\n§rUsed for:\n§r- §eTBD
+tooltip.gateway.obtain.nc_isotope.Californium249=§rObtained from:\n§r- §eArcane Fissile Fuel (recommended)§r\n§r- §eCurium-245§r and §eCurium-247§r fuels\n§r- §eLEB-248 and HEB-248§r\n§rUsed for:\n§r- §eTBD
+tooltip.gateway.obtain.nc_isotope.Californium250=§rObtained from:\n§r- §eSkybound Fissile Fuel (recommended)§r\n§r- §eHECf-249§r\n§rUsed for:\n§r- §eCalifornium RTG
+tooltip.gateway.obtain.nc_isotope.Californium251=§rObtained from:\n§r- §eCrystalline Fissile Fuel (recommended)§r\n§r- §eHECm-247§r\n§r- §eLEB-248§r and §eHEB-248§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
+tooltip.gateway.obtain.nc_isotope.Californium252=§rObtained from:\n§r- §eBotanical Fissile Fuel (recommended)§r\n§r- §eHEB-248§r\n§r- §eHECf-251§r\n§rUsed for:\n§r- §eCf-252 Neutron Sources
+
+tooltip.gateway.obtain.nc_rare_earth.samarium=§rObtained from:\n§r- §eDecay of Promethium-147§r\n§r- §eTarget Chamber§r\n§rUsed for:\n§r- §eParticle Accelerators\n§r- §eGd-Sm Neutron Shields
+tooltip.gateway.obtain.nc_rare_earth.gadolinium=§rObtained from:\n§r- §eDecay of Europium-155§r\n§r- §eMetal Spallation§r\n§rUsed for:\n§r- §eGd-Sm Neutron Shields\n§r- §e16M Compacting Component
+tooltip.gateway.obtain.nc_rare_earth.dysprosium=§rObtained from:\n§r- §eDysprholminite processing§r\n§rUsed for:\n§r- §eThaumium
+tooltip.gateway.obtain.nc_rare_earth.holmium=§rObtained from:\n§r- §eDysprholminite processing§r\n§rUsed for:\n§r- §eInfused Iron
+tooltip.gateway.obtain.nc_rare_earth.palladium=§rObtained from:\n§r- §eDecay of Ruthenium-106§r\n§r- §eTarget Chamber§r\n§rUsed for:\n§r- §eMultiblock Electrolyzers\n§r- §e16M Storage Component
+tooltip.gateway.obtain.nc_rare_earth.manganese=From Rhodochrosite processing
+
 tooltip.gateway.obtain.condensed_thoughts=Duplicate this with Sand Learning Process!
 tooltip.gateway.obtain.liquid_enlightenment=Craft the bucket first!
 tooltip.gateway.use.mindful_sand=Has a chance to transform into Condensed Thoughts upon receiving a block update.
@@ -196,6 +224,11 @@ tooltip.gateway.use.roots_pouch=Has 9 slots for herbs.
 tooltip.gateway.use.roots_pouch_component=Has 6 slots for herbs and 12 slots for items.
 tooltip.gateway.use.roots_pouch_fey=Has 12 slots for herbs and 6 slots for items.
 tooltip.gateway.use.roots_pouch_apothecary=Has 9 slots for herbs and 18 slots for items.
+
+tooltip.gateway.use.sfr_ox=For use in Solid Fission Reactors. Mainline fuel.
+tooltip.gateway.use.sfr_ni=For use in Solid Fission Reactors. Colder fuel with a longer lifetime.
+tooltip.gateway.use.sfr_za=For use in Solid Fission Reactors. Hotter fuel with a shorter lifetime.
+tooltip.gateway.use.pbr=For use in Pebble Bed Reactors.
 
 tooltip.gateway.hint.leaf_generator=Gets disabled with a Redstone signal. Use this to your advantage!
 tooltip.gateway.hint.witchery_book=The Witchery Companion contains all information in this book!

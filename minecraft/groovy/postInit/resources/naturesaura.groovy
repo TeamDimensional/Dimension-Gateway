@@ -70,3 +70,13 @@ mods.naturesaura.ritual.recipeBuilder()
     .time(200)
     .sapling(item("minecraft:sapling"))
     .register()
+
+
+// Alternate Infused Iron recipe
+mods.naturesaura.altar.recipeBuilder()
+    .input(item("nuclearcraft:ingot2", 7))
+    .output(item("naturesaura:infused_iron_block"))
+    .catalyst(item("naturesaura:conversion_catalyst"))
+    .aura(40000)
+    .time(80)
+    .register()

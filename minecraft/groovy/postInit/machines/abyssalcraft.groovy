@@ -139,8 +139,8 @@ for (def pair in items) {
         .energy(800)
         .centerItem(owItem)
         .input(
-            item("nuclearcraft:americium"), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:cingot"),
-            item("abyssalcraft:abystone"), item("nuclearcraft:americium"), item("abyssalcraft:abystone"), item("enderutilities:enderpart", 2),
+            ore("ingotAmericium241All"), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:cingot"),
+            item("abyssalcraft:abystone"), ore("ingotAmericium241All"), item("abyssalcraft:abystone"), item("enderutilities:enderpart", 2),
             item("actuallyadditions:item_crystal_empowered", 2))
         .register()
 
