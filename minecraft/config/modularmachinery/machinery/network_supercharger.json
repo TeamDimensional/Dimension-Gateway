@@ -112,7 +112,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "item_energy_input"
+                "network_supercharger_hatch"
             ]
         },
         {
@@ -424,7 +424,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "item_energy_input"
+                "network_supercharger_hatch"
             ]
         },
         {

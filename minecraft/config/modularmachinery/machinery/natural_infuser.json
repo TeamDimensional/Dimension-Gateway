@@ -16,7 +16,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "fluid_input_item_io"
+                "natural_infuser_hatch"
             ]
         },
         {
@@ -104,7 +104,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "fluid_input_item_io"
+                "natural_infuser_hatch"
             ]
         },
         {
@@ -144,7 +144,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "fluid_input_item_io"
+                "natural_infuser_hatch"
             ]
         },
         {

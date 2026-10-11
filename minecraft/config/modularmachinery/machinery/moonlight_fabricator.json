@@ -88,8 +88,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "actuallyadditions:block_crystal@5",
-                "mmce_complement:me_connection_share_hatch"
+                "actuallyadditions:block_crystal@5"
             ]
         },
         {
@@ -233,7 +232,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "item_io"
+                "moonlight_fabricator_hatch"
             ]
         },
         {
@@ -361,7 +360,7 @@
             "y": -1,
             "z": 4,
             "elements": [
-                "modularmachinery:blockauraproviderinput"
+                "moonlight_fabricator_hatch"
             ]
         },
         {
@@ -577,7 +576,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "item_io"
+                "moonlight_fabricator_hatch"
             ]
         },
         {

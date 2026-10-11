@@ -232,7 +232,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "mystical_combiner_input_hatch"
+                "mystical_combiner_hatch"
             ]
         },
         {
@@ -264,7 +264,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "reinforced_energy_input"
+                "mystical_combiner_hatch"
             ]
         },
         {
@@ -400,7 +400,7 @@
             "y": 1,
             "z": 4,
             "elements": [
-                "mystical_combiner_env_hatch"
+                "mystical_combiner_special_hatch"
             ]
         },
         {
@@ -424,7 +424,7 @@
             "y": 1,
             "z": 4,
             "elements": [
-                "mystical_combiner_env_hatch"
+                "mystical_combiner_special_hatch"
             ]
         },
         {
@@ -616,8 +616,7 @@
             "y": 0,
             "z": 5,
             "elements": [
-                "modularmachinery:blockcasing@4",
-                "mmce_complement:me_connection_share_hatch"
+                "modularmachinery:blockcasing@4"
             ]
         },
         {
@@ -657,7 +656,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "reinforced_item_output"
+                "mystical_combiner_hatch"
             ]
         },
         {
@@ -753,7 +752,7 @@
             "y": 1,
             "z": 5,
             "elements": [
-                "mystical_combiner_env_hatch"
+                "mystical_combiner_special_hatch"
             ]
         }
     ]}

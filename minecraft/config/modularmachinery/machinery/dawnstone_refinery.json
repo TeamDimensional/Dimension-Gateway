@@ -64,8 +64,7 @@
             "y": 1,
             "z": 4,
             "elements": [
-                "thaumictinkerer:arcane_quartz_pillar@0",
-                "mmce_complement:me_connection_share_hatch"
+                "thaumictinkerer:arcane_quartz_pillar@0"
             ]
         },
         {
@@ -145,7 +144,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "item_io"
+                "dawnstone_refinery_item_hatch"
             ]
         },
         {
@@ -489,7 +488,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "item_io"
+                "dawnstone_refinery_item_hatch"
             ]
         },
         {
@@ -521,7 +520,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "fluid_input"
+                "dawnstone_refinery_fluid_hatch"
             ]
         },
         {
@@ -641,7 +640,7 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "essentia_input"
+                "dawnstone_refinery_essentia_hatch"
             ]
         },
         {

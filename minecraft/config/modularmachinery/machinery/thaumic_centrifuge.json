@@ -64,7 +64,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "reinforced_fluid_input"
+                "thaumic_centrifuge_input_hatch"
             ]
         },
         {
@@ -440,7 +440,7 @@
             "y": 3,
             "z": 3,
             "elements": [
-                "modularmachinery:blockmanaproviderinput@0"
+                "thaumic_centrifuge_input_hatch"
             ]
         },
         {
