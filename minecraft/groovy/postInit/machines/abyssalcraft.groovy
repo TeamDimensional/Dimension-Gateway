@@ -74,7 +74,7 @@ for (def a in crystallizationRecipes) {
     builder.register()
 }
 
-// New crafting chains for Statues in tier 10
+// New crafting chains for Statues in tier 11
 mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:cthulhustatue"))
 mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:hasturstatue"))
 mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:jzaharstatue"))
@@ -110,52 +110,46 @@ def items = [
     ["energy_relay", item("astralsorcery:blockattunementrelay")],
     ["energy_container", item("enderio:block_cap_bank", 3)],
 ]
-for (def pair in items) {
-    def it = pair[0]
-    def owItem = item("abyssalcraft:overworld_${it}")
-    def awItem = item("abyssalcraft:abyssal_wasteland_${it}")
-    def omItem = item("abyssalcraft:omothol_${it}")
 
-    mods.abyssaltweaker.ritual.removeByOutput(owItem)
-    mods.abyssaltweaker.ritual.removeByOutput(awItem)
-    mods.abyssaltweaker.ritual.removeByOutput(omItem)
+// Upgrade rings
+mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:ring_overworld"))
+mods.abyssaltweaker.ritual.recipeBuilder()
+    .name("gateway:ring_overworld")
+    .output(item("abyssalcraft:ring_overworld"))
+    .bookTier(0)
+    .energy(400)
+    .centerItem(item("abyssalcraft:ring"))
+    .input(
+        item("enderio:item_material", 14), item("gateway:transcendental_matrix"), item("botania:manaresource"),
+        item("abyssalcraft:monolithstone"), item("astralsorcery:itemcraftingcomponent", 4), item("abyssalcraft:monolithstone"), item("botania:manaresource"),
+        item("gateway:transcendental_matrix"))
+    .register()
 
-    mods.abyssaltweaker.ritual.recipeBuilder()
-        .name("gateway:overworld_${it}")
-        .output(owItem)
-        .bookTier(0)
-        .energy(400)
-        .centerItem(pair[1])
-        .input(
-            item("calculator:enddiamond"), item("gateway:transcendental_matrix"), item("botania:manaresource"),
-            item("abyssalcraft:monolithstone"), item("astralsorcery:itemcraftingcomponent", 4), item("abyssalcraft:monolithstone"), item("minecraft:ender_eye"),
-            item("gateway:transcendental_matrix"))
-        .register()
+mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:ring_abyssal_wasteland"))
+mods.abyssaltweaker.ritual.recipeBuilder()
+    .name("gateway:ring_abyssal_wasteland")
+    .output(item("abyssalcraft:ring_abyssal_wasteland"))
+    .bookTier(0)
+    .energy(800)
+    .centerItem(item("abyssalcraft:ring") | item("abyssalcraft:ring_overworld"))
+    .input(
+        item("enderio:item_material", 19), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:cingot"),
+        item("abyssalcraft:abystone"), ore("ingotAmericium241All"), item("abyssalcraft:abystone"), item("abyssalcraft:cingot"),
+        item("actuallyadditions:item_crystal_empowered", 2))
+    .register()
 
-    mods.abyssaltweaker.ritual.recipeBuilder()
-        .name("gateway:wasteland_${it}")
-        .output(awItem)
-        .bookTier(1)
-        .energy(800)
-        .centerItem(owItem)
-        .input(
-            ore("ingotAmericium241All"), item("actuallyadditions:item_crystal_empowered", 2), item("abyssalcraft:cingot"),
-            item("abyssalcraft:abystone"), ore("ingotAmericium241All"), item("abyssalcraft:abystone"), item("enderutilities:enderpart", 2),
-            item("actuallyadditions:item_crystal_empowered", 2))
-        .register()
-
-    mods.abyssaltweaker.ritual.recipeBuilder()
-        .name("gateway:omothol_${it}")
-        .output(omItem)
-        .bookTier(3)
-        .energy(1600)
-        .centerItem(awItem)
-        .input(
-            item("abyssalcraft:abyingot"), item("botania:quartz", 5), item("abyssalcraft:ethaxiumingot"),
-            item("abyssalcraft:darkethaxiumbrick"), item("thaumicaugmentation:material", 5), item("abyssalcraft:darkethaxiumbrick"),
-            item("abyssalcraft:ethaxiumingot"), item("botania:quartz", 5))
-        .register()
-}
+mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:ring_omothol"))
+mods.abyssaltweaker.ritual.recipeBuilder()
+    .name("gateway:ring_omothol")
+    .output(item("abyssalcraft:ring_omothol"))
+    .bookTier(0)
+    .energy(1200)
+    .centerItem(item("abyssalcraft:ring") | item("abyssalcraft:ring_overworld") | item("abyssalcraft:ring_abyssal_wasteland"))
+    .input(
+        item("abyssalcraft:abyingot"), item("botania:quartz", 5), item("abyssalcraft:ethaxiumingot"),
+        item("abyssalcraft:darkethaxiumbrick"), item("witchery:tormented_twine"), item("abyssalcraft:darkethaxiumbrick"),
+        item("abyssalcraft:ethaxiumingot"), item("botania:quartz", 5))
+    .register()
 
 // New ODB recipe
 crafting.removeByOutput(item("abyssalcraft:odb"))
@@ -287,6 +281,6 @@ mods.abyssaltweaker.ritual.recipeBuilder()
     .centerItem(item("abyssalcraft:drainstaff_omt"))
     .input(
         item("abyssalcraft:coralium_crystal_cluster"), item("abyssalcraft:dreadium_crystal_cluster"), item("abyssalcraft:eldritchscale"),
-        item("prodigytech:primordium"), item("abyssalcraft:gatewaykeyjzh"), item("prodigytech:primordium"),
+        item("gateway:mystical_metal_clump"), item("abyssalcraft:gatewaykeyjzh"), item("gateway:mystical_metal_clump"),
         item("abyssalcraft:ethaxiumingot"), item("abyssalcraft:blaze_crystal_cluster"))
     .register()

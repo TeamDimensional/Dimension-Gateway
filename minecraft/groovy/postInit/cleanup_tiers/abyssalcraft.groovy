@@ -47,6 +47,7 @@ def abyssalItems = [
     mitem("spirit_altar"), mitem("spirit_tablet"),
     mitem("ghoul_flesh"), mitem("abyssal_ghoul_flesh"), mitem("shadow_ghoul_flesh"), mitem("anti_ghoul_flesh"),
     mitem("ring"), mitem("ring_overworld"), mitem("ring_abyssal_wasteland"),
+    mitem("sacrificialaltar"), mitem("energypedestal"), mitem("energycollector"), mitem("energyrelay"), mitem("energycontainer"),
 ] + statues
 for (def i in 2..9) abyssalItems.add(mitem("ccluster${i}"))
 for (def i in 0..3) abyssalItems.add(mitem("spirit_tablet_shard_${i}"))
@@ -91,7 +92,7 @@ def removeRecipes = [
     mitem("door_drt"), mitem("coraliumstone"), mitem("odbcore"), mitem("dreadbrick"), mitem("chiseled_dreadstone_brick"),
     mitem("dreadplanks"), mitem("dreadbrickstairs"),
     mitem("dreadbrickfence"), mitem("dreadbrickslab1"),
-    mitem("drtfence"), mitem("materializer"), mitem("sacrificialaltar"), mitem("energypedestal"), mitem("energycollector"), mitem("energyrelay"),
+    mitem("drtfence"), mitem("materializer"),
     mitem("dreadstonecobblestonestairs"), mitem("dreadstonecobblestoneslab1"), mitem("dreadstonecobblestonewall"),
     mitem("statetransformer"), mitem("energydepositioner"), mitem("sequential_brewing_stand"), mitem("platec"),
     mitem("apick"), mitem("aaxe"), mitem("ashovel"), mitem("asword"), mitem("ahoe"),
@@ -121,7 +122,7 @@ def removeFurnace = [
 
 def removeRitual = [
     mitem("psdl"), mitem("dreadlands_energy_pedestal"), mitem("dreadlands_sacrificial_altar"),
-    mitem("energycontainer"), mitem("dreadlands_energy_collector"), mitem("dreadlands_energy_relay"), mitem("dreadlands_energy_container"),
+    mitem("dreadlands_energy_collector"), mitem("dreadlands_energy_relay"), mitem("dreadlands_energy_container"),
     mitem("gatewaykeydl"), mitem("jzaharcoin"),
     mitem("drainstaff_dl"), mitem("scroll_basic"), mitem("face_book"), mitem("sealing_key"), mitem("ring_dreadlands"),
 ]
