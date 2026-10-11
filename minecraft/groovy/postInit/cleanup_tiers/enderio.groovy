@@ -128,7 +128,7 @@ def removeRecipes = [
     mitem("item_capacitor_grainy"), mitem("item_capacitor_silver"),
 ]
 for (def i in 1..7) removeRecipes.add(mitem("item_endergy_conduit", i))
-for (def i in [0, 22, 38, 51, 52, 66, 67, 69, 77, 81]) removeRecipes.add(mitem("item_material", i))
+for (def i in [0, 38, 51, 52, 66, 67, 69, 77, 81]) removeRecipes.add(mitem("item_material", i))
 for (def i in 0..6) removeRecipes.add(mitem("block_solar_panel", i))
 for (def b in 0..15) for (def a in [1, 2]) removeRecipes.add(mitem("block_decoration${a}", b))
 for (def b in 0..4) removeRecipes.add(mitem("block_decoration3", b))

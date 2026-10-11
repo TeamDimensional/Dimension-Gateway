@@ -172,9 +172,11 @@ def addOre(key, byproducts, addFluidOps) {
     def itemShard = item("jaopca:shard." + snakeCase)
     def itemClump = item("jaopca:clump." + snakeCase)
     def itemDirty = item("jaopca:dirty_dust." + snakeCase)
+
+    mods.nuclearcraft.manufactory.removeRecipeWithInput(itemOre)
     
     // Stage 1: Ore -> Native Cluster
-    // TODO: Magical Ore Extractor
+    // See dawnstone_refinery.zs
     // TODO: Refining modifier
 
     // Stage 2: Native Cluster -> Crystal

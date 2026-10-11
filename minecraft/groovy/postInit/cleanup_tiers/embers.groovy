@@ -38,7 +38,7 @@ def items = [
     mitem("seed_aluminum"), mitem("seed_copper"), mitem("seed_dawnstone"), mitem("block_dawnstone"), mitem("seed_gold"),
     mitem("seed_iron"), mitem("seed_lead"), mitem("seed_nickel"), mitem("seed_silver"), mitem("seed_tin"),
     mitem("ember_emitter"), mitem("ember_receiver"), mitem("ember_funnel"), mitem("ember_pulser"), mitem("charger"), mitem("ember_pipe"),
-    mitem("explosion_pedestal"), mitem("heat_coil"), mitem("stamper"), mitem("stamper_base")
+    mitem("explosion_pedestal"), mitem("heat_coil"), mitem("stamper"), mitem("stamper_base"), mitem("alchemic_waste")
 ]
 
 def breakerItems = [mitem("breaker")]
@@ -54,7 +54,7 @@ for (def it in stamps) {
 def removeAlchemy = [mitem("dust_metallurgic"), mitem("isolated_materia")]
 
 def hideFromJei = [
-    mitem("alchemic_waste"), mitem("spark_plug"), mitem("item_gauge"), mitem("turret"),
+    mitem("spark_plug"), mitem("item_gauge"), mitem("turret"),
     mitem("ashen_brick_slab_double"), mitem("ashen_stone_slab_double"), mitem("ashen_tile_slab_double"), mitem("block_caminite_brick_slab_double")
 ] + removeRecipes + removeAlchemy
 

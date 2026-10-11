@@ -88,7 +88,7 @@ def fissionItems = [
     mitem("turbine_controller"), mitem("turbine_casing"), mitem("turbine_glass"), mitem("turbine_rotor_shaft"), mitem("turbine_rotor_stator"),
     mitem("turbine_rotor_bearing"), mitem("turbine_dynamo_coil", 32767), mitem("turbine_coil_connector"), mitem("turbine_inlet"),
     mitem("turbine_inlet"), mitem("turbine_outlet"), mitem("fission_conductor"), mitem("part", 12), mitem("part", 14), mitem("part", 15),
-    mitem("fission_dust", 32767), mitem("boron", 0), mitem("boron", 1), mitem("lithium", 0), mitem("lithium", 1),
+    mitem("fission_dust", 32767),
     mitem("record_end_of_the_world"), mitem("centrifuge"), mitem("separator"), item("reactorbuilder:reactorbuilder"),
     mitem("ingot2", 1), mitem("dust2", 1), mitem("ingot_block2", 1),
     mitem("ingot2", 5), mitem("dust2", 5), mitem("ingot_block2", 5),
@@ -108,7 +108,7 @@ def moltenSaltItems = [
 ]
 
 def qmdItems = [
-    mitem("decay_generator"), mitem("tritium_lamp"),
+    mitem("decay_generator"), mitem("tritium_lamp"), mitem("boron", 0), mitem("boron", 1), mitem("lithium", 0), mitem("lithium", 1),
 ]
 
 def hxItems = [

@@ -110,7 +110,7 @@ for (def c in GatewayHelpers.qmdChemiFluids) tier9.add(fluid(c))
 
 def tier10 = [
     // Advanced Rocketry
-    fluid("rocketfuel"), fluid("titanium_aluminum_nitride"), fluid("titanium_aluminide"), fluid("pyro_cinnabar_mixture"),
+    fluid("titanium"), fluid("rocketfuel"), fluid("titanium_aluminum_nitride"), fluid("titanium_aluminide"), fluid("pyro_cinnabar_mixture"),
     // Moon
     fluid("uranium_titanide_mixture"), fluid("thorium"), 
     // Thaumcraft part 1.5
@@ -178,7 +178,7 @@ def tier14 = [
     fluid("zinc"), fluid("osmium"), fluid("calcium"), fluid("strontium"),
     fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
     fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
-    fluid("erbium"), fluid("ytterbium"), fluid("neodymium"),
+    fluid("erbium"), fluid("ytterbium"), fluid("neodymium"), fluid("yttrium"),
     fluid("boron_10"), fluid("boron_11"), fluid("lithium_6"), fluid("lithium_7"),
 ]
 

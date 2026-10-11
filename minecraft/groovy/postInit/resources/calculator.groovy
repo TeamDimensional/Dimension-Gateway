@@ -27,7 +27,7 @@ mods.calculator.calculator.recipeBuilder()
     .register()
 mods.calculator.calculator.removeByOutput(item("sonarcore:reinforceddirtblock"))
 mods.calculator.calculator.recipeBuilder()
-    .input(item("essentialcraft:fortifiedstone"), item("actuallyadditions:item_crystal", 3))
+    .input(item("extrautils2:compresseddirt"), item("actuallyadditions:item_crystal", 3))
     .output(item("sonarcore:reinforceddirtblock") * 8)
     .register()
 

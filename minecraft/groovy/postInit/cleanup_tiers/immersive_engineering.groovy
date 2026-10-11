@@ -90,7 +90,6 @@ crafting.remove("immersiveengineering:stone_decoration/cokebrick_slab_back")
 crafting.remove("immersiveengineering:stone_decoration/blastbrick_slab_back")
 
 mods.immersiveengineering.squeezer.removeByOutput(item("immersiveengineering:material", 18))
-mods.immersiveengineering.metal_press.removeByInput(item("immersiveengineering:material", 19) * 4)
 mods.immersiveengineering.blueprint_crafting.removeByOutput("electrode", item("immersiveengineering:graphite_electrode"))
 mods.immersiveengineering.blueprint_crafting.recipeBuilder()
     .input(item("nuclearcraft:ingot", 8), item("nuclearcraft:ingot", 8), item("nuclearcraft:ingot", 8), item("nuclearcraft:ingot", 8))
