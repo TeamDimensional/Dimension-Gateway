@@ -14,7 +14,7 @@ TooltipEvents.setModTier("lost_aether", 7)
 TooltipEvents.setTier(aitem("lore_book"), 1)
 
 for (def tool in ["sword", "pickaxe", "axe", "shovel"]) {
-    for (def material in ["skyroot", "holystone", "zanite", "gravitite"]) {
+    for (def material in ["skyroot", "holystone"]) {
         def toolItem = aitem("${material}_${tool}")
         GatewayHelpers.banTool(toolItem)
         GatewayHelpers.hide(toolItem)
@@ -68,13 +68,7 @@ def brokenLoot = [
     aitem("obsidian_gloves"),
 ]
 
-def removeRecipes = [
-    alitem("gravitite_shield"), aitem("gravitite_helmet"), aitem("gravitite_chestplate"),
-    aitem("gravitite_leggings"), aitem("gravitite_boots"), aitem("gravitite_gloves")
-]
+def justHide = [aitem("aether_portal")]
 
-def justHide = [aitem("gravitite_ore"), aitem("enchanted_gravitite"), aitem("aether_portal")]
-
-for (def it in brokenLoot + removeRecipes + justHide) GatewayHelpers.hide(it)
-for (def it in removeRecipes) crafting.removeByOutput(it)
+for (def it in brokenLoot + justHide) GatewayHelpers.hide(it)
 GatewayHelpers.hide(aitem("developer_stick"))

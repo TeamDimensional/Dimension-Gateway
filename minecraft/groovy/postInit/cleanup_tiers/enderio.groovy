@@ -19,11 +19,12 @@ def glassItems = [
 ]
 
 def enderItems = [mitem("block_enderman_skull")]
+def ncItems = [mitem("block_industrial_insulation")]
 
 def items = [
     mitem("block_infinity_fog"), mitem("block_infinity"), mitem("block_infinity", 2), mitem("block_infinity", 1), mitem("block_dark_steel_ladder"),
     mitem("block_dark_iron_bars"), mitem("block_dark_steel_trapdoor"), mitem("block_dark_steel_door"), mitem("block_reinforced_obsidian"),
-    mitem("block_industrial_insulation"), mitem("item_conduit_probe"), mitem("item_yeta_wrench"), mitem("item_xp_transfer"),
+    mitem("item_conduit_probe"), mitem("item_yeta_wrench"), mitem("item_xp_transfer"),
     mitem("item_magnet"), mitem("block_enderman_skull", 2), mitem("item_enchantment_filter_normal"), mitem("item_enchantment_filter_big"),
     mitem("item_fluid_filter"), mitem("block_detector_block"), mitem("block_detector_block_silent"),
     mitem("item_dark_steel_shears"), mitem("item_dark_steel_crook"), mitem("item_inventory_charger_basic"), mitem("item_inventory_charger"),
@@ -171,6 +172,7 @@ for (def i in [0, 4, 5, 6]) {
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in glassItems) TooltipEvents.setTier(it, 4)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
+for (def it in ncItems) TooltipEvents.setTier(it, 9)
 for (def it in items) TooltipEvents.setTier(it, 11)
 for (def it in advancedItems) TooltipEvents.setTier(it, 11)
 for (def it in stellarEquipment) TooltipEvents.setTier(it, 12)
