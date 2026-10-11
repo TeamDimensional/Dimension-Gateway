@@ -165,3 +165,12 @@ mods.advancedrocketry.electric_arc_furnace.recipeBuilder().power(1600)
     .input(item("gateway:crude_titanium_matrix"))
     .output(item("libvulpes:productingot", 7))
     .register()
+
+// Rainbow Mixture
+MachineHelper.melting()
+    .minTier(2)
+    .input(item("extrautils2:decorativesolid", 8))
+    .timeMultiplier(10.0)
+    .fluidOutput(fluid("rainbow_mixture") * 500)
+    .skipSpeedValidation()
+    .register()

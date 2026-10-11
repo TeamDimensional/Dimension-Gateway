@@ -39,6 +39,8 @@ def spaceExplorationTier = [
     mitem("legs_wind"), mitem("boots_wind"),
 ]
 
+def emptinessTier = [mitem("genitem", 35), mitem("voidfence"), mitem("chest", 1)]
+
 def windTier = [
     mitem("solarprism"), mitem("sunrayabsorber"), mitem("colddistillator"), mitem("invertedplating"), mitem("mithrilinecrystal"),
     mitem("mithrilinecrystal", 3), mitem("mithrilinefurnace"), mitem("playerpentacle"), mitem("windrune"),
@@ -65,7 +67,7 @@ for (int i in 0..8) magicalTier.add(mitem("charm", i))  // moved from industrial
 for (def i in ["e", "f", "w", "a"]) industrialTier.add(mitem("${i}focus"))
 
 def hoannaLoot = [
-    mitem("titanite"),
+    mitem("titanite"), mitem("voidstone"),
     mitem("concrete"), mitem("root"), mitem("twinkling_titanite"),
 ]
 for (int i in [35, 36, 37]) hoannaLoot.add(mitem("genitem", i))
@@ -76,9 +78,9 @@ def hoannaBuildingLoot = [
 ]
 
 def hoannaTier = [
-    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("voidfence"), mitem("windtablet"),
-    mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("mithrilinecrystal", 6), mitem("chest", 1), mitem("magicalfurnace"),
-    mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidstone"), mitem("voidglass"),
+    mitem("dreaddirt"), mitem("magicalteleporter"), mitem("darknessobelisk"), mitem("emberforge"), mitem("windtablet"),
+    mitem("ultraheatgen"), mitem("ultraflowerburner"), mitem("mithrilinecrystal", 6), mitem("magicalfurnace"),
+    mitem("elementalsword"), mitem("itemfilter", 1), mitem("itemfilter", 3), mitem("magicalbuilder", 32767), mitem("voidglass"),
 ] + hoannaLoot + hoannaBuildingLoot
 for (def i in armorParts) hoannaTier.add(mitem("${i}_void"))
 
@@ -135,6 +137,7 @@ for (def it in industrialTier) TooltipEvents.setTier(it, 10)
 for (def it in hoannaTier) TooltipEvents.setTier(it, 13)
 for (def it in demonTier) TooltipEvents.setTier(it, 14)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
+for (def it in emptinessTier) TooltipEvents.setTier(it, 9)
 for (def it in unknownItems) TooltipEvents.setTier(it, -1)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 for (def it in removeItems) crafting.removeByOutput(it)
@@ -149,3 +152,4 @@ ore("cacti").remove(mitem("cacti"))
 ore("cactus").remove(mitem("cacti"))
 ore("blockCacti").remove(mitem("cacti"))
 ore("blockCactus").remove(mitem("cacti"))
+ore("blockVoid").remove(mitem("voidstone"))

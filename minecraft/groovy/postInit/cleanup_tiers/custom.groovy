@@ -12,6 +12,7 @@ TooltipEvents.setTier(item("modularmachinery:divinity_inverter_controller"), 7)
 TooltipEvents.setTier(item("modularmachinery:network_supercharger_controller"), 8)
 TooltipEvents.setTier(item("modularmachinery:resonant_caster_controller"), 10)
 TooltipEvents.setTier(item("modularmachinery:thaumic_centrifuge_controller"), 10)
+TooltipEvents.setTier(item("modularmachinery:rainbow_mixer_controller"), 12)
 TooltipEvents.setTier(item("modularmachinery:mystical_combiner_controller"), 13)
 
 TooltipEvents.setTier(citem("ferramic_machine_frame"), 3)

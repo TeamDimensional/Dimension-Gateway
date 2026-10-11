@@ -202,6 +202,7 @@ class MachineHelper {
         def minTier = 0
         def maxTier = 3
         def timeMultiplier = 1.0
+        def skipSpeedValidation = false
 
         MeltingBuilder() {
             this.tconstructBuilders = []
@@ -218,6 +219,11 @@ class MachineHelper {
 
         MeltingBuilder maxTier(int maxTier) {
             this.maxTier = maxTier
+            return this
+        }
+
+        MeltingBuilder skipSpeedValidation() {
+            this.skipSpeedValidation = true
             return this
         }
 
@@ -262,9 +268,9 @@ class MachineHelper {
             if (this.minTier <= 0 && this.maxTier >= 0)
                 for (def builder in this.tconstructBuilders)
                     builder.register()
-            if (this.minTier <= 1 && this.maxTier >= 1 && this.timeMultiplier <= 2)
+            if (this.minTier <= 1 && this.maxTier >= 1 && (this.timeMultiplier <= 2 || this.skipSpeedValidation))
                 this.embersBuilder.register()
-            if (this.minTier <= 2 && this.maxTier >= 2 && this.timeMultiplier <= 2)
+            if (this.minTier <= 2 && this.maxTier >= 2 && (this.timeMultiplier <= 2 || this.skipSpeedValidation))
                 this.ftBuilder.register()
             if (this.minTier <= 2 && this.maxTier >= 2)
                 this.thermalBuilder.register()

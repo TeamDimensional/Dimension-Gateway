@@ -29,3 +29,5 @@ TooltipEvents.setTooltip(item("nuclearcraft:ingot2", 7), "tooltip.gateway.obtain
 TooltipEvents.setTooltip(item("nuclearcraft:ingot2", 8), "tooltip.gateway.obtain.nc_rare_earth.dysprosium")
 TooltipEvents.setTooltip(item("nuclearcraft:ingot2", 9), "tooltip.gateway.obtain.nc_rare_earth.gadolinium")
 TooltipEvents.setTooltip(item("nuclearcraft:alloy", 18), "tooltip.gateway.obtain.nc_rare_earth.samarium")
+
+TooltipEvents.setTooltip(item("extrautils2:decorativesolid", 8), "tooltip.gateway.obtain.rainbow_stone")

@@ -148,3 +148,10 @@ mods.thaumcraft.crucible.recipeBuilder()
     .output(item("essentialcraft:genitem", 10))
     .aspect(aspect("desiderium") * 5, aspect("permutatio") * 5)
     .register()
+
+// Void Plate
+mods.essentialcraft.magician_table.recipeBuilder()
+    .input(item("essentialcraft:genitem", 24), item("thaumicaugmentation:stone"), item("thaumicaugmentation:stone"), item("thaumicaugmentation:stone"), item("thaumicaugmentation:stone"))
+    .output(item("essentialcraft:genitem", 35) * 2)
+    .mru(400)
+    .register()

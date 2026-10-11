@@ -84,7 +84,7 @@ mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:yogsothothstatue"))
 mods.abyssaltweaker.ritual.removeByOutput(item("abyssalcraft:shubniggurathstatue"))
 
 mods.calculator.flawless_calculator.recipeBuilder()
-    .output(item("abyssalcraft:monolithstone") * 16)
+    .output(item("abyssalcraft:monolithstone") * 8)
     .input(item("thaumicaugmentation:stone", 11), item("extrautils2:compressedcobblestone", 3), ore("ingotPlutonium242All"), item("enderio:item_material", 20))
     .register()
 

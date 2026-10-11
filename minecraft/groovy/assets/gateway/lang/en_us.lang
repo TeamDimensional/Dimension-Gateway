@@ -52,6 +52,7 @@ fluid.gateway.pyro_cinnabar_mixture.name=Pyrotheum-Cinnabar Mixture
 fluid.gateway.blaze_superfuel.name=Blaze Superfuel
 fluid.gateway.liquid_enlightenment.name=Liquid Enlightenment
 fluid.gateway.condensed_thoughts.name=Condensed Thoughts
+fluid.gateway.rainbow_mixture.name=Rainbow Mixture
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
 
@@ -204,6 +205,7 @@ tooltip.gateway.obtain.nc_rare_earth.manganese=From Rhodochrosite processing
 
 tooltip.gateway.obtain.condensed_thoughts=Duplicate this with Sand Learning Process!
 tooltip.gateway.obtain.liquid_enlightenment=Craft the bucket first!
+tooltip.gateway.obtain.rainbow_stone=§rUsed NaK in order of quality:\n§r- Red: (worst) §eIron, Redstone, Villiaumite, Helium§r (best)\n§r- Green: (worst) §eSlime, Fluorite, Emerald, Nitrogen§r (best)\n§r- Blue: (worst) §eLapis, Manganese, Diamond, Cryotheum§r (best)
 tooltip.gateway.use.mindful_sand=Has a chance to transform into Condensed Thoughts upon receiving a block update.
 tooltip.gateway.use.golden_leaf1=Spreads to the nearby Leaves blocks when grown.
 tooltip.gateway.use.golden_leaf2=Only fully grown Leaves can drop Gold Leaf!
@@ -389,6 +391,8 @@ modularmachinery.resonant_caster=Resonant Caster
 modularmachinery.starlight_laser=Starlight Laser
 modularmachinery.thaumic_centrifuge=Thaumic Centrifuge
 modularmachinery.divinity_inverter=Divinity Inverter
+modularmachinery.mystical_combiner=Mystical Combiner
+modularmachinery.rainbow_mixer=Rainbow Mixer
 
 tile.modularmachinery.network_supercharger.desc.seconds=Fully charges the ME Controller blocks every %d seconds
 tile.modularmachinery.network_supercharger.desc.ticks=Fully charges the ME Controller blocks every %d ticks
@@ -416,6 +420,7 @@ tile.modularmachinery.divinity_inverter.desc=Item output is in form of mob drops
 tile.modularmachinery.divinity_inverter.desc.demon_input=%s required on the Hell side
 tile.modularmachinery.divinity_inverter.desc.angel_input=%s required on the Heaven side
 entity.any_villager.name=Villager
+tooltip.gateway.obtain.mystical_combiner=§rSniper rifle materials in the craft are:\n§r- §eDevice: Mithriline Ingot\n§r- §eScope: Mithriline Ingot\n§r- §eBase: Void Plate\n§r- §eHandle: Pale Ingot\n§r- §eLens: MRUMP - Frozen
 
 # Ponders
 ponder.chapter1.nether.name=Entering Nether

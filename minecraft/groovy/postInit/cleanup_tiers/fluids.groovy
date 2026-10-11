@@ -160,6 +160,8 @@ def tier12 = [
 ]
 
 def tier13 = [
+    // Rainbow
+    fluid("rainbow_mixture"),
     // Witchery part 2
     fluid("witchery.flowing_spirit"), fluid("witchery.hollow_tears"),
     // Nightmare Fuels

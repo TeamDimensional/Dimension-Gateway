@@ -43,7 +43,13 @@
         "modularmachinery:blockfluidinputhatch@5",
         "modularmachinery:blockfluidinputhatch@6",
         "modularmachinery:blockfluidinputhatch@7",
-        "modularmachinery:blockmefluidinputbus"
+        "modularmachinery:blockmefluidinputbus",
+        "mmce_complement:quad_fluid_input_hatch_tiny@3",
+        "mmce_complement:quad_fluid_input_hatch_tiny@4",
+        "mmce_complement:quad_fluid_input_hatch_tiny@5",
+        "mmce_complement:quad_fluid_input_hatch_tiny@6",
+        "mmce_complement:quad_fluid_input_hatch_tiny@7",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "reinforced_item_input": [
         "modularmachinery:blockinputbus@3",
@@ -89,6 +95,48 @@
         "modularmachinery:blockmefluidinputbus",
         "mmce_complement:me_fluid_inventory_input_bus",
         "mmce_complement:input_assembly_hatch",
-        "modularmachinery:blockcasing"
+        "modularmachinery:blockcasing@0"
+    ],
+    "rainbow_mixer_hatch": [
+        "modularmachinery:blockcasing@4",
+        "mmce_complement:me_connection_share_hatch",
+
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@4",
+        "modularmachinery:blockfluidinputhatch@5",
+        "modularmachinery:blockfluidinputhatch@6",
+        "modularmachinery:blockfluidinputhatch@7",
+        "modularmachinery:blockmefluidinputbus",
+        "mmce_complement:quad_fluid_input_hatch_tiny@3",
+        "mmce_complement:quad_fluid_input_hatch_tiny@4",
+        "mmce_complement:quad_fluid_input_hatch_tiny@5",
+        "mmce_complement:quad_fluid_input_hatch_tiny@6",
+        "mmce_complement:quad_fluid_input_hatch_tiny@7",
+        "mmce_complement:me_fluid_inventory_input_bus",
+
+        "modularmachinery:blockoutputbus@3",
+        "modularmachinery:blockoutputbus@4",
+        "modularmachinery:blockoutputbus@5",
+        "modularmachinery:blockoutputbus@6",
+        "modularmachinery:blockmeitemoutputbus",
+
+        "modularmachinery:blockenergyinputhatch@3",
+        "modularmachinery:blockenergyinputhatch@4",
+        "modularmachinery:blockenergyinputhatch@5",
+        "modularmachinery:blockenergyinputhatch@6",
+        "modularmachinery:blockenergyinputhatch@7",
+        
+        "modularmachinery:blockfluidinputhatch@3",
+        "modularmachinery:blockfluidinputhatch@4",
+        "modularmachinery:blockfluidinputhatch@5",
+        "modularmachinery:blockfluidinputhatch@6",
+        "modularmachinery:blockfluidinputhatch@7",
+        "modularmachinery:blockmefluidinputbus",
+        "mmce_complement:quad_fluid_input_hatch_tiny@3",
+        "mmce_complement:quad_fluid_input_hatch_tiny@4",
+        "mmce_complement:quad_fluid_input_hatch_tiny@5",
+        "mmce_complement:quad_fluid_input_hatch_tiny@6",
+        "mmce_complement:quad_fluid_input_hatch_tiny@7",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ]
 }
