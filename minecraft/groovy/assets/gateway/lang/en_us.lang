@@ -183,7 +183,7 @@ tooltip.gateway.obtain.nc_isotope.Plutonium239=§rObtained from:\n§r- §eBotani
 tooltip.gateway.obtain.nc_isotope.Plutonium241=§rObtained from:\n§r- §eNatural Fissile Fuel (recommended)§r\n§r- §eLEU-233§r\n§r- §eLEN-236§r and §eHEN-236§r\n§r- §eHEP-239§r\n§r- §eMIX-239§r\n§rUsed for:\n§r- §eConfigurable Biome Detector Hatch
 tooltip.gateway.obtain.nc_isotope.Plutonium242=§rObtained from:\n§r- §eCrystalline Fissile Fuel (recommended)§r\n§r- §eAll Uranium, Neptunium, and MIX fuels§r\n§rUsed for:\n§r- §eMonolith Stone
 tooltip.gateway.obtain.nc_isotope.Americium241=§rObtained from:\n§r- §eCrystalline Fissile Fuel (recommended)§r\n§r- §eHEP-241§r\n§rUsed for:\n§r- §eAbyssal Wasteland pedestals
-tooltip.gateway.obtain.nc_isotope.Americium242=§rObtained from:\n§r- §eLunar Fissile Fuel (recommended)§r\n§r- §eLEP-239§r and §eHEP-239§r\n§r- §eHEP-241§r\n§rUsed for:\n§r- §eTBD
+tooltip.gateway.obtain.nc_isotope.Americium242=§rObtained from:\n§r- §eLunar Fissile Fuel (recommended)§r\n§r- §eLEP-239§r and §eHEP-239§r\n§r- §eHEP-241§r\n§rUsed for:\n§r- §eThaumic Centrifuge
 tooltip.gateway.obtain.nc_isotope.Americium243=§rObtained from:\n§r- §eNatural Fissile Fuel (recommended)§r\n§r- §eAll Uranium, Plutonium, and MIX fuels§r\n§rUsed for:\n§r- §eNightmare Fissile Fuel
 tooltip.gateway.obtain.nc_isotope.Curium243=§rObtained from:\n§r- §eBotanical Fissile Fuel (recommended)§r\n§r- §eHEP-239§r and §eHEA-242§r\n§rUsed for:\n§r- §eTBD
 tooltip.gateway.obtain.nc_isotope.Curium245=§rObtained from:\n§r- §eSkybound Fissile Fuel (recommended)§r\n§r- §eLEA-242§r\n§rUsed for:\n§r- §eCreative Storage Upgrade
@@ -205,7 +205,7 @@ tooltip.gateway.obtain.nc_rare_earth.manganese=From Rhodochrosite processing
 
 tooltip.gateway.obtain.condensed_thoughts=Duplicate this with Sand Learning Process!
 tooltip.gateway.obtain.liquid_enlightenment=Craft the bucket first!
-tooltip.gateway.obtain.rainbow_stone=§rUsed NaK in order of quality:\n§r- Red: (worst) §eIron, Redstone, Villiaumite, Helium§r (best)\n§r- Green: (worst) §eSlime, Fluorite, Emerald, Nitrogen§r (best)\n§r- Blue: (worst) §eLapis, Manganese, Diamond, Cryotheum§r (best)
+tooltip.gateway.obtain.rainbow_stone=§rUsed NaK in order of quality:\n§r- Red: (worst) §eIron, Redstone, Villiaumite, Helium§r (best)\n§r- Green: (worst) §eSlime, Fluorite, Emerald, Nitrogen§r (best)\n§r- Blue: (worst) §eLapis, Manganese, Diamond, Cryotheum§r (best)\n§rAll recipes except §eIron, Slime, Lapis§r use 1 rad
 tooltip.gateway.use.mindful_sand=Has a chance to transform into Condensed Thoughts upon receiving a block update.
 tooltip.gateway.use.golden_leaf1=Spreads to the nearby Leaves blocks when grown.
 tooltip.gateway.use.golden_leaf2=Only fully grown Leaves can drop Gold Leaf!

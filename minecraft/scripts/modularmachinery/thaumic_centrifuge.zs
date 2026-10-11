@@ -81,7 +81,7 @@ RecipeBuilder.newBuilder("terra", "thaumic_centrifuge", 200)
     .build();
 
 RecipeBuilder.newBuilder("terra2", "thaumic_centrifuge", 100)
-    .addFluidInput(<fluid:americium_243> * 50)
+    .addFluidInput(<fluid:americium_242> * 50)
     .addAspectOutput("terra", 64)
     .addAspectOutput("herba", 64)
     .addAspectOutput("vinculum", 64)

@@ -42,10 +42,10 @@ for red, redInput in redInputs {
     for green, greenInput in greenInputs {
         for blue, blueInput in blueInputs {
             val boost = red + green + blue;
-            val builder = RecipeBuilder.newBuilder("rainbow_stone_" + red + "_" + green + "_" + blue, "rainbow_mixer", 100)
+            val builder = RecipeBuilder.newBuilder("rainbow_stone_" + red + "_" + green + "_" + blue, "rainbow_mixer", 200)
                 .addFluidInput(redInput * 50).addFluidInput(greenInput * 50).addFluidInput(blueInput * 50)
                 .addItemInput(<item:abyssalcraft:monolithstone>)
-                .addEnergyPerTickInput(20000)
+                .addEnergyPerTickInput(10000)
                 .addItemOutput(<item:extrautils2:decorativesolid:8> * (1 + boost));
             if boost > 0 {
                 builder.addRadiationInput(2, 1);
