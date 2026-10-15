@@ -38,6 +38,7 @@ for (def i in 0..4) {
 for (def i in 0..5) {
     removed.add(citem("thread_hatch", i))
     removed.add(citem("overclock_hatch", i))
+    removed.add(citem("blockcasing", i))
 }
 
 for (def i in 0..7) {
@@ -55,8 +56,6 @@ def devTools = [
 ]
 
 // Per-multiblock
-def theGate = []
-for (def i in 0..5) theGate.add(citem("blockcasing", i))
 def mysticalCombiner = [aitem("blockfluxproviderinput"), aitem("blockpotentialenergyproviderinput"), aitem("blockvisproviderinput")]
 def rainbowColoringStation = [aitem("blockradiationproviderinput"), aitem("radiationsponge")]
 def largeScrubber = [aitem("blockscrubberproviderinput"), mitem("blockmanaproviderinput")]
@@ -156,4 +155,3 @@ for (def it in huge) TooltipEvents.setTier(it, 9)
 for (def it in thaumicAE2) TooltipEvents.setTier(it, 9)
 for (def it in advancedAE2) TooltipEvents.setTier(it, 10)
 for (def it in biomeProvider) TooltipEvents.setTier(it, 11)
-for (def it in theGate) TooltipEvents.setTier(it, 14)

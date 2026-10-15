@@ -258,4 +258,5 @@ for (def it in removeFluids) {
     mods.jei.ingredient.hide(fluid(it))
     TooltipEvents.setTier(fluid(it), 0)
     GatewayHelpers.hide(item("forge:bucketfilled").withNbt(["FluidName": it]))
+    GatewayHelpers.hide(item("openblocks:tank").withNbt(["tank":["FluidName": it, "Amount": 16000]]))
 }

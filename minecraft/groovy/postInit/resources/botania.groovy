@@ -143,7 +143,7 @@ def t3Cost = 15000
 
 // Water
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaPowder, manaSteel, item("essentialcraft:elementalfuel", 1), item("roots:dewgonia"), item("minecraft:reeds"), item("actuallyadditions:item_crystal_empowered", 1))
+    .input(manaPowder, manaSteel, item("essentialcraft:elementalfuel", 1), item("roots:dewgonia"), item("thermalexpansion:florb").withNbt(["Fluid": "salt_water"]), item("actuallyadditions:item_crystal_empowered", 1))
     .output(item("botania:rune", 0) * 3)
     .mana(t1Cost)
     .register()
