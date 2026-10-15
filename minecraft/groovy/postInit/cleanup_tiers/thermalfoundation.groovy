@@ -51,9 +51,10 @@ for (int i in [2, 3, 34, 35]) industrialTierItems.add(mitem("upgrade", i))
 
 def rocketryItems = [mitem("ore", 6), mitem("material", 866)]
 
-def rocketScienceItems = [mitem("storage", 7), mitem("storage", 8), mitem("ore", 7), mitem("ore", 8)]
-for (int i in 7..8) rocketScienceItems.add(mitem("glass", i))
-for (int i in [71, 72, 135, 136, 199, 200, 263, 264, 327, 328, 1028]) rocketScienceItems.add(mitem("material", i))
+def mithrilItems = [mitem("storage", 8), mitem("ore", 8), mitem("glass", 8)]
+def iridiumItems = [mitem("storage", 7), mitem("ore", 7), mitem("glass", 7)]
+for (int i in [72, 136, 200, 264, 328]) mithrilItems.add(mitem("material", i))
+for (int i in [71, 135, 199, 263, 327, 1028]) iridiumItems.add(mitem("material", i))
 
 def creativeItems = [mitem("upgrade", 256)]
 
@@ -75,7 +76,8 @@ for (def it in techTierItems) TooltipEvents.setTier(it, 8)
 for (def it in elementalDrops) TooltipEvents.setTier(it, 8)
 for (def it in industrialTierItems) TooltipEvents.setTier(it, 8)
 for (def it in rocketryItems) TooltipEvents.setTier(it, 10)
-for (def it in rocketScienceItems) TooltipEvents.setTier(it, 12)
+for (def it in mithrilItems) TooltipEvents.setTier(it, 11)
+for (def it in iridiumItems) TooltipEvents.setTier(it, 12)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removedItems) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

@@ -5,6 +5,7 @@ mods.botania.orechid.add("oreMithril", 3)
 mods.botania.orechid.add("oreMithriline", 2)
 mods.botania.orechid.add("oreAether", 2)
 mods.botania.orechid.add("oreLiquifiedCoralium", 3)
+mods.botania.orechid.add("oreElectrotine", 5)
 
 mods.botania.orechid_ignem.removeAll()
 mods.botania.orechid_ignem.add("oreQuartz", 5)

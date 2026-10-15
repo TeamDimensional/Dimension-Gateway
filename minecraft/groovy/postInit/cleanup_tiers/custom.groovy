@@ -57,6 +57,7 @@ TooltipEvents.setTier(citem("redstone_alloy_dust"), 11)
 TooltipEvents.setTier(citem("dark_steel_dust"), 11)
 TooltipEvents.setTier(citem("energetic_alloy_dust"), 11)
 TooltipEvents.setTier(citem("vibrant_alloy_dust"), 11)
+TooltipEvents.setTier(citem("electrotine_ore"), 11)
 
 TooltipEvents.setTier(citem("mystical_metal_clump"), 13)
 TooltipEvents.setTier(citem("transcendental_demon_alloy"), 14)

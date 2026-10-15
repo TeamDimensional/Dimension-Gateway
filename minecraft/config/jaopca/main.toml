@@ -69,7 +69,8 @@
 		"theaurorian:crystal=gemAurorianGeode",
 		"theaurorian:moonstoneore=oreMoonstone",
 		"theaurorian:moonstoneingot=ingotMoonstone",
-		"theaurorian:moonstoneblock=blockMoonstone"
+		"theaurorian:moonstoneblock=blockMoonstone",
+		"gateway:electrotine_ore=oreElectrotine"
 ]
 	#List of oredict names that should not be added.
 	blacklist = []

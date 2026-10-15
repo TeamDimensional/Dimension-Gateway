@@ -30,6 +30,7 @@ def fluid_materials = [
     "moonstone": 2,
     "aquamarine": 6,
     "astral_starmetal": 6,
+    "mithril": 11,
 ]
 
 def all_materials = fluid_materials + [
@@ -47,6 +48,7 @@ def all_materials = fluid_materials + [
     "aether": 6,
     "aurorian_coal": 2,
     "aurorian_geode": 2,
+    "electrotine": 11,
 ]
 
 def prefixes = [

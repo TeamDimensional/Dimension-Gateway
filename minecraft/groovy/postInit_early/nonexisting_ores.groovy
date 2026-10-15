@@ -39,9 +39,3 @@ GatewayHelpers.hide(item("libvulpes:ore0", 5))
 GatewayHelpers.hide(item("libvulpes:ore0", 9))
 GatewayHelpers.hide(item("factorytech:ore"))
 GatewayHelpers.hide(item("factorytech:ore", 1))
-
-// Variations of Dimensional Shard Ore
-ore("oreDimensionalShard").remove(item("rftools:dimensional_shard_ore"))
-ore("oreDimensionalShard").remove(item("rftools:dimensional_shard_ore", 1))
-GatewayHelpers.hide(item("rftools:dimensional_shard_ore"))
-GatewayHelpers.hide(item("rftools:dimensional_shard_ore", 1))

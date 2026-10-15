@@ -62,6 +62,8 @@ def oresNonMetallic = [
     "Amber": ["Amber", "AirElemental", "EarthElemental", "Ambrosium"],
     "Aquamarine": ["Aquamarine", "WaterElemental", "WaterElemental", "Aquamarine"],
     "Titanium": ["Iron", "Aluminum", "Iron", "Ardite"],
+    "Electrotine": ["Redstone", "Uranium", "Redstone", "Mithril"],
+    "Mithril": ["Platinum", "Mithril", "Mithriline", "Thorium"],
 ]
 
 // First entry is a crusher byproduct (i.e. dust), second entry is a furnace output (i.e. ingot)
@@ -118,6 +120,8 @@ outputs = [
     "Iridium": [item("thermalfoundation:material", 71), item("thermalfoundation:material", 135)],
     "Aquamarine": [item("astralsorcery:itemcraftingcomponent") * 2, item("astralsorcery:itemcraftingcomponent") * 2],
     "AstralStarmetal": [item("astralsorcery:itemcraftingcomponent", 2), item("astralsorcery:itemcraftingcomponent", 1)],
+    "Mithril": [item("thermalfoundation:material", 72), item("thermalfoundation:material", 136)],
+    "Electrotine": [item("projectred-core:resource_item", 105) * 4, item("projectred-core:resource_item", 105) * 4],
 ]
 
 outputFluids = [  // overrides from default fluid(name) * 144
