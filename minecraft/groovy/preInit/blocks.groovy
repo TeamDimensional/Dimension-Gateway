@@ -6,11 +6,34 @@ import net.minecraft.util.math.BlockPos
 import net.minecraft.block.state.IBlockState
 import net.minecraft.util.EnumParticleTypes
 import net.minecraft.block.material.Material
+import net.minecraft.block.Block
 
 class BlockWiltedDaisy extends BlockBush {
     public BlockWiltedDaisy() {
         super()
         setSoundType(SoundType.PLANT)
+    }
+}
+
+class BlockCleanroomFrame extends Block {
+    public BlockCleanroomFrame() {
+        super(Material.ROCK)
+        setLightOpacity(0)
+    }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state) {
+        return false
+    }
+
+    @Override
+    public boolean isFullCube(IBlockState state) {
+        return false
+    }
+
+    @Override
+    public boolean isNormalCube(IBlockState state) {
+        return false
     }
 }
 
@@ -23,8 +46,15 @@ content.createBlock("mundane_substrate").register()
 content.createBlock("gemstone_substrate").register()
 content.createBlock("crystalline_aerogel").register()
 content.createBlock("ferramic_machine_frame").register()
-content.createBlock("cleanroom_machine_frame").register()
-content.createBlock("dense_aquamarine_ore").register()
+content.registerBlock("cleanroom_machine_frame", new BlockCleanroomFrame())
+content.createBlock("electrotine_ore").register()
+
+class BlockDenseAquamarineOre extends BlockFalling {
+    public BlockDenseAquamarineOre() {
+        super(Material.SAND)
+        setSoundType(SoundType.SAND)
+    }
+}
 
 class BlockMindfulSand extends BlockFalling {
     public BlockMindfulSand() {
@@ -59,4 +89,5 @@ class BlockMindfulSand extends BlockFalling {
     }
 }
 
+content.registerBlock("dense_aquamarine_ore", new BlockDenseAquamarineOre())
 content.registerBlock("mindful_sand", new BlockMindfulSand())

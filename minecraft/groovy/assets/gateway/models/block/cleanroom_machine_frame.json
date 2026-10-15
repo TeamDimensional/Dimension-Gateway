@@ -1,6 +1,165 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "gateway:blocks/cleanroom_machine_frame"
-  }
+    "parent": "block/block",
+    "textures": {
+        "particle": "calculator:model/white_chamber",
+        "frame": "calculator:model/white_chamber"
+    },
+    "elements": [
+        {
+            "name": "PostNW",
+            "from": [ 0.0, 0.0, 0.0 ],
+            "to": [ 2.0, 16.0, 2.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "PostNE",
+            "from": [ 14.0, 0.0, 0.0 ],
+            "to": [ 16.0, 16.0, 2.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 2.0 ] },
+                "down": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "PostSE",
+            "from": [ 14.0, 0.0, 14.0 ],
+            "to": [ 16.0, 16.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 14.0, 14.0, 16.0, 16.0 ] },
+                "down": { "texture": "#frame", "uv": [ 14.0, 14.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "PostSW",
+            "from": [ 0.0, 0.0, 14.0 ],
+            "to": [ 2.0, 16.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 0.0, 14.0, 2.0, 16.0 ] },
+                "down": { "texture": "#frame", "uv": [ 0.0, 14.0, 2.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "RailBottomNorth",
+            "from": [ 2.0, 0.0, 0.0 ],
+            "to": [ 14.0, 2.0, 2.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 0.0, 14.0, 2.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 0.0, 14.0, 2.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "down": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "RailBottomSouth",
+            "from": [ 2.0, 0.0, 14.0 ],
+            "to": [ 14.0, 2.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 14.0, 14.0, 16.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 14.0, 14.0, 16.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "down": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "RailBottomWest",
+            "from": [ 0.0, 0.0, 2.0 ],
+            "to": [ 2.0, 2.0, 14.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 0.0, 14.0, 2.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 0.0, 14.0, 2.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 0.0, 2.0, 2.0, 14.0 ] },
+                "down": { "texture": "#frame", "uv": [ 0.0, 2.0, 2.0, 14.0 ] }
+            }
+        },
+        {
+            "name": "RailBottomEast",
+            "from": [ 14.0, 0.0, 2.0 ],
+            "to": [ 16.0, 2.0, 14.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 14.0, 14.0, 16.0, 16.0 ] },
+                "east": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "south": { "texture": "#frame", "uv": [ 14.0, 14.0, 16.0, 16.0 ] },
+                "west": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "up": { "texture": "#frame", "uv": [ 14.0, 2.0, 16.0, 14.0 ] },
+                "down": { "texture": "#frame", "uv": [ 14.0, 2.0, 16.0, 14.0 ] }
+            }
+        },
+        {
+            "name": "RailTopNorth",
+            "from": [ 2.0, 14.0, 0.0 ],
+            "to": [ 14.0, 16.0, 2.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "east": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "south": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "west": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "up": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "down": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "RailTopSouth",
+            "from": [ 2.0, 14.0, 14.0 ],
+            "to": [ 14.0, 16.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "east": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 2.0 ] },
+                "south": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "west": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 2.0 ] },
+                "up": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] },
+                "down": { "texture": "#frame", "uv": [ 2.0, 14.0, 14.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "RailTopWest",
+            "from": [ 0.0, 14.0, 2.0 ],
+            "to": [ 2.0, 16.0, 14.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "east": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "south": { "texture": "#frame", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "west": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "up": { "texture": "#frame", "uv": [ 0.0, 2.0, 2.0, 14.0 ] },
+                "down": { "texture": "#frame", "uv": [ 0.0, 2.0, 2.0, 14.0 ] }
+            }
+        },
+        {
+            "name": "RailTopEast",
+            "from": [ 14.0, 14.0, 2.0 ],
+            "to": [ 16.0, 16.0, 14.0 ],
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 2.0 ] },
+                "east": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "south": { "texture": "#frame", "uv": [ 14.0, 0.0, 16.0, 2.0 ] },
+                "west": { "texture": "#frame", "uv": [ 2.0, 0.0, 14.0, 2.0 ] },
+                "up": { "texture": "#frame", "uv": [ 14.0, 2.0, 16.0, 14.0 ] },
+                "down": { "texture": "#frame", "uv": [ 14.0, 2.0, 16.0, 14.0 ] }
+            }
+        }
+    ]
 }
