@@ -150,7 +150,7 @@ def tier11 = [
 
 def tier12 = [
     // Advanced Rocketry part 2
-    fluid("iridium"), fluid("mana"), fluid("enrichedlava"), fluid("stellar_alloy"),
+    fluid("iridium"), fluid("mana"), fluid("enrichedlava"), fluid("stellar_alloy"), fluid("osmium"),
     // Heat Exchangers
     fluid("low_pressure_steam"),
     // Molten Salt Reactors
@@ -175,7 +175,7 @@ def tier14 = [
     // QMD
     fluid("tritium"), fluid("plasma"), fluid("sodium_tungstate_solution"), fluid("lead_tungstate_solution"),
     fluid("iodine"), fluid("yag"), fluid("nd_yag"), fluid("tungsten"), fluid("niobium"), fluid("hafnium"),
-    fluid("zinc"), fluid("osmium"), fluid("calcium"), fluid("strontium"),
+    fluid("zinc"), fluid("calcium"), fluid("strontium"),
     fluid("antihydrogen"), fluid("antideuterium"), fluid("antitritium"), fluid("antihelium3"), fluid("antihelium"),
     fluid("positronium"), fluid("muonium"), fluid("tauonium"), fluid("glueballs"),
     fluid("erbium"), fluid("ytterbium"), fluid("neodymium"), fluid("yttrium"),
@@ -184,10 +184,9 @@ def tier14 = [
 
 def removeFluids = [
     "construction_alloy", "if.protein", "crude_oil", "lead_platinum",
-    "solution_resonating", "solution_aether", "mushroom_stew", "solution_zanite", "solution_aurorian_coal",
-    "ftglowstone", "solution_ambrosium", "solution_aurorian_geode",
+    "mushroom_stew", "ftglowstone",
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
-    "aquamarine", "solution_aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
+    "aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
     "crude_steel", "crystalline_pink_slime", "energetic_silver", "vivid_alloy", "soul", "greenslime",
     "soulshardsrespawn.corrupted",
 ]

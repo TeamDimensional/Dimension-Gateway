@@ -73,28 +73,5 @@
             "Platinum",
             "Elemental"
         ]
-    },
-    {
-        "name": "solution",
-        "type": "fluid",
-        "defaultMaterialBlacklist": [
-            "Abyssalnite",
-            "CertusQuartz",
-            "ChargedCertusQuartz",
-            "Dark",
-            "QuartzBlack",
-            "Saltpeter",
-            "AirElemental",
-            "Amber",
-            "Dilithium",
-            "DimensionalShard",
-            "EarthElemental",
-            "Elemental",
-            "FireElemental",
-            "Mithriline",
-            "WaterElemental",
-            "Coralium",
-            "Platinum"
-        ]
     }
 ]

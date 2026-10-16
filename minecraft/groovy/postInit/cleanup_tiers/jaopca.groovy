@@ -59,18 +59,9 @@ def prefixes = [
     "dirty_dust": 3,
 ]
 
-def fluid_prefixes = [
-    "solution": 4,
-]
-
 for (def m in all_materials) {
     for (def p in prefixes) {
         TooltipEvents.setTier(item("jaopca:${p.key}.${m.key}"), Math.max(m.value, p.value))
-    }
-}
-for (def m in fluid_materials) {
-    for (def p in fluid_prefixes) {
-        TooltipEvents.setTier(fluid("${p.key}_${m.key}"), Math.max(m.value, p.value))
     }
 }
 
