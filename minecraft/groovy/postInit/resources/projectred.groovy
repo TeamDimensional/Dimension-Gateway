@@ -29,3 +29,27 @@ mods.advancedrocketry.crystallizer.recipeBuilder()
 // Alloys
 furnace.removeByOutput(item("projectred-core:resource_item", 103))
 furnace.removeByOutput(item("projectred-core:resource_item", 104))
+
+// Replace Red Alloy with Redstone Alloy in recipes
+crafting.remove("projectred-core:tools/multimeter")
+crafting.shapedBuilder()
+    .mirrored()
+    .matrix("A A", "BGR", "BLR")
+    .key("A", item("enderio:item_alloy_ingot", 3))
+    .key("B", ore("dyeBlack"))
+    .key("R", ore("dyeRed"))
+    .key("G", ore("dyeGreen"))
+    .key("L", item("minecraft:glowstone_dust"))
+    .output(item("projectred-core:multimeter"))
+    .register()
+
+for (def i in 0..16) {
+    crafting.removeByOutput(item("projectred-transmission:wire", i))
+    def row = i == 0 ? " R " : "WRW"
+    crafting.shapedBuilder()
+        .matrix(row, row, row)
+        .key("R", item("enderio:item_alloy_ingot", 3))
+        .key("W", i == 0 ? item("minecraft:wool") : item("minecraft:wool", i - 1))
+        .output(item("projectred-transmission:wire", i) * 12)
+        .register()
+}

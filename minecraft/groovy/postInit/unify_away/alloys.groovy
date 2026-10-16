@@ -67,7 +67,7 @@ MachineHelper.alloy()  // Manyullyn
 // Project Red
 MachineHelper.alloy()  // Red Alloy
     .input(item("thermalfoundation:material", 130), item("minecraft:redstone") * 4)
-    .output(item("projectred-core:resource_item", 103))
+    .output(item("enderio:item_alloy_ingot", 3))
     .register()
 
 MachineHelper.alloy()  // Electrotine Alloy
@@ -239,19 +239,11 @@ MachineHelper.alloy()  // Electrical Steel
 MachineHelper.alloy()  // Energetic Alloy (has Marimorphosis recipe)
     .input(item("minecraft:gold_ingot"), item("minecraft:redstone"), item("minecraft:glowstone_dust"))
     .output(item("enderio:item_alloy_ingot", 1))
-    .minTier(5)
     .register()
 
 MachineHelper.alloy()  // Vibrant Alloy (has Marimorphosis recipe)
     .input(item("enderio:item_alloy_ingot", 1), item("minecraft:ender_pearl"))
     .output(item("enderio:item_alloy_ingot", 2))
-    .minTier(5)
-    .register()
-
-MachineHelper.alloy()  // Redstone Alloy (has Marimorphosis recipe)
-    .input(item("nuclearcraft:gem"), item("minecraft:redstone"))
-    .output(item("enderio:item_alloy_ingot", 3))
-    .minTier(5)
     .register()
 
 MachineHelper.alloy()  // Conductive Iron
@@ -264,7 +256,6 @@ MachineHelper.alloy()  // Conductive Iron
 MachineHelper.alloy()  // Pulsating Iron (has Marimorphosis recipe)
     .input(item("minecraft:iron_ingot"), item("minecraft:ender_pearl"))
     .output(item("enderio:item_alloy_ingot", 5))
-    .minTier(5)
     .register()
 
 MachineHelper.alloy()  // Dark Steel (has Marimorphosis recipe)

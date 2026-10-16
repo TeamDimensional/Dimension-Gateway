@@ -155,7 +155,7 @@ mods.botania.rune_altar.recipeBuilder()
     .register()
 // Earth
 mods.botania.rune_altar.recipeBuilder()
-    .input(manaPowder, manaSteel, item("essentialcraft:elementalfuel", 2), item("roots:stalicripe"), item("prodigytech:charred_cobblestone"), item("actuallyadditions:item_crystal_empowered", 4))
+    .input(manaPowder, manaSteel, item("essentialcraft:elementalfuel", 2), item("roots:stalicripe"), item("prodigytech:charred_cobblestone"), item("actuallyadditions:item_crystal_empowered", 3))
     .output(item("botania:rune", 2) * 3)
     .mana(t1Cost)
     .register()

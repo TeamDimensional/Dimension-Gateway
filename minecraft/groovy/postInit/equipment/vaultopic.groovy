@@ -2,7 +2,7 @@
 crafting.remove("vaultopic:view_big")
 crafting.shapedBuilder()
     .matrix("RBR", "SVS")
-    .key("R", item("projectred-core:resource_item", 103))
+    .key("R", item("enderio:item_alloy_ingot", 3))
     .key("B", item("rftools:inventory_module"))
     .key("S", item("vaultopic:vault_searcher"))
     .key("V", item("vaultopic:view_small"))

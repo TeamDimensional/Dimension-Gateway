@@ -14,23 +14,28 @@ for (def a in [5, 10, 30, 60, 300])
         earlyItems.add(mitem("block_self_resetting_lever${a}${b}"))
 
 def glassItems = [
-    mitem("block_fused_glass", 32767), mitem("block_dark_fused_glass", 32767), mitem("block_enlightened_fused_glass", 32767),
-    mitem("block_fused_quartz", 32767), mitem("block_dark_fused_quartz", 32767), mitem("block_enlightened_fused_quartz", 32767),
+    mitem("item_liquid_conduit"), mitem("item_liquid_conduit", 1), mitem("item_item_conduit"), mitem("item_redstone_conduit"),
+    mitem("item_conduit_facade"), mitem("item_conduit_facade", 2), mitem("item_endergy_conduit", 5), mitem("item_power_conduit", 1),
+    mitem("item_enchantment_filter_normal"), mitem("item_fluid_filter"),
 ]
+for (def it in [4, 22, 60]) glassItems.add(mitem("item_material", it))
 
-def enderItems = [mitem("block_enderman_skull")]
+def obsidianItems = [mitem("item_conduit_facade", 1), mitem("item_conduit_facade", 3)]
+
+def enderItems = [mitem("block_enderman_skull"), mitem("item_power_conduit", 2), mitem("item_liquid_conduit", 2)]
+def ae2Items = [mitem("item_me_conduit"), mitem("item_me_conduit", 1)]
 def ncItems = [mitem("block_industrial_insulation")]
 
 def items = [
     mitem("block_infinity_fog"), mitem("block_infinity"), mitem("block_infinity", 2), mitem("block_infinity", 1), mitem("block_dark_steel_ladder"),
     mitem("block_dark_iron_bars"), mitem("block_dark_steel_trapdoor"), mitem("block_dark_steel_door"), mitem("block_reinforced_obsidian"),
     mitem("item_conduit_probe"), mitem("item_yeta_wrench"), mitem("item_xp_transfer"),
-    mitem("item_magnet"), mitem("block_enderman_skull", 2), mitem("item_enchantment_filter_normal"), mitem("item_enchantment_filter_big"),
-    mitem("item_fluid_filter"), mitem("block_detector_block"), mitem("block_detector_block_silent"),
+    mitem("item_magnet"), mitem("block_enderman_skull", 2), mitem("item_enchantment_filter_big"),
+    mitem("block_detector_block"), mitem("block_detector_block_silent"),
     mitem("item_dark_steel_shears"), mitem("item_dark_steel_crook"), mitem("item_inventory_charger_basic"), mitem("item_inventory_charger"),
     mitem("item_inventory_charger_vibrant"), mitem("item_dark_steel_upgrade"), mitem("item_dark_steel_upgrade", 1),
-    mitem("item_item_conduit"), mitem("item_redstone_conduit"), mitem("item_extract_speed_upgrade"), mitem("item_extract_speed_downgrade"),
-    mitem("item_me_conduit"), mitem("item_me_conduit", 1), mitem("block_alloy_smelter"), mitem("block_buffer"),
+    mitem("item_extract_speed_upgrade"), mitem("item_extract_speed_downgrade"),
+    mitem("block_alloy_smelter"), mitem("block_buffer"),
     mitem("block_buffer", 1), mitem("block_buffer", 2), mitem("block_enchanter"), mitem("block_farm_station"),
     mitem("block_combustion_generator"), mitem("block_zombie_generator"), mitem("block_aversion_obelisk"), mitem("block_relocator_obelisk"),
     mitem("block_experience_obelisk"), mitem("block_painter"), mitem("block_reservoir"), mitem("block_omni_reservoir"),
@@ -41,26 +46,34 @@ def items = [
     mitem("block_power_monitor"), mitem("block_advanced_power_monitor"), mitem("item_coord_selector"),
     mitem("item_conduit_swapper"), mitem("item_material", 1),
 ]
-for (def i in 0..3) items.add(mitem("item_conduit_facade", i))
 for (def i in 0..2) items.add(mitem("item_basic_capacitor", i))
-for (def i in 0..2) {
-    items.add(mitem("item_liquid_conduit", i))
-    items.add(mitem("item_power_conduit", i))
+
+def setAlloyTier(i, tier) {
+    TooltipEvents.setTier(mitem("block_alloy", i), tier)
+    TooltipEvents.setTier(mitem("item_alloy_ingot", i), tier)
+    TooltipEvents.setTier(mitem("item_alloy_nugget", i), tier)
+    TooltipEvents.setTier(mitem("item_alloy_ball", i), tier)
 }
-for (def i in 0..7) {
-    items.add(mitem("block_alloy", i))
-    items.add(mitem("item_alloy_ingot", i))
-    items.add(mitem("item_alloy_nugget", i))
-    items.add(mitem("item_alloy_ball", i))
-}
-for (def i in [2, 3, 4, 6, 7, 8, 11, 12, 13, 14, 15, 20, 30, 31, 40, 41, 43, 45, 48, 49, 50, 53, 57, 58, 59, 60, 65, 70, 73, 74, 76])
+
+setAlloyTier(0, 11)
+setAlloyTier(1, 4)
+setAlloyTier(2, 6)
+setAlloyTier(3, 3)
+setAlloyTier(4, 11)
+setAlloyTier(5, 6)
+setAlloyTier(6, 11)
+setAlloyTier(7, 11)
+
+for (def i in [2, 3, 6, 7, 8, 11, 12, 13, 14, 15, 20, 30, 31, 40, 41, 43, 45, 48, 49, 50, 53, 57, 58, 59, 65, 70, 73, 74, 76])
     items.add(mitem("item_material", i))
 for (def i in 0..2) items.add(mitem("block_dark_steel_anvil", i))
 for (def i in 8..13) items.add(mitem("block_painted_pressure_plate", i))
-for (def it in ["basic", "advanced", "limited", "big", "big_advanced", "existing", "mod", "power"])
+for (def it in ["big", "big_advanced", "mod", "power"])
     items.add(mitem("item_${it}_item_filter"))
+for (def it in ["basic", "advanced", "limited", "existing"])
+    glassItems.add(mitem("item_${it}_item_filter"))
 for (def it in ["not", "or", "and", "nor", "nand", "xor", "xnor", "toggle", "counting", "sensor", "timer"])
-    items.add(mitem("item_redstone_${it}_filter"))
+    glassItems.add(mitem("item_redstone_${it}_filter"))
 for (def it in ["tiny", "small", "medium", "big", "large"]) items.add(mitem("block_inventory_chest_${it}"))
 for (def i in [0, 1, 4, 5]) items.add(mitem("block_electric_light", i))
 
@@ -101,8 +114,8 @@ for (def i in 0..2) advancedItems.add(mitem("item_inventory_remote", i))
 
 for (def it in 0..15) {
     for (def modifier in ["", "enlightened_", "dark_"]) {
-        items.add(mitem("block_${modifier}fused_glass", it))
-        items.add(mitem("block_${modifier}fused_quartz", it))
+        glassItems.add(mitem("block_${modifier}fused_glass", it))
+        glassItems.add(mitem("block_${modifier}fused_quartz", it))
         for (def passthrough in ["holy_", "unholy_", "pasture_", "not_holy_", "not_unholy_", "not_pasture_"]) {
             advancedItems.add(mitem("block_${passthrough}${modifier}fused_glass", it))
             advancedItems.add(mitem("block_${passthrough}${modifier}fused_quartz", it))
@@ -125,9 +138,9 @@ def removeRecipes = [
     mitem("block_stirling_generator"), mitem("block_lava_generator"), mitem("block_simple_sag_mill"),
     mitem("block_simple_wired_charger"), mitem("block_dark_paper_anvil"),
     mitem("block_confusion_charge"), mitem("block_concussion_charge"),
-    mitem("item_capacitor_grainy"), mitem("item_capacitor_silver"),
+    mitem("item_capacitor_grainy"), mitem("item_capacitor_silver"), mitem("item_power_conduit"),
 ]
-for (def i in 1..7) removeRecipes.add(mitem("item_endergy_conduit", i))
+for (def i in [1, 2, 3, 4, 6, 7]) removeRecipes.add(mitem("item_endergy_conduit", i))
 for (def i in [0, 38, 51, 52, 66, 67, 69, 77, 81]) removeRecipes.add(mitem("item_material", i))
 for (def i in 0..6) removeRecipes.add(mitem("block_solar_panel", i))
 for (def b in 0..15) for (def a in [1, 2]) removeRecipes.add(mitem("block_decoration${a}", b))
@@ -171,7 +184,9 @@ for (def i in [0, 4, 5, 6]) {
 
 for (def it in earlyItems) TooltipEvents.setTier(it, 3)
 for (def it in glassItems) TooltipEvents.setTier(it, 4)
+for (def it in obsidianItems) TooltipEvents.setTier(it, 5)
 for (def it in enderItems) TooltipEvents.setTier(it, 6)
+for (def it in ae2Items) TooltipEvents.setTier(it, 8)
 for (def it in ncItems) TooltipEvents.setTier(it, 9)
 for (def it in items) TooltipEvents.setTier(it, 11)
 for (def it in advancedItems) TooltipEvents.setTier(it, 11)

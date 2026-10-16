@@ -121,7 +121,7 @@ outputs = [
     "Aquamarine": [item("astralsorcery:itemcraftingcomponent") * 2, item("astralsorcery:itemcraftingcomponent") * 2],
     "AstralStarmetal": [item("astralsorcery:itemcraftingcomponent", 2), item("astralsorcery:itemcraftingcomponent", 1)],
     "Mithril": [item("thermalfoundation:material", 72), item("thermalfoundation:material", 136)],
-    "Electrotine": [item("projectred-core:resource_item", 105) * 4, item("projectred-core:resource_item", 105) * 4],
+    "Electrotine": [item("projectred-core:resource_item", 105) * 3, item("projectred-core:resource_item", 105) * 3],
 ]
 
 outputFluids = [  // overrides from default fluid(name) * 144

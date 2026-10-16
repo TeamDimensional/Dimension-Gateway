@@ -1,4 +1,8 @@
+import classes.MachineHelper
+
 // Dust Grinding
+mods.nuclearcraft.manufactory.removeRecipeWithInput(item("enderio:item_material", 14))
+mods.nuclearcraft.manufactory.removeRecipeWithInput(item("enderio:item_material", 15))
 mods.botania.mana_infusion.recipeBuilder()
     .input(item("enderio:item_material", 14))
     .output(item("enderio:item_material", 36))
@@ -46,4 +50,48 @@ mods.nuclearcraft.infuser.builder()
     .fluidInput(fluid("phenol") * 250)
     .timeMultiplier(0.3)
     .output(item("enderio:block_industrial_insulation"))
+    .register()
+
+// Conduit Binder
+furnace.removeByInput(item("enderio:item_material", 22))
+mods.immersiveengineering.blast_furnace.recipeBuilder()
+    .input(item("enderio:item_material", 22))
+    .output(item("enderio:item_material", 4) * 2)
+    .time(160)
+    .slag(item("thermalfoundation:material", 864))
+    .register()
+
+MachineHelper.alloy()
+    .input(item("enderio:item_material", 22), item("thermalfoundation:material", 1024))
+    .output(item("enderio:item_material", 4) * 8)
+    .timeMultiplier(0.25)
+    .register()
+
+crafting.remove("enderio:binder_composite")
+crafting.shapedBuilder()
+    .matrix("GCG", "PPP", "GCG")
+    .key("G", item("minecraft:gravel"))
+    .key("C", item("minecraft:clay"))
+    .key("P", item("buildinggadgets:construction_chunk_dense"))
+    .output(item("enderio:item_material", 22) * 2)
+    .register()
+
+// Crystals
+crafting.remove("enderio:pulsating_crystal")
+crafting.remove("enderio:vibrant_crystal")
+mods.tconstruct.casting_table.removeByOutput(item("enderio:item_material", 14))
+mods.tconstruct.casting_table.removeByOutput(item("enderio:item_material", 15))
+
+MachineHelper.alloy()
+    .input(item("actuallyadditions:item_crystal_empowered", 4), item("enderio:item_alloy_ingot", 2) * 2, item("rftools:dimensional_shard") * 16)
+    .output(item("enderio:item_material", 15))
+    .minTier(5)
+    .timeMultiplier(2.5)
+    .register()
+
+MachineHelper.alloy()
+    .input(item("actuallyadditions:item_crystal_empowered", 2), item("enderio:item_alloy_ingot", 5) * 2, item("rftools:dimensional_shard") * 16)
+    .output(item("enderio:item_material", 14))
+    .minTier(5)
+    .timeMultiplier(2.5)
     .register()

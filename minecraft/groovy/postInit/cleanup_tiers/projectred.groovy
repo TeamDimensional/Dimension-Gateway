@@ -19,7 +19,7 @@ for (def i in [250, 251, 252, 310, 311, 312, 400, 401, 402, 410, 420, 421]) remo
 for (def i in 500..515) removeRecipes.add(mitem("resource_item", i))
 
 def hideFromJei = [] + removeRecipes
-for (def i in [200, 201, 202, 600]) hideFromJei.add(mitem("resource_item", i))
+for (def i in [103, 200, 201, 202, 600]) hideFromJei.add(mitem("resource_item", i))
 
 def creativeItems = [item("projectred-fabrication:ic_chip", 1)]
 
