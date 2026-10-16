@@ -1,18 +1,18 @@
-filename = '`FermiumBooter-1.5.2.jar'
+filename = '`FermiumBooter-1.5.3.jar'
 name = 'FermiumBooter'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '`FermiumBooter-1.5.2.jar'
+x-prismlauncher-version-number = '`FermiumBooter-1.5.3.jar'
 
 [download]
-hash = '37a7132876cb5c762c0dd62e114476db5e235341'
+hash = '2024c12b17c2d1d3920c3108a21d70f4312716cf'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8955850
+file-id = 9138561
 project-id = 968474

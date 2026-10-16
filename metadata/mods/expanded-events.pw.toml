@@ -1,19 +1,19 @@
-filename = 'expandedevents-1.2.2.jar'
+filename = 'expandedevents-1.2.3.jar'
 name = 'Expanded Events'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'expandedevents-1.2.2'
+x-prismlauncher-version-number = 'expandedevents-1.2.3'
 
 [download]
-hash = '976d73d7272d886afa813c26e4a654cf05b5515b'
+hash = '7d215de95bbb424a30f7c76256fb15e3ab7721e7'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8204032
+file-id = 9202931
 project-id = 1396395
 
 [[x-prismlauncher-dependencies]]

@@ -24,7 +24,6 @@ def removeRecipes = [
     fitem("mercurial_eye"),
 ]
 
-for (def it in 0..15) removeRecipes.add(fitem("alchemical_bag", it))
 for (def it in 0..5) removeRecipes.add(fitem("klein_star", it))
 
 def magicItems = [
@@ -37,6 +36,7 @@ def midgameItems = [
     fitem("body_stone"), fitem("soul_stone"), fitem("mind_stone"), fitem("life_stone"),
     mitem("matter_block"), fitem("matter"), fitem("time_watch"),
 ]
+for (def it in 0..15) midgameItems.add(fitem("alchemical_bag", it))
 
 def endgameItems = [
     mitem("dm_pedestal"),

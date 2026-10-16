@@ -1,23 +1,27 @@
-filename = 'botania-r1.10-375.jar'
+filename = 'botania-r1.10-376.jar'
 name = 'Botania CEu'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Botania CEu r1.10-375'
+x-prismlauncher-version-number = 'Botania CEu r1.10-376'
 
 [download]
-hash = 'ba2663bb3511a65d5ec65ad21a009bf14cbbb596'
+hash = '6c0f0caa5f273a997d707e4b755dac272a8414bf'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8706250
+file-id = 8994519
 project-id = 1179448
 
 [[x-prismlauncher-dependencies]]
-addonId = '557549'
+addonId = '995393'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1096600'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -25,5 +29,9 @@ addonId = '687577'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '995393'
-type = 'REQUIRED'
+addonId = '557549'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'OPTIONAL'
