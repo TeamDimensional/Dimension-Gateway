@@ -1,0 +1,21 @@
+filename = 'vaultopic-2.2.jar'
+name = 'Vaultopic - Early Inventory Management'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Vaultopic 2.2'
+
+[download]
+hash = '165f1e8465e712acddfe29089d96c0c986d4f9ce'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2858289
+project-id = 322730
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'REQUIRED'

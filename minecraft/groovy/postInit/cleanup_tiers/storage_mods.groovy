@@ -17,6 +17,7 @@ def tier3Items = [
     bitem("backpack_iron"), bitem("pickup_upgrade"), bitem("filter_upgrade"), bitem("restock_upgrade"), bitem("deposit_upgrade"),
     mitem("stone_generation_upgrade_t1"), mitem("stone_generation_upgrade_t2"),
     mitem("water_generation_upgrade_t1"), mitem("water_generation_upgrade_t2"),
+    item("vaultopic:vault_searcher"), item("vaultopic:view_small"), item("vaultopic:view_big"), item("vaultopic:vice"),
 ]
 
 def tier4Items = [

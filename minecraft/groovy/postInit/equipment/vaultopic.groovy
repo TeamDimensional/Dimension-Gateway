@@ -1,0 +1,21 @@
+// VIEW X
+crafting.remove("vaultopic:view_big")
+crafting.shapedBuilder()
+    .matrix("RBR", "SVS")
+    .key("R", item("projectred-core:resource_item", 103))
+    .key("B", item("rftools:inventory_module"))
+    .key("S", item("vaultopic:vault_searcher"))
+    .key("V", item("vaultopic:view_small"))
+    .output(item("vaultopic:view_big"))
+    .register()
+
+// VICE
+crafting.remove("vaultopic:vice")
+crafting.shapedBuilder()
+    .matrix("RCR", "SVS")
+    .key("R", item("thermalfoundation:material", 322))
+    .key("C", item("minecraft:crafting_table"))
+    .key("S", item("vaultopic:vault_searcher"))
+    .key("V", item("vaultopic:view_big"))
+    .output(item("vaultopic:vice"))
+    .register()
