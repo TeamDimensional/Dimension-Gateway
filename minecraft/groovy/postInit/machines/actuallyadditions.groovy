@@ -1,0 +1,13 @@
+// Lens of the Miner
+crafting.remove("actuallyadditions:recipes17")
+crafting.shapedBuilder()
+    .matrix("R P", "DLE", "V I")
+    .key("R", item("actuallyadditions:item_crystal_empowered"))
+    .key("P", item("actuallyadditions:item_crystal_empowered", 1))
+    .key("D", item("actuallyadditions:item_crystal_empowered", 2))
+    .key("L", item("actuallyadditions:item_color_lens"))
+    .key("V", item("actuallyadditions:item_crystal_empowered", 3))
+    .key("E", item("actuallyadditions:item_crystal_empowered", 4))
+    .key("I", item("actuallyadditions:item_crystal_empowered", 5))
+    .output(item("actuallyadditions:item_mining_lens"))
+    .register()

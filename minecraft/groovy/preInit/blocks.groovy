@@ -51,6 +51,12 @@ content.registerBlock("cleanroom_machine_frame", new BlockCleanroomFrame())
 content.createBlock("electrotine_ore").register()
 content.createBlock("void_metal_ore").register()
 content.registerBlock("dense_gravitite_ore", new BlockGravititeOre())
+content.createBlock("dense_iron_ore").register()
+content.createBlock("dense_gold_ore").register()
+content.createBlock("dense_copper_ore").register()
+content.createBlock("dense_silver_ore").register()
+content.createBlock("dense_tin_ore").register()
+content.createBlock("dense_lead_ore").register()
 content.createBlock("enriched_stone").register()
 
 class BlockDenseAquamarineOre extends BlockFalling {

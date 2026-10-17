@@ -176,7 +176,7 @@ def items = [
     // Binary logic
     [item("essentialcraft:genitem", 42), item("cells:overclocked_processor", 2), 9],
     // Compression
-    [item("minecraft:piston"), item("thermalfoundation:material", 894), 8],
+    [item("minecraft:piston"), item("thermalfoundation:material", 894), 9],
 ]
 for (def i in 0..13) {
     mods.calculator.precision_chamber.recipeBuilder()

@@ -48,6 +48,12 @@ tile.gateway.electrotine_ore.name=Electrotine Ore
 tile.gateway.void_metal_ore.name=Void Metal Ore
 tile.gateway.dense_aquamarine_ore.name=Dense Aquamarine Ore
 tile.gateway.dense_gravitite_ore.name=Dense Gravitite Ore
+tile.gateway.dense_iron_ore.name=Dense Iron Ore
+tile.gateway.dense_copper_ore.name=Dense Copper Ore
+tile.gateway.dense_gold_ore.name=Dense Gold Ore
+tile.gateway.dense_silver_ore.name=Dense Silver Ore
+tile.gateway.dense_lead_ore.name=Dense Lead Ore
+tile.gateway.dense_tin_ore.name=Dense Tin Ore
 
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution
