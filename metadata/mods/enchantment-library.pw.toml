@@ -1,0 +1,21 @@
+filename = 'enchlib-1.12.2-1.2.1.jar'
+name = 'Enchantment Library'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'enchlib-1.12.2-1.2.1.jar'
+
+[download]
+hash = '9630ee1fdf60b3591e8565da25d97b3f2247297a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7748257
+project-id = 1143553
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
