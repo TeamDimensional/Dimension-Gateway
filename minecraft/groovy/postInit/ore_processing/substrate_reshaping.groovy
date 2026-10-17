@@ -33,12 +33,10 @@ mods.advancedrocketry.crystallizer.recipeBuilder()
     .register()
 mods.prodigytech.atomic_reshaper.builder()
     .input(item("gateway:light_metal_substrate"))
-    .output(item("theaurorian:ceruleanore"), 5)
-    .output(item("theaurorian:moonstoneore"), 5)
+    .output(item("theaurorian:ceruleanore"), 5)   // cerulean
     .output(item("nuclearcraft:ore", 5), 7)       // boron
     .output(item("nuclearcraft:ore", 6), 7)       // lithium
     .output(item("nuclearcraft:ore", 7), 10)      // magnesium
-    .output(item("thermalfoundation:ore", 4), 4)  // aluminium
     .output(item("libvulpes:ore0", 8), 6)         // rutile
     .output(item("tconstruct:ore"), 6)            // cobalt
     .primordium(30)
@@ -55,8 +53,7 @@ mods.advancedrocketry.crystallizer.recipeBuilder()
     .register()
 mods.prodigytech.atomic_reshaper.builder()
     .input(item("gateway:heavy_metal_substrate"))
-    .output(item("minecraft:gold_ore"), 12)
-    .output(item("deepresonance:resonating_ore", 2), 8)
+    .output(item("minecraft:gold_ore"), 12)         // gold
     .output(item("tconstruct:ore", 1), 6)           // ardite
     .output(item("thermalfoundation:ore", 3), 12)   // lead
     .output(item("nuclearcraft:ore", 3), 9)         // thorium
@@ -80,10 +77,9 @@ mods.thaumcraft.crucible.recipeBuilder()
     .register()
 mods.prodigytech.atomic_reshaper.builder()
     .input(item("gateway:mundane_substrate"))
-    .output(item("minecraft:coal_ore"), 15)
-    .output(item("minecraft:lapis_ore"), 10)
-    .output(item("minecraft:redstone_ore"), 8)
-    .output(item("theaurorian:auroriancoalore"), 8)
+    .output(item("minecraft:coal_ore"), 15)         // coal
+    .output(item("minecraft:lapis_ore"), 10)        // lapis
+    .output(item("minecraft:redstone_ore"), 8)      // redstone
     .output(item("essentialcraft:oredrops", 6), 5)  // fire
     .output(item("essentialcraft:oredrops", 7), 5)  // water
     .output(item("essentialcraft:oredrops", 8), 5)  // earth
@@ -102,13 +98,13 @@ mods.factorytech.agitator.recipeBuilder()
     .register()
 mods.prodigytech.atomic_reshaper.builder()
     .input(item("gateway:gemstone_substrate"))
-    .output(item("thaumcraft:ore_amber"), 10)
-    .output(item("aether_legacy:ambrosium_ore"), 8)
-    .output(item("aether_legacy:zanite_ore"), 8)
-    .output(item("theaurorian:geodeore"), 6)
-    .output(item("minecraft:diamond_ore"), 5)
-    .output(item("minecraft:emerald_ore"), 5)
-    .output(item("minecraft:quartz_ore"), 13)
+    .output(item("thaumcraft:ore_amber"), 10)        // amber
+    .output(item("aether_legacy:ambrosium_ore"), 8)  // ambrosium
+    .output(item("aether_legacy:zanite_ore"), 8)     // zanite
+    .output(item("theaurorian:geodeore"), 6)         // crystal
+    .output(item("minecraft:diamond_ore"), 5)        // diamond
+    .output(item("minecraft:emerald_ore"), 5)        // emerald
+    .output(item("minecraft:quartz_ore"), 13)        // nether quartz
     .primordium(10)
     .time(60)
     .register()

@@ -188,6 +188,7 @@ def recipes = [
     [item("extrautils2:simpledecorative", 2), fluid("xu_evil_metal") * 1296, 8, 0],
     [item("kami:ichorium_ingot"), fluid("ichorium") * 144, 2, 2],
     [item("kami:ichorium_block"), fluid("ichorium") * 1296, 16, 2],
+    [item("thaumcraft:ingot", 1), fluid("void") * 144, 1, 0],
     // TConstruct
     [item("minecraft:slime_ball"), fluid("slime") * 250, 0.25, 0],
     [item("tconstruct:slime_congealed"), fluid("slime") * 1000, 1, 0],

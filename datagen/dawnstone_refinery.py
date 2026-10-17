@@ -58,9 +58,11 @@ ores = {
     "Iridium": OreDef("auram", "enrichedlava", "Mithril"),
     "LiquifiedCoralium": OreDef("mortuus", "liquid_death", "Mithriline"),
     "Mithriline": OreDef("auram", "purifying_fluid", "DimensionalShard"),
-    "Thorium": OreDef("exanimis", "liquid_death", "Uranium"),
-    "Uranium": OreDef("exanimis", "liquid_death", "Thorium"),
+    "Thorium": OreDef("vitium", "liquid_death", "Uranium"),
+    "Uranium": OreDef("vitium", "liquid_death", "Thorium"),
     "Mithril": OreDef("auram", "purifying_fluid", "DimensionalShard"),
+    "Void": OreDef("vitium", "liquid_death", "Thorium"),
+    "Cinnabar": OreDef("auram", "purifying_fluid", "Redstone"),
 }
 
 

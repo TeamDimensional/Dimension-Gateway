@@ -42,3 +42,9 @@ furnace.recipeBuilder()
     .input(item("astralsorcery:itemcraftingcomponent", 2))
     .output(item("astralsorcery:itemcraftingcomponent", 1))
     .register()
+
+// Dense Aquamarine Ore
+mods.calculator.stone_separator.recipeBuilder()
+    .input(item("gateway:dense_aquamarine_ore"))
+    .output(item("astralsorcery:blockcustomsandore") * 8, item("ee:star_shard_raw") * 5)
+    .register()

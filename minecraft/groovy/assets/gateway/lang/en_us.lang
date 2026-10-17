@@ -43,8 +43,11 @@ tile.gateway.crystalline_aerogel.name=Crystalline Aerogel
 tile.gateway.ferramic_machine_frame.name=Ferramic Machine Frame
 tile.gateway.cleanroom_machine_frame.name=Cleanroom Machine Frame
 tile.gateway.mindful_sand.name=Mindful Sand
-tile.gateway.dense_aquamarine_ore.name=Dense Aquamarine Ore
+tile.gateway.enriched_stone.name=Fortunate Stone
 tile.gateway.electrotine_ore.name=Electrotine Ore
+tile.gateway.void_metal_ore.name=Void Metal Ore
+tile.gateway.dense_aquamarine_ore.name=Dense Aquamarine Ore
+tile.gateway.dense_gravitite_ore.name=Dense Gravitite Ore
 
 fluid.gateway.titanium_aluminide.name=Molten Titanium Aluminide
 fluid.gateway.titanium_aluminum_nitride.name=Titanium-Aluminum Nitride Solution
@@ -142,6 +145,7 @@ tooltip.gateway.obtain.hollow_tears=Obtained by throwing Brew of Hollow Tears.
 tooltip.gateway.obtain.flowing_spirit=Obtained by throwing Brew of Flowing Spirit.
 tooltip.gateway.obtain.emc_craftable=§eCraftable from EMC items§r
 tooltip.gateway.obtain.gluttony_rune=§rRecommended items for Purified Food:\n§r- §eMoreS'more DoubleS'mingot§r\n§r- §eGlowing Bread§r (requires 1 refinement)\n§r- §eDomino's Special§r (requires 2 refinements)
+tooltip.gateway.obtain.enriched_stone=§rTo make this item:\n§r- Use §eAlcara§r Glass in Stellar Refraction Table for Luck of the Sea V\n§r- Use §eHorologium§r Glass in Stellar Refraction Table for Fortune IV\n§r- Downgrade the book in §eEnchantment Library§r if necessary
 
 tooltip.gateway.obtain.fission_sr=Byproduct from the TBU, U-233 and Pu-based fuels.
 tooltip.gateway.obtain.fission_mo=Byproduct from the U-235, Np-236, Am-242 and Cm-based fuels.

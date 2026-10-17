@@ -31,6 +31,8 @@ def fluid_materials = [
     "aquamarine": 6,
     "astral_starmetal": 6,
     "mithril": 11,
+    "void": 10,
+    "cinnabar": 10,
 ]
 
 def all_materials = fluid_materials + [
@@ -71,7 +73,5 @@ GatewayHelpers.hide(item("jaopca:block.aquamarine"))
 GatewayHelpers.hide(item("jaopca:block.astral_starmetal"))
 GatewayHelpers.hide(item("jaopca:block.amber"))
 ore("blockAmber").remove(item("jaopca:block.amber"))
-GatewayHelpers.hide(item("jaopca:nugget.astral_starmetal"))
-GatewayHelpers.hide(item("jaopca:thaumcraft_cluster.astral_starmetal"))
 TooltipEvents.setTier(item("jaopca:dust.cerulean"), 3)
 TooltipEvents.setTier(item("jaopca:dust.moonstone"), 3)

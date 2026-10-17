@@ -43,6 +43,7 @@ def oresMetallic = [
     "Iridium": ["Platinum", "Cobalt", "Platinum", "Osmium"],
     "LiquifiedCoralium": ["Cobalt", "Titanium", "Platinum", "Diamond"],
     "AstralStarmetal": ["AstralStarmetal", "Iron", "Moonstone", "Platinum"],
+    "Void": ["Thorium", "AstralStarmetal", "Thorium", "Emerald"],
 ]
 
 def oresNonMetallic = [
@@ -64,6 +65,7 @@ def oresNonMetallic = [
     "Titanium": ["Iron", "Aluminum", "Iron", "Ardite"],
     "Electrotine": ["Redstone", "Uranium", "Redstone", "Mithril"],
     "Mithril": ["Platinum", "Mithril", "Mithriline", "Thorium"],
+    "Cinnabar": ["Redstone", "Redstone", "Quartz", "Quartz"],
 ]
 
 // First entry is a crusher byproduct (i.e. dust), second entry is a furnace output (i.e. ingot)
@@ -122,6 +124,8 @@ outputs = [
     "AstralStarmetal": [item("astralsorcery:itemcraftingcomponent", 2), item("astralsorcery:itemcraftingcomponent", 1)],
     "Mithril": [item("thermalfoundation:material", 72), item("thermalfoundation:material", 136)],
     "Electrotine": [item("projectred-core:resource_item", 105) * 3, item("projectred-core:resource_item", 105) * 3],
+    "Void": [item("thaumcraft:void_seed"), item("thaumcraft:ingot", 1)],
+    "Cinnabar": [item("thermalfoundation:material", 866), item("thaumcraft:quicksilver")],
 ]
 
 outputFluids = [  // overrides from default fluid(name) * 144

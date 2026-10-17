@@ -7,6 +7,7 @@ import net.minecraft.block.state.IBlockState
 import net.minecraft.util.EnumParticleTypes
 import net.minecraft.block.material.Material
 import net.minecraft.block.Block
+import com.gildedgames.the_aether.blocks.natural.ore.BlockGravititeOre
 
 class BlockWiltedDaisy extends BlockBush {
     public BlockWiltedDaisy() {
@@ -48,6 +49,9 @@ content.createBlock("crystalline_aerogel").register()
 content.createBlock("ferramic_machine_frame").register()
 content.registerBlock("cleanroom_machine_frame", new BlockCleanroomFrame())
 content.createBlock("electrotine_ore").register()
+content.createBlock("void_metal_ore").register()
+content.registerBlock("dense_gravitite_ore", new BlockGravititeOre())
+content.createBlock("enriched_stone").register()
 
 class BlockDenseAquamarineOre extends BlockFalling {
     public BlockDenseAquamarineOre() {

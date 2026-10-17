@@ -111,8 +111,7 @@ def removeCrafting = [mitem("table_stone")]
 
 def hideFromJei = [
     gitem("crab_vent"), gitem("eldritch_lock_impetus"), gitem("material", 2), gitem("autocaster_placer", 1),
-    mitem("ore_cinnabar"), mitem("grass_ambient"),
-    mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
+    mitem("grass_ambient"), mitem("pillar_eldritch"), mitem("pillar_ancient"), mitem("pillar_arcane"),
     mitem("effect_shock"), mitem("effect_sap"), mitem("effect_glimmer"), mitem("empty"), mitem("pech_wand"),
     mitem("enchanted_placeholder"), witem("arcane_pillar"), witem("placeholder_arcane_stone"), witem("placeholder_obsidian"), gitem("impetus_creative", 1),
 ] + removeCrafting
@@ -145,6 +144,7 @@ for (def it in transcendentalItems) TooltipEvents.setTier(it, 9)
 for (def it in crimsonItems) TooltipEvents.setTier(it, 7)
 for (def it in hoannaItems) TooltipEvents.setTier(it, 9)
 for (def it in voidItems) TooltipEvents.setTier(it, 9)
+TooltipEvents.setTier(mitem("ore_cinnabar"), 10)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
 for (def it in removeCrafting) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)

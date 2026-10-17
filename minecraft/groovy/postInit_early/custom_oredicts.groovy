@@ -18,3 +18,7 @@ ore("oreDimensionalShard").remove(item("rftools:dimensional_shard_ore", 1))
 ore("oreDimensionalShard").add(item("rftools:dimensional_shard_ore", 2))
 GatewayHelpers.hide(item("rftools:dimensional_shard_ore"))
 GatewayHelpers.hide(item("rftools:dimensional_shard_ore", 1))
+
+ore("blockAshedStone").add(item("ee:end_ash"))
+ore("oreDenseAquamarine").add(citem("dense_aquamarine_ore"))
+ore("oreDenseGravitite").add(citem("dense_gravitite_ore"))

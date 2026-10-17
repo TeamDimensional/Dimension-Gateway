@@ -1,0 +1,10 @@
+mods.astralsorcery.mineralis_ritual_registry.removeAll()
+
+mods.astralsorcery.mineralis_ritual_registry.add("oreVoid", 6)
+mods.astralsorcery.mineralis_ritual_registry.add("blockAshedStone", 8)
+mods.astralsorcery.mineralis_ritual_registry.add("orePlatinum", 8)
+mods.astralsorcery.mineralis_ritual_registry.add("oreDenseGravitite", 5)
+mods.astralsorcery.mineralis_ritual_registry.add("oreMithriline", 5)
+mods.astralsorcery.mineralis_ritual_registry.add("oreResonating", 5)
+mods.astralsorcery.mineralis_ritual_registry.add("oreCinnabar", 5)
+mods.astralsorcery.mineralis_ritual_registry.add("oreAstralStarmetal", 8)

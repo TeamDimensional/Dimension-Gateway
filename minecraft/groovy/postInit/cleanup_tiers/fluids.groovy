@@ -115,6 +115,8 @@ def tier10 = [
     fluid("uranium_titanide_mixture"), fluid("thorium"), 
     // Thaumcraft part 1.5
     fluid("ichorium"),
+    // Astral Sorcery
+    fluid("void"),
 ]
 
 def tier11 = [

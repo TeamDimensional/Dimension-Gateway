@@ -70,7 +70,9 @@
 		"theaurorian:moonstoneore=oreMoonstone",
 		"theaurorian:moonstoneingot=ingotMoonstone",
 		"theaurorian:moonstoneblock=blockMoonstone",
-		"gateway:electrotine_ore=oreElectrotine"
+		"gateway:electrotine_ore=oreElectrotine",
+		"gateway:void_metal_ore=oreVoid",
+		"thaumcraft:quicksilver=gemCinnabar"
 ]
 	#List of oredict names that should not be added.
 	blacklist = []
