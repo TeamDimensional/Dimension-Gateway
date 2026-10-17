@@ -1,0 +1,53 @@
+filename = 'ExtraBotany-r1.1-60-beta-hotfix.jar'
+name = 'ExtraBotany'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'ExtraBotany-r1.1-60-beta-hotfix.jar'
+
+[download]
+hash = 'cf1ae2efe4ecea129968caf0096b91705fdab810'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3112313
+project-id = 299086
+
+[[x-prismlauncher-dependencies]]
+addonId = '227083'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '239197'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '253449'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '253211'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '270789'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '245211'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '74072'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '225643'
+type = 'REQUIRED'

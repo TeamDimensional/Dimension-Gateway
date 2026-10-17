@@ -5,13 +5,17 @@ def mitem(name, k=0) {
     return item("botania:${name}", k)
 }
 
+def eitem(name, k=0) {
+    return item("extrabotany:${name}", k)
+}
+
 def getQuartzList(name) {
     def output = [mitem("quartzstairs${name}"), mitem("quartzslab${name}half")]
     for (int i in 0..2) output.add(mitem("quartztype${name}", i))
     return output
 }
 
-def redstoneItems = [mitem("cacophonium")]
+def redstoneItems = [mitem("cacophonium"), eitem("candy", 2), eitem("walkingcane")]
 def firstMagicItems = [mitem("baublebox")]
 def enderItems = [mitem("manaresource", 15), mitem("itemfinder"), mitem("endereyeblock")]
 def equipmentItems = ["helm", "chest", "legs", "boots", "helmreveal"]
@@ -30,15 +34,24 @@ def tier1Items = [
     mitem("manadetector"), mitem("turntable"), mitem("tinyplanetblock"), mitem("foresteye"), mitem("storage"), mitem("storage", 3),
     mitem("forestdrum"), mitem("forestdrum", 2), mitem("platform"), mitem("tinypotato"), mitem("brewery"), mitem("managlass"), mitem("pump"),
     mitem("incenseplate"), mitem("hourglass"), mitem("bellows"), mitem("teruterubozu"), mitem("avatar"), mitem("altar"), mitem("alchemycatalyst"),
+    eitem("spiritfuel"), eitem("nightmarefuel"), eitem("manareader"), eitem("friedchicken"), eitem("froststar"), eitem("gildedmashedpotato"),
+    eitem("manasteelhammer"), eitem("binder"), eitem("manasteelshield"), eitem("manadrink"), eitem("flyingboat"),
+    eitem("cosmeticmaidboots"), eitem("cosmeticmaidlegs"), eitem("cosmeticmaidchest"), eitem("cosmeticmaidhelm"), eitem("cocktail"), eitem("splashgrenade"),
+    eitem("cosmeticmaidhelmrevealing"), eitem("wallrunning"), eitem("walljumping"), eitem("parkour"), eitem("pedestal"),
+    eitem("bottledflame"), eitem("bottledstar"), eitem("lens", 0), eitem("lens", 1), eitem("lens", 2),
+    eitem("chargepad"), eitem("dimensioncatalyst"),
+    eitem("redscarf"), eitem("foxear"),
 ] + getQuartzList("dark") + getQuartzList("mana") + getQuartzList("blaze")
 for (int i in [0, 1, 2, 3, 6, 11, 16, 17, 22, 23]) tier1Items.add(mitem("manaresource", i))
 for (int i in [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 15, 16, 17, 22]) tier1Items.add(mitem("lens", i))
+for (int i in [0, 2, 4]) tier1Items.add(eitem("material", i))
 for (int i in 0..8) tier1Items.add(mitem("rune", i))
 for (int i in 0..8) tier1Items.add(mitem("grassseeds", i))
 for (int i in 0..2) tier1Items.add(mitem("grasshorn", i))
 for (int i in 0..8) tier1Items.add(mitem("craftpattern", i))
 for (int i in 0..5) tier1Items.add(mitem("altgrass", i))
 for (int i in 0..33) tier1Items.add(mitem("cosmetic", i))
+for (int i in 0..9) tier1Items.add(eitem("cosmetic", i))
 for (int i in 0..15) tier1Items.add(mitem("miniisland", i))
 for (def it in equipmentItems + mainTools) tier1Items.add(mitem("manasteel${it}"))
 for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manaweave${it}"))
@@ -46,7 +59,8 @@ for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manawea
 def tier2Items = [
     mitem("terraformrod"), mitem("manamirror", 32767), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
     mitem("terraaxe"), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
-    mitem("storage", 1), mitem("cellblock"),
+    mitem("storage", 1), mitem("cellblock"), eitem("deathring"), eitem("terrasteelhammer"), eitem("kinggarden"), eitem("natureorb"),
+    eitem("terrasteelshield"), eitem("flyingboat", 2), eitem("lens", 5),
 ]
 for (int i in [4, 18]) tier2Items.add(mitem("manaresource", i))
 for (int i in [8, 11]) tier2Items.add(mitem("lens", i))
@@ -68,13 +82,18 @@ for (int i in 1..8) tier2Items.add(mitem("altar", i))
 def industrialTier = [mitem("quartz", 3), mitem("quartz", 4), mitem("quartz", 6)] + getQuartzList("lavender") + getQuartzList("red") + getQuartzList("sunny")
 
 def gaiaDrops = [
-    mitem("recordgaia1"), mitem("recordgaia2"), mitem("manaresource", 5)
+    mitem("recordgaia1"), mitem("recordgaia2"), eitem("recordgaia3"), mitem("manaresource", 5)
 ]
 def gaiaDropsT2 = [
     mitem("blacklotus"), mitem("blacklotus", 1), mitem("overgrowthseed"),
     mitem("pinkinator"), mitem("dice")
 ]
 for (int i in 0..5) gaiaDropsT2.add(mitem("ancientwill", i))
+def gaiaDropsT3 = [eitem("treasurebox")]
+def gaiaDropsT4 = [eitem("specialbag")]
+def supplyBagDrops = [eitem("lens", 6), eitem("silenteternity")]
+// Not exactly true, but makes it nicer to search
+for (int i in 0..4) gaiaDropsT4.add(eitem("coregod", i))
 
 def diceItems = [mitem("infinitefruit"), mitem("kingkey"), mitem("flugeleye"), mitem("thorring"), mitem("odinring"), mitem("lokiring")]
 def tier3Items = [
@@ -89,8 +108,18 @@ def tier3Items = [
     mitem("storage", 2), mitem("storage", 4), mitem("forestdrum", 1), mitem("platform", 1), mitem("conjurationcatalyst"), mitem("spawnerclaw"),
     mitem("starfield"), mitem("elfglass"), mitem("prism"), mitem("ghostrail"), mitem("sparkchanger"), mitem("cocoon"), mitem("lightlauncher"),
     mitem("manabomb"), mitem("bifrostperm"), mitem("shimmerrock"), mitem("shimmerwoodplanks"), mitem("enchantedsoil"), mitem("alfheimportal"),
-] + diceItems + gaiaDrops + gaiaDropsT2 + getQuartzList("elf")
+    eitem("elementiumhammer"), eitem("ultimatehammer"), eitem("camera"), eitem("failnaught"), eitem("buddhistrelics"), eitem("elementiumshield"),
+    eitem("achilleshield"), eitem("mastermanaring"), eitem("combatmaidboots"), eitem("combatmaidlegs"), eitem("combatmaidchest"), eitem("combatmaidhelm"),
+    eitem("infinitewine"), eitem("flyingboat", 1), eitem("combatmaidhelmrevealing"), eitem("combatmaidchestdarkened"),
+    eitem("shadowwarriorboots"), eitem("shadowwarriorchest"), eitem("shadowwarriorlegs"), eitem("shadowwarriorhelm"),
+    eitem("goblinslayerboots"), eitem("goblinslayerchest"), eitem("goblinslayerlegs"), eitem("goblinslayerhelm"),
+    eitem("shadowkatana"), eitem("excaliber"), eitem("supercrown"), eitem("spearsubspace"), eitem("allforone"), eitem("elvenking"),
+    eitem("bottledpixie"), eitem("rewardbag943"), eitem("lens", 3), eitem("lens", 4), eitem("jingweifeather"), eitem("manadriverring"),
+    eitem("magicfinger"), eitem("firstfractal"), eitem("blockorichalcos"), eitem("manabarrel"), eitem("cocoondesire"), eitem("quantummanabuffer"),
+    eitem("blockphotonium"), eitem("blockshadowium"),
+] + diceItems + gaiaDrops + gaiaDropsT2 + gaiaDropsT3 + gaiaDropsT4 + supplyBagDrops + getQuartzList("elf")
 for (int i in [5, 7, 8, 9, 12, 13, 14, 19]) tier3Items.add(mitem("manaresource", i))
+for (int i in [1, 3, 5, 6, 7, 8, 9, 10]) tier3Items.add(eitem("material", i))
 for (int i in [14, 18, 19, 20, 21, 23]) tier3Items.add(mitem("lens", i))
 for (int i in 0..8) tier3Items.add(mitem("flighttiara", i))
 for (int i in 0..19) tier3Items.add(mitem("laputashard", i))
@@ -98,14 +127,22 @@ for (def it in equipmentItems + mainTools) tier3Items.add(mitem("elementium${it}
 for (int i in 0..3) tier2Items.add(mitem("sparkupgrade", i))
 for (int i in 0..3) tier3Items.add(mitem("lightrelay", i))
 for (int i in 0..5) tier3Items.add(mitem("dreamwood", i))
+for (int i in 0..2) tier3Items.add(eitem("judahoath", i))
+for (int i in 0..3) tier3Items.add(eitem("rewardbag", i))
 for (def i in ["container", "dispenser", "comparator", "fertilizer", "relay", "interceptor"])
     tier3Items.add(mitem("redstring${i}"))
 for (def i in ["index", "funnel", "interceptor", "crystalcube", "retainer"])
     tier3Items.add(mitem("corporea${i}"))
 
 def creativeItems = [mitem("pool", 1)]
-def removeThese = [mitem("spawnermover"), mitem("glasspick"), mitem("rfgenerator"), mitem("animatedtorch")]
-def hideFromJei = [mitem("platform", 2), mitem("enchanter"), mitem("bifrost"), mitem("cacophoniumblock"), mitem("root")] + removeThese
+def removeThese = [
+    mitem("spawnermover"), mitem("glasspick"), mitem("rfgenerator"), mitem("animatedtorch"), eitem("puredaisypendant"), eitem("masterhandbag"),
+    eitem("managenerator"), eitem("manaliquefaction"),
+]
+def hideFromJei = [
+    mitem("platform", 2), mitem("enchanter"), mitem("bifrost"), mitem("cacophoniumblock"), mitem("root"), eitem("trophy"), eitem("recordherrscher"),
+    eitem("fluidedmana"),
+] + removeThese
 
 for (def it in redstoneItems) TooltipEvents.setTier(it, 3)
 for (def it in firstMagicItems) TooltipEvents.setTier(it, 5)
@@ -121,30 +158,41 @@ for (def it in hideFromJei) GatewayHelpers.hide(it)
 
 for (def it in gaiaDrops) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia")
 for (def it in gaiaDropsT2) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia2")
+for (def it in gaiaDropsT3) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia3")
+for (def it in gaiaDropsT4) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.gaia4")
+for (def it in supplyBagDrops) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.supply_bag")
 for (def it in diceItems) TooltipEvents.setTooltip(it, "tooltip.gateway.obtain.dice")
 TooltipEvents.setTooltip(mitem("gaiahead"), "tooltip.gateway.obtain.gaia_head")
 TooltipEvents.setTooltip(mitem("manaresource", 15), "tooltip.gateway.obtain.end_bottle")
+TooltipEvents.setTooltip(eitem("manadrink"), "tooltip.gateway.obtain.manadrink")
+TooltipEvents.setTooltip(eitem("splashgrenade"), "tooltip.gateway.obtain.botany_splash_grenade")
+TooltipEvents.setTooltip(eitem("cocktail"), "tooltip.gateway.obtain.botany_cocktail")
+TooltipEvents.setTooltip(eitem("infinitewine"), "tooltip.gateway.obtain.botany_infinite_wine")
 
 def tier1Flowers = [
     // generating
-    "hydroangeas", "thermalily", "endoflame", "munchdew", "kekimurus", "gourmaryllis",
+    "hydroangeas", "thermalily", "endoflame", "munchdew", "kekimurus", "gourmaryllis", "edelweiss", "tinkle",
     // functional
     "dreadthorn", "tangleberrie", "bellethorn", "manastar", "tigerseye", "jadedAmaranthus",
     "exoflame", "hopperhock", "jiyuulia", "medumone", "clayconia", "solegnolia",
     "daffomill", "rannuncarpus", "agricarnation", "hyacidus", "bergamute", "fallenKanade",
-    "primal_bloom", "primagalium",
+    "primal_bloom", "primagalium", "annoyingflower",
 ]
 def tier2Flowers = [
     // generating
-    "arcanerose", "rafflowsia", "narslimmus", "dandelifeon",
+    "arcanerose", "rafflowsia", "narslimmus", "dandelifeon", "bloodyenchantress", "reikarlily", "stonesia", "omniviolet",
     // functional
-    "pollidisiac", "marimorphosis", "vinculotus", "taintthistle", "whisperweed_cm", "orechid", "orechidIgnem",
+    "pollidisiac", "marimorphosis", "vinculotus", "taintthistle", "whisperweed_cm", "orechid", "orechidIgnem", "manalinkium", "mirrowtunia",
+    "necrofleur", "stardustlotus",
 ]
 def tier3Flowers = [
     // generating
     "entropinnyum", "spectrolus", "shulk_me_not",
     // functional
-    "bubbell", "loonium", "heiseiDream", "spectranthemum",
+    "bubbell", "loonium", "heiseiDream", "spectranthemum", "enchantedorchid",
+]
+def removeFlowers = [
+    "moonbless", "sunbless", "bellflower", "geminiorchid",
 ]
 
 def setFlowerTier(name, tier) {
@@ -156,6 +204,17 @@ def setFlowerTier(name, tier) {
         return stack in flower || stack in flower2 || stack in flower3 || stack in flower4
     }
     TooltipEvents.addTierPredicate("flower:" + name, predicate, tier)
+}
+
+def removeFlower(name) {
+    def flower = mitem("specialflower").withNbt(["type": name])
+    def flower2 = mitem("floatingspecialflower").withNbt(["type": name])
+    def flower3 = mitem("specialflower").withNbt(["type": name + "Chibi"])
+    def flower4 = mitem("floatingspecialflower").withNbt(["type": name + "Chibi"])
+    for (def it in [flower, flower2, flower3, flower4]) {
+        mods.botania.petal_apothecary.streamRecipes().filter(x -> x.output in it).removeAll()
+        GatewayHelpers.hide(it)
+    }
 }
 
 def setFloatingFlowerTier(name, tier) {
@@ -170,4 +229,5 @@ def setFloatingFlowerTier(name, tier) {
 for (def it in tier1Flowers) setFlowerTier(it, 10)
 for (def it in tier2Flowers) setFlowerTier(it, 11)
 for (def it in tier3Flowers) setFlowerTier(it, 13)
+for (def it in removeFlowers) removeFlower(it)
 setFloatingFlowerTier("puredaisy", 10)

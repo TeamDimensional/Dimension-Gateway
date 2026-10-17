@@ -190,7 +190,7 @@ def removeFluids = [
     "tamoltencerulean", "tamoltenauroriansteel", "tamoltenmoonstone",
     "aquamarine", "if.ore_fluid_raw", "if.ore_fluid_fermented",
     "crude_steel", "crystalline_pink_slime", "energetic_silver", "vivid_alloy", "soul", "greenslime",
-    "soulshardsrespawn.corrupted",
+    "soulshardsrespawn.corrupted", "fluidedmana",
 ]
 
 def ncIsotopes = [

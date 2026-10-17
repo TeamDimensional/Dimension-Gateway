@@ -14,9 +14,14 @@ mods.calculator.atomic_calculator.recipeBuilder()
     .register()
 
 // Flawless Glass alt recipe
+mods.calculator.flawless_calculator.removeByOutput(item("calculator:flawlessglass"))
 mods.calculator.flawless_calculator.recipeBuilder()
-    .input(item("enderio:item_material", 14), item("botania:managlass"), item("botania:managlass"), item("enderio:item_material", 14))
-    .output(item("calculator:flawlessglass") * 10)
+    .input(item("calculator:flawlessdiamond"), item("enderio:block_fused_quartz"), item("enderio:block_fused_quartz"), item("calculator:flawlessdiamond"))
+    .output(item("calculator:flawlessglass") * 3)
+    .register()
+mods.calculator.flawless_calculator.recipeBuilder()
+    .input(item("enderio:item_material", 14), item("extrautils2:ineffableglass", 2), item("extrautils2:ineffableglass", 2), item("enderio:item_material", 14))
+    .output(item("calculator:flawlessglass") * 16)
     .register()
 
 // Reinforced Stone

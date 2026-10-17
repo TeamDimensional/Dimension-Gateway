@@ -66,7 +66,7 @@ mods.botania.elven_trade.removeByOutputs(item("botania:quartz", 5))
 mods.botania.elven_trade.recipeBuilder()
     .input(item("botania:quartz", 3))
     .input(item("witchery:ender_dew"))
-    .input(item("nuclearcraft:uranium"))  // U-233
+    .input(ore("ingotUranium233All"))
     .output(item("botania:quartz", 5))
     .register()
 

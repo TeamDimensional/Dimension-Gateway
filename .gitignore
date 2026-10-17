@@ -77,5 +77,6 @@ minecraft/config/bettersearch.json
 minecraft/config/cleanroom_mod_list_favourites.txt
 *.hprof
 stellarcore_vanilla_model_cache*
+ExtraBotanyVars.dat
 
 __pycache__
