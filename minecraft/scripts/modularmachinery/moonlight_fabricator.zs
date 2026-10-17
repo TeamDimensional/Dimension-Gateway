@@ -11,7 +11,7 @@ RecipeBuilder.newBuilder("cerulean", "moonlight_fabricator", 100)
 
 RecipeBuilder.newBuilder("moonstone", "moonlight_fabricator", 100)
     .addItemInput(<roots:moonglow_leaf> * 2)
-    .addItemInput(<thermalfoundation:material:131>)
+    .addItemInput(<thermalfoundation:material:130>)
     .addAuraInput("other", 2000)
     .addItemOutput(<theaurorian:moonstoneingot>)
     .build();

@@ -64,7 +64,7 @@ def tier8 = [
     fluid("refined_oil"), fluid("refined_fuel"), fluid("sap"), fluid("syrup"),
     fluid("resin"), fluid("tree_oil"), fluid("seed_oil"), fluid("biocrude"), fluid("refined_biofuel"),
     fluid("potion_splash"), fluid("potion_lingering"), fluid("platinum"), fluid("signalum"), fluid("lumium"), fluid("enderium"),
-    fluid("pyrotheum"), fluid("aerotheum"), fluid("petrotheum"), fluid("cryotheum"), fluid("uranium"), fluid("ender"),
+    fluid("pyrotheum"), fluid("aerotheum"), fluid("petrotheum"), fluid("cryotheum"), fluid("uranium"), fluid("ender"), fluid("beryllium"),
     // Factory Tech
     fluid("sulphur"), fluid("h2so4"), fluid("propane"), fluid("energite"),
     // Deep Resonance
@@ -78,7 +78,7 @@ def tier9 = [
     fluid("empoweredoil"),
     // NCO Chemistry
     fluid("oxygen"), fluid("hydrogen"), fluid("deuterium"), fluid("helium_3"), fluid("helium"),
-    fluid("hard_carbon"), fluid("beryllium"), fluid("zirconium"), fluid("manganese_dioxide"),
+    fluid("hard_carbon"), fluid("zirconium"), fluid("manganese_dioxide"),
     fluid("liquid_helium"), fluid("liquid_nitrogen"),
     fluid("heavy_water"), fluid("methanol"), fluid("nitrogen"), fluid("ice"), fluid("slurry_ice"),
     fluid("fluorine"), fluid("carbon_dioxide"), fluid("carbon_monoxide"), fluid("ethene"), fluid("fluoromethane"), fluid("ammonia"),

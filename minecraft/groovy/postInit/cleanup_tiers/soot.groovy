@@ -11,7 +11,7 @@ def decor = [
     mitem("archaic_big_bricks"), mitem("archaic_big_bricks_slab"), mitem("archaic_big_bricks_stairs"), mitem("archaic_bricks_slab"),
     mitem("archaic_bricks_stairs"), mitem("sealed_planks_slab"), mitem("sealed_planks_stairs"), mitem("sealed_tile"),
     mitem("sealed_tile_slab"), mitem("sealed_tile_stairs"), mitem("sealed_keg"), mitem("sealed_pillar"),
-    mitem("wrought_tile"), mitem("wrought_platform"), mitem("wrought_platform_slab"),
+    mitem("wrought_tile"), mitem("wrought_platform"), mitem("wrought_platform_slab"), mitem("caminite_large_tile_slab"),
 ]
 
 def metallurgyDecor = [

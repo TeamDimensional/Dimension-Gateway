@@ -10,7 +10,7 @@ crafting.shapedBuilder()
     .register()
 
 // Router Upgrade
-crafting.remove("modularrouters:blank_module")
+crafting.remove("modularrouters:blank_upgrade")
 crafting.shapedBuilder()
     .mirrored()
     .name("utils/modular_router_upgrade")

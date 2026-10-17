@@ -46,7 +46,7 @@ for (def it in ["helm", "chest", "legs", "boots"]) tier1Items.add(mitem("manawea
 def tier2Items = [
     mitem("terraformrod"), mitem("manamirror", 32767), mitem("terrasword"), mitem("terrapick"), mitem("manaringgreater"), mitem("auraringgreater"),
     mitem("terraaxe"), mitem("spark"), mitem("bloodpendant"), mitem("thornchakram"), mitem("exchangerod"), mitem("magnetringgreater"),
-    mitem("storage", 1), mitem("terraplate"), mitem("cellblock"),
+    mitem("storage", 1), mitem("cellblock"),
 ]
 for (int i in [4, 18]) tier2Items.add(mitem("manaresource", i))
 for (int i in [8, 11]) tier2Items.add(mitem("lens", i))
@@ -115,6 +115,7 @@ for (def it in industrialTier) TooltipEvents.setTier(it, 10)
 for (def it in tier2Items) TooltipEvents.setTier(it, 11)
 for (def it in tier3Items) TooltipEvents.setTier(it, 13)
 for (def it in creativeItems) TooltipEvents.setTier(it, 14)
+TooltipEvents.setTier(mitem("terraplate"), 10)
 for (def it in removeThese) crafting.removeByOutput(it)
 for (def it in hideFromJei) GatewayHelpers.hide(it)
 

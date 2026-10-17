@@ -63,7 +63,7 @@ def tier4Items = [
 def tier7Items = [mitem("gem", 6)]
 def thermalItems = [
     // emerald oreproc for early beryllium
-    mitem("dust", 9),
+    mitem("dust", 9), mitem("ingot", 9), mitem("ingot_block", 9),
 ]
 
 def uraniumItems = [

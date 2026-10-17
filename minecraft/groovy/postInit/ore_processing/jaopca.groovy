@@ -34,7 +34,7 @@ def oresMetallic = [
     "Moonstone": ["Silver", "Gold", "Cerulean", "Aether"],
     "Copper": ["Silver", "Gold", "Silver", "Nickel"],
     "Tin": ["Iron", "Nickel", "Aluminum", "Nickel"],
-    "Silver": ["Lead", "Gold", "Gold", "Platinum"],
+    "Silver": ["Lead", "Gold", "Gold", "Moonstone"],
     "Lead": ["Iron", "Silver", "Gold", "Uranium"],
     "Aluminum": ["Iron", "Tin", "Iron", "Iron"],
     "Nickel": ["Tin", "Iron", "Cobalt", "Platinum"],

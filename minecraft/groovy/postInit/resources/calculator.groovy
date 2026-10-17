@@ -168,7 +168,7 @@ def items = [
     // Growth
     [item("naturesaura:infused_iron"), item("essentialcraft:elementalfuel", 2), 10],
     // Energy Flow
-    [item("immersiveengineering:wirecoil", 2), item("enderio:item_alloy_ingot", 1), 11],
+    [item("immersiveengineering:wirecoil", 2), item("projectred-core:resource_item", 104), 11],
     // Circuit 11 (WIP)
     [item("minecraft:stone"), item("minecraft:dirt"), 1],
     // Circuit 12 (WIP)
