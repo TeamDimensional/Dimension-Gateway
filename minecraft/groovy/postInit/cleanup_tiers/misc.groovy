@@ -43,10 +43,11 @@ def removeRecipes = [
     item("engineersworkshop:upgrade", 9), item("microblockcbe:stone_rod"),
     item("chisel:chisel_iron"), item("chisel:chisel_diamond"), item("chisel:chisel_hitech"), item("chisel:auto_chisel"),
     item("betterbuilderswandsfix:break_core"), item("betterbuilderswands:wandstone"), item("betterbuilderswands:wandiron"),
+    item("theoneprobe:probe"), item("theoneprobe:probenote"), item("theoneprobe:iron_helmet_probe"), item("theoneprobe:gold_helmet_probe"), item("theoneprobe:diamond_helmet_probe"),
 ]
 
 def hideFromJei = [
-    item("champions:champion_egg")
+    item("champions:champion_egg"), item("theoneprobe:creativeprobe"),
 ] + removeRecipes
 
 for (def it in hideFromJei) GatewayHelpers.hide(it)
