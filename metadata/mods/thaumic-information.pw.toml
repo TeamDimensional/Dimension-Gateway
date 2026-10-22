@@ -1,27 +1,23 @@
-filename = 'thaumicinfo-1.2.1.jar'
+filename = 'thaumicinfo-1.2.3.jar'
 name = 'Thaumic Information'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'thaumicinfo-1.2.1'
+x-prismlauncher-version-number = 'thaumicinfo-1.2.3'
 
 [download]
-hash = '43d7cbe25c8462305033b57c55d1f14abab127e7'
+hash = 'd7cc98810a7397acee82691f762d4efca15d5fd5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8513668
+file-id = 9283307
 project-id = 1590952
 
 [[x-prismlauncher-dependencies]]
-addonId = '557549'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '419286'
+addonId = '1533287'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
@@ -29,21 +25,25 @@ addonId = '895539'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '1533287'
+addonId = '419286'
 type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '253449'
-type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '240630'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
 addonId = '870276'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '223628'
+addonId = '557549'
 type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '253449'
+type = 'OPTIONAL'

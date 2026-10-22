@@ -193,7 +193,7 @@ mods.botania.rune_altar.recipeBuilder()
 
 // Mana
 mods.botania.rune_altar.recipeBuilder()
-    .input(item("botania:managlass"), manaSteel, manaSteel, item("botania:manaresource", 2), item("botania:manaresource", 1), item("naturesaura:sky_ingot"))
+    .input(item("botania:managlass"), manaSteel, manaSteel, item("botania:manaresource", 2), item("botania:manaresource", 1), item("naturesaura:sky_ingot"), item("calculator:circuitboard", 9))
     .output(item("botania:rune", 8))
     .mana(30000)
     .register()
@@ -205,15 +205,12 @@ mods.botania.rune_altar.recipeBuilder()
     .mana(t3Cost)
     .register()
 // Gluttony
-def possibleInputs = [[20, 3.8f], [20, 1.8f], [20, 1.2f]]
-for (def it in possibleInputs) {
-    def foodItem = item("prodigytech:purified_food").withNbt(["Food": it[0], "Saturation": it[1]])
-    mods.botania.rune_altar.recipeBuilder()
-        .input(terrasteel, item("botania:rune", 3), item("botania:rune", 7), item("thermalfoundation:fertilizer", 2), item("botania:manacookie"), foodItem)
-        .output(item("botania:rune", 10))
-        .mana(t3Cost)
-        .register()
-}
+def foodItem = item("prodigytech:purified_food").withNbt(["Food": 20, "Saturation": 1.2f])
+mods.botania.rune_altar.recipeBuilder()
+    .input(terrasteel, item("botania:rune", 3), item("botania:rune", 7), item("thermalfoundation:fertilizer", 2), item("botania:manacookie"), foodItem)
+    .output(item("botania:rune", 10))
+    .mana(t3Cost)
+    .register()
 TooltipEvents.setTooltip(item("botania:rune", 10), "tooltip.gateway.obtain.gluttony_rune")
 // Greed
 mods.botania.rune_altar.recipeBuilder()

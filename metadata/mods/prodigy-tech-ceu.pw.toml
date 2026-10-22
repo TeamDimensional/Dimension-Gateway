@@ -1,24 +1,20 @@
-filename = 'prodigytech-1.3.7.jar'
+filename = 'prodigytech-1.3.8.jar'
 name = 'Prodigy Tech CEu'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Prodigy Tech CEu 1.3.7'
+x-prismlauncher-version-number = 'Prodigy Tech CEu 1.3.8'
 
 [download]
-hash = '4bbf868d83236476331cf3a19f8155836a48f8a9'
+hash = '8b21f0bd26ce4fc36d4b4ae946bcbeb02ab262f3'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 9060018
+file-id = 9250049
 project-id = 1673844
-
-[[x-prismlauncher-dependencies]]
-addonId = '995393'
-type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
 addonId = '687577'
@@ -27,3 +23,7 @@ type = 'OPTIONAL'
 [[x-prismlauncher-dependencies]]
 addonId = '557549'
 type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '995393'
+type = 'REQUIRED'

@@ -1,19 +1,19 @@
-filename = 'supermobtracker-1.5.2.jar'
+filename = 'supermobtracker-1.5.4.jar'
 name = 'Super Mob Tracker'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Super Mob Tracker 1.5.3'
+x-prismlauncher-version-number = 'Super Mob Tracker 1.5.4'
 
 [download]
-hash = '6291841299b11da19159bf0540723d98fbf466d2'
+hash = '27c97cf6307c7dca36e739e7192951d4f62ed54e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8796047
+file-id = 9248364
 project-id = 1398067
 
 [[x-prismlauncher-dependencies]]
