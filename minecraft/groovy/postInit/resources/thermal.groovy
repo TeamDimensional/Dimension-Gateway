@@ -37,3 +37,33 @@ MachineHelper.crystallization()
     .fluidInput(fluid("mana") * 250)
     .output(item("thermalfoundation:material", 1028))
     .register()
+
+// Superalloy smelting
+def superalloys = [
+    [item("thermalfoundation:material", 101), item("thermalfoundation:material", 165), fluid("signalum"),
+     item("gateway:redstone_alloy_dust"), fluid("liquidchorus") * 500, fluid("dawnstone") * 144],
+    [item("thermalfoundation:material", 102), item("thermalfoundation:material", 166), fluid("lumium"),
+     item("gateway:energetic_alloy_dust"), fluid("refined_fuel") * 500, fluid("brass") * 144],
+    [item("thermalfoundation:material", 103), item("thermalfoundation:material", 167), fluid("enderium"),
+     item("gateway:pulsating_iron_dust"), fluid("cryotheum") * 500, fluid("platinum") * 144],
+]
+for (def it in superalloys) {
+    mods.factorytech.high_tech_furnace.recipeBuilder()
+        .input(it[0])
+        .output(it[1])
+        .register()
+
+    mods.essentialcraft.mithriline_furnace.recipeBuilder()
+        .espe(120)
+        .input(it[0] * 4)
+        .output(it[1] * 4)
+        .register()
+    
+    mods.factorytech.agitator.recipeBuilder()
+        .input(it[3])
+        .fluidInput(it[4])
+        .fluidInput(it[5])
+        .output(it[0])
+        .fluidOutput(it[2] * (144 * 2))
+        .register()
+}

@@ -6,7 +6,7 @@ crafting.shapedBuilder()
     .key("S", item("projectred-core:resource_item", 320))
     .key("P", item("minecraft:paper"))
     .key("N", item("tconstruct:ingots", 5))
-    .output(item("modularrouters:blank_module") * 16)
+    .output(item("modularrouters:blank_module") * 8)
     .register()
 
 // Router Upgrade
@@ -18,7 +18,7 @@ crafting.shapedBuilder()
     .key("S", item("projectred-core:resource_item", 341))
     .key("P", item("minecraft:paper"))
     .key("N", item("tconstruct:ingots", 5))
-    .output(item("modularrouters:blank_upgrade") * 10)
+    .output(item("modularrouters:blank_upgrade") * 8)
     .register()
 
 // Mechanical Squeezer

@@ -26,6 +26,7 @@ item.gateway.clean_rutile_dust.name=Refined Rutile Dust
 item.gateway.sintered_titania.name=Sintered Titania
 item.gateway.crude_titanium_matrix.name=Crude Titanium Mesh
 item.gateway.unholy_symbol.name=Unholy Symbol
+item.gateway.conductive_chorus_fruit.name=Conductive Chorus Fruit
 
 item.gateway.starsteel_ingot.name=Starsteel Ingot
 item.gateway.energetic_alloy_dust.name=Energetic Alloy Dust
@@ -33,6 +34,7 @@ item.gateway.vibrant_alloy_dust.name=Vibrant Alloy Dust
 item.gateway.redstone_alloy_dust.name=Redstone Alloy Dust
 item.gateway.dark_steel_dust.name=Dark Steel Dust
 item.gateway.pulsating_iron_dust.name=Pulsating Iron Dust
+item.gateway.alchemical_brass_dust.name=Alchemical Brass Dust
 
 tile.gateway.metallic_substrate.name=Metallic Substrate
 tile.gateway.light_metal_substrate.name=Light Metal Substrate

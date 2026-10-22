@@ -10,6 +10,7 @@ ore("dustVibrantAlloy").add(citem("vibrant_alloy_dust"))
 ore("dustEnergeticAlloy").add(citem("energetic_alloy_dust"))
 ore("dustDarkSteel").add(citem("dark_steel_dust"))
 ore("dustPulsatingIron").add(citem("pulsating_iron_dust"))
+ore("dustBrass").add(citem("alchemical_brass_dust"))
 
 // Variations of Dimensional Shard Ore
 ore("oreDimensionalShard").remove(item("rftools:dimensional_shard_ore"))

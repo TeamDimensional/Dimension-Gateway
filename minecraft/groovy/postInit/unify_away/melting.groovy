@@ -111,7 +111,7 @@ def recipes = [
     [item("tconstruct:metal", 5), fluid("alubrass") * 1296, 8, 0],
     [item("tconstruct:ingots", 6), fluid("alumite") * 144, 1, 0],
     [item("tconstruct:metal", 6), fluid("alumite") * 1296, 8, 0],
-    [item("thaumcraft:ingot", 2), fluid("brass") * 144, 1, 1],
+    [item("gateway:alchemical_brass_dust") | item("thaumcraft:ingot", 2), fluid("brass") * 144, 1, 1],
     [item("thaumcraft:metal_brass"), fluid("brass") * 1296, 8, 1],
     [item("enderio:item_alloy_ingot"), fluid("electrical_steel") * 144, 1, 2],
     [item("enderio:block_alloy"), fluid("electrical_steel") * 1296, 8, 2],
