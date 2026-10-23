@@ -10,6 +10,8 @@ import native.appeng.api.config.PowerUnits;
 import native.appeng.api.config.Actionable;
 import native.appeng.tile.networking.TileController;
 
+import scripts.modularmachinery.utils.getAbsolutePos;
+
 RecipeBuilder.newBuilder("crude", "network_supercharger", 1200)
     .addItemInput(<prodigytech:circuit_crude>).setChance(0)
     .addEnergyPerTickInput(250)
@@ -51,18 +53,18 @@ RecipeBuilder.newBuilder("perfected", "network_supercharger", 1200)
     .build();
 
 
-static controllerPositions as int[string][] = [
-    {x: 0, y: 4, z: 1},
-    {x: 0, y: 4, z: 2},
-    {x: 0, y: 4, z: 3},
-    {x: -1, y: 4, z: 1},
-    {x: -1, y: 4, z: 3},
-    {x: -2, y: 4, z: 1},
-    {x: -2, y: 4, z: 3},
-    {x: 1, y: 4, z: 1},
-    {x: 1, y: 4, z: 3},
-    {x: 2, y: 4, z: 1},
-    {x: 2, y: 4, z: 3},
+static controllerPositions as Position3f[] = [
+    Position3f.create(0, 4, 1),
+    Position3f.create(0, 4, 2),
+    Position3f.create(0, 4, 3),
+    Position3f.create(-1, 4, 1),
+    Position3f.create(-1, 4, 3),
+    Position3f.create(-2, 4, 1),
+    Position3f.create(-2, 4, 3),
+    Position3f.create(1, 4, 1),
+    Position3f.create(1, 4, 3),
+    Position3f.create(2, 4, 1),
+    Position3f.create(2, 4, 3),
 ];
 
 function supercharge(event as RecipeTickEvent, ticks as int) as void {
@@ -71,8 +73,7 @@ function supercharge(event as RecipeTickEvent, ticks as int) as void {
         var ctrlPos = event.controller.pos;
         var positions = [] as IBlockPos[];
         for delta in controllerPositions {
-            val rotatedPos = event.controller.rotateWithControllerFacing(Position3f.create(delta.x, delta.y, delta.z));
-            positions += Position3f.create(rotatedPos.x + ctrlPos.x, rotatedPos.y + ctrlPos.y, rotatedPos.z + ctrlPos.z);
+            positions += getAbsolutePos(event.controller, delta);
         }
         event.controller.world.native.getMinecraftServer().addScheduledTask(function() as void {
             for pos in positions {

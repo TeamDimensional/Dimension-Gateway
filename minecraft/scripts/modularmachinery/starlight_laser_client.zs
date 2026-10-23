@@ -10,6 +10,9 @@ import native.com.dimensional.gatewaycore.mmce.MMCEUtils;
 import native.de.ellpeck.actuallyadditions.mod.util.AssetUtil;
 import native.hellfirepvp.modularmachinery.common.tiles.base.TileMultiblockMachineController;
 
+import scripts.modularmachinery.utils.getAbsolutePos;
+import scripts.modularmachinery.utils.addPos;
+
 MMEvents.onControllerGUIRender("starlight_laser", function(event as ControllerGUIRenderEvent) {
     var state = null as string;
     var nextState = null as string;
@@ -48,15 +51,15 @@ MMEvents.onControllerGUIRender("starlight_laser", function(event as ControllerGU
     }
 });
 
-static laserPositions as int[string][string] = {
-    midnight: {x: 0, y: 3, z: 6},
+static laserPositions as Position3f[string] = {
+    midnight: Position3f.create(0, 3, 6),
     // I don't know why left and right are swapped incorrectly, maybe a bug in AA code or MMCE code
-    dawn: {x: -3, y: 3, z: 3},
-    noon: {x: 0, y: 3, z: 0},
-    dusk: {x: 3, y: 3, z: 3},
+    dawn: Position3f.create(-3, 3, 3),
+    noon: Position3f.create(0, 3, 0),
+    dusk: Position3f.create(3, 3, 3),
 };
 
-static crystalPosition as int[string]= {x: 0, y: 3, z: 3};
+static crystalDelta as Position3f = Position3f.create(0, 3, 3);
 
 static laserColors as float[][string] = {
     midnight: [0.184 / 3, 0.157 / 3, 0.271 / 3],
@@ -69,12 +72,11 @@ static laserColors as float[][string] = {
 function renderState(tile as TileMultiblockMachineController, state as string, beamWidth as float) {
     val colors = laserColors[state];
     val delta = laserPositions[state];
-    val laserOffset = tile.rotateWithControllerFacing(Position3f.create(delta.x, delta.y, delta.z));
-    val crystalOffset = tile.rotateWithControllerFacing(Position3f.create(crystalPosition.x, crystalPosition.y, crystalPosition.z));
+    val laserPos = addPos(getAbsolutePos(tile, delta), Position3f.create(0.5f, 0.5f, 0.5f));
+    val crystalPos = addPos(getAbsolutePos(tile, crystalDelta), Position3f.create(0.5f, 0.5f, 0.5f));
 
     AssetUtil.renderLaser(
-        (tile.pos.x + crystalOffset.x) as float + 0.5f, (tile.pos.y + crystalOffset.y) as float + 0.5f, (tile.pos.z + crystalOffset.z) as float + 0.5f,
-        (tile.pos.x + laserOffset.x) as float + 0.5, (tile.pos.y + laserOffset.y) as float + 0.5, (tile.pos.z + laserOffset.z) as float + 0.5,
+        crystalPos.x, crystalPos.y, crystalPos.z, laserPos.x, laserPos.y, laserPos.z,
         80, 0.8f, beamWidth, colors);
 }
 
