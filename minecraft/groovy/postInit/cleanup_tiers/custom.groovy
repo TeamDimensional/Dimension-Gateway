@@ -14,6 +14,7 @@ TooltipEvents.setTier(item("modularmachinery:resonant_caster_controller"), 10)
 TooltipEvents.setTier(item("modularmachinery:thaumic_centrifuge_controller"), 10)
 TooltipEvents.setTier(item("modularmachinery:rainbow_mixer_controller"), 12)
 TooltipEvents.setTier(item("modularmachinery:mystical_combiner_controller"), 13)
+TooltipEvents.setTier(item("modularmachinery:wizards_nightmare_controller"), 13)
 
 TooltipEvents.setTier(citem("ferramic_machine_frame"), 3)
 

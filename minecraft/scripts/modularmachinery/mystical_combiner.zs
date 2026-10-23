@@ -24,6 +24,6 @@ RecipeBuilder.newBuilder("clump", "mystical_combiner", 400)
     .addEnergyPerTickInput(20000)
     .addFluxInput(40)
     .addVisInput(40)
-    .addPotentialEnergyInput(500)
+    .addManaInput(125, true)
     .addItemOutput(<item:gateway:mystical_metal_clump>)
     .build();

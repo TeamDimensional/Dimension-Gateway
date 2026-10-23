@@ -64,23 +64,3 @@ RecipeBuilder.newBuilder("moonstone_xu2", "moonlight_fabricator", 400)
     .addAuraInput("end", 20000)
     .addItemOutput(<extrautils2:ingredients:5> * 2)
     .build();
-
-RecipeBuilder.newBuilder("gaia_spirit", "moonlight_fabricator", 100)
-    .addItemInput(<extrabotany:material:1>).setChance(0)
-    .addItemInput(<ee:eye_stone_lit>)
-    .addItemInput(<extrautils2:decorativesolid:8>)
-    .addItemInput(<witchery:condensed_fear>).setChance(0.1)
-    .addItemInput(<theaurorian:absorptionorb:*>).consumeDurability(10)
-    .addAuraInput("other", 8000, 150000, 0)
-    .addItemOutput(<botania:manaresource:5> * 2)
-    .build();
-
-RecipeBuilder.newBuilder("medal_for_heroism", "moonlight_fabricator", 1000)
-    .addItemInput(<extrabotany:material:1>).setChance(0)
-    .addItemInput(<ee:amber_ingot>)
-    .addItemInput(<aether_legacy:victory_medal>)
-    .addItemInput(<witchery:focused_will>).setChance(0.1)
-    .addItemInput(<theaurorian:absorptionorb:*>).consumeDurability(10)
-    .addAuraInput("other", 8000, 150000, 0)
-    .addItemOutput(<extrabotany:material:3>)
-    .build();

@@ -387,6 +387,7 @@ modularmachinery.thaumic_centrifuge=Thaumic Centrifuge
 modularmachinery.divinity_inverter=Divinity Inverter
 modularmachinery.mystical_combiner=Mystical Combiner
 modularmachinery.rainbow_mixer=Rainbow Mixer
+modularmachinery.wizards_nightmare=Wizard's Nightmare
 
 tile.modularmachinery.network_supercharger.desc.seconds=Fully charges the ME Controller blocks every %d seconds
 tile.modularmachinery.network_supercharger.desc.ticks=Fully charges the ME Controller blocks every %d ticks
@@ -415,6 +416,13 @@ tile.modularmachinery.divinity_inverter.desc.demon_input=%s required on the Hell
 tile.modularmachinery.divinity_inverter.desc.angel_input=%s required on the Heaven side
 entity.any_villager.name=Villager
 tooltip.gateway.obtain.mystical_combiner=§rSniper rifle materials in the craft are:\n§r- §eDevice: Mithriline Ingot\n§r- §eScope: Mithriline Ingot\n§r- §eBase: Void Plate\n§r- §eHandle: Pale Ingot\n§r- §eLens: MRUMP - Frozen
+tile.modularmachinery.wizards_nightmare.desc.consumes_charge=Costs %d%% potential
+tile.modularmachinery.wizards_nightmare.desc.creates_charge=Potential: +%d%%
+tile.modularmachinery.wizards_nightmare.desc.consumes_block.1=Randomly consumes one of the blocks:
+tile.modularmachinery.wizards_nightmare.desc.consumes_block.2=Bedrock, Flowing Spirit, Hollow Tears
+tile.modularmachinery.wizards_nightmare.desc.charge=Current Potential: %d%%
+tile.modularmachinery.wizards_nightmare.error.already_charged=Potential is high enough!
+tile.modularmachinery.wizards_nightmare.error.needs_more_charge=Not enough potential!
 
 # Ponders
 ponder.chapter1.nether.name=Entering Nether

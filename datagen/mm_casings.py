@@ -172,13 +172,15 @@ MachineDefinitions = [
     MachineDef("divinity_inverter", Normal, True, [HatchType.ItemInput, HatchType.FluidInput]),
     MachineDef("moonlight_fabricator", Normal, True, [HatchType.ItemInput, HatchType.ItemOutput, HatchType.AuraInput]),
     MachineDef("mystical_combiner", Reinforced, False, [HatchType.ItemFluidInput, HatchType.EnergyInput, HatchType.ItemOutput]),
-    MachineDef("mystical_combiner_special", Reinforced, False, [HatchType.FluxInput, HatchType.VisInput, HatchType.PotentialInput]),
+    MachineDef("mystical_combiner_special", Reinforced, False, [HatchType.FluxInput, HatchType.VisInput, HatchType.ManaInput]),
     MachineDef("natural_infuser", Normal, True, [HatchType.ItemInput, HatchType.FluidInput, HatchType.ItemOutput]),
     MachineDef("network_supercharger", Normal, False, [HatchType.ItemInput, HatchType.EnergyInput]),
     MachineDef("rainbow_mixer", Reinforced, True, [HatchType.ItemInput, HatchType.FluidInput, HatchType.EnergyInput, HatchType.ItemOutput]),
     MachineDef("resonant_caster", Reinforced, True, [HatchType.ItemInput, HatchType.FluidInput, HatchType.ItemOutput]),
     MachineDef("starlight_laser", SmallOnly, False, [HatchType.ItemInput, HatchType.EnergyInput, HatchType.ItemOutput]),
     MachineDef("thaumic_centrifuge_input", Reinforced, False, [HatchType.FluidInput, HatchType.ManaInput]),
+    MachineDef("biome", Normal, False, [HatchType.Biome]),
+    MachineDef("wizards_nightmare", Normal, True, [HatchType.FluidInput, HatchType.ItemInput, HatchType.ItemOutput]),
 ]
 
 
